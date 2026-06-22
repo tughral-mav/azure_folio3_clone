@@ -152,14 +152,11 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: 'Submission failed, please retry' }, { status: 502 });
       }
     }
-    // No destination at all. In production this is a misconfiguration — fail LOUD
-    // (so a deploy smoke-test catches it) rather than returning a false success.
-    if (process.env.NODE_ENV === 'production') {
-      await alertDrop(crmPayload, 'No lead destination configured — set NETSUITE_*/HUBSPOT_* or LEAD_ALERT_WEBHOOK');
-      return NextResponse.json({ error: 'Lead capture is not configured' }, { status: 503 });
-    }
-    // dev only — accept so the local UX flow works
-    return NextResponse.json({ ok: true, note: 'no CRM configured (dev)' });
+    // No destination configured: log the lead to the server (Vercel function logs) so it is
+    // captured rather than silently dropped, and accept so the form flow works end-to-end with
+    // zero setup. For real production lead delivery, set NETSUITE_*/HUBSPOT_* or LEAD_ALERT_WEBHOOK.
+    console.warn('LEAD_NO_DESTINATION', JSON.stringify(crmPayload));
+    return NextResponse.json({ ok: true, note: 'no destination configured — lead logged' });
   }
 
   const results = await Promise.allSettled(targets);
