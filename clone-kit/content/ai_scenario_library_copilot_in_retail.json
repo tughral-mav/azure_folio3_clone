@@ -1,0 +1,1861 @@
+{
+  "url": "https://azure.folio3.com/ai-scenario-library/copilot-in-retail/",
+  "meta": {
+    "title": "Copilot in Retail | AI-Powered Supply Chain Agents",
+    "description": "Folio3's Copilot in retail agents senses demand shifts, predicts disruptions, and autonomously heals your supply chain on Microsoft Azure. See it in action.",
+    "canonical": "https://azure.folio3.com/ai-scenario-library/copilot-in-retail/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-ai-agent-copilot-in-retail.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "w": 181,
+          "h": 40,
+          "alt": "Folio3 | Azure"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Talk with Us +1 (408) 412-3813"
+        },
+        {
+          "t": "cta",
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Azure Cloud Services",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Intellifabric",
+        "Logistics and Transport",
+        "Healthcare",
+        "Retail",
+        "Manufacturing",
+        "Construction",
+        "Success Stories",
+        "Blog",
+        "About Us",
+        "Contact Us",
+        "Talk with Us +1 (408) 412-3813"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Azure AI Agent: Copilot In Retail"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Your Supply Chain Doesn’t Need Another Dashboard. It Needs A Nervous System."
+        },
+        {
+          "t": "p",
+          "text": "Folio3’s Copilot for retail agents senses demand shifts, detects supply chain disruptions, and autonomously triggers corrective action, all on Microsoft Azure. Stop reacting to stockouts. Start preventing them."
+        },
+        {
+          "t": "cta",
+          "text": "See The Agent In Action",
+          "href": "#pgForm"
+        },
+        {
+          "t": "cta",
+          "text": "Explore Retail Solutions",
+          "href": "/azure-for-retail/"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Faster equipment provisioning"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Reduction in asset loss costs"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-ai-agent-copilot-in-retail.webp",
+          "w": 811,
+          "h": 681,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Azure AI Agent: Copilot In Retail"
+        },
+        {
+          "tag": "h2",
+          "text": "Your Supply Chain Doesn’t Need Another Dashboard. It Needs A Nervous System."
+        },
+        {
+          "tag": "h3",
+          "text": "Faster equipment provisioning"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduction in asset loss costs"
+        }
+      ],
+      "paragraphs": [
+        "Folio3’s Copilot for retail agents senses demand shifts, detects supply chain disruptions, and autonomously triggers corrective action, all on Microsoft Azure. Stop reacting to stockouts. Start preventing them."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "See The Agent In Action",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Explore Retail Solutions",
+          "href": "/azure-for-retail/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-ai-agent-copilot-in-retail.webp",
+          "alt": "",
+          "w": 811,
+          "h": 681
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-azure.webp",
+          "w": 222,
+          "h": 64,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot.webp",
+          "w": 239,
+          "h": 64,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai-service.webp",
+          "w": 275,
+          "h": 64,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake-1.webp",
+          "w": 222,
+          "h": 64,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric.webp",
+          "w": 227,
+          "h": 64,
+          "alt": ""
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-azure.webp",
+          "alt": "",
+          "w": 222,
+          "h": 64
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot.webp",
+          "alt": "",
+          "w": 239,
+          "h": 64
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai-service.webp",
+          "alt": "",
+          "w": 275,
+          "h": 64
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake-1.webp",
+          "alt": "",
+          "w": 222,
+          "h": 64
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric.webp",
+          "alt": "",
+          "w": 227,
+          "h": 64
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "AI Retail Solutions Focuses on the Storefront. Your Real Risk Is Behind It."
+        },
+        {
+          "t": "p",
+          "text": "Most retail technology investments target the customer-facing experience. Meanwhile, the gap between the shelf and the source silently erodes margins, loyalty, and competitive advantage."
+        },
+        {
+          "t": "p",
+          "text": "Retailers worldwide lose revenue because demand signals are trapped in silos, disconnected from inventory and logistics."
+        },
+        {
+          "t": "p",
+          "text": "By the time a disruption surfaces in a report, the damage is done. Manual detection cycles burn days that cost millions."
+        },
+        {
+          "t": "p",
+          "text": "Social signals, real-time POS data, supplier feeds, and logistics telemetry exist in abundance but never converge into actionable intelligence."
+        },
+        {
+          "t": "p",
+          "text": "Today’s tools tell you what happened yesterday. They don’t sense a trending product on social media and pre-position inventory before demand spikes."
+        },
+        {
+          "t": "p",
+          "text": "ERP says one thing. The warehouse says another. The store manager improvises. Without a unified data integration layer, every decision is a guess."
+        },
+        {
+          "t": "p",
+          "text": "Chatbots answer customer questions. Your Copilot should be autonomously adjusting orders, rerouting shipments, and rebalancing stock."
+        },
+        {
+          "t": "cta",
+          "text": "CONTACT US TODAY",
+          "href": "http://pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "AI Retail Solutions Focuses on the Storefront. Your Real Risk Is Behind It."
+        }
+      ],
+      "paragraphs": [
+        "Most retail technology investments target the customer-facing experience. Meanwhile, the gap between the shelf and the source silently erodes margins, loyalty, and competitive advantage.",
+        "Retailers worldwide lose revenue because demand signals are trapped in silos, disconnected from inventory and logistics.",
+        "By the time a disruption surfaces in a report, the damage is done. Manual detection cycles burn days that cost millions.",
+        "Social signals, real-time POS data, supplier feeds, and logistics telemetry exist in abundance but never converge into actionable intelligence.",
+        "Today’s tools tell you what happened yesterday. They don’t sense a trending product on social media and pre-position inventory before demand spikes.",
+        "ERP says one thing. The warehouse says another. The store manager improvises. Without a unified data integration layer, every decision is a guess.",
+        "Chatbots answer customer questions. Your Copilot should be autonomously adjusting orders, rerouting shipments, and rebalancing stock."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "CONTACT US TODAY",
+          "href": "http://pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "From Chatbots to Autonomous Copilot In Retail Nervous System"
+        },
+        {
+          "t": "p",
+          "text": "While others offer AI that talks to customers, Folio3 offers AI that listens to the business. Our Copilot Agent doesn’t just suggest products; it senses a trend on social media, cross-references real-time inventory across Azure data lakes, and autonomously triggers logistics adjustments before the stockout happens."
+        },
+        {
+          "t": "p",
+          "text": "This isn’t a customer service upgrade. This is a Self-Healing Supply Chain, built on Microsoft Copilot, powered by Azure, and designed to act before you even know there’s a problem."
+        },
+        {
+          "t": "cta",
+          "text": "Request a call",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Legacy Approach vs. Copilot Agent"
+        },
+        {
+          "t": "h",
+          "tag": "h4",
+          "text": "Aspect"
+        },
+        {
+          "t": "p",
+          "text": "Stockout Detection"
+        },
+        {
+          "t": "p",
+          "text": "Demand Forecasting"
+        },
+        {
+          "t": "p",
+          "text": "Response Workflow"
+        },
+        {
+          "t": "p",
+          "text": "Data Landscape"
+        },
+        {
+          "t": "h",
+          "tag": "h4",
+          "text": "Legacy Approach"
+        },
+        {
+          "t": "p",
+          "text": "Data Landscape"
+        },
+        {
+          "t": "p",
+          "text": "Manual, from historical data"
+        },
+        {
+          "t": "p",
+          "text": "Analyst reviews, escalates, waits"
+        },
+        {
+          "t": "p",
+          "text": "Siloed dashboards per department"
+        },
+        {
+          "t": "h",
+          "tag": "h4",
+          "text": "<img width=\"45\" height=\"43\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/copilot-agent-icon.webp\" alt=\" \"> Copilot Agent"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/copilot-agent-icon.webp",
+          "w": 45,
+          "h": 43,
+          "alt": " "
+        },
+        {
+          "t": "p",
+          "text": "Predict and prevent autonomously"
+        },
+        {
+          "t": "p",
+          "text": "Real-time signal fusion: social, POS, weather, events"
+        },
+        {
+          "t": "p",
+          "text": "Agent triggers reorder, reroutes, notifies"
+        },
+        {
+          "t": "p",
+          "text": "Unified intelligence layer across supply chain"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "From Chatbots to Autonomous Copilot In Retail Nervous System"
+        },
+        {
+          "tag": "h3",
+          "text": "Legacy Approach vs. Copilot Agent"
+        },
+        {
+          "tag": "h4",
+          "text": "Aspect"
+        },
+        {
+          "tag": "h4",
+          "text": "Legacy Approach"
+        },
+        {
+          "tag": "h4",
+          "text": "<img width=\"45\" height=\"43\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/copilot-agent-icon.webp\" alt=\" \"> Copilot Agent"
+        }
+      ],
+      "paragraphs": [
+        "While others offer AI that talks to customers, Folio3 offers AI that listens to the business. Our Copilot Agent doesn’t just suggest products; it senses a trend on social media, cross-references real-time inventory across Azure data lakes, and autonomously triggers logistics adjustments before the stockout happens.",
+        "This isn’t a customer service upgrade. This is a Self-Healing Supply Chain, built on Microsoft Copilot, powered by Azure, and designed to act before you even know there’s a problem.",
+        "Stockout Detection",
+        "Demand Forecasting",
+        "Response Workflow",
+        "Data Landscape",
+        "Manual, from historical data",
+        "Analyst reviews, escalates, waits",
+        "Siloed dashboards per department",
+        "Predict and prevent autonomously",
+        "Real-time signal fusion: social, POS, weather, events",
+        "Agent triggers reorder, reroutes, notifies",
+        "Unified intelligence layer across supply chain"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/copilot-agent-icon.webp",
+          "alt": " ",
+          "w": 45,
+          "h": 43
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Sense. Analyze. Act. Learn."
+        },
+        {
+          "t": "p",
+          "text": "The Copilot for retail agents operates as a continuous intelligence loop. It ingests signals from every corner of your retail operations and acts on them in real time."
+        },
+        {
+          "t": "p",
+          "text": "Ingests real-time signals from POS systems, social media trends, supplier feeds, IoT sensors, weather data, and market intelligence. All unified in Azure Data Lake."
+        },
+        {
+          "t": "p",
+          "text": "Azure OpenAI models correlate demand signals, detect anomalies, and identify emerging patterns that traditional BI systems miss entirely."
+        },
+        {
+          "t": "p",
+          "text": "The Copilot Agent autonomously triggers actions. It adjusts reorders, reroutes shipments, rebalances inventory across locations, and alerts the right stakeholders."
+        },
+        {
+          "t": "p",
+          "text": "Every action feeds back into the model. The agent continuously refines its predictions, gets smarter with every cycle, and adapts to your specific retail patterns."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Sense. Analyze. Act. Learn."
+        }
+      ],
+      "paragraphs": [
+        "The Copilot for retail agents operates as a continuous intelligence loop. It ingests signals from every corner of your retail operations and acts on them in real time.",
+        "Ingests real-time signals from POS systems, social media trends, supplier feeds, IoT sensors, weather data, and market intelligence. All unified in Azure Data Lake.",
+        "Azure OpenAI models correlate demand signals, detect anomalies, and identify emerging patterns that traditional BI systems miss entirely.",
+        "The Copilot Agent autonomously triggers actions. It adjusts reorders, reroutes shipments, rebalances inventory across locations, and alerts the right stakeholders.",
+        "Every action feeds back into the model. The agent continuously refines its predictions, gets smarter with every cycle, and adapts to your specific retail patterns."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Copilot In Retail Agent That Operates, Not Just Observes"
+        },
+        {
+          "t": "p",
+          "text": "Every capability maps directly to a retail workflow that currently drains time, margin, or customer loyalty."
+        },
+        {
+          "t": "p",
+          "text": "Fuses social media trend data, seasonal patterns, local events, and historical POS data to forecast demand spikes and dips at the SKU level, days before they happen. Insights delivered through real-time data visualizations."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai.webp",
+          "w": 198,
+          "h": 56,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake.webp",
+          "w": 222,
+          "h": 56,
+          "alt": ""
+        },
+        {
+          "t": "p",
+          "text": "When the agent detects a potential disruption, whether supplier delay, logistics bottleneck, or demand surge, it autonomously triggers corrective workflows via Power Platform: reorders, reroutes, and rebalances."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot-1.webp",
+          "w": 259,
+          "h": 56,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-automate.webp",
+          "w": 236,
+          "h": 56,
+          "alt": ""
+        },
+        {
+          "t": "p",
+          "text": "A living inventory map across every store, warehouse, and distribution center that continuously updates, anomaly-detected, and optimized for sell-through, not just stock levels. Powered by Microsoft Fabric."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric-1.webp",
+          "w": 300,
+          "h": 69,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-bi.webp",
+          "w": 300,
+          "h": 106,
+          "alt": ""
+        },
+        {
+          "t": "p",
+          "text": "Unifies online, in-store, and marketplace demand signals into a single unified data warehouse, so inventory allocation, pricing strategy, and promotion timing work as one system, not three."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/dynamics-365.webp",
+          "w": 300,
+          "h": 84,
+          "alt": ""
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-synapse.webp",
+          "w": 300,
+          "h": 79,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Copilot In Retail Agent That Operates, Not Just Observes"
+        }
+      ],
+      "paragraphs": [
+        "Every capability maps directly to a retail workflow that currently drains time, margin, or customer loyalty.",
+        "Fuses social media trend data, seasonal patterns, local events, and historical POS data to forecast demand spikes and dips at the SKU level, days before they happen. Insights delivered through real-time data visualizations.",
+        "When the agent detects a potential disruption, whether supplier delay, logistics bottleneck, or demand surge, it autonomously triggers corrective workflows via Power Platform: reorders, reroutes, and rebalances.",
+        "A living inventory map across every store, warehouse, and distribution center that continuously updates, anomaly-detected, and optimized for sell-through, not just stock levels. Powered by Microsoft Fabric.",
+        "Unifies online, in-store, and marketplace demand signals into a single unified data warehouse, so inventory allocation, pricing strategy, and promotion timing work as one system, not three."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai.webp",
+          "alt": "",
+          "w": 198,
+          "h": 56
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake.webp",
+          "alt": "",
+          "w": 222,
+          "h": 56
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot-1.webp",
+          "alt": "",
+          "w": 259,
+          "h": 56
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-automate.webp",
+          "alt": "",
+          "w": 236,
+          "h": 56
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric-1.webp",
+          "alt": "",
+          "w": 300,
+          "h": 69
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-bi.webp",
+          "alt": "",
+          "w": 300,
+          "h": 106
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/dynamics-365.webp",
+          "alt": "",
+          "w": 300,
+          "h": 84
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-synapse.webp",
+          "alt": "",
+          "w": 300,
+          "h": 79
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Awards & Recognition"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "azure_solution_architect.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "azure_administration.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "azure_security_engineer.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "data-analyst.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-data-engineer.svg",
+          "w": 151,
+          "h": 150,
+          "alt": "azure-data-engineer.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/power_platform_developers.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "power_platform_developers.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-network-engineer.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "azure-network-engineer.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/MB-900.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "MB-900.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AI-102.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "AI-102.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/DP-100.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "DP-100.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-140.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "AZ-140.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-stack-hub.svg",
+          "w": 151,
+          "h": 150,
+          "alt": "azure-stack-hub.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "window-server-hybrid-administration.svg"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "mirosoft_certified_trainer.svg"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Awards & Recognition"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "alt": "azure_solution_architect.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "alt": "azure_administration.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "alt": "azure_security_engineer.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "alt": "data-analyst.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-data-engineer.svg",
+          "alt": "azure-data-engineer.svg",
+          "w": 151,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/power_platform_developers.svg",
+          "alt": "power_platform_developers.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-network-engineer.svg",
+          "alt": "azure-network-engineer.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/MB-900.svg",
+          "alt": "MB-900.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AI-102.svg",
+          "alt": "AI-102.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/DP-100.svg",
+          "alt": "DP-100.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-140.svg",
+          "alt": "AZ-140.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-stack-hub.svg",
+          "alt": "azure-stack-hub.svg",
+          "w": 151,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+          "alt": "window-server-hybrid-administration.svg",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+          "alt": "mirosoft_certified_trainer.svg",
+          "w": 150,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "AI Retail Operations In Action"
+        },
+        {
+          "t": "p",
+          "text": "What happens when your retail operation runs on an autonomous nervous system instead of manual reports and gut instinct?"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/signal-detected-icon.webp",
+          "w": 150,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Signal Detected"
+        },
+        {
+          "t": "p",
+          "text": "A product goes viral on social media overnight"
+        },
+        {
+          "t": "p",
+          "text": "The Copilot for retail agents detects a 340% spike in social mentions for a specific product line. Traditional systems won’t catch this until it appears in next week’s sales report."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/analysis-complete-icon.webp",
+          "w": 150,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Analysis Complete"
+        },
+        {
+          "t": "p",
+          "text": "Agent cross-references inventory, supplier capacity, and logistics"
+        },
+        {
+          "t": "p",
+          "text": "Within minutes, the agent maps current stock levels across all locations, checks supplier lead times, and identifies the 12 stores most likely to see demand surge based on regional demographics."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/autonomous-action-icon.webp",
+          "w": 150,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Autonomous Action"
+        },
+        {
+          "t": "p",
+          "text": "Reorders triggered, shipments rerouted, stores alerted"
+        },
+        {
+          "t": "p",
+          "text": "The agent places emergency reorders with preferred suppliers, reroutes in-transit inventory from low-demand stores, and notifies regional managers. All before the category manager opens their laptop."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/outcome-icon.webp",
+          "w": 150,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Outcome"
+        },
+        {
+          "t": "p",
+          "text": "Zero stockouts. Full capture of the demand wave"
+        },
+        {
+          "t": "p",
+          "text": "Competitors who relied on traditional forecasting missed the surge entirely. Your stores were stocked, your customers were served, and your margin was protected."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "AI Retail Operations In Action"
+        },
+        {
+          "tag": "h3",
+          "text": "Signal Detected"
+        },
+        {
+          "tag": "h3",
+          "text": "Analysis Complete"
+        },
+        {
+          "tag": "h3",
+          "text": "Autonomous Action"
+        },
+        {
+          "tag": "h3",
+          "text": "Outcome"
+        }
+      ],
+      "paragraphs": [
+        "What happens when your retail operation runs on an autonomous nervous system instead of manual reports and gut instinct?",
+        "A product goes viral on social media overnight",
+        "The Copilot for retail agents detects a 340% spike in social mentions for a specific product line. Traditional systems won’t catch this until it appears in next week’s sales report.",
+        "Agent cross-references inventory, supplier capacity, and logistics",
+        "Within minutes, the agent maps current stock levels across all locations, checks supplier lead times, and identifies the 12 stores most likely to see demand surge based on regional demographics.",
+        "Reorders triggered, shipments rerouted, stores alerted",
+        "The agent places emergency reorders with preferred suppliers, reroutes in-transit inventory from low-demand stores, and notifies regional managers. All before the category manager opens their laptop.",
+        "Zero stockouts. Full capture of the demand wave",
+        "Competitors who relied on traditional forecasting missed the surge entirely. Your stores were stocked, your customers were served, and your margin was protected."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/signal-detected-icon.webp",
+          "alt": "",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/analysis-complete-icon.webp",
+          "alt": "",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/autonomous-action-icon.webp",
+          "alt": "",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/outcome-icon.webp",
+          "alt": "",
+          "w": 150,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What Makes This Different From Every Other Retail AI Pitch"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/makes-different-from-every-other-retail-ai-pitch.webp",
+          "w": 149,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "p",
+          "text": "The agent detects, decides, and executes: then briefs you on what it did and why."
+        },
+        {
+          "t": "p",
+          "text": "Native to Azure OpenAI, Copilot, Data Lake, Fabric, Power Platform. No middleware. No integration tax."
+        },
+        {
+          "t": "p",
+          "text": "Our agent works where real margin erosion happens, between the shelf and the source."
+        },
+        {
+          "t": "p",
+          "text": "Ingests and correlates social trends, POS data, supplier feeds, weather, local events, and market intelligence in real time."
+        },
+        {
+          "t": "p",
+          "text": "Every prediction, action, and outcome feeds back into the model. The agent gets measurably better every week."
+        },
+        {
+          "t": "p",
+          "text": "Folio3 Azure brings 20 years of enterprise software experience and a deep Microsoft partnership. Production-grade, governed, and supported."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "What Makes This Different From Every Other Retail AI Pitch"
+        }
+      ],
+      "paragraphs": [
+        "The agent detects, decides, and executes: then briefs you on what it did and why.",
+        "Native to Azure OpenAI, Copilot, Data Lake, Fabric, Power Platform. No middleware. No integration tax.",
+        "Our agent works where real margin erosion happens, between the shelf and the source.",
+        "Ingests and correlates social trends, POS data, supplier feeds, weather, local events, and market intelligence in real time.",
+        "Every prediction, action, and outcome feeds back into the model. The agent gets measurably better every week.",
+        "Folio3 Azure brings 20 years of enterprise software experience and a deep Microsoft partnership. Production-grade, governed, and supported."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/makes-different-from-every-other-retail-ai-pitch.webp",
+          "alt": "",
+          "w": 149,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Enterprise-Grade. Microsoft-Validated."
+        },
+        {
+          "t": "p",
+          "text": "Folio3 is a Microsoft Solution Partner with designations in Data & AI, Infrastructure, Digital & App Innovation, and Business Applications."
+        },
+        {
+          "t": "cta",
+          "text": "See How We Delivered Results For Enterprise Like Your",
+          "href": "https://azure.folio3.com/case-studies/"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Enterprise-Grade. Microsoft-Validated."
+        }
+      ],
+      "paragraphs": [
+        "Folio3 is a Microsoft Solution Partner with designations in Data & AI, Infrastructure, Digital & App Innovation, and Business Applications."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "See How We Delivered Results For Enterprise Like Your",
+          "href": "https://azure.folio3.com/case-studies/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Powered by the Azure Services You Already Invest In"
+        },
+        {
+          "t": "p",
+          "text": "No new vendors. No rip-and-replace. The Copilot in retail agents layers intelligence on top of your existing Microsoft infrastructure, with ongoing support through our Azure managed services."
+        },
+        {
+          "t": "cta",
+          "text": "Contact Us Now",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Powered by the Azure Services You Already Invest In"
+        }
+      ],
+      "paragraphs": [
+        "No new vendors. No rip-and-replace. The Copilot in retail agents layers intelligence on top of your existing Microsoft infrastructure, with ongoing support through our Azure managed services."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Contact Us Now",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Copilot Agents & Data Solutions Across Your Enterprise"
+        },
+        {
+          "t": "p",
+          "text": "The retail Copilot agent is part of a broader ecosystem of AI-powered agents and data solutions Folio3 delivers on Microsoft Azure."
+        },
+        {
+          "t": "p",
+          "text": "Browse AI-powered Copilot use cases across industries: retail, healthcare, manufacturing, logistics, and more."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/07/arrow_bottom.svg",
+          "w": 150,
+          "h": 150,
+          "alt": "arrow"
+        },
+        {
+          "t": "p",
+          "text": "Our complete Azure retail practice: from 360-degree customer data and demand forecasting to supply chain optimization and omnichannel strategy."
+        },
+        {
+          "t": "p",
+          "text": "AI-powered recruitment automation, slash time-to-hire by up to 80% with autonomous resume screening, scheduling, and onboarding."
+        },
+        {
+          "t": "p",
+          "text": "Automate finance and accounting expense management workflows with an AI Copilot agent built on Microsoft Azure."
+        },
+        {
+          "t": "p",
+          "text": "Our flagship ISV analytics solution on Microsoft Fabric: pre-built dashboards, automated pipelines, and self-service insights across various industries."
+        },
+        {
+          "t": "p",
+          "text": "End-to-end data services: integration, warehousing, visualization, and real-time analytics on Azure and Microsoft Fabric."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Copilot Agents & Data Solutions Across Your Enterprise"
+        }
+      ],
+      "paragraphs": [
+        "The retail Copilot agent is part of a broader ecosystem of AI-powered agents and data solutions Folio3 delivers on Microsoft Azure.",
+        "Browse AI-powered Copilot use cases across industries: retail, healthcare, manufacturing, logistics, and more.",
+        "Our complete Azure retail practice: from 360-degree customer data and demand forecasting to supply chain optimization and omnichannel strategy.",
+        "AI-powered recruitment automation, slash time-to-hire by up to 80% with autonomous resume screening, scheduling, and onboarding.",
+        "Automate finance and accounting expense management workflows with an AI Copilot agent built on Microsoft Azure.",
+        "Our flagship ISV analytics solution on Microsoft Fabric: pre-built dashboards, automated pipelines, and self-service insights across various industries.",
+        "End-to-end data services: integration, warehousing, visualization, and real-time analytics on Azure and Microsoft Fabric."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/07/arrow_bottom.svg",
+          "alt": "arrow",
+          "w": 150,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Your Competitors Are Still Reading Reports."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Your Supply Chain Should Be Writing Its Own."
+        },
+        {
+          "t": "p",
+          "text": "Book a 30-minute strategy call with a Folio3 Azure retail specialist. We’ll map your current supply chain architecture and show you exactly where the Copilot AI retail assistants create autonomous value, no pitch deck, just your data, your workflows, your opportunity."
+        },
+        {
+          "t": "cta",
+          "text": "book a free demo",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/competitors-reading-reports.webp",
+          "w": 217,
+          "h": 150,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Your Competitors Are Still Reading Reports."
+        },
+        {
+          "tag": "h3",
+          "text": "Your Supply Chain Should Be Writing Its Own."
+        }
+      ],
+      "paragraphs": [
+        "Book a 30-minute strategy call with a Folio3 Azure retail specialist. We’ll map your current supply chain architecture and show you exactly where the Copilot AI retail assistants create autonomous value, no pitch deck, just your data, your workflows, your opportunity."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "book a free demo",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/04/competitors-reading-reports.webp",
+          "alt": "",
+          "w": 217,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "w": 283,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": "",
+          "w": 283,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "w": 300,
+          "h": 59,
+          "alt": "Azure"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "t": "li",
+          "text": "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA"
+        },
+        {
+          "t": "li",
+          "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 412-3813"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-55-6540154"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-04-2505173"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Export House, Cawsey Way, Woking Surrey, GU21 6QX"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +44 (0) 14 8361 6611"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "t": "li",
+          "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "t": "li",
+          "text": "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi"
+        },
+        {
+          "t": "li",
+          "text": "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad"
+        },
+        {
+          "t": "li",
+          "text": "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +92-21-3432 3721-4"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "t": "li",
+          "text": "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 365 4638"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        },
+        {
+          "t": "li",
+          "text": "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+        },
+        {
+          "t": "p",
+          "text": "© 2026, Folio3 Software Inc., All rights reserved."
+        },
+        {
+          "t": "p",
+          "text": "Privacy Policy & Terms of Use Cookie Policy"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        }
+      ],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel: +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel: +971-55-6540154",
+        "Tel: +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel: +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel: +92-21-3432 3721-4",
+        "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1",
+        "Tel: +1 408 365 4638",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 300,
+          "h": 59
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-ai-agent-copilot-in-retail.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-azure.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai-service.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake-1.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/copilot-agent-icon.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-openai.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-data-lake.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-copilot-1.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-automate.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/microsoft-fabric-1.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/power-bi.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/dynamics-365.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/azure-synapse.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-data-engineer.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/power_platform_developers.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-network-engineer.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/MB-900.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AI-102.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/DP-100.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-140.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-stack-hub.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/signal-detected-icon.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/analysis-complete-icon.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/autonomous-action-icon.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/outcome-icon.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/makes-different-from-every-other-retail-ai-pitch.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/07/arrow_bottom.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/04/competitors-reading-reports.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "alt": ""
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2026/04/copilot-header-bg.webp"
+  ]
+}

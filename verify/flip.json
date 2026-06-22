@@ -1,0 +1,82 @@
+{
+  "flips": [
+    {
+      "effect": [
+        "elementor-flip-box--effect-zoom-in"
+      ],
+      "front": null,
+      "back": null
+    },
+    {
+      "effect": [
+        "elementor-flip-box--effect-zoom-in"
+      ],
+      "front": null,
+      "back": null
+    },
+    {
+      "effect": [
+        "elementor-flip-box--effect-zoom-in"
+      ],
+      "front": null,
+      "back": null
+    },
+    {
+      "effect": [
+        "elementor-flip-box--effect-zoom-in"
+      ],
+      "front": null,
+      "back": null
+    }
+  ],
+  "processWidgetClasses": [
+    "heading.default",
+    "flip-box.default"
+  ],
+  "discoverTabsText": [
+    {
+      "heading": "Azure Cloud Services",
+      "para": "Seamlessly migrate, efficiently deploy, and manage your cloud infrastructure. From initial assessment to ongoing support, we deliver data-driven insights, and robust security frameworks to drive your ",
+      "bullets": [
+        "Cloud Strategy & Consulting",
+        "Application Development",
+        "DevOps Automation as Service",
+        "Cloud Migration"
+      ],
+      "btn": "Explore Our Cloud Services"
+    },
+    {
+      "heading": "Microsoft Power Platform",
+      "para": "Empower your organization by automating processes, optimizing workflows, and delivering personalized experiences with low-code solutions and seamless integrations that enhance customer engagement.",
+      "bullets": [
+        "Power Apps",
+        "Power Automate",
+        "Power Virtual Agents",
+        "Power BI"
+      ],
+      "btn": "Explore our power platform services"
+    },
+    {
+      "heading": "Azure Data Analytics",
+      "para": "Get ready to see the bigger picture of your business with Azure’s cutting-edge solutions! From big data analytics to real-time streaming, we bring your business insights to life to help make confident",
+      "bullets": [
+        "Data Storage and Management",
+        "Data Integration and ETL",
+        "Data Analysis and Visualization",
+        "Governance, Security, and Compliance"
+      ],
+      "btn": "explore our analytical services"
+    },
+    {
+      "heading": "Azure Managed Services",
+      "para": "Ensure maximum uptime and smooth running apps with our team of experts. We offer 24/7 monitoring, comprehensive security, performance optimization, and infrastructure monitoring for your Azure environ",
+      "bullets": [
+        "Holistic Support Services",
+        "Advisory",
+        "Advanced Support",
+        "Security Management"
+      ],
+      "btn": "Explore our Managed services"
+    }
+  ]
+}

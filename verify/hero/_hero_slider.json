@@ -1,0 +1,42 @@
+{
+  "config": {
+    "engine": "swiper+slick",
+    "slides": [
+      {
+        "h1": "Unlock the Power of Cloud: Build, Run & Manage Applications with Azure",
+        "highlight": "Applications with Azure",
+        "subtext": "Develop cutting-edge apps using the up-to-date AI models available on Azure, trusted by 80% of fortune top 500 companies.",
+        "cta": "Schedule a Free Consultation",
+        "ctaHref": "#pgForm",
+        "img": "/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new.webp"
+      },
+      {
+        "h1": "Discover the Full Potential of Your Data with the Folio3 IntelliFabric Solution",
+        "highlight": "Folio3 IntelliFabric Solution",
+        "subtext": "Transform Your Organization with Advanced Data Integration, Real-Time Dashboards, and Scalable Analytics that Empower Smarter Decision-Making and Drive Enhanced Productivity",
+        "cta": "Schedule IntelliFabric Demo Today",
+        "ctaHref": "#pgForm",
+        "img": ""
+      },
+      {
+        "h1": "Transforming HR with AI and Automation",
+        "highlight": "AI and Automation",
+        "subtext": "Streamline Recruitment, Employee Engagement, and Performance Management with Intelligent Solutions That Scale with Your Business Needs.",
+        "cta": "Achieve your AI Vision",
+        "ctaHref": "#pgForm",
+        "img": ""
+      }
+    ],
+    "pagination": false,
+    "arrows": false,
+    "swiper": null
+  },
+  "slideCount": 3,
+  "observedTimeline": [
+    {
+      "t": 0,
+      "h1": ""
+    }
+  ],
+  "autoplayIntervalsSec": []
+}

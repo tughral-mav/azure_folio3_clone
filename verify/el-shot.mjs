@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const [url, text, out] = [process.argv[2], process.argv[3], process.argv[4]];
+const b = await chromium.launch();
+const p = await b.newPage({ viewport:{width:1240,height:760}});
+await p.goto(url, { waitUntil:'load', timeout:60000 });
+await p.evaluate(async()=>{await new Promise(r=>{let y=0;const t=setInterval(()=>{scrollBy(0,500);y+=500;if(y>document.body.scrollHeight){clearInterval(t);r();}},20);});});
+await p.waitForTimeout(500);
+await p.evaluate((text)=>{const el=[...document.querySelectorAll('h2,h3')].find(x=>x.textContent.trim().toLowerCase().includes(text.toLowerCase())); if(el) el.scrollIntoView({block:'center'});}, text);
+await p.waitForTimeout(2200);
+await p.screenshot({ path: out });
+await b.close(); console.log('shot', out);

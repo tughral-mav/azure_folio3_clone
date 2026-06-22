@@ -1,0 +1,79 @@
+[
+  {
+    "route": "/azure-cloud-service/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/09/azure-banner-cloud-services-mob.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DevOps-Automation-as-Service.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Cloud-Migration.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/x835687_Businessman_with_cloud_computing_diagram_show_on_hand.__8495534b-061d-445d-932b-2c41b2e34c38.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/x835687_Cloud_computing_technology_concept._Futuristic_illustra_a1177465-92c5-40e8-a63c-de692350ddd5.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Cognitive-Search.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Cloud Service - Azure | Folio3 Azure"
+  }
+]

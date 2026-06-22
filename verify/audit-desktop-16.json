@@ -1,0 +1,143 @@
+[
+  {
+    "route": "/azure-data-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/09/end-to-end-BI-top-banner-img-mobile.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/end-to-end-BI-top-banner-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/elt-pipeline-diagram-mobile-updated.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/dynamics-365-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/business-central-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/arrow_bottom.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/retail-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Financial-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/cloud-services-logos-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/farm-to-market-analytics-solutions.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/data-analytics-and-business-intelligence.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/data-analytics-trends.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/etl-elt-pipelines-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Data Analytics Services | Folio3 Azure"
+  }
+]

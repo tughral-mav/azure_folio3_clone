@@ -1,0 +1,618 @@
+[
+  {
+    "region": "body",
+    "section": "",
+    "text": "Skip to content",
+    "href": "#content",
+    "norm": "#content"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "<img width=\"181\" height=\"40\" src=\"https://azure.folio3.com/w",
+    "href": "https://azure.folio3.com",
+    "norm": "/"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Services",
+    "href": "#",
+    "norm": "#"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Azure Cloud Services",
+    "href": "https://azure.folio3.com/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Azure Data Analytics",
+    "href": "https://azure.folio3.com/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Microsoft Fabric Services",
+    "href": "https://azure.folio3.com/microsoft-fabric-services/",
+    "norm": "/microsoft-fabric-services"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Data Integration As A Service",
+    "href": "https://azure.folio3.com/data-integration-as-a-service/",
+    "norm": "/data-integration-as-a-service"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Data Visualization as a service",
+    "href": "https://azure.folio3.com/azure-data-analytics/data-visualization-as-a-service/",
+    "norm": "/azure-data-analytics/data-visualization-as-a-service"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Data Warehousing as a Service",
+    "href": "https://azure.folio3.com/data-warehousing-as-a-service/",
+    "norm": "/data-warehousing-as-a-service"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Microsoft Copilot Consulting",
+    "href": "https://azure.folio3.com/data-science-ai/microsoft-copilot-consulting/",
+    "norm": "/data-science-ai/microsoft-copilot-consulting"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Copilot Scenario Library",
+    "href": "https://azure.folio3.com/ai-scenario-library/",
+    "norm": "/ai-scenario-library"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Copilot Agent",
+    "href": "#",
+    "norm": "#"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "RecruitFlow Copilot",
+    "href": "https://azure.folio3.com/ai-powered-solutions/copilot-for-recruitment/",
+    "norm": "/ai-powered-solutions/copilot-for-recruitment"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "SmartExpense Agent",
+    "href": "https://azure.folio3.com/ai-agents/smartexpense-agent/",
+    "norm": "/ai-agents/smartexpense-agent"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "ITAsset Copilot",
+    "href": "https://azure.folio3.com/ai-agents/it-asset-management-agent/",
+    "norm": "/ai-agents/it-asset-management-agent"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "KubeMonitor Copilot",
+    "href": "https://azure.folio3.com/ai-agents/kubemonitor-agent/",
+    "norm": "/ai-agents/kubemonitor-agent"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Zammad Ticketing Copilot",
+    "href": "https://azure.folio3.com/ai-agents/ai-powered-ticketing-and-customer-service-agent/",
+    "norm": "/ai-agents/ai-powered-ticketing-and-customer-service-agent"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Microsoft Power Platform",
+    "href": "https://azure.folio3.com/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Azure Managed Services",
+    "href": "https://azure.folio3.com/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Solutions",
+    "href": "#",
+    "norm": "#"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Intellifabric",
+    "href": "https://azure.folio3.com/solution/intellifabric/",
+    "norm": "/solution/intellifabric"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Logistics and Transport",
+    "href": "https://azure.folio3.com/azure-for-logistics-and-transport/",
+    "norm": "/azure-for-logistics-and-transport"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Healthcare",
+    "href": "https://azure.folio3.com/azure-for-healthcare/",
+    "norm": "/azure-for-healthcare"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Retail",
+    "href": "https://azure.folio3.com/azure-for-retail/",
+    "norm": "/azure-for-retail"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Manufacturing",
+    "href": "https://azure.folio3.com/azure-for-manufacturing/",
+    "norm": "/azure-for-manufacturing"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Construction",
+    "href": "https://azure.folio3.com/azure-for-construction/",
+    "norm": "/azure-for-construction"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Resources",
+    "href": "#",
+    "norm": "#"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Success Stories",
+    "href": "https://azure.folio3.com/case-studies/",
+    "norm": "/case-studies"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Blog",
+    "href": "https://azure.folio3.com/blog/",
+    "norm": "/blog"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "About Us",
+    "href": "/about-us/",
+    "norm": "/about-us"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Contact Us",
+    "href": "https://azure.folio3.com/contact-us/",
+    "norm": "/contact-us"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "+1 (408) 412-3813",
+    "href": "tel:1 (408) 412-3813",
+    "norm": "tel:1 (408) 412-3813"
+  },
+  {
+    "region": "header",
+    "section": "",
+    "text": "Get in Touch",
+    "href": "/contact-us/",
+    "norm": "/contact-us"
+  },
+  {
+    "region": "body",
+    "section": "Transforming HR with AI and Automation",
+    "text": "Schedule a Free Consultation",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Transforming HR with AI and Automation",
+    "text": "Schedule IntelliFabric Demo Today",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Transforming HR with AI and Automation",
+    "text": "Achieve your AI Vision",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "Cloud Strategy & Consulting",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "Application Development",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "DevOps Automation as Service",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "Cloud Migration",
+    "href": "/azure-cloud-service/",
+    "norm": "/azure-cloud-service"
+  },
+  {
+    "region": "body",
+    "section": "Azure Managed Services",
+    "text": "Explore Our Cloud Services",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"40\" height=\"40\" ",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Power Apps",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"40\" height=\"32\" ",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Power Automate",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Power Virtual Agents",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"30\" height=\"40\" ",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Power BI",
+    "href": "/microsoft-power-platform/",
+    "norm": "/microsoft-power-platform"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Explore our power platform services",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Data Storage and Management",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Data Integration and ETL",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Data Analysis and Visualization",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"84\" height=\"84\" ",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Governance, Security, and Compliance",
+    "href": "/azure-data-analytics/",
+    "norm": "/azure-data-analytics"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "explore our analytical services",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Holistic Support Services",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Advisory",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Advanced Support",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "<img loading=\"lazy\" decoding=\"async\" width=\"167\" height=\"167",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Security Management",
+    "href": "/azure-managed-services/",
+    "norm": "/azure-managed-services"
+  },
+  {
+    "region": "body",
+    "section": "",
+    "text": "Explore our Managed services",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Scalability",
+    "text": "Request a call",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Our Industries",
+    "text": "Get Started With Azure",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "body",
+    "section": "Our Industries",
+    "text": "Talk to An Expert",
+    "href": "/contact-us/",
+    "norm": "/contact-us"
+  },
+  {
+    "region": "body",
+    "section": "Our Industries",
+    "text": "Learn More",
+    "href": "https://azure.folio3.com/microsoft-licensing-process/",
+    "norm": "/microsoft-licensing-process"
+  },
+  {
+    "region": "body",
+    "section": "Your Common Queries Are Resolved​",
+    "text": "Read More",
+    "href": "/savills/",
+    "norm": "/savills"
+  },
+  {
+    "region": "body",
+    "section": "Your Common Queries Are Resolved​",
+    "text": "Read More",
+    "href": "/city-university-azure/",
+    "norm": "/city-university-azure"
+  },
+  {
+    "region": "body",
+    "section": "Savills",
+    "text": "Discover All",
+    "href": "#pgForm",
+    "norm": "#pgForm"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +1 408 412-3813",
+    "href": "tel:+1 408 412-3813",
+    "norm": "tel:+1 408 412-3813"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Support: +1 (408) 512 1812",
+    "href": "tel:+1 (408) 512 1812",
+    "norm": "tel:+1 (408) 512 1812"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +971-55-6540154",
+    "href": "tel:+971-55-6540154",
+    "norm": "tel:+971-55-6540154"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +971-04-2505173",
+    "href": "tel:+971-04-2505173",
+    "norm": "tel:+971-04-2505173"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +44 (0) 14 8361 6611",
+    "href": "tel:+44 (0) 14 8361 6611",
+    "norm": "tel:+44 (0) 14 8361 6611"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +92-21-3432 3721-4",
+    "href": "tel:+92-21-3432 3721-4",
+    "norm": "tel:+92-21-3432 3721-4"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Tel: +1 408 365 4638",
+    "href": "tel:+1 408 365 4638",
+    "norm": "tel:+1 408 365 4638"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Privacy Policy",
+    "href": "/privacy-policy/",
+    "norm": "/privacy-policy"
+  },
+  {
+    "region": "footer",
+    "section": "",
+    "text": "Cookie Policy",
+    "href": "/cookie-policy/",
+    "norm": "/cookie-policy"
+  }
+]

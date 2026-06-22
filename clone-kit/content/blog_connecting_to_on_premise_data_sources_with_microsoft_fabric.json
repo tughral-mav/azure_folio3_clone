@@ -1,0 +1,480 @@
+{
+  "url": "https://azure.folio3.com/blog/connecting-to-on-premise-data-sources-with-microsoft-fabric/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Connecting to On-Premise Data Sources With Microsoft Fabric",
+    "description": "Master connecting to on-premise data sources with Microsoft Fabric. Its essential components, setup processes, and use cases for hybrid cloud environments.",
+    "canonical": "https://azure.folio3.com/blog/connecting-to-on-premise-data-sources-with-microsoft-fabric/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/10/connecting-to-on-premise-data-sources-with-microsoft-fabric.jpg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "October 22, 2024"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Connecting to On-Premise Data Sources With Microsoft Fabric"
+        },
+        {
+          "tag": "h2",
+          "text": "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics."
+        },
+        {
+          "tag": "h2",
+          "text": "Why Connect to On-Premise Data Sources?"
+        },
+        {
+          "tag": "h2",
+          "text": "Understanding the Need for On-Premise Connectivity"
+        },
+        {
+          "tag": "h3",
+          "text": "Hybrid Cloud Solutions"
+        },
+        {
+          "tag": "h3",
+          "text": "Use Cases for On-Premise Connectivity"
+        },
+        {
+          "tag": "h4",
+          "text": "1. Legacy Applications"
+        },
+        {
+          "tag": "h4",
+          "text": "2. Regulatory Requirements"
+        },
+        {
+          "tag": "h4",
+          "text": "3. Highly secure data environments"
+        },
+        {
+          "tag": "h2",
+          "text": "Key Components Required for Connecting On-Premise Data Sources"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Microsoft Fabric Architecture"
+        },
+        {
+          "tag": "h4",
+          "text": "Data Pipelines"
+        },
+        {
+          "tag": "h4",
+          "text": "Data Flows"
+        },
+        {
+          "tag": "h4",
+          "text": "Security Layers"
+        },
+        {
+          "tag": "h3",
+          "text": "2. On-Premises Data Gateway"
+        },
+        {
+          "tag": "h2",
+          "text": "Preparing Your Environment"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Identifying On-Premise Data Sources"
+        },
+        {
+          "tag": "h3",
+          "text": "2. System Requirements"
+        },
+        {
+          "tag": "h2",
+          "text": "Installing and Configuring the On-Premises Data Gateway"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Installation Guide"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Setting Up Connectivity"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Configuring Access Control and Permissions"
+        },
+        {
+          "tag": "h2",
+          "text": "Connecting Microsoft Fabric to On-Premise Data Sources"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Setting Up Dataflows"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Scheduling Data Syncs"
+        },
+        {
+          "tag": "h3",
+          "text": "Conclusion"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Home » Connecting to On-Premise Data Sources With Microsoft Fabric",
+        "Table of Contents",
+        "As an entrepreneur, is the influx of data becoming overwhelming and daunting to handle? Would there simply be more room for your data? Then alas! You have the solution in the latest data solutions.",
+        "Businesses must bridge the gap between old systems and modern cloud solutions. Connecting to on-premise data sources with Fabric plays a pivotal role. If your organization only depends upon its on-premise data for important operations, then integrating it into Microsoft Fabric will let you maximize the benefits of your hybrid cloud strategy.",
+        "This article will explore how Microsoft Fabric connectivity facilitates smooth integration of on-premise and cloud environments, warranting strong cloud-to-on-premise data management and security.",
+        "Companies still using legacy systems store data in on-premise databases. Certain businesses find it important to store some data on-premise, which might be for regulatory compliance, security concerns, or business continuity. However, this can lead to challenges when you need detailed data analysis or want to utilize cloud capabilities.",
+        "Integrating on-premise data into a cloud infrastructure is a prerequisite for collective analytics, flawless reporting, and navigating the sea of data. Businesses that can’t access or analyze their on-premise data on legacy systems struggle with logical decision-making and miss important growth opportunities.",
+        "In such cases, connecting to on-premise data sources with Fabric becomes crucial. By milking the power of Microsoft Fabric connectivity, businesses can safely integrate their on-premise systems with modern cloud applications, thus benefiting from valuable data-driven insights.",
+        "Moreover, this integration is helpful for companies striving to integrate disparate data sources, enhance reporting accuracy, and access powerful cloud-based tools for deep data analytics.",
+        "In Addition, integrating legacy systems into Microsoft Fabric lets organizations use advanced AI and machine learning tools, providing better insights and predictive analytics. This can transform businesses’ operations and help them stay competitive.",
+        "Let us dig deeper and move on to understanding the need for on-premise connectivity.",
+        "A hybrid cloud combines computing environments where applications are run using storage that includes both cloud and on-premises resources. Recently, there has been a rise in hybrid cloud strategies, meaning businesses are no longer entirely confined to cloud or on-premise environments."
+      ],
+      "listItems": [
+        "Abdullah Ali",
+        "October 22, 2024",
+        "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.",
+        "Why Connect to On-Premise Data Sources?",
+        "Understanding the Need for On-Premise ConnectivityHybrid Cloud SolutionsUse Cases for On-Premise Connectivity1. Legacy Applications2. Regulatory Requirements3. Highly secure data environments",
+        "Hybrid Cloud Solutions",
+        "Use Cases for On-Premise Connectivity1. Legacy Applications2. Regulatory Requirements3. Highly secure data environments",
+        "1. Legacy Applications",
+        "2. Regulatory Requirements",
+        "3. Highly secure data environments",
+        "Key Components Required for Connecting On-Premise Data Sources1. Microsoft Fabric ArchitectureData PipelinesData FlowsSecurity Layers2. On-Premises Data Gateway",
+        "1. Microsoft Fabric ArchitectureData PipelinesData FlowsSecurity Layers",
+        "Data Pipelines",
+        "Data Flows",
+        "Security Layers",
+        "2. On-Premises Data Gateway",
+        "Preparing Your Environment1. Identifying On-Premise Data Sources2. System Requirements",
+        "1. Identifying On-Premise Data Sources",
+        "2. System Requirements",
+        "Installing and Configuring the On-Premises Data Gateway1. Installation Guide2. Setting Up Connectivity3. Configuring Access Control and Permissions"
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        },
+        {
+          "text": "Get Started Now",
+          "href": "https://azure.folio3.com/microsoft-fabric-services/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+          "alt": "azure-blog-cta-img-1",
+          "w": 375,
+          "h": 227
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Workforce reporting has always been time-consuming. HR teams pull data from HRIS, payroll, time and attendance, and recruiting systems, reconcile",
+        "Most business data arrives in batches. A report runs at the end of the day. A pipeline syncs overnight. A",
+        "Finance teams have always worked with data. What has changed is the volume, the velocity, and the stakes. Monthly closes"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp 375w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1-300x182.webp 300w",
+      "alt": "azure-blog-cta-img-1",
+      "w": "375",
+      "h": "227",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": "\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<div id=\"ez-toc-container\" class=\"ez-toc-v2_0_82_2 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction\">\n<div class=\"ez-toc-title-container\">\n<p class=\"ez-toc-title\" style=\"cursor:inherit\">Table of Contents</p>\n<span class=\"ez-toc-title-toggle\"><a href=\"#\" class=\"ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle\" aria-label=\"Toggle Table of Content\"><span class=\"ez-toc-js-icon-con\"><span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle</span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http://www.w3.org/2000/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"></path></svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"></path></svg></span></span></span></a></span></div>\n<nav><ul class=\"ez-toc-list ez-toc-list-level-1 \"><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-1\" href=\"#Accelerate_smart_decisions_with_Microsoft_Fabrics_unified_data_and_AI_analytics\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-2\" href=\"#Why_Connect_to_On-Premise_Data_Sources\">Why Connect to On-Premise Data Sources?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-3\" href=\"#Understanding_the_Need_for_On-Premise_Connectivity\">Understanding the Need for On-Premise Connectivity</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-4\" href=\"#Hybrid_Cloud_Solutions\">Hybrid Cloud Solutions</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-5\" href=\"#Use_Cases_for_On-Premise_Connectivity\">Use Cases for On-Premise Connectivity</a><ul class=\"ez-toc-list-level-4\"><li class=\"ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-6\" href=\"#1_Legacy_Applications\">1. Legacy Applications</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-7\" href=\"#2_Regulatory_Requirements\">2. Regulatory Requirements</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-8\" href=\"#3_Highly_secure_data_environments\">3. Highly secure data environments</a></li></ul></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-9\" href=\"#Key_Components_Required_for_Connecting_On-Premise_Data_Sources\">Key Components Required for Connecting On-Premise Data Sources</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-10\" href=\"#1_Microsoft_Fabric_Architecture\">1. Microsoft Fabric Architecture</a><ul class=\"ez-toc-list-level-4\"><li class=\"ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-11\" href=\"#Data_Pipelines\">Data Pipelines</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-12\" href=\"#Data_Flows\">Data Flows</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-4\"><a class=\"ez-toc-link ez-toc-heading-13\" href=\"#Security_Layers\">Security Layers</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-14\" href=\"#2_On-Premises_Data_Gateway\">2. On-Premises Data Gateway</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-15\" href=\"#Preparing_Your_Environment\">Preparing Your Environment</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-16\" href=\"#1_Identifying_On-Premise_Data_Sources\">1. Identifying On-Premise Data Sources</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-17\" href=\"#2_System_Requirements\">2. System Requirements</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-18\" href=\"#Installing_and_Configuring_the_On-Premises_Data_Gateway\">Installing and Configuring the On-Premises Data Gateway</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-19\" href=\"#1_Installation_Guide\">1. Installation Guide</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-20\" href=\"#2_Setting_Up_Connectivity\">2. Setting Up Connectivity</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-21\" href=\"#3_Configuring_Access_Control_and_Permissions\">3. Configuring Access Control and Permissions</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-22\" href=\"#Connecting_Microsoft_Fabric_to_On-Premise_Data_Sources\">Connecting Microsoft Fabric to On-Premise Data Sources</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-23\" href=\"#1_Setting_Up_Dataflows\">1. Setting Up Dataflows</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-24\" href=\"#2_Scheduling_Data_Syncs\">2. Scheduling Data Syncs</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-25\" href=\"#Conclusion\">Conclusion</a></li></ul></li></ul></nav></div>\n\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"13201\" class=\"elementor elementor-13201\" data-elementor-post-type=\"post\">\n\t\t\t\t<div class=\"elementor-element elementor-element-93c3c62 e-flex e-con-boxed e-con e-parent\" data-id=\"93c3c62\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-a6703b1 elementor-widget elementor-widget-text-editor\" data-id=\"a6703b1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>As an entrepreneur, is the influx of data becoming overwhelming and daunting to handle? Would there simply be more room for your data? Then alas! You have the solution in the latest data solutions.</p><p>Businesses must bridge the gap between old systems and modern cloud solutions. Connecting to on-premise data sources with Fabric plays a pivotal role. If your organization only depends upon its on-premise data for important operations, then integrating it into Microsoft Fabric will let you maximize the benefits of your hybrid cloud strategy.</p><p>This article will explore how <a href=\"/blog/fabric-implementation-for-organizations/\" target=\"_blank\" rel=\"noopener\">Microsoft Fabric connectivity</a> facilitates smooth integration of on-premise and cloud environments, warranting strong cloud-to-on-premise data management and security.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-65a7812b e-flex e-con-boxed e-con e-parent\" data-id=\"65a7812b\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-4a33a748 blog-cta-banner e-flex e-con-boxed e-con e-child\" data-id=\"4a33a748\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;gradient&quot;}\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-333c5451 e-con-full e-flex e-con e-child\" data-id=\"333c5451\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-492fd0ba head elementor-widget elementor-widget-heading\" data-id=\"492fd0ba\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-6c4f32c2 elementor-mobile-align-center elementor-widget elementor-widget-button\" data-id=\"6c4f32c2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"/microsoft-fabric-services/\" target=\"_blank\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Get Started Now</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-6e7ec41b e-con-full e-flex e-con e-child\" data-id=\"6e7ec41b\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1227cc83 elementor-widget elementor-widget-image\" data-id=\"1227cc83\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"375\" height=\"227\" src=\"/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp\" class=\"attachment-large size-large wp-image-12229 entered lazyloaded\" alt=\"azure-blog-cta-img-1\" data-lazy-sizes=\"(max-width: 375px) 100vw, 375px\" data-ll-status=\"loaded\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-8443497 e-flex e-con-boxed e-con e-parent\" data-id=\"8443497\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1c861eb elementor-widget elementor-widget-text-editor\" data-id=\"1c861eb\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<h2><span class=\"ez-toc-section\" id=\"Why_Connect_to_On-Premise_Data_Sources\"></span>Why Connect to On-Premise Data Sources?<span class=\"ez-toc-section-end\"></span></h2>\n<p>Companies still using legacy systems store data in on-premise databases. Certain businesses find it important to store some data on-premise, which might be for regulatory compliance, security concerns, or business continuity. However, this can lead to challenges when you need detailed data analysis or want to utilize cloud capabilities.</p>\n<p>Integrating on-premise data into a cloud infrastructure is a prerequisite for collective analytics, flawless reporting, and navigating the sea of data. Businesses that can’t access or analyze their on-premise data on legacy systems struggle with logical decision-making and miss important growth opportunities.</p>\n<p>In such cases, connecting to on-premise data sources with Fabric becomes crucial. By milking the power of Microsoft Fabric connectivity, businesses can safely integrate their on-premise systems with modern cloud applications, thus benefiting from valuable data-driven insights.</p><p>Moreover, this integration is helpful for companies striving to integrate disparate data sources, enhance reporting accuracy, and access powerful cloud-based tools for deep data analytics.</p>\n<p>In Addition, integrating legacy systems into Microsoft Fabric lets organizations use advanced AI and machine learning tools, providing better insights and predictive analytics. This can transform businesses’ operations and help them stay competitive.</p>\n<h2><span class=\"ez-toc-section\" id=\"Understanding_the_Need_for_On-Premise_Connectivity\"></span>Understanding the Need for On-Premise Connectivity<span class=\"ez-toc-section-end\"></span></h2>\n<p>Let us dig deeper and move on to understanding the need for on-premise connectivity.</p>\n<h3><span class=\"ez-toc-section\" id=\"Hybrid_Cloud_Solutions\"></span>Hybrid Cloud Solutions<span class=\"ez-toc-section-end\"></span></h3>\n<p>A hybrid cloud combines computing environments where applications are run using storage that includes both cloud and on-premises resources. Recently, there has been a rise in hybrid cloud strategies, meaning businesses are no longer entirely confined to cloud or on-premise environments.</p>\n<p>Using a hybrid cloud, you get the best of both worlds. You can maintain control over important on-premise systems while taking advantage of the cloud’s high scalability and efficiency. This model benefits businesses with rigid compliance requirements, sensitive data, or specific applications that cannot be fully migrated to the cloud.</p>\n<p>Microsoft Fabric connectivity forms the backbone of the hybrid model by creating a secure bridge between your on-premise database integration and the cloud. By Microsoft Fabric, you can maintain safe access to your on-premise systems and benefit from the scale and power of cloud computing for data analysis, storage, and reporting.</p>\n<p>A hybrid cloud strategy also enables businesses to modify their cloud usage dynamically. This way, they can scale up or down as per requirement without affecting the on-premise data.</p>\n<h3><span class=\"ez-toc-section\" id=\"Use_Cases_for_On-Premise_Connectivity\"></span>Use Cases for On-Premise Connectivity<span class=\"ez-toc-section-end\"></span></h3>\n<p>There are various scenarios where connecting on-premises to the cloud becomes a necessity. Let’s examine a few key examples:</p>\n<h4><span class=\"ez-toc-section\" id=\"1_Legacy_Applications\"></span>1. Legacy Applications<span class=\"ez-toc-section-end\"></span></h4>\n<p>Older software systems usually mandate access to on-premise databases to function. Migrating these to the cloud can be difficult, expensive, and risky, and it may also require re-architecting the entire system.</p><p>By keeping these applications on-premise and using Microsoft Fabric connectivity, you can expand their functionality by integrating cloud-based <a href=\"/azure-data-analytics/\" target=\"_blank\" rel=\"noopener\">data analytics and reporting solutions</a>.</p>\n<h4><span class=\"ez-toc-section\" id=\"2_Regulatory_Requirements\"></span>2. Regulatory Requirements<span class=\"ez-toc-section-end\"></span></h4>\n<p>Businesses like healthcare and banking often have strict regulations that mandate data protection. This means some data types must be processed and stored in specific geographic regions. Utilizing a hybrid cloud approach allows you to retain control over this data while using cloud-based services for less sensitive operations.</p>\n<h4><span class=\"ez-toc-section\" id=\"3_Highly_secure_data_environments\"></span>3. Highly secure data environments<span class=\"ez-toc-section-end\"></span></h4>\n<p>&nbsp;Some data is highly sensitive and cannot be shifted to the cloud; thus, it must remain on-premise, even if the organization moves other workloads to the cloud. Whether it’s intellectual property or confidential client information, organizations can keep this data on-premise and use <a href=\"/blog/secure-data-ingestion-processes-with-microsoft-fabric/\" target=\"_blank\" rel=\"noopener\">Microsoft Fabric connectivity to securely</a> analyze it along with their cloud-based data.</p>\n<h2><span class=\"ez-toc-section\" id=\"Key_Components_Required_for_Connecting_On-Premise_Data_Sources\"></span>Key Components Required for Connecting On-Premise Data Sources<span class=\"ez-toc-section-end\"></span></h2>\n<p>Here are the essential components needed to connect your on-premise data sources successfully.</p>\n<h3><span class=\"ez-toc-section\" id=\"1_Microsoft_Fabric_Architecture\"></span>1. Microsoft Fabric Architecture<span class=\"ez-toc-section-end\"></span></h3>\n<p>To build a smooth connection between your on-premise and cloud environments, you must understand the architecture of Microsoft Fabric. Its key components include the following:</p>\n<h4><span class=\"ez-toc-section\" id=\"Data_Pipelines\"></span>Data Pipelines<span class=\"ez-toc-section-end\"></span></h4>\n<p>These allow you to move data between on-premise sources and Microsoft Fabric for processing and analysis. With data pipelines, you can automate data transfer from your on-premise environment to the cloud without manual intervention. This ensures that your data remains consistent and up-to-date in both environments.</p>\n<h4><span class=\"ez-toc-section\" id=\"Data_Flows\"></span>Data Flows<span class=\"ez-toc-section-end\"></span></h4>\n<p>These enable you to transform and clean your data as it moves between environments, ensuring consistency and quality. With data flows, you can automate data transformation tasks like filtering, sorting, and aggregation before the data is processed in the cloud.</p>\n<h4><span class=\"ez-toc-section\" id=\"Security_Layers\"></span>Security Layers<span class=\"ez-toc-section-end\"></span></h4>\n<p>Built-in encryption and security protocols ensure that cloud and on-premise data security is maintained throughout the process. This ensures that your sensitive information is protected during transit and complies with security regulations.</p>\n<h3><span class=\"ez-toc-section\" id=\"2_On-Premises_Data_Gateway\"></span>2. On-Premises Data Gateway<span class=\"ez-toc-section-end\"></span></h3>\n<p>The On-Premises Data Gateway is an important element of linking your on-premise data sources to Microsoft Fabric. It acts as a bridge that enables data transfer between your on-premise systems and cloud services. The gateway facilitates accessing your on-premise data in real-time from the cloud without moving the data itself!</p>\n<p>The On-Premises Data Gateway facilitates secure and reliable cloud-to-on-premise data communication while maintaining data integrity. In short, the gateway is the tool that makes on-premise database integration possible.</p>\n<h2><span class=\"ez-toc-section\" id=\"Preparing_Your_Environment\"></span>Preparing Your Environment<span class=\"ez-toc-section-end\"></span></h2>\n<p>It’s important to prepare your environment before you can start connecting to on-premise data sources with Fabric.</p>\n<h3><span class=\"ez-toc-section\" id=\"1_Identifying_On-Premise_Data_Sources\"></span>1. Identifying On-Premise Data Sources<span class=\"ez-toc-section-end\"></span></h3>\n<p>The first step is recognizing all the data sources you want to connect to. These can include the following:</p>\n<ul>\n<li><strong>Databases:</strong> Databases such as SQL Server, Oracle, or MySQL store important business data.</li>\n<li><strong>Files: </strong>Any data stored on local servers or file systems, including structured or unstructured data.</li>\n<li><strong>ERP Systems:</strong> Large enterprise software systems that manage business operations and data are stored in proprietary formats.</li>\n</ul>\n<p>After this, you must ensure that all data sources are compatible with Microsoft Fabric connectivity and check how often and how much data will need to be transferred.</p>\n<h3><span class=\"ez-toc-section\" id=\"2_System_Requirements\"></span>2. System Requirements<span class=\"ez-toc-section-end\"></span></h3>\n<p>The next step is to check the hardware and software requirements for installing the On-Premises Data Gateway. This includes the following:</p>\n<ul>\n<li>A dedicated server with ample resources to host the gateway. The server must meet the CPU, RAM, and storage requirements.</li>\n<li>Network permissions allow secure communication between on-premise systems and the cloud. These include opening ports and configuring firewalls.</li>\n<li>Proper user access control user access and allow only authorized users to access data. This includes setting up role-based access control (RBAC) and auditing logs to track access.</li>\n</ul>\n<h2><span class=\"ez-toc-section\" id=\"Installing_and_Configuring_the_On-Premises_Data_Gateway\"></span>Installing and Configuring the On-Premises Data Gateway<span class=\"ez-toc-section-end\"></span></h2>\n<p>After preparing your environment, the next step is to move ahead with setting up an on-premise data gateway.</p>\n<h3><span class=\"ez-toc-section\" id=\"1_Installation_Guide\"></span>1. Installation Guide<span class=\"ez-toc-section-end\"></span></h3>\n<p>Installing the On-Premises Data Gateway is straightforward but requires attention to detail. Follow these steps:</p>\n<ol>\n<li>Download the gateway installation file from the Microsoft Fabric portal.</li>\n<li>Run the installation on the server that holds your on-premise data source.</li>\n<li>Follow the setup wizard and select the configuration options according to your environment.</li>\n<li>Complete the installation and confirm that the gateway is connected to Microsoft Fabric.</li>\n</ol>\n<h3><span class=\"ez-toc-section\" id=\"2_Setting_Up_Connectivity\"></span>2. Setting Up Connectivity<span class=\"ez-toc-section-end\"></span></h3>\n<p>After installation, you must set up the gateway to enable Microsoft Fabric connectivity to your on-premise data sources. This consists of the following steps:</p>\n<ul>\n<li>Setting up network connections between your on-premise systems and the gateway.</li>\n<li>Configuring security protocols such as SSL to protect your data.</li>\n<li>Managing encryption settings ensures that all <a href=\"/blog/using-private-endpoints-with-microsoft-fabric-for-improved-security/\" target=\"_blank\" rel=\"noopener\">data transmitted to the cloud is secure</a>.</li>\n</ul>\n<h3><span class=\"ez-toc-section\" id=\"3_Configuring_Access_Control_and_Permissions\"></span>3. Configuring Access Control and Permissions<span class=\"ez-toc-section-end\"></span></h3>\n<p>You must set up access control for the On-Premises Data Gateway to protect your data. Only authorized personnel should be able to access the data, and role-based access control (RBAC) should be used to grant permissions. RBAC lets you control who can view, edit, or delete data.</p>\n<h2><span class=\"ez-toc-section\" id=\"Connecting_Microsoft_Fabric_to_On-Premise_Data_Sources\"></span>Connecting Microsoft Fabric to On-Premise Data Sources<span class=\"ez-toc-section-end\"></span></h2>\n<p>Now, let’s link Microsoft Fabric to On-premise Data Sources.</p>\n<h3><span class=\"ez-toc-section\" id=\"1_Setting_Up_Dataflows\"></span>1. Setting Up Dataflows<span class=\"ez-toc-section-end\"></span></h3>\n<p>After you have set up the On-Premises Data Gateway, you can start configuring dataflows within Microsoft Fabric to extract data from your sources. Dataflows guarantee a flawless and smooth on-premise database integration while maintaining data integrity. You can also set up automated dataflows that consistently update cloud systems with the latest on-premise data.</p>\n<h3><span class=\"ez-toc-section\" id=\"2_Scheduling_Data_Syncs\"></span>2. Scheduling Data Syncs<span class=\"ez-toc-section-end\"></span></h3>\n<p>Data synchronization ensures that data residing on-premise and in the cloud is always current. With Microsoft Fabric connectivity, you can set up periodic or real-time syncs.</p>\n<p>Periodic syncs, such as daily sales reports, are essential if the data does not change frequently.</p>\n<p>On the contrary, real-time syncs are required where immediate data updates are essential, such as when tracking financial transactions.</p>\n<p>Microsoft Fabric allows you to schedule data syncs according to your business needs. With the most updated information, you can make proactive business decisions.</p>\n<h3><span class=\"ez-toc-section\" id=\"Conclusion\"></span>Conclusion<span class=\"ez-toc-section-end\"></span></h3>\n<p>By configuring efficient data synchronization between on-premise and cloud systems using Microsoft Fabric, businesses can guarantee that they are always working with the most recent data, leading to enhanced decision-making while benefiting from the cloud’s scalability and advanced analytics.</p>\n<p>Connecting on-premise data to Microsoft Fabric provides a strong solution for managing a hybrid environment. With its secure architecture and easy integration, businesses can build a strong link between legacy systems and cloud systems, accelerating growth and efficiency.</p>\n<p>However, it is always recommended to <a href=\"/\" target=\"_blank\" rel=\"noopener\">partner with an expert such as Folio3</a> to ensure smooth integration between your On-premise and cloud Sources using the ground-breaking <a href=\"/microsoft-fabric-services/\" target=\"_blank\" rel=\"noopener\">Microsoft Fabric</a>!</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t",
+  "related": [
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ways-hr-teams-can-automate-workforce-r",
+      "href": "/blog/ways-hr-teams-can-automate-workforce-reporting-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/real-time-data-intelligence-in-microso",
+      "href": "/blog/managing-real-time-data-streams-efficiently-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ai-financial-planning-azure-300x198.jp",
+      "href": "/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/",
+      "image": ""
+    }
+  ]
+}

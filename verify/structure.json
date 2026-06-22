@@ -1,0 +1,111 @@
+{
+  "process": {
+    "animSettings": [],
+    "stepClasses": [
+      "elementor-element elementor-element-b043cc2 elementor-widget elementor",
+      "elementor-element elementor-element-aaa96e8 elementor-widget elementor",
+      "elementor-element elementor-element-f1ddf3d elementor-flip-box--effect",
+      "step",
+      "step",
+      "elementor-element elementor-element-4bab402 elementor-flip-box--effect"
+    ]
+  },
+  "discoverTabLabels": [
+    "Azure Cloud Services",
+    "Power Platform",
+    "Azure Data Analytics",
+    "Azure Managed Services"
+  ],
+  "discoverTabs": [
+    {
+      "illustration": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+      "bullets": [],
+      "allImgs": [
+        "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+        "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+        "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+        "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+        "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp"
+      ]
+    },
+    {
+      "illustration": "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+      "bullets": [],
+      "allImgs": [
+        "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+        "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+        "/wp-content/uploads/2023/04/Power-Virtual-Agents.png",
+        "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+        "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform.webp"
+      ]
+    },
+    {
+      "illustration": "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+      "bullets": [],
+      "allImgs": [
+        "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+        "/wp-content/uploads/2023/04/Data-Integration-and-ETL.png",
+        "/wp-content/uploads/2023/04/Data-Analysis-and-Visualization.png",
+        "/wp-content/uploads/2023/04/Governance-Security-and-Compliance.png",
+        "/wp-content/uploads/2023/04/azure_data_analytics.webp"
+      ]
+    },
+    {
+      "illustration": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+      "bullets": [],
+      "allImgs": [
+        "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+        "/wp-content/uploads/2023/07/6-Advisory.png",
+        "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+        "/wp-content/uploads/2023/07/8-Security-Managment.png",
+        "/wp-content/uploads/2023/04/azure-managed-services-3.webp"
+      ]
+    }
+  ],
+  "partnerDesignations": [
+    {
+      "img": "/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp",
+      "alt": "data-ai-azure-logo-img"
+    },
+    {
+      "img": "/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp",
+      "alt": "infrastructure-azure-logo-img"
+    },
+    {
+      "img": "/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp",
+      "alt": "digital-app-innovation-logo-img"
+    },
+    {
+      "img": "/wp-content/uploads/2024/08/business-application-logo-img.webp",
+      "alt": "business-application-logo-img"
+    }
+  ],
+  "pillarsImages": [
+    "/wp-content/uploads/2023/05/employee-image-1-1.png",
+    "/wp-content/uploads/2023/05/agility.webp",
+    "/wp-content/uploads/2023/05/scalability1-1.webp"
+  ],
+  "awardsOrder": [
+    "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+    "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+    "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+    "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+    "/wp-content/uploads/2023/07/azure_administration.svg",
+    "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+    "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+    "/wp-content/uploads/2023/07/data-analyst.svg",
+    "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+    "/wp-content/uploads/2023/07/power_platform_developers.svg",
+    "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+    "/wp-content/uploads/2023/07/MB-900.svg",
+    "/wp-content/uploads/2023/07/AI-102.svg",
+    "/wp-content/uploads/2023/07/DP-100.svg",
+    "/wp-content/uploads/2023/07/AZ-140.svg",
+    "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+    "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+    "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg"
+  ],
+  "scale": {
+    "html": "<section class=\"elementor-section elementor-inner-section elementor-element elementor-element-06812c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"06812c5\" data-element_type=\"section\" data-e-type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;gradient&quot;}\"> <div class=\"elementor-container elementor-column-gap-default\"> <div class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-48bea4a\" data-id=\"48bea4a\" data-element_type=\"column\" data-e-type=\"column\"> <div class=\"elementor-widget-wrap elementor-element-populated\"> <div class=\"elementor-element elementor-element-c68d091 elementor-widget elementor-widget-heading\" data-id=\"c68d091\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\"> <div class=\"elementor-widget-container\"> <h3 class=\"elem"
+  }
+}

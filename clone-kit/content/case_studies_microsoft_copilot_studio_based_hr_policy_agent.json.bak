@@ -1,0 +1,541 @@
+{
+  "url": "https://azure.folio3.com/case-studies/microsoft-copilot-studio-based-hr-policy-agent/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Copilot Studio Based HR Policy Agent by Folio3 | Case Study",
+    "description": "Learn how Folio3 built a Microsoft Copilot Studio-based HR Policy Agent for the Real Estate Regulation Company to streamline HR policy access and improve employee experience using AI.",
+    "canonical": "https://azure.folio3.com/case-studies/microsoft-copilot-studio-based-hr-policy-agent/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Government / Real Estate Regulation"
+        },
+        {
+          "tag": "h3",
+          "text": "500+ Employees"
+        },
+        {
+          "tag": "h3",
+          "text": "Digital Transformation & Employee Experience"
+        },
+        {
+          "tag": "h2",
+          "text": "Real Estate Regulation Company"
+        }
+      ],
+      "paragraphs": [
+        "About The Client",
+        "The Real Estate Regulation Company is the central regulatory body for the real estate sector in the Kingdom of Saudi Arabia. Established in 2017 to oversee non-governmental real estate activities, this company plays a pivotal role in Saudi Vision 2030 by enhancing market transparency, issuing licenses, and protecting consumer rights to foster a world-class investment environment."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "High Volume Manual Inquiries and Operational Bottlenecks"
+        },
+        {
+          "tag": "h3",
+          "text": "Key business areas impacted included:"
+        },
+        {
+          "tag": "h3",
+          "text": "HR Productivity and Strategic Focus"
+        },
+        {
+          "tag": "h3",
+          "text": "Employee Experience and Satisfaction"
+        },
+        {
+          "tag": "h3",
+          "text": "Operational Scalability and Response Times"
+        },
+        {
+          "tag": "h3",
+          "text": "Operational Scalability and Response Times"
+        }
+      ],
+      "paragraphs": [
+        "Their HR department was overwhelmed by a high volume of redundant, transactional questions regarding company policies. Traditional support methods were inefficient, forcing staff to rely on manual, reactive processes rather than scalable, real-time solutions.",
+        "As a result, HR teams were consumed by repetitive tasks, leading to delayed responses and a lack of 24/7 self-service support for the organization."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "The 5-Step Solution Flow"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Integration with Company's Knowledge Base"
+        },
+        {
+          "tag": "h3",
+          "text": "NLP-Powered Policy Interpretation"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Grounding in Approved Text"
+        },
+        {
+          "tag": "h3",
+          "text": "24/7 Agentic Self-Service Interface"
+        },
+        {
+          "tag": "h3",
+          "text": "Unified, Compliant Internal Support"
+        }
+      ],
+      "paragraphs": [
+        "Establishes a direct and secure connection to company's official HR policies and internal data.",
+        "Uses Natural Language Processing to understand and interpret complex policy nuances.",
+        "Ensures every answer is 100% accurate and backed by official, approved documentation.",
+        "Provides employees with instant, around-the-clock access to HR information without manual intervention.",
+        "Delivers a single, consistent source of truth for all HR-related employee queries."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "TRANSFORM YOUR GROWER DATA",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Key Features"
+        },
+        {
+          "tag": "h3",
+          "text": "24/7 AI-Powered Self-Service"
+        },
+        {
+          "tag": "h3",
+          "text": "Strict Security Guardrails"
+        },
+        {
+          "tag": "h3",
+          "text": "NLP Conversational Interface"
+        },
+        {
+          "tag": "h3",
+          "text": "Deep Document Grounding"
+        }
+      ],
+      "paragraphs": [
+        "Employees get instant, natural-language answers to policy questions at any time, on any device.",
+        "Custom-configured filters to reject off-topic, political, or unrelated queries, ensuring the agent remains professional and compliant.",
+        "A user-friendly chat experience that understands intent, reducing the need for employees to search through long PDF manuals.",
+        "Unlike generic AI, this agent only provides answers cited from company’s specific, approved policy texts."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "24/7 AI-Powered Self-Service"
+        },
+        {
+          "tag": "h3",
+          "text": "Strict Security Guardrails"
+        }
+      ],
+      "paragraphs": [
+        "Employees get instant, natural-language answers to policy questions at any time, on any device.",
+        "Custom-configured filters to reject off-topic, political, or unrelated queries, ensuring the agent remains professional and compliant."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "NLP Conversational Interface"
+        },
+        {
+          "tag": "h3",
+          "text": "Deep Document Grounding"
+        }
+      ],
+      "paragraphs": [
+        "A user-friendly chat experience that understands intent, reducing the need for employees to search through long PDF manuals.",
+        "Unlike generic AI, this agent only provides answers cited from company’s specific, approved policy texts."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Business Impact & Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "60% Increase in HR Productivity"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"92\" height=\"92\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2026/01/increase-hr-productivity-icon.svg\" alt=\" \"> 60% Increase in HR Productivity"
+        },
+        {
+          "tag": "h3",
+          "text": "Instant Response Times"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"102\" height=\"92\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2026/01/instant-response-times-icon.svg\" alt=\" \"> Instant Response Times"
+        },
+        {
+          "tag": "h3",
+          "text": "Strategic Re-alignment"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"96\" height=\"96\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg\" alt=\" \">Strategic Re-alignment"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhanced Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"65\" height=\"75\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2026/01/enhanced-compliance-icon.svg\" alt=\" \"> Enhanced Compliance"
+        }
+      ],
+      "paragraphs": [
+        "The transition from manual support to an AI-enabled model delivered immediate results:"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "GET RESULTS. REQUEST A DEMO",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ready to Modernize Your HR Operations?"
+        },
+        {
+          "tag": "h2",
+          "text": "See how Microsoft Copilot Studio can transform your internal workflows."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Schedule a 1:1 Call Today",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": null,
+          "w": 510,
+          "h": 493
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ready to Modernize Your HR Operations?"
+        },
+        {
+          "tag": "h2",
+          "text": "See how Microsoft Copilot Studio can transform your internal workflows."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Schedule a 1:1 Call Today",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": null,
+          "w": 510,
+          "h": 493
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot.webp 891w, https://azure.folio3.com/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot-300x236.webp 300w, https://azure.folio3.com/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot-768x605.webp 768w",
+      "alt": null,
+      "w": "891",
+      "h": "702",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png 510w, https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with--300x290.png 300w",
+      "alt": null,
+      "w": "510",
+      "h": "493",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower-header-bg.webp",
+    "https://azure.folio3.com/wp-content/uploads/2026/01/buildings.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/Line-5-1.png",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/Line-8-1.png"
+  ]
+}

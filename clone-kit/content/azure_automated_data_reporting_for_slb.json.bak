@@ -1,0 +1,678 @@
+{
+  "url": "https://azure.folio3.com/azure-automated-data-reporting-for-slb/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Azure Automated Data Reporting With 99.9% Data Accuracy For SLB",
+    "description": "See how Folio3 implemented azure automated data reporting solution for SLB to ingest, store, and visualize oil/gas data via Power BI dashboards",
+    "canonical": "https://azure.folio3.com/azure-automated-data-reporting-for-slb/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Automating Data & Reporting on Azure with 99.9% Data Accuracy"
+        },
+        {
+          "tag": "h2",
+          "text": "Our Azure experts implemented an end-to-end automated reporting platform that aggregates data from Azure SQL and Google Analytics, visualizing it with the help of Power BI."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "EXPLORE ENERGY DATA SOLUTIONS",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting.webp",
+          "alt": null,
+          "w": 662,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "Home » Azure Automated Data Reporting For SLB"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Houston, Texas"
+        },
+        {
+          "tag": "h3",
+          "text": "Oil and Energy"
+        },
+        {
+          "tag": "h3",
+          "text": "Large Enterprise"
+        },
+        {
+          "tag": "h2",
+          "text": "SLB - Formerly Schlumberger"
+        }
+      ],
+      "paragraphs": [
+        "About The Client",
+        "SLB (formerly known as Schlumberger) is a global technology company that leads innovation in the energy industry. They are headquartered in Houston, Texas. They operate in more than 100 countries, with an annual revenue of $36.07 billion, providing cutting-edge solutions to customers across the oil and gas, geothermal, carbon capture, and renewable energy sectors. They are committed to pioneering technological advancements to address the complex energy challenges globally."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/slb.webp",
+          "alt": null,
+          "w": 267,
+          "h": 267
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "THE PROBLEM"
+        },
+        {
+          "tag": "h2",
+          "text": "Fragmented Data and Manual Reporting Bottlenecks"
+        },
+        {
+          "tag": "h3",
+          "text": "Delayed data access slowed down managers in analyzing the data needed for critical business decisions"
+        },
+        {
+          "tag": "h3",
+          "text": "Lack of tools made non-technical teams unable to generate their own reports"
+        },
+        {
+          "tag": "h3",
+          "text": "Manual data extraction posed the constant risk of errors and discrepancies across reports"
+        },
+        {
+          "tag": "h3",
+          "text": "Inability to consolidate data from multiple sources to oversee a holistic business performance"
+        },
+        {
+          "tag": "h3",
+          "text": "Inefficient utilization of technical resources as they were constantly distracted by routine data extraction tasks from the DBAs"
+        }
+      ],
+      "paragraphs": [
+        "The Oil Field Marketplace (OFMP) team at SLB saw itself at the crossroads of being unable to utilize operational data effectively. Data from Azure SQL Database and Google Analytics was siloed and demanded manual work for extraction and reporting. This continued dependence on the technical teams and DBAs to satisfy reporting needs created bottlenecks in the following areas:"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "GET A FREE DATA CONSULTATION",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "OUR SOLUTION"
+        },
+        {
+          "tag": "h2",
+          "text": "An End-To-End Automated Data Reporting Platform"
+        },
+        {
+          "tag": "h2",
+          "text": "Folio3 partnered with SLB to design and implement an Azure-powered data ingestion and reporting solution:"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Data Ingestion  and Transformation"
+        },
+        {
+          "tag": "h3",
+          "text": "Centralized Data Lake"
+        },
+        {
+          "tag": "h3",
+          "text": "Unified Visualization & Reporting  Using Power BI"
+        }
+      ],
+      "paragraphs": [
+        "Utilizing Microsoft Azure’s data services (Azure Data Factory and Azure Databricks) to upgrade manual data consolidation to efficient data ingestion from Azure SQL Database and Google Analytics, and improving data quality, respectively.",
+        "Serving as a central repository for all raw and processed data, laying down a secure and scalable foundation.",
+        "Delineating complex operational data in interactive dashboards and reports using Power BI. This was made accessible through the OFMP portal."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Energy/Oil & Gas Dashboards & Reporting Suite"
+        },
+        {
+          "tag": "h3",
+          "text": "Order Details"
+        },
+        {
+          "tag": "h3",
+          "text": "Product Health"
+        },
+        {
+          "tag": "h3",
+          "text": "Sales By Category/Product"
+        },
+        {
+          "tag": "h3",
+          "text": "Sales Distribution"
+        }
+      ],
+      "paragraphs": [
+        "From order details to product health KPIs and sales realized per category/brand/product, and distribution is holistically reported through the dashboards backed by Power BI:",
+        "Providing a detailed breakdown of order trends over time.",
+        "Offering insights into product performance and lifecycle.",
+        "Visualizing sales performance across different categories and individual products.",
+        "Illustrating the geographical or channel-based spread of sales."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Order Details"
+        },
+        {
+          "tag": "h3",
+          "text": "Product Health"
+        },
+        {
+          "tag": "h3",
+          "text": "Sales By Category/Product"
+        },
+        {
+          "tag": "h3",
+          "text": "Sales Distribution"
+        }
+      ],
+      "paragraphs": [
+        "Providing a detailed breakdown of order trends over time.",
+        "Offering insights into product performance and lifecycle.",
+        "Visualizing sales performance across different categories and individual products.",
+        "Illustrating the geographical or channel-based spread of sales."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Order Details"
+        }
+      ],
+      "paragraphs": [
+        "Providing a detailed breakdown of order trends over time."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Product Health"
+        }
+      ],
+      "paragraphs": [
+        "Offering insights into product performance and lifecycle."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Sales By Category/Product"
+        }
+      ],
+      "paragraphs": [
+        "Visualizing sales performance across different categories and individual products."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Sales Distribution"
+        }
+      ],
+      "paragraphs": [
+        "Illustrating the geographical or channel-based spread of sales."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Business Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "Self-Service Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Visibility"
+        },
+        {
+          "tag": "h3",
+          "text": "Improved Data Accuracy"
+        }
+      ],
+      "paragraphs": [
+        "The implementation of an automated data reporting solution powered by Microsoft Azure Data Services delivered significant and measurable results to SLB’s OFMP team, giving them the ability to efficiently extract, transform, load and report their data.",
+        "Gaining direct access to data and reporting tools reduced massive dependence on the technical teams and DBAs and increased their productivity by 5%.",
+        "The creation of a unified reporting platform provided instant insights into key operational metrics such as:",
+        "Achieved 99.9% data accuracy through automation of data ingestion and reporting, paving the way for more reliable data to work with."
+      ],
+      "listItems": [
+        "Tracking and optimizing vendor contributions.",
+        "Real-time tracking of order statuses and trends.",
+        "Highlighting highly demanded products and market trends.",
+        "Analyzing customer interactions and understanding their preferences."
+      ],
+      "ctas": [
+        {
+          "text": "CONTACT US TO BOOST YOUR OPERATIONAL EFFICIENCY",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": null,
+          "w": 510,
+          "h": 493
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": null,
+          "w": 510,
+          "h": 493
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting.webp 662w, https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting-300x272.webp 300w",
+      "alt": null,
+      "w": "662",
+      "h": "600",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/slb.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/slb.webp 267w, https://azure.folio3.com/wp-content/uploads/2025/07/slb-150x150.webp 150w",
+      "alt": null,
+      "w": "267",
+      "h": "267",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png 510w, https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with--300x290.png 300w",
+      "alt": null,
+      "w": "510",
+      "h": "493",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/07/adr-header-bg.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/Line-5-1.png",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/Line-8-1.png"
+  ]
+}

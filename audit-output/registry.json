@@ -1,0 +1,998 @@
+{
+  "post": [
+    {
+      "loc": "https://azure.folio3.com/blog/azure-devops-test-automation/",
+      "lastmod": "2023-05-08T10:31:22+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-azure-professional-services-why-your-business-needs-them/",
+      "lastmod": "2023-05-08T11:16:44+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/comparing-aws-azure-google-cloud-services/",
+      "lastmod": "2023-05-08T12:30:49+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/power-platform-on-azure/",
+      "lastmod": "2023-05-08T13:46:47+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-synapse-vs-databricks/",
+      "lastmod": "2024-04-17T10:50:19+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-data-lake-analytics-vs-synapse/",
+      "lastmod": "2024-04-17T10:51:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-integration-with-azure-data-factory/",
+      "lastmod": "2024-04-17T10:52:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-data-factory-etl-tool/",
+      "lastmod": "2024-04-17T10:53:53+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-warehouse-modernization-azure/",
+      "lastmod": "2024-04-17T10:54:50+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-elt-meaning/",
+      "lastmod": "2024-04-17T11:01:53+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/top-5-data-cleansing-tools-in-2023-how-to-select-the-right-one/",
+      "lastmod": "2024-04-17T11:03:47+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-strategy/",
+      "lastmod": "2024-04-17T11:06:07+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/how-business-intelligence-services-can-help-companies-stay-ahead-of-the-competition/",
+      "lastmod": "2024-04-17T11:07:16+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/powerbi-benefits/",
+      "lastmod": "2024-04-17T11:10:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-asset-management/",
+      "lastmod": "2024-04-17T12:16:13+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-certification/",
+      "lastmod": "2024-04-19T10:07:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/enterprise-data-architecture/",
+      "lastmod": "2024-04-19T10:21:05+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-coud-migration-tools/",
+      "lastmod": "2024-04-19T10:25:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/logistics-dashboards/",
+      "lastmod": "2024-04-19T10:33:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/custom-dashboards/",
+      "lastmod": "2024-04-22T13:55:14+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/business-dashboard-software/",
+      "lastmod": "2024-04-30T11:59:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/supply-chain-dashboards/",
+      "lastmod": "2024-04-30T13:01:35+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/integrating-microsoft-fabric-with-databricks/",
+      "lastmod": "2024-05-08T09:12:01+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-integration-etl-tools/",
+      "lastmod": "2024-05-08T10:47:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/power-bi-dashboard-vs-report/",
+      "lastmod": "2024-05-15T10:42:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/sales-performance-dashboards/",
+      "lastmod": "2024-05-17T05:48:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/streamlining-inventory-management-with-interactive-dashboards/",
+      "lastmod": "2024-05-22T08:27:39+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/optimize-store-performance-with-store-performance-dashboard/",
+      "lastmod": "2024-05-22T11:21:10+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/integrating-microsoft-fabric-in-power-bi/",
+      "lastmod": "2024-05-31T12:41:23+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-license/",
+      "lastmod": "2024-06-06T13:20:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/ecommerce-dashboard/",
+      "lastmod": "2024-06-07T07:12:39+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/retail-dashboards/",
+      "lastmod": "2024-06-11T10:37:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/customer-data-insights/",
+      "lastmod": "2024-06-12T06:13:45+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/implementing-timezones-in-power-bi/",
+      "lastmod": "2024-06-20T13:42:09+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/healthcare-business-insights/",
+      "lastmod": "2024-06-26T05:18:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-insights-companies/",
+      "lastmod": "2024-06-26T05:43:53+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/dashboard-software/",
+      "lastmod": "2024-07-03T06:24:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-erp-dashboards/",
+      "lastmod": "2024-07-09T10:16:50+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-with-dynamics-365-finance-and-operation/",
+      "lastmod": "2024-07-15T08:55:49+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-with-microsoft-erp-consulting/",
+      "lastmod": "2024-07-15T09:45:01+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-implementation-for-business-central-erp/",
+      "lastmod": "2024-07-23T10:20:44+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-implementation-for-organizations/",
+      "lastmod": "2024-08-29T12:07:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-implementation-for-production-data-reporting/",
+      "lastmod": "2024-08-29T12:13:19+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-implementation-for-supply-chain-reporting/",
+      "lastmod": "2024-08-29T12:22:02+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/power-bi-dashboards-with-microsoft-fabric/",
+      "lastmod": "2024-08-29T13:05:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/folio3-secures-microsoft-solution-partner-designation-in-four-key-areas/",
+      "lastmod": "2024-09-02T05:55:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-with-medallion-architecture/",
+      "lastmod": "2024-09-02T06:36:04+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/optimizing-fabric-response-time/",
+      "lastmod": "2024-09-02T09:18:58+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/which-microsoft-fabric-skus-suits-your-organization-needs/",
+      "lastmod": "2024-09-04T06:04:01+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/overview-of-microsoft-fabric-skus/",
+      "lastmod": "2024-09-04T06:16:20+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-for-powerbi-reporting/",
+      "lastmod": "2024-09-04T10:07:09+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-vs-synapse/",
+      "lastmod": "2024-09-04T11:12:31+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-consulting-for-improving-data-insight/",
+      "lastmod": "2024-09-04T13:44:07+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-for-finance-data/",
+      "lastmod": "2024-09-05T13:43:02+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-pricing/",
+      "lastmod": "2024-09-06T06:24:10+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/guide-to-microsoft-fabric-data-warehouse/",
+      "lastmod": "2024-09-06T07:23:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-data-factory-vs-databricks/",
+      "lastmod": "2024-09-06T07:34:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-quality-management-dqm/",
+      "lastmod": "2024-09-06T08:47:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/strategies-for-handling-large-scale-data-with-microsoft-fabric/",
+      "lastmod": "2024-09-10T09:02:41+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/integrating-microsoft-fabric-with-erp-systems/",
+      "lastmod": "2024-09-10T11:40:15+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/dynamics-365-finance-and-operations-with-microsoft-fabric/",
+      "lastmod": "2024-09-13T07:30:56+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-microsoft-fabric-features-benefits-use-cases/",
+      "lastmod": "2024-09-23T10:16:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/fabric-implementation-for-microsoft-dynamics-finance-and-operations-erp/",
+      "lastmod": "2024-09-23T10:24:19+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/guide-to-microsoft-fabric-capacity/",
+      "lastmod": "2024-09-23T12:20:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/secure-data-ingestion-processes-with-microsoft-fabric/",
+      "lastmod": "2024-10-09T09:46:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/using-private-endpoints-with-microsoft-fabric-for-improved-security/",
+      "lastmod": "2024-10-09T14:01:30+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-microsoft-fabric/",
+      "lastmod": "2024-10-11T11:48:40+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-vs-power-bi/",
+      "lastmod": "2024-10-11T12:00:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-onelake-in-microsoft-fabric/",
+      "lastmod": "2024-10-11T12:09:14+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-data-analytics/",
+      "lastmod": "2024-10-11T12:18:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/integrating-power-bi-data-gateway-with-microsoft-fabric/",
+      "lastmod": "2024-10-17T11:23:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/connecting-to-on-premise-data-sources-with-microsoft-fabric/",
+      "lastmod": "2024-10-22T10:35:17+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/connecting-to-aws-data-sources-with-microsoft-fabric/",
+      "lastmod": "2024-10-22T11:59:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/connecting-to-external-cloud-data-sources-with-microsoft-fabric/",
+      "lastmod": "2024-11-13T06:53:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-implementation/",
+      "lastmod": "2024-11-26T06:17:42+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-vs-databricks/",
+      "lastmod": "2024-11-26T12:35:20+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-cost-optimization-strategies/",
+      "lastmod": "2024-12-04T06:22:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-data-factory-in-microsoft-fabric/",
+      "lastmod": "2024-12-17T06:35:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-lakehouse-vs-warehouse/",
+      "lastmod": "2024-12-18T10:32:14+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/components-of-microsoft-fabric-architecture/",
+      "lastmod": "2025-01-14T07:08:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-data-fabric-architecture/",
+      "lastmod": "2025-01-14T07:43:04+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/components-of-data-fabric-architecture/",
+      "lastmod": "2025-01-14T11:07:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/connecting-to-azure-virtual-network-with-microsoft-fabric-vnet-data-gateway/",
+      "lastmod": "2025-05-23T10:02:46+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-fabric-vs-snowflake/",
+      "lastmod": "2025-05-23T10:14:35+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/best-practices-for-securing-microsoft-fabric-implementation/",
+      "lastmod": "2025-05-23T10:31:29+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/modernize-your-app-with-azure/",
+      "lastmod": "2025-05-26T09:19:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/how-predictive-ai-can-reduce-interest-costs/",
+      "lastmod": "2025-07-03T10:07:25+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/what-is-production-level-ai/",
+      "lastmod": "2025-07-09T13:39:42+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/agentic-ai-in-healthcare/",
+      "lastmod": "2025-07-15T08:18:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/impact-of-azure-business-intelligence/",
+      "lastmod": "2025-07-28T06:15:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/ai-data-governance/",
+      "lastmod": "2025-07-28T06:25:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/ai-cash-flow-model-in-azure/",
+      "lastmod": "2025-07-28T11:52:03+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/benefits-of-microsoft-copilot/",
+      "lastmod": "2025-08-19T07:19:06+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/business-intelligence-vs-business-analytics/",
+      "lastmod": "2025-09-04T06:36:50+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-silos-in-healthcare/",
+      "lastmod": "2025-09-04T07:20:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-azure-ai/",
+      "lastmod": "2025-09-05T11:36:11+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/multi-tenant-app-registration-in-azure-ad/",
+      "lastmod": "2025-09-23T07:08:40+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/guide-to-azure-ai-foundry/",
+      "lastmod": "2025-10-06T09:45:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/generative-ai-journey-with-azure-openai/",
+      "lastmod": "2025-10-09T07:09:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/power-bi-vs-tableau/",
+      "lastmod": "2025-10-13T04:28:57+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/major-azure-ai-trends/",
+      "lastmod": "2025-10-16T07:19:13+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/migration-from-synapse-to-microsoft-fabric/",
+      "lastmod": "2025-10-14T12:08:03+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/how-microsoft-365-copilot-transforms-everyday-work/",
+      "lastmod": "2025-10-21T08:04:00+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-azure-trends/",
+      "lastmod": "2025-10-23T09:31:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/benefits-of-power-automate/",
+      "lastmod": "2025-10-28T10:48:56+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-copilot-for-sales/",
+      "lastmod": "2025-10-31T10:31:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/streamlining-recruitment-process-using-copilot/",
+      "lastmod": "2025-11-05T10:08:02+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/top-business-intelligence-tools/",
+      "lastmod": "2025-11-07T11:26:42+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-synapse-power-bi/",
+      "lastmod": "2025-11-19T07:30:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/boosting-finance-efficiency-with-microsoft-365-copilot/",
+      "lastmod": "2025-11-21T10:11:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/power-bi-vs-qlik/",
+      "lastmod": "2025-11-27T10:39:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/strategies-for-financial-data-security/",
+      "lastmod": "2025-11-29T11:14:25+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-analytics-trends/",
+      "lastmod": "2025-12-09T06:57:57+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/managing-hybrid-cloud-with-azure-arc/",
+      "lastmod": "2025-12-11T07:22:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/azure-fabric-features/",
+      "lastmod": "2025-12-24T07:04:26+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/microsoft-365-copilot-features/",
+      "lastmod": "2026-04-06T10:44:10+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/data-analytics-and-business-intelligence/",
+      "lastmod": "2026-04-06T11:00:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/",
+      "lastmod": "2026-04-06T11:23:43+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/managing-real-time-data-streams-efficiently-with-microsoft-fabric/",
+      "lastmod": "2026-04-06T11:38:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/ways-hr-teams-can-automate-workforce-reporting-with-microsoft-fabric/",
+      "lastmod": "2026-04-07T10:40:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/how-to-overcome-visibility-gaps-with-end-to-end-farm-to-market-analytics/",
+      "lastmod": "2026-04-08T11:56:46+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/intellifabric-vs-custom-microsoft-fabric/",
+      "lastmod": "2026-04-13T09:44:00+00:00"
+    }
+  ],
+  "page": [
+    {
+      "loc": "https://azure.folio3.com/",
+      "lastmod": "2026-01-06T11:52:31+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/thank-you/",
+      "lastmod": "2023-06-08T10:44:45+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/privacy-policy/",
+      "lastmod": "2023-07-13T12:56:00+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/cookie-policy/",
+      "lastmod": "2023-07-13T12:57:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/case-study-slider-for-mobile/",
+      "lastmod": "2024-08-09T18:40:40+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/city-university-azure/",
+      "lastmod": "2024-09-06T08:25:25+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/client-success-story/",
+      "lastmod": "2024-09-06T08:26:11+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/end-to-end-bi-solution/",
+      "lastmod": "2024-09-06T08:29:27+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-licensing-process/",
+      "lastmod": "2024-09-06T08:32:47+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/services/",
+      "lastmod": "2024-09-06T08:33:30+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/testimonials/",
+      "lastmod": "2024-09-06T08:34:40+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/",
+      "lastmod": "2024-10-01T12:39:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/automated-data-reporting/",
+      "lastmod": "2025-06-12T09:48:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-powered-solutions/",
+      "lastmod": "2025-06-23T10:56:57+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/savills/",
+      "lastmod": "2025-06-25T11:23:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/copilot-implementation-food-verification/",
+      "lastmod": "2025-07-01T06:23:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/contact-us/",
+      "lastmod": "2025-07-01T20:54:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-automated-data-reporting-for-slb/",
+      "lastmod": "2025-07-07T09:32:45+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-fabric-reporting-for-real-estate/",
+      "lastmod": "2025-07-09T08:25:48+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/data-science-ai/microsoft-copilot-consulting/",
+      "lastmod": "2025-07-09T10:03:45+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/agriculture-data-analytics/",
+      "lastmod": "2025-07-18T07:50:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-fabric-services/microsoft-fabric-migration/",
+      "lastmod": "2025-07-22T05:14:50+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-power-platform/",
+      "lastmod": "2025-07-31T09:42:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-cloud-service/",
+      "lastmod": "2025-11-10T10:28:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/about-us/",
+      "lastmod": "2025-11-11T11:44:46+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-for-manufacturing/",
+      "lastmod": "2025-11-12T08:52:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-for-retail/",
+      "lastmod": "2025-11-12T09:24:25+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-for-healthcare/",
+      "lastmod": "2025-11-12T12:01:25+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-fabric-services/",
+      "lastmod": "2025-11-13T06:10:56+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/daraz/",
+      "lastmod": "2025-11-13T07:24:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/microsoft-power-platform-services/",
+      "lastmod": "2025-11-17T08:06:05+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/data-warehousing-as-a-service/",
+      "lastmod": "2025-11-17T08:26:39+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/data-visualization-as-a-service/",
+      "lastmod": "2025-11-17T08:39:23+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/data-integration-as-a-service/",
+      "lastmod": "2025-11-17T08:44:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/",
+      "lastmod": "2025-11-17T09:58:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-for-construction/",
+      "lastmod": "2025-11-17T10:17:45+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-for-logistics-and-transport/",
+      "lastmod": "2025-11-17T10:20:50+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-managed-services/",
+      "lastmod": "2025-11-17T10:27:56+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/data-science-ai/",
+      "lastmod": "2025-11-17T10:38:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/implementing-power-bi-dashboard-for-food-crop-grower/",
+      "lastmod": "2025-11-17T10:44:44+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/power-bi-services/",
+      "lastmod": "2025-11-17T11:35:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/power-bi-financial-reporting-for-alibaba/",
+      "lastmod": "2025-11-17T11:37:00+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/retail-analytics/",
+      "lastmod": "2025-11-17T13:46:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-agents/it-asset-management-agent/",
+      "lastmod": "2025-11-18T10:39:06+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-agents/smartexpense-agent/",
+      "lastmod": "2025-11-18T10:39:10+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-agents/",
+      "lastmod": "2025-11-18T10:39:16+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-powered-solutions/copilot-for-recruitment/",
+      "lastmod": "2025-11-18T10:39:30+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-agents/kubemonitor-agent/",
+      "lastmod": "2025-11-24T06:16:46+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-agents/ai-powered-ticketing-and-customer-service-agent/",
+      "lastmod": "2025-12-03T03:05:51+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-scenario-library/human-resources/",
+      "lastmod": "2026-01-02T05:52:28+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-scenario-library/",
+      "lastmod": "2026-01-06T05:46:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/solution/",
+      "lastmod": "2026-01-09T07:19:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/case-studies/microsoft-copilot-studio-based-hr-policy-agent/",
+      "lastmod": "2026-01-29T11:24:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/case-studies/",
+      "lastmod": "2026-02-04T04:52:10+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/copilotsolutions/",
+      "lastmod": "2026-02-17T10:00:02+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/manufacturing-data-analytics/",
+      "lastmod": "2026-02-27T05:33:19+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/azure-data-analytics/supply-chain-analytics/",
+      "lastmod": "2026-02-27T05:34:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/solution/intellifabric/",
+      "lastmod": "2026-04-13T06:59:09+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-scenario-library/finance/",
+      "lastmod": "2026-04-15T07:04:44+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/",
+      "lastmod": "2026-04-15T07:06:19+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/ai-scenario-library/copilot-in-retail/",
+      "lastmod": "2026-04-30T06:12:29+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/case-studies/popcorn-producer-intellifabric-dashboards/",
+      "lastmod": "2026-05-04T17:29:16+00:00"
+    }
+  ],
+  "managed_services": [
+    {
+      "loc": "https://azure.folio3.com/blog/managed_services/cloud-implementation/",
+      "lastmod": "2022-06-24T12:40:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/managed_services/app-modernization-development/",
+      "lastmod": "2023-06-26T09:11:52+00:00"
+    }
+  ],
+  "testimonial_slider": [
+    {
+      "loc": "https://azure.folio3.com/blog/testimonial_slider/testimonial-2/",
+      "lastmod": "2022-06-23T09:58:20+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/testimonial_slider/testimonial-1/",
+      "lastmod": "2022-06-24T05:43:56+00:00"
+    }
+  ],
+  "our_industries": [
+    {
+      "loc": "https://azure.folio3.com/blog/our_industries/manufactring/",
+      "lastmod": "2023-07-13T06:31:07+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_industries/retail/",
+      "lastmod": "2023-07-13T06:31:40+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_industries/healthcare/",
+      "lastmod": "2023-07-13T06:34:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_industries/financial-services/",
+      "lastmod": "2023-07-13T06:37:34+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_industries/manufactring-test/",
+      "lastmod": "2023-07-13T07:15:52+00:00"
+    }
+  ],
+  "our_cloud_service": [
+    {
+      "loc": "https://azure.folio3.com/blog/our_cloud_service/healthcare-2/",
+      "lastmod": "2023-07-27T11:11:18+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_cloud_service/financial-services/",
+      "lastmod": "2023-07-27T11:12:34+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_cloud_service/retail/",
+      "lastmod": "2023-07-27T11:13:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_cloud_service/manufacturing/",
+      "lastmod": "2023-07-27T11:14:24+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_cloud_service/healthcare/",
+      "lastmod": "2023-07-27T11:15:49+00:00"
+    }
+  ],
+  "our_data_analytics": [
+    {
+      "loc": "https://azure.folio3.com/blog/our_data_analytics/e-commerce-and-retail-3/",
+      "lastmod": "2023-07-27T12:00:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_data_analytics/e-commerce-and-retail-4/",
+      "lastmod": "2023-07-27T12:01:58+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_data_analytics/financial-services-2/",
+      "lastmod": "2023-07-27T12:02:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_data_analytics/financial-services/",
+      "lastmod": "2023-07-27T12:04:05+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_data_analytics/e-commerce-and-retail/",
+      "lastmod": "2023-07-27T12:06:24+00:00"
+    }
+  ],
+  "our_managed_services": [
+    {
+      "loc": "https://azure.folio3.com/blog/our_managed_services/e-commerce-and-retail-2/",
+      "lastmod": "2023-07-27T12:40:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_managed_services/e-commerce-and-retail-3/",
+      "lastmod": "2023-07-27T12:42:08+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_managed_services/e-commerce-and-retail-4/",
+      "lastmod": "2023-07-27T12:43:07+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_managed_services/e-commerce-and-retail-5/",
+      "lastmod": "2023-07-27T12:44:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/our_managed_services/e-commerce-and-retail/",
+      "lastmod": "2023-07-27T12:47:05+00:00"
+    }
+  ],
+  "slider_item": [
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/",
+      "lastmod": "2023-05-18T09:27:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/google-cloud/",
+      "lastmod": "2023-05-17T13:24:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/kubernetees/",
+      "lastmod": "2023-05-17T13:24:37+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/angular/",
+      "lastmod": "2023-05-17T13:25:03+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/aws/",
+      "lastmod": "2023-05-17T13:25:32+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/google-cloud-2/",
+      "lastmod": "2023-05-18T09:26:49+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/aws-2/",
+      "lastmod": "2023-05-18T09:27:04+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/angular-2/",
+      "lastmod": "2023-05-18T09:27:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/slider-item/kubernetees-2/",
+      "lastmod": "2023-05-18T09:27:37+00:00"
+    }
+  ],
+  "category": [
+    {
+      "loc": "https://azure.folio3.com/blog/category/app-modernization/",
+      "lastmod": "2025-05-26T09:19:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/application-development/",
+      "lastmod": "2025-07-15T08:18:38+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/azure-devops/",
+      "lastmod": "2025-11-19T07:30:54+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/azure-professional-services/",
+      "lastmod": "2025-07-28T06:25:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/blogs/",
+      "lastmod": "2026-04-13T09:44:00+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/business-insights/",
+      "lastmod": "2025-07-28T06:15:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/cloud-migration/",
+      "lastmod": "2024-04-19T10:25:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/cloud-services/",
+      "lastmod": "2024-04-17T11:06:07+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/data-analysis-and-visualization/",
+      "lastmod": "2025-10-13T04:28:57+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/data-analytics/",
+      "lastmod": "2026-04-08T11:56:46+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/data-integration-and-etl/",
+      "lastmod": "2024-09-06T08:47:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/data-storage-and-management/",
+      "lastmod": "2025-07-28T06:25:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/microsoft-fabric/",
+      "lastmod": "2026-04-07T10:40:33+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/power-platform/",
+      "lastmod": "2026-04-06T11:00:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/press-release/",
+      "lastmod": "2024-09-02T05:55:52+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/product-dashboards/",
+      "lastmod": "2024-08-29T13:05:12+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/category/uncategorized/",
+      "lastmod": "2025-11-05T11:27:36+00:00"
+    }
+  ],
+  "post_tag": [
+    {
+      "loc": "https://azure.folio3.com/blog/tag/app-modernization/",
+      "lastmod": "2025-05-26T09:19:55+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/azure-devops/",
+      "lastmod": "2024-09-06T07:34:59+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/azure-professional-services/",
+      "lastmod": "2024-09-06T08:47:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/cloud-migration-tools/",
+      "lastmod": "2024-04-19T10:25:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/cloud-services/",
+      "lastmod": "2024-09-06T08:47:36+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/dashboard-software/",
+      "lastmod": "2024-07-03T06:24:21+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/tag/power-platform/",
+      "lastmod": "2024-09-06T07:34:59+00:00"
+    }
+  ],
+  "author": [
+    {
+      "loc": "https://azure.folio3.com/blog/author/alihassan/",
+      "lastmod": "2025-07-14T08:28:49+00:00"
+    },
+    {
+      "loc": "https://azure.folio3.com/blog/author/danishsaudfolio3-com/",
+      "lastmod": "2024-02-26T09:50:33+00:00"
+    }
+  ]
+}

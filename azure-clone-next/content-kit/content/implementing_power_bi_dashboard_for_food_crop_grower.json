@@ -1,0 +1,1015 @@
+{
+  "url": "https://azure.folio3.com/implementing-power-bi-dashboard-for-food-crop-grower/",
+  "meta": {
+    "title": "Implementing Power BI to Improve Farm Efficiency",
+    "description": "Discover how a food crop grower transformed their farm operations, contract management, and grower engagement by implementing a Power BI data portal.",
+    "canonical": "https://azure.folio3.com/implementing-power-bi-dashboard-for-food-crop-grower/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "w": 181,
+          "h": 40,
+          "alt": "Folio3 | Azure"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Talk with Us +1 (408) 412-3813"
+        },
+        {
+          "t": "cta",
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Azure Cloud Services",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Intellifabric",
+        "Logistics and Transport",
+        "Healthcare",
+        "Retail",
+        "Manufacturing",
+        "Construction",
+        "Success Stories",
+        "Blog",
+        "About Us",
+        "Contact Us",
+        "Talk with Us +1 (408) 412-3813"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Real-Time Visibility of Grower Operations Via Power BI and Improving Yield Potential by 12%"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Our Power BI-based grower portal dashboard gives the client a centralized, interactive, and real-time visibility into growers’ operations and contract tracking that boosts crop yields and production capacity."
+        },
+        {
+          "t": "cta",
+          "text": "CONTACT US TO MODERNIZE YOUR FARM",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower.webp",
+          "w": 761,
+          "h": 623,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Real-Time Visibility of Grower Operations Via Power BI and Improving Yield Potential by 12%"
+        },
+        {
+          "tag": "h2",
+          "text": "Our Power BI-based grower portal dashboard gives the client a centralized, interactive, and real-time visibility into growers’ operations and contract tracking that boosts crop yields and production capacity."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "CONTACT US TO MODERNIZE YOUR FARM",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower.webp",
+          "alt": "",
+          "w": 761,
+          "h": 623
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "p",
+          "text": "Home » Implementing Power BI Dashboard For Food Crop Grower"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [
+        "Home » Implementing Power BI Dashboard For Food Crop Grower"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Williams, California"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Agriculture and Crops"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "100+"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "About The Client"
+        },
+        {
+          "t": "p",
+          "text": "They are a family-owned food crop grower, situated in Williams, California. They specialize in cultivating almonds, walnuts, pistachios, and rice, thereby satisfying the food supply needs of both regional and national markets."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Williams, California"
+        },
+        {
+          "tag": "h3",
+          "text": "Agriculture and Crops"
+        },
+        {
+          "tag": "h3",
+          "text": "100+"
+        },
+        {
+          "tag": "h2",
+          "text": "About The Client"
+        }
+      ],
+      "paragraphs": [
+        "They are a family-owned food crop grower, situated in Williams, California. They specialize in cultivating almonds, walnuts, pistachios, and rice, thereby satisfying the food supply needs of both regional and national markets."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Uncertain Operations and Disconnected Growers"
+        },
+        {
+          "t": "p",
+          "text": "The client lacked a centralized, real-time view of their critical growers’ data, which led to inefficient management and tracking of their grower contracts, field operations, and yield estimations."
+        },
+        {
+          "t": "cta",
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Tracking of growers’ contract statuses (active, pending review, declined, voided) across numerous fields and acres was manual and time-consuming."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Lack of visibility into field operations (total acres by status and county, and progress of yield estimations) hindered decision-making."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Less focus on core farming activities due to the valuable time spent on compiling manual insights."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Growers lacked direct access to their contact and yield data, widening transparency gaps and halting collaborative opportunities."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Uncertain Operations and Disconnected Growers"
+        },
+        {
+          "tag": "h3",
+          "text": "Tracking of growers’ contract statuses (active, pending review, declined, voided) across numerous fields and acres was manual and time-consuming."
+        },
+        {
+          "tag": "h3",
+          "text": "Lack of visibility into field operations (total acres by status and county, and progress of yield estimations) hindered decision-making."
+        },
+        {
+          "tag": "h3",
+          "text": "Less focus on core farming activities due to the valuable time spent on compiling manual insights."
+        },
+        {
+          "tag": "h3",
+          "text": "Growers lacked direct access to their contact and yield data, widening transparency gaps and halting collaborative opportunities."
+        }
+      ],
+      "paragraphs": [
+        "The client lacked a centralized, real-time view of their critical growers’ data, which led to inefficient management and tracking of their grower contracts, field operations, and yield estimations."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Comprehensive Power BI Grower Portal Dashboard"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Folio3 designed and implemented a Power BI-based Grower Portal Dashboard. This provided an interactive and real-time visibility into growers’ operations and their contracts. The key features of the solution include:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Strategic Optimization of Existing Reports"
+        },
+        {
+          "t": "p",
+          "text": "We deeply analyzed Savills’ existing reporting infrastructure to highlight bottlenecks and refine reporting logic for maximized performance and data accuracy."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Interactive Widgets for Deep Insights"
+        },
+        {
+          "t": "p",
+          "text": "Tracking of subcontracts by status, field operations, and crop acreage. Real-time yield estimates compare against historical data, and county-level acreage changes highlight trends over time."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Dynamic Filtering Capabilities"
+        },
+        {
+          "t": "p",
+          "text": "Global filters for Crop Year, Division (VFO, YHS), and individual growers enable users to tailor their data views instantly."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Intuitive Drill-Down Functionality"
+        },
+        {
+          "t": "p",
+          "text": "Any segment within a chart is clickable, which highlights detailed lists of contracts, growers, fields, varieties, and acres in a tabular format, along with downloadable option."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Role-Based Access"
+        },
+        {
+          "t": "p",
+          "text": "The designed permission matrix enhances security. The categorized users are granted access based on their roles and assigned growers."
+        },
+        {
+          "t": "cta",
+          "text": "TRANSFORM YOUR GROWER DATA",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Comprehensive Power BI Grower Portal Dashboard"
+        },
+        {
+          "tag": "h2",
+          "text": "Folio3 designed and implemented a Power BI-based Grower Portal Dashboard. This provided an interactive and real-time visibility into growers’ operations and their contracts. The key features of the solution include:"
+        },
+        {
+          "tag": "h3",
+          "text": "Strategic Optimization of Existing Reports"
+        },
+        {
+          "tag": "h3",
+          "text": "Interactive Widgets for Deep Insights"
+        },
+        {
+          "tag": "h3",
+          "text": "Dynamic Filtering Capabilities"
+        },
+        {
+          "tag": "h3",
+          "text": "Intuitive Drill-Down Functionality"
+        },
+        {
+          "tag": "h3",
+          "text": "Role-Based Access"
+        }
+      ],
+      "paragraphs": [
+        "We deeply analyzed Savills’ existing reporting infrastructure to highlight bottlenecks and refine reporting logic for maximized performance and data accuracy.",
+        "Tracking of subcontracts by status, field operations, and crop acreage. Real-time yield estimates compare against historical data, and county-level acreage changes highlight trends over time.",
+        "Global filters for Crop Year, Division (VFO, YHS), and individual growers enable users to tailor their data views instantly.",
+        "Any segment within a chart is clickable, which highlights detailed lists of contracts, growers, fields, varieties, and acres in a tabular format, along with downloadable option.",
+        "The designed permission matrix enhances security. The categorized users are granted access based on their roles and assigned growers."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "TRANSFORM YOUR GROWER DATA",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Business Outcomes"
+        },
+        {
+          "t": "p",
+          "text": "The implementation of Power BI Grower Portal Dashboard has stepped up their operational excellence and market position:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "17% Increase in Operational Efficiency"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "<img width=\"101\" height=\"101\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg\" alt=\" \"> 17% Increase in Operational Efficiency"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg",
+          "w": 150,
+          "h": 150,
+          "alt": " "
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "12% Higher Potential Yields"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "<img width=\"76\" height=\"92\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg\" alt=\" \"> 12% Higher Potential Yields"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg",
+          "w": 124,
+          "h": 150,
+          "alt": " "
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fortified Grower Relationships"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "<img width=\"96\" height=\"96\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg\" alt=\" \">Fortified Grower Relationships"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+          "w": 150,
+          "h": 150,
+          "alt": " "
+        },
+        {
+          "t": "cta",
+          "text": "GET RESULTS. REQUEST A DEMO",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Business Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "17% Increase in Operational Efficiency"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"101\" height=\"101\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg\" alt=\" \"> 17% Increase in Operational Efficiency"
+        },
+        {
+          "tag": "h3",
+          "text": "12% Higher Potential Yields"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"76\" height=\"92\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg\" alt=\" \"> 12% Higher Potential Yields"
+        },
+        {
+          "tag": "h3",
+          "text": "Fortified Grower Relationships"
+        },
+        {
+          "tag": "h3",
+          "text": "<img width=\"96\" height=\"96\" decoding=\"async\" src=\"https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg\" alt=\" \">Fortified Grower Relationships"
+        }
+      ],
+      "paragraphs": [
+        "The implementation of Power BI Grower Portal Dashboard has stepped up their operational excellence and market position:"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "GET RESULTS. REQUEST A DEMO",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg",
+          "alt": " ",
+          "w": 150,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg",
+          "alt": " ",
+          "w": 124,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+          "alt": " ",
+          "w": 150,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        },
+        {
+          "t": "cta",
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "w": 155,
+          "h": 150,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": "",
+          "w": 155,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "w": 283,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": "",
+          "w": 283,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "w": 300,
+          "h": 59,
+          "alt": "Azure"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "t": "li",
+          "text": "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA"
+        },
+        {
+          "t": "li",
+          "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 412-3813"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-55-6540154"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-04-2505173"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Export House, Cawsey Way, Woking Surrey, GU21 6QX"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +44 (0) 14 8361 6611"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "t": "li",
+          "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "t": "li",
+          "text": "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi"
+        },
+        {
+          "t": "li",
+          "text": "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad"
+        },
+        {
+          "t": "li",
+          "text": "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +92-21-3432 3721-4"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "t": "li",
+          "text": "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 365 4638"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        },
+        {
+          "t": "li",
+          "text": "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+        },
+        {
+          "t": "p",
+          "text": "© 2026, Folio3 Software Inc., All rights reserved."
+        },
+        {
+          "t": "p",
+          "text": "Privacy Policy & Terms of Use Cookie Policy"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        }
+      ],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel: +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel: +971-55-6540154",
+        "Tel: +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel: +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel: +92-21-3432 3721-4",
+        "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1",
+        "Tel: +1 408 365 4638",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 300,
+          "h": 59
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "alt": ""
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower-header-bg.webp",
+    "https://azure.folio3.com/wp-content/uploads/2025/07/about-client-bg.webp"
+  ]
+}

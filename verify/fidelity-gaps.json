@@ -1,0 +1,1698 @@
+[
+ {
+  "route": "/azure-data-analytics/retail-analytics/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Solving Your Biggest Retail Operations Challenges",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live shows a hero image (retail-operations-challenges.webp) plus 4 distinct challenge icons (data-overload, tailored-industry, market-pulse, network-intelligence). On the running clone the hero image fails to load (naturalWidth=0, 0x0 box) and only network-intelligence-icon.svg renders; data-overload, tailored-industry and market-pulse icons are present in markup but broken (naturalWidth=0). The section is largely image-less compared to live."
+   },
+   {
+    "section": "Solving Your Biggest Retail Operations Challenges",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders this section as an accordion (clickable expandable challenge items). The clone has no accordion/details elements at all (querySelectorAll for accordion/details returns 0); the challenges are flattened."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "The two case-study cards (Power BI Dashboards for a Food Crop Grower; Azure Automate Data Reporting for SLB) have layout slots (604x254) but their images power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp and azure-automate-data-reporting-for-slb-with-data-accuracy.webp fail to load on the clone (naturalWidth=0). Live shows both card images."
+   },
+   {
+    "section": "Ready to See How Real-Time Retail Analytics Can Transform Your Operations?",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "The CTA/transform section image transform-operations.webp does not render on the clone (image element present but 0x0, naturalWidth=0). Live displays this image."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The 6 client logos (ias-savills, ias-cityu, ias-daraz, ias-rff, slb-1, where-food-comes-from) DO render on the clone, but the section heading text 'Trusted by Organizations Around the Globe' is completely absent (document.body.innerText does not contain it). Live shows this heading above the logo strip."
+   },
+   {
+    "section": "Comprehensive Real-Time Retail Analytics Reporting Solution / Critical KPIs and Retail Analytics Insights You Can Track",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders both of these as interactive tab widgets (role=tab). The clone has zero [role=tab] elements and instead stacks all 4 tab titles/panels of each section as a flat vertical list (e.g. 360 Sales Performance Intelligence, P&L and Customer DNA Analytics, etc. all shown at once), so the tabbed UX is lost."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "low",
+    "detail": "Live renders the certification logos in a carousel/slider. The clone renders all 15 certification SVGs (azure_solution_architect, azure-data-engineer, ai-102, dp-100, etc.) as a static grid with no swiper/carousel element, so the rotating-carousel behavior is missing."
+   }
+  ]
+ },
+ {
+  "route": "/",
+  "match": "good",
+  "gaps": [
+   {
+    "section": "Awards & Recognization",
+    "type": "other",
+    "severity": "low",
+    "detail": "Cosmetic only, not a real gap: the heading is rendered as two stacked <h3> lines ('Awards &' and 'Recognization') instead of one line. The live page also stacks this text, and the section itself is faithfully implemented as an Embla carousel of all 15 Microsoft certification badges with prev/next arrows. The cmp tool's 'carousel widget missing' auto-flag is a false positive (clone uses Embla/Tailwind markup, not Elementor's .swiper class)."
+   }
+  ]
+ },
+ {
+  "route": "/ai-powered-solutions/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted By Organizations across the world",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The entire 'Trusted By Organizations across the world' client-logo band (LIVE L2, with 4 logos: ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo) is completely absent from the clone. No corresponding section exists."
+   },
+   {
+    "section": "Our AI Services",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L4-L7) is a TABS widget with 3 tabs, each exposing sub-services: 'MLOps & Integration' (Data Preprocessing, Model training, Custom ML Model Development), 'AI Strategy & Consulting' (AI Readiness Assessment, AI Implementation), and 'Generative AI & NLP' (Multimodal AI Services, AI Agent Development). The clone (C3) renders only the 3 flat top-level labels with no tabs widget and none of the sub-service items, so the entire nested service content is missing."
+   },
+   {
+    "section": "Our Microsoft AI Powered Solutions",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L10-L15) presents the 5 items (Intelligent Recruitment, IT Capacity Planning, Expense Management, Customer Insights, Talent Management) inside a TABS widget. The clone (C7) shows all five labels as a flat list with no tabs interaction."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L17) has a CAROUSEL of award logos. The clone (C9) shows only the heading text (oddly split into 'Awards &' / 'Recognization') with no carousel widget and no award images."
+   },
+   {
+    "section": "FAQ / Accordion",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live (L18) contains an ACCORDION widget section (FAQ-style). There is no corresponding accordion or section anywhere in the clone."
+   },
+   {
+    "section": "Our AI Powered Solutions (hero)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero (L1) shows heading 'Our AI Powered Solutions' plus subheading 'Nothing Is Impossible with AI' with hero image frame-1410126050-elementor-io-optimized.webp. The clone hero (C0) renders only 'Nothing Is Impossible with AI' (drops the 'Our AI Powered Solutions' heading) and displays no hero image."
+   },
+   {
+    "section": "Pioneering Innovation with AI Solutions",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live (L3) shows image frame-1410085196-elementor-io-optimized.webp alongside the heading. The clone (C2) renders the heading but no image in this section."
+   }
+  ]
+ },
+ {
+  "route": "/power-bi-financial-reporting-for-alibaba/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Our Solution / Optimized Power BI Reporting",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "On the live this is a full section with an 'OUR SOLUTION' eyebrow, an 'Optimized Power BI Reporting' H2, an intro paragraph, and a large isometric 3-step hexagon diagram (numbered 1/2/3 discs with cloud/database/cog icons) labeling Deep Data Model, Advanced DAX Query Tuning, and Strategic Data Integration with descriptions. On the clone the 'OUR SOLUTION' eyebrow and 'Optimized Power BI Reporting' heading are absent and the entire hexagon diagram is missing -- the area renders as a large blank whitespace band; only the bare sub-headings exist in the DOM but nothing renders visibly."
+   },
+   {
+    "section": "The Challenge / Navigating Data At Scale",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live shows a two-column infographic: a light-blue panel on the left (head/exclamation icon, 'THE CHALLENGE' eyebrow, 'Navigating Data At Scale' H2, intro paragraph, 'OVERCOME ECOMMERCE DATA CHALLENGES' button) plus a right column of 4 challenge points each with its own icon. The clone drops the 'The Challenge' eyebrow, the icons, the connector graphics and the button; the whole challenge infographic renders as empty whitespace -- only a bare 'Navigating Data At Scale' heading is in the DOM with no visible body."
+   },
+   {
+    "section": "Business Outcomes",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders Business Outcomes as a 3-column flip-card row (icons + 'Expedited Financial Closings', 'Enhanced Reporting Accuracy', 'Scalable Reporting Foundation' each with a description, plus a 'WANT TO ACHIEVE SIMILAR OUTCOMES?' button). The clone has no flip widget (auto-flag confirms 'flip present on live but not clone') and the section renders as an empty/whitespace band -- the three outcome cards and their descriptions are not visibly present."
+   },
+   {
+    "section": "About The Client / Alibaba",
+    "type": "layout",
+    "severity": "high",
+    "detail": "Live renders this as a blue feature band: a left blue panel with three stacked stat blocks (2012 - Pakistan, Ecommerce, Over 10,000 employees), an 'ABOUT THE CLIENT' label, 'Alibaba' heading and the Daraz description paragraph, with the orange 'Alibaba.com' logo image on the right. The clone instead renders a plain white 3-card grid where the three stat labels become card titles, the 'About The Client' text and the full paragraph are scattered across the cards, and the distinctive blue panel layout is lost."
+   },
+   {
+    "section": "About The Client / Alibaba",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "The live shows the round orange 'Alibaba.com' brand logo (alibaba-reb6f6fzc4hlu2h7ade0aw7bjk4loalc3at220tols.webp) on the right of the client band. The clone does not display this logo anywhere (auto-flag: 'IMG on live not visibly on clone: alibaba-...webp')."
+   },
+   {
+    "section": "About The Client / Alibaba",
+    "type": "stray-image",
+    "severity": "low",
+    "detail": "The clone's 3 client cards each show a generic blue diamond/rhombus placeholder icon that does not appear on the live page (the live uses no per-stat icons in this band)."
+   }
+  ]
+ },
+ {
+  "route": "/data-science-ai/microsoft-copilot-consulting/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Go from raw data to AI-driven insights—faster and smarter.",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live page has a full section headed 'Go from raw data to AI-driven insights—faster and smarter.' (live L5). This heading and section are entirely absent from the clone — 0 occurrences in the clone DOM and no corresponding rendered section."
+   },
+   {
+    "section": "Why Choose Folio3 For Microsoft 365 Copilot Services?",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The clone has an EXTRA section 'Why Choose Folio3 For Microsoft 365 Copilot Services?' (cards: Leading Microsoft Partnership / Proven Experience and Expertise / Security-First Agile Approach) sitting between 'Our Comprehensive Microsoft Copilot Services' and 'Microsoft Copilot In Action'. The live page has no such section in that position."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live L2 is a 'Trusted by Organizations Around the Globe' client-logo strip with 6 logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, slb-1, where-food-comes-from). This heading and the visible logo row do not render on the clone (clone C2 renders empty — no heading, no images)."
+   },
+   {
+    "section": "Microsoft Copilot Consulting (hero)",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live hero L1 displays the device mockup image microsoft-dynamics-365-copilot-ipad-screen.webp. The clone hero section (C1) renders with no visible heading and no visible image — the hero mockup is not displayed."
+   },
+   {
+    "section": "Automate Your Business Workflows callout",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live L3 shows the automate-your-business-workflows.webp banner/illustration. The corresponding clone section (C4) renders empty — the image is not visibly displayed."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live L8 'Awards & Recognization' uses a carousel widget to cycle award badges. The clone has no carousel (static section, 0 carousel markup). The heading is also broken across two lines as 'Awards &' / 'Recognization' on the clone."
+   },
+   {
+    "section": "Schedule a 1:1 Call Today",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live L10 'Schedule a 1:1 Call Today' includes an animated counter widget with stats (5000 / 700 / 1000 / 20). The clone's Schedule-a-1:1-Call section (C10) renders without any counter widget or those stats."
+   },
+   {
+    "section": "Real Results, Real Impact,",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live L9 includes the subheading 'See How Our Customers Succeed' above the Savills / Food Verification Organization flip cards. The clone's flip section (C9) is missing that 'See How Our Customers Succeed' subheading."
+   }
+  ]
+ },
+ {
+  "route": "/microsoft-power-platform-services/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Power Platform Applications In Action",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this as a TABS widget (widgets:tabs) with 7 tabs: SAP Innovation & Agility | Agile Extension Development | Data Flow | Cost-Effective Modernization | Business App Enhancements | Fast App Development | Tailored User Experience. The clone (C6) drops the tabs widget entirely and renders a flat grid of 12 SVG icons. It also uses a DIFFERENT heading ('Our Microsoft Power Platform Services in Action' vs live 'Power Platform Applications In Action') and different/extra tab labels (adds 'Process Mining, Automation & Migration', 'Sales & Financial Reporting')."
+   },
+   {
+    "section": "The Essentials of Power Platform for Enterprise Success",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this section as an ACCORDION (widgets:accordion). The clone (C5) renders it as a flat 4-item icon grid (low-code-no-code-empowerment-icon.svg, leveraging-generative-ai-icon.svg, robust-governance-securit-icon.svg, effortless-integration-icon.svg) with no accordion/expand-collapse behavior."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this as a CAROUSEL (widgets:carousel) of award/recognition logos. The clone (C7) has the 'Awards & Recognization' heading but no carousel widget and shows zero images — the rotating awards logos are missing."
+   },
+   {
+    "section": "Microsoft Power Platform Partner (hero)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live hero (L1) has the eyebrow heading 'Microsoft Power Platform Partner' above 'Driving Enterprise Innovation & Efficiency'. The clone hero (C0) only shows 'Driving Enterprise Innovation & Efficiency' and omits the 'Microsoft Power Platform Partner' eyebrow line."
+   },
+   {
+    "section": "Microsoft Power Platform Partner (hero)",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live hero shows the image driving-enterprise-innovation-efficiency-new.webp. The clone hero section (C0) renders zero images — the hero illustration is missing."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The clone adds an extra section (C10) titled 'Real Results, Real Impact' with 'Azure Data Services for Private Equity Firm' that does NOT exist anywhere on the live page. This is a stray/fabricated section."
+   }
+  ]
+ },
+ {
+  "route": "/ai-agents/ai-powered-ticketing-and-customer-service-agent/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live page has a 'Trusted by Organizations Around the Globe' client-logo strip showing 5 logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, superior-farms-logo). This entire section, heading and all logos, is absent from the clone."
+   },
+   {
+    "section": "The AI Advantage",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live section L2 is titled 'The AI Advantage' and contains 4 background images plus the sub-cards (Why Your Service Desk Needs Copilot Now, Cut Ticket Triage Time by 70%, Productivity Gained Every Day, Lower Operational Costs, Proactive Service). The clone (C2) drops the parent 'The AI Advantage' heading and all 4 bgImgs, starting directly at the 'Why Your Service Desk Needs Copilot Now' sub-card."
+   },
+   {
+    "section": "What Do You Get With Folio3 Zammad Copilot?",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live section L4 has the heading 'What Do You Get With Folio3 Zammad Copilot?' as a tabbed widget whose first tab is 'Intelligent Intake & Triage'. The clone (C4) omits the section heading entirely AND omits the first tab 'Intelligent Intake & Triage', starting at 'Intent Interpretation & Smart Routing'."
+   },
+   {
+    "section": "What Do You Get With Folio3 Zammad Copilot?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live L4 renders these feature items as an interactive tabs widget (widgets:tabs). The clone (C4) renders them as a flat list with no tabs widget, and also adds extra items ('One-Click Action Execution', 'Real-Time Summarization') not flagged as tabs on the live."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live L6 'Why Choose Folio3?' includes an animated counter widget with values 98, 100, 4.9, 65. The clone (C6) has the heading but no counter widget and no stat numbers."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live L7 'Awards & Recognization' uses a carousel widget to display award badges. The clone (C7, split as 'Awards &' / 'Recognization') has no carousel widget and shows no award images."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The clone adds an extra section 'Real Results, Real Impact' (C8) with a flip-box widget (e.g. 'Azure Data Services for Private Equity Firm') that does not exist anywhere on the live page."
+   },
+   {
+    "section": "Whole page",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Every rendered clone section reports imgs(0). The live page shows client logos (Trusted by section) and 4 background images in 'The AI Advantage'. None of these images appear on the clone."
+   }
+  ]
+ },
+ {
+  "route": "/city-university-azure/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Customer / company info section (1973 - Seattle, Washington)",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live customer section shows the company facts 'Year Founded: 1973' and 'Location: Seattle, Washington' as a distinct fact/label block alongside Industry and employee count. The clone's customer section renders only 'Higher Education' and '501-1000 employees' — the '1973 - Seattle, Washington' (year founded + location) fact is completely absent from the clone body (no '1973', 'Founded', 'Washington', or 'Location' text anywhere in the rendered page)."
+   },
+   {
+    "section": "Customer section heading (\"The Customer\")",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The live customer section is titled with a 'The Customer' heading above the descriptive paragraph. The clone is missing this heading entirely ('The Customer' / 'Customer' text does not appear in the clone body), so the customer description paragraph appears without its section title."
+   },
+   {
+    "section": "Customer logo image (City_u.webp) — NOTE: false-positive auto-flag",
+    "type": "other",
+    "severity": "low",
+    "detail": "The auto-flag reported city_u.webp as missing on the clone, but this is a FALSE POSITIVE: the clone HTML does include /wp-content/uploads/2023/06/City_u.webp (rendered as a 160x110 logo with empty alt), so the customer logo is actually present. The tool likely missed it because it was lazy-loaded / had empty alt text. No real image gap here."
+   }
+  ]
+ },
+ {
+  "route": "/microsoft-licensing-process/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Hero — Simplifying your Microsoft Licensing Process",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live hero section (L1) shows the image 'ms-license-img.webp' alongside the 'Microsoft Licensing / Simplifying your Microsoft Licensing Process' headings. The clone hero (C0) renders no visible image at all (imgs 0)."
+   },
+   {
+    "section": "Microsoft Tier 1 Direct Partner",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live section (L2) displays the 'microsoft-cloud-solution-provider.png' badge/image. The clone's matching section (C1) shows no image (imgs 0)."
+   },
+   {
+    "section": "Key Features of Microsoft CSP Program",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live section (L3) shows the 'key-features-img.webp' image next to the four CSP feature headings. The clone (C2) has the same headings but renders no image (imgs 0)."
+   },
+   {
+    "section": "Your Success is our Priority",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live section L4 carries the section title 'Your Success is our Priority' above the six benefit cards (One-stop-shop, Flexible Payment Plans, Better Pricing Guaranteed, Your Trusted Advisor, 24/7 Ongoing Support, Microsoft Expertise). The clone (C3) renders the six cards but is missing the 'Your Success is our Priority' section heading entirely."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live section L5 includes the sub-heading 'See How Our Customers Succeed' (with the Savills/CityU flip cards). The clone (C4) has the 'Real Results, Real Impact,' heading and the flip widget plus Savills/CityU but omits the 'See How Our Customers Succeed' sub-heading."
+   }
+  ]
+ },
+ {
+  "route": "/data-science-ai/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a client-logo trust bar 'Trusted by Organizations Around the Globe' showing 6 logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, slb-logo, where-food-comes-from). The clone has no such section and shows none of these logos."
+   },
+   {
+    "section": "FAQ accordion (after 'Real Results, Real Impact')",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a FAQ accordion section with multiple expandable Q&A items (e.g. 'What makes us the best choice for Azure AI-powered Solutions?', 'What is Microsoft AI used for?', 'Is Microsoft AI better than ChatGPT?', 'What are Microsoft Azure AI services?'). The clone has no accordion/FAQ section at all."
+   },
+   {
+    "section": "Hero / Predict, Innovate & Automate with Azure Data & AI",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live hero has the main headline 'Predict, Innovate & Automate with Azure Data & AI' above the 'Turn Data Into Business Value With Data Science and AI' text. The clone hero shows only 'Turn Data Into Business Value...' and is missing the 'Predict, Innovate & Automate with Azure Data & AI' headline."
+   },
+   {
+    "section": "Our Data Science and AI Deployment Process",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders the deployment steps in a carousel/slides widget; the clone renders the same steps as a static/flat layout with no carousel. Clone also omits the step descriptions present on live (e.g. 'Develop a custom Azure Data Science and AI roadmap.', 'Build, train, and deploy models and solutions on Azure.')."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders the Awards & Recognization section as a carousel/slides widget; the clone has no carousel widget in this section."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live includes the subheading 'See How Our Customers Succeed' within the Real Results flip-box section; the clone's section is missing this subheading (flip-box widget itself is present on both)."
+   }
+  ]
+ },
+ {
+  "route": "/data-warehousing-as-a-service/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Learn More About Our Services",
+    "type": "wrong-image",
+    "severity": "medium",
+    "detail": "The live blog section shows exactly two titled, linked blog cards: '8 Crucial Elements for a Successful Data Strategy in 2023' and 'Advantages of Modernizing your Data Warehouse with Azure'. The clone renders the heading but the cards are wrong/blank: thumbnails point to unrelated blogs (How-to-Build-Custom-Dashboards-for-Effective-Data-Visualization-300x198.png and Azure-Blog-Images-850-...-3-300x198.png), and neither live blog title appears anywhere in the page, with zero blog links rendered in this section."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The four client logos (ias-savills, ias-cityu, ias-daraz, ias-rff) do render in the clone, but the section heading text 'Trusted by Organizations Around the Globe' is absent; the logos appear directly after the hero/breadcrumb with no section title."
+   }
+  ]
+ },
+ {
+  "route": "/ai-scenario-library/finance/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Comprehensive Finance Use Cases",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "The live renders this section as an interactive Elementor n-tabs widget: a horizontal tab bar of 5 pillars (Risk Management & Compliance, Planning & Analysis (FP&A), Procure to Pay, Record to Report, Day in the Life of a Finance Pro), where each tab switches the panel to show its own dedicated image (risk-management-compliance.webp, planning-analysis.webp, procure-to-pay.webp, record-to-report.webp, day-in-the-life-of-a-finance-pro.webp) plus its 2 sub-features and a 'ACHIEVE THESE WITH POWER PLATFORM' CTA. The clone has NO tab bar (0 role=tab, no 'Find Out More'/CTA) — it flattens all 5 pillars and their 10 sub-features into one long stacked 2-column feature list. Confirmed by auto-flag 'WIDGET tabs present on live but not clone'. Tab detection in OrderedRenderer fails because each tab-label heading here carries a paragraph, so the isTabbed heuristic (requires no paragraph on the first bucket unit) does not fire."
+   },
+   {
+    "section": "Comprehensive Finance Use Cases",
+    "type": "layout",
+    "severity": "medium",
+    "detail": "Because the tab widget is flattened, the section's structure differs: the live shows ONE active image at a time beside the active tab's features; the clone renders all content for all 5 pillars at once (Risk Management..., then Planning & Analysis..., then Procure to Pay..., then Record to Report..., then Day in the Life...) in a single tall column with the 705px hero image on the side and the other four images shrunk to 44px icons. The page is much longer and loses the tabbed interaction the live presents."
+   },
+   {
+    "section": "Client logo strip (Trusted by Organizations Around the Globe)",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The live shows the heading 'Trusted by Organizations Around the Globe' above the row of 5 client logos (ias-savills, ias-cityu, ias-daraz, ias-rff, superior-farms). The clone renders the logo strip with the 5 logos present but omits the 'Trusted by Organizations Around the Globe' heading entirely (0 occurrences in clone HTML)."
+   }
+  ]
+ },
+ {
+  "route": "/case-studies/",
+  "match": "good",
+  "gaps": []
+ },
+ {
+  "route": "/ai-scenario-library/human-resources/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Real Results, Real Impact / See How Our Customers Succeed",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "On the live this is an industry-tabbed case-study showcase: tabs for Azure Cloud, Financial Services, Food & Agriculture, Energy Oil & Gas and Power Platform, each surfacing multiple case studies (e.g. 'Azure Data Services for Private Equity Firm', 'Automating Food Plan Management & Saving 60% Time with Copilot', 'Azure Automate Data Reporting for SLB with 99.9% Data Accuracy'). The clone renders it as a plain static 3-column flip-card grid (grid-cols-3) with no industry tabs/filtering and only the generic cards — the tabbed multi-industry switcher and its full set of named case studies are missing."
+   },
+   {
+    "section": "Folio3 HR Agent Hub Use Cases",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live presents the five use-case categories (Recruitment & Talent Acquisition, Employee Onboarding & Integration, Benefits & Compensation Management, Learning & Career Development, Organizational Health & Employee Experience) as an interactive tabs widget where each category opens its own panel. The clone renders all categories and their sub-items stacked into a single flat 2-column list (no tabs/role=tab, no buttons) — content present but the tabbed widget is gone."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live shows the award/certification logos in a swiper/carousel. The clone renders them as a static flex-wrap row of logos inside a blue banner with no carousel/swiper — the rotating carousel widget is missing."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The clone renders the five partner logos (ias-savills, ias-cityu, ias-daraz, ias-rff, superior-farms) in a grid, but the section heading is rendered with children:$undefined — the 'Trusted by Organizations Around the Globe' title that appears above the logo strip on the live is absent in the clone."
+   }
+  ]
+ },
+ {
+  "route": "/case-studies/popcorn-producer-intellifabric-dashboards/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Key Features",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders Key Features as an interactive TABS widget with three clickable tabs (Financial Performance Monitoring | Sales and Customer Insights | Inventory and Cost Management), each revealing its own icon cards. The clone renders all three groups flat as a single static card grid with no tabs (cmp tool reports widgets:tabs on live but none on clone; clone HTML contains no role=\"tab\"/tablist/aria-selected at all)."
+   },
+   {
+    "section": "About The Client (client-info card)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live client-info card shows 'Indiana, United States' (location) and the company name heading 'Weaver Popcorn Hybrids' alongside 'Farming and Seed Production' and '11-50 employees'. The clone card (C1) only shows 'Farming and Seed Production' and '11-50 employees' - both 'Indiana, United States' and 'Weaver Popcorn Hybrids' are entirely absent from the clone (0 occurrences in rendered HTML)."
+   },
+   {
+    "section": "Hero (A Leading Popcorn Producer)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero displays the weaver-popcorn-hybrids.webp product render image on the right side (cmp lists it as visible on live). On the clone the hero product image is not visibly rendered - only the abstract blue header background shows through - so the hero looks generic instead of the popcorn dashboards product visual (cmp reports imgs(0) for the clone hero)."
+   },
+   {
+    "section": "The problem (Delayed Insights and Reactive Decision-Making)",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live shows a 'The problem' eyebrow/label heading above the 'Delayed Insights and Reactive Decision-Making' section. This eyebrow is absent on the clone (0 occurrences of 'The problem' in clone HTML)."
+   },
+   {
+    "section": "Folio3 Solution (One Source of Truth, Powered by IntelliFabric)",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live shows a 'Folio3 Solution' eyebrow/label heading above the 'One Source of Truth, Powered by IntelliFabric' section. This eyebrow is absent on the clone (0 occurrences of 'Folio3 Solution' in clone HTML)."
+   }
+  ]
+ },
+ {
+  "route": "/azure-data-analytics/manufacturing-data-analytics/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Sneak Peek Into Our Pre-built Manufacturing BI Dashboards",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "On the live this is a TABBED section: an h2 'Sneak Peek Into Our Pre-built Manufacturing BI Dashboards' with a tabs widget switching between 4 panels (Inventory Management / Production Performance / OTIF / Sales Order Analysis). In the clone the section heading 'Sneak Peek...' is entirely absent, the first tab heading 'Inventory Management' is missing, and the 4 dashboards are rendered as a flat card grid with no tabs widget. The dashboard images (inventory-management-mda.webp etc.) do render, but the tabbed UX and the section title are lost."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this section with an animated counter widget showing 4 stats (counters 98, 100, 4.9, 65). The clone renders 'Why Choose Folio3?' as a plain text/bullet block ('Over 15 years...', 'Microsoft Business Solutions Partner...') with NO counter widget and none of the 98/100/4.9/65 stat values."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live uses a carousel widget to rotate the Azure certification badges. The clone renders the badges (azure_solution_architect.svg, azure_administration.svg, data-analyst.svg, etc.) as a static grid with no carousel/swiper, so the section does not slide."
+   },
+   {
+    "section": "The Indispensable Value of BI Reporting for Manufacturers",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live presents this section as an accordion. The clone renders the 5 value items (operational-efficiency-icon, quality-control-icon, optimize-inventory-icon, asset-optimization-icon, cost-reduction-icon) as a static icon layout with no accordion/expand-collapse behavior."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The 'Trusted by Organizations Around the Globe' heading is absent in the clone. The 6 client logos (ias-savills, ias-cityu, ias-daraz, ias-rff, slb-1, where-food-comes-from) do render, but the section title that frames them on the live is missing."
+   }
+  ]
+ },
+ {
+  "route": "/about-us/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Discover the essence of who we are?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "The live section is built around an animated stats/counter widget showing four metrics (15, 2000, 200, 500). The clone renders this section with NO counter widget at all, so the key stat figures and their count-up animation are entirely absent."
+   },
+   {
+    "section": "Discover the essence of who we are?",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "The live shows the about_us-mock.webp graphic/mockup image alongside the stats. The clone's version of this section has no images (imgs count 0), so this hero/mockup visual is missing."
+   },
+   {
+    "section": "Ready to Work with The Ultimate Azure Experts?",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "The live displays the scale-your-business-with-.png image in this CTA section. The clone renders the same heading but with no image (imgs count 0), so the section's accompanying visual is missing."
+   },
+   {
+    "section": "Real Results, Real Impact,",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live includes the sub-heading 'See How Our Customers Succeed' as part of this customer-results section. The clone's version omits that sub-heading entirely; it only carries the 'Real Results, Real Impact,' heading plus the Savills/CityU flip cards."
+   }
+  ]
+ },
+ {
+  "route": "/client-success-story/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "The Customer (customer-profile hero, L1)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live section L1 is a customer-profile block headed 'Connecticut, USA' with sub-labels 'Financial Services', '11-50 employees', and 'The Customer'. The clone's matching section (C1) only renders 'Financial Services' and '11-50 employees' — it is missing the 'Connecticut, USA' location heading and the 'The Customer' label entirely (neither string exists anywhere in the clone HTML)."
+   },
+   {
+    "section": "The Customer (customer-profile hero, L1)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live L1 has a section background image (bgImgs:1, the client-success-stories header bg). The clone section C1 has no image and no background, so the banner/hero visual for the customer-profile block is missing."
+   },
+   {
+    "section": "The Problem (L2)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live L2 'The Problem' section carries a background image (bgImgs:1). The clone section C2 renders the heading with no image/background, so the section's background visual is absent."
+   },
+   {
+    "section": "Schedule a 1:1 Call Today (L6)",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live L6 'Schedule a 1:1 Call Today' includes an animated counter widget (values 5000, 700, 1000, 20) and the subheading 'Get in touch with our team to solve your Azure queries'. The clone splits this into an empty C6 and a C7 that shows only the 'Schedule a 1:1 Call Today' heading without a functioning counter widget and without the 'Get in touch...' subheading surfaced in that section; the counter is not detected as an active widget on the clone."
+   }
+  ]
+ },
+ {
+  "route": "/ai-scenario-library/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Stop Working on Tasks, Start Working on Strategy",
+    "type": "layout",
+    "severity": "medium",
+    "detail": "The live page renders this value-prop section as a 3-column feature block with three sub-headings: 'The Productivity Lift', 'Built-in Governance', and 'The Knowledge Advantage'. On the clone the parent heading 'Stop Working on Tasks...' is present, but all three feature columns/headings are entirely absent (DOM text check: 'Productivity Lift' => false, 'Built-in Governance' => false, 'Knowledge Advantage' => false). The section is effectively gutted of its core content."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The live page has a 'Trusted by Organizations Around the Globe' heading above the client-logo strip. On the clone the logo images themselves are present (ias-savills-logo.webp, ias-cityu-logo.webp, ias-daraz-logo.webp, ias-rff-logo.webp, superior-farms-logo.webp), but the section heading text 'Trusted by Organizations Around the Globe' does not render (DOM text check => false), so the logo row appears without its title."
+   }
+  ]
+ },
+ {
+  "route": "/services/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "FAQ Accordion (live L9)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live page has an entire accordion/FAQ section (live section with widgets:accordion, no heading) sitting between 'Our Process' and 'Schedule a 1:1 Call'. The clone has no accordion section at all — it is completely missing."
+   },
+   {
+    "section": "Discover Cloud Opportunities",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this section as an interactive TABS widget (tabs: Azure Cloud Services, Cloud Strategy & Consulting, Application Development, DevOps Automation as Service, Cloud Migration) with switchable panels. The clone shows the same headings as a flat list with no tabs widget — the tabbed interaction is missing."
+   },
+   {
+    "section": "Benefits of Choosing Folio3 as your Azure Cloud Partner",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this as a FLIP-card grid (widgets:flip) of 8 cards (Azure Databricks, Synapse, AI & Machine Learning, SQL, Cognitive Services, Stack Services, Cognitive Search) each with a background image (bgImgs:8) plus an intersect.webp background. The clone has the headings but no flip widget, no per-card background images, and is missing the intersect.webp background image."
+   },
+   {
+    "section": "Our Process",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders the 4 process steps as a FLIP-card widget (widgets:flip). The clone shows the 4 steps without the flip widget, and the step cards are split awkwardly across two blocks (one card 'Let the Cloud Empower You' separated from the other three step images), so the layout/structure differs from the live flip-card row."
+   },
+   {
+    "section": "Schedule a 1:1 Call Today / counter band (live L10)",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live has a stats COUNTER widget in the 'Schedule a 1:1 Call Today' band (counters: 5000, 700, 1000, 20). The clone's 'Schedule a 1:1 Call Today' block has no counter widget — the animated stat counters present on the live are absent."
+   },
+   {
+    "section": "Hero (top)",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live hero rotates/shows three heading lines: 'Global expertise with decades of hands-on experience', 'Accelerate Your Cloud Journey With Top-notch Azure Services', and 'Revolutionize Your Business with Our Azure Expertise'. The clone hero shows only 'Accelerate Your Cloud Journey With Top-notch Azure Services', missing the other two heading variants."
+   }
+  ]
+ },
+ {
+  "route": "/ai-agents/kubemonitor-agent/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a 'Trusted by Organizations Around the Globe' client-logo strip showing 5 partner logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, superior-farms-logo). This entire section, heading and all logos, is absent from the clone (confirmed missing in the clone content JSON and screenshot)."
+   },
+   {
+    "section": "What Do You Get With KubeMonitor AI Agent?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this section as a tabbed interface (widgets:tabs) with a section heading 'What Do You Get With KubeMonitor AI Agent?' and feature tabs (Conversational Monitoring & Diagnostics, Real-Time Status and Phase Tracking, Natural Language Metric Queries, etc.). The clone drops the section heading entirely and flattens it into a plain feature list (clone section C4 starts directly at 'Real-Time Status and Phase Tracking' with no tabs widget)."
+   },
+   {
+    "section": "The AI Advantage",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live has a section titled 'The AI Advantage' (intro/parent heading above the 'Why You Need to Act Now' benefit cards, with 4 background images). The clone omits the 'The AI Advantage' heading and intro, jumping straight into 'Why You Need to Act Now' (clone C2)."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live 'Why Choose Folio3?' section uses an animated counter widget with 4 stat values (98, 100, 4.9, 65). The clone's 'Why Choose Folio3?' section (C6) has no counter widget and renders without the stat counters."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live 'Awards & Recognization' section is a carousel (widgets:carousel) of award badges. The clone (C7) has the heading 'Awards & Recognization' but no carousel widget, so the rotating award logos are missing."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The clone adds an extra 'Real Results, Real Impact' section (C8) with a flip-box widget ('Azure Data Services for Private Equity Firm') that does not exist anywhere on the live page. This is a stray/extra section not present on the live."
+   },
+   {
+    "section": "Explore More Services",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The clone adds an 'Explore More Services' section (C10, 'Implementing Power BI Dashboard For Food Crop Grower') not present on the live. Note: trailing 'Explore More Services'/'Schedule a 1:1 Call' are intentionally clone-added per audit rules, but the Power BI case-study card content here is extra relative to live."
+   }
+  ]
+ },
+ {
+  "route": "/implementing-power-bi-dashboard-for-food-crop-grower/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Food Crop Grower (hero)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live has a dedicated hero section L1 with the heading 'Food Crop Grower' and the prominent image food-crop-grower.webp. The clone has no such hero: it only shows a generic breadcrumb/title 'Implementing Power Bi Dashboard For Food Crop Grower' and renders food-crop-grower.webp as a 2x2 lazy placeholder (not visibly displayed). The named hero heading + image are absent."
+   },
+   {
+    "section": "Williams, California (About The Client)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live section L2 is a client-info card with headings 'Williams, California', 'Agriculture and Crops', '100+', and 'About The Client' over a background image. The clone (C1) only renders 'Agriculture and Crops | 100+' and is missing the 'Williams, California' location heading, the 'About The Client' label, and the section background image."
+   },
+   {
+    "section": "Business Outcomes",
+    "type": "stray-image",
+    "severity": "high",
+    "detail": "Live 'Business Outcomes' (L5) uses a flip-card widget and shows no decorative icons (only a lazy svg placeholder). The clone instead injects three stray SVG icons not present on the live: self-service-analytics-icon.svg (C4) and boost-operational-efficiency-icon.svg + maximized-data-value-roi.svg (C5)."
+   },
+   {
+    "section": "Business Outcomes",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live 'Business Outcomes' renders the three outcomes (17% Increase in Operational Efficiency, 12% Higher Potential Yields, Fortified Grower Relationships) as flip-box cards (widgets:flip). The clone renders them as a flat list/icons with no flip-box widget."
+   },
+   {
+    "section": "The problem",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live L3 has the section label 'The problem' above the body heading 'Uncertain Operations and Disconnected Growers' over a background image. The clone (C2) shows only the body heading; the 'The problem' label and the section background image are missing."
+   },
+   {
+    "section": "Our Solution",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live L4 has the section label heading 'Our Solution' above 'A Comprehensive Power BI Grower Portal Dashboard' and its five feature sub-headings. The clone (C3) renders the sub-headings but omits the 'Our Solution' section label heading."
+   }
+  ]
+ },
+ {
+  "route": "/testimonials/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Schedule a 1:1 Call Today / Stats Speak for Themselves",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders animated counter widgets in two places: the hero 'Stats Speak for Themselves' row (counters 98, 100, 4.9, 65) and the 'Schedule a 1:1 Call Today' section (counters 5000, 700, 1000, 20). The clone renders ZERO counter widgets (no .elementor-counter-number elements at all) — the stat numbers are missing entirely."
+   },
+   {
+    "section": "Media and Entertainment (Industries)",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live has a tabbed industries widget with tab labels Media and Entertainment, Manufacturing, Healthcare, Retail, Financial Service. The clone shows only the single 'Media and Entertainment' heading and omits the Manufacturing / Healthcare / Retail / Financial Service tabs — the tab widget is flattened to one panel."
+   },
+   {
+    "section": "Awards & Recognization / Over 10,000 plus Happy retained clients",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live page contains 6 carousels (e.g. the Awards & Recognization certification slider and the testimonials slider). The clone has 0 carousels/swipers — all sliders are rendered static, so any scrollable testimonial/badge content beyond the first slide is missing."
+   },
+   {
+    "section": "What makes us the best choice for Azure cloud service providers? (FAQ)",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders an accordion (1 .elementor-accordion / toggle widget) for the FAQ questions. The clone has 0 accordions — the expand/collapse FAQ widget is not reproduced."
+   },
+   {
+    "section": "Over 10,000 plus Happy retained clients (Real Results, Real Impact)",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "Live shows testimonial imagery in this section: testimonial_arc.webp (decorative arc) and gj_garner.png (client photo/logo). The clone's testimonials section renders no visible images (img list is empty)."
+   },
+   {
+    "section": "What makes us the best choice for Azure cloud service providers? (FAQ)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live shows faq_placeholder.webp alongside the FAQ accordion. The clone does not render this image in the FAQ section."
+   }
+  ]
+ },
+ {
+  "route": "/ai-scenario-library/copilot-in-retail/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Awards & Recognition",
+    "type": "other",
+    "severity": "low",
+    "detail": "Heading text is misspelled on the clone: it renders \"Awards & Recognization\" whereas the live page renders \"Awards & Recognition\". The 15 certification award images and the section itself otherwise match."
+   },
+   {
+    "section": "(tooling note) whole-page LIVE capture",
+    "type": "other",
+    "severity": "low",
+    "detail": "The cmp-page.mjs LIVE render failed and returned only 4 global-scaffold sections (logo, Awards carousel, Schedule CTA, footer offices), so its AUTO-FLAGS (missing \"US Office\"/\"Schedule\" headings, missing counter, etc.) are false positives. Verified against the live HTML (HTTP 200, 4.9MB) and the clone's built HTML: all body sections and images are present and in the correct order. No genuine missing-section, wrong-image, or wrong-order gaps were found beyond the heading typo above."
+   }
+  ]
+ },
+ {
+  "route": "/azure-for-healthcare/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Partner with Folio3 to Streamline your Healthcare Business",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live renders a full FAQ accordion in this section (47 accordion elements, e.g. 'What are Azure Healthcare Services?' with expandable answers). The clone has NO accordion at all (0 accordion/toggle/details elements) and shows only the heading plus the single intro line 'We believe in the power of the cloud to transform businesses and empower people.' The entire FAQ accordion content and widget are missing."
+   },
+   {
+    "section": "Azure Solutions for Payors",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live uses an interactive tabs widget (role=tab elements) to switch between Claims Processing / Efficiency / Cost Reduction / Accuracy / Data Management. The clone has 0 tab elements and instead stacks every tab label and its description into one flat concatenated text block (Claims Processing, Efficiency, Cost Reduction, Accuracy... all shown at once). Rendered as a flat list, not tabs."
+   },
+   {
+    "section": "Azure Solutions for Providers",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live uses an interactive tabs widget (role=tab) for Centralized Patient Data / Instant Data Accessibility / Interoperability / Scalability / Data Analytics & AI / Evidence-Based Care. The clone has 0 tab elements; the tab content is flattened so the section reads as a stacked text list (and the probe even surfaced unrelated 'Better Provider Experience' text), confirming the tabs widget is missing/broken."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live displays the award/certification badges inside a swiper carousel (carousel widget present). The clone renders the same 15 badge images (azure_solution_architect.svg, azure_administration.svg, AI-102.svg, etc.) but as a static grid with NO carousel/swiper (awardsHasSwiper=false). The slider widget is missing."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live shows animated stat counters with real values (98%, 100, 4.9, 65). The clone's counters are stuck/render as zero: the visible stat numbers are '0%', '0+', and '0.0' — the counter values never populate to the live figures (User satisfaction shows 0%, Our Clients shows 0+)."
+   },
+   {
+    "section": "Why leverage Azure Services for Healthcare",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders the six benefit cards (Enhanced Patient Engagement, Improved Collaboration, Better Provider Experience, Boost Productivity, Uncover Health Insights, Secure Health Records) as flip-box widgets (flip animation). The clone has 0 flip-box elements, so these are static cards with no flip interaction."
+   }
+  ]
+ },
+ {
+  "route": "/microsoft-fabric-services/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders an animated counter widget with stats (98, 100, 4.9, 65). The clone section 'Why Choose Folio3?' has no counter widget and no numeric stats at all."
+   },
+   {
+    "section": "Your Common Queries Are Resolved",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders an FAQ accordion widget. The clone section 'Your Common Queries Are Resolved' has no accordion (no expandable Q&A items)."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live presents the certifications as a carousel. The clone renders a static flat grid of 15 certification logo SVGs (azure_solution_architect, azure_administration, etc.) with no carousel/slider behavior."
+   },
+   {
+    "section": "key components of fabric / Powering Every Aspect of Your Data Enterprise",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live tabs widget exposes the full set of tab labels (Data Integration & Management, Azure Data Factory, Data Engineering & Warehousing, Azure Synapse Analytics, Azure Data Lake Storage, Data Science & Real-Time Analytics) and a tab-content image (data-integration-management.webp). The clone tabs widget only surfaces one tab label 'Data Integration & Management' and shows no tab-content image (imgs(0))."
+   },
+   {
+    "section": "Real Results, Real Impact (clone-only)",
+    "type": "stray-image",
+    "severity": "high",
+    "detail": "The clone adds an entire section 'Real Results, Real Impact' with a flip-box widget (cards 'Savills' and 'CityU') that does not exist anywhere on the live page."
+   },
+   {
+    "section": "Microsoft Fabric Solution / Your Trusted Partner For Microsoft Fabric Services (hero)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero shows the product image 'microsoft-fabric-services-ipad-screen.webp'. The clone hero section 'Your Trusted Partner For Microsoft Fabric Services' shows no image (imgs(0))."
+   },
+   {
+    "section": "What is microsoft fabric? / One Data Hub, Limitless Possibilities",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live shows the illustration 'one-data-hub-limitless-possibilities.webp' in this section. The clone section 'One Data Hub, Limitless Possibilities' has no image (imgs(0))."
+   },
+   {
+    "section": "The Data Platform for the AI Era / Microsoft Fabric - Features and Benefits",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The clone adds two extra feature items not on the live list: 'Enhanced Security' and 'Automation and AI Integration'. Live lists only 6 features (Unified User Experience, Next-level Collaboration, Scalability for Constant Growth, Save Cost, Data Driven Decision Making, Real-time Insights); clone shows 8."
+   }
+  ]
+ },
+ {
+  "route": "/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "The Challenge",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live page renders a 'The Challenge' eyebrow/heading directly above the 'Fragmented HR Policy Management and Reactive Decision-Making' subtitle. The clone omits the 'The Challenge' label entirely (0 occurrences in the built HTML) and renders only the <h2>Fragmented HR Policy Management...</h2>, so the section loses its title."
+   },
+   {
+    "section": "Folio3 Solution / Core Technologies Used",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live page has a 'Core Technologies Used' <h2> heading above the 5 technology icons (microsoft-copilot-studio, power-automate, sharepoint, excel-sharepoint-hosted, copilot-powerpoint). The clone shows the 5 icons but the 'Core Technologies Used' heading is missing (0 occurrences) — the clone jumps straight from the 'Folio3 Solution' h2 to the icon row."
+   },
+   {
+    "section": "Hero / Client intro",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The live hero displays the client location 'Rabigh, Saudi Arabia' next to the 'Industry: Petrochemicals & Refining' label. The clone hero shows 'Industry / Petrochemicals & Refining' and the '3,000 +' employee count but omits the 'Rabigh, Saudi Arabia' location line (0 occurrences of 'Rabigh' in clone)."
+   }
+  ]
+ },
+ {
+  "route": "/microsoft-fabric-services/microsoft-fabric-migration/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Our Comprehensive Microsoft Fabric Migration Services",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live renders this section with 5 detailed process steps as sub-cards (Assessment & Strategy, Planning & Design, Data Migration & Transformation, Implementation & Integration, Optimization Governance & Training). The clone renders only the section heading with zero steps/cards beneath it — the entire step content is absent (confirmed: rendered DOM has none of the 5 step titles)."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live shows this impact section with 4 animated counter stats (data-to-value 5000, 700, 1000, 20). The clone renders the 'Real Results, Real Impact' heading but contains no counters at all (0 elementor-counter-number elements), so the headline metrics are missing."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live displays the 15 Microsoft certification badges in a rotating carousel/swiper (awardsCarousel=true). The clone renders the same 15 SVG badges but as a static flat grid with no carousel/swiper widget (awardsCarousel=false)."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live has a client-logo band titled 'Trusted by Organizations Around the Globe' above the 5 partner logos (savills, cityu, daraz, rff, superior-farms). The clone renders the 5 logos but the section heading text 'Trusted by Organizations Around the Globe' is entirely absent from the page (not present in DOM or HTML)."
+   },
+   {
+    "section": "Microsoft Fabric Migration Services (hero)",
+    "type": "other",
+    "severity": "low",
+    "detail": "Live hero uses 'Microsoft Fabric Migration Services' as the prominent H1 with 'Moving Your Data & Analytics Workloads to an All-In-One Analytics Platform' as supporting text. The clone elevates the long subheading to the main heading and the short 'Microsoft Fabric Migration Services' title is de-emphasized. Hero image (moving-data-analytics-workloads-analytics-platform.webp) renders correctly in both."
+   }
+  ]
+ },
+ {
+  "route": "/ai-agents/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Page hero / entry-title",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live /ai-agents/ page renders a visible H1 page-title 'AI Agents' (<h1 class=\"entry-title\">AI Agents</h1>) at the top of the content area. The clone has NO visible 'AI Agents' heading anywhere on the page — the string appears only in the clone's <title> and meta tags, never as on-page body text. This is the one element the live shows that the clone is missing."
+   }
+  ]
+ },
+ {
+  "route": "/ai-agents/smartexpense-agent/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Folio3 SmartExpense Copilot: Your Complete AI Agent",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "On the live this section is an interactive TABS widget (4 tab titles: 'Instant, Chat-Based Submission & AI Extraction', 'Automated Compliance & Risk Reduction', 'Smart Accounting & One-Click Approval', 'Accelerated Reimbursement & Insight Generation') under the parent heading 'Folio3 SmartExpense Copilot: Your Complete AI Agent'. The clone has NO tabs (no role=tab elements) and instead renders every tab panel as a flat stacked list of sections (Lightning-Fast Submission, AI-Powered OCR Extraction, Automated Policy Pre-Validation, Automated Compliance & Risk Reduction, Seamless Data Security & Governance, Smart Accounting & One-Click Approval, etc.) shown all at once."
+   },
+   {
+    "section": "Folio3 SmartExpense Copilot: Your Complete AI Agent",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The parent section heading 'Folio3 SmartExpense Copilot: Your Complete AI Agent' present on the live is completely absent from the clone (0 occurrences in clone markup). The clone jumps straight into the first feature heading without the section title."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live shows the heading 'Trusted by Organizations Around the Globe' above the row of 5 client logos (ias-savills, ias-cityu, ias-daraz, ias-rff, superior-farms). The clone renders those same 5 logos but omits the 'Trusted by Organizations Around the Globe' heading entirely."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live renders the Microsoft certification logos as a carousel/swiper (swiper widget confirmed in live DOM, 15 logos). The clone renders the same certifications as a static flex-wrap grid of logo tiles with no carousel/slider behavior."
+   }
+  ]
+ },
+ {
+  "route": "/azure-automated-data-reporting-for-slb/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "OUR SOLUTION / An End-To-End Automated Data Reporting Platform",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a full 'OUR SOLUTION' eyebrow + 'An End-To-End Automated Data Reporting Platform' heading/intro section featuring three large isometric cube illustrations above the three sub-cards (Automated Data Ingestion and Transformation, Centralized Data Lake, Unified Visualization & Reporting Using Power BI). In the clone the section heading, intro paragraph, and all three cube illustrations are entirely absent (0 matches for 'An End-To-End' in the rendered HTML); only the three sub-card titles/descriptions survive as a bare text block with no imagery, and a large blank gap appears where the illustrations should be."
+   },
+   {
+    "section": "Energy/Oil & Gas Dashboards & Reporting Suite",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders this as an interactive tabs widget (Order Details / Product Health / Sales By Category/Product / Sales Distribution) where each tab swaps in a large Power BI dashboard screenshot. The clone renders a flat, non-interactive 4-card list: all four dashboard images (order-details-screen.webp, product-health-screen.webp, sales-category-product.webp, sales-distribution-1.webp) are shrunk to 48x48px icons (srcset widths 48/96/256/384) with no tablist/role=tab markup, losing the full-size dashboard previews."
+   },
+   {
+    "section": "THE PROBLEM / Fragmented Data and Manual Reporting Bottlenecks",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live shows a 'THE PROBLEM' eyebrow and the heading 'Fragmented Data and Manual Reporting Bottlenecks' above the five problem bullet points. In the clone the heading and eyebrow are missing (0 matches for 'Fragmented' or 'THE PROBLEM'); the five bullet points render directly after the 'About The Client' block with no section title."
+   },
+   {
+    "section": "About The Client (SLB - Formerly Schlumberger)",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The live client-info block lists a 'Houston, Texas' location detail alongside 'Oil and Energy' and 'Large Enterprise'. The clone retains 'Oil and Energy' and 'Large Enterprise' but the 'Houston, Texas' field is absent (0 matches in clone HTML)."
+   }
+  ]
+ },
+ {
+  "route": "/ai-powered-solutions/copilot-for-recruitment/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a client-logo trust strip (L1) showing 5 logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, superior-farms-logo). This entire section and all 5 logo images are absent from the clone."
+   },
+   {
+    "section": "What Do You Get With Recruit Flow AI Agent?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L4) renders this as a tabbed widget under the heading 'What Do You Get With Recruit Flow AI Agent?' with 7 tabs. The clone (C4) drops the section heading entirely and renders the tab contents as a flat list of sub-headings, with no tabs widget."
+   },
+   {
+    "section": "Interview Insights & Post-Interview Intelligence",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live feature group L7 'Interview Insights & Post-Interview Intelligence' (with sub-items Real-Time Transcription & Summary, Sentiment & Tone Analysis, Automated Feedback Collection) is completely missing from the clone."
+   },
+   {
+    "section": "Seamless Offer & Onboarding Transition",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live feature group L8 'Seamless Offer & Onboarding Transition' (with sub-items One-Click Offer Generation, Onboarding Content Curation, Compliance & Document Tracking) is completely missing from the clone."
+   },
+   {
+    "section": "70% Of The Fortune 500 Now Use Microsoft 365 Copilot",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live section L3 shows the image fortune-microsoft-copilot.webp. The clone has the matching heading (C3) but renders no image at all in this section."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live section L10 includes an animated counter widget with values 98, 100, 4.9, 65. The clone (C7) has the heading but no counter widget / animated stats."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live section L11 displays awards in a carousel widget. The clone (C8) has the heading ('Awards & Recognization') but no carousel — the awards are not rendered as a sliding carousel."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "stray-image",
+    "severity": "medium",
+    "detail": "The clone adds an extra section C9 'Real Results, Real Impact' with a flip-card widget (case studies like 'Azure Data Services for Private Equity Firm') that does not exist on the live page for this route."
+   },
+   {
+    "section": "Intelligent Sourcing & Screening",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The very first feature 'Intelligent Sourcing & Screening' (first tab/feature group L5 on live) is absent from the clone's flattened feature list (C4 starts at 'Instant Job Description (JD) Generation')."
+   },
+   {
+    "section": "Tired of Admin Work? See Your New AI Recruiter Take Over.",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The clone adds a section C5 'Tired of Admin Work? See Your New AI Recruiter Take Over.' that has no corresponding heading/section on the live page."
+   }
+  ]
+ },
+ {
+  "route": "/azure-data-analytics/data-visualization-as-a-service/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted By Organizations across the world",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The entire client-logos trust section is absent from the clone. Live (L2) shows the heading 'Trusted By Organizations across the world' plus 4 client logos (ias-savills-logo.webp, ias-cityu-logo.webp, ias-daraz-logo.webp, ias-rff-logo.webp). The clone has no equivalent section at all."
+   },
+   {
+    "section": "Benefits Of Data Visualization As A Service",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L7) renders this as an accordion widget. The clone (C7) renders a flat layout with no accordion, and additionally shows two stray icon images (mobile-chat.svg, servers-cloud-icon.svg) that the live section does not display."
+   },
+   {
+    "section": "Our Approach",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L6) presents the approach steps as a carousel. The clone (C6) renders them as a flat list with no carousel widget. The clone also lists an extra fifth step 'Deployment' (Discovery, Storyboarding, Data Model Building, Dashboard Development, Deployment) whereas live shows only four steps."
+   },
+   {
+    "section": "The Folio3 Advantage",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L12) renders the four advantage cards (Experience, Expertise, Customized Approach, Recognition) as flip-boxes. The clone (C10) renders them flat with no flip widget."
+   },
+   {
+    "section": "Benefits of Data Integration As A Service?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L11) renders this section as an accordion. The clone (C9) shows only the heading with no accordion widget."
+   },
+   {
+    "section": "Your Common Queries Are Resolved",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L15) renders the FAQ as an accordion widget. The clone (C13) shows only the heading with no accordion."
+   },
+   {
+    "section": "Data Visualization As A Service (hero)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero (L1) shows the header image data-visualization-as-service-header-img.webp. The clone hero (C0) renders no image (imgs(0))."
+   },
+   {
+    "section": "Actionable BI / Transform Your Data with Interactive Dashboards",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live (L3) shows the featured image dvas-featured-img-1-1.webp alongside the sub-headings. The clone (C2) renders the sub-headings but no image (imgs(0))."
+   },
+   {
+    "section": "Actionable BI / Transform Your Data with Interactive Dashboards",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live shows an 'Actionable BI:' eyebrow/heading above 'Transform Your Data with Interactive Dashboards' (L3). The clone (C2) omits the 'Actionable BI:' label."
+   },
+   {
+    "section": "Building Automated ETL/ELT Pipelines",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live (L4) includes the sub-heading 'Join Us on the Journey Towards Success'. The clone (C3) only renders 'Building Automated ETL/ELT Pipelines' and omits the 'Join Us on the Journey Towards Success' heading."
+   },
+   {
+    "section": "Data Visualization Use Cases",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live (L10) includes the subheading 'Here is an overview of the industries we serve to', which the clone (C8) omits. Also the industry list differs: live lists Finance, Agriculture, Retail, Healthcare, Manufacturing, HR; the clone adds an extra 'Sales & Marketing' item."
+   },
+   {
+    "section": "Real Results, Real Impact",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Live (L13) includes the subheading 'See How Our Customers Succeed' above the Savills/CityU flip cards. The clone (C11) keeps the flip cards but omits the 'See How Our Customers Succeed' subheading."
+   }
+  ]
+ },
+ {
+  "route": "/azure-cloud-service/",
+  "match": "good",
+  "gaps": [
+   {
+    "section": "Your Common Queries Are Resolved / Schedule a 1:1 Call Today",
+    "type": "widget-mismatch",
+    "severity": "low",
+    "detail": "The cmp-page tool AUTO-FLAGGED the FAQ 'accordion' and the 1:1-call 'counter' as missing on the clone, but this is a false positive from the tool's Elementor-class-only detection. Inspecting the rendered clone HTML at localhost:3000 confirms a working custom accordion (Accordion.tsx, button/aria-expanded markup) and animated counters 5000+/700+/1000+/20+ (Counter.tsx in OneToOneCTA.tsx). No real gap."
+   },
+   {
+    "section": "Overview",
+    "type": "missing-image",
+    "severity": "low",
+    "detail": "Tool reported clone Overview imgs(0) vs 4 live PNG icons, but I verified the 4 icon img tags (1-Cloud-Strategy-n-Consulting.png, Azure-Application-Development.png, 3-DevOps-Automation.png, 4-Cloud-Migration.png) are present in the clone HTML and each underlying asset returns HTTP 200 via /_next/image. The imgs(0) is a Reveal-animation/lazy-load snapshot-timing artifact, not a real missing image."
+   }
+  ]
+ },
+ {
+  "route": "/power-bi-services/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Industrial Business Intelligence Solutions We Deliver",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a section titled 'Industrial Business Intelligence Solutions We Deliver' rendered as a TABS widget with 10 industry panels (Financial Services, Manufacturing, Retail and Ecommerce, Healthcare, Real Estate, Logistics and Transportation, Agriculture, Construction, Automotive, Energy). On the clone this section heading is entirely missing and the tabs widget is gone; the content is collapsed into a flat section (C9) that just starts at 'Manufacturing' and lists Manufacturing, Retail and Ecommerce, Healthcare, Real Estate, Logistics and Transportation, Agriculture, Construction, Automotive as a flat list. The 'Financial Services' and 'Energy' panels are also dropped."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live section L4 'Trusted by Organizations Around the Globe' (a client/logo trust band) is completely absent from the clone."
+   },
+   {
+    "section": "Industrial Business Intelligence Solutions We Deliver",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders the industry solutions as an interactive TABS widget (widgets:tabs on L8). The clone has no tabs widget here at all — the industries are flattened into a plain heading list (C9), losing the tabbed interface entirely."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live 'Awards & Recognization' (L19) is a CAROUSEL widget. The clone section C10 'Awards & Recognization' has no carousel widget — it renders as a static block instead of the rotating carousel."
+   },
+   {
+    "section": "Technologies We Work With",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live 'Technologies We Work With' (L20) is a TABS widget. The clone section C11 has no tabs widget — the technology categories are rendered flat instead of in tabs."
+   },
+   {
+    "section": "(no heading / accordion block)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live L6 is a no-heading section containing an ACCORDION widget (widgets:accordion). The clone has no accordion anywhere; this whole accordion block is missing."
+   },
+   {
+    "section": "About Folio3 And Our Partnership With Microsoft",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Clone section C1 'About Folio3 And Our Partnership With Microsoft' (with sub-points '15+ years in business intelligence', 'Strategic partnerships with Microsoft', 'ISO 27001-certified...') does not exist on the live page — it is an extra section the clone invented."
+   },
+   {
+    "section": "Our Industry-Wide Analytics Solution Architecture",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Clone section C3 'Our Industry-Wide Analytics Solution Architecture' has no counterpart on the live page — it is an extra/stray section on the clone."
+   },
+   {
+    "section": "Our BI Implementation Roadmap",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Clone section C6 'Our BI Implementation Roadmap' (with 'Step 1 BI Discovery & Conceptualization' and a tabs widget) does not exist on the live page — extra section on the clone."
+   },
+   {
+    "section": "Power BI Business Intelligence Services & Solutions (hero)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero (L1) displays the image 'power-bi-ipad-screen.webp'. The clone hero (C0) shows no image (imgs:0) — the iPad screen hero visual is missing."
+   },
+   {
+    "section": "Business Intelligence and Business Analytics In a Nutshell",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live L2 displays the image 'business-intelligece-analytics-nutshell.webp'. The clone C2 of the same section shows no image (imgs:0) — that illustration is missing."
+   },
+   {
+    "section": "Real BI Knowledge",
+    "type": "wrong-order",
+    "severity": "low",
+    "detail": "On the live, 'Real BI Knowledge' (L21) appears as the final content section before the CTA/footer. On the clone it appears (C12) but the overall section order differs because several live sections (Trusted by Organizations, accordion block, Industrial BI tabs structure) are missing and extra clone-only sections (About Folio3, Solution Architecture, BI Implementation Roadmap) are interleaved, shifting the flow."
+   }
+  ]
+ },
+ {
+  "route": "/contact-us/",
+  "match": "good",
+  "gaps": []
+ },
+ {
+  "route": "/azure-for-logistics-and-transport/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Azure Logistics Management (hero)",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live page opens with a hero section headed 'Azure Logistics Management' containing the image 'efficiently-manage-logistics-transport-operations-microsoft-azure.webp'. The clone has NO matching hero section at all (C0 is empty with no heading and no image). The whole hero, including its banner image, is absent. The image file exists in the clone's public folder but is never rendered."
+   },
+   {
+    "section": "Your Path To Azure Implementation",
+    "type": "wrong-order",
+    "severity": "high",
+    "detail": "Live shows 5 specific carousel steps: 'Discovery & Strategy', 'SOLUTION DESIGN & PROTOTYPING', 'Development & Integration', 'Deployment & Training', 'Post-Launch Support'. The clone shows only 4 generic, differently-named steps: 'Discovery and Assessment', 'Strategy and Design', 'Development and Implementation', 'Optimization and Support'. The step content is wrong and one step is missing."
+   },
+   {
+    "section": "Your Path To Azure Implementation",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders the implementation steps in a carousel widget; the clone renders them as a flat list with no carousel."
+   },
+   {
+    "section": "Navigating The Key Challenges of Modern Logistics",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live uses a flip-box widget for the three cards (Boost Operational Efficiency, Achieve Dynamic Scalability, Optimize Operational Costs). The clone shows the same headings but as a flat layout with no flip widget."
+   },
+   {
+    "section": "360 Visibility in Real-Time",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live has a flip-box section led by the card '360 Visibility in Real-Time' (plus 'Ensure Compliance & Manage Risks' and 'Unify Data & Get Access to Insights'). The clone drops the '360 Visibility in Real-Time' card/heading entirely — C2 starts at 'Ensure Compliance & Manage Risks' — and also lacks the flip widget."
+   },
+   {
+    "section": "Azure services",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live presents the Azure services (Azure IoT Solutions, Connected Vehicle Fleet Management, Asset Tracking & Monitoring, Supply Chain Visibility, Azure-Powered Business Apps, ERP on Azure) inside a tabs widget. The clone renders them as a flat list with no tabs. Clone also adds an extra 'CRM on Azure' item and omits the live subheading 'Our Azure Services for Supply Chain Managers'."
+   },
+   {
+    "section": "applications",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live presents the applications items (Fleet Optimization, Predictive Maintenance, Real-Time Optimization, Increased Asset Utilization, Supply Chain Transparency, Unified Data, Real-Time Tracking) inside a tabs widget. The clone shows the same items as a flat list with no tabs."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live shows awards in a carousel widget. The clone has no carousel; the heading is even split awkwardly into two lines ('Awards &' / 'Recognization')."
+   },
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live includes an animated counter widget with values 98, 100, 4.9, 65. The clone has no counter widget in this section."
+   },
+   {
+    "section": "Our Commitment",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live includes the subheading 'Your Partner in Digital Transformation' within the Our Commitment section. The clone omits this subheading (C6 jumps straight from 'Our Commitment' to 'Customized Solutions')."
+   }
+  ]
+ },
+ {
+  "route": "/azure-managed-services/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "Your Common Queries Are Resolved (FAQ)",
+    "type": "stray-image",
+    "severity": "medium",
+    "detail": "The clone adds a large stock photo (two people at a laptop) on the left and renders the FAQ as a 2-column layout (photo left, accordion right with + toggles). The live has NO image here - it is a single full-width column of 5 accordion questions with circular arrow icons and no photo. Same 5 questions on both, but the clone's stock photo and 2-col layout are not on the live."
+   },
+   {
+    "section": "Who Can Benefit from Azure Data Managed Services?",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "The live presents the 5 industries (E-commerce and Retail, Healthcare, Financial Services, Manufacturing and Supply Chain, Media and entertainment) as a tab/slider widget that swaps a single full-width image per selected category (category selector bar visible at bottom). The clone instead renders a static alternating zigzag 2-column grid showing all 5 industries stacked at once, so the interactive tab/selector behavior of the live is lost."
+   },
+   {
+    "section": "Work With Top Microsoft CSP Experts",
+    "type": "layout",
+    "severity": "low",
+    "detail": "On the live the Microsoft Cloud Solution Provider logo + paragraph + TALK TO AN EXPERT / LEARN MORE buttons are wrapped inside a stylized 'browser window' frame (blue title bar with red/yellow/green traffic-light dots over a white card). The clone renders the same logo, text and both buttons flat on the page background with no browser-window chrome frame."
+   },
+   {
+    "section": "Real Results, Real Impact,",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "The clone is missing the 'See How Our Customers Succeed' subtitle above the two flip cards and the 'DISCOVER ALL' button below them, both of which appear on the live. The two flip cards themselves (Savills, CityU) are present on both."
+   }
+  ]
+ },
+ {
+  "route": "/automated-data-reporting/",
+  "match": "minor-gaps",
+  "gaps": [
+   {
+    "section": "The Customer",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live 'The Customer' section has an h2 section heading 'The Customer'. The clone renders this section with NO heading at all (section opens straight into a 2-card grid), so the 'The Customer' title is entirely absent."
+   },
+   {
+    "section": "The Customer",
+    "type": "layout",
+    "severity": "medium",
+    "detail": "Live shows THREE customer-info items (h3: 'Colorado, USA', 'Food and Beverage', '51-200 Employees'). The clone's grid contains only TWO cards ('Food and Beverage' and '51-200 Employees') — the 'Colorado, USA' item is missing, so the grid is incomplete."
+   },
+   {
+    "section": "The Customer",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "The live customer section includes a substantial client-description paragraph ('The client, a leading third-party food verification company headquartered in Colorado, employs around 89 people and generates annual revenue of over $25 million...'). This paragraph does NOT render in the clone body (it only survives truncated inside the meta/OG description tags); the visible section omits it."
+   },
+   {
+    "section": "The Customer",
+    "type": "missing-image",
+    "severity": "low",
+    "detail": "Live's customer section has a background image (cmp-page reported bgImgs:1 for the 'Colorado, USA' section). The clone renders this section on a plain white background with no background image."
+   }
+  ]
+ },
+ {
+  "route": "/copilot-implementation-food-verification/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "About The Client",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live L2 renders a full 'About The Client' section with the heading 'About The Client', the client name 'Food Verification Organization', location 'Colorado, USA', industry 'Food Production' and size '100+', over a background image. The clone (C1) collapses this to just 'Food Production | 100+' — it is missing the 'About The Client' heading, the 'Food Verification Organization' client name, the 'Colorado, USA' location, and the background image."
+   },
+   {
+    "section": "Hero / Food Verification Organization",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live L1 is a hero section titled 'Food Verification Organization' containing the case-study image 'time-with-copilot.webp'. The clone has no corresponding hero section heading and no hero image (C0/C1 show no heading text and no images)."
+   },
+   {
+    "section": "Our Solution",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live L4 is an 'Our Solution' section heading that introduces the solution tabs/cards (Copilot Agent in Teams, Custom Topic Agent, etc.). The clone is missing the 'Our Solution' section heading entirely; it jumps straight into the solution items (C3/C4) with no intro section."
+   },
+   {
+    "section": "Our Solution (solution cards)",
+    "type": "layout",
+    "severity": "medium",
+    "detail": "The clone renders the solution content twice as two near-identical sections (C3 and C4, both headed 'Copilot Agent in Teams' with the same list of items), whereas the live has a single solution block (L5). This duplicated/doubled rendering does not match the live layout."
+   },
+   {
+    "section": "Schedule a 1:1 Call Today",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live L9 'Schedule a 1:1 Call Today' includes the subheading 'Get in touch with our team to solve your Azure queries' and an animated counter widget (values ~5000, 700, 1000, 20). The clone C8 has only the bare 'Schedule a 1:1 Call Today' heading — it is missing the subheading and the counter widget."
+   },
+   {
+    "section": "Technologies Stack Implemented",
+    "type": "missing-image",
+    "severity": "low",
+    "detail": "Live L6 shows only a lazy-load placeholder for stack logos, while the clone C5 shows three real logos (azure-storage-account.svg, ms-fabric-data-pipelines.svg, ms-fabric-lakehouse.svg). This is likely fine (clone resolved the lazy images), but the live lists six stack items (Azure Storage Account, MS Fabric Data Pipelines, MS Fabric Lakehouse, Power BI, Azure Service Principal, Azure Function App) so verify all six logos render, not just three."
+   }
+  ]
+ },
+ {
+  "route": "/data-integration-as-a-service/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted By Organizations across the world",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live's 'Trusted By Organizations across the world' client-logo band (Savills, CityU, Daraz, RFF logos: ias-savills-logo.webp, ias-cityu-logo.webp, ias-daraz-logo.webp, ias-rff-logo.webp) is absent on the clone. The heading does not render and the logos are not shown as a visible trusted-by section."
+   },
+   {
+    "section": "Benefits of Data Integration As A Service?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders both 'Benefits of Data Integration As A Service?' blocks as accordion widgets. On the clone these render as flat content with no accordion (no expandable items). Additionally the clone's first Benefits block (C6) injects 5 stray generic icon images not present in the live Benefits section: cloud-dollar.svg, scaleability-icon.svg, servers-cloud-icon.svg, operate-cloud-icon.svg, right-monogram.svg."
+   },
+   {
+    "section": "Ingest All Your Data from Diverse Sources",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live presents this section as a tabs widget; the clone renders it as a flat list with no tabbed interface."
+   },
+   {
+    "section": "The Folio3 Advantage",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live shows Experience / Expertise / Customized Approach / Recognition as a flip-box widget. The clone renders these without the flip-box interaction (static)."
+   },
+   {
+    "section": "Your Common Queries Are Resolved",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders the FAQ as an accordion widget; the clone shows no accordion (flat content, no expand/collapse)."
+   },
+   {
+    "section": "Data Integration As A Service (hero)",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live hero shows integration-as-service-header-img.webp; the clone hero (C0) displays no visible hero image. The clone hero heading also reduces to 'End-to-End Data Integration Services', dropping the main 'Data Integration As A Service' H1."
+   },
+   {
+    "section": "Connect All Your Data Sources",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live shows the featured image ias-featured-img-1.webp in this section; the clone (C2) shows no image."
+   },
+   {
+    "section": "Building Automated ETL/ELT Pipelines",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Clone is missing the 'Join Us on the Journey Towards Success' sub-heading that the live shows within this section."
+   },
+   {
+    "section": "Real Results, Real Impact,",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Clone (C11) is missing the 'See How Our Customers Succeed' sub-heading present on the live above the Savills/CityU case-study flip cards."
+   },
+   {
+    "section": "Building Automated ETL/ELT Pipelines",
+    "type": "wrong-order",
+    "severity": "low",
+    "detail": "Live displays the pipeline steps in visible order Step 01, Step 03, Step 02; the clone displays them as Step 01, Step 02, Step 03."
+   }
+  ]
+ },
+ {
+  "route": "/solution/intellifabric/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Pre-Built Fabric Data Analytics & Reporting Solutions",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "On the live this section is a TABS widget (Decision Intelligence for Executives / Insights That Drive Actions / Meaningful, Measurable Results as tab panels) and includes the sub-line 'For leadership teams, clarity matters more than complexity:'. The clone renders it as a flat stacked layout with no tabs (clone HTML has no e-n-tabs / role=tab markup) and is missing the 'For leadership teams, clarity matters more than complexity:' sub-heading."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live renders the Microsoft certification badges in a CAROUSEL (widgets:carousel). The clone shows all 15 cert SVGs (azure_solution_architect.svg, ai-102.svg, dp-100.svg, mirosoft_certified_trainer.svg, etc.) as a static flat grid with no carousel/swiper markup, so the section structure differs from the live."
+   },
+   {
+    "section": "Industry-Specific Analytics",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live uses FLIP-BOX widgets (widgets:flip) for Manufacturing / Retail & E-Commerce / Warehousing & Distribution / Healthcare. The clone keeps the same headings but renders no flip-box (clone HTML has no flip-box/rotateY markup), so the interactive flip cards are missing."
+   },
+   {
+    "section": "Trusted by Organizations Around the Globe",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Live has a 'Trusted by Organizations Around the Globe' logo strip with 5 client logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo, superior-farms-logo). The clone has no section with the 'Trusted by Organizations Around the Globe' heading; although the logo files exist in markup, they do not render as a visible, labeled trusted-by section (clone sections C0/C1 show 0 visible images and no heading)."
+   },
+   {
+    "section": "IntelliFabric Solve Real Business Problems",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Extra section on the clone that does not exist on the live page. Clone C2 adds a problems list (Reports are manually built and refreshed / Business users depend on analysts for every question / Data lives across ERP, CRM, spreadsheets... / Dashboards exist but are not trusted or adopted) with no live counterpart."
+   },
+   {
+    "section": "What Is IntelliFabric?",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Extra section on the clone (C3) with no equivalent on the live page; the live has no 'What Is IntelliFabric?' section."
+   },
+   {
+    "section": "Why IntelliFabric Wins (vs Traditional BI Tools)",
+    "type": "missing-section",
+    "severity": "medium",
+    "detail": "Extra comparison section on the clone (C4: Traditional BI Tools vs IntelliFabric) that has no counterpart on the live page."
+   },
+   {
+    "section": "Who IntelliFabric Is For?",
+    "type": "missing-section",
+    "severity": "low",
+    "detail": "Extra section on the clone (C9: Enterprises using Microsoft Dynamics 365 / Organizations struggling with manual Power BI workflows / etc.) that does not appear on the live page."
+   }
+  ]
+ },
+ {
+  "route": "/azure-data-analytics/agriculture-data-analytics/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Trusted By Organizations across the world",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "The live has a full 'Trusted By Organizations across the world' section (L2) with 4 partner logos (ias-savills-logo, ias-cityu-logo, ias-daraz-logo, ias-rff-logo). The clone has no matching visible section at all — neither the heading nor the logo row renders, so the entire social-proof band is absent."
+   },
+   {
+    "section": "Covering All Areas of Your Farming Enterprise",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live (L5) renders this as an interactive tabs widget (widgets:tabs) with 8 panels (Farm Operations, Harvest, Crop, Warehouse, Supply Chain, Farm Irrigation, Farm Resource, Farm Financial Management). The clone (C4) shows all the tab labels flattened into a single static section with no tabs widget detected — the tabbed interaction/layout is lost and rendered as a flat list."
+   },
+   {
+    "section": "Hero — Agriculture Analytics / Smart Farming With Agriculture Business Intelligence",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "The live hero (L1) shows the illustration image frame-elementor-io-optimized.webp. The clone hero (C0) renders 0 visible images — the hero illustration is missing, leaving the hero text-only."
+   },
+   {
+    "section": "Intro illustration band (between hero and 'Why Does Your Agribusiness Need BI Reporting')",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Live has an image-only band (L3) showing frame-1410085195-elementor-io-optimized.webp. The clone sections in this position (C1/C2) have no heading and no images — this illustration band is missing from the clone."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "Live (L16) renders the awards as a carousel widget (widgets:carousel). The clone (C8) renders an 'Awards & Recognization' block with no carousel/swiper widget detected — the rotating awards carousel is replaced by a static block."
+   },
+   {
+    "section": "FAQ accordion (between 'Gain in-depth Insights into your Farm Business' and the trailing CTA)",
+    "type": "widget-mismatch",
+    "severity": "low",
+    "detail": "Live has an accordion widget section (L18, widgets:accordion) after 'Gain in-depth Insights'. No corresponding accordion section is visible in the clone between C9 and the trailing CTA, so the FAQ/accordion appears to be missing or not rendering as a distinct section."
+   }
+  ]
+ },
+ {
+  "route": "/blog/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Blog hero / Our Blog",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "Live hero reads 'Blog Azure Cloud Services' (eyebrow 'OUR BLOG', subtitle 'Empower your organization with the power of the cloud', a 'SCHEDULE A FREE CONSULTATION' button, on a light blue gradient background). The clone hero instead reads 'From the Folio3 Azure blog' (eyebrow 'RESOURCES', a different subtitle '...40+ articles on Azure, Microsoft Fabric, Power BI and AI.', no Schedule button, on a dark navy background). Wrong heading, wrong eyebrow, wrong subtitle, wrong background."
+   },
+   {
+    "section": "Categories filter",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live has a 'Categories' filter widget with tabs/items: All, Microsoft Fabric, Product Dashboards, Data Integration and ETL, Data Storage And Management, Data Analysis and Visualization, Cloud Migration, Azure DevOps, used to filter the blog post grid. The clone has no Categories heading and no category filter at all (hasCategories=false, catTabs=[]); it renders a single flat grid of ~40+ posts with no filtering."
+   },
+   {
+    "section": "Discover the essence of who we are?",
+    "type": "missing-section",
+    "severity": "high",
+    "detail": "Live has an intro section headed 'Discover the essence of who we are?' with subtitle 'We believe in the power of the cloud to transform businesses and empower people' sitting between the hero and the post grid. The clone is missing this section entirely (hasDiscover=false)."
+   },
+   {
+    "section": "Blog post cards grid",
+    "type": "missing-image",
+    "severity": "medium",
+    "detail": "Clone blog post cards are text-only (title + excerpt + Read More); of 62 card elements only 1 contains an image. Live blog post cards carry featured thumbnail images. The clone's post grid therefore renders as a plain text-card list rather than image-led cards."
+   }
+  ]
+ },
+ {
+  "route": "/azure-for-retail/",
+  "match": "major-gaps",
+  "gaps": [
+   {
+    "section": "Why Choose Folio3?",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "The live section shows 4 animated stat counters (98% User satisfaction, 100+ Our Clients, 4.9 Google Review, 65+ API Integration). The clone renders this section as a plain checkmark bullet list with an image and NO counters at all. The counter data exists (clone-kit/counters.json) but the page never renders it — the Why Choose Folio3 block in page.tsx outputs only a checklist (wcList)."
+   },
+   {
+    "section": "Major Challenges Faced by Retailers",
+    "type": "widget-mismatch",
+    "severity": "high",
+    "detail": "The live presents the challenges as an accordion widget alongside the challenge-faced-retailers-img.webp image. The clone renders a static arrow-bullet list of fixed titles (Fragmented Data, Omnichannel Complexity, Inventory Management, Evolving Technology, Customer Expectations) with no accordion interaction, and the challenge-faced-retailers-img.webp image is not visibly rendered (imgs(0) on the clone)."
+   },
+   {
+    "section": "Azure for Retail / Re-Imagining the Customer Journey (hero)",
+    "type": "missing-image",
+    "severity": "high",
+    "detail": "The live hero shows the retail-top-banner-img.webp banner illustration on the right of the headline. The clone hero (C0) renders no visible image at all (imgs(0)); the foreground banner image fails to display even though the asset exists locally. The clone also uses a healthcare background (azure-healthcare-header-bg-1-1-1.webp) rather than a retail one."
+   },
+   {
+    "section": "Awards & Recognization",
+    "type": "widget-mismatch",
+    "severity": "medium",
+    "detail": "The live renders the Microsoft certification badges as a carousel/slider. The clone (C6) shows no carousel widget and no visible badge images (imgs(0)) — it renders a static badge band (or empty band) instead of the scrolling certification slider."
+   },
+   {
+    "section": "Powerful Solutions to Meet Your Specific Business Needs (Azure Solutions tabs)",
+    "type": "other",
+    "severity": "low",
+    "detail": "The clone tabs section uses the eyebrow 'Azure Solutions for Retail' whereas the live section heading is 'Azure Solutions for Payors'. The tabbed widget itself is present and functional on both, but the clone appears to surface fewer/differently-bucketed tabs than the live's six (360 View, Enhanced Customer Engagement, Streamlined Interactions, Informed Decision-Making, Demand Forecasting, Optimized Inventory Management) since tabs are split at image boundaries."
+   },
+   {
+    "section": "Why leverage Azure Services for Retail",
+    "type": "widget-mismatch",
+    "severity": "low",
+    "detail": "The live marks these 4 cards (Better Understand your Customers, Real-Time Insights, Create Seamless Shopping Experience, Build Resilient Supply Chains) as flip-boxes. The clone uses FlipCard components with svg icons, but the comparison tool did not detect a flip widget on the clone card grid, suggesting the hover-flip reveal may not be matching the live's flip behavior."
+   }
+  ]
+ }
+]

@@ -1,0 +1,880 @@
+{
+  "url": "https://azure.folio3.com/ai-agents/kubemonitor-agent/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "KubeMonitor Copilot: Conversational Kubernetes Observability",
+    "description": "Real-time Kubernetes monitoring made conversational. Instantly track pod status, view detailed metrics, and check resource usage using simple, natural language commands.",
+    "canonical": "https://azure.folio3.com/ai-agents/kubemonitor-agent/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+          "alt": null,
+          "w": 186,
+          "h": 87
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+          "alt": null,
+          "w": 190,
+          "h": 89
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+          "alt": null,
+          "w": 268,
+          "h": 121
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why You Need to Act Now"
+        },
+        {
+          "tag": "h3",
+          "text": "Accelerate Incident Triage"
+        },
+        {
+          "tag": "h3",
+          "text": "Context-Switching Eliminated Daily"
+        },
+        {
+          "tag": "h3",
+          "text": "Lower Mean Time to Resolve (MTTR)"
+        },
+        {
+          "tag": "h3",
+          "text": "Get Actionable Insights, Every Time"
+        }
+      ],
+      "paragraphs": [
+        "Organizations that embrace conversational observability today see faster incident response, more efficient scaling, and stronger cluster stability.",
+        "SREs can instantly diagnose issues, allowing more time for strategic platform work instead of manual log diving.\n\nRequest a call",
+        "KubeMonitor helps you reclaim valuable time each day so you can focus on building resilient, scalable Kubernetes platforms.\n\nREQUEST A CALL",
+        "Conversational diagnostics reduce manual toil, speed up resolution, and minimize the cost of application downtime.\n\nREQUEST A CALL",
+        "Smart queries surface the exact metrics and pod data you need with unmatched speed and clarity.\n\nREQUEST A CALL"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Accelerate Incident Triage"
+        },
+        {
+          "tag": "h3",
+          "text": "Context-Switching Eliminated Daily"
+        },
+        {
+          "tag": "h3",
+          "text": "Lower Mean Time to Resolve (MTTR)"
+        },
+        {
+          "tag": "h3",
+          "text": "Get Actionable Insights, Every Time"
+        }
+      ],
+      "paragraphs": [
+        "SREs can instantly diagnose issues, allowing more time for strategic platform work instead of manual log diving.\n\nRequest a call",
+        "KubeMonitor helps you reclaim valuable time each day so you can focus on building resilient, scalable Kubernetes platforms.\n\nREQUEST A CALL",
+        "Conversational diagnostics reduce manual toil, speed up resolution, and minimize the cost of application downtime.\n\nREQUEST A CALL",
+        "Smart queries surface the exact metrics and pod data you need with unmatched speed and clarity.\n\nREQUEST A CALL"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "70% Of The Fortune 500 Now Use Microsoft 365 Copilot"
+        }
+      ],
+      "paragraphs": [
+        "The KubeMonitor Copilot is a specialized, end-to-end Observability AI Agent designed for the deep, complex workflows of Kubernetes monitoring and maintenance."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-kubernetes.webp",
+          "alt": null,
+          "w": 687,
+          "h": 612
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Conversational Monitoring \n& Diagnostics"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Status and Phase Tracking"
+        },
+        {
+          "tag": "h3",
+          "text": "Natural Language Metric Queries"
+        },
+        {
+          "tag": "h3",
+          "text": "Intelligent Event Correlation"
+        },
+        {
+          "tag": "h3",
+          "text": "\"Why?\" Insights"
+        },
+        {
+          "tag": "h3",
+          "text": "Deep Metrics & Resource Observability"
+        },
+        {
+          "tag": "h3",
+          "text": "Resource Utilization Analysis"
+        },
+        {
+          "tag": "h3",
+          "text": "One-Click Scaling and Action"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Health Reporting"
+        },
+        {
+          "tag": "h3",
+          "text": "Seamless Integration & Enterprise Readiness"
+        },
+        {
+          "tag": "h3",
+          "text": "API & Metrics Unification"
+        },
+        {
+          "tag": "h3",
+          "text": "Integrated Alerting & Workflow"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Access & Governance (RBAC)"
+        },
+        {
+          "tag": "h3",
+          "text": "Accelerated Incident Response & Recovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Contextual Runbook Suggestions"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Diagnostic Command Execution"
+        },
+        {
+          "tag": "h3",
+          "text": "Historical Trend Analysis"
+        }
+      ],
+      "paragraphs": [
+        "Uncover the full power of KubeMonitor AI capabilities as it automates every step of the observability journey, from real-time status checks and resource analysis to alerting and incident response.",
+        "Instantly check the status of any pod or retrieve details on a whole namespace using simple text commands.",
+        "Ask for complex cluster data in simple English (e.g., \"Show me the logs for pod X in namespace Y over the last hour\").",
+        "Instantly surface critical events and corresponding logs when a pod shifts from Running into any other failure phase.",
+        "Provides an objective summary of why a pod is failing, prioritizing the most critical events.",
+        "Provides crucial resource consumption data, including memory and CPU usage checks for individual pods or aggregated across namespaces.",
+        "Execute diagnostic commands or suggest scaling adjustments directly from the Copilot interface with zero friction.",
+        "Maintain stable cluster health with automated warnings, personalized optimization prompts, and timely resource usage alerts.",
+        "Seamlessly connect to the Kubernetes API and integrate with existing monitoring stacks like Prometheus/Grafana and Azure Monitor.",
+        "Enables instant, contextual alerting and diagnostic command execution directly within collaboration platforms (e.g., Teams, Slack).",
+        "Features Role-Based Access Control (RBAC) to strictly govern who can query and access sensitive pod/namespace data.",
+        "Instantly suggest relevant troubleshooting steps or runbook procedures based on the detected issue/failure status."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics.webp",
+          "alt": null,
+          "w": 706,
+          "h": 706
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Conversational Monitoring \n& Diagnostics"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Status and Phase Tracking"
+        },
+        {
+          "tag": "h3",
+          "text": "Natural Language Metric Queries"
+        },
+        {
+          "tag": "h3",
+          "text": "Intelligent Event Correlation"
+        },
+        {
+          "tag": "h3",
+          "text": "\"Why?\" Insights"
+        },
+        {
+          "tag": "h3",
+          "text": "Deep Metrics & Resource Observability"
+        },
+        {
+          "tag": "h3",
+          "text": "Resource Utilization Analysis"
+        },
+        {
+          "tag": "h3",
+          "text": "One-Click Scaling and Action"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Health Reporting"
+        },
+        {
+          "tag": "h3",
+          "text": "Seamless Integration & Enterprise Readiness"
+        },
+        {
+          "tag": "h3",
+          "text": "API & Metrics Unification"
+        },
+        {
+          "tag": "h3",
+          "text": "Integrated Alerting & Workflow"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Access & Governance (RBAC)"
+        },
+        {
+          "tag": "h3",
+          "text": "Accelerated Incident Response & Recovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Contextual Runbook Suggestions"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Diagnostic Command Execution"
+        },
+        {
+          "tag": "h3",
+          "text": "Historical Trend Analysis"
+        }
+      ],
+      "paragraphs": [
+        "Instantly check the status of any pod or retrieve details on a whole namespace using simple text commands.",
+        "Ask for complex cluster data in simple English (e.g., \"Show me the logs for pod X in namespace Y over the last hour\").",
+        "Instantly surface critical events and corresponding logs when a pod shifts from Running into any other failure phase.",
+        "Provides an objective summary of why a pod is failing, prioritizing the most critical events.",
+        "Provides crucial resource consumption data, including memory and CPU usage checks for individual pods or aggregated across namespaces.",
+        "Execute diagnostic commands or suggest scaling adjustments directly from the Copilot interface with zero friction.",
+        "Maintain stable cluster health with automated warnings, personalized optimization prompts, and timely resource usage alerts.",
+        "Seamlessly connect to the Kubernetes API and integrate with existing monitoring stacks like Prometheus/Grafana and Azure Monitor.",
+        "Enables instant, contextual alerting and diagnostic command execution directly within collaboration platforms (e.g., Teams, Slack).",
+        "Features Role-Based Access Control (RBAC) to strictly govern who can query and access sensitive pod/namespace data.",
+        "Instantly suggest relevant troubleshooting steps or runbook procedures based on the detected issue/failure status.",
+        "KubeMonitor Copilot runs pre-approved diagnostic commands (e.g., describe pod) and summarizes the output instantly."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics.webp",
+          "alt": null,
+          "w": 706,
+          "h": 706
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Ready to Gain Conversational Control Over Your Cluster?"
+        }
+      ],
+      "paragraphs": [
+        "Join the DevOps teams seeing faster incident resolution and cutting manual toil. The future of Kubernetes Observability is here."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Start Your Project",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+          "alt": null,
+          "w": 626,
+          "h": 432
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Ready to Gain Conversational Control Over Your Cluster?"
+        }
+      ],
+      "paragraphs": [
+        "Join the DevOps teams seeing faster incident resolution and cutting manual toil. The future of Kubernetes Observability is here."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Start Your Project",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+          "alt": null,
+          "w": 626,
+          "h": 432
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why Choose Folio3?"
+        }
+      ],
+      "paragraphs": [
+        "We believe in the power of the cloud to transform businesses and empower people."
+      ],
+      "listItems": [
+        "Over 15 years in custom software development",
+        "Microsoft Business Solutions Partner in Cloud Solutions",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+          "alt": "discover the essence of who we are?",
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Over 15 years in custom software development",
+        "Microsoft Business Solutions Partner in Cloud Solutions",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+          "alt": "discover the essence of who we are?",
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Awards &  Recognization"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "alt": "azure_solution_architect.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "alt": "azure_administration.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "alt": "azure_security_engineer.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "alt": "data-analyst.svg",
+          "w": 120,
+          "h": 120
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes.webp 915w, https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes-300x223.webp 300w, https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes-768x572.webp 768w",
+      "alt": null,
+      "w": "915",
+      "h": "681",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "186",
+      "h": "87",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "190",
+      "h": "89",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "268",
+      "h": "121",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-kubernetes.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-kubernetes.webp 687w, https://azure.folio3.com/wp-content/uploads/2025/11/conversational-kubernetes-300x267.webp 300w",
+      "alt": null,
+      "w": "687",
+      "h": "612",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics.webp 706w, https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics-300x300.webp 300w, https://azure.folio3.com/wp-content/uploads/2025/11/conversational-monitoring-diagnostics-150x150.webp 150w",
+      "alt": null,
+      "w": "706",
+      "h": "706",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp 626w, https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free-300x207.webp 300w",
+      "alt": null,
+      "w": "626",
+      "h": "432",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp 705w, https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock-300x225.webp 300w",
+      "alt": "discover the essence of who we are?",
+      "w": "705",
+      "h": "529",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+      "srcset": null,
+      "alt": "azure_solution_architect.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+      "srcset": null,
+      "alt": "azure_administration.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "srcset": null,
+      "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+      "srcset": null,
+      "alt": "azure_security_engineer.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+      "srcset": null,
+      "alt": "data-analyst.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp 698w, https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential-300x205.webp 300w",
+      "alt": null,
+      "w": "698",
+      "h": "478",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/10/Header.webp",
+    "https://azure.folio3.com/wp-content/uploads/2025/07/circle-right-arrow.png",
+    "https://azure.folio3.com/wp-content/uploads/2025/11/kubernetes-1.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/04/Oval.png"
+  ]
+}

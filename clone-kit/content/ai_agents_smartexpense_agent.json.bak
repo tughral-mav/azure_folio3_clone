@@ -1,0 +1,883 @@
+{
+  "url": "https://azure.folio3.com/ai-agents/smartexpense-agent/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "SmartExpense Copilot: Your AI Agent for Expense Management",
+    "description": "Stop wasting hours on expense reports! Folio3 SmartExpense, powered by Microsoft Copilot, automates data entry, ensures compliance, and cuts costs instantly.",
+    "canonical": "https://azure.folio3.com/ai-agents/smartexpense-agent/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+          "alt": null,
+          "w": 186,
+          "h": 87
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+          "alt": null,
+          "w": 190,
+          "h": 89
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+          "alt": null,
+          "w": 268,
+          "h": 121
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "90% of finance teams are projected to deploy at least one AI-enabled solution by 2026. Why Wait?"
+        },
+        {
+          "tag": "h3",
+          "text": "Strategic Financial Foresight"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Financial Controls"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Collections Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Intelligent Vendor Invoice Capture"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Anomaly and Fraud Detection"
+        }
+      ],
+      "paragraphs": [
+        "The early adopters are already realizing significant efficiency and insight gains. Future-proof your operations today.",
+        "Leverage AI-driven insights to accelerate scenario modeling and unlock proactive, data-backed decision-making.\n\nRequest a call",
+        "Eliminate manual reconciliation and streamline variance analysis to ensure data integrity and audit compliance.\n\nREQUEST A CALL",
+        "Copilot automates Accounts Receivable by prioritizing high-risk accounts and creating personalized outreach, improving liquidity, and reducing DSO.\n\nREQUEST A CALL",
+        "Copilot extracts and validates invoice details from PDFs and images against purchase orders and contracts to accelerate your Procure-to-Pay cycle.\n\nRequest a call",
+        "Copilot monitors transactions using machine learning to flag unusual spending in real-time for greater financial control\n\nREQUEST A CALL"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Strategic Financial Foresight"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Financial Controls"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Collections Management"
+        }
+      ],
+      "paragraphs": [
+        "Leverage AI-driven insights to accelerate scenario modeling and unlock proactive, data-backed decision-making.\n\nRequest a call",
+        "Eliminate manual reconciliation and streamline variance analysis to ensure data integrity and audit compliance.\n\nREQUEST A CALL",
+        "Copilot automates Accounts Receivable by prioritizing high-risk accounts and creating personalized outreach, improving liquidity, and reducing DSO.\n\nREQUEST A CALL"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Intelligent Vendor Invoice Capture"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Anomaly and Fraud Detection"
+        }
+      ],
+      "paragraphs": [
+        "Copilot extracts and validates invoice details from PDFs and images against purchase orders and contracts to accelerate your Procure-to-Pay cycle.\n\nRequest a call",
+        "Copilot monitors transactions using machine learning to flag unusual spending in real-time for greater financial control\n\nREQUEST A CALL"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Microsoft 365 Copilot drove up to 353% ROI For Companies."
+        }
+      ],
+      "paragraphs": [
+        "Folio3 SmartExpense Copilot is a specialized, end-to-end Financial Intelligence Agent designed for the dynamic, and complex workflows of the Office of the CFO, easily integrating withERP, GL, and BI systems."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/smartexpense-copilot-for-finance.webp",
+          "alt": null,
+          "w": 687,
+          "h": 612
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Instant, Chat-Based Submission & AI Extraction"
+        },
+        {
+          "tag": "h3",
+          "text": "Lightning-Fast Submission in the Flow of Work"
+        },
+        {
+          "tag": "h3",
+          "text": "AI-Powered OCR Extraction"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Policy Pre-Validation"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Compliance & Risk Reduction"
+        },
+        {
+          "tag": "h3",
+          "text": "Pre-Submission Compliance Guard"
+        },
+        {
+          "tag": "h3",
+          "text": "Traceable, Audit-Ready Records"
+        },
+        {
+          "tag": "h3",
+          "text": "Seamless Data Security & Governance"
+        },
+        {
+          "tag": "h3",
+          "text": "Smart Accounting & One-Click Approval"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated GL Code Categorization"
+        },
+        {
+          "tag": "h3",
+          "text": "One-Click Approval Workflow"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial Reconciliation"
+        },
+        {
+          "tag": "h3",
+          "text": "Accelerated Reimbursement & Insight Generation"
+        },
+        {
+          "tag": "h3",
+          "text": "Days-to-Hours Reimbursement Cycle"
+        },
+        {
+          "tag": "h3",
+          "text": "Natural Language Data Queries"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Spending Insights"
+        }
+      ],
+      "paragraphs": [
+        "The Folio3 SmartExpense Copilot integrates seamlessly into your Microsoft 365 and Azure environment, delivering an end-to-end transformation of your expense management and finance reconciliation lifecycle.",
+        "Employees can submit expenses directly throughMicrosoft Teams or Outlook by simply uploading a photo or forwarding an email, drastically improving user experience..",
+        "Optical Character Recognition (OCR) instantly and accurately extracts all relevant data (vendor, amount, date, currency) from receipt images, eliminating manual data entry and errors.",
+        "The Copilot checks the expense against internal company policies (e.g., spending limits, date constraints) in real-time before submission, flagging issues for instant correction.",
+        "SmartExpense identifies and corrects policy violations (like missing data or out-of-policy claims) before submission, reducing administrative workload for finance teams.",
+        "Automatically generates clean, traceable audit trails and summaries for every transaction, ensuring solid compliance and readiness for financial audits.",
+        "Inherits your Microsoft 365 security, compliance, and privacy policies, ensuring your financial data is protected and remains secure within your organization’s environment.",
+        "AI intelligently maps each expense to the correct General Ledger (GL) codes and cost centers, eliminating manual tagging for employees and accountants alike.",
+        "Approvers receive instant notifications and can approve or reject reports directly from their Outlook inbox or a Teams, ultimately shortening approval cycles.",
+        "SmartExpense reviews transactions across systems to quickly spot anomalies, risks, and unmatched data, saving significant hours on manual reconciliation efforts.",
+        "By automating submission, compliance, and approval, SmartExpense Copilot shortens the reimbursement process from days to just hours.",
+        "Finance teams and executives can generate complex reports and performance dashboards by simply asking questions in natural, conversational language (e.g., \"Summarize top 5 expense categories this quarter\")."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction.webp",
+          "alt": null,
+          "w": 706,
+          "h": 706
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Instant, Chat-Based Submission & AI Extraction"
+        },
+        {
+          "tag": "h3",
+          "text": "Lightning-Fast Submission in the Flow of Work"
+        },
+        {
+          "tag": "h3",
+          "text": "AI-Powered OCR Extraction"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Policy Pre-Validation"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Compliance & Risk Reduction"
+        },
+        {
+          "tag": "h3",
+          "text": "Pre-Submission Compliance Guard"
+        },
+        {
+          "tag": "h3",
+          "text": "Traceable, Audit-Ready Records"
+        },
+        {
+          "tag": "h3",
+          "text": "Seamless Data Security & Governance"
+        },
+        {
+          "tag": "h3",
+          "text": "Smart Accounting & One-Click Approval"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated GL Code Categorization"
+        },
+        {
+          "tag": "h3",
+          "text": "One-Click Approval Workflow"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial Reconciliation"
+        },
+        {
+          "tag": "h3",
+          "text": "Accelerated Reimbursement & Insight Generation"
+        },
+        {
+          "tag": "h3",
+          "text": "Days-to-Hours Reimbursement Cycle"
+        },
+        {
+          "tag": "h3",
+          "text": "Natural Language Data Queries"
+        },
+        {
+          "tag": "h3",
+          "text": "Proactive Spending Insights"
+        }
+      ],
+      "paragraphs": [
+        "Employees can submit expenses directly throughMicrosoft Teams or Outlook by simply uploading a photo or forwarding an email, drastically improving user experience..",
+        "Optical Character Recognition (OCR) instantly and accurately extracts all relevant data (vendor, amount, date, currency) from receipt images, eliminating manual data entry and errors.",
+        "The Copilot checks the expense against internal company policies (e.g., spending limits, date constraints) in real-time before submission, flagging issues for instant correction.",
+        "SmartExpense identifies and corrects policy violations (like missing data or out-of-policy claims) before submission, reducing administrative workload for finance teams.",
+        "Automatically generates clean, traceable audit trails and summaries for every transaction, ensuring solid compliance and readiness for financial audits.",
+        "Inherits your Microsoft 365 security, compliance, and privacy policies, ensuring your financial data is protected and remains secure within your organization’s environment.",
+        "AI intelligently maps each expense to the correct General Ledger (GL) codes and cost centers, eliminating manual tagging for employees and accountants alike.",
+        "Approvers receive instant notifications and can approve or reject reports directly from their Outlook inbox or a Teams, ultimately shortening approval cycles.",
+        "SmartExpense reviews transactions across systems to quickly spot anomalies, risks, and unmatched data, saving significant hours on manual reconciliation efforts.",
+        "By automating submission, compliance, and approval, SmartExpense Copilot shortens the reimbursement process from days to just hours.",
+        "Finance teams and executives can generate complex reports and performance dashboards by simply asking questions in natural, conversational language (e.g., \"Summarize top 5 expense categories this quarter\").",
+        "UnlockAI-driven analytics to spot spending patterns, policy violators, and vendor inefficiencies, empowering your team to forecast budgets and identify cost-saving opportunities."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Request A Call Back",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction.webp",
+          "alt": null,
+          "w": 706,
+          "h": 706
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Ready to End the Expense Report Headache?"
+        }
+      ],
+      "paragraphs": [
+        "Join the finance leaders who are cutting the cost of processing expenses by up to 50% and eliminating compliance risk instantly. The future of intelligent, audit-ready financial control is here."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Start Your Project",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+          "alt": null,
+          "w": 626,
+          "h": 432
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Ready to End the Expense Report Headache?"
+        }
+      ],
+      "paragraphs": [
+        "Join the finance leaders who are cutting the cost of processing expenses by up to 50% and eliminating compliance risk instantly. The future of intelligent, audit-ready financial control is here."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Start Your Project",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+          "alt": null,
+          "w": 626,
+          "h": 432
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why Choose Folio3?"
+        }
+      ],
+      "paragraphs": [
+        "We believe in the power of the cloud to transform businesses and empower people."
+      ],
+      "listItems": [
+        "Over 15 years in custom software development",
+        "Microsoft Business Solutions Partner in Cloud Solutions",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+          "alt": "discover the essence of who we are?",
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Over 15 years in custom software development",
+        "Microsoft Business Solutions Partner in Cloud Solutions",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+          "alt": "discover the essence of who we are?",
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Awards &  Recognization"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "alt": "azure_solution_architect.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "alt": "azure_administration.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "alt": "azure_security_engineer.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "alt": "data-analyst.svg",
+          "w": 120,
+          "h": 120
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot.webp 823w, https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot-300x213.webp 300w, https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot-768x545.webp 768w",
+      "alt": null,
+      "w": "823",
+      "h": "584",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "186",
+      "h": "87",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "190",
+      "h": "89",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "268",
+      "h": "121",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/smartexpense-copilot-for-finance.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/smartexpense-copilot-for-finance.webp 687w, https://azure.folio3.com/wp-content/uploads/2025/11/smartexpense-copilot-for-finance-300x267.webp 300w",
+      "alt": null,
+      "w": "687",
+      "h": "612",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction.webp 706w, https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction-300x300.webp 300w, https://azure.folio3.com/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction-150x150.webp 150w",
+      "alt": null,
+      "w": "706",
+      "h": "706",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free.webp 626w, https://azure.folio3.com/wp-content/uploads/2025/10/recruitment-hassle-free-300x207.webp 300w",
+      "alt": null,
+      "w": "626",
+      "h": "432",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock.webp 705w, https://azure.folio3.com/wp-content/uploads/2023/06/about_us-mock-300x225.webp 300w",
+      "alt": "discover the essence of who we are?",
+      "w": "705",
+      "h": "529",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+      "srcset": null,
+      "alt": "azure_solution_architect.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+      "srcset": null,
+      "alt": "azure_administration.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "srcset": null,
+      "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+      "srcset": null,
+      "alt": "azure_security_engineer.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+      "srcset": null,
+      "alt": "data-analyst.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp 698w, https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential-300x205.webp 300w",
+      "alt": null,
+      "w": "698",
+      "h": "478",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/10/Header.webp",
+    "https://azure.folio3.com/wp-content/uploads/2025/07/circle-right-arrow.png",
+    "https://azure.folio3.com/wp-content/uploads/2025/11/expense-management-copilot.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/04/Oval.png"
+  ]
+}

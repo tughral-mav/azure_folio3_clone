@@ -1,0 +1,289 @@
+[
+  {
+    "i": 0,
+    "heading": "",
+    "subheads": [],
+    "height": 79,
+    "bg": "rgb(255, 255, 255)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": true,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 1,
+    "imgs": [
+      "/wp-content/uploads/2022/06/folio3_by_azure.svg"
+    ]
+  },
+  {
+    "i": 1,
+    "heading": "Discover Cloud Opportunities",
+    "subheads": [
+      "Azure Cloud Services",
+      "Microsoft Power Platform",
+      "Azure Data Analytics",
+      "Azure Managed Services"
+    ],
+    "height": 1065,
+    "bg": "rgb(255, 255, 255)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": true,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 16
+    },
+    "nImg": 5,
+    "imgs": [
+      "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+      "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+      "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+      "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+      "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp"
+    ]
+  },
+  {
+    "i": 2,
+    "heading": "",
+    "subheads": [
+      "Awards & Recognization"
+    ],
+    "height": 180,
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImg": "",
+    "type": {
+      "slider": true,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 3,
+    "heading": "Your Next Big Idea Starts in the Cloud",
+    "subheads": [
+      "Build Scalable Websites Seamle",
+      "Innovate Existing and Future A",
+      "Build Mobile Experiences for W"
+    ],
+    "height": 613,
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 3
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 4,
+    "heading": "",
+    "subheads": [
+      "Scale Your Business with Our A"
+    ],
+    "height": 462,
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 5,
+    "heading": "Work With Top Microsoft CSP Experts",
+    "subheads": [],
+    "height": 785,
+    "bg": "rgb(245, 248, 254)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 1
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 6,
+    "heading": "Ensuring Productivity, Agility, & Scalability.",
+    "subheads": [
+      "Productivity",
+      "Agility",
+      "Scalability"
+    ],
+    "height": 718,
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 3
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 7,
+    "heading": "Our Process",
+    "subheads": [
+      "Step 2Choose the Services that",
+      "<img width=\"50\" height=\"46\" de",
+      "Step 3Meet with your new Senio",
+      "<img width=\"44\" height=\"44\" de"
+    ],
+    "height": 625,
+    "bg": "rgb(215, 233, 255)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": true,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 8,
+    "heading": "Explore Why Businesses Trust Folio3 To Fuel Growth",
+    "subheads": [
+      "750+ Certified Developers",
+      "Cloud-Centric Approach",
+      "App Modernization Specialists",
+      "1,000+ Clients Worldwide",
+      "100+ Applications Supported",
+      "24/7 Support and Maintenance"
+    ],
+    "height": 1022,
+    "bg": "rgb(245, 248, 254)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": true,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 6
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 9,
+    "heading": "Real Results, Real Impact,",
+    "subheads": [
+      "Savills",
+      "CityU"
+    ],
+    "height": 801,
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": true,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 10,
+    "heading": "Your Common Queries Are Resolved​",
+    "subheads": [],
+    "height": 755,
+    "bg": "rgb(255, 255, 255)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": true,
+      "flipBox": false,
+      "form": false,
+      "accordion": true,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 11,
+    "heading": "Schedule a 1:1 Call Today",
+    "subheads": [],
+    "height": 777,
+    "bg": "rgb(245, 248, 254)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": true,
+      "accordion": false,
+      "counter": true,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  },
+  {
+    "i": 12,
+    "heading": "",
+    "subheads": [],
+    "height": 764,
+    "bg": "rgb(5, 13, 32)",
+    "bgImg": "",
+    "type": {
+      "slider": false,
+      "tabs": false,
+      "flipBox": false,
+      "form": false,
+      "accordion": false,
+      "counter": false,
+      "cards": 0
+    },
+    "nImg": 0,
+    "imgs": []
+  }
+]

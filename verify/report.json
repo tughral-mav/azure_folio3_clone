@@ -1,0 +1,697 @@
+{
+  "base": "http://localhost:3000",
+  "thresholds": {
+    "visual": 95,
+    "header": 90,
+    "footer": 95,
+    "jsKB": 150,
+    "htmlKB": 250
+  },
+  "generatedRoutes": 12,
+  "rows": [
+    {
+      "route": "/",
+      "vMatch": 62.64387250819035,
+      "vPass": false,
+      "content": {
+        "route": "/",
+        "clone": {
+          "status": 200,
+          "title": "Folio3 | Azure Cloud Services",
+          "canonical": "https://azure.folio3.com/",
+          "description": "Folio3 is a Microsoft Solutions Partner for Azure cloud, data analytics, Microsoft Fabric and Copilot — build, run and manage applications on Azure.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Folio3 | Azure Cloud Services",
+        "goldenH1": null,
+        "goldenH1Count": 3,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 111,
+        "reqCount": 42,
+        "loadMs": 150,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/",
+        "matchPct": 62.64387250819035,
+        "goldenSize": "1440x12971",
+        "cloneSize": "1440x10005",
+        "comparedRegion": "1440x10005",
+        "diffPath": "verify\\diffs\\home.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/services/",
+      "vMatch": 59.822378419452896,
+      "vPass": false,
+      "content": {
+        "route": "/services/",
+        "clone": {
+          "status": 200,
+          "title": "Services - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/services/",
+          "description": "Accelerate Your Cloud Journey With Top-Notch Azure Services",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Services - Azure",
+        "goldenH1": "Accelerate Your Cloud Journey With Top-notch Azure Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/services/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 51,
+        "reqCount": 17,
+        "loadMs": 67,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/services/",
+        "matchPct": 59.822378419452896,
+        "goldenSize": "1886x5264",
+        "cloneSize": "1440x6952",
+        "comparedRegion": "1440x5264",
+        "diffPath": "verify\\diffs\\services.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/about-us/",
+      "vMatch": 67.8706725539131,
+      "vPass": false,
+      "content": {
+        "route": "/about-us/",
+        "clone": {
+          "status": 200,
+          "title": "About Us - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/about-us/",
+          "description": "Transform Your Business With Azure Cloud Services — We believe in the power of the cloud to transform businesses and empower people.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "About Us - Azure",
+        "goldenH1": "Transform Your Business With Azure Cloud Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/about-us/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 123,
+        "reqCount": 20,
+        "loadMs": 75,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/about-us/",
+        "matchPct": 67.8706725539131,
+        "goldenSize": "1440x5209",
+        "cloneSize": "1440x5984",
+        "comparedRegion": "1440x5209",
+        "diffPath": "verify\\diffs\\about_us.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/contact-us/",
+      "vMatch": 37.515476190476186,
+      "vPass": false,
+      "content": {
+        "route": "/contact-us/",
+        "clone": {
+          "status": 200,
+          "title": "Contact Us | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/contact-us/",
+          "description": "Talk to Folio3’s Microsoft-certified Azure architects about your cloud, data or Copilot project.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Contact Us - Azure",
+        "goldenH1": "Reach Out For General Inquiries About Azure Cloud Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/contact-us/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 0,
+        "reqCount": 17,
+        "loadMs": 45,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/contact-us/",
+        "matchPct": 37.515476190476186,
+        "goldenSize": "1886x3753",
+        "cloneSize": "1440x1400",
+        "comparedRegion": "1440x1400",
+        "diffPath": "verify\\diffs\\contact_us.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/azure-cloud-service/",
+      "vMatch": 57.57439597767215,
+      "vPass": false,
+      "content": {
+        "route": "/azure-cloud-service/",
+        "clone": {
+          "status": 200,
+          "title": "Azure Cloud Service - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/azure-cloud-service/",
+          "description": "Create Reliable Cloud-based Solutions with Azure — Harness the power of cloud-based applications to differentiate your customer experience.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Azure Cloud Service - Azure",
+        "goldenH1": "Create Reliable Cloud-based Solutions with Azure",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/azure-cloud-service/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 158,
+        "reqCount": 21,
+        "loadMs": 118,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/azure-cloud-service/",
+        "matchPct": 57.57439597767215,
+        "goldenSize": "1440x12849",
+        "cloneSize": "1440x10729",
+        "comparedRegion": "1440x10729",
+        "diffPath": "verify\\diffs\\azure_cloud_service.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/azure-data-analytics/",
+      "vMatch": 64.82103374887382,
+      "vPass": false,
+      "content": {
+        "route": "/azure-data-analytics/",
+        "clone": {
+          "status": 200,
+          "title": "Azure Data Analytics Services | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/azure-data-analytics/",
+          "description": "Unlock powerful insights with Azure Data Analytics. Folio3 helps you transform complex data into decisions with ETL, visualization &amp; predictive analytics.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Azure Data Analytics Services",
+        "goldenH1": "End-to-End Data Analytics Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/azure-data-analytics/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 143,
+        "reqCount": 22,
+        "loadMs": 84,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/azure-data-analytics/",
+        "matchPct": 64.82103374887382,
+        "goldenSize": "1440x14757",
+        "cloneSize": "1440x12086",
+        "comparedRegion": "1440x12086",
+        "diffPath": "verify\\diffs\\azure_data_analytics.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/azure-for-healthcare/",
+      "vMatch": 78.38175162498233,
+      "vPass": false,
+      "content": {
+        "route": "/azure-for-healthcare/",
+        "clone": {
+          "status": 200,
+          "title": "Azure for Healthcare - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/azure-for-healthcare/",
+          "description": "Reshaping Healthcare Landscape with Azure — Accelerate your cloud transformation by pairing functional knowledge of your business with our cloud healthcare ex",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Azure for Healthcare - Azure",
+        "goldenH1": "Reshaping Healthcare Landscape with Azure",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/azure-for-healthcare/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 108,
+        "reqCount": 20,
+        "loadMs": 59,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/azure-for-healthcare/",
+        "matchPct": 78.38175162498233,
+        "goldenSize": "1440x9436",
+        "cloneSize": "1440x10316",
+        "comparedRegion": "1440x9436",
+        "diffPath": "verify\\diffs\\azure_for_healthcare.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/azure-managed-services/",
+      "vMatch": 60.09895636546827,
+      "vPass": false,
+      "content": {
+        "route": "/azure-managed-services/",
+        "clone": {
+          "status": 200,
+          "title": "Azure Managed Services - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/azure-managed-services/",
+          "description": "Streamline your Azure cloud with Folio3’s Azure Managed Services expert monitoring, VM &amp; backup management, security, and advisory support to maximize ROI and uptime.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Azure Managed Services - Azure",
+        "goldenH1": "Seamless Azure Management For Worry-Free Cloud.",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/azure-managed-services/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 156,
+        "reqCount": 21,
+        "loadMs": 53,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/azure-managed-services/",
+        "matchPct": 60.09895636546827,
+        "goldenSize": "1440x13128",
+        "cloneSize": "1440x11469",
+        "comparedRegion": "1440x11469",
+        "diffPath": "verify\\diffs\\azure_managed_services.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/microsoft-fabric-services/",
+      "vMatch": 79.2369462361673,
+      "vPass": false,
+      "content": {
+        "route": "/microsoft-fabric-services/",
+        "clone": {
+          "status": 200,
+          "title": "Microsoft Fabric Services - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/microsoft-fabric-services/",
+          "description": "Your Trusted Partner For Microsoft Fabric Services — Unify Your Data Journey with Microsoft Fabric, a powerful, all-in-one analytics platform which simplifies",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Microsoft Fabric Services - Azure",
+        "goldenH1": "Your Trusted Partner For  Microsoft Fabric Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/microsoft-fabric-services/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 53,
+        "reqCount": 18,
+        "loadMs": 46,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/microsoft-fabric-services/",
+        "matchPct": 79.2369462361673,
+        "goldenSize": "1440x9147",
+        "cloneSize": "1440x9740",
+        "comparedRegion": "1440x9147",
+        "diffPath": "verify\\diffs\\microsoft_fabric_services.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/ai-agents/",
+      "vMatch": 58.80638961415724,
+      "vPass": false,
+      "content": {
+        "route": "/ai-agents/",
+        "clone": {
+          "status": 200,
+          "title": "AI Agents - Azure | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/ai-agents/",
+          "description": "Ai Agents — Microsoft Azure cloud, data and AI services from Folio3, a Microsoft Solutions Partner.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "AI Agents - Azure",
+        "goldenH1": null,
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/ai-agents/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 34,
+        "reqCount": 16,
+        "loadMs": 40,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/ai-agents/",
+        "matchPct": 58.80638961415724,
+        "goldenSize": "1440x1915",
+        "cloneSize": "1440x2757",
+        "comparedRegion": "1440x1915",
+        "diffPath": "verify\\diffs\\ai_agents.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/blog/",
+      "vMatch": 69.4131664600124,
+      "vPass": false,
+      "content": {
+        "route": "/blog/",
+        "clone": {
+          "status": 200,
+          "title": "Blog | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/blog/",
+          "description": "Insights on Microsoft Azure, Fabric, Power BI, Copilot and data analytics from Folio3.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Blog - Azure",
+        "goldenH1": "Blog  Azure Cloud Services",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/blog/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 0,
+        "reqCount": 15,
+        "loadMs": 61,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/blog/",
+        "matchPct": 69.4131664600124,
+        "goldenSize": "1440x3226",
+        "cloneSize": "1440x6218",
+        "comparedRegion": "1440x3226",
+        "diffPath": "verify\\diffs\\blog.diff.png",
+        "ok": true
+      }
+    },
+    {
+      "route": "/blog/what-is-microsoft-fabric/",
+      "vMatch": 93.2854609929078,
+      "vPass": false,
+      "content": {
+        "route": "/blog/what-is-microsoft-fabric/",
+        "clone": {
+          "status": 200,
+          "title": "Microsoft Fabric: Features, Capabilities, and Strategic Insights | Folio3 Azure",
+          "canonical": "https://azure.folio3.com/blog/what-is-microsoft-fabric/",
+          "description": "Explore how Microsoft Fabric redefines data management, offering seamless integration, advanced analytics, and a future-proof pathway for enterprises. Discover the platform’s core features, strategic advantages, and how it can weave into your organization’s data strategy.",
+          "h1Count": 1,
+          "hasJsonLd": true,
+          "hasOg": true
+        },
+        "goldenTitle": "Microsoft Fabric: Features, Capabilities, and Strategic Insights - Azure",
+        "goldenH1": "Microsoft Fabric: Features, Capabilities, and Strategic Insights",
+        "goldenH1Count": 1,
+        "checks": {
+          "returns 200": true,
+          "has <title>": true,
+          "single H1": true,
+          "has canonical": true,
+          "has meta description": true,
+          "has OpenGraph": true
+        },
+        "score": "6/6",
+        "ok": true
+      },
+      "perf": {
+        "route": "/blog/what-is-microsoft-fabric/",
+        "jsKB": 0,
+        "htmlKB": 0,
+        "imgKB": 0,
+        "reqCount": 17,
+        "loadMs": 99,
+        "imgNoDims": 0,
+        "checks": {
+          "JS < 150KB": true,
+          "HTML < 250KB": true,
+          "no img missing dims (CLS)": true,
+          "load < 3s": true
+        },
+        "score": "4/4",
+        "ok": true
+      },
+      "visual": {
+        "route": "/blog/what-is-microsoft-fabric/",
+        "matchPct": 93.2854609929078,
+        "goldenSize": "1440x9787",
+        "cloneSize": "1440x9635",
+        "comparedRegion": "1440x9635",
+        "diffPath": "verify\\diffs\\blog_what_is_microsoft_fabric.diff.png",
+        "ok": true
+      }
+    }
+  ],
+  "links": {
+    "crawled": 120,
+    "discovered": 136,
+    "broken": [],
+    "anchorLeaks": [
+      {
+        "on": "/blog/data-analytics-trends/",
+        "href": "http://azure.folio3.com"
+      }
+    ],
+    "ok": false
+  }
+}

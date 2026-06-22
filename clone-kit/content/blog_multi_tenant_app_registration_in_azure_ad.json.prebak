@@ -1,0 +1,472 @@
+{
+  "url": "https://azure.folio3.com/blog/multi-tenant-app-registration-in-azure-ad/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Multi-Tenant App Registration in Azure AD",
+    "description": "In this blog, we’ll cover how to configure an Azure App Registration as Multi-Tenant in Azure Active Directory (Azure AD).",
+    "canonical": "https://azure.folio3.com/blog/multi-tenant-app-registration-in-azure-ad/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/09/multi-tenant-app-registration-in-azure-ad.jpg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "September 23, 2025"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Multi-Tenant App Registration in Azure AD"
+        },
+        {
+          "tag": "h2",
+          "text": "Multi-Tenant App Registration in Azure AD"
+        },
+        {
+          "tag": "h2",
+          "text": "Prerequisites"
+        },
+        {
+          "tag": "h2",
+          "text": "Steps to Register App as Multi-Tenant"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 1: Register the App as Multi-Tenant in Tenant X"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 2: Create and Manage Secrets"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 3: Configure Redirect URI"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 4: Assign Graph API Permissions"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 5: Get Admin Consent from Tenant Y"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 6: Generate Access Token"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 7: Fetch Users from Tenant Y"
+        },
+        {
+          "tag": "h3",
+          "text": "End Result"
+        },
+        {
+          "tag": "h4",
+          "text": "You can also add filters, for example:"
+        },
+        {
+          "tag": "h2",
+          "text": "Conclusion"
+        },
+        {
+          "tag": "h3",
+          "text": "Key Takeaways"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        }
+      ],
+      "paragraphs": [
+        "Home » Multi-Tenant App Registration in Azure AD",
+        "Table of Contents",
+        "In this blog, we’ll cover how to configure an Azure App Registration as Multi-Tenant in Azure Active Directory (Azure AD). This is useful when your application is registered in one tenant but needs to authenticate or access resources from another tenant.",
+        "By the end of this article, you’ll know how to register your app, grant admin consent in external tenants, and fetch user data securely through Microsoft Graph API.",
+        "If your Azure App Registration is created in Tenant X but you need access to users in Tenant Y, you must configure the app in Tenant X as a multi-tenant app and obtain admin consent from Tenant Y.",
+        "For example:",
+        "Before you begin, make sure you have:",
+        "You must have created your client secret. If not, then please go to Certificates & secrets and create a secret. Please note down client id and client secret.",
+        "Go to Authentication 🡪 Web 🡪 Redirect URIs",
+        "<img fetchpriority=\"high\" fetchpriority=\"high\" decoding=\"async\" class=\"aligncenter wp-image-16518 size-full\" src=\"https://azure.folio3.com/wp-content/uploads/2025/09/Image.png\" alt=\"Image\" width=\"800\" height=\"400\" srcset=\"https://azure.folio3.com/wp-content/uploads/2025/09/Image.png 800w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-300x150.png 300w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-768x384.png 768w\" sizes=\"(max-width: 800px) 100vw, 800px\" />",
+        "Since your app is in tenant X, it doesn’t have direct access to tenant Y unless an administrator from tenant Y explicitly grants permission.",
+        "1. Share the Admin Consent URL with the administrator of tenant Y:"
+      ],
+      "listItems": [
+        "Abdullah Ali",
+        "September 23, 2025",
+        "Multi-Tenant App Registration in Azure AD",
+        "Prerequisites",
+        "Steps to Register App as Multi-TenantStep 1: Register the App as Multi-Tenant in Tenant XStep 2: Create and Manage SecretsStep 3: Configure Redirect URIStep 4: Assign Graph API PermissionsStep 5: Get Admin Consent from Tenant YStep 6: Generate Access TokenStep 7: Fetch Users from Tenant YEnd ResultYou can also add filters, for example:",
+        "Step 1: Register the App as Multi-Tenant in Tenant X",
+        "Step 2: Create and Manage Secrets",
+        "Step 3: Configure Redirect URI",
+        "Step 4: Assign Graph API Permissions",
+        "Step 5: Get Admin Consent from Tenant Y",
+        "Step 6: Generate Access Token",
+        "Step 7: Fetch Users from Tenant Y",
+        "End ResultYou can also add filters, for example:",
+        "You can also add filters, for example:",
+        "ConclusionKey Takeaways",
+        "Key Takeaways",
+        "Tenant X = tenantx.com (where the app is registered)",
+        "Tenant Y = tenanty.com (where you want to access user data)",
+        "Azure AD Admin Access in Tenant X (to register the app).",
+        "Global Admin or App Admin in Tenant Y (to provide admin consent)."
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-2.png",
+          "alt": "Image 2",
+          "w": 752,
+          "h": 86
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-3.png",
+          "alt": "Image 3",
+          "w": 755,
+          "h": 192
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-4.png",
+          "alt": "Image 4",
+          "w": 736,
+          "h": 108
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-5.png",
+          "alt": "Image 5",
+          "w": 765,
+          "h": 587
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-6.png",
+          "alt": "Image 6",
+          "w": 747,
+          "h": 107
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-7.png",
+          "alt": "Image 7",
+          "w": 730,
+          "h": 83
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-8.png",
+          "alt": "Image 8",
+          "w": 756,
+          "h": 91
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-2.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-2.png 752w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-2-300x34.png 300w",
+      "alt": "Image 2",
+      "w": "752",
+      "h": "86",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-3.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-3.png 755w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-3-300x76.png 300w",
+      "alt": "Image 3",
+      "w": "755",
+      "h": "192",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-4.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-4.png 736w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-4-300x44.png 300w",
+      "alt": "Image 4",
+      "w": "736",
+      "h": "108",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-5.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-5.png 765w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-5-300x230.png 300w",
+      "alt": "Image 5",
+      "w": "765",
+      "h": "587",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-6.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-6.png 747w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-6-300x43.png 300w",
+      "alt": "Image 6",
+      "w": "747",
+      "h": "107",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-7.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-7.png 730w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-7-300x34.png 300w",
+      "alt": "Image 7",
+      "w": "730",
+      "h": "83",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-8.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/09/Image-8.png 756w, https://azure.folio3.com/wp-content/uploads/2025/09/Image-8-300x36.png 300w",
+      "alt": "Image 8",
+      "w": "756",
+      "h": "91",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": " <div> <div> <p>Table of Contents</p> <span><a href=\"#\"><span><span><span>Toggle</span><span></span></span></span></a></span></div> </div> <div> <div> <div> <div> <div> <p>In this blog, we’ll cover how to configure an Azure App Registration as <b>Multi-Tenant</b> in Azure Active Directory (Azure AD). This is useful when your application is registered in one tenant but needs to authenticate or access resources from another tenant.</p><p>By the end of this article, you’ll know how to register your app, grant admin consent in external tenants, and fetch user data securely through Microsoft Graph API.</p><h2><span></span>Multi-Tenant App Registration in Azure AD<span></span></h2><p>If your Azure App Registration is created in <b>Tenant X</b> but you need access to users in <b>Tenant Y</b>, you must configure the app in Tenant X as a multi-tenant app and obtain admin consent from Tenant Y.</p><p><strong>For example:</strong></p><ul><li><b>Tenant X</b> = tenantx.com (where the app is registered)</li><li><b>Tenant Y</b> = tenanty.com (where you want to access user data)</li></ul><h2><span></span>Prerequisites<span></span></h2><p>Before you begin, make sure you have:</p><ul><li><b>Azure AD Admin Access</b> in Tenant X (to register the app).</li><li><b>Global Admin or App Admin in Tenant Y</b> (to provide admin consent).</li><li><b>Basic familiarity</b> with Azure App Registrations, OAuth 2.0, and Microsoft Graph API.</li><li>Tools such as <b>Postman</b> or <b>cURL</b>&nbsp;are installed for testing authentication and API calls.</li><li>A valid <b>Azure subscription</b> with permissions to manage App Registrations.</li></ul><h2><span></span>Steps to Register App as Multi-Tenant<span></span></h2><h3><span></span>Step 1: Register the App as Multi-Tenant in Tenant X<span></span></h3><ul><li>Go<b> to Azure AD (Tenant X)</b> → <b>App registrations</b>.</li><li>Select your app and go to <b>Authentication</b>.</li><li>Under <b>Supported account types</b>, select:<ul><li><b>Accounts in any organizational directory (Multi-tenant)</b></li></ul></li><li>Save changes.</li></ul><h3><span></span>Step 2: Create and Manage Secrets<span></span></h3><p>You must have created your client secret. If not, then please go to <b>Certificates &amp; secrets</b> and create a secret. Please note down client id and client secret.</p><h3><span></span>Step 3: Configure Redirect URI<span></span></h3><p>Go to <b>Authentication 🡪 Web 🡪 Redirect URIs</b></p><ul><li>Set Redirect URI = <a href=\"https://jwt.ms\">https://jwt.ms</a> (for testing tokens).</li></ul><h3><span></span>Step 4: Assign Graph API Permissions<span></span></h3><ul><li>Add required <b>Application Permissions</b> (such as User.Read.All).</li><li>Grant <b>Admin Consent</b> within Tenant X.</li><li>See this</li></ul><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20400'%3E%3C/svg%3E\" alt=\"Image\"></p><h3><span></span>Step 5: Get Admin Consent from Tenant Y<span></span></h3><p>Since your app is in <b>tenant X</b>, it doesn’t have direct access to <b>tenant Y</b> unless an administrator from <b>tenant Y</b> explicitly <b>grants permission</b>.</p><p>1. Share the <b>Admin Consent URL</b> with the administrator of <b>tenant Y</b>:</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20752%2086'%3E%3C/svg%3E\" alt=\"Image 2\"></p><p>2.The admin of <b>tenant Y</b> must <b>accept the consent</b> for your app.</p><p>3. Once accepted, your app will be registered under <b>Enterprise Applications</b> in <b>tenant Y</b>.</p><h3><span></span>Step 6: Generate Access Token<span></span></h3><p>Use Tenant Y’s tenant ID, but the client credentials of the app in Tenant X:</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20755%20192'%3E%3C/svg%3E\" alt=\"Image 3\"></p><p>This returns a <b>Bearer Access Token</b>.</p><h3><span></span>Step 7: Fetch Users from Tenant Y<span></span></h3><p>Use the token to call the Microsoft Graph API:</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20736%20108'%3E%3C/svg%3E\" alt=\"Image 4\"></p><h3><span></span>End Result<span></span></h3><p>App registration is in <b>tenant X</b> but the users in the response are of <b>tenant Y</b>.</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20765%20587'%3E%3C/svg%3E\" alt=\"Image 5\"></p><h4><span></span>You can also add filters, for example:<span></span></h4><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20747%20107'%3E%3C/svg%3E\" alt=\"Image 6\"></p><p>References:</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%2083'%3E%3C/svg%3E\" alt=\"Image 7\"></p><p>and</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20756%2091'%3E%3C/svg%3E\" alt=\"Image 8\"></p><h2><span></span>Conclusion<span></span></h2><p>By following these steps, you can successfully enable your application to authenticate and fetch user data across multiple tenants. This setup is particularly useful for SaaS applications that need to serve multiple organizations securely.</p><h3><span></span>Key Takeaways<span></span></h3><ul><li>Always register your app in the <b>primary tenant</b> where you manage development.</li><li>Ensure <b>admin consent</b> is granted in every external tenant where your app will be used.</li><li>Use <b>Microsoft Graph API</b> with proper permissions to fetch or manage user data.</li><li>Consider applying <b>least privilege</b> principles by only requesting the permissions your app truly needs.</li></ul> </div> </div> </div> </div> </div> ",
+  "related": []
+}

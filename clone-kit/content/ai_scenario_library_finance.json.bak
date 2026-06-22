@@ -1,0 +1,606 @@
+{
+  "url": "https://azure.folio3.com/ai-scenario-library/finance/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Folio3 Copilot Agents Library: Azure AI Solutions for Enterprise",
+    "description": "Accelerate AI transformation with Folio3's Copilot Agents. Browse pre-built solutions by function (HR, Finance, Sales) or industry (Healthcare, Retail).",
+    "canonical": "https://azure.folio3.com/ai-scenario-library/finance/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2026/01/copilot-finance.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+          "alt": null,
+          "w": 186,
+          "h": 87
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+          "alt": null,
+          "w": 190,
+          "h": 89
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+          "alt": null,
+          "w": 196,
+          "h": 92
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+          "alt": null,
+          "w": 268,
+          "h": 121
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Comprehensive Finance Use Cases"
+        },
+        {
+          "tag": "h3",
+          "text": "Risk Management & Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-time Threat Detection:"
+        },
+        {
+          "tag": "h3",
+          "text": "Scenario Planning:"
+        },
+        {
+          "tag": "h3",
+          "text": "Planning & Analysis (FP&A)"
+        },
+        {
+          "tag": "h3",
+          "text": "Budgeting & Forecasting:"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial Analysis:"
+        },
+        {
+          "tag": "h3",
+          "text": "Procure to Pay"
+        },
+        {
+          "tag": "h3",
+          "text": "Automated Spend Analysis:"
+        },
+        {
+          "tag": "h3",
+          "text": "Supplier Communication:"
+        },
+        {
+          "tag": "h3",
+          "text": "Record to Report"
+        },
+        {
+          "tag": "h3",
+          "text": "Consolidation & Reporting:"
+        },
+        {
+          "tag": "h3",
+          "text": "Compliance Documentation:"
+        },
+        {
+          "tag": "h3",
+          "text": "Day in the Life of a Finance Pro"
+        },
+        {
+          "tag": "h3",
+          "text": "Meeting & Task Management:"
+        },
+        {
+          "tag": "h3",
+          "text": "Drafting & Insight Generation:"
+        }
+      ],
+      "paragraphs": [
+        "We specialize in implementing the core pillars of modern finance transformation",
+        "Address the lack of scenario planning and eliminate vulnerability to financial threats.",
+        "Use Copilot to identify potential compliance breaches before they escalate.",
+        "Rapidly model multiple financial outcomes to ensure your organization is never caught off guard by market shifts.",
+        "Turn complex data into actionable strategy across budgeting and forecasting.",
+        "Leverage AI to automate data collection and generate more accurate financial projections.",
+        "Use Copilot to identify variance drivers and summarize performance trends for executive review.",
+        "Optimize your spending and streamline vendor relationships.",
+        "Instantly categorize and review historical spend to identify cost-saving opportunities.",
+        "Draft and manage payment inquiries and vendor negotiations with AI-assisted accuracy.",
+        "Achieve faster, more accurate period-end closes.",
+        "Streamline corporate performance management by automating the synthesis of global financial data."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "ACHIEVE THESE WITH POWER PLATFORM",
+          "href": "#pgForm"
+        },
+        {
+          "text": "ACHIEVE THESE WITH POWER PLATFORM",
+          "href": "#pgForm"
+        },
+        {
+          "text": "ACHIEVE THESE WITH POWER PLATFORM",
+          "href": "#pgForm"
+        },
+        {
+          "text": "ACHIEVE THESE WITH POWER PLATFORM",
+          "href": "#pgForm"
+        },
+        {
+          "text": "ACHIEVE THESE WITH POWER PLATFORM",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/01/risk-management-compliance.webp",
+          "alt": null,
+          "w": 705,
+          "h": 576
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "70% Of The Fortune 500 Now Use Microsoft 365 Copilot"
+        }
+      ],
+      "paragraphs": [
+        "The Folio3 Finance Copilot is a specialized, end-to-end Finance Copilot for the deep, complex workflows of Finance World."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/10/fortune-microsoft-copilot.webp",
+          "alt": null,
+          "w": 702,
+          "h": 683
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Awards &  Recognization"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "alt": "azure_solution_architect.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "alt": "azure_administration.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "alt": "azure_security_engineer.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "alt": "data-analyst.svg",
+          "w": 120,
+          "h": 120
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/copilot-finance.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2026/01/copilot-finance.webp 660w, https://azure.folio3.com/wp-content/uploads/2026/01/copilot-finance-300x243.webp 300w",
+      "alt": null,
+      "w": "660",
+      "h": "534",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-savills-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "186",
+      "h": "87",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "190",
+      "h": "89",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/ias-rff-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "196",
+      "h": "92",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/superior-farms-logo.webp",
+      "srcset": null,
+      "alt": null,
+      "w": "268",
+      "h": "121",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/risk-management-compliance.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2026/01/risk-management-compliance.webp 705w, https://azure.folio3.com/wp-content/uploads/2026/01/risk-management-compliance-300x245.webp 300w",
+      "alt": null,
+      "w": "705",
+      "h": "576",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/10/fortune-microsoft-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/10/fortune-microsoft-copilot.webp 702w, https://azure.folio3.com/wp-content/uploads/2025/10/fortune-microsoft-copilot-300x292.webp 300w",
+      "alt": null,
+      "w": "702",
+      "h": "683",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/achieve-copliot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2026/01/achieve-copliot.webp 705w, https://azure.folio3.com/wp-content/uploads/2026/01/achieve-copliot-300x187.webp 300w",
+      "alt": null,
+      "w": "705",
+      "h": "440",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/eliminate-vulneraility-start-transformation.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2026/01/eliminate-vulneraility-start-transformation.webp 704w, https://azure.folio3.com/wp-content/uploads/2026/01/eliminate-vulneraility-start-transformation-300x188.webp 300w",
+      "alt": null,
+      "w": "704",
+      "h": "440",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/azure-data-services-private-equity-firm-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp 696w, https://azure.folio3.com/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy-300x205.webp 300w",
+      "alt": null,
+      "w": "696",
+      "h": "476",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp 698w, https://azure.folio3.com/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential-300x205.webp 300w",
+      "alt": null,
+      "w": "698",
+      "h": "478",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+      "srcset": null,
+      "alt": "azure_solution_architect.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+      "srcset": null,
+      "alt": "azure_administration.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "srcset": null,
+      "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+      "srcset": null,
+      "alt": "azure_security_engineer.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+      "srcset": null,
+      "alt": "data-analyst.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/12/Header.png"
+  ]
+}

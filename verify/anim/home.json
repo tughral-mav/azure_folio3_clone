@@ -1,0 +1,275 @@
+{
+  "entranceCount": 1,
+  "entrance": [
+    {
+      "animation": "zoomIn",
+      "delay": 0,
+      "label": "elementor-element.elementor-element-dc025b6"
+    }
+  ],
+  "css": [],
+  "counters": [
+    {
+      "to": "Our Clients\t",
+      "duration": null
+    },
+    {
+      "to": "Our Clients\t",
+      "duration": null
+    },
+    {
+      "to": "Our Clients",
+      "duration": null
+    },
+    {
+      "to": "0\n\t\t\t\t+",
+      "duration": null
+    },
+    {
+      "to": "100",
+      "duration": "2000"
+    },
+    {
+      "to": "+",
+      "duration": null
+    },
+    {
+      "to": "Years of Exp",
+      "duration": null
+    },
+    {
+      "to": "Years of Exp",
+      "duration": null
+    },
+    {
+      "to": "Years of Exp",
+      "duration": null
+    },
+    {
+      "to": "0\n\t\t\t\t+",
+      "duration": null
+    },
+    {
+      "to": "15",
+      "duration": "2000"
+    },
+    {
+      "to": "+",
+      "duration": null
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Discover Cloud Opportunities",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+          "alt": "Cloud Strategy & Consulting"
+        },
+        {
+          "src": "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+          "alt": "Azure Application Development"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+          "alt": "DevOps Automation as Service"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+          "alt": "Cloud Migration"
+        },
+        {
+          "src": "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp",
+          "alt": "Azure Cloud Services"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Azure Cloud Services",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+          "alt": "Cloud Strategy & Consulting"
+        },
+        {
+          "src": "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+          "alt": "Azure Application Development"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+          "alt": "DevOps Automation as Service"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+          "alt": "Cloud Migration"
+        },
+        {
+          "src": "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp",
+          "alt": "Azure Cloud Services"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Awards &  Recognization",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+          "alt": "Azure Solutions Architect"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/azure_administration.svg",
+          "alt": "Azure Administration"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400 + 104 or 204 - Azure DevOps Engineer Expert"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+          "alt": "Azure Security Engineer"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/data-analyst.svg",
+          "alt": "data-analyst"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Scale Your Business with \nOur Azure Prof",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+          "alt": "Scale Your Business with Our Azure Professional Services"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Scale Your Business with \nOur Azure Prof",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+          "alt": "Scale Your Business with Our Azure Professional Services"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Work With Top Microsoft CSP Experts",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/10/csp-ms-logo.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Microsoft offers flexible pricing and li",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/10/csp-ms-logo.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Ensuring Productivity, Agility, & Scalab",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/05/employee-image-1-1.png",
+          "alt": "productivity"
+        },
+        {
+          "src": "/wp-content/uploads/2023/05/agility.webp",
+          "alt": "agility"
+        },
+        {
+          "src": "/wp-content/uploads/2023/05/scalability1-1.webp",
+          "alt": "scalability"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Productivity",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/05/employee-image-1-1.png",
+          "alt": "productivity"
+        },
+        {
+          "src": "/wp-content/uploads/2023/05/agility.webp",
+          "alt": "agility"
+        },
+        {
+          "src": "/wp-content/uploads/2023/05/scalability1-1.webp",
+          "alt": "scalability"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Our Process",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/07/free-consultation-blue.png",
+          "alt": null
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/choose_services_blue.png",
+          "alt": null
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/senior_level_expert.png",
+          "alt": null
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/cloud_empover.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Real Results,  Real Impact,",
+      "imgs": [],
+      "bgs": [
+        "/wp-content/uploads/2023/06/savills-cs.webp",
+        "/wp-content/uploads/2023/06/City4.webp"
+      ]
+    },
+    {
+      "heading": "Real Results,  Real Impact,",
+      "imgs": [],
+      "bgs": [
+        "/wp-content/uploads/2023/06/savills-cs.webp",
+        "/wp-content/uploads/2023/06/City4.webp"
+      ]
+    },
+    {
+      "heading": "Your Common Queries Are Resolved​",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/05/faq_img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Schedule a 1:1 Call Today",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Entrance animations (replicate Elementor Motion Effects: 1.25s ease) ── */
+@keyframes f3-fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes f3-fadeInUp { from { opacity: 0; transform: translateY(45px) } to { opacity: 1; transform: none } }
+@keyframes f3-fadeInLeft { from { opacity: 0; transform: translateX(-45px) } to { opacity: 1; transform: none } }
+@keyframes f3-fadeInRight { from { opacity: 0; transform: translateX(45px) } to { opacity: 1; transform: none } }
+@keyframes f3-zoomIn { from { opacity: 0; transform: scale(.6) } to { opacity: 1; transform: scale(1) } }
+@keyframes f3-float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
+
+.reveal { opacity: 0; will-change: transform, opacity; }
+.reveal.is-in { animation-duration: 1.25s; animation-timing-function: ease; animation-fill-mode: both; }
+.reveal.is-in.a-fadeIn { animation-name: f3-fadeIn }
+.reveal.is-in.a-fadeInUp { animation-name: f3-fadeInUp }
+.reveal.is-in.a-fadeInLeft { animation-name: f3-fadeInLeft }
+.reveal.is-in.a-fadeInRight { animation-name: f3-fadeInRight }
+.reveal.is-in.a-zoomIn { animation-name: f3-zoomIn }
+.float-anim { animation: f3-float 6s ease-in-out infinite; }
+
+/* Accessibility: respect users who disable motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .reveal { opacity: 1 !important; animation: none !important; }
+  .float-anim { animation: none !important; }
+}
+
+:root {
+  --maxw: 1240px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading text-ink;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container-x {
+    /* live site content area is a fixed 1240px (logo at x≈100 on a 1440 viewport) */
+    @apply mx-auto w-full max-w-container px-5 sm:px-6 lg:px-8 xl:px-0;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-white hover:bg-brand-bright;
+  }
+  .btn-outline {
+    @apply btn border border-brand text-brand hover:bg-brand hover:text-white;
+  }
+  .btn-ghost {
+    @apply btn text-ink hover:text-brand;
+  }
+  .eyebrow {
+    @apply mb-3 inline-block rounded-pill bg-surface-chip px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand;
+  }
+  .section {
+    @apply py-16 lg:py-24;
+  }
+  /* Consistent card hover matching the live: border turns brand-blue + soft glow +
+     subtle lift. Raw CSS (not @apply hover:) so it never depends on Tailwind variant
+     compilation. Add `card-hover` to any static card; flip cards keep their own effect. */
+  .card-hover {
+    transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+  }
+  .card-hover:hover {
+    border-color: #1742E7;
+    box-shadow: 0 14px 34px rgba(18, 51, 201, 0.14);
+    transform: translateY(-4px);
+  }
+  /* article body rendered from extracted semantic HTML */
+  .post-body { @apply text-base leading-relaxed text-body; }
+  .post-body h2 { @apply mt-10 mb-4 text-2xl font-bold text-ink; }
+  .post-body h3 { @apply mt-8 mb-3 text-xl font-semibold text-ink; }
+  .post-body h4 { @apply mt-6 mb-2 text-lg font-semibold text-ink; }
+  .post-body p { @apply my-4; }
+  .post-body ul { @apply my-4 list-disc space-y-2 pl-6; }
+  .post-body ol { @apply my-4 list-decimal space-y-2 pl-6; }
+  .post-body a { @apply text-brand underline; }
+  .post-body img { @apply my-6 h-auto w-full rounded-lg; }
+  .post-body blockquote { @apply my-6 border-l-4 border-brand pl-4 italic text-ink; }
+  .post-body table { @apply my-6 w-full border-collapse text-sm; }
+  .post-body td, .post-body th { @apply border border-surface-line px-3 py-2 text-left; }
+}

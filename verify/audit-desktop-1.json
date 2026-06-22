@@ -1,0 +1,286 @@
+[
+  {
+    "route": "/ai-agents/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "AI Agents - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/about-us/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/azure-about-us-mock.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Oval.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "body",
+        "text": "Speak to Our Azure Experts",
+        "clone": "/contact-us",
+        "live": "#pgForm"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "About Us - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/ai-agents/ai-powered-ticketing-and-customer-service-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/11/zammad-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-savills-logo.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-cityu-logo.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-daraz-logo.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-rff-logo.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/superior-farms-logo.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/intellient-intake-triage.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/agent-assist-resolution.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/secure-lifecycle-management.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/proactive-intelligence-reporting.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_solution_architect.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analyst.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Zammad Ticketing Copilot: AI for Instant, Automated Service Resolution | Folio3 Azure"
+  }
+]

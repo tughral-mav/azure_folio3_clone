@@ -1,0 +1,1233 @@
+{
+  "url": "https://azure.folio3.com/azure-for-manufacturing/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Azure for Manufacturing - Azure",
+    "description": null,
+    "canonical": "https://azure.folio3.com/azure-for-manufacturing/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Embrace Manufacturing 4.0 with Azure"
+        },
+        {
+          "tag": "h2",
+          "text": "Modernizing Manufacturing companies to build smart factories, resilient and profitable supply chains, and engage customers in new ways."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Unleash Potential",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp",
+          "alt": null,
+          "w": 665,
+          "h": 527
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "Home » Azure for Manufacturing"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why leverage Azure for Manufacturing"
+        },
+        {
+          "tag": "h3",
+          "text": "Build Smart Factories"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Insights"
+        },
+        {
+          "tag": "h3",
+          "text": "Create more resilient supply chains"
+        },
+        {
+          "tag": "h3",
+          "text": "Increase Workforce Productivity"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "learn more",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Major Challenges for Manufacturers"
+        }
+      ],
+      "paragraphs": [
+        "Vast amounts of data from sensors, machinery, and operations, making its efficient collection, storage, and meaningful analysis a challenge.",
+        "Global events, unexpected demand surge, inaccurate demand prediction, and uncertainties can disrupt supply chains, leading to issues like delays, overproduction, underproduction and  shortages.",
+        "Customers expect personalized experiences with high-quality products delivered quickly, which is has become a challenge for traditional manufacturers.",
+        "Manufacturers handle sensitive company, production, and customer data. Data breaches can cause financial losses, legal consequences, and reputational damage.",
+        "Lack expertise for integrating new technologies like AI, IoT, and automation with existing legacy systems is a complex task."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a Call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacture-challenge-img.webp",
+          "alt": null,
+          "w": 653,
+          "h": 784
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Major Challenges for Manufacturers"
+        }
+      ],
+      "paragraphs": [
+        "Vast amounts of data from sensors, machinery, and operations, making its efficient collection, storage, and meaningful analysis a challenge.",
+        "Global events, unexpected demand surge, inaccurate demand prediction, and uncertainties can disrupt supply chains, leading to issues like delays, overproduction, underproduction and  shortages.",
+        "Customers expect personalized experiences with high-quality products delivered quickly, which is has become a challenge for traditional manufacturers.",
+        "Manufacturers handle sensitive company, production, and customer data. Data breaches can cause financial losses, legal consequences, and reputational damage.",
+        "Lack expertise for integrating new technologies like AI, IoT, and automation with existing legacy systems is a complex task."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a Call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacture-challenge-img.webp",
+          "alt": null,
+          "w": 653,
+          "h": 784
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Partner with Folio3 to Harness the Full Potential of Azure for Manufacturing"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Schedule a Free Consultation Now",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-manufacturing-cta-banner-img.webp",
+          "alt": null,
+          "w": 571,
+          "h": 494
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Partner with Folio3 to Harness the Full Potential of Azure for Manufacturing"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Schedule a Free Consultation Now",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-manufacturing-cta-banner-img.webp",
+          "alt": null,
+          "w": 571,
+          "h": 494
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Powerful Azure Solutions for Your Manufacturing Business"
+        },
+        {
+          "tag": "h3",
+          "text": "Remote Manufacturing Operations"
+        },
+        {
+          "tag": "h3",
+          "text": "Enable Interoperability"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduced Downtime"
+        },
+        {
+          "tag": "h3",
+          "text": "Better Risk Assessment"
+        },
+        {
+          "tag": "h3",
+          "text": "Supply Chain Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhanced Visibility"
+        },
+        {
+          "tag": "h3",
+          "text": "Optimized Inventory Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Improved Collaboration"
+        },
+        {
+          "tag": "h3",
+          "text": "Anomaly Detection and Quality Control"
+        },
+        {
+          "tag": "h3",
+          "text": "Consistent Product Quality"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Monitoring and Alerts"
+        },
+        {
+          "tag": "h3",
+          "text": "Improved Customer Satisfaction"
+        },
+        {
+          "tag": "h3",
+          "text": "Unified Data Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Informed Decision-Making"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Data Access"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Consistency and Accuracy"
+        },
+        {
+          "tag": "h3",
+          "text": "Predictive Maintenance"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduced Downtime"
+        },
+        {
+          "tag": "h3",
+          "text": "Optimized Maintenance"
+        },
+        {
+          "tag": "h3",
+          "text": "Extended Lifespan"
+        },
+        {
+          "tag": "h3",
+          "text": "Demand Forecasting"
+        },
+        {
+          "tag": "h3",
+          "text": "Better Inventory Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhanced Planning and Resource Allocation"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial planning"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Security and Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "Regulatory Compliance Adherence"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Collaboration"
+        },
+        {
+          "tag": "h3",
+          "text": "Identity & Access Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Smart Factory with IoT Integration"
+        },
+        {
+          "tag": "h3",
+          "text": "Connectivity and Data Collection"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "Process Automation"
+        }
+      ],
+      "paragraphs": [
+        "Implement Azure for remote monitoring and control of manufacturing processes and machinery.",
+        "Enhance new and old equipment control and support remotely.",
+        "Managing equipment through a unified source can reduce downtime while tracking assets and performance.",
+        "Easier risk assessment with equipment status and supplier connectivity across your distributed workforce.",
+        "Leverage data Analytics and AI capabilities to help you optimize supply chains by analyzing demand patterns, inventory levels, and logistics data. Take corrective measures by identifying bottlenecks within the supply chain.",
+        "Gain real-time visibility into supply chain operations, from raw material sourcing to distribution. Identify bottlenecks, inefficiencies, and delays across the supply chain to take preventive measures.",
+        "Azure Analytics helps optimize inventory levels to prevent excess stock, while meeting demand and optimizing working capital.",
+        "Data sharing improves collaboration with stakeholders, resulting in improved production, assortment, and distribution across the supply chain.",
+        "Use AI and computer vision systems for anomaly detection through image recognition and other parameters on the assembly line to automate quality control.",
+        "Ensure quality standards across production processes and batches by eliminating human error in quality inspection.",
+        "Continuously monitor production data in real time using Azure IoT, detecting deviations and anomalies and receive immediate alerts enabling prompt responses.",
+        "Deliver products with consistency and quality, minimizing product recalls, warranty claims, and customer complaints."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/Remote-Manufacturing-Operations.webp",
+          "alt": null,
+          "w": 650,
+          "h": 439
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Remote Manufacturing Operations"
+        },
+        {
+          "tag": "h3",
+          "text": "Enable Interoperability"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduced Downtime"
+        },
+        {
+          "tag": "h3",
+          "text": "Better Risk Assessment"
+        },
+        {
+          "tag": "h3",
+          "text": "Supply Chain Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhanced Visibility"
+        },
+        {
+          "tag": "h3",
+          "text": "Optimized Inventory Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Improved Collaboration"
+        },
+        {
+          "tag": "h3",
+          "text": "Anomaly Detection and Quality Control"
+        },
+        {
+          "tag": "h3",
+          "text": "Consistent Product Quality"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Monitoring and Alerts"
+        },
+        {
+          "tag": "h3",
+          "text": "Improved Customer Satisfaction"
+        },
+        {
+          "tag": "h3",
+          "text": "Unified Data Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Informed Decision-Making"
+        },
+        {
+          "tag": "h3",
+          "text": "Real-Time Data Access"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Consistency and Accuracy"
+        },
+        {
+          "tag": "h3",
+          "text": "Predictive Maintenance"
+        },
+        {
+          "tag": "h3",
+          "text": "Reduced Downtime"
+        },
+        {
+          "tag": "h3",
+          "text": "Optimized Maintenance"
+        },
+        {
+          "tag": "h3",
+          "text": "Extended Lifespan"
+        },
+        {
+          "tag": "h3",
+          "text": "Demand Forecasting"
+        },
+        {
+          "tag": "h3",
+          "text": "Better Inventory Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Enhanced Planning and Resource Allocation"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial planning"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Security and Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "Regulatory Compliance Adherence"
+        },
+        {
+          "tag": "h3",
+          "text": "Secure Collaboration"
+        },
+        {
+          "tag": "h3",
+          "text": "Identity & Access Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Smart Factory with IoT Integration"
+        },
+        {
+          "tag": "h3",
+          "text": "Connectivity and Data Collection"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "Process Automation"
+        }
+      ],
+      "paragraphs": [
+        "Implement Azure for remote monitoring and control of manufacturing processes and machinery.",
+        "Enhance new and old equipment control and support remotely.",
+        "Managing equipment through a unified source can reduce downtime while tracking assets and performance.",
+        "Easier risk assessment with equipment status and supplier connectivity across your distributed workforce.",
+        "Leverage data Analytics and AI capabilities to help you optimize supply chains by analyzing demand patterns, inventory levels, and logistics data. Take corrective measures by identifying bottlenecks within the supply chain.",
+        "Gain real-time visibility into supply chain operations, from raw material sourcing to distribution. Identify bottlenecks, inefficiencies, and delays across the supply chain to take preventive measures.",
+        "Azure Analytics helps optimize inventory levels to prevent excess stock, while meeting demand and optimizing working capital.",
+        "Data sharing improves collaboration with stakeholders, resulting in improved production, assortment, and distribution across the supply chain.",
+        "Use AI and computer vision systems for anomaly detection through image recognition and other parameters on the assembly line to automate quality control.",
+        "Ensure quality standards across production processes and batches by eliminating human error in quality inspection.",
+        "Continuously monitor production data in real time using Azure IoT, detecting deviations and anomalies and receive immediate alerts enabling prompt responses.",
+        "Deliver products with consistency and quality, minimizing product recalls, warranty claims, and customer complaints."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Learn More",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/Remote-Manufacturing-Operations.webp",
+          "alt": null,
+          "w": 650,
+          "h": 439
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Build your Manufacturing 4.0 Practices with these Tools"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure AI and machine learning"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Industrial IoT"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Stack"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Synapse Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "High Performance Computing"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Virtual Desktop"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "learn more",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Folio3 Approach to Azure Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Consulting and Advisory Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Managed Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics Services"
+        }
+      ],
+      "paragraphs": [
+        "Find a partnership that helps you achieve more for your people, your business and your customers.",
+        "Leverage our team of Azure experts to help you define the right strategy for your cloud journey\n\n\nLearn More > >",
+        "We’ll design, build, and deploy solutions that help you get the most out of your applications\n\n\nLearn More > >",
+        "Dedicated retail professionals who help you manage, operate, and optimize your data-to-day elements of cloud environment \n\n\nLearn More > >",
+        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth\n\n\nLearn More > >"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Consulting and Advisory Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Cloud Services"
+        }
+      ],
+      "paragraphs": [
+        "Leverage our team of Azure experts to help you define the right strategy for your cloud journey\n\n\nLearn More > >",
+        "We’ll design, build, and deploy solutions that help you get the most out of your applications\n\n\nLearn More > >"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Managed Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics Services"
+        }
+      ],
+      "paragraphs": [
+        "Dedicated retail professionals who help you manage, operate, and optimize your data-to-day elements of cloud environment \n\n\nLearn More > >",
+        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth\n\n\nLearn More > >"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Awards &  Recognization"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+          "alt": "azure_solution_architect.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+          "alt": "azure_administration.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+          "alt": "azure_security_engineer.svg",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+          "alt": "data-analyst.svg",
+          "w": 120,
+          "h": 120
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why Choose Folio3?"
+        }
+      ],
+      "paragraphs": [
+        "We believe in the power of the cloud to transform businesses and empower people."
+      ],
+      "listItems": [
+        "Over 15 years in custom software development.",
+        "Microsoft Business Solutions Partner in Cloud Solutions.",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/about_us-mock.webp",
+          "alt": null,
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Over 15 years in custom software development.",
+        "Microsoft Business Solutions Partner in Cloud Solutions.",
+        "We are a team of professionals, well-versed in industry processes and regulations, as well as the implementation of Azure technologies such as AI/ML, Big Data, and Cloud services."
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/about_us-mock.webp",
+          "alt": null,
+          "w": 705,
+          "h": 529
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Real Results,  Real Impact,"
+        },
+        {
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "tag": "h3",
+          "text": "CityU"
+        },
+        {
+          "tag": "h3",
+          "text": "CityU"
+        }
+      ],
+      "paragraphs": [
+        "See How Our Customers Succeed"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": "/savills/"
+        },
+        {
+          "text": "Read More",
+          "href": "/city-university-azure/"
+        },
+        {
+          "text": "Discover All",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Real Results,  Real Impact,"
+        },
+        {
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "tag": "h3",
+          "text": "CityU"
+        },
+        {
+          "tag": "h3",
+          "text": "CityU"
+        }
+      ],
+      "paragraphs": [
+        "See How Our Customers Succeed"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": "/savills/"
+        },
+        {
+          "text": "Read More",
+          "href": "/city-university-azure/"
+        },
+        {
+          "text": "Discover All",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Partner with Folio3 to Streamline your Manufacturing Business"
+        }
+      ],
+      "paragraphs": [
+        "We believe in the power of the cloud to transform businesses and empower people.",
+        "Azure IoT Hub enables real-time device-to-cloud communication, facilitating remote monitoring, data collection, and control over manufacturing equipment and processes.",
+        "Azure Industrial IoT connects machines and devices, providing real-time insights for optimizing operations, reducing downtime, and enabling predictive maintenance.",
+        "Yes, Azure Synapse Analytics can handle massive data volumes, offering integrated analytics and data warehousing capabilities to drive informed manufacturing decisions.",
+        "Azure Stack extends Azure services to on-premises environments, enabling modernization of manufacturing systems while retaining data compliance and control.",
+        "Azure Machine Learning uses historical data to build predictive models that identify defects in real time, enhancing product quality through automated quality control processes.",
+        "Yes, Azure HPC accelerates complex simulations, enabling faster iterations of product designs, fluid dynamics, and other simulations critical to manufacturing innovation.",
+        "Folio3 is a recognized technology partner with extensive experience in designing, implementing, and optimizing Azure solutions for various industries, including manufacturing.",
+        "Folio3 assists manufacturers in harnessing Azure’s capabilities to drive digital transformation, enabling them to implement smart factory practices, optimize operations, and achieve their business goals.",
+        "Yes, Folio3 specializes in tailoring Azure solutions to match your manufacturing processes, challenges, and objectives, ensuring a seamless integration of Azure services.",
+        "Folio3 recommends a combination of Azure IoT Hub, Azure Synapse Analytics, Azure Industrial IoT, and more to help manufacturers enhance efficiency, quality, and decision-making.",
+        "Absolutely, Folio3 assists in migrating legacy systems to Azure, ensuring a smooth transition and providing ongoing support to maximize the benefits of the cloud."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp",
+          "alt": null,
+          "w": 671,
+          "h": 936
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "Azure IoT Hub enables real-time device-to-cloud communication, facilitating remote monitoring, data collection, and control over manufacturing equipment and processes.",
+        "Azure Industrial IoT connects machines and devices, providing real-time insights for optimizing operations, reducing downtime, and enabling predictive maintenance.",
+        "Yes, Azure Synapse Analytics can handle massive data volumes, offering integrated analytics and data warehousing capabilities to drive informed manufacturing decisions.",
+        "Azure Stack extends Azure services to on-premises environments, enabling modernization of manufacturing systems while retaining data compliance and control.",
+        "Azure Machine Learning uses historical data to build predictive models that identify defects in real time, enhancing product quality through automated quality control processes.",
+        "Yes, Azure HPC accelerates complex simulations, enabling faster iterations of product designs, fluid dynamics, and other simulations critical to manufacturing innovation.",
+        "Folio3 is a recognized technology partner with extensive experience in designing, implementing, and optimizing Azure solutions for various industries, including manufacturing.",
+        "Folio3 assists manufacturers in harnessing Azure’s capabilities to drive digital transformation, enabling them to implement smart factory practices, optimize operations, and achieve their business goals.",
+        "Yes, Folio3 specializes in tailoring Azure solutions to match your manufacturing processes, challenges, and objectives, ensuring a seamless integration of Azure services.",
+        "Folio3 recommends a combination of Azure IoT Hub, Azure Synapse Analytics, Azure Industrial IoT, and more to help manufacturers enhance efficiency, quality, and decision-making.",
+        "Absolutely, Folio3 assists in migrating legacy systems to Azure, ensuring a smooth transition and providing ongoing support to maximize the benefits of the cloud.",
+        "Folio3 has successfully served industries ranging from manufacturing and healthcare to retail and finance, leveraging Azure to drive innovation and growth."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp",
+          "alt": null,
+          "w": 671,
+          "h": 936
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp 665w, https://azure.folio3.com/wp-content/uploads/2023/11/manufacturing-top-banner-img-300x238.webp 300w",
+      "alt": null,
+      "w": "665",
+      "h": "527",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacture-challenge-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/manufacture-challenge-img.webp 653w, https://azure.folio3.com/wp-content/uploads/2023/11/manufacture-challenge-img-250x300.webp 250w",
+      "alt": null,
+      "w": "653",
+      "h": "784",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-manufacturing-cta-banner-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-manufacturing-cta-banner-img.webp 571w, https://azure.folio3.com/wp-content/uploads/2023/11/azure-manufacturing-cta-banner-img-300x260.webp 300w",
+      "alt": null,
+      "w": "571",
+      "h": "494",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/Remote-Manufacturing-Operations.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/Remote-Manufacturing-Operations.webp 650w, https://azure.folio3.com/wp-content/uploads/2023/11/Remote-Manufacturing-Operations-300x203.webp 300w",
+      "alt": null,
+      "w": "650",
+      "h": "439",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg",
+      "srcset": null,
+      "alt": "azure_solution_architect.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg",
+      "srcset": null,
+      "alt": "azure_administration.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "srcset": null,
+      "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg",
+      "srcset": null,
+      "alt": "azure_security_engineer.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg",
+      "srcset": null,
+      "alt": "data-analyst.svg",
+      "w": "120",
+      "h": "120",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/about_us-mock.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/about_us-mock.webp 705w, https://azure.folio3.com/wp-content/uploads/2023/11/about_us-mock-300x225.webp 300w",
+      "alt": null,
+      "w": "705",
+      "h": "529",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp 671w, https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1-215x300.webp 215w",
+      "alt": null,
+      "w": "671",
+      "h": "936",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2023/11/azure-healthcare-header-bg-1-1-1.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/11/Oval.png",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/savills-cs.webp",
+    "https://azure.folio3.com/wp-content/uploads/2023/06/City4.webp"
+  ]
+}

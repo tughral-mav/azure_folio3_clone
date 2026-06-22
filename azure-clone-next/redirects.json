@@ -1,0 +1,312 @@
+[
+  {
+    "source": "/blog/managed_services/cloud-implementation/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/managed_services/app-modernization-development/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/testimonial_slider/testimonial-2/",
+    "destination": "/about-us/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/testimonial_slider/testimonial-1/",
+    "destination": "/about-us/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_industries/manufactring/",
+    "destination": "/azure-for-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_industries/retail/",
+    "destination": "/azure-for-retail/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_industries/healthcare/",
+    "destination": "/azure-for-healthcare/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_industries/financial-services/",
+    "destination": "/industries/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_industries/manufactring-test/",
+    "destination": "/azure-for-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_cloud_service/healthcare-2/",
+    "destination": "/azure-cloud-service/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_cloud_service/financial-services/",
+    "destination": "/azure-cloud-service/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_cloud_service/retail/",
+    "destination": "/azure-cloud-service/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_cloud_service/manufacturing/",
+    "destination": "/azure-cloud-service/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_cloud_service/healthcare/",
+    "destination": "/azure-cloud-service/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_data_analytics/e-commerce-and-retail-3/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_data_analytics/e-commerce-and-retail-4/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_data_analytics/financial-services-2/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_data_analytics/financial-services/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_data_analytics/e-commerce-and-retail/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_managed_services/e-commerce-and-retail-2/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_managed_services/e-commerce-and-retail-3/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_managed_services/e-commerce-and-retail-4/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_managed_services/e-commerce-and-retail-5/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/our_managed_services/e-commerce-and-retail/",
+    "destination": "/azure-managed-services/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/google-cloud/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/kubernetees/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/angular/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/aws/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/google-cloud-2/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/aws-2/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/angular-2/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/slider-item/kubernetees-2/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/app-modernization/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/application-development/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/azure-devops/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/azure-professional-services/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/blogs/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/business-insights/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/cloud-migration/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/cloud-services/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/data-analysis-and-visualization/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/data-analytics/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/data-integration-and-etl/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/data-storage-and-management/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/microsoft-fabric/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/power-platform/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/press-release/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/product-dashboards/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/category/uncategorized/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/app-modernization/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/azure-devops/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/azure-professional-services/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/cloud-migration-tools/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/cloud-services/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/dashboard-software/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/tag/power-platform/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/author/alihassan/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/blog/author/danishsaudfolio3-com/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/case-studies/wph-intellifabric/",
+    "destination": "/case-studies/popcorn-producer-intellifabric-dashboards/",
+    "permanent": true
+  },
+  {
+    "source": "/microsoft-power-platform/",
+    "destination": "/microsoft-power-platform-services/",
+    "permanent": true
+  },
+  {
+    "source": "/end-to-end-bi-solution/",
+    "destination": "/azure-data-analytics/",
+    "permanent": true
+  }
+]

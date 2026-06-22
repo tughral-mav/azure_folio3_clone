@@ -1,0 +1,143 @@
+{
+  "url": "https://azure.folio3.com/",
+  "ok": true,
+  "dom": {
+    "title": "Folio3 | Azure Cloud Services",
+    "generator": "WordPress 7.0",
+    "bodyClasses": [
+      "home",
+      "wp-singular",
+      "page-template-default",
+      "page",
+      "page-id-8957",
+      "wp-custom-logo",
+      "wp-theme-astra",
+      "group-blog",
+      "ast-single-post",
+      "ast-inherit-site-logo-transparent",
+      "ast-hfb-header",
+      "ast-desktop",
+      "ast-page-builder-template",
+      "ast-no-sidebar",
+      "astra-3.8.2",
+      "elementor-default",
+      "elementor-kit-9",
+      "elementor-page",
+      "elementor-page-8957"
+    ],
+    "h1": [
+      "Unlock the Power of Cloud: Build, Run & Manage Applications with Azure",
+      "Discover the Full Potential of Your Data with the Folio3 IntelliFabric Solution",
+      "Transforming HR with  AI and Automation"
+    ],
+    "sectionCount": 24,
+    "classEngineHits": {
+      "elementor": 2185,
+      "swiper": 55,
+      "slick": 1
+    },
+    "hasMegaMenu": true,
+    "tabBlocks": 13,
+    "accordions": 27,
+    "sliders": 4,
+    "imgTotal": 59,
+    "imgLazy": 0,
+    "imgNoDims": 0
+  },
+  "forms": [
+    {
+      "id": "wp-contact-form",
+      "classes": "azure",
+      "action": null,
+      "method": "post",
+      "engine": "unknown",
+      "fields": [
+        {
+          "name": "full_name",
+          "type": "text",
+          "required": true,
+          "hidden": false,
+          "placeholder": null
+        },
+        {
+          "name": "phone",
+          "type": "tel",
+          "required": false,
+          "hidden": false,
+          "placeholder": null
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "required": true,
+          "hidden": false,
+          "placeholder": null
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "required": true,
+          "hidden": false,
+          "placeholder": null
+        },
+        {
+          "name": "geolocation",
+          "type": "hidden",
+          "required": false,
+          "hidden": true,
+          "placeholder": null
+        },
+        {
+          "name": "user_name",
+          "type": "hidden",
+          "required": false,
+          "hidden": true,
+          "placeholder": null
+        },
+        {
+          "name": "custentity_f3_wpcf_sign",
+          "type": "hidden",
+          "required": false,
+          "hidden": true,
+          "placeholder": null
+        },
+        {
+          "name": "page_journey",
+          "type": "hidden",
+          "required": false,
+          "hidden": true,
+          "placeholder": null
+        },
+        {
+          "name": "page_url",
+          "type": "hidden",
+          "required": false,
+          "hidden": true,
+          "placeholder": null
+        }
+      ]
+    }
+  ],
+  "vendors": {
+    "thirdParty": [
+      "WP-Plugin-Asset"
+    ],
+    "wpPlugins": [
+      "wp-rocket"
+    ]
+  },
+  "heavyAssets": [],
+  "network": {
+    "total": 16,
+    "byType": {
+      "document": 1,
+      "stylesheet": 1,
+      "image": 7,
+      "font": 6,
+      "script": 1
+    },
+    "xhr": [
+      "https://fonts.googleapis.com/css?family=Poppins%3A400%2C%2C600%2C700%7CPlus%20Jakarta%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CQuestrial%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap"
+    ]
+  }
+}

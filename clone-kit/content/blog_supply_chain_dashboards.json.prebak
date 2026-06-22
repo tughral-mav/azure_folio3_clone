@@ -1,0 +1,409 @@
+{
+  "url": "https://azure.folio3.com/blog/supply-chain-dashboards/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Advanced Supply Chain Dashboards for Real-Time Visibility",
+    "description": "Maximize supply chain efficiency with Azure’s dashboards. Discover actionable insights, optimize operations, and enhance customer satisfaction.",
+    "canonical": "https://azure.folio3.com/blog/supply-chain-dashboards/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/03/Advanced-Supply-Chain-Dashboards-for-Real-Time-Visibility.png",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "March 27, 2024"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Advanced Supply Chain Dashboards for Real-Time Visibility"
+        },
+        {
+          "tag": "h2",
+          "text": "Why Use Supply Chain Dashboards?"
+        },
+        {
+          "tag": "h2",
+          "text": "What is a Supply Chain Dashboard?"
+        },
+        {
+          "tag": "h2",
+          "text": "Supply Chain Dashboard Examples"
+        },
+        {
+          "tag": "h3",
+          "text": "Inventory Management Dashboards"
+        },
+        {
+          "tag": "h3",
+          "text": "Logistics Dashboards"
+        },
+        {
+          "tag": "h3",
+          "text": "Procurement Dashboards"
+        },
+        {
+          "tag": "h2",
+          "text": "Azure for Supply Chain – Common Metrics"
+        },
+        {
+          "tag": "h3",
+          "text": "Cash to Cycle Time"
+        },
+        {
+          "tag": "h3",
+          "text": "Perfect Order Rate"
+        },
+        {
+          "tag": "h3",
+          "text": "Customer Order Cycle Time"
+        },
+        {
+          "tag": "h3",
+          "text": "Inventory Days of Supply"
+        },
+        {
+          "tag": "h3",
+          "text": "Inventory Turnover"
+        },
+        {
+          "tag": "h3",
+          "text": "Freight Cost per Unit"
+        },
+        {
+          "tag": "h2",
+          "text": "Implementing Supply Chain Dashboards"
+        },
+        {
+          "tag": "h2",
+          "text": "Conclusion"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "How to Overcome Visibility Gaps with End-to-End Farm-to-Market Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics and Business Intelligence: How They Work Together"
+        },
+        {
+          "tag": "h3",
+          "text": "Top Data Analytics Trends: AI, Cloud, Security and More"
+        }
+      ],
+      "paragraphs": [
+        "Home » Advanced Supply Chain Dashboards for Real-Time Visibility",
+        "Table of Contents",
+        "Supply chain management is a complex orchestration of processes that requires a surgeon’s precision and a conductor’s vision. Within this intricate network lies a treasure trove of data that, when analyzed and visualized correctly, can empower decision-makers with unparalleled insights. This blog post is geared towards the architects of this new-age symphony – the supply chain managers and business analysts looking to harmonize the flow of goods, information, and finances using the latest dashboard solutions. We’ll explore how advanced dashboards can revolutionize the way you monitor and control vital aspects of your supply chain, delivering an operatic crescendo of efficiency, visibility, and profitability.",
+        "In the labyrinth of global commerce, the need for precise and timely information is non-negotiable. Imagine having the ability to monitor inventory levels across multiple warehouses, track the real-time location of shipments, predict demand patterns, and flag potential supply disruptions—all from a single screen. Supply chain dashboards offer just that and more. With immediate access to live data, you can make agile decisions, identify areas for improvement, and ensure that your supply chain resonates with the demands of a dynamic market.",
+        "Utilizing supply chain dashboards is akin to having a bird’s eye view over your entire operation. The benefits are multifold, ranging from enhanced decision-making based on current data to the streamlining of inter-departmental communication. The reduction in manual effort through automated reporting and predictive analytics not only saves time but also enables staff to focus on strategic tasks that drive business growth.",
+        "A supply chain dashboard is a visual interface that consolidates and presents all relevant supply chain metrics and key performance indicators (KPIs). It offers a snapshot of the health of your supply chain, providing stakeholders with a clear overview that is crucial to informed decision-making. These dashboards are dynamic, allowing you to drill down into data layers to investigate specific issues or performance areas. From procurement to delivery, they form the backbone of data-driven logistics management, ensuring that you’re always a step ahead of potential disruptions.",
+        "Inventory management dashboards focus on the heart of the supply chain – the stock. They provide comprehensive data on stock levels, turnover rates, and supplier performance. For example, such a dashboard might show how close you are to a stockout, how long each SKU has been sitting in the warehouse, and even predict when to reorder to maintain optimal levels.",
+        "Logistics dashboards keep a pulse on the movement of goods, covering key metrics like delivery times, carrier performance, cost-to-serve, and even real-time vehicle tracking. This level of visibility and control ensures efficiency and helps to build a more responsive and customer-centric supply chain.",
+        "Procurement dashboards focus on your relationships with suppliers. They track metrics like lead times, quality control, and the percentage of orders that are fulfilled on time. This helps in identifying the most reliable and cost-effective suppliers, which is crucial for maintaining high standards and cost-efficiency within your operation.",
+        "Azure’s BI is leading the charge in supply chain analytics, offering powerful tools for crafting bespoke dashboards. The platform stands at the forefront of supply chain visibility, incorporating artificial intelligence and machine learning to sharpen foresight and improve decision-making.",
+        "In an age where capital is king, managing the cash to cycle time is essential. This metric stretches from the point of spending on inventory to the instant cash is received from its sale. A shorter cycle time indicates a healthier working capital, which in turn facilitates business growth and agility.",
+        "The perfect order rate is a benchmark that measures how often orders are delivered without error, on time, and in the right condition. In a global marketplace where customer satisfaction is paramount, this metric is a litmus test for the robustness of your supply chain’s delivery mechanisms."
+      ],
+      "listItems": [
+        "Danish Saud",
+        "March 27, 2024",
+        "Why Use Supply Chain Dashboards?",
+        "What is a Supply Chain Dashboard?",
+        "Supply Chain Dashboard Examples",
+        "Azure for Supply Chain – Common Metrics",
+        "Implementing Supply Chain Dashboards",
+        "Conclusion",
+        "Data Integration: A well-structured data integration strategy is essential for dashboard success. Ensure that your data sources are reliable, current, and standardized for seamless integration and interpretation.",
+        "Dashboard Customization: No two supply chains are the same. Customize your dashboard to track the metrics that are most relevant to your specific operation and strategic goals.",
+        "User Training: The value of your dashboard is only as good as the insights your team can draw from it. Invest in comprehensive training to ensure that all stakeholders can leverage the dashboard’s capabilities."
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        }
+      ],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "How to Overcome Visibility Gaps with End-to-End Farm-to-Market Analytics"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics and Business Intelligence: How They Work Together"
+        },
+        {
+          "tag": "h3",
+          "text": "Top Data Analytics Trends: AI, Cloud, Security and More"
+        }
+      ],
+      "paragraphs": [
+        "Farm-to-market supply chains are only as strong as their data. When production, logistics, compliance, and commercial systems don’t share a",
+        "Most organizations are not short on data. They’re short on clarity about what that data means and what to do",
+        "In 2024, Netflix saw a 20% increase in subscriber engagement by utilizing advanced data analytics to personalize content recommendations and"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": " <div> <div> <p>Table of Contents</p> <span><a href=\"#\"><span><span><span>Toggle</span><span></span></span></span></a></span></div> </div> <div> <div> <div> <div> <div> <p>Supply chain management is a complex orchestration of processes that requires a surgeon’s precision and a conductor’s vision. Within this intricate network lies a treasure trove of data that, when analyzed and visualized correctly, can empower decision-makers with unparalleled insights. This blog post is geared towards the architects of this new-age symphony – the supply chain managers and business analysts looking to harmonize the flow of goods, information, and finances using the latest dashboard solutions. We’ll explore how advanced dashboards can revolutionize the way you monitor and control vital aspects of your supply chain, delivering an operatic crescendo of efficiency, visibility, and profitability.</p><h2><span></span>Why Use Supply Chain Dashboards?<span></span></h2><p>In the labyrinth of global commerce, the need for precise and timely information is non-negotiable. Imagine having the ability to monitor inventory levels across multiple warehouses, track the real-time location of shipments, predict demand patterns, and flag potential supply disruptions—all from a single screen. Supply chain dashboards offer just that and more. With immediate access to live data, you can make agile decisions, identify areas for improvement, and ensure that your supply chain resonates with the demands of a dynamic market.</p><p>Utilizing supply chain dashboards is akin to having a bird’s eye view over your entire operation. The benefits are multifold, ranging from enhanced decision-making based on current data to the streamlining of inter-departmental communication. The reduction in manual effort through automated reporting and predictive analytics not only saves time but also enables staff to focus on strategic tasks that drive business growth.</p><h2><span></span>What is a Supply Chain Dashboard?<span></span></h2><p>A supply chain dashboard is a visual interface that consolidates and presents all relevant supply chain metrics and key performance indicators (KPIs). It offers a snapshot of the health of your supply chain, providing stakeholders with a clear overview that is crucial to informed decision-making. These dashboards are dynamic, allowing you to drill down into data layers to investigate specific issues or performance areas. From procurement to delivery, they form the backbone of data-driven logistics management, ensuring that you’re always a step ahead of potential disruptions.</p><h2><span></span>Supply Chain Dashboard Examples<span></span></h2><h3>Inventory Management Dashboards</h3><p>Inventory management dashboards focus on the heart of the supply chain – the stock. They provide comprehensive data on stock levels, turnover rates, and supplier performance. For example, such a dashboard might show how close you are to a stockout, how long each SKU has been sitting in the warehouse, and even predict when to reorder to maintain optimal levels.</p><h3>Logistics Dashboards</h3><p>Logistics dashboards keep a pulse on the movement of goods, covering key metrics like delivery times, carrier performance, cost-to-serve, and even real-time vehicle tracking. This level of visibility and control ensures efficiency and helps to build a more responsive and customer-centric supply chain.</p><h3>Procurement Dashboards</h3><p>Procurement dashboards focus on your relationships with suppliers. They track metrics like lead times, quality control, and the percentage of orders that are fulfilled on time. This helps in identifying the most reliable and cost-effective suppliers, which is crucial for maintaining high standards and cost-efficiency within your operation.</p><h2><span></span>Azure for Supply Chain – Common Metrics<span></span></h2><p>Azure’s BI is leading the charge in supply chain analytics, offering powerful tools for crafting bespoke dashboards. The platform stands at the forefront of supply chain visibility, incorporating artificial intelligence and machine learning to sharpen foresight and improve decision-making.</p><h3>Cash to Cycle Time</h3><p>In an age where capital is king, managing the cash to cycle time is essential. This metric stretches from the point of spending on inventory to the instant cash is received from its sale. A shorter cycle time indicates a healthier working capital, which in turn facilitates business growth and agility.</p><h3>Perfect Order Rate</h3><p>The perfect order rate is a benchmark that measures how often orders are delivered without error, on time, and in the right condition. In a global marketplace where customer satisfaction is paramount, this metric is a litmus test for the robustness of your supply chain’s delivery mechanisms.</p><h3>Customer Order Cycle Time</h3><p>This metric clocks the time taken from order placement to fulfillment. A swift cycle time not only delights customers but also frees up capital by reducing working capital requirements tied up in inventory.</p><h3>Inventory Days of Supply</h3><p>The inventory days of supply is a double-edged sword. High values might indicate overstocking, which ties up capital. On the contrary, too low a value might result in stockouts, thereby impacting service levels. A well-measured days of supply helps in maintaining the delicate balance critical in supply chain management.</p><h3>Inventory Turnover</h3><p>This KPI calculates how quickly inventory is used or sold over a given period. It is a measure of efficiency and can influence carrying costs and the need for obsolescence management.</p><h3>Freight Cost per Unit</h3><p>The freight cost per unit is a potent indicator of logistics efficiency. It directly impacts the product’s landed cost and, by extension, its profitability. A declining cost per unit suggests optimization efforts are bearing fruit.</p><h2><span></span>Implementing Supply Chain Dashboards<span></span></h2><p>While the idea of implementing a supply chain dashboard can be daunting, it need not be a Herculean task. Here are some best practices to consider:</p><ul><li><b><strong>Data Integration:</strong></b> A well-structured data integration strategy is essential for dashboard success. Ensure that your data sources are reliable, current, and standardized for seamless integration and interpretation.</li><li><b><strong>Dashboard Customization:</strong></b> No two supply chains are the same. <a href=\"https://azure.folio3.com/blog/custom-dashboards/\">Customize your dashboard </a>to track the metrics that are most relevant to your specific operation and strategic goals.</li><li><b><strong>User Training:</strong></b> The value of your dashboard is only as good as the insights your team can draw from it. Invest in comprehensive training to ensure that all stakeholders can leverage the dashboard’s capabilities.</li></ul><h2><span></span>Conclusion<span></span></h2><p>In the final act, supply chain dashboards are more than just tools—they are the lenses through which we can magnify the potential and perils of the supply chain landscape. The roadmap to a sleek, responsive, and efficient supply chain is no longer nebulous with the advent of advanced dashboard solutions. It’s an imperative step for companies aiming to not just survive, but thrive in a highly competitive market. Ready to take the leap into the future of supply chain visibility? The time is now, and the tools are at your fingertips.</p><p>For a personal demonstration of how Azure’s can transform your supply chain management, and to explore the plethora of features it offers, visit <a href=\"https://azure.folio3.com/\">Azure Folio3</a>. Don’t be left in the dark ages of supply chain management – harness the power of real-time dashboards with BI and light the path towards your supply chain dominance.</p> </div> </div> </div> </div> </div> ",
+  "related": [
+    {
+      "title": "How to Overcome Visibility Gaps with End-to-End Farm-to-Market Analytics",
+      "href": "https://azure.folio3.com/blog/how-to-overcome-visibility-gaps-with-end-to-end-farm-to-market-analytics/"
+    },
+    {
+      "title": "Data Analytics and Business Intelligence: How They Work Together",
+      "href": "https://azure.folio3.com/blog/data-analytics-and-business-intelligence/"
+    },
+    {
+      "title": "Top Data Analytics Trends: AI, Cloud, Security and More",
+      "href": "https://azure.folio3.com/blog/data-analytics-trends/"
+    }
+  ]
+}

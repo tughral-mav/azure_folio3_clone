@@ -1,0 +1,611 @@
+{
+  "live": [
+    {
+      "idx": 0,
+      "heading": "Unlock the Power of Cloud: Build, Run & Manage Applications ",
+      "images": [
+        "/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new.webp",
+        "/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new-300x187.webp",
+        "/wp-content/uploads/2026/01/intellifabric-screens.webp",
+        "/wp-content/uploads/2026/01/intellifabric-screens-300x238.webp",
+        "/wp-content/uploads/2023/07/Home-page-bg.webp"
+      ]
+    },
+    {
+      "idx": 1,
+      "heading": "Folio3 Achieves Microsoft Solution Partner Designations",
+      "images": [
+        "/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp",
+        "/wp-content/uploads/2024/08/data-ai-azure-logo-img-300x203.webp",
+        "/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp",
+        "/wp-content/uploads/2024/08/infrastructure-azure-logo-img-300x203.webp",
+        "/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp",
+        "/wp-content/uploads/2024/08/digital-app-innovation-logo-img-300x203.webp",
+        "/wp-content/uploads/2024/08/business-application-logo-img.webp",
+        "/wp-content/uploads/2024/08/business-application-logo-img-300x203.webp"
+      ]
+    },
+    {
+      "idx": 2,
+      "heading": "Discover Cloud Opportunities",
+      "images": [
+        "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+        "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting-150x150.png",
+        "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+        "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+        "/wp-content/uploads/2023/07/3-DevOps-Automation-150x150.png",
+        "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+        "/wp-content/uploads/2023/07/4-Cloud-Migration-150x150.png",
+        "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp",
+        "/wp-content/uploads/2023/04/azure-banner-cloud-services-300x214.webp",
+        "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+        "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+        "/wp-content/uploads/2023/04/Power-Virtual-Agents.png",
+        "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+        "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform.webp",
+        "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform-300x164.webp",
+        "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform-1024x559.webp",
+        "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform-768x419.webp",
+        "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+        "/wp-content/uploads/2023/04/Data-Integration-and-ETL.png",
+        "/wp-content/uploads/2023/04/Data-Analysis-and-Visualization.png",
+        "/wp-content/uploads/2023/04/Governance-Security-and-Compliance.png",
+        "/wp-content/uploads/2023/04/azure_data_analytics.webp",
+        "/wp-content/uploads/2023/04/azure_data_analytics-300x261.webp",
+        "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+        "/wp-content/uploads/2023/07/5-Holistic-Support-150x150.png",
+        "/wp-content/uploads/2023/07/6-Advisory.png",
+        "/wp-content/uploads/2023/07/6-Advisory-150x150.png",
+        "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+        "/wp-content/uploads/2023/07/7-Advanced-Support-150x150.png",
+        "/wp-content/uploads/2023/07/8-Security-Managment.png",
+        "/wp-content/uploads/2023/07/8-Security-Managment-150x150.png",
+        "/wp-content/uploads/2023/04/azure-managed-services-3.webp",
+        "/wp-content/uploads/2023/04/azure-managed-services-3-300x213.webp",
+        "/wp-content/uploads/2023/04/azure-managed-services-3-768x546.webp"
+      ]
+    },
+    {
+      "idx": 3,
+      "heading": "Our Industries",
+      "images": [
+        "/wp-content/uploads/2023/07/media-img-updated.webp",
+        "/wp-content/uploads/2023/06/Manufacturing-1.webp",
+        "/wp-content/uploads/2023/06/Healthcare-1.webp",
+        "/wp-content/uploads/2023/06/retail-1.webp",
+        "/wp-content/uploads/2023/06/Financial-services.webp"
+      ]
+    },
+    {
+      "idx": 4,
+      "heading": "Awards & Recognization",
+      "images": [
+        "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+        "/wp-content/uploads/2023/07/azure_administration.svg",
+        "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+        "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+        "/wp-content/uploads/2023/07/data-analyst.svg",
+        "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "/wp-content/uploads/2023/07/MB-900.svg",
+        "/wp-content/uploads/2023/07/AI-102.svg",
+        "/wp-content/uploads/2023/07/DP-100.svg",
+        "/wp-content/uploads/2023/07/AZ-140.svg",
+        "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg"
+      ]
+    },
+    {
+      "idx": 5,
+      "heading": "Your Next Big Idea Starts in the Cloud",
+      "images": []
+    },
+    {
+      "idx": 6,
+      "heading": "Scale Your Business with Our Azure Professional Services",
+      "images": [
+        "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+        "/wp-content/uploads/2023/05/Scale-Your-Business-with--300x290.png"
+      ]
+    },
+    {
+      "idx": 7,
+      "heading": "Work With Top Microsoft CSP Experts",
+      "images": [
+        "/wp-content/uploads/2023/10/csp-ms-logo.webp",
+        "/wp-content/uploads/2023/10/csp-ms-logo-300x105.webp"
+      ]
+    },
+    {
+      "idx": 8,
+      "heading": "Ensuring Productivity, Agility, & Scalability.",
+      "images": [
+        "/wp-content/uploads/2023/05/employee-image-1-1.png",
+        "/wp-content/uploads/2023/05/employee-image-1-1-300x262.png",
+        "/wp-content/uploads/2023/05/agility.webp",
+        "/wp-content/uploads/2023/05/agility-300x262.webp",
+        "/wp-content/uploads/2023/05/scalability1-1.webp",
+        "/wp-content/uploads/2023/05/scalability1-1-300x262.webp"
+      ]
+    },
+    {
+      "idx": 9,
+      "heading": "Our Process",
+      "images": [
+        "/wp-content/uploads/2023/07/free-consultation-blue.png",
+        "/wp-content/uploads/2023/07/choose_services_blue.png",
+        "/wp-content/uploads/2023/07/senior_level_expert.png",
+        "/wp-content/uploads/2023/07/cloud_empover.webp"
+      ]
+    },
+    {
+      "idx": 10,
+      "heading": "Explore Why Businesses Trust Folio3 To Fuel Growth",
+      "images": []
+    },
+    {
+      "idx": 11,
+      "heading": "Real Results, Real Impact,",
+      "images": []
+    },
+    {
+      "idx": 12,
+      "heading": "Your Common Queries Are Resolved​",
+      "images": [
+        "/wp-content/uploads/2023/05/faq_img.webp",
+        "/wp-content/uploads/2023/05/faq_img-300x272.webp"
+      ]
+    },
+    {
+      "idx": 13,
+      "heading": "Schedule a 1:1 Call Today",
+      "images": [
+        "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+        "/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp",
+        "/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp"
+      ]
+    },
+    {
+      "idx": 14,
+      "heading": "",
+      "images": [
+        "/wp-content/uploads/2023/04/azure_logo_ftr.png"
+      ]
+    }
+  ],
+  "clone": [
+    {
+      "idx": 0,
+      "heading": "Unlock the Power of Cloud: Build, Run & Manage Applications ",
+      "images": [
+        "/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new.webp",
+        "/wp-content/uploads/2026/01/intellifabric-screens.webp",
+        "/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp"
+      ]
+    },
+    {
+      "idx": 1,
+      "heading": "Folio3 Achieves Microsoft Solution Partner Designations",
+      "images": [
+        "/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp",
+        "/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp",
+        "/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp",
+        "/wp-content/uploads/2024/08/business-application-logo-img.webp"
+      ]
+    },
+    {
+      "idx": 2,
+      "heading": "Discover Cloud Opportunities",
+      "images": [
+        "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+        "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+        "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+        "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+        "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp"
+      ]
+    },
+    {
+      "idx": 3,
+      "heading": "Our Industries",
+      "images": [
+        "/wp-content/uploads/2023/07/media-img-updated.webp",
+        "/wp-content/uploads/2023/06/Manufacturing-1.webp",
+        "/wp-content/uploads/2023/06/Healthcare-1.webp",
+        "/wp-content/uploads/2023/06/retail-1.webp",
+        "/wp-content/uploads/2023/06/Financial-services.webp"
+      ]
+    },
+    {
+      "idx": 4,
+      "heading": "Awards &",
+      "images": [
+        "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+        "/wp-content/uploads/2023/07/azure_administration.svg",
+        "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+        "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+        "/wp-content/uploads/2023/07/data-analyst.svg",
+        "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "/wp-content/uploads/2023/07/MB-900.svg",
+        "/wp-content/uploads/2023/07/AI-102.svg",
+        "/wp-content/uploads/2023/07/DP-100.svg",
+        "/wp-content/uploads/2023/07/AZ-140.svg",
+        "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg"
+      ]
+    },
+    {
+      "idx": 5,
+      "heading": "Your Next Big Idea Starts in the Cloud",
+      "images": []
+    },
+    {
+      "idx": 6,
+      "heading": "Scale Your Business with Our Azure Professional Services",
+      "images": [
+        "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png"
+      ]
+    },
+    {
+      "idx": 7,
+      "heading": "Work With Top Microsoft CSP Experts",
+      "images": [
+        "/wp-content/uploads/2023/10/csp-ms-logo.webp"
+      ]
+    },
+    {
+      "idx": 8,
+      "heading": "Ensuring Productivity, Agility, & Scalability.",
+      "images": [
+        "/wp-content/uploads/2023/05/employee-image-1-1.png",
+        "/wp-content/uploads/2023/05/agility.webp",
+        "/wp-content/uploads/2023/05/scalability1-1.webp"
+      ]
+    },
+    {
+      "idx": 9,
+      "heading": "Our Process",
+      "images": [
+        "/wp-content/uploads/2023/05/step-bg.webp",
+        "/wp-content/uploads/2023/07/free-consultation-blue.png",
+        "/wp-content/uploads/2023/07/choose_services_blue.png",
+        "/wp-content/uploads/2023/07/senior_level_expert.png",
+        "/wp-content/uploads/2023/07/cloud_empover.webp"
+      ]
+    },
+    {
+      "idx": 10,
+      "heading": "Explore Why Businesses Trust Folio3 To Fuel Growth",
+      "images": []
+    },
+    {
+      "idx": 11,
+      "heading": "Real Results, Real Impact,",
+      "images": [
+        "/wp-content/uploads/2023/06/savills-cs.webp",
+        "/wp-content/uploads/2023/06/City4.webp"
+      ]
+    },
+    {
+      "idx": 12,
+      "heading": "Your Common Queries Are Resolved",
+      "images": [
+        "/wp-content/uploads/2023/05/faq_img.webp"
+      ]
+    },
+    {
+      "idx": 13,
+      "heading": "Schedule a 1:1 Call Today",
+      "images": [
+        "/wp-content/uploads/2024/08/azure-offices-map-img.webp"
+      ]
+    }
+  ],
+  "report": [
+    {
+      "heading": "Unlock the Power of Cloud: Build, Run & Manage Applications ",
+      "matchedClone": true,
+      "liveBaseCount": 3,
+      "cloneBaseCount": 3,
+      "missing": [
+        {
+          "base": "/wp-content/uploads/2023/07/Home-page-bg.webp",
+          "download": "/wp-content/uploads/2023/07/Home-page-bg.webp",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        }
+      ]
+    },
+    {
+      "heading": "Folio3 Achieves Microsoft Solution Partner Designations",
+      "matchedClone": true,
+      "liveBaseCount": 4,
+      "cloneBaseCount": 4,
+      "missing": []
+    },
+    {
+      "heading": "Discover Cloud Opportunities",
+      "matchedClone": true,
+      "liveBaseCount": 20,
+      "cloneBaseCount": 5,
+      "missing": [
+        {
+          "base": "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+          "download": "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+          "download": "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Power-Virtual-Agents.png",
+          "download": "/wp-content/uploads/2023/04/Power-Virtual-Agents.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+          "download": "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform.webp",
+          "download": "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform.webp",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+          "download": "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Data-Integration-and-ETL.png",
+          "download": "/wp-content/uploads/2023/04/Data-Integration-and-ETL.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Data-Analysis-and-Visualization.png",
+          "download": "/wp-content/uploads/2023/04/Data-Analysis-and-Visualization.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/Governance-Security-and-Compliance.png",
+          "download": "/wp-content/uploads/2023/04/Governance-Security-and-Compliance.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/azure_data_analytics.webp",
+          "download": "/wp-content/uploads/2023/04/azure_data_analytics.webp",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+          "download": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/6-Advisory.png",
+          "download": "/wp-content/uploads/2023/07/6-Advisory.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+          "download": "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/8-Security-Managment.png",
+          "download": "/wp-content/uploads/2023/07/8-Security-Managment.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        },
+        {
+          "base": "/wp-content/uploads/2023/04/azure-managed-services-3.webp",
+          "download": "/wp-content/uploads/2023/04/azure-managed-services-3.webp",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        }
+      ]
+    },
+    {
+      "heading": "Our Industries",
+      "matchedClone": true,
+      "liveBaseCount": 5,
+      "cloneBaseCount": 5,
+      "missing": []
+    },
+    {
+      "heading": "Awards & Recognization",
+      "matchedClone": false,
+      "liveBaseCount": 15,
+      "cloneBaseCount": 0,
+      "missing": [
+        {
+          "base": "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+          "download": "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/azure_administration.svg",
+          "download": "/wp-content/uploads/2023/07/azure_administration.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "download": "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+          "download": "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/data-analyst.svg",
+          "download": "/wp-content/uploads/2023/07/data-analyst.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+          "download": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+          "download": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+          "download": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/MB-900.svg",
+          "download": "/wp-content/uploads/2023/07/MB-900.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/AI-102.svg",
+          "download": "/wp-content/uploads/2023/07/AI-102.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/DP-100.svg",
+          "download": "/wp-content/uploads/2023/07/DP-100.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/AZ-140.svg",
+          "download": "/wp-content/uploads/2023/07/AZ-140.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+          "download": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+          "download": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        },
+        {
+          "base": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+          "download": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": true
+        }
+      ]
+    },
+    {
+      "heading": "Your Next Big Idea Starts in the Cloud",
+      "matchedClone": true,
+      "liveBaseCount": 0,
+      "cloneBaseCount": 0,
+      "missing": []
+    },
+    {
+      "heading": "Scale Your Business with Our Azure Professional Services",
+      "matchedClone": true,
+      "liveBaseCount": 1,
+      "cloneBaseCount": 1,
+      "missing": []
+    },
+    {
+      "heading": "Work With Top Microsoft CSP Experts",
+      "matchedClone": true,
+      "liveBaseCount": 1,
+      "cloneBaseCount": 1,
+      "missing": []
+    },
+    {
+      "heading": "Ensuring Productivity, Agility, & Scalability.",
+      "matchedClone": true,
+      "liveBaseCount": 3,
+      "cloneBaseCount": 3,
+      "missing": []
+    },
+    {
+      "heading": "Our Process",
+      "matchedClone": true,
+      "liveBaseCount": 4,
+      "cloneBaseCount": 5,
+      "missing": []
+    },
+    {
+      "heading": "Explore Why Businesses Trust Folio3 To Fuel Growth",
+      "matchedClone": true,
+      "liveBaseCount": 0,
+      "cloneBaseCount": 0,
+      "missing": []
+    },
+    {
+      "heading": "Real Results, Real Impact,",
+      "matchedClone": true,
+      "liveBaseCount": 0,
+      "cloneBaseCount": 2,
+      "missing": []
+    },
+    {
+      "heading": "Your Common Queries Are Resolved​",
+      "matchedClone": true,
+      "liveBaseCount": 1,
+      "cloneBaseCount": 1,
+      "missing": []
+    },
+    {
+      "heading": "Schedule a 1:1 Call Today",
+      "matchedClone": true,
+      "liveBaseCount": 1,
+      "cloneBaseCount": 1,
+      "missing": []
+    },
+    {
+      "heading": "",
+      "matchedClone": false,
+      "liveBaseCount": 1,
+      "cloneBaseCount": 0,
+      "missing": [
+        {
+          "base": "/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "download": "/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "fileExistsLocally": true,
+          "inCloneElsewhere": false
+        }
+      ]
+    }
+  ]
+}

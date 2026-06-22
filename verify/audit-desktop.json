@@ -1,0 +1,6631 @@
+[
+  {
+    "route": "/ai-agents/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "AI Agents - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/ai-agents/it-asset-management-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/11/head-itasset-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/conversational-tracking-provisioning.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/seamless-enterprise-integration.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/advanced-asset-intelligence.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/security-high-volume-scalability.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "ITAsset Copilot: Your AI Agent for Conversational IT Asset Management | Folio3 Azure"
+  },
+  {
+    "route": "/ai-agents/ai-powered-ticketing-and-customer-service-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/11/zammad-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/intellient-intake-triage.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/agent-assist-resolution.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/secure-lifecycle-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/proactive-intelligence-reporting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Zammad Ticketing Copilot: AI for Instant, Automated Service Resolution | Folio3 Azure"
+  },
+  {
+    "route": "/about-us/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/azure-about-us-mock.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Oval.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "About Us - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/04/Modernize-Legacy-Applications.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Automate-Manual-Processes.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Power-Virtual-Agents.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Automate-Integrate-Business-Processes-2.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/azure-Microsoft-Power-Platform.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Data-Storage-and-Management.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Data-Integration-and-ETL.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Data-Analysis-and-Visualization.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Governance-Security-and-Compliance.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/azure_data_analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/6-Advisory.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/8-Security-Managment.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/azure-managed-services-3.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Folio3 | Azure Cloud Services"
+  },
+  {
+    "route": "/ai-agents/kubemonitor-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/11/kubernetes.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/conversational-monitoring-diagnostics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/deep-metrics-resource-observability.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/seamless-integration-enterprise-readiness.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/accelerated-incident-response-recovery.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "KubeMonitor Copilot: Conversational Kubernetes Observability | Folio3 Azure"
+  },
+  {
+    "route": "/ai-agents/smartexpense-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/11/head-smartexpense-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/instant-chat-based-submission-ai-extraction.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/automated-compliance-risk-reduction.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/smart-accounting-one-click-approval.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/11/accelerated-reimbursement-insight-generation.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "SmartExpense Copilot: Your AI Agent for Expense Management | Folio3 Azure"
+  },
+  {
+    "route": "/ai-powered-solutions/copilot-for-recruitment/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/10/agent-smarter-faster-recruitment.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/10/intelligent-sourcing-screening.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/10/one-click-interview-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/10/interview-insights-post-interview-intelligence.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/10/seamless-offer-onboarding-transition.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Recruit Flow Copilot: Your AI Agent to Simplify Recruitment | Folio3 Azure"
+  },
+  {
+    "route": "/ai-powered-solutions/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/06/Frame-1410126050-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Frame-1000001875-elementor-io-optimized-3.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/AI-Strategy-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Gen-AI-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Intelligent-Recruitment-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/bbbb-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Expense-Management-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Customer-Insights-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Talent-Management-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_solution_architect.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analyst.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "AI Powered Solutions - Folio3 Azure AI Services | Folio3 Azure"
+  },
+  {
+    "route": "/ai-scenario-library/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/12/scenarios.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-finance.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-marketing.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-sales.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-operations.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-human-resources.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-information-technology.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-customer-service.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-legal.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-communications.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-executive-offices.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-accessibility.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/copilot-agents-sustainability.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-financial-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-healthcare.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-manufacturing.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-retail.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-government.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-energy-resources.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-media-entertainment.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/isa-nonprofit.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/microsoft-dynamics-365-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/ready-transform-business.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Copilot Scenario Library - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/ai-scenario-library/copilot-in-retail/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/04/azure-ai-agent-copilot-in-retail.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/microsoft-azure.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/microsoft-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/azure-openai-service.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/azure-data-lake-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/microsoft-fabric.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/copilot-agent-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/azure-openai.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/azure-data-lake.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/microsoft-copilot-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/power-automate.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/microsoft-fabric-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/dynamics-365.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/azure-synapse.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/signal-detected-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/analysis-complete-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/autonomous-action-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/outcome-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/makes-different-from-every-other-retail-ai-pitch.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/arrow_bottom.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/competitors-reading-reports.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Copilot in Retail | AI-Powered Supply Chain Agents | Folio3 Azure"
+  },
+  {
+    "route": "/ai-scenario-library/finance/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/copilot-finance.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/risk-management-compliance.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/planning-analysis.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/procure-to-pay.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/record-to-report.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/day-in-the-life-of-a-finance-pro.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/achieve-copliot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/eliminate-vulneraility-start-transformation.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Folio3 Copilot Agents Library: Azure AI Solutions for Enterprise | Folio3 Azure"
+  },
+  {
+    "route": "/automated-data-reporting/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/07/wfcf-header-graphic.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/wfcf-our-process.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-storage-account.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/ms-fabric-data-pipelines.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/ms-fabric-lakehouse.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/power-bi.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/ms-fabric-notebooks.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/ms-fabric-deployment-pipelines.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/seamless-cloud-ride-with-us.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Automated Data Reporting - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/ai-scenario-library/human-resources/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/copilot-human-resource.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/recruitment-talent-acquisition.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/employee-onboarding-integration.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/benefits-compensation-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/learning-career-development.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/organizational-health-employee-experience.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/human-resource-kpis-reimagined.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/transform-hr-strategy-folio3.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/circle-right-arrow.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Folio3 Copilot For HR | Folio3 Azure"
+  },
+  {
+    "route": "/azure-automated-data-reporting-for-slb/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/automatic-data-reporting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/slb.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/order-details-screen.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/product-health-screen.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/sales-category-product.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/sales-distribution-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Automated Data Reporting With 99.9% Data Accuracy For SLB | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/09/end-to-end-BI-top-banner-img-mobile.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/end-to-end-BI-top-banner-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/elt-pipeline-diagram-mobile-updated.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-integration-as-service-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouse-as-service-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-visualization-as-service-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/predictive-analysis-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/agriculture-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/retail-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/dynamics-365-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/business-central-tab-img-grid.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/arrow_bottom.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-integration-logos-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-integration-logos-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouseing-logos-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouseing-logos-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouseing-logos-3.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouseing-logos-4.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-warehouseing-logos-5.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-visualization-logos-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-visualization-logos-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/data-visualization-logos-3.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/cloud-services-logos-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/farm-to-market-analytics-solutions.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/04/data-analytics-and-business-intelligence.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/12/data-analytics-trends.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/etl-elt-pipelines-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Data Analytics Services | Folio3 Azure"
+  },
+  {
+    "route": "/azure-cloud-service/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/09/azure-banner-cloud-services-mob.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Azure-Application-Development.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Consulting-Services-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Application-Development.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DevOps-Automation-as-Service.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Cloud-Migration.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/x835687_Businessman_with_cloud_computing_diagram_show_on_hand.__8495534b-061d-445d-932b-2c41b2e34c38.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/x835687_Cloud_computing_technology_concept._Futuristic_illustra_a1177465-92c5-40e8-a63c-de692350ddd5.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Cognitive-Search.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Cloud Service - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/data-visualization-as-a-service/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/01/data-visualization-as-service-header-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dvas-featured-img-1-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/elt-pipeline-diagram-mobile.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/discovery-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/sb-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dm-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dd-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/developent-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-finance.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-agriculture.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-retail.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-healthcare.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-manufacturing.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-hr.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-sm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dv-sc.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloud-wifi-data.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloud-laptop-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloud-headphone.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/windows-setting-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-experience-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-expertise-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-customized-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-recognition-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/azure-synapse-vs-databricks-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/Azure-Blog-Images-850-×-560-px-7.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/10/Azure-Blog-Images-850-×-560-px-4.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/etl-elt-pipelines-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Data Visualization as a service - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/agriculture-data-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/06/Frame-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Frame-1000001875-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Harvest-Management-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Crop-Management-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Warehouse-Management_-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Supply-Chain-Management_-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Farm-Irrigation-Management_-elementor-io-optimized-2-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Farm-Resource-Management_-elementor-io-optimized-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Farm-Financial-Management_-elementor-io-optimized-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analyst.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Frame-1000001875-1-elementor-io-optimized-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Agriculture Analytics Solutions | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/manufacturing-data-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/drive-manufacturing-excellence-ai-powered-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/inventory-management-mda.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/production-performance-mda.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/one-time-full-production-mda.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/sales-order-analysis-mda.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/gain-deep-insights-your-manufacturing-business.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Manufacturing Data Analytics | Folio3 Azure Solutions | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/retail-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/08/retail-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/inventory-management-mda.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/sales-performance-retail-sales-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/customer-traffic-intelligence.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/inventory-product-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/operational-financial-metrics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Real-Time Retail Performance Tracking Dashboard Solution | Folio3 Azure"
+  },
+  {
+    "route": "/azure-data-analytics/supply-chain-analytics/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/09/supply-chain-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/industry-wide-analyts-solution-artchitecture-mobile-scaled.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/industry-wide-analyts-solution-artchitecture-mobile.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/distribution.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/inventory-quantity-cogs.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/inventory-valuation.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/sla-shipping-scorecard.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/supply-chain-analytics-consulting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/09/supply-chain-analytics-implementation.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/etl-elt-pipelines-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Supply Chain Analytics Services | Optimize & Grow | Folio3 Azure"
+  },
+  {
+    "route": "/azure-for-construction/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/06/sec-4-2-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/sec-4-1-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/BIM-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/sec-4-4-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/sec-5-1-elementor-io-optimized.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure For Construction: Build Smarter and Faster | Folio3 Azure"
+  },
+  {
+    "route": "/azure-for-healthcare/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/11/claims-processing-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-management-analysis-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/member-engagement-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/digital-health-services-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/fraud-detection-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/Centralized-Patient-Data.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analytics-img-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/telemedicine-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/research-collab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/IoT-Remote-Monitoring.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/ques-ans-img.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure for Healthcare - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/azure-for-logistics-and-transport/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/azure-iot-solutions.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-powered-business-apps.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/data-ai-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/logistics-focused-applications.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/fleet-optimization.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/supply-chain-transparency.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/last-mile-delivery.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/warehouse-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/route-freight-planning.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/data-security-compliance.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/yard-management-cross-docking.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/your-partner-digital-transformation.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/discovery-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/sb-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dm-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/developent-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Logistics Management & Transport Services | Folio3 Azure"
+  },
+  {
+    "route": "/azure-for-manufacturing/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/11/Remote-Manufacturing-Operations.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/supply-chain-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/anomaly-detection-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/unified-datra-management-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/predictive-maintenance-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/demand-forecasting-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-security-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/smart-factory-tab-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure for Manufacturing - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/azure-for-retail/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/11/360-customer-data.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/demand-forecasting-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/supply-chain-optimization.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-security-compliance-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/big-data-analytics-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/innovate-IOT-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/Omni-channel-optimization-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-personalized-engines-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure for Retail - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/blog/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/blog-mock.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/our-blog-banner.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Blog | Folio3 Azure"
+  },
+  {
+    "route": "/case-studies/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/02/hr-policy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/02/real-estate-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/alibaba-achieves-faster-financial-closings-with-power-bi-reporting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-fabric-services-for-a-cattle-feeding-company-to-maximize-animal-well-being.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Client Case Studies | Folio3 | Folio3 Azure"
+  },
+  {
+    "route": "/azure-managed-services/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/07/Azure-Managed-Services-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/6-Advisory.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/8-Security-Managment.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Break-Fix-Support.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Advisory.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Advanced-Support.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/security_management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Media-and-entertainment.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/The-Ultimate-Guide-to-Leveraging-Microsoft-Azure-for-Enhanced-Asset-Management.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/The-Role-of-Data-Integration-in-Building-an-Effective-Enterprise-Data-Architecture.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/10/Azure-Blog-Images-850-×-560-px-2.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Azure Managed Services - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/case-study-slider-for-mobile/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Case study slider for mobile - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/case-studies/microsoft-copilot-studio-based-hr-policy-agent/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/increase-hr-productivity-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/instant-response-times-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/enhanced-compliance-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/buildings.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Copilot Studio Based HR Policy Agent by Folio3 | Case Study | Folio3 Azure"
+  },
+  {
+    "route": "/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/agentic-hr-policy-feedback-update-reporting-solution.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/microsoft-copilot-studio-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/power-automate-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/sharepoint-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/excel-sharepoint-hosted-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/copilot-powerpoint-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/self-help-hr-poliy-agent.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/guided-feedback-collection.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/automated-feedback-capture.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/feedback-analysis-insights.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/human-in-the-loop-approvals-policy-updates.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/reporting-communication.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/impact-outcomes.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/buildings.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Agentic HR Policy Feedback Update and Reporting Solution - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/case-studies/popcorn-producer-intellifabric-dashboards/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/weaver-popcorn-hybrids.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/expense-analysis-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/income-balance-sheet-overview-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/profitability-metrics-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/liquidity-ratios-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/financial-performance-monitoring.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/sales-performance-tracking-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/budet-comparison-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/detailed-analysis-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/sales-customer-insights.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/inventory-valuation-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/cogs-tracking-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/inventory-cost-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/wph-impact-outcomes.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/daraz-client-bg.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Popcorn Producer Intellifabric Dashboards - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/city-university-azure/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/Folio3-Azure-Case-Study.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/City_u.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "City University & azure - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/contact-us/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/azure-banner-contact-us.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Oval-bg.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/contact-us-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/contact_us-banner.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Contact Us | Folio3 Azure"
+  },
+  {
+    "route": "/cookie-policy/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/Azure-Privay-policy-mobile.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Cookie Policy - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/client-success-story/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/07/azure-sql.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-storage-account.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-data-factory.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-key-vaults.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-devops.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/07/azure-data-bricks.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Client Success Story - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/copilotsolutions/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "CopilotSolutions - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/copilot-implementation-food-verification/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/06/Time-with-Copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Azure-Storage-Account.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/MS-Fabric-Data-Pipelines.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/MS-Fabric-Lakehouse.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Power-BI.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Azure-Service-Principal.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/Azure-Function-App.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Copilot Implementation Boosts Food Planning Productivity By 150% | Folio3 Azure"
+  },
+  {
+    "route": "/daraz/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/Folio3-Azure-Case-Study.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/daraz_logo-2.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Azure_Data_Lake-removebg-preview.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Rectangle_12180__2_-removebg-preview.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Power-BI.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Azure_Storage-removebg-preview.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Daraz - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/data-integration-as-a-service/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/01/ias-concept-img-icon-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-concept-img-icon-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-concept-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-concept-img-icon-3.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-postgresql-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-oracle-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-mariadb-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-mssql-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-amazonrds-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/databases-mysql-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloudapps-gsuite-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloudapps-shopify-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloudapps-salesforce-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloudapps-dynamics365-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloudapps-hubspot-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/data-warehouses-amazonredshift-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/data-warehouses-azuresynapse-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/data-warehouses-google-big-query-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/data-warehouses-snowflake-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/storage-google-cloud-storage-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/storage-amazons3-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/storage-hadoop-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/storage-ftp-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/storage-onedrive-logo.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/mobile-cloud-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloud-wifi-data.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/cloud-headphone.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/windows-setting-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-experience-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-expertise-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-customized-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-recognition-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/The-Role-of-Data-Integration-in-Building-an-Effective-Enterprise-Data-Architecture.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/Azure-Blog-Images-850-×-560-px-6.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/top-5-data-cleansing-tools.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/ias-concept-img-bg.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Data Integration As A Service - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/data-science-ai/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/01/discovery-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/sb-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/dm-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/developent-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Healthcare-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Manufacturing-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Financial-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/retail-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/agriculture.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Data Science and AI | Folio3 Azure AI and ML Services | Folio3 Azure"
+  },
+  {
+    "route": "/data-warehousing-as-a-service/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/03/data-warehouse-solution-header-img-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/elt-pipeline-diagram-mobile-updated.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/discovery-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/data-strategy-icon.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/design-deploy-icon.webp",
+        "onDisk": false
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-experience-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-expertise-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-customized-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/f3-advantage-recognition-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/03/How-to-Build-Custom-Dashboards-for-Effective-Data-Visualization.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/Azure-Blog-Images-850-×-560-px-3.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/10/Data-Warehouse-Modernization-with-Azure.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/01/etl-elt-pipelines-1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Data Warehousing as a Service - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/implementing-power-bi-dashboard-for-food-crop-grower/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/food-crop-grower.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/boost-operational-efficiency-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/Maximized-Data-Value-ROI.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/about-client-bg.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Implementing Power BI to Improve Farm Efficiency | Folio3 Azure"
+  },
+  {
+    "route": "/data-science-ai/microsoft-copilot-consulting/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-dynamics-365-copilot-ipad-screen.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/folio3-microsoft-365-copilot-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_solution_architect.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analyst.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "body",
+        "text": "Read More",
+        "clone": "/city-university-azure",
+        "live": "/savills | /copilot-implementation-food-verification"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Strategic Microsoft Copilot Consulting Services for AI | Folio3 Azure"
+  },
+  {
+    "route": "/microsoft-fabric-services/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2024/09/microsoft-fabric-services-ipad-screen-mob.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/Frame-6992.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/data-integration-management.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/ds-icon-02.jpg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/data-engineering-warehousing.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/data-science-real-time-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/06/business-intelligence-reporting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Microsoft Fabric Services - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/microsoft-fabric-reporting-for-real-estate/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/Microsoft-Fabric-Reporting-Boosts-Real.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/elementor/thumbs/savills-reb6f7dtiyiw5ofu4vsmvdys4xzyvzp2ffgjjasafk.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/MS-Fabric-Medallion-Architecture.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/MS-Fabric-Data-Pipelines.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/MS-Fabric-Lakehouse.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/MS-Fabric-Notebooks.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/About-The-Client_.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Microsoft Fabric Reporting Boosts Real Estate Efficiency by 13% | Folio3 Azure"
+  },
+  {
+    "route": "/industries/",
+    "viewport": "desktop",
+    "liveStatus": 404,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [],
+    "linkMissing": [],
+    "h1": null,
+    "title": null
+  },
+  {
+    "route": "/microsoft-fabric-services/microsoft-fabric-migration/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/moving-data-analytics-workloads-analytics-platform.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/data-analyst.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/hs-microsoft-fabric-services-cattle-feeding-company-maximize-animal-well-being-20.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/hs-automating-food-plan-management-saving-60-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/hs-azure-automate-data-reporting-slb-99-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/hs-power-bi-dashboard-food-crop-grower-improving-yield-potential-12.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Microsoft Fabric Migration Services | Data Transformation | Folio3 Azure"
+  },
+  {
+    "route": "/microsoft-licensing-process/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/11/ms-license-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/key-features-img.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Microsoft Licensing Process - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/power-bi-financial-reporting-for-alibaba/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/daraz-header-graphic.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/elementor/thumbs/alibaba-reb6f6fzc4hlu2h7ade0aw7bjk4loalc3at220tols.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/achieve-dynamic-scalability-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/06/32-Fewer-Human-Errors.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/05/extract-transform-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/daraz-client-bg.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Power BI Financial Reporting: Alibaba Achieves 37% Faster Closings | Folio3 Azure"
+  },
+  {
+    "route": "/microsoft-power-platform-services/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/sap.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/business-app-enhancements.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/process-mining-automation-migration.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/sales-financial-reporting.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-services-private-equity-firm.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Expert Microsoft Power Platform Services Partner | Folio3 Azure"
+  },
+  {
+    "route": "/power-bi-services/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2025/07/analytics-solutions-architecture.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/analytics-solutions-architecture-mobile-scaled.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/analytics-solutions-architecture-mobile.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/discovery-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/architecture-design-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/tools-selection-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/planning-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/component-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/training-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/08/business-user-icon.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/benefits-business-intelligence-analytics-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/asset-optimization-icon.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-macbook-screen.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/financial-services-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/manufacturing-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/retail-ecommerce-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/healthcare-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/real-estate-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/logistics-transportation-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/agriculture-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/construction-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/automotive-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/energy-power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/business-application-logo-img.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-cosmos-db.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-blob-storage.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-lake.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-sql.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-onelake.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-fabric.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-data-factory.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-synapse-analytics.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-excel.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/microsoft-sql-server.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Power BI Business Intelligence Services | Microsoft-Certified | Folio3 Azure"
+  },
+  {
+    "route": "/privacy-policy/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/Azure-Privay-policy-mobile.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Privacy Policy - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/solution/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Solution - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/services/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Application-Development.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/4-Cloud-Migration.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/azure-banner-cloud-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Intersect.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/step_one-2.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Choose-the-Services-thats-right-for-you.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Meet-with-your-new-Senior-Level-Expert.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/05/Let-the-Cloud-Empower-you.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/shutterstock_2161798435-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Synapse.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-AI-Machine-Learning1-1-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-SQL-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Cognitive-Services-2.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Stack-Services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Cognitive-Search.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/Azure-Cognitive-Search1.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Services - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/savills/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/06/Folio3-Azure-Case-Study.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/SAVILLS-2.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/C-Sharp.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Asp.NET_.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Angular.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Azure-2.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-5-1.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Line-8-1.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "SAVILLS - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/solution/intellifabric/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2026/01/rocket-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/what-is-intellifabric.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/decision-intelligence.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/insights-drive-actions.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/meaningful-measurable-results.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-data-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/power_platform_developers.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-network-engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/MB-900.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AI-102.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/DP-100.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/AZ-140.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/azure-stack-hub.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/window-server-hybrid-administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/11/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/manufacturing-card.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/retail-ecommerce.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/warehousing-distribution.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/health.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric-microsoft-dynamics-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric-power-bi-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric-business-data-teams-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric-trusted-insights-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/intellifabric-analytics-scale-icon.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2026/01/unlock-unpredendented-insights.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "IntelliFabric Analytics Solution | Self-Service Reporting on Microsoft Fabric | Folio3 Azure"
+  },
+  {
+    "route": "/testimonials/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2023/07/azure-banner-Mobile-home_updated.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure_administration.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/testimonial_arc.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/gj_garner.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/04/faq_placeholder.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/media-img-updated.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Manufacturing-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Healthcare-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/retail-1.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/06/Financial-services.webp",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2023/07/Support-and-Management.png",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "About Us - Azure | Folio3 Azure"
+  },
+  {
+    "route": "/thank-you/",
+    "viewport": "desktop",
+    "liveStatus": 200,
+    "cloneStatus": 200,
+    "missingImages": [
+      {
+        "path": "/wp-content/uploads/2022/06/thankyou-right-image.png",
+        "onDisk": true
+      },
+      {
+        "path": "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+        "onDisk": true
+      }
+    ],
+    "linkMismatches": [
+      {
+        "region": "footer",
+        "text": "Tel: +1 408 412-3813",
+        "clone": "tel:+14084123813",
+        "live": "tel:+1408412-3813"
+      },
+      {
+        "region": "footer",
+        "text": "Support: +1 (408) 512 1812",
+        "clone": "tel:+14085121812",
+        "live": "tel:+1(408)5121812"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-55-6540154",
+        "clone": "tel:+971556540154",
+        "live": "tel:+971-55-6540154"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +971-04-2505173",
+        "clone": "tel:+971042505173",
+        "live": "tel:+971-04-2505173"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +44 (0) 14 8361 6611",
+        "clone": "tel:+4401483616611",
+        "live": "tel:+44(0)1483616611"
+      },
+      {
+        "region": "footer",
+        "text": "Tel: +92-21-3432 3721-4",
+        "clone": "tel:+9221343237214",
+        "live": "tel:+92-21-34323721-4"
+      }
+    ],
+    "linkMissing": [],
+    "h1": 1,
+    "title": "Thank You | Folio3 Azure"
+  }
+]

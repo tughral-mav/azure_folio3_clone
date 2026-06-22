@@ -1,0 +1,297 @@
+{
+  "entranceCount": 8,
+  "entrance": [
+    {
+      "animation": "zoomIn",
+      "delay": 0,
+      "label": "elementor-element.elementor-element-22f8cd1"
+    },
+    {
+      "animation": "zoomIn",
+      "delay": 0,
+      "label": "elementor-element.elementor-element-ecbe0f5"
+    },
+    {
+      "animation": "zoomIn",
+      "delay": 0,
+      "label": "elementor-element.elementor-element-954fe83"
+    },
+    {
+      "animation": "fadeInLeft",
+      "delay": 0,
+      "label": "elementor-element.elementor-element-d4ed87e"
+    },
+    {
+      "animation": "fadeIn",
+      "delay": 100,
+      "label": "elementor-element.elementor-element-cc3d9c7"
+    },
+    {
+      "animation": "fadeIn",
+      "delay": 100,
+      "label": "elementor-element.elementor-element-6ffa4b5"
+    },
+    {
+      "animation": "fadeIn",
+      "delay": 100,
+      "label": "elementor-element.elementor-element-556ed3e"
+    },
+    {
+      "animation": "fadeIn",
+      "delay": 100,
+      "label": "elementor-element.elementor-element-765b2e9"
+    }
+  ],
+  "css": [
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    },
+    {
+      "name": "zoomIn",
+      "duration": "1.25s",
+      "timing": "ease",
+      "iteration": "1",
+      "label": "div.elementor-element"
+    }
+  ],
+  "counters": [
+    {
+      "to": "User satisfa",
+      "duration": null
+    },
+    {
+      "to": "User satisfa",
+      "duration": null
+    },
+    {
+      "to": "User satisfa",
+      "duration": null
+    },
+    {
+      "to": "0\n\t\t\t\t%",
+      "duration": null
+    },
+    {
+      "to": "98",
+      "duration": "2000"
+    },
+    {
+      "to": "%",
+      "duration": null
+    },
+    {
+      "to": "Our Clients\t",
+      "duration": null
+    },
+    {
+      "to": "Our Clients\t",
+      "duration": null
+    },
+    {
+      "to": "Our Clients",
+      "duration": null
+    },
+    {
+      "to": "0\n\t\t\t\t+",
+      "duration": null
+    },
+    {
+      "to": "100",
+      "duration": "2000"
+    },
+    {
+      "to": "+",
+      "duration": null
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Reshaping Healthcare Landscape with Azur",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/azure-healthcare-header-fg-1.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Enhancing Member Value & Elevating Payor",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/claims-processing-img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Claims Processing",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/claims-processing-img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Empowering Healthcare with Azure",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/cta-health-care.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Empowering Healthcare with Azure",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/cta-health-care.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Empowering Providers to Elevate Patient ",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/Centralized-Patient-Data.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Centralized Patient Data",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/Centralized-Patient-Data.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Awards &  Recognization",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/07/azure_solution_architect.svg",
+          "alt": "Azure Solutions Architect"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/azure_administration.svg",
+          "alt": "Azure Administration"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg",
+          "alt": "AZ-400 + 104 or 204 - Azure DevOps Engineer Expert"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/azure_security_engineer.svg",
+          "alt": "Azure Security Engineer"
+        },
+        {
+          "src": "/wp-content/uploads/2023/07/data-analyst.svg",
+          "alt": "data-analyst"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Why Choose Folio3?",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/06/about_us-mock.webp",
+          "alt": "discover the essence of who we are?"
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Real Results,  Real Impact,",
+      "imgs": [],
+      "bgs": [
+        "/wp-content/uploads/2023/06/savills-cs.webp",
+        "/wp-content/uploads/2023/06/City4.webp"
+      ]
+    },
+    {
+      "heading": "Real Results,  Real Impact,",
+      "imgs": [],
+      "bgs": [
+        "/wp-content/uploads/2023/06/savills-cs.webp",
+        "/wp-content/uploads/2023/06/City4.webp"
+      ]
+    },
+    {
+      "heading": "Partner with Folio3 to Streamline your H",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2023/11/ques-ans-img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    },
+    {
+      "heading": "Schedule a 1:1 Call Today",
+      "imgs": [
+        {
+          "src": "/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null
+        }
+      ],
+      "bgs": []
+    }
+  ]
+}

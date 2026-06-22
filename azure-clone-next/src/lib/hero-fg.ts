@@ -1,0 +1,18 @@
+/**
+ * Hero foreground illustrations — recovered from the live pages (these were
+ * lazy-loaded as data-URI placeholders during the bulk capture, so they're not
+ * in the content JSON). Pages whose illustration is baked into the background
+ * banner (e.g. azure-cloud-service) have NO entry here.
+ * Keyed by the last URL segment (slug).
+ */
+export const HERO_FG: Record<string, string> = {
+  'azure-for-healthcare': '/wp-content/uploads/2023/11/azure-healthcare-header-fg-1.webp',
+  'azure-for-retail': '/wp-content/uploads/2023/11/retail-top-banner-img.webp',
+  'azure-for-manufacturing': '/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp',
+  'azure-for-construction': '/wp-content/uploads/2025/06/Frame-1410126059.png',
+  'azure-for-logistics-and-transport': '/wp-content/uploads/2025/07/efficiently-manage-logistics-transport-operations-microsoft-azure.webp',
+  'power-bi-services': '/wp-content/uploads/2025/07/power-bi-ipad-screen.webp',
+  'microsoft-power-platform-services': '/wp-content/uploads/2025/07/driving-enterprise-innovation-efficiency-new.webp',
+  'data-integration-as-a-service': '/wp-content/uploads/2024/01/integration-as-service-header-img.webp',
+  'data-warehousing-as-a-service': '/wp-content/uploads/2024/03/data-warehouse-solution-header-img.webp',
+};

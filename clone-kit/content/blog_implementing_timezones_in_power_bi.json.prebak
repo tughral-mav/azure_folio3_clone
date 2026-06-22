@@ -1,0 +1,385 @@
+{
+  "url": "https://azure.folio3.com/blog/implementing-timezones-in-power-bi/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Implementing Timezones in Power BI: A Comprehensive Guide",
+    "description": "This guide will walk you through two different methods to implement timezone functionality in your Power BI reports.",
+    "canonical": "https://azure.folio3.com/blog/implementing-timezones-in-power-bi/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/06/implementing-timezones-in-power-bi.jpg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "June 20, 2024"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Implementing Timezones in Power BI: A Comprehensive Guide"
+        },
+        {
+          "tag": "h2",
+          "text": "Method 1: Using Direct Query and Parameters"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 1: Create a Parameter"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 2: Convert Queries to Direct Query Mode"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 3: Create a Timezone Table"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 4: Bind the Parameter"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 5: Add a Slicer"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics and Business Intelligence: How They Work Together"
+        },
+        {
+          "tag": "h3",
+          "text": "Embedded Analytics Showdown: Power BI vs. Qlik for SaaS Platforms"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Synapse + Power BI: Scaling Manufacturing IoT Analytics"
+        }
+      ],
+      "paragraphs": [
+        "Home » Implementing Timezones in Power BI: A Comprehensive Guide",
+        "Table of Contents",
+        "Power BI is a powerful tool for data visualization and business intelligence, but handling timezones can be tricky. This guide will walk you through two different methods to implement timezone functionality in your Power BI reports, allowing you to dynamically adjust timezones using a dropdown menu.",
+        "1. Open Power BI Query Editor.",
+        "2. Click on ‘New Parameter.’",
+        "<img fetchpriority=\"high\" fetchpriority=\"high\" decoding=\"async\" class=\"aligncenter wp-image-11730 size-full\" src=\"https://azure.folio3.com/wp-content/uploads/2024/06/Image.png\" alt=\"Click on 'New Parameter.\" width=\"586\" height=\"250\" srcset=\"https://azure.folio3.com/wp-content/uploads/2024/06/Image.png 586w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-300x128.png 300w\" sizes=\"(max-width: 586px) 100vw, 586px\" />",
+        "3. Add details for the parameter in the form, specifying the timezones you need.",
+        "<img decoding=\"async\" class=\"aligncenter wp-image-11731 size-large\" src=\"https://azure.folio3.com/wp-content/uploads/2024/06/Image-1-1024x545.png\" alt=\"Image\" width=\"1024\" height=\"545\" srcset=\"https://azure.folio3.com/wp-content/uploads/2024/06/Image-1-1024x545.png 1024w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-1-300x160.png 300w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-1-768x409.png 768w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-1-1536x818.png 1536w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-1.png 1918w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+        "1. Convert your data tables from import method to direct query method.",
+        "2. Add the timezone parameter to adjust the time in the database. Use the following query as a template:",
+        "Here’s my query to get Timein according to timezone parameter value:",
+        "Query = Text.Combine({"
+      ],
+      "listItems": [
+        "Abdullah Ali",
+        "June 20, 2024",
+        "Method 1: Using Direct Query and ParametersStep 1: Create a ParameterStep 2: Convert Queries to Direct Query ModeStep 3: Create a Timezone TableStep 4: Bind the ParameterStep 5: Add a Slicer",
+        "Step 1: Create a Parameter",
+        "Step 2: Convert Queries to Direct Query Mode",
+        "Step 3: Create a Timezone Table",
+        "Step 4: Bind the Parameter",
+        "Step 5: Add a Slicer"
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/06/Image.png",
+          "alt": "Click on 'New Parameter.",
+          "w": 586,
+          "h": 250
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "Data Analytics and Business Intelligence: How They Work Together"
+        },
+        {
+          "tag": "h3",
+          "text": "Embedded Analytics Showdown: Power BI vs. Qlik for SaaS Platforms"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Synapse + Power BI: Scaling Manufacturing IoT Analytics"
+        }
+      ],
+      "paragraphs": [
+        "Most organizations are not short on data. They’re short on clarity about what that data means and what to do",
+        "Are you a C-suite executive or a product leader tasked with a pivotal decision: how do you equip your Software-as-a-Service",
+        "Are you feeling overwhelmed by the sheer volume of data flooding in from your manufacturing floor? Suppose you are a"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/06/Image.png",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/06/Image.png 586w, https://azure.folio3.com/wp-content/uploads/2024/06/Image-300x128.png 300w",
+      "alt": "Click on 'New Parameter.",
+      "w": "586",
+      "h": "250",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": " <div> <div> <p>Table of Contents</p> <span><a href=\"#\"><span><span><span>Toggle</span><span></span></span></span></a></span></div> </div> <div> <div> <div> <div> <div> <p>Power BI is a powerful tool for data visualization and business intelligence, but handling timezones can be tricky. This guide will walk you through two different methods to implement timezone functionality in your Power BI reports, allowing you to dynamically adjust timezones using a dropdown menu.</p><h2><span></span>Method 1: Using Direct Query and Parameters<span></span></h2><h3><span></span>Step 1: Create a Parameter<span></span></h3><p>1. Open Power BI Query Editor.</p><p>2. Click on ‘New Parameter.’</p><p><img src=\"https://azure.folio3.com/wp-content/uploads/2024/06/Image.png\" alt=\"Click on 'New Parameter.\"></p><p>3. Add details for the parameter in the form, specifying the timezones you need.</p><p><img alt=\"Image\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20545'%3E%3C/svg%3E\"></p><h3><span></span>Step 2: Convert Queries to Direct Query Mode<span></span></h3><p>1. Convert your data tables from import method to direct query method.</p><p>2. Add the timezone parameter to adjust the time in the database. Use the following query as a template:</p><p><strong>Here’s my query to get Timein according to timezone parameter value: </strong></p><p>Query = Text.Combine({</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “SELECT UserID, FirstName, LastName, Email, ParentShiftID, AttendanceID, TimeIn, TimeOut, Timezone, RecordEntryTimezone, ShiftSecs, ShiftMins, BreakSecs, BreakMins, ChargeableSecs, ChargeableMins, ProductiveSecs, ProductiveMins, IdleMinsDistributed, IdleSecsFormula, IdleMinsFormula, TimesheetStatus, TimesheetStatusDesc, AdjustmentStatus, AdjustmentStatusDesc, ApprovedBy, ApprovedAt, <strong>DATEADD(minute, “, Number.ToText(Timezone*60), “, TimeIn) AS TimeInAdjusted</strong> FROM AttendanceListingView”</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; })</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20548'%3E%3C/svg%3E\" alt=\"Image\"></p><h3><span></span>Step 3: Create a Timezone Table<span></span></h3><p>1. Open Power BI Desktop and go to the Model View.<br>2. Click on ‘New Table’ and enter a query to create a table containing all timezones. <strong>as shown in pic, I’ve added 5 timezones (9.5 to 11.5), but you can add as much as you want, but make sure this new table query contains all timezones that you’ve added in the previous timezone parameter (Step 1):</strong></p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20542'%3E%3C/svg%3E\" alt=\"Image\"></p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20589'%3E%3C/svg%3E\" alt=\"Image\"></p><h3><span></span>Step 4: Bind the Parameter<span></span></h3><p>1. Click on the Timezone column in the new table.</p><p>2. In the properties pane, bind the parameter to the timezone parameter created earlier.</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20667'%3E%3C/svg%3E\" alt=\"Image\"></p><h3><span></span>Step 5: Add a Slicer<span></span></h3><p>1. Add a slicer to your report.<br>2. Use the newly created Timezone column in this slicer.</p><p><img src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20482'%3E%3C/svg%3E\" alt=\"Image\"></p><p>Remember to test thoroughly to ensure the dashboard behaves as expected when switching timezones.</p> </div> </div> </div> </div> </div> ",
+  "related": [
+    {
+      "title": "Data Analytics and Business Intelligence: How They Work Together",
+      "href": "https://azure.folio3.com/blog/data-analytics-and-business-intelligence/"
+    },
+    {
+      "title": "Embedded Analytics Showdown: Power BI vs. Qlik for SaaS Platforms",
+      "href": "https://azure.folio3.com/blog/power-bi-vs-qlik/"
+    },
+    {
+      "title": "Azure Synapse + Power BI: Scaling Manufacturing IoT Analytics",
+      "href": "https://azure.folio3.com/blog/azure-synapse-power-bi/"
+    }
+  ]
+}

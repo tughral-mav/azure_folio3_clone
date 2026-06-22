@@ -1,0 +1,34 @@
+{
+  "routeCounts": {
+    "post": 122,
+    "page": 62,
+    "managed_services": 2,
+    "testimonial_slider": 2,
+    "our_industries": 5,
+    "our_cloud_service": 5,
+    "our_data_analytics": 5,
+    "our_managed_services": 5,
+    "slider_item": 9,
+    "category": 17,
+    "post_tag": 7,
+    "author": 2
+  },
+  "totalRoutes": 243,
+  "enginesDetected": {
+    "elementor": 23847,
+    "swiper": 249,
+    "slick": 4
+  },
+  "wpPluginsDetected": [
+    "wp-rocket"
+  ],
+  "thirdPartyVendors": [
+    "Google Tag Manager",
+    "HubSpot",
+    "Microsoft Clarity",
+    "WP-Plugin-Asset"
+  ],
+  "formsByEngine": {
+    "unknown": 16
+  }
+}

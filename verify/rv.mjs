@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch();
+const p=await b.newPage({viewport:{width:1440,height:900}});
+await p.goto('http://localhost:3000/azure-for-retail/',{waitUntil:'load',timeout:60000});
+await p.evaluate(async()=>{await new Promise(r=>{let y=0;const t=setInterval(()=>{scrollBy(0,400);y+=400;if(y>document.body.scrollHeight){clearInterval(t);r();}},80);});});
+await p.waitForTimeout(1500);
+await p.evaluate(()=>scrollTo(0,0)); await p.waitForTimeout(500);
+const r=await p.evaluate(()=>{const els=[...document.querySelectorAll('.reveal')];const inv=els.filter(e=>parseFloat(getComputedStyle(e).opacity)<0.99);return {total:els.length, invisible:inv.length, sample:inv.slice(0,6).map(e=>e.textContent.replace(/\s+/g,' ').trim().slice(0,45))};});
+console.log(JSON.stringify(r,null,1));
+await b.close();

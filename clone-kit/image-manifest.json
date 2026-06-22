@@ -1,0 +1,432 @@
+{
+  "case_study_slider_for_mobile": {
+    "cards": {},
+    "features": {
+      "Schedule a 1:1 Call Today": "/wp-content/uploads/2024/08/azure-offices-map-img.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/savills-cs.webp",
+      "/wp-content/uploads/2023/06/City4.webp"
+    ]
+  },
+  "city_university_azure": {
+    "cards": {},
+    "features": {},
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "client_success_story": {
+    "cards": {},
+    "features": {},
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "home": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "end_to_end_bi_solution": {
+    "cards": {
+      "Your Path to Achieve Business Growth & Innovation": "/wp-content/uploads/2024/05/business-growth-innovation-img-grid.webp"
+    },
+    "features": {
+      "Connect your data sources, build a single source of truth, a": "/wp-content/uploads/2024/05/end-to-end-BI-top-banner-img.webp"
+    },
+    "bgs": []
+  },
+  "microsoft_licensing_process": {
+    "cards": {},
+    "features": {
+      "Partner with Folio3 for Effortless Licensing and end-to-end ": "/wp-content/uploads/2023/11/ms-license-img.webp",
+      "Microsoft Tier 1 Direct Partner": "/wp-content/uploads/2023/10/Microsoft-Cloud-Solution-Provider.png"
+    },
+    "bgs": []
+  },
+  "blog": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "services": {
+    "cards": {
+      "Azure Databricks": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure Synapse": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure AI & Machine Learning": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure SQL": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure Cognitive Services": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure Stack Services": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure Cognitive Search": "/wp-content/uploads/2023/04/Intersect.webp",
+      "Azure Security": "/wp-content/uploads/2023/04/Intersect.webp"
+    },
+    "features": {
+      "Benefits of Choosing Folio3 as your Azure Cloud Partner": "/wp-content/uploads/2023/04/Intersect.webp"
+    },
+    "bgs": []
+  },
+  "testimonials": {
+    "cards": {
+      "Stats Speak for Themselves": "/wp-content/uploads/2023/07/azure-banner-Mobile-home_updated.webp",
+      "Awards & Recognization": "/wp-content/uploads/2023/07/azure_administration.svg"
+    },
+    "features": {
+      "Over 10,000 plus Happy retained clients": "/wp-content/uploads/2023/04/testimonial_arc.webp"
+    },
+    "bgs": []
+  },
+  "automated_data_reporting": {
+    "cards": {},
+    "features": {
+      "Read how we helped a customer enhance & automate their Power": "/wp-content/uploads/2024/07/wfcf-header-graphic.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "ai_powered_solutions": {
+    "cards": {},
+    "features": {
+      "The real technology advantage of AI is realized when it’s ap": "/wp-content/uploads/2025/06/Frame-1410126050-elementor-io-optimized.webp",
+      "Pioneering Innovation with AI Solutions": "/wp-content/uploads/2025/06/Frame-1410085196-elementor-io-optimized.webp"
+    },
+    "bgs": []
+  },
+  "savills": {
+    "cards": {},
+    "features": {},
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "azure_automated_data_reporting_for_slb": {
+    "cards": {},
+    "features": {
+      "Our Azure experts implemented an end-to-end automated report": "/wp-content/uploads/2025/07/automatic-data-reporting.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "copilot_implementation_food_verification": {
+    "cards": {},
+    "features": {
+      "Our Azure experts implemented Copilot to automate the food p": "/wp-content/uploads/2025/06/Time-with-Copilot.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "microsoft_fabric_reporting_for_real_estate": {
+    "cards": {},
+    "features": {
+      "Our Microsoft Fabric experts enhanced the reporting capabili": "/wp-content/uploads/2025/07/Microsoft-Fabric-Reporting-Boosts-Real.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "data_science_ai_microsoft_copilot_consulting": {
+    "cards": {},
+    "features": {
+      "Make your tasks easier and more efficient by leveraging the ": "/wp-content/uploads/2025/07/microsoft-dynamics-365-copilot-ipad-screen.webp",
+      "Automate Your Business Workflows With Microsoft Copilot Cons": "/wp-content/uploads/2025/07/automate-your-business-workflows.webp"
+    },
+    "bgs": []
+  },
+  "azure_data_analytics_agriculture_data_analytics": {
+    "cards": {},
+    "features": {
+      "Make the most out of your farming data through our powerful ": "/wp-content/uploads/2025/06/Frame-elementor-io-optimized.webp",
+      "Transform Your Agribusiness with Folio3's Agricultural Analy": "/wp-content/uploads/2025/06/Frame-1410085195-elementor-io-optimized.webp"
+    },
+    "bgs": []
+  },
+  "azure_cloud_service": {
+    "cards": {
+      "Cloud Strategy & Consulting": "/wp-content/uploads/2023/07/1-Cloud-Strategy-n-Consulting.png",
+      "Application Development": "/wp-content/uploads/2023/07/Azure-Application-Development.png",
+      "DevOps Automation as Service": "/wp-content/uploads/2023/07/3-DevOps-Automation.png",
+      "Cloud Migration": "/wp-content/uploads/2023/07/4-Cloud-Migration.png"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "microsoft_fabric_services_microsoft_fabric_migration": {
+    "cards": {},
+    "features": {
+      "Our Microsoft Fabric experts help businesses of all sizes pl": "/wp-content/uploads/2025/07/moving-data-analytics-workloads-analytics-platform.webp",
+      "Why Microsoft Fabric Migration?": "/wp-content/uploads/2025/07/why-microsoft-fabric-migration.webp"
+    },
+    "bgs": []
+  },
+  "microsoft_power_platform": {
+    "cards": {},
+    "features": {
+      "Innovate with agility and efficiency with our Microsoft Powe": "/wp-content/uploads/2025/07/driving-enterprise-innovation-efficiency-new.webp"
+    },
+    "bgs": []
+  },
+  "about_us": {
+    "cards": {},
+    "features": {
+      "Discover the essence of who we are?": "/wp-content/uploads/2023/06/about_us-mock.webp"
+    },
+    "bgs": []
+  },
+  "azure_for_manufacturing": {
+    "cards": {},
+    "features": {
+      "Modernizing Manufacturing companies to build smart factories": "/wp-content/uploads/2023/11/manufacturing-top-banner-img.webp"
+    },
+    "bgs": []
+  },
+  "azure_for_retail": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "microsoft_fabric_services": {
+    "cards": {},
+    "features": {
+      "Make smarter decisions, faster, by leveraging our Microsoft ": "/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp",
+      "One Data Hub, Limitless Possibilities": "/wp-content/uploads/2024/06/one-data-hub-limitless-possibilities.webp"
+    },
+    "bgs": []
+  },
+  "azure_for_healthcare": {
+    "cards": {},
+    "features": {
+      "Embrace Digital healthcare with enhanced insights, better pa": "/wp-content/uploads/2023/11/azure-healthcare-header-fg-1.webp"
+    },
+    "bgs": []
+  },
+  "daraz": {
+    "cards": {},
+    "features": {},
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "microsoft_power_platform_services": {
+    "cards": {},
+    "features": {
+      "Innovate with agility and efficiency with our Microsoft Powe": "/wp-content/uploads/2025/07/driving-enterprise-innovation-efficiency-new.webp"
+    },
+    "bgs": []
+  },
+  "data_warehousing_as_a_service": {
+    "cards": {},
+    "features": {
+      "Build a centralized data repository for better business inte": "/wp-content/uploads/2024/03/data-warehouse-solution-header-img.webp"
+    },
+    "bgs": []
+  },
+  "data_integration_as_a_service": {
+    "cards": {},
+    "features": {
+      "Connect data from various sources & applications with ease i": "/wp-content/uploads/2024/01/integration-as-service-header-img.webp"
+    },
+    "bgs": []
+  },
+  "azure_data_analytics": {
+    "cards": {
+      "Your Path to Achieve Business Growth & Innovation": "/wp-content/uploads/2024/05/business-growth-innovation-img-grid.webp"
+    },
+    "features": {
+      "Connect your data sources, build a single source of truth, a": "/wp-content/uploads/2024/05/end-to-end-BI-top-banner-img.webp"
+    },
+    "bgs": []
+  },
+  "azure_for_construction": {
+    "cards": {},
+    "features": {
+      "Building Tomorrow, Today With Azure": "/wp-content/uploads/2025/06/Frame-1410126059.png"
+    },
+    "bgs": []
+  },
+  "azure_data_analytics_data_visualization_as_a_service": {
+    "cards": {},
+    "features": {
+      "Visualize your data to spot trends, track performance, extra": "/wp-content/uploads/2024/01/data-visualization-as-service-header-img.webp"
+    },
+    "bgs": []
+  },
+  "azure_for_logistics_and_transport": {
+    "cards": {},
+    "features": {
+      "Our specialized Microsoft Azure logistics services boost you": "/wp-content/uploads/2025/07/efficiently-manage-logistics-transport-operations-microsoft-azure.webp"
+    },
+    "bgs": []
+  },
+  "implementing_power_bi_dashboard_for_food_crop_grower": {
+    "cards": {},
+    "features": {
+      "Our Power BI-based grower portal dashboard gives the client ": "/wp-content/uploads/2025/07/food-crop-grower.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "azure_managed_services": {
+    "cards": {
+      "Holistic Support Services": "/wp-content/uploads/2023/07/5-Holistic-Support.png",
+      "Advisory": "/wp-content/uploads/2023/07/6-Advisory.png",
+      "Advanced Support": "/wp-content/uploads/2023/07/7-Advanced-Support.png",
+      "Security Management": "/wp-content/uploads/2023/07/8-Security-Managment.png"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "data_science_ai": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "power_bi_financial_reporting_for_alibaba": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "power_bi_services": {
+    "cards": {},
+    "features": {
+      "At Folio3, we cut through the noise by building industry-wid": "/wp-content/uploads/2025/07/power-bi-ipad-screen.webp"
+    },
+    "bgs": []
+  },
+  "ai_agents": {
+    "cards": {},
+    "features": {
+      "Schedule a 1:1 Call Today": "/wp-content/uploads/2024/08/azure-offices-map-img.webp"
+    },
+    "bgs": []
+  },
+  "azure_data_analytics_retail_analytics": {
+    "cards": {},
+    "features": {
+      "Make the most of every potential customer walking through yo": "/wp-content/uploads/2025/08/retail-analytics.webp"
+    },
+    "bgs": []
+  },
+  "ai_powered_solutions_copilot_for_recruitment": {
+    "cards": {
+      "Transform Hiring with RecruitFlow Copilot": "/wp-content/uploads/2025/10/agent-smarter-faster-recruitment.webp"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "ai_agents_it_asset_management_agent": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "ai_agents_smartexpense_agent": {
+    "cards": {
+      "Folio3 SmartExpense Copilot": "/wp-content/uploads/2025/11/head-smartexpense-copilot.webp"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "ai_agents_kubemonitor_agent": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "solution": {
+    "cards": {},
+    "features": {
+      "Schedule a 1:1 Call Today": "/wp-content/uploads/2024/08/azure-offices-map-img.webp"
+    },
+    "bgs": []
+  },
+  "ai_agents_ai_powered_ticketing_and_customer_service_agent": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "ai_scenario_library_human_resources": {
+    "cards": {
+      "The Complete HR Copilot Suite": "/wp-content/uploads/2026/01/copilot-human-resource.webp"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "case_studies_microsoft_copilot_studio_based_hr_policy_agent": {
+    "cards": {},
+    "features": {},
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png",
+      "/wp-content/uploads/2023/06/Line-8-1.png"
+    ]
+  },
+  "ai_scenario_library": {
+    "cards": {
+      "The Copilot Agent Library": "/wp-content/uploads/2025/12/scenarios.webp"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "copilotsolutions": {
+    "cards": {},
+    "features": {
+      "Schedule a 1:1 Call Today": "/wp-content/uploads/2024/08/azure-offices-map-img.webp"
+    },
+    "bgs": []
+  },
+  "case_studies": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "case_studies_agentic_hr_policy_feedback_update_and_reporting_solution": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  },
+  "solution_intellifabric": {
+    "cards": {
+      "INTELLIFABRIC": "/wp-content/uploads/2026/01/rocket-icon.png"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "azure_data_analytics_supply_chain_analytics": {
+    "cards": {},
+    "features": {
+      "Gain real-time visibility into your entire supply chain, sav": "/wp-content/uploads/2025/09/supply-chain-analytics.webp",
+      "Connecting Data Points Across the Supply Chain For Enhanced ": "/wp-content/uploads/2025/09/connecting-data-points-supply-chain-enhanced-visibility.webp"
+    },
+    "bgs": []
+  },
+  "ai_scenario_library_finance": {
+    "cards": {
+      "The Complete Finance Copilot Suite": "/wp-content/uploads/2026/01/copilot-finance.webp"
+    },
+    "features": {},
+    "bgs": []
+  },
+  "azure_data_analytics_manufacturing_data_analytics": {
+    "cards": {},
+    "features": {
+      "The all-in-one data analysis, reporting, and AI tools for ma": "/wp-content/uploads/2025/07/drive-manufacturing-excellence-ai-powered-analytics.webp",
+      "Transform Your Operations With Folio3's Manufacturing Analyt": "/wp-content/uploads/2025/07/transform-your-operations-with-folio3-manufacturing-analytics-suite.webp"
+    },
+    "bgs": []
+  },
+  "case_studies_popcorn_producer_intellifabric_dashboards": {
+    "cards": {},
+    "features": {
+      "Overcome complex data and analytics challenges and maximize ": "/wp-content/uploads/2026/01/weaver-popcorn-hybrids.webp"
+    },
+    "bgs": [
+      "/wp-content/uploads/2023/06/Line-5-1.png"
+    ]
+  },
+  "ai_scenario_library_copilot_in_retail": {
+    "cards": {},
+    "features": {},
+    "bgs": []
+  }
+}

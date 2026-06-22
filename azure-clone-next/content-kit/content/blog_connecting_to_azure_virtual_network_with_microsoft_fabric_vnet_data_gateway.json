@@ -1,0 +1,472 @@
+{
+  "url": "https://azure.folio3.com/blog/connecting-to-azure-virtual-network-with-microsoft-fabric-vnet-data-gateway/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Connecting to Azure VNet With Microsoft Fabric VNet Data Gateway",
+    "description": "Grasp connecting Azure via VNet Data Gateway with Fabric. Boost performance and control costs while setting up and managing your data gateway.",
+    "canonical": "https://azure.folio3.com/blog/connecting-to-azure-virtual-network-with-microsoft-fabric-vnet-data-gateway/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/10/usning-vnet-data-gateaway-with-fabric.jpg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "October 17, 2024"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Connecting to Azure Virtual Network With Microsoft Fabric VNet Data Gateway"
+        },
+        {
+          "tag": "h2",
+          "text": "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics."
+        },
+        {
+          "tag": "h2",
+          "text": "Use Cases for Connecting Microsoft Fabric to Azure VNet"
+        },
+        {
+          "tag": "h3",
+          "text": "Scenario 1: Connecting On-Premises Data Sources to Azure Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Scenario 2: Utilizing Microsoft Fabric for Secure Data Ingestion"
+        },
+        {
+          "tag": "h3",
+          "text": "Scenario 3: Ensuring Compliance and Security for Sensitive Data"
+        },
+        {
+          "tag": "h2",
+          "text": "Steps to Setting Up Microsoft Fabric VNet Data Gateway"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 1: Create and Configure an Azure Virtual Network"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 2: Set Up the Microsoft Fabric VNet Data Gateway"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 3: Connecting Microsoft Fabric to the Azure VNet"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 4: Test and Verify the Connection"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 5: Monitoring and Managing the Gateway"
+        },
+        {
+          "tag": "h2",
+          "text": "Best Practices for Securing and Optimizing VNet Data Gateway"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Security Recommendations"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Performance Optimization"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Cost Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Conclusion"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Home » Connecting to Azure Virtual Network With Microsoft Fabric VNet Data Gateway",
+        "Table of Contents",
+        "It’s estimated that an enormous 2.5 quintillion bytes of data are generated every day globally! Hence, efficient data management and secure access are a necessity and foundation for organizations.",
+        "Today, organizations are utilizing advanced on-premise and cloud technologies to use their data to their benefit and stay competitive. Azure is a globally preferred platform for hosting databases in the cloud, and Azure Virtual Network (VNet) is a solution that allows you to create a secure network to run Virtual Machines and applications in the cloud.",
+        "When combined with Microsoft Fabric, it provides powerful data management and processing capabilities. Thus, the integration becomes a powerful duo, enabling smooth data flow.",
+        "The VNet Data Gateway with Fabric is fundamental in this process, enabling secure data transmission between your on-premises systems and Azure services.",
+        "Let’s help you understand how to set up and use this connection for your business’s data needs.",
+        "Connecting Microsoft Fabric to an Azure VNet can be a massive transformation for organizations that want to secure their data workflows. Here are some important use cases that highlight the importance of using a VNet Data Gateway for Fabric in real-world scenarios.",
+        "Several organizations use old systems that store their critical data on-premises. When shifting to the cloud services such as Azure it is essential to connect these systems securely. The VNet Data Gateway with Fabric lets you connect your on-premises data sources with Azure services while ensuring your data remains safe and secure during transmission.",
+        "The VNet Data Gateway infrastructure guarantees a dependable and secure connection, avoiding exposure to public networks, whether you’re connecting databases, analytics tools, or custom applications.",
+        "Organizations handling vast amounts of data, especially those associated with industries with strict regulations, require a secure and isolated environment for data ingestion and processing.",
+        "Using VNet Data Gateway, you can warrant that all data entering Azure from your on-premises environment is securely processed within a restricted network."
+      ],
+      "listItems": [
+        "Abdullah Ali",
+        "October 17, 2024",
+        "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.",
+        "Use Cases for Connecting Microsoft Fabric to Azure VNetScenario 1: Connecting On-Premises Data Sources to Azure ServicesScenario 2: Utilizing Microsoft Fabric for Secure Data IngestionScenario 3: Ensuring Compliance and Security for Sensitive Data",
+        "Scenario 1: Connecting On-Premises Data Sources to Azure Services",
+        "Scenario 2: Utilizing Microsoft Fabric for Secure Data Ingestion",
+        "Scenario 3: Ensuring Compliance and Security for Sensitive Data",
+        "Steps to Setting Up Microsoft Fabric VNet Data GatewayStep 1: Create and Configure an Azure Virtual NetworkStep 2: Set Up the Microsoft Fabric VNet Data GatewayStep 3: Connecting Microsoft Fabric to the Azure VNetStep 4: Test and Verify the ConnectionStep 5: Monitoring and Managing the Gateway",
+        "Step 1: Create and Configure an Azure Virtual Network",
+        "Step 2: Set Up the Microsoft Fabric VNet Data Gateway",
+        "Step 3: Connecting Microsoft Fabric to the Azure VNet",
+        "Step 4: Test and Verify the Connection",
+        "Step 5: Monitoring and Managing the Gateway",
+        "Best Practices for Securing and Optimizing VNet Data Gateway1. Security Recommendations2. Performance Optimization3. Cost ManagementConclusion",
+        "1. Security Recommendations",
+        "2. Performance Optimization",
+        "3. Cost Management",
+        "Conclusion",
+        "Define your IP address range according to your organization’s networking requirements.",
+        "Create subnets to segment various parts of your network, such as front-end and back-end services."
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        },
+        {
+          "text": "Get Started Now",
+          "href": "https://azure.folio3.com/microsoft-fabric-services/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+          "alt": "azure-blog-cta-img-1",
+          "w": 375,
+          "h": 227
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway.jpg",
+          "alt": "steps to setting up microsoft fabric vnet data gateway",
+          "w": 800,
+          "h": 400
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway.jpg",
+          "alt": "best practices for securing and optimizing vnet data gateway",
+          "w": 800,
+          "h": 400
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Workforce reporting has always been time-consuming. HR teams pull data from HRIS, payroll, time and attendance, and recruiting systems, reconcile",
+        "Most business data arrives in batches. A report runs at the end of the day. A pipeline syncs overnight. A",
+        "Finance teams have always worked with data. What has changed is the volume, the velocity, and the stakes. Monthly closes"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp 375w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1-300x182.webp 300w",
+      "alt": "azure-blog-cta-img-1",
+      "w": "375",
+      "h": "227",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway.jpg",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway.jpg 800w, https://azure.folio3.com/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway-300x150.jpg 300w, https://azure.folio3.com/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway-768x384.jpg 768w",
+      "alt": "steps to setting up microsoft fabric vnet data gateway",
+      "w": "800",
+      "h": "400",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway.jpg",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway.jpg 800w, https://azure.folio3.com/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway-300x150.jpg 300w, https://azure.folio3.com/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway-768x384.jpg 768w",
+      "alt": "best practices for securing and optimizing vnet data gateway",
+      "w": "800",
+      "h": "400",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": "\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<div id=\"ez-toc-container\" class=\"ez-toc-v2_0_82_2 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction\">\n<div class=\"ez-toc-title-container\">\n<p class=\"ez-toc-title\" style=\"cursor:inherit\">Table of Contents</p>\n<span class=\"ez-toc-title-toggle\"><a href=\"#\" class=\"ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle\" aria-label=\"Toggle Table of Content\"><span class=\"ez-toc-js-icon-con\"><span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle</span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http://www.w3.org/2000/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"></path></svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"></path></svg></span></span></span></a></span></div>\n<nav><ul class=\"ez-toc-list ez-toc-list-level-1 \"><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-1\" href=\"#Accelerate_smart_decisions_with_Microsoft_Fabrics_unified_data_and_AI_analytics\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-2\" href=\"#Use_Cases_for_Connecting_Microsoft_Fabric_to_Azure_VNet\">Use Cases for Connecting Microsoft Fabric to Azure VNet</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-3\" href=\"#Scenario_1_Connecting_On-Premises_Data_Sources_to_Azure_Services\">Scenario 1: Connecting On-Premises Data Sources to Azure Services</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-4\" href=\"#Scenario_2_Utilizing_Microsoft_Fabric_for_Secure_Data_Ingestion\">Scenario 2: Utilizing Microsoft Fabric for Secure Data Ingestion</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-5\" href=\"#Scenario_3_Ensuring_Compliance_and_Security_for_Sensitive_Data\">Scenario 3: Ensuring Compliance and Security for Sensitive Data</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-6\" href=\"#Steps_to_Setting_Up_Microsoft_Fabric_VNet_Data_Gateway\">Steps to Setting Up Microsoft Fabric VNet Data Gateway</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-7\" href=\"#Step_1_Create_and_Configure_an_Azure_Virtual_Network\">Step 1: Create and Configure an Azure Virtual Network</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-8\" href=\"#Step_2_Set_Up_the_Microsoft_Fabric_VNet_Data_Gateway\">Step 2: Set Up the Microsoft Fabric VNet Data Gateway</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-9\" href=\"#Step_3_Connecting_Microsoft_Fabric_to_the_Azure_VNet\">Step 3: Connecting Microsoft Fabric to the Azure VNet</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-10\" href=\"#Step_4_Test_and_Verify_the_Connection\">Step 4: Test and Verify the Connection</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-11\" href=\"#Step_5_Monitoring_and_Managing_the_Gateway\">Step 5: Monitoring and Managing the Gateway</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-12\" href=\"#Best_Practices_for_Securing_and_Optimizing_VNet_Data_Gateway\">Best Practices for Securing and Optimizing VNet Data Gateway</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-13\" href=\"#1_Security_Recommendations\">1. Security Recommendations</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-14\" href=\"#2_Performance_Optimization\">2. Performance Optimization</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-15\" href=\"#3_Cost_Management\">3. Cost Management</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-16\" href=\"#Conclusion\">Conclusion</a></li></ul></li></ul></nav></div>\n\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"13175\" class=\"elementor elementor-13175\" data-elementor-post-type=\"post\">\n\t\t\t\t<div class=\"elementor-element elementor-element-dc5a74d e-flex e-con-boxed e-con e-parent\" data-id=\"dc5a74d\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-394e16b elementor-widget elementor-widget-text-editor\" data-id=\"394e16b\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>It’s estimated that an enormous <a href=\"https://explodingtopics.com/blog/big-data-stats\" target=\"_blank\" rel=\"noopener nofollow\">2.5 quintillion bytes of data</a> are generated every day globally! Hence, efficient data management and secure access are a necessity and foundation for organizations.</p><p>Today, organizations are utilizing advanced on-premise and cloud technologies to use their data to their benefit and stay competitive. Azure is a globally preferred platform for hosting databases in the cloud, and Azure Virtual Network (VNet) is a solution that allows you to create a secure network to run Virtual Machines and applications in the cloud.</p><p>When combined with <a href=\"/blog/what-is-microsoft-fabric/\" target=\"_blank\" rel=\"noopener\">Microsoft Fabric</a>, it provides powerful data management and processing capabilities. Thus, the integration becomes a powerful duo, enabling smooth data flow.</p><p>The VNet Data Gateway with Fabric is fundamental in this process, enabling secure data transmission between your on-premises systems and Azure services.</p><p>Let’s help you understand how to set up and use this connection for your business’s data needs.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-ac88020 e-flex e-con-boxed e-con e-parent\" data-id=\"ac88020\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-3fb13875 blog-cta-banner e-flex e-con-boxed e-con e-child\" data-id=\"3fb13875\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;gradient&quot;}\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-6013857e e-con-full e-flex e-con e-child\" data-id=\"6013857e\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-2acd23ff head elementor-widget elementor-widget-heading\" data-id=\"2acd23ff\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4ec3129 elementor-mobile-align-center elementor-widget elementor-widget-button\" data-id=\"4ec3129\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"/microsoft-fabric-services/\" target=\"_blank\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Get Started Now</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-46b03d20 e-con-full e-flex e-con e-child\" data-id=\"46b03d20\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-51c8d10a elementor-widget elementor-widget-image\" data-id=\"51c8d10a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"375\" height=\"227\" src=\"/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp\" class=\"attachment-large size-large wp-image-12229 entered lazyloaded\" alt=\"azure-blog-cta-img-1\" data-lazy-sizes=\"(max-width: 375px) 100vw, 375px\" data-ll-status=\"loaded\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-fa140ce e-flex e-con-boxed e-con e-parent\" data-id=\"fa140ce\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-87ce6d2 elementor-widget elementor-widget-text-editor\" data-id=\"87ce6d2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<h2><span class=\"ez-toc-section\" id=\"Use_Cases_for_Connecting_Microsoft_Fabric_to_Azure_VNet\"></span>Use Cases for Connecting Microsoft Fabric to Azure VNet<span class=\"ez-toc-section-end\"></span></h2><p>Connecting Microsoft Fabric to an Azure VNet can be a massive transformation for organizations that want to secure their data workflows. Here are some important use cases that highlight the importance of using a VNet Data Gateway for Fabric in real-world scenarios.</p><h3><span class=\"ez-toc-section\" id=\"Scenario_1_Connecting_On-Premises_Data_Sources_to_Azure_Services\"></span>Scenario 1: Connecting On-Premises Data Sources to Azure Services<span class=\"ez-toc-section-end\"></span></h3><p>Several organizations use old systems that store their critical data on-premises. When shifting to the <a href=\"/azure-cloud-service/\" target=\"_blank\" rel=\"noopener\">cloud services such as Azure</a> it is essential to connect these systems securely. The VNet Data Gateway with Fabric lets you connect your on-premises data sources with Azure services while ensuring your data remains safe and secure during transmission.</p><p>The VNet Data Gateway infrastructure guarantees a dependable and secure connection, avoiding exposure to public networks, whether you’re connecting databases, analytics tools, or custom applications.</p><h3><span class=\"ez-toc-section\" id=\"Scenario_2_Utilizing_Microsoft_Fabric_for_Secure_Data_Ingestion\"></span>Scenario 2: Utilizing Microsoft Fabric for Secure Data Ingestion<span class=\"ez-toc-section-end\"></span></h3><p>Organizations handling vast amounts of data, especially those associated with industries with strict regulations, require a secure and isolated environment for data ingestion and processing.</p><p>Using VNet Data Gateway, you can warrant that all data entering Azure from your on-premises environment is securely processed within a restricted network.</p><p>Microsoft Fabric, coupled with the VNet Data Gateway to Fabric, guarantees that data is processed efficiently and that unauthorized access is prevented.</p><h3><span class=\"ez-toc-section\" id=\"Scenario_3_Ensuring_Compliance_and_Security_for_Sensitive_Data\"></span>Scenario 3: Ensuring Compliance and Security for Sensitive Data<span class=\"ez-toc-section-end\"></span></h3><p>Data privacy regulations, including GDPR and HIPAA, require strict measures to guarantee data security and compliance. You must isolate your data flows from the public internet while handling confidential information.</p><p>By utilizing the VNet Data Gateway for production to route data through an isolated network, you can conform to regulatory requirements and guarantee that sensitive data is encrypted and securely transmitted.</p><p>This is very important for industries where data breaches can have major repercussions, such as government services, healthcare, and finance.</p><h2><span class=\"ez-toc-section\" id=\"Steps_to_Setting_Up_Microsoft_Fabric_VNet_Data_Gateway\"></span>Steps to Setting Up Microsoft Fabric VNet Data Gateway<span class=\"ez-toc-section-end\"></span></h2><p><img class=\"aligncenter wp-image-13382 size-full entered lazyloading\" src=\"/wp-content/uploads/2025/05/steps-to-setting-up-microsoft-fabric-vnet-data-gateway.jpg\" alt=\"steps to setting up microsoft fabric vnet data gateway\" width=\"800\" height=\"400\" data-lazy-sizes=\"(max-width: 800px) 100vw, 800px\" data-ll-status=\"loading\"></p><p>Configuring the VNet Data Gateway for Fabric is crucial in ensuring secure and dependable data flows between your on-premises infrastructure and Azure services.</p><p>Let’s discuss the steps of this important process one by one:</p><h3><span class=\"ez-toc-section\" id=\"Step_1_Create_and_Configure_an_Azure_Virtual_Network\"></span>Step 1: Create and Configure an Azure Virtual Network<span class=\"ez-toc-section-end\"></span></h3><p>The initial step in setting up your gateway is to create an Azure Virtual Network. A Virtual Network is the foundation for establishing secure communication between your on-premises systems and Azure services. During this step, you must do the following:</p><ul><li>Define your IP address range according to your organization’s networking requirements.</li><li>Create subnets to segment various parts of your network, such as front-end and back-end services.</li><li>Configure Network Security Groups (NSGs) to control traffic flow in your VNet. These rules let you define exactly which IP addresses and ports are allowed access.</li></ul><h3><span class=\"ez-toc-section\" id=\"Step_2_Set_Up_the_Microsoft_Fabric_VNet_Data_Gateway\"></span>Step 2: Set Up the Microsoft Fabric VNet Data Gateway<span class=\"ez-toc-section-end\"></span></h3><p>After setting up your VNet, you must now move on to employing the VNet Data Gateway for Fabric. This gateway acts as a connection between your on-premises systems and Azure, enabling secure data transfer. When deploying the gateway, do the following:</p><ul><li>Make sure that you have all the permissions required for both on-premises and Azure environments.</li><li>Apply any VNet Data Gateway configuration updates to guarantee compatibility with your current setup and to get the best performance.</li><li>Follow the steps mentioned in Microsoft’s documentation to install the gateway software and connect it correctly to your Azure VNet.</li></ul><h3><span class=\"ez-toc-section\" id=\"Step_3_Connecting_Microsoft_Fabric_to_the_Azure_VNet\"></span>Step 3: Connecting Microsoft Fabric to the Azure VNet<span class=\"ez-toc-section-end\"></span></h3><p>You must link Microsoft Fabric to the VNet after the VNet Data Gateway infrastructure has been set up. This consists of setting up Fabric to route data using the VNet Data Gateway. To prevent your data from being exposed to the public Internet, make sure the connection is secure and that all traffic is sent through the VNet.</p><ul><li>Utilize Azure’s tools to check that Microsoft Fabric is correctly integrated with your VNet.</li><li>Set up network routing to ensure data flows smoothly and efficiently between your on-premises systems and Azure.</li></ul><h3><span class=\"ez-toc-section\" id=\"Step_4_Test_and_Verify_the_Connection\"></span>Step 4: Test and Verify the Connection<span class=\"ez-toc-section-end\"></span></h3><p>After the VNet Data Gateway for Fabric is successfully installed and connected to your VNet, testing this connection is important. Run tests to verify data flows securely and efficiently between on-premises and cloud services. You can use helpful tools like Azure Monitor to track data traffic and detect any issues in real-time.</p><ul><li>Verify that the data transfer speeds remain within acceptable ranges.</li><li>Test failover scenarios to check that the gateway can handle any disruptions.</li></ul><h3><span class=\"ez-toc-section\" id=\"Step_5_Monitoring_and_Managing_the_Gateway\"></span>Step 5: Monitoring and Managing the Gateway<span class=\"ez-toc-section-end\"></span></h3><p>Continually monitoring and managing your VNet Data Gateway for production is mandatory to guarantee the best performance. Thus, you must regularly monitor data traffic, gateway performance, and any possible hurdles that could adversely affect the data flow.</p><p>Azure is embedded with various monitoring tools, such as Azure Monitor and Log Analytics, which can help you monitor the health and performance of your gateway.</p><ul><li>Set up alerts to notify you of any performance or security issues.</li><li>Regularly check VNet Data Gateway pricing to double-check that your setup is always cost-effective as your data volumes increase.</li></ul><h2><span class=\"ez-toc-section\" id=\"Best_Practices_for_Securing_and_Optimizing_VNet_Data_Gateway\"></span>Best Practices for Securing and Optimizing VNet Data Gateway<span class=\"ez-toc-section-end\"></span></h2><p><img class=\"aligncenter wp-image-13383 size-full\" src=\"/wp-content/uploads/2025/05/best-practices-for-securing-and-optimizing-vnet-data-gateway.jpg\" alt=\"best practices for securing and optimizing vnet data gateway\" width=\"800\" height=\"400\" data-lazy-sizes=\"(max-width: 800px) 100vw, 800px\"></p><p>When configuring and maintaining the VNet Data Gateway with Fabric, security and performance are the primary concerns. The following recommended practices will help you in securing and improving your gateway:</p><h3><span class=\"ez-toc-section\" id=\"1_Security_Recommendations\"></span>1. Security Recommendations<span class=\"ez-toc-section-end\"></span></h3><ul><li><strong>Data Encryption: </strong>You must always encrypt data while it is being transmitted using strong encryption protocols like TLS. This guarantees that data moving via the VNet Data Gateway is always safe from unauthorized access.</li><li><strong>Role-Based Access Control (RBAC): </strong>Limit access to the VNet Data Gateway infrastructure by employing role-based access control. This will allow only authorized users to configure or manage the gateway.</li><li><strong>Regular Gateway Updates: </strong>Keep your gateway updated with the latest VNet Data Gateway configuration updates to tackle security risks and improve performance.</li></ul><h3><span class=\"ez-toc-section\" id=\"2_Performance_Optimization\"></span>2. Performance Optimization<span class=\"ez-toc-section-end\"></span></h3><p>Optimizing performance is important for warranting that your VNet Data Gateway for production can handle the high influx of data without causing any delay:</p><ul><li><strong>Network Latency Monitoring: </strong>Keep track of network latency to confirm that data transfers are always efficient, especially when <a style=\"font-size: 16px; background-color: #ffffff;\" href=\"/blog/strategies-for-handling-large-scale-data-with-microsoft-fabric/\" target=\"_blank\" rel=\"noopener\">handling massive datasets</a><span style=\"font-size: 16px;\">.</span></li><li><strong>Scale Gateway Resources: </strong>If your data requirements increase, adjust the resources allocated to your VNet Data Gateway infrastructure to prevent possible performance issues.</li></ul><h3><span class=\"ez-toc-section\" id=\"3_Cost_Management\"></span>3. Cost Management<span class=\"ez-toc-section-end\"></span></h3><p>Last but not least, controlling costs is important when using the VNet Data Gateway for Fabric. Azure provides various helpful tools to let you manage and predict costs:</p><ul><li><strong>Monitor Data Usage: </strong>Keep a close eye on your data transfer volumes and avoid unnecessary data movements to minimize your total costs.</li><li><strong>Right-Size Your Gateway: </strong>Avoid over-provisioning gateway resources by carefully scaling them according to your actual needs. Regularly review VNet Data Gateway pricing to stay within the bounds of your budget.</li></ul><h3><span class=\"ez-toc-section\" id=\"Conclusion\"></span>Conclusion<span class=\"ez-toc-section-end\"></span></h3><p>Connecting Microsoft Fabric to Azure Virtual Network by employing the VNet Data Gateway with Fabric provides you with an ultra-secure, scalable, and powerful solution for data management in hybrid environments.</p><p>By following the steps mentioned in this article, you can configure a strong gateway that will suffice your data transfer needs and also comply with strict security requirements.</p><p>As you consider your next leap forward in making your cloud infrastructure efficient, using Microsoft Fabric and Azure VNet can establish that your data is always handled securely and efficiently. If you want to improve your data management strategy, you must take the first step by exploring the endless possibilities with <a href=\"/microsoft-fabric-services/\" target=\"_blank\" rel=\"noopener\">Microsoft Fabric</a>.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t",
+  "related": [
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ways-hr-teams-can-automate-workforce-r",
+      "href": "/blog/ways-hr-teams-can-automate-workforce-reporting-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/real-time-data-intelligence-in-microso",
+      "href": "/blog/managing-real-time-data-streams-efficiently-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ai-financial-planning-azure-300x198.jp",
+      "href": "/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/",
+      "image": ""
+    }
+  ]
+}

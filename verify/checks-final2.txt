@@ -1,0 +1,209 @@
+
+=== / === [31m2 ISSUE(S)[0m
+   stats: imgs=48 cards=10(hover 9) flipLayers=6 zoomIn=1 caseCards=0
+   [31m✗[0m LIVE-IMG-COVER: 15 live imgs on disk but NOT rendered → Modernize-Legacy-Applications.svg, Automate-Manual-Processes.svg, Power-Virtual-Agents.png, Automate-Integrate-Business-Processes-2.svg
+   [31m✗[0m CONTENT-LINK: 3 live in-content link(s) missing → /microsoft-power-platform, /azure-data-analytics, /azure-managed-services
+
+=== /about-us/ === [32mALL CHECKS PASS[0m
+   stats: imgs=10 cards=6(hover 6) flipLayers=2 zoomIn=0 caseCards=2
+
+=== /ai-agents/ === [32mALL CHECKS PASS[0m
+   stats: imgs=3 cards=0(hover 0) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /ai-agents/ai-powered-ticketing-and-customer-service-agent/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=10(hover 10) flipLayers=4 zoomIn=2 caseCards=4
+
+=== /ai-agents/it-asset-management-agent/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=10(hover 10) flipLayers=4 zoomIn=2 caseCards=4
+
+=== /ai-agents/kubemonitor-agent/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=10(hover 10) flipLayers=4 zoomIn=2 caseCards=4
+
+=== /ai-agents/smartexpense-agent/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=11(hover 11) flipLayers=4 zoomIn=2 caseCards=4
+
+=== /ai-powered-solutions/ === [32mALL CHECKS PASS[0m
+   stats: imgs=40 cards=15(hover 15) flipLayers=0 zoomIn=3 caseCards=0
+
+=== /ai-powered-solutions/copilot-for-recruitment/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=26(hover 26) flipLayers=4 zoomIn=2 caseCards=4
+
+=== /ai-scenario-library/ === [32mALL CHECKS PASS[0m
+   stats: imgs=52 cards=16(hover 16) flipLayers=0 zoomIn=4 caseCards=0
+
+=== /ai-scenario-library/copilot-in-retail/ === [32mALL CHECKS PASS[0m
+   stats: imgs=41 cards=32(hover 32) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /ai-scenario-library/finance/ === [31m1 ISSUE(S)[0m
+   stats: imgs=38 cards=5(hover 5) flipLayers=4 zoomIn=3 caseCards=4
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /ai-scenario-library
+
+=== /ai-scenario-library/human-resources/ === [31m1 ISSUE(S)[0m
+   stats: imgs=37 cards=10(hover 10) flipLayers=4 zoomIn=2 caseCards=4
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /ai-scenario-library
+
+=== /automated-data-reporting/ === [32mALL CHECKS PASS[0m
+   stats: imgs=13 cards=21(hover 21) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /azure-automated-data-reporting-for-slb/ === [32mALL CHECKS PASS[0m
+   stats: imgs=11 cards=19(hover 19) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /azure-cloud-service/ === [32mALL CHECKS PASS[0m
+   stats: imgs=25 cards=8(hover 7) flipLayers=2 zoomIn=2 caseCards=2
+
+=== /azure-data-analytics/ === [32mALL CHECKS PASS[0m
+   stats: imgs=63 cards=11(hover 11) flipLayers=2 zoomIn=5 caseCards=2
+
+=== /azure-data-analytics/agriculture-data-analytics/ === [31m1 ISSUE(S)[0m
+   stats: imgs=36 cards=27(hover 27) flipLayers=0 zoomIn=3 caseCards=0
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /azure-data-analytics
+
+=== /azure-data-analytics/data-visualization-as-a-service/ === [31m1 ISSUE(S)[0m
+   stats: imgs=58 cards=54(hover 53) flipLayers=2 zoomIn=2 caseCards=2
+   [31m✗[0m CONTENT-LINK: 2 live in-content link(s) missing → /azure-for-retail, /azure-for-healthcare
+
+=== /azure-data-analytics/manufacturing-data-analytics/ === [32mALL CHECKS PASS[0m
+   stats: imgs=44 cards=47(hover 46) flipLayers=3 zoomIn=3 caseCards=3
+
+=== /azure-data-analytics/retail-analytics/ === [31m1 ISSUE(S)[0m
+   stats: imgs=39 cards=29(hover 29) flipLayers=2 zoomIn=1 caseCards=2
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /power-bi-financial-reporting-for-alibaba
+
+=== /azure-data-analytics/supply-chain-analytics/ === [31m1 ISSUE(S)[0m
+   stats: imgs=47 cards=31(hover 31) flipLayers=2 zoomIn=3 caseCards=2
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /azure-data-analytics
+
+=== /azure-for-construction/ === [31m1 ISSUE(S)[0m
+   stats: imgs=27 cards=13(hover 13) flipLayers=0 zoomIn=2 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 1 flip section(s) but clone has no flip/hover layers
+
+=== /azure-for-healthcare/ === [32mALL CHECKS PASS[0m
+   stats: imgs=35 cards=12(hover 12) flipLayers=2 zoomIn=2 caseCards=2
+
+=== /azure-for-logistics-and-transport/ === [31m1 ISSUE(S)[0m
+   stats: imgs=41 cards=42(hover 42) flipLayers=2 zoomIn=1 caseCards=2
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /data-science-ai
+
+=== /azure-for-manufacturing/ === [32mALL CHECKS PASS[0m
+   stats: imgs=34 cards=16(hover 16) flipLayers=2 zoomIn=2 caseCards=2
+
+=== /azure-for-retail/ === [32mALL CHECKS PASS[0m
+   stats: imgs=34 cards=1(hover 0) flipLayers=6 zoomIn=4 caseCards=0
+
+=== /azure-managed-services/ === [32mALL CHECKS PASS[0m
+   stats: imgs=26 cards=8(hover 7) flipLayers=2 zoomIn=3 caseCards=2
+
+=== /blog/ === [31m2 ISSUE(S)[0m
+   stats: imgs=2 cards=60(hover 60) flipLayers=0 zoomIn=0 caseCards=0
+   [31m✗[0m LIVE-IMG-COVER: 2 live imgs on disk but NOT rendered → blog-mock.webp, azure-offices-map-img.webp
+   [31m✗[0m BG-IMAGE: 1 live section background(s) not rendered → our-blog-banner.webp
+
+=== /case-studies/ === [31m1 ISSUE(S)[0m
+   stats: imgs=16 cards=1(hover 1) flipLayers=0 zoomIn=0 caseCards=0
+   [31m✗[0m CONTENT-LINK: 9 live in-content link(s) missing → /case-studies/microsoft-copilot-studio-based-hr-policy-agent, /case-studies/wph-intellifabric, /copilot-implementation-food-verification, /azure-automated-data-reporting-for-slb, /implementing-power-bi-dashboard-for-food-crop-grower
+
+=== /case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/ === [32mALL CHECKS PASS[0m
+   stats: imgs=19 cards=44(hover 44) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /case-studies/microsoft-copilot-studio-based-hr-policy-agent/ === [31m1 ISSUE(S)[0m
+   stats: imgs=11 cards=25(hover 25) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 1 flip section(s) but clone has no flip/hover layers
+
+=== /case-studies/popcorn-producer-intellifabric-dashboards/ === [31m1 ISSUE(S)[0m
+   stats: imgs=20 cards=34(hover 34) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /case-studies
+
+=== /case-study-slider-for-mobile/ === [32mALL CHECKS PASS[0m
+   stats: imgs=5 cards=0(hover 0) flipLayers=2 zoomIn=0 caseCards=0
+
+=== /city-university-azure/ === [32mALL CHECKS PASS[0m
+   stats: imgs=9 cards=18(hover 18) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /client-success-story/ === [32mALL CHECKS PASS[0m
+   stats: imgs=11 cards=24(hover 24) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /contact-us/ === [31m2 ISSUE(S)[0m
+   stats: imgs=2 cards=0(hover 0) flipLayers=0 zoomIn=0 caseCards=0
+   [31m✗[0m LIVE-IMG-COVER: 5 live imgs on disk but NOT rendered → azure-banner-contact-us.webp, Oval-bg.webp, contact-us-1.webp, Scale-Your-Business-with-.png
+   [31m✗[0m BG-IMAGE: 1 live section background(s) not rendered → contact_us-banner.webp
+
+=== /cookie-policy/ === [32mALL CHECKS PASS[0m
+   stats: imgs=5 cards=6(hover 6) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /copilot-implementation-food-verification/ === [32mALL CHECKS PASS[0m
+   stats: imgs=12 cards=34(hover 34) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /copilotsolutions/ === [32mALL CHECKS PASS[0m
+   stats: imgs=3 cards=0(hover 0) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /daraz/ === [32mALL CHECKS PASS[0m
+   stats: imgs=13 cards=23(hover 23) flipLayers=2 zoomIn=0 caseCards=2
+
+=== /data-integration-as-a-service/ === [32mALL CHECKS PASS[0m
+   stats: imgs=38 cards=41(hover 40) flipLayers=2 zoomIn=2 caseCards=2
+
+=== /data-science-ai/ === [32mALL CHECKS PASS[0m
+   stats: imgs=43 cards=31(hover 31) flipLayers=2 zoomIn=1 caseCards=2
+
+=== /data-science-ai/microsoft-copilot-consulting/ === [31m2 ISSUE(S)[0m
+   stats: imgs=30 cards=32(hover 32) flipLayers=2 zoomIn=2 caseCards=2
+   [31m✗[0m CASE-IMG: 1/2 Real-Results cards have no thumbnail
+   [31m✗[0m CONTENT-LINK: 2 live in-content link(s) missing → /data-science-ai, /copilot-implementation-food-verification
+
+=== /data-warehousing-as-a-service/ === [32mALL CHECKS PASS[0m
+   stats: imgs=35 cards=36(hover 35) flipLayers=2 zoomIn=2 caseCards=2
+
+=== /implementing-power-bi-dashboard-for-food-crop-grower/ === [31m1 ISSUE(S)[0m
+   stats: imgs=10 cards=18(hover 18) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 1 flip section(s) but clone has no flip/hover layers
+
+=== /microsoft-fabric-reporting-for-real-estate/ === [32mALL CHECKS PASS[0m
+   stats: imgs=12 cards=23(hover 23) flipLayers=0 zoomIn=1 caseCards=0
+
+=== /microsoft-fabric-services/ === [32mALL CHECKS PASS[0m
+   stats: imgs=33 cards=14(hover 13) flipLayers=2 zoomIn=6 caseCards=2
+
+=== /microsoft-fabric-services/microsoft-fabric-migration/ === [31m1 ISSUE(S)[0m
+   stats: imgs=32 cards=15(hover 15) flipLayers=4 zoomIn=1 caseCards=4
+   [31m✗[0m EMPTY-LINK: 1 card link(s) with empty/# href
+
+=== /microsoft-licensing-process/ === [32mALL CHECKS PASS[0m
+   stats: imgs=9 cards=6(hover 6) flipLayers=2 zoomIn=1 caseCards=2
+
+=== /microsoft-power-platform-services/ === [32mALL CHECKS PASS[0m
+   stats: imgs=36 cards=21(hover 21) flipLayers=0 zoomIn=3 caseCards=0
+
+=== /power-bi-financial-reporting-for-alibaba/ === [31m1 ISSUE(S)[0m
+   stats: imgs=11 cards=17(hover 17) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 1 flip section(s) but clone has no flip/hover layers
+
+=== /power-bi-services/ === [32mALL CHECKS PASS[0m
+   stats: imgs=70 cards=77(hover 77) flipLayers=2 zoomIn=1 caseCards=2
+
+=== /privacy-policy/ === [31m1 ISSUE(S)[0m
+   stats: imgs=5 cards=7(hover 7) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /cookie-policy
+
+=== /savills/ === [32mALL CHECKS PASS[0m
+   stats: imgs=11 cards=23(hover 23) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /services/ === [31m2 ISSUE(S)[0m
+   stats: imgs=16 cards=28(hover 28) flipLayers=0 zoomIn=0 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 2 flip section(s) but clone has no flip/hover layers
+   [31m✗[0m BG-IMAGE: 8 live section background(s) not rendered → shutterstock_2161798435-1.png, Azure-Synapse.webp, Azure-AI-Machine-Learning1-1-2.webp, Azure-SQL-1.webp
+
+=== /solution/ === [32mALL CHECKS PASS[0m
+   stats: imgs=3 cards=0(hover 0) flipLayers=0 zoomIn=0 caseCards=0
+
+=== /solution/intellifabric/ === [31m2 ISSUE(S)[0m
+   stats: imgs=40 cards=26(hover 26) flipLayers=0 zoomIn=1 caseCards=0
+   [31m✗[0m FLIP-BOXES: live has 1 flip section(s) but clone has no flip/hover layers
+   [31m✗[0m CONTENT-LINK: 1 live in-content link(s) missing → /solution
+
+=== /testimonials/ === [31m1 ISSUE(S)[0m
+   stats: imgs=10 cards=6(hover 6) flipLayers=2 zoomIn=0 caseCards=2
+   [31m✗[0m LIVE-IMG-COVER: 14 live imgs on disk but NOT rendered → azure-banner-Mobile-home_updated.webp, azure_administration.svg, azure_security_engineer.svg, azure_solution_architect.svg
+
+=== /thank-you/ === [31m1 ISSUE(S)[0m
+   stats: imgs=2 cards=0(hover 0) flipLayers=0 zoomIn=0 caseCards=0
+   [31m✗[0m LIVE-IMG-COVER: 2 live imgs on disk but NOT rendered → thankyou-right-image.png, azure-offices-map-img.webp

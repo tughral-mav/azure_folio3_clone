@@ -1,0 +1,417 @@
+{
+  "url": "https://azure.folio3.com/blog/connecting-to-aws-data-sources-with-microsoft-fabric/",
+  "capturedRobust": true,
+  "meta": {
+    "title": "Connecting To AWS Data Sources With Fabric For Hybrid Cloud",
+    "description": "Master connecting to AWS data sources with Fabric for hybrid cloud. Steps for secure data transfer and analysis for a scalable, cost-efficient system.",
+    "canonical": "https://azure.folio3.com/blog/connecting-to-aws-data-sources-with-microsoft-fabric/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/10/connecting-to-aws-data-sources-with-fabric.jpg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Services\n\n\tAzure Cloud Services\n\tAzure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service\n\t\n\n\tMicrosoft Copilot Consulting\n\tCopilot Scenario Library\n\tCopilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot\n\t\n\n\tMicrosoft Power Platform\n\tAzure Managed Services",
+        "Azure Cloud Services",
+        "Azure Data Analytics \n\t\n\t\tMicrosoft Fabric Services\n\t\tData Integration As A Service\n\t\tData Visualization as a service\n\t\tData Warehousing as a Service",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "Copilot Agent\n\t\n\t\tRecruitFlow Copilot\n\t\tSmartExpense Agent\n\t\tITAsset Copilot\n\t\tKubeMonitor Copilot\n\t\tZammad Ticketing Copilot",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Solutions\n\n\tIntellifabric",
+        "Intellifabric",
+        "Industry\n\n\tLogistics and Transport\n\tHealthcare\n\tRetail\n\tManufacturing\n\tConstruction"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "October 22, 2024"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Connecting To AWS Data Sources With Fabric For Hybrid Cloud"
+        },
+        {
+          "tag": "h2",
+          "text": "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics."
+        },
+        {
+          "tag": "h2",
+          "text": "Steps to Integrate Microsoft Fabric with AWS Data Sources"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 1: Setting Up Data Pipelines"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 2: Ensuring Data Security and Compliance"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 3: Orchestrating Data Flows"
+        },
+        {
+          "tag": "h3",
+          "text": "Step 4: Analyzing and Visualizing Data"
+        },
+        {
+          "tag": "h2",
+          "text": "Benefits of a Hybrid Cloud Approach"
+        },
+        {
+          "tag": "h3",
+          "text": "1. Flexibility and Scalability"
+        },
+        {
+          "tag": "h3",
+          "text": "2. Cost Efficiency"
+        },
+        {
+          "tag": "h3",
+          "text": "3. Improved Data Availability and Redundancy"
+        },
+        {
+          "tag": "h3",
+          "text": "Conclusion"
+        },
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Home » Connecting To AWS Data Sources With Fabric For Hybrid Cloud",
+        "Table of Contents",
+        "The universe of data is expanding exponentially, and the world that we live in today is exploding with data, with the world becoming short of it. According to the latest estimates given by Explodingtopics, an enormous 402.74 million terabytes of data are created daily.",
+        "Thus, it mandates businesses to move from on-premise to cloud solutions.",
+        "Amazon Web Services (AWS) is the world’s most adopted cloud, whereas Microsoft Fabric is a cloud-based SaaS solution for data and analytics that combines various Microsoft tools to streamline all data and analytics workflows. Connecting to AWS data sources with Fabric provides an easy and efficient way to manage your hybrid cloud infrastructure.",
+        "As businesses rely heavily on data-driven decisions, integrating Microsoft Fabric with AWS data sources gives them flexibility, scalability, and cost-efficiency. By combining AWS with Microsoft’s Fabric, you can create a powerful duo and a hybrid cloud solution that lets you manage your resources on both platforms.",
+        "But how do you integrate AWS data services with Microsoft Fabric for effective hybrid cloud integration? This article will guide you through every step to achieve a successful integration.",
+        "Here are the steps to integrate Microsoft Fabric with AWS Data Sources.",
+        "To start the process, connect to AWS data sources with Fabric and configure data pipelines. Microsoft Fabric provides multiple ways to ingest data from AWS. You can start by configuring Microsoft’s OneLake or setting up connectors for services like Amazon S3. A secure data flow from AWS into Fabric must be established for your insights to be accurate.",
+        "To set up data pipelines, you must authenticate your AWS account within Microsoft Fabric using Fabric’s built-in connectors. These connectors provide access to AWS data services, making your integration easy.",
+        "Azure Synapse integration with AWS is another strategy you can consider adopting, especially if you’re already using Synapse for analytics and want to enhance hybrid cloud integration.",
+        "Security against threats and data breaches is a prime concern when handling data in cloud environments. Hybrid cloud integration has unique challenges, especially when sensitive data is transferred between AWS and Microsoft Fabric."
+      ],
+      "listItems": [
+        "Abdullah Ali",
+        "October 22, 2024",
+        "Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.",
+        "Steps to Integrate Microsoft Fabric with AWS Data SourcesStep 1: Setting Up Data PipelinesStep 2: Ensuring Data Security and ComplianceStep 3: Orchestrating Data FlowsStep 4: Analyzing and Visualizing Data",
+        "Step 1: Setting Up Data Pipelines",
+        "Step 2: Ensuring Data Security and Compliance",
+        "Step 3: Orchestrating Data Flows",
+        "Step 4: Analyzing and Visualizing Data",
+        "Benefits of a Hybrid Cloud Approach1. Flexibility and Scalability2. Cost Efficiency3. Improved Data Availability and RedundancyConclusion",
+        "1. Flexibility and Scalability",
+        "2. Cost Efficiency",
+        "3. Improved Data Availability and Redundancy",
+        "Conclusion"
+      ],
+      "ctas": [
+        {
+          "text": "Toggle",
+          "href": "#"
+        },
+        {
+          "text": "Get Started Now",
+          "href": "https://azure.folio3.com/microsoft-fabric-services/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+          "alt": "azure-blog-cta-img-1",
+          "w": 375,
+          "h": 227
+        }
+      ]
+    },
+    {
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Related Blogs"
+        },
+        {
+          "tag": "h3",
+          "text": "10 Ways HR Teams Can Automate Workforce Reporting with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "Managing Real-Time Data Streams Efficiently with Microsoft Fabric"
+        },
+        {
+          "tag": "h3",
+          "text": "How Azure Fabric and Copilot Enable AI-Driven Financial Planning and Forecasting"
+        }
+      ],
+      "paragraphs": [
+        "Workforce reporting has always been time-consuming. HR teams pull data from HRIS, payroll, time and attendance, and recruiting systems, reconcile",
+        "Most business data arrives in batches. A report runs at the end of the day. A pipeline syncs overnight. A",
+        "Finance teams have always worked with data. What has changed is the volume, the velocity, and the stakes. Monthly closes"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": null,
+          "w": 875,
+          "h": 463
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 207,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "160 Bovet Road, Suite # 101,  San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel:  +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel:  +971-55-6540154",
+        "Tel:  +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel:  +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel:  +92-21-3432 3721-4",
+        "3080 Yonge Street,  Suite 6060,  Toronto,  Ontario M4N 3N1",
+        "Tel:  +1 408 365 4638",
+        "Support:  +1 (408) 512 1812",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "headings": [],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "srcset": null,
+      "alt": "Folio3 | Azure",
+      "w": "181",
+      "h": "40",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp 375w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-blog-cta-img-1-300x182.webp 300w",
+      "alt": "azure-blog-cta-img-1",
+      "w": "375",
+      "h": "227",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "srcset": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp 875w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-300x159.webp 300w, https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img-768x406.webp 768w",
+      "alt": null,
+      "w": "875",
+      "h": "463",
+      "loading": null
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "srcset": null,
+      "alt": "Azure",
+      "w": "207",
+      "h": "41",
+      "loading": null
+    }
+  ],
+  "bgImages": [],
+  "bodyHtml": "\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<div id=\"ez-toc-container\" class=\"ez-toc-v2_0_82_2 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction\">\n<div class=\"ez-toc-title-container\">\n<p class=\"ez-toc-title\" style=\"cursor:inherit\">Table of Contents</p>\n<span class=\"ez-toc-title-toggle\"><a href=\"#\" class=\"ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle\" aria-label=\"Toggle Table of Content\"><span class=\"ez-toc-js-icon-con\"><span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle</span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http://www.w3.org/2000/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"></path></svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"></path></svg></span></span></span></a></span></div>\n<nav><ul class=\"ez-toc-list ez-toc-list-level-1 \"><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-1\" href=\"#Accelerate_smart_decisions_with_Microsoft_Fabrics_unified_data_and_AI_analytics\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-2\" href=\"#Steps_to_Integrate_Microsoft_Fabric_with_AWS_Data_Sources\">Steps to Integrate Microsoft Fabric with AWS Data Sources</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-3\" href=\"#Step_1_Setting_Up_Data_Pipelines\">Step 1: Setting Up Data Pipelines</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-4\" href=\"#Step_2_Ensuring_Data_Security_and_Compliance\">Step 2: Ensuring Data Security and Compliance</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-5\" href=\"#Step_3_Orchestrating_Data_Flows\">Step 3: Orchestrating Data Flows</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-6\" href=\"#Step_4_Analyzing_and_Visualizing_Data\">Step 4: Analyzing and Visualizing Data</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-7\" href=\"#Benefits_of_a_Hybrid_Cloud_Approach\">Benefits of a Hybrid Cloud Approach</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-8\" href=\"#1_Flexibility_and_Scalability\">1. Flexibility and Scalability</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-9\" href=\"#2_Cost_Efficiency\">2. Cost Efficiency</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-10\" href=\"#3_Improved_Data_Availability_and_Redundancy\">3. Improved Data Availability and Redundancy</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-11\" href=\"#Conclusion\">Conclusion</a></li></ul></li></ul></nav></div>\n\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"13207\" class=\"elementor elementor-13207\" data-elementor-post-type=\"post\">\n\t\t\t\t<div class=\"elementor-element elementor-element-c2dbe4b e-flex e-con-boxed e-con e-parent\" data-id=\"c2dbe4b\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-1620fb5 elementor-widget elementor-widget-text-editor\" data-id=\"1620fb5\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>The universe of data is expanding exponentially, and the world that we live in today is exploding with data, with the world becoming short of it. According to the latest estimates given by <a href=\"https://explodingtopics.com/blog/data-generated-per-day#:~:text=According%20to%20the%20latest%20estimates,or%200.4%20zettabytes%20every%20day.\" target=\"_blank\" rel=\"noopener nofollow\">Explodingtopics</a>, an enormous <strong>402.74 million terabytes</strong> of data are created daily.</p><p>Thus, it mandates businesses to move from on-premise to cloud solutions.</p><p>Amazon Web Services (AWS) is the world’s most adopted cloud, whereas Microsoft Fabric is a <a href=\"/\" target=\"_blank\" rel=\"noopener\">cloud-based SaaS solution</a> for data and analytics that combines various Microsoft tools to streamline all data and analytics workflows. Connecting to AWS data sources with Fabric provides an easy and efficient way to manage your hybrid cloud infrastructure.</p><p>As businesses rely heavily on data-driven decisions, <a href=\"/microsoft-fabric-services/\" target=\"_blank\" rel=\"noopener\">integrating Microsoft Fabric</a> with AWS data sources gives them flexibility, scalability, and cost-efficiency. By combining AWS with Microsoft’s Fabric, you can create a powerful duo and a hybrid cloud solution that lets you manage your resources on both platforms.</p><p>But how do you integrate AWS data services with Microsoft Fabric for effective hybrid cloud integration? This article will guide you through every step to achieve a successful integration.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-57ae7537 e-flex e-con-boxed e-con e-parent\" data-id=\"57ae7537\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-6d549637 blog-cta-banner e-flex e-con-boxed e-con e-child\" data-id=\"6d549637\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;gradient&quot;}\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-207e6505 e-con-full e-flex e-con e-child\" data-id=\"207e6505\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-8cc1e4a head elementor-widget elementor-widget-heading\" data-id=\"8cc1e4a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h2 class=\"elementor-heading-title elementor-size-default\">Accelerate smart decisions with Microsoft Fabric's unified data and AI analytics.</h2>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-4771c0b4 elementor-mobile-align-center elementor-widget elementor-widget-button\" data-id=\"4771c0b4\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"button.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<div class=\"elementor-button-wrapper\">\n\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"/microsoft-fabric-services/\" target=\"_blank\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Get Started Now</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-393f3ef4 e-con-full e-flex e-con e-child\" data-id=\"393f3ef4\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-4e61ba90 elementor-widget elementor-widget-image\" data-id=\"4e61ba90\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"375\" height=\"227\" src=\"/wp-content/uploads/2024/08/azure-blog-cta-img-1.webp\" class=\"attachment-large size-large wp-image-12229 entered lazyloaded\" alt=\"azure-blog-cta-img-1\" data-lazy-sizes=\"(max-width: 375px) 100vw, 375px\" data-ll-status=\"loaded\">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-59dab9b e-flex e-con-boxed e-con e-parent\" data-id=\"59dab9b\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-776b648 elementor-widget elementor-widget-text-editor\" data-id=\"776b648\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<h2><span class=\"ez-toc-section\" id=\"Steps_to_Integrate_Microsoft_Fabric_with_AWS_Data_Sources\"></span>Steps to Integrate Microsoft Fabric with AWS Data Sources<span class=\"ez-toc-section-end\"></span></h2><p>Here are the steps to integrate Microsoft Fabric with AWS Data Sources.</p><h3><span class=\"ez-toc-section\" id=\"Step_1_Setting_Up_Data_Pipelines\"></span>Step 1: Setting Up Data Pipelines<span class=\"ez-toc-section-end\"></span></h3><p>To start the process, connect to AWS data sources with Fabric and configure data pipelines. Microsoft Fabric provides multiple ways to ingest data from AWS. You can start by configuring Microsoft’s OneLake or setting up connectors for services like Amazon S3. A secure data flow from AWS into Fabric must be established for your insights to be accurate.</p><p>To set up data pipelines, you must authenticate your AWS account within Microsoft Fabric using Fabric’s built-in connectors. These connectors provide access to AWS data services, making your integration easy.</p><p>Azure Synapse integration with AWS is another strategy you can consider adopting, especially if you’re already using Synapse for analytics and want to enhance hybrid cloud integration.</p><h3><span class=\"ez-toc-section\" id=\"Step_2_Ensuring_Data_Security_and_Compliance\"></span>Step 2: Ensuring Data Security and Compliance<span class=\"ez-toc-section-end\"></span></h3><p>Security against threats and data breaches is a prime concern when handling data in cloud environments. Hybrid cloud integration has unique challenges, especially when sensitive data is transferred between AWS and Microsoft Fabric.</p><p>To protect data, you must use encryption while it is being transferred and stored. Utilize AWS’s IAM roles and Microsoft’s identity management for secure user access, letting only authorized personnel manage and transfer data.</p><p>Moreover, compliance with security regulations must be a top priority in your AWS data services integration process. By using <a href=\"/blog/using-private-endpoints-with-microsoft-fabric-for-improved-security/\" target=\"_blank\" rel=\"noopener\">private endpoints</a> and VPNs, you must warrant that your setup complies with GDPR, HIPAA, or other industry standards.</p><p>Strict compliance guarantees that your hybrid cloud integration remains secure and conforms with the law, protecting your business from legal risks.</p><h3><span class=\"ez-toc-section\" id=\"Step_3_Orchestrating_Data_Flows\"></span>Step 3: Orchestrating Data Flows<span class=\"ez-toc-section-end\"></span></h3><p>After you have connected your AWS data sources with Microsoft Fabric, the next step is orchestrating data flows between the two environments. Azure Data Factory lets you set up automated workflows to connect AWS data sources with Fabric and schedule data movement between AWS and Microsoft Fabric in real-time.</p><p>Orchestration tools like Azure Data Factory let you devise complex workflows without writing complex code. This orchestration enables you to achieve smooth hybrid cloud integration by managing dependencies and workflows in AWS and Microsoft environments.</p><p>A successful data flow management system can avoid delays and data bottlenecks, regardless of whether you’re moving processed or raw data.</p><h3><span class=\"ez-toc-section\" id=\"Step_4_Analyzing_and_Visualizing_Data\"></span>Step 4: Analyzing and Visualizing Data<span class=\"ez-toc-section-end\"></span></h3><p>After ingesting data into Microsoft Fabric from AWS, it’s time to analyze and visualize it. Power BI, a tool that integrates easily with Microsoft Fabric, lets you create <a href=\"/blog/dashboard-software/\" target=\"_blank\" rel=\"noopener\">interactive dashboards</a> and reports based on your moved data.</p><p>With AWS data services integration, you can execute complex queries and analysis on your AWS-hosted data directly within Microsoft Fabric, maximizing the power of Synapse Analytics.</p><p>Azure Synapse integration with AWS boosts your ability to process enormous datasets. This powerful combination makes your hybrid cloud integration a powerful analytics tool. Whether real-time data insights or predictive analytics, Power BI and Synapse Analytics let you benefit from the maximum potential of your hybrid cloud data.</p><h2><span class=\"ez-toc-section\" id=\"Benefits_of_a_Hybrid_Cloud_Approach\"></span>Benefits of a Hybrid Cloud Approach<span class=\"ez-toc-section-end\"></span></h2><p>The Hybrid Cloud approach comes with a myriad of benefits, let’s discuss some of them:</p><h3><span class=\"ez-toc-section\" id=\"1_Flexibility_and_Scalability\"></span>1. Flexibility and Scalability<span class=\"ez-toc-section-end\"></span></h3><p>One of the core benefits of a hybrid cloud solution is the flexibility it offers. With <a href=\"/blog/comparing-aws-azure-google-cloud-services/\" target=\"_blank\" rel=\"noopener\">AWS data services</a> integration and connecting to AWS data sources with Fabric, you can have the best of both worlds.</p><p>AWS offers massive scalability and advanced data management tools, while Microsoft Fabric provides powerful analytics and data orchestration capabilities. This flexibility allows you to scale up or down based on your business needs without being locked into a single cloud provider.</p><p>With hybrid cloud integration, you can distribute workloads across AWS and Microsoft Azure, ensuring you never run out of resources. The combination of these platforms provides the ultimate scalability and adaptability for growing businesses.</p><h3><span class=\"ez-toc-section\" id=\"2_Cost_Efficiency\"></span>2. Cost Efficiency<span class=\"ez-toc-section-end\"></span></h3><p>Another notable benefit of hybrid cloud integration is cost savings. By using both AWS and Microsoft Fabric, you can maximize resource usage and cut down expenses. For example, you can store less frequently accessed data on AWS’s cost-effective storage solutions while using Microsoft Fabric for real-time data analytics and decision-making.</p><p>Hybrid cloud solutions also help you avoid over-provisioning of resources. You can use Azure Synapse integration with AWS to offload high-computation tasks to the most cost-effective platform, warranting that your hybrid cloud environment is always cost-efficient and efficient.</p><h3><span class=\"ez-toc-section\" id=\"3_Improved_Data_Availability_and_Redundancy\"></span>3. Improved Data Availability and Redundancy<span class=\"ez-toc-section-end\"></span></h3><p>You have enhanced data availability and redundancy by embracing a hybrid cloud solution. Your data is not limited to a single cloud environment, minimizing the risk of downtime or data loss.</p><p>By connecting to AWS data sources with Fabric, you can store backups in multiple locations across AWS and Microsoft Azure, guaranteeing that your essential business data is always available.</p><p>AWS data services integration with Microsoft Fabric also helps you set up disaster recovery plans. Thus, even if one cloud provider experiences an outage, your data and applications can continue running without disruption. This redundancy provides peace of mind, knowing that your hybrid cloud integration is built for resilience.</p><h3><span class=\"ez-toc-section\" id=\"Conclusion\"></span>Conclusion<span class=\"ez-toc-section-end\"></span></h3><p>Integrating Microsoft Fabric with AWS data sources provides businesses with high flexibility, solid security, and massive cost savings that a hybrid cloud solution provides. You can create a solid hybrid cloud environment by carefully following the steps mentioned above, setting up data pipelines, warranting data security, orchestrating flows, and analyzing data. This integration lets you gain the benefits of both Microsoft and AWS, giving you an edge in managing your data resources.</p><p>So, are you ready to take the next step? Then, exploring connecting to AWS data sources with Fabric can enrich your hybrid cloud strategy. Whether you are scaling up your operations, improving data redundancy, or managing costs, a well-designed hybrid cloud solution can meet your business needs.</p><p>Start by <a href=\"/contact-us/\" target=\"_blank\" rel=\"noopener\">contacting our experts</a> for guidance on reaping the <a href=\"/blog/what-is-microsoft-fabric-features-benefits-use-cases/\" target=\"_blank\" rel=\"noopener\">benefits of Microsoft Fabric</a> and AWS integration. Visit us at <a href=\"/microsoft-fabric-services/\" target=\"_blank\" rel=\"noopener\">Folio3 Microsoft Fabric</a> to learn more about how we can assist you in making this transition.</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t",
+  "related": [
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ways-hr-teams-can-automate-workforce-r",
+      "href": "/blog/ways-hr-teams-can-automate-workforce-reporting-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/real-time-data-intelligence-in-microso",
+      "href": "/blog/managing-real-time-data-streams-efficiently-with-microsoft-fabric/",
+      "image": ""
+    },
+    {
+      "title": "<img loading=\"lazy\" width=\"300\" height=\"198\" src=\"https://azure.folio3.com/wp-content/uploads/2026/04/ai-financial-planning-azure-300x198.jp",
+      "href": "/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/",
+      "image": ""
+    }
+  ]
+}
