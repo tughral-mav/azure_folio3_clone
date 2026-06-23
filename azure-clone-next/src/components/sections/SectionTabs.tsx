@@ -47,7 +47,11 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs }: { heading: str
                   <div className="space-y-5">
                     {t.items.map((it, j) => (
                       <Reveal key={j} animation="fadeInUp" delay={j * 50}><div className="flex gap-4">
-                        <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface-chip text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-5 w-5"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+                        {it.icon && it.icon.startsWith('<svg')
+                          ? <span className="mt-0.5 inline-block shrink-0 [&>svg]:h-10 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: it.icon }} />
+                          : it.icon
+                            ? <Image src={it.icon} alt="" width={44} height={44} className="mt-0.5 h-10 w-10 shrink-0 object-contain" />
+                            : <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface-chip text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-5 w-5"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg></span>}
                         <div><h4 className="font-semibold text-ink">{it.title}</h4>{it.body && <p className="mt-1 text-sm leading-relaxed text-body">{it.body}</p>}</div>
                       </div></Reveal>
                     ))}

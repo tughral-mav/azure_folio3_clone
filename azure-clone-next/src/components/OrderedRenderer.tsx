@@ -256,12 +256,15 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     if (wyg && wyg.tabLabels.filter((l) => units.some((u) => hnorm(u.title) === hnorm(l))).length >= 3) {
       const tabs: SectionTab[] = [];
       let cur: SectionTab | null = null;
+      let tabIdx = -1;
       for (const u of units) {
         if (wyg.tabLabels.some((l) => hnorm(l) === hnorm(u.title))) {
           cur = { label: u.title, heading: u.title, items: [], img: u.imgs[0]?.src ?? '', cta: { text: 'Request A Call Back', href: '#pgForm' } };
           tabs.push(cur);
+          tabIdx++;
         } else if (cur && isRealHead(u)) {
-          cur.items.push({ title: u.title, body: u.paras[0] ?? '', icon: '' });
+          const ic = wyg.tabIcons?.[tabIdx]?.[cur.items.length] ?? ''; // exact extracted per-item SVG
+          cur.items.push({ title: u.title, body: u.paras[0] ?? '', icon: ic });
           if (!cur.img && u.imgs[0]) cur.img = u.imgs[0].src;
         }
       }
@@ -522,7 +525,7 @@ function renderAiAdvantage(key: number, heading: string, subtitle: string | unde
           return (
             <Reveal key={i} animation="fadeInUp" delay={(i % 4) * 80}>
               <Link href="#pgForm" className="adv-card flex h-full flex-col rounded-2xl border border-transparent bg-[#EEF1FB] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-cardHover">
-                {icons[i] && <span className="adv-icon mb-5 inline-block rounded-md [&>svg]:h-12 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
+                {icons[i] && <span className="adv-icon mb-5 inline-flex h-14 w-14 shrink-0 items-center justify-center self-start rounded-lg [&>svg]:h-10 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
                 <h3 className="text-lg font-semibold leading-snug text-ink">{c.title}</h3>
                 {desc && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{desc}</p>}
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#00217F]">
