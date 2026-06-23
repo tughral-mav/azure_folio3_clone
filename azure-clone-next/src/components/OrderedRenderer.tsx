@@ -11,6 +11,7 @@ import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Accordion } from '@/components/sections/Accordion';
 import { Reveal } from '@/components/ui/Reveal';
+import { VideoEmbed } from '@/components/ui/VideoEmbed';
 
 /**
  * Path A renderer — consumes the ORDERED item stream (section.items) so the
@@ -237,6 +238,16 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         out.push(renderAiAdvantage(key++, heading, subtitle, cards, agentExtras.aiAdvantageIcons));
         continue;
       }
+    }
+    // Copilot Agent demo video ("Tired of Admin Work? …") — poster + click-to-play YouTube embed
+    if (heading && /tired of admin|recruiter take over|see your new ai/i.test(heading) && agentExtras?.video) {
+      out.push(
+        <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
+          <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{heading}</h2>
+          <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={heading} />
+        </div></section>,
+      );
+      continue;
     }
     // case-studies INDEX grid ("All Customer Stories" / "Customer Stories") → large photo cards
     if (heading && /all customer stories|customer stories|all case stud/i.test(heading)) {
@@ -487,7 +498,7 @@ function renderAiAdvantage(key: number, heading: string, subtitle: string | unde
           const desc = (c.desc || '').replace(/\s*request a call\.?\s*$/i, '').trim();
           return (
             <Reveal key={i} animation="fadeInUp" delay={(i % 4) * 80}>
-              <Link href="#pgForm" className="flex h-full flex-col rounded-2xl bg-[#EEF1FB] p-7 transition hover:shadow-cardHover">
+              <Link href="#pgForm" className="flex h-full flex-col rounded-2xl border border-transparent bg-[#EEF1FB] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-cardHover [&:hover_svg_path]:fill-brand">
                 {icons[i] && <span className="mb-5 inline-block [&>svg]:h-14 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
                 <h3 className="text-lg font-semibold leading-snug text-ink">{c.title}</h3>
                 {desc && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{desc}</p>}
