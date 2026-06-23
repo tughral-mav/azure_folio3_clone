@@ -5,7 +5,7 @@ import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabI
 import { Counter } from '@/components/ui/Counter';
 import { FlipCard } from '@/components/sections/FlipCard';
 import { RetailSolutionTabs } from '@/components/sections/RetailSolutionTabs';
-import { SectionTabs } from '@/components/sections/SectionTabs';
+import { SectionTabs, type SectionTab } from '@/components/sections/SectionTabs';
 import { CaseStudies } from '@/components/sections/CaseStudies';
 import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
@@ -248,6 +248,29 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         </div></section>,
       );
       continue;
+    }
+    // "What Do You Get …" (Copilot Agent pages) — the live's Elementor tabs widget. The capture
+    // flattened it into one section; split the units at the configured tab labels into tab panels
+    // (each: category heading + sub-feature list + image + Request A Call Back CTA → #pgForm).
+    const wyg = agentExtras?.whatYouGet;
+    if (wyg && wyg.tabLabels.filter((l) => units.some((u) => hnorm(u.title) === hnorm(l))).length >= 3) {
+      const tabs: SectionTab[] = [];
+      let cur: SectionTab | null = null;
+      for (const u of units) {
+        if (wyg.tabLabels.some((l) => hnorm(l) === hnorm(u.title))) {
+          cur = { label: u.title, heading: u.title, items: [], img: u.imgs[0]?.src ?? '', cta: { text: 'Request A Call Back', href: '#pgForm' } };
+          tabs.push(cur);
+        } else if (cur && isRealHead(u)) {
+          cur.items.push({ title: u.title, body: u.paras[0] ?? '', icon: '' });
+          if (!cur.img && u.imgs[0]) cur.img = u.imgs[0].src;
+        }
+      }
+      const wygImgs = [...lead.imgs, ...units.flatMap((u) => u.imgs)].map((im) => im.src);
+      tabs.forEach((t, i) => { if (!t.img) t.img = wygImgs[i] ?? ''; });
+      if (tabs.length >= 2) {
+        out.push(<SectionTabs key={key++} heading={wyg.heading} subtitle={subtitle} tabs={tabs} />);
+        continue;
+      }
     }
     // case-studies INDEX grid ("All Customer Stories" / "Customer Stories") → large photo cards
     if (heading && /all customer stories|customer stories|all case stud/i.test(heading)) {
