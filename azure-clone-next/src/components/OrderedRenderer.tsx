@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CapturedPage, CapturedItem } from '@/lib/content';
-import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, type CounterRec, type ProcessSection } from '@/lib/content';
+import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getAgentExtras, type CounterRec, type ProcessSection } from '@/lib/content';
 import { Counter } from '@/components/ui/Counter';
 import { FlipCard } from '@/components/sections/FlipCard';
 import { RetailSolutionTabs } from '@/components/sections/RetailSolutionTabs';
@@ -88,6 +88,8 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   let faqRendered = false;
   // n-tabs widget content re-captured from the live (many tabbed sections rendered as flat lists)
   const pageTabs = getPageTabs(page.url ?? '');
+  // Copilot Agent page extras (hero stat counters, video) the generic capture missed
+  const agentExtras = getAgentExtras(page.url ?? '');
   // is this a case-study page? (drives the "The Customer" client-info card even when the section
   // has only company-metadata facts and no explicit marker, e.g. savills "London, UK / Real Estate")
   const isCaseStudy = (page.sections ?? []).some((s) => (s.items ?? []).some((it) => it.t === 'h' && /the problem|the challenge|our solution|folio3 solution|business outcomes|technologies involved|the approach|about the client|the customer/i.test(it.text)));
@@ -110,7 +112,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const heroTitle = seoH1 ? heroH2s[0].title : h1u.title;
       const { head, tail } = splitHi(heroTitle);
       const sub = seoH1 ? (heroH2s[1]?.title ?? heroH2s[0].paras[0] ?? h1u.paras[0]) : h1u.paras[0];
-      const heroCtas = (h1u.ctas.length ? h1u.ctas : lead.ctas).slice(0, 2);
+      const heroCtas = (h1u.ctas.length ? h1u.ctas : lead.ctas).slice(0, 3);
       const ctas = heroCtas.length ? heroCtas : [{ text: 'Speak to Our Azure Experts', href: '#pgForm' }];
       const illo = [...lead.imgs, ...units.flatMap((u) => u.imgs)].find((im) => im.w >= 180);
       out.push(
@@ -123,9 +125,22 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
                 {ctas.map((c, j) => (
-                  <Link key={j} href={c.href} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline uppercase tracking-wide'}>{c.text}</Link>
+                  <Link key={j} href={c.href} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
+                    {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
+                    {c.text}
+                  </Link>
                 ))}
               </div>
+              {agentExtras?.heroStats?.length ? (
+                <div className="mt-10 flex flex-wrap gap-x-10 gap-y-6">
+                  {agentExtras.heroStats.map((s, j) => (
+                    <div key={j}>
+                      <Counter to={s.to} suffix={s.suffix} className="text-3xl font-bold text-brand lg:text-4xl" />
+                      <div className="mt-1 max-w-[150px] text-sm leading-snug text-body">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
             </div>
             {illo && <Reveal animation="zoomIn" className="relative"><Image src={illo.src} alt={h1u.title} width={620} height={460} className="h-auto w-full" priority /></Reveal>}
           </div>
@@ -212,6 +227,14 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         const triangle = [...lead.imgs, ...units.flatMap((u) => u.imgs)].filter((im) => im.w >= 400).sort((a, b) => b.w - a.w)[0]?.src;
         const etlBg = (page.bgImages ?? []).map(localImg).find((b) => /concept|ias-concept/i.test(b));
         out.push(renderEtlPipeline(key++, heading, units[0]?.paras[0], steps, triangle, etlBg));
+        continue;
+      }
+    }
+    // "The AI Advantage" (Copilot Agent pages) — lavender icon cards w/ exact SVG icons + Request a call CTA
+    if (heading && /the ai advantage/i.test(heading) && agentExtras?.aiAdvantageIcons?.length) {
+      const cards = units.filter(isRealHead).map((u) => ({ title: u.title, desc: u.paras[0] ?? '' }));
+      if (cards.length >= 2) {
+        out.push(renderAiAdvantage(key++, heading, subtitle, cards, agentExtras.aiAdvantageIcons));
         continue;
       }
     }
@@ -447,6 +470,37 @@ function renderCounters(counters: CounterRec[], align: 'center' | 'left' = 'cent
         );
       })}
     </div>
+  );
+}
+
+// "The AI Advantage" — 4 lavender cards, each with an exact (extracted inline-SVG) themed icon,
+// a title, a description, and a "Request a call →" CTA. The whole card links to #pgForm (matches live).
+function renderAiAdvantage(key: number, heading: string, subtitle: string | undefined, cards: { title: string; desc: string }[], icons: string[]) {
+  return (
+    <section key={key} className="bg-white py-16 lg:py-24"><div className="container-x">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold text-ink lg:text-4xl">{heading}</h2>
+        {subtitle && <p className="mt-3 text-body">{subtitle}</p>}
+      </div>
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {cards.map((c, i) => {
+          const desc = (c.desc || '').replace(/\s*request a call\.?\s*$/i, '').trim();
+          return (
+            <Reveal key={i} animation="fadeInUp" delay={(i % 4) * 80}>
+              <Link href="#pgForm" className="flex h-full flex-col rounded-2xl bg-[#EEF1FB] p-7 transition hover:shadow-cardHover">
+                {icons[i] && <span className="mb-5 inline-block [&>svg]:h-14 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
+                <h3 className="text-lg font-semibold leading-snug text-ink">{c.title}</h3>
+                {desc && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{desc}</p>}
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#00217F]">
+                  Request a call
+                  <Image src="/wp-content/uploads/2025/07/circle-right-arrow.png" alt="" width={20} height={20} className="h-5 w-5" />
+                </span>
+              </Link>
+            </Reveal>
+          );
+        })}
+      </div>
+    </div></section>
   );
 }
 

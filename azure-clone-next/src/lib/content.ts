@@ -272,6 +272,16 @@ export function getTrustBand(url: string): { heading: string; logos: string[] } 
   return logos.length >= 2 ? { heading: rec.heading, logos } : null;
 }
 
+// Per-page extras for the Copilot Agent pages (hero stat counters, video embeds, etc.) that the
+// generic capture missed. Keyed by slugOfRoute → content-kit/agent-extras.json.
+export type AgentExtras = { heroStats?: { to: number; suffix?: string; label: string }[]; video?: { youtube: string; poster: string }; aiAdvantageIcons?: string[] };
+let _agentExtrasRaw: Record<string, AgentExtras> | null = null;
+export function getAgentExtras(url: string): AgentExtras | null {
+  if (_agentExtrasRaw === null) { try { _agentExtrasRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'agent-extras.json'), 'utf8')); } catch { _agentExtrasRaw = {}; } }
+  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  return _agentExtrasRaw?.[slugOfRoute(route)] ?? null;
+}
+
 // Full FAQ Q&A re-captured from the live's accordion (verify/extract-faq.mjs → clone-kit/faq-full.json).
 // The original capture stored questions only + the answers weren't reliably matched.
 let _faqFullRaw: Record<string, { heading: string; items: { q: string; a: string }[] }> | null = null;
