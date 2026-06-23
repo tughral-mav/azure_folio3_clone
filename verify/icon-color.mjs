@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36';
+const b=await chromium.launch();const p=await b.newPage({viewport:{width:1280,height:1000},userAgent:UA});
+await p.goto('https://azure.folio3.com/ai-powered-solutions/copilot-for-recruitment/',{waitUntil:'networkidle',timeout:90000});
+await p.evaluate(async()=>{await new Promise(r=>{let y=0;const t=setInterval(()=>{scrollBy(0,400);y+=400;if(y>document.body.scrollHeight+800){clearInterval(t);r();}},25);});});
+await p.waitForTimeout(1500);
+const probe=async()=>p.evaluate(()=>{const txt=e=>(e?.textContent||'').replace(/\s+/g,' ').trim();const head=[...document.querySelectorAll('h1,h2,h3,h4,.elementor-heading-title')].find(e=>/^Cut Resume Screening/i.test(txt(e)));const box=head.closest('.elementor-widget-icon-box,.elementor-icon-box-wrapper')||head.closest('.elementor-widget');const svg=box.querySelector('svg');const path=svg?.querySelector('path');const svgCs=svg?getComputedStyle(svg):{};const pathCs=path?getComputedStyle(path):{};
+  return {svgFill:svgCs.fill,svgColor:svgCs.color,svgTransition:(svgCs.transition||'').slice(0,50),pathFill:pathCs.fill,pathInlineFill:path?.getAttribute('fill'),pathTransition:(pathCs.transition||'').slice(0,50)};});
+const before=await probe();
+const card=p.locator('.elementor-icon-box-wrapper').filter({hasText:'Cut Resume Screening'}).first();
+await card.hover({force:true});await p.waitForTimeout(600);
+const after=await probe();
+console.log('NORMAL:',JSON.stringify(before));
+console.log('HOVER :',JSON.stringify(after));
+await b.close();

@@ -60,6 +60,12 @@
   .btn-ghost {
     @apply btn text-ink hover:text-brand;
   }
+  /* AI Advantage card icon hover (Copilot Agent pages): icon box fills brand blue, glyph turns
+     white — extracted from the live (path fill #1742E7 → #fff). */
+  .adv-icon { transition: background-color 0.3s ease; }
+  .adv-icon path { transition: fill 0.3s ease; }
+  .adv-card:hover .adv-icon { background-color: #1742E7; }
+  .adv-card:hover .adv-icon path { fill: #ffffff; }
   .eyebrow {
     @apply mb-3 inline-block rounded-pill bg-surface-chip px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand;
   }

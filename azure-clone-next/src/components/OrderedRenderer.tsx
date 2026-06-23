@@ -498,8 +498,8 @@ function renderAiAdvantage(key: number, heading: string, subtitle: string | unde
           const desc = (c.desc || '').replace(/\s*request a call\.?\s*$/i, '').trim();
           return (
             <Reveal key={i} animation="fadeInUp" delay={(i % 4) * 80}>
-              <Link href="#pgForm" className="flex h-full flex-col rounded-2xl border border-transparent bg-[#EEF1FB] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-cardHover [&:hover_svg_path]:fill-brand">
-                {icons[i] && <span className="mb-5 inline-block [&>svg]:h-14 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
+              <Link href="#pgForm" className="adv-card flex h-full flex-col rounded-2xl border border-transparent bg-[#EEF1FB] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-cardHover">
+                {icons[i] && <span className="adv-icon mb-5 inline-block rounded-md [&>svg]:h-12 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: icons[i] }} />}
                 <h3 className="text-lg font-semibold leading-snug text-ink">{c.title}</h3>
                 {desc && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{desc}</p>}
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#00217F]">
