@@ -231,20 +231,27 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         continue;
       }
     }
-    // "The AI Advantage" (Copilot Agent pages) — lavender icon cards w/ exact SVG icons + Request a call CTA
-    if (heading && /the ai advantage/i.test(heading) && agentExtras?.aiAdvantageIcons?.length) {
+    // "The AI Advantage" (Copilot Agent pages) — lavender icon cards w/ exact SVG icons + Request a call CTA.
+    // Heading differs per product (recruit: "The AI Advantage…"; it-asset: "Why You Need to Automate ITAM
+    // Now"; …) so match the per-page advHeading from agent-extras, falling back to the generic phrase.
+    if (heading && agentExtras?.aiAdvantageIcons?.length &&
+        (/the ai advantage/i.test(heading) || (agentExtras.advHeading && hnorm(heading) === hnorm(agentExtras.advHeading)))) {
       const cards = units.filter(isRealHead).map((u) => ({ title: u.title, desc: u.paras[0] ?? '' }));
       if (cards.length >= 2) {
         out.push(renderAiAdvantage(key++, heading, subtitle, cards, agentExtras.aiAdvantageIcons));
         continue;
       }
     }
-    // Copilot Agent demo video ("Tired of Admin Work? …") — poster + click-to-play YouTube embed
-    if (heading && /tired of admin|recruiter take over|see your new ai/i.test(heading) && agentExtras?.video) {
+    // Copilot Agent demo video — poster + click-to-play YouTube embed. The section heading is product-
+    // specific ("Tired of Admin Work…", "Struggling to Track Every Device…") so match the per-page
+    // videoHeading (fuzzy: the live wraps the first letter in a drop-cap the capture drops), display clean.
+    if (heading && agentExtras?.video && (/tired of admin|recruiter take over|see your new ai/i.test(heading) ||
+        (agentExtras.videoHeading && hnorm(agentExtras.videoHeading).includes(hnorm(heading).slice(0, 18))))) {
+      const vh = agentExtras.videoHeading || heading;
       out.push(
         <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
-          <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{heading}</h2>
-          <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={heading} />
+          <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{vh}</h2>
+          <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={vh} />
         </div></section>,
       );
       continue;
