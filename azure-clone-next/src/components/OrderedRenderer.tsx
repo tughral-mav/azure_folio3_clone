@@ -136,8 +136,12 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
                 <div className="mt-10 flex flex-wrap gap-x-10 gap-y-6">
                   {agentExtras.heroStats.map((s, j) => (
                     <div key={j}>
-                      <Counter to={s.to} suffix={s.suffix} className="text-3xl font-bold text-brand lg:text-4xl" />
-                      <div className="mt-1 max-w-[150px] text-sm leading-snug text-body">{s.label}</div>
+                      <div className="flex h-12 items-center">
+                        {s.icon
+                          ? <span className="inline-flex items-center [&>svg]:h-11 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: s.icon }} />
+                          : <Counter to={s.to ?? 0} suffix={s.suffix} decimals={Number.isInteger(s.to ?? 0) ? 0 : 1} className="text-3xl font-bold text-brand lg:text-4xl" />}
+                      </div>
+                      <div className="mt-1 max-w-[150px] text-sm font-medium capitalize leading-snug text-body">{s.label}</div>
                     </div>
                   ))}
                 </div>
