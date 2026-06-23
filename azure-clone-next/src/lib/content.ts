@@ -308,7 +308,7 @@ export function getPageTabs(url: string): SectionTabRec[] {
   const seen = new Set<string>();
   const uniq = arr.filter((s) => { const k = (s.section || '').toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
   // resolve image paths to on-disk
-  return uniq.map((s) => ({ ...s, tabs: s.tabs.map((t) => ({ ...t, img: t.img ? localImg(t.img) : '', items: t.items.map((it) => ({ ...it, icon: it.icon ? localImg(it.icon) : '' })) })) }));
+  return uniq.map((s) => ({ ...s, tabs: s.tabs.map((t) => ({ ...t, img: t.img ? localImg(t.img) : '', items: t.items.map((it) => ({ ...it, icon: it.icon ? (it.icon.startsWith('<svg') ? it.icon : localImg(it.icon)) : '' })) })) }));
 }
 
 export function getCaptured(slug: string): CapturedPage | null {
