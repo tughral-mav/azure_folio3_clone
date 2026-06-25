@@ -1,0 +1,46 @@
+name: Claude Code
+
+# Lets anyone write "@claude <plain-English request>" in a GitHub issue or PR
+# comment, and Claude responds by opening / updating a Pull Request with the
+# change. The change is NEVER published directly — it lands as a PR so a Vercel
+# preview can be reviewed and merged (or discarded) by a human.
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  claude:
+    # only run when "@claude" actually appears (saves CI minutes + API cost)
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read # lets Claude read CI results on PRs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Guardrails live in CLAUDE.md at the repo root. To further restrict what
+          # Claude may run, uncomment and tune claude_args, e.g.:
+          # claude_args: |
+          #   --max-turns 15
