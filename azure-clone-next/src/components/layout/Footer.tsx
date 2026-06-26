@@ -39,7 +39,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-3 py-6 text-sm text-white/60 sm:flex-row">
-          <p>© {new Date().getFullYear()}, Folio3 Software Inc., All rights reserved.</p>
+          <p>© 2026, Folio3 Software Inc., All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy-policy/" className="hover:text-white">Privacy Policy</Link>
             <Link href="/cookie-policy/" className="hover:text-white">Cookie Policy</Link>
