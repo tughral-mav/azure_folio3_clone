@@ -47,17 +47,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript dangerouslySetInnerHTML={{ __html: '<style>.reveal{opacity:1 !important}</style>' }} />
       </head>
       <body>
+        {/* Site-wide structured data graph (matches the live site's Yoast output):
+            Organization + WebSite. Per-page WebPage + BreadcrumbList are emitted by
+            each page and reference these by @id. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Folio3 Azure',
-              url: 'https://azure.folio3.com',
-              logo: 'https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg',
-              telephone: '+1 (408) 412-3813',
-              sameAs: ['https://www.linkedin.com/company/folio3', 'https://twitter.com/folio3'],
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://azure.folio3.com/#organization',
+                  name: 'Folio3 Azure',
+                  url: 'https://azure.folio3.com',
+                  logo: 'https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg',
+                  telephone: '+1 (408) 412-3813',
+                  sameAs: ['https://www.linkedin.com/company/folio3', 'https://twitter.com/folio3'],
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://azure.folio3.com/#website',
+                  name: 'Folio3 Azure',
+                  url: 'https://azure.folio3.com',
+                  publisher: { '@id': 'https://azure.folio3.com/#organization' },
+                  inLanguage: 'en-US',
+                },
+              ],
             }),
           }}
         />
