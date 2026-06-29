@@ -49,5 +49,53 @@ export default async function MarketingPage({ params }: { params: Promise<{ slug
   const { slug } = await params;
   const page = getCaptured(slug.join('/'));
   if (!page) notFound();
-  return <CapturedRenderer page={page} title={titleFromSlug(slug)} slug={slug[slug.length - 1]} faq={getFaq(slug.join('/'))} />;
+  const title = titleFromSlug(slug);
+
+  // Per-page structured data (matches the live site's Yoast graph): WebPage + BreadcrumbList,
+  // referencing the site-wide WebSite/Organization (in layout.tsx) by @id. Invisible to users —
+  // pure machine-readable metadata for search engines and AI. Closes the parity gap where the
+  // live emits these on every page but the clone previously only did on blog posts.
+  const ORIGIN = 'https://azure.folio3.com';
+  const pageUrl = `${ORIGIN}/${slug.join('/')}/`;
+  const cleanTitle = page.meta.title.replace(/\s*[|–—-]\s*Folio3(\s*Azure)?\s*$/i, '').trim() || title;
+  const description = page.meta.description ?? deriveDescription(page, title);
+  const ogPath = page.meta.ogImage ? page.meta.ogImage.replace(/^https?:\/\/[^/]+/, '') : '';
+  const ogImage = ogPath ? `${ORIGIN}${ogPath.startsWith('/') ? '' : '/'}${ogPath}` : undefined;
+  // breadcrumb trail: Home » [parent segments…] » current page (mirrors the visible breadcrumb)
+  const crumbName = cleanTitle.split(/\s[|–—-]\s/)[0].trim() || cleanTitle; // drop long SEO suffix for the trail
+  const crumbs = [{ name: 'Home', url: `${ORIGIN}/` }];
+  slug.forEach((seg, i) => {
+    crumbs.push({
+      name: i === slug.length - 1
+        ? crumbName
+        : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\bAi\b/g, 'AI').replace(/\bBi\b/g, 'BI'),
+      url: `${ORIGIN}/${slug.slice(0, i + 1).join('/')}/`,
+    });
+  });
+  const webPageLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: cleanTitle,
+    description,
+    isPartOf: { '@id': `${ORIGIN}/#website` },
+    breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+    inLanguage: 'en-US',
+    ...(ogImage ? { primaryImageOfPage: { '@type': 'ImageObject', url: ogImage } } : {}),
+  };
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <CapturedRenderer page={page} title={title} slug={slug[slug.length - 1]} faq={getFaq(slug.join('/'))} />
+    </>
+  );
 }
