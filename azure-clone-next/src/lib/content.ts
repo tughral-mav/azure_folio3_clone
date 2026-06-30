@@ -20,6 +20,10 @@ const sanitizeBody = (html: string) =>
       a: ['href', 'name', 'target', 'rel', 'title'],
       source: ['src', 'srcset', 'type', 'media', 'sizes'],
       iframe: ['src', 'width', 'height', 'allow', 'allowfullscreen', 'frameborder', 'title'],
+      // keep ordered-list numbering: posts split each item into its own <ol start="N">, so
+      // dropping `start` made every item restart at "1". Preserve start/type/value.
+      ol: ['start', 'type', 'reversed'],
+      li: ['value'],
       '*': ['class', 'id'],
     },
     allowedIframeHostnames: ['www.youtube.com', 'youtube.com', 'www.youtube-nocookie.com', 'player.vimeo.com'],
