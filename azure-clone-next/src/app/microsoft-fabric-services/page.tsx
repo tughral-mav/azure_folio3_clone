@@ -56,7 +56,6 @@ export default function MicrosoftFabricServicesPage() {
   // §3 "One Data Hub" — 2-col intro
   const hub = sec(/one data hub/i)!;
   const hubU = hub.units[0];
-  const hubImg = allImgsOf(hub).find((i) => i.src)?.src;
 
   // §4 "Powering Every Aspect of Your Data Enterprise" — tabbed interface.
   // Tab boundary = the category .webp image that trails each group (decorative
@@ -191,7 +190,18 @@ export default function MicrosoftFabricServicesPage() {
               <Link href={hub.units.flatMap((u) => u.ctas)[0].href} className="btn-primary mt-7 uppercase tracking-wide">{hub.units.flatMap((u) => u.ctas)[0].text}</Link>
             )}
           </Reveal>
-          {hubImg && <Reveal animation="zoomIn"><Image src={hubImg} alt={hubU.title} width={620} height={460} className="mx-auto h-auto w-full rounded-2xl" /></Reveal>}
+          {/* Live embeds an autoplaying, muted, looped YouTube demo (Elementor video widget) — match it */}
+          <Reveal animation="zoomIn">
+            <div className="relative mx-auto aspect-video w-full overflow-hidden rounded-2xl shadow-cardHover">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/X_c7gLfJz_Q?autoplay=1&mute=1&loop=1&playlist=X_c7gLfJz_Q&controls=1&rel=0&playsinline=1"
+                title={hubU.title}
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 

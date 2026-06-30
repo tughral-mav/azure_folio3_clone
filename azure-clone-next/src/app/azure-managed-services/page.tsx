@@ -85,7 +85,12 @@ export default function AzureManagedServicesPage() {
   const h1u = hero.units.find((u) => u.tag === 'h1')!;
   const heroCtas = (h1u.ctas.length ? h1u.ctas : hero.lead.ctas).slice(0, 2);
   const heroImg = [...hero.lead.imgs, ...hero.units.flatMap((u) => u.imgs)].find((i) => i.w >= 200)?.src;
-  const heroBgUrl = localAsset((page.bgImages ?? [])[0]);
+  // Don't show the hero background when it's the SAME image set as the foreground illustration
+  // (…-1.webp bg + …-2.webp illo) — otherwise the scene renders twice (a faint full-cover copy
+  // behind the crisp one). The live shows only the foreground illustration.
+  const heroBgRaw = localAsset((page.bgImages ?? [])[0]);
+  const heroStem = (u?: string) => (u?.split('/').pop() ?? '').replace(/\.\w+$/, '').replace(/-\d+(x\d+)?$/, '').toLowerCase();
+  const heroBgUrl = heroImg && heroBgRaw && heroStem(heroBgRaw) === heroStem(heroImg) ? '' : heroBgRaw;
 
   const ov = sec(/^overview$/i)!;
   const ovIcons = ov.raw.filter((x) => x.t === 'img');

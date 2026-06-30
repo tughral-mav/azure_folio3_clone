@@ -116,9 +116,14 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const heroCtas = (h1u.ctas.length ? h1u.ctas : lead.ctas).slice(0, 3);
       const ctas = heroCtas.length ? heroCtas : [{ text: 'Speak to Our Azure Experts', href: '#pgForm' }];
       const illo = [...lead.imgs, ...units.flatMap((u) => u.imgs)].find((im) => im.w >= 180);
+      // Suppress the hero background when it's the SAME image set as the foreground illustration
+      // (e.g. "…-1.webp" as bg + "…-2.webp" as illo) — otherwise the scene renders twice: a faint
+      // full-cover copy behind the crisp one. The live site shows only the foreground illustration.
+      const imgStem = (u: string) => (u.split('/').pop() ?? '').replace(/\.\w+$/, '').replace(/-\d+(x\d+)?$/, '').toLowerCase();
+      const showHeroBg = heroBg && (!illo || imgStem(heroBg) !== imgStem(illo.src));
       out.push(
         <section key={key++} className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-          {heroBg && <Image src={heroBg} alt="" fill priority sizes="100vw" className="object-cover object-right" />}
+          {showHeroBg && <Image src={heroBg} alt="" fill priority sizes="100vw" className="object-cover object-right" />}
           <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-2 lg:py-24">
             <div>
               <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">{title}</p>
@@ -232,6 +237,24 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         const triangle = [...lead.imgs, ...units.flatMap((u) => u.imgs)].filter((im) => im.w >= 400).sort((a, b) => b.w - a.w)[0]?.src;
         const etlBg = (page.bgImages ?? []).map(localImg).find((b) => /concept|ias-concept/i.test(b));
         out.push(renderEtlPipeline(key++, heading, units[0]?.paras[0], steps, triangle, etlBg));
+        continue;
+      }
+      // No "Step" cards — the live just shows a centered heading + subtitle + a full-width pipeline
+      // diagram (e.g. data-warehousing / data-visualization). Render that and skip the generic
+      // 2-column + leftover-card path that mis-rendered it (squished diagram + stray broken card).
+      const etlDiagram = [...lead.imgs, ...units.flatMap((u) => u.imgs)].filter((im) => im.w >= 300).sort((a, b) => b.w - a.w)[0];
+      if (etlDiagram) {
+        out.push(
+          <section key={key++} className={`section ${tone}`}>
+            <div className="container-x">
+              <div className="mx-auto max-w-3xl text-center">
+                <Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>
+                {subtitle && <p className="mt-3 text-body">{subtitle}</p>}
+              </div>
+              <Reveal animation="fadeInUp"><Image src={etlDiagram.src} alt={heading} width={1240} height={540} className="mx-auto mt-10 h-auto w-full max-w-6xl" /></Reveal>
+            </div>
+          </section>,
+        );
         continue;
       }
     }
