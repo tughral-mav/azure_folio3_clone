@@ -96,4 +96,36 @@
   .post-body blockquote { @apply my-6 border-l-4 border-brand pl-4 italic text-ink; }
   .post-body table { @apply my-6 w-full border-collapse text-sm; }
   .post-body td, .post-body th { @apply border border-surface-line px-3 py-2 text-left; }
+
+  /* Blog "Table of Contents" (ez-toc grey theme) — the post bodyHtml ships the ez-toc markup
+     but the plugin CSS was missing, so it rendered as a raw bulleted list. Match the live's
+     styled, hierarchically-numbered grey box (1, 2 … 4, 4.1, 4.2 …). */
+  .post-body #ez-toc-container {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    padding: 12px 22px 14px 14px;
+    margin: 0 0 1.75rem;
+  }
+  .post-body .ez-toc-title-container { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+  .post-body .ez-toc-title { margin: 0; font-size: 1.2rem; font-weight: 500; color: #121127; }
+  .post-body .ez-toc-title-toggle .ez-toc-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 30px; border: 1px solid #cccccc; border-radius: 4px;
+    background: #ffffff; color: #555555; font-size: 0; text-decoration: none;
+  }
+  .post-body .ez-toc-title-toggle .ez-toc-btn svg,
+  .post-body .ez-toc-title-toggle .ez-toc-btn img { display: none; }
+  .post-body .ez-toc-title-toggle .ez-toc-btn::after { content: "\2630"; font-size: 16px; line-height: 1; }
+  .post-body .ez-toc-list,
+  .post-body .ez-toc-list ul { list-style: none; margin: 0; padding-left: 0; counter-reset: ez-item; }
+  .post-body .ez-toc-list ul { padding-left: 1.5rem; margin-top: 0.35rem; }
+  .post-body .ez-toc-list li { counter-increment: ez-item; margin: 0.5rem 0; }
+  .post-body .ez-toc-list li > a { color: #444444; text-decoration: none; }
+  .post-body .ez-toc-list li > a:hover { color: #1742E7; text-decoration: underline; }
+  .post-body .ez-toc-list li > a::before { content: counters(ez-item, ".") ". "; color: #444444; }
 }
