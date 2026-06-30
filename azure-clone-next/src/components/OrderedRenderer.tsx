@@ -258,6 +258,34 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         continue;
       }
     }
+    // "Implementing the Best Modern Data Visualization Technologies" — centered heading + a row of
+    // technology logo cards (Power BI / Looker / Tableau / Qlik). The generic path mis-rendered this
+    // as a heading-left 2-column with one oversized logo.
+    if (heading && /implementing the best modern data visualization/i.test(heading)) {
+      const logos = [...lead.imgs, ...units.flatMap((u) => u.imgs)].filter((im) => im.src);
+      if (logos.length >= 2) {
+        out.push(
+          <section key={key++} className={`section ${tone}`}>
+            <div className="container-x">
+              <div className="mx-auto max-w-3xl text-center">
+                <Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>
+                {subtitle && <p className="mt-3 text-body">{subtitle}</p>}
+              </div>
+              <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-4">
+                {logos.map((lg, i) => (
+                  <Reveal key={i} animation="fadeInUp" delay={i * 60}>
+                    <div className="flex items-center justify-center rounded-2xl border border-surface-line bg-white px-6 py-10 shadow-card card-hover">
+                      <Image src={lg.src} alt="" width={200} height={80} className="h-auto max-h-12 w-auto object-contain" />
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>,
+        );
+        continue;
+      }
+    }
     // "The AI Advantage" (Copilot Agent pages) — lavender icon cards w/ exact SVG icons + Request a call CTA.
     // Heading differs per product (recruit: "The AI Advantage…"; it-asset: "Why You Need to Automate ITAM
     // Now"; …) so match the per-page advHeading from agent-extras, falling back to the generic phrase.
@@ -306,6 +334,27 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       tabs.forEach((t, i) => { if (!t.img) t.img = wygImgs[i] ?? ''; });
       if (tabs.length >= 2) {
         out.push(<SectionTabs key={key++} heading={wyg.heading} subtitle={subtitle} tabs={tabs} />);
+        continue;
+      }
+    }
+    // "Learn More About Our Services" — clickable blog-thumbnail cards (each thumbnail carries its own
+    // title; link it to the matching post via getContentLink). The generic path left them unlinked.
+    if (heading && /learn more about our services|related (articles|posts|blogs|resources)/i.test(heading)) {
+      const lmCards = units.filter((u) => u.imgs[0]).map((u) => ({ title: u.title, img: u.imgs[0].src, href: getContentLink(u.title) }));
+      if (lmCards.length >= 2) {
+        out.push(
+          <section key={key++} className={`section ${tone}`}>
+            <div className="container-x">
+              <div className="mx-auto max-w-3xl text-center"><Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>{subtitle && <p className="mt-3 text-body">{subtitle}</p>}</div>
+              <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {lmCards.map((c, i) => {
+                  const inner = <div className="h-full overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card card-hover"><Image src={c.img} alt={c.title} width={420} height={280} className="h-auto w-full" /></div>;
+                  return <Reveal key={i} animation="fadeInUp" delay={i * 80}>{c.href ? <Link href={c.href} className="block h-full">{inner}</Link> : inner}</Reveal>;
+                })}
+              </div>
+            </div>
+          </section>,
+        );
         continue;
       }
     }
@@ -640,7 +689,17 @@ function renderProcessSteps(key: number, heading: string, subtitle: string | und
         {steps.map((s, i) => { const ic = localImg(s.icon); return (
           <Reveal key={i} animation="fadeInUp" delay={i * 80}><div className="relative h-full rounded-2xl border border-surface-line bg-white p-6 text-center shadow-card card-hover">
             <span className="absolute right-4 top-3 text-2xl font-bold text-surface-line">{String(i + 1).padStart(2, '0')}</span>
-            {ic && <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center"><Image src={ic} alt="" width={56} height={56} className="h-14 w-14 object-contain" /></div>}
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
+              {ic
+                ? <Image src={ic} alt="" width={56} height={56} className="h-14 w-14 object-contain" />
+                : <span className="flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-brand text-brand">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                      {/strateg|plan|data/i.test(s.title) ? <><path d="M3 3v18h18" /><path d="M7 14l3-3 3 3 4-5" /></>
+                        : /deploy|design|build|launch|implement/i.test(s.title) ? <path d="M12 19V5M5 12l7-7 7 7" />
+                        : <path d="M5 13l4 4L19 7" />}
+                    </svg>
+                  </span>}
+            </div>
             <h3 className="text-lg font-semibold">{s.title}</h3>
             {s.desc && <p className="mt-2 text-sm leading-relaxed text-body">{s.desc}</p>}
           </div></Reveal>
