@@ -254,7 +254,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     if (tabRec && tabRec.tabs.length >= 2) {
       const tabHeading = tabRec.section && hnorm(tabRec.section) !== hnorm(heading || '') ? tabRec.section : (heading || tabRec.section);
       const eyebrow = headTag === 'h2' && tabRec.section && hnorm(tabRec.section) !== hnorm(heading || '') && hnorm(heading || '') !== hnorm(tabHeading) ? heading : undefined;
-      out.push(<SectionTabs key={key++} heading={tabHeading} eyebrow={eyebrow} tabs={tabRec.tabs} />);
+      out.push(<SectionTabs key={key++} heading={tabHeading} eyebrow={eyebrow} tabs={tabRec.tabs} imageSide="right" />);
       continue;
     }
     // process/methodology steps (re-captured from the live's slides carousel)

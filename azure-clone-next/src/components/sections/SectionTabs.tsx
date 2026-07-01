@@ -11,7 +11,7 @@ export type SectionTab = { label: string; heading?: string; body?: string; items
 
 /** Generic Elementor n-tabs renderer: a pill/underline tab bar + the active tab's panel. The panel
  *  shows either a grid of icon-box sub-items OR an image (dashboard tabs), plus optional body + CTA. */
-export function SectionTabs({ heading, eyebrow, subtitle, tabs }: { heading: string; eyebrow?: string; subtitle?: string; tabs: SectionTab[] }) {
+export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'left' }: { heading: string; eyebrow?: string; subtitle?: string; tabs: SectionTab[]; imageSide?: 'left' | 'right' }) {
   const [active, setActive] = useState(0);
   return (
     <section className="section bg-[linear-gradient(180deg,#eef5fc_0%,#dbeafa_100%)]">
@@ -40,10 +40,12 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs }: { heading: str
             {t.heading && <h3 className="mb-2 text-2xl">{t.heading}</h3>}
             {t.body && <p className="mb-6 max-w-3xl text-sm leading-relaxed text-body">{t.body}</p>}
             {t.img && t.items.length > 0 ? (
-              // 2-column: image left + sub-feature list + CTA right (Copilot Agent "What Do You Get" tabs)
+              // 2-column: sub-feature list + CTA on one side, illustration on the other. imageSide
+              // controls which: 'right' matches the industry pages' live layout (items left, image
+              // right); 'left' keeps the Copilot Agent "What Do You Get" tabs (image left).
               <div className="grid items-start gap-8 lg:grid-cols-2">
-                <Reveal animation="zoomIn"><Image src={t.img} alt={t.label} width={640} height={480} className="h-auto w-full rounded-xl" /></Reveal>
-                <div>
+                <Reveal animation="zoomIn" className={imageSide === 'right' ? 'lg:order-2' : undefined}><Image src={t.img} alt={t.label} width={640} height={480} className="h-auto w-full rounded-xl" /></Reveal>
+                <div className={imageSide === 'right' ? 'lg:order-1' : undefined}>
                   <div className="space-y-5">
                     {t.items.map((it, j) => (
                       <Reveal key={j} animation="fadeInUp" delay={j * 50}><div className="flex gap-4">
