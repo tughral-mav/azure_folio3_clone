@@ -179,6 +179,20 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     // (`[].every()` is true, which used to drop those whole sections).
     if (units.length === 0 && lead.paras.length > 0 && lead.paras.every((p) => /^home\s*[»>]/i.test(p))) continue;
 
+    // headingless client-logo strip (the capture kept these logos as a bare image section). When a
+    // re-captured "Trusted by" band already shows the same logos, skip the duplicate; otherwise render
+    // a clean centered strip instead of the generic bordered "leftover images" grid.
+    if (units.length === 0 && lead.paras.length === 0 && lead.ctas.length === 0 && lead.imgs.length >= 2 && lead.imgs.every((im) => im.w > 0 && im.w < 320)) {
+      if (!trustBand) out.push(
+        <section key={key++} className="border-b border-surface-line bg-white py-10"><div className="container-x">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 opacity-80">
+            {lead.imgs.map((im, j) => <Image key={j} src={im.src} alt="" width={140} height={56} className="h-9 w-auto object-contain lg:h-11" />)}
+          </div>
+        </div></section>,
+      );
+      continue;
+    }
+
     const heading = units[0]?.title;
     const headTag = units[0]?.tag;
     const subtitle = units[0]?.paras[0] ?? lead.paras[0];
@@ -284,6 +298,63 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               </div>
             </div>
           </section>,
+        );
+        continue;
+      }
+    }
+    // "…Solve Real Business Problems" / pain-point grid — icon-topped cards on one faint band split by
+    // thin dividers (the live uses 4-across). The generic path rendered these as 2-col checkmark cards.
+    if (heading && /solve real business problems|real business problems|business problems|problems? (we|it|intellifabric)\b.*solv|(common|key) (data |bi )?(challenges|problems)|pain points/i.test(heading)) {
+      const cards = dedupeUnits(units.slice(1).filter(isRealHead)).filter((u) => u.paras.length <= 1);
+      if (cards.length >= 3) {
+        const painIcon = (t: string) =>
+          /manual|refresh|rebuil|\bbuilt\b/i.test(t) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3" width="11" height="18" rx="2"/><path d="M7 8h4M7 12h4"/><path d="M20.5 14.5a3.2 3.2 0 1 1-1.1-2.4M20.8 11v3h-3"/></svg>'
+          : /analyst|depend|business user|\bteam\b|people|staff/i.test(t) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.2 20a5.8 5.8 0 0 1 11.6 0"/><path d="M16 5.5a3 3 0 0 1 0 5M21 20a5.8 5.8 0 0 0-3.6-5.4"/></svg>'
+          : /data (lives|across|silo)|\berp\b|\bcrm\b|spreadsheet|sources?|scattered|systems?|silos?/i.test(t) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/></svg>'
+          : /dashboard|trust|adopt|report/i.test(t) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8.5h18"/><path d="M7 14l2.5-3L12 13l3-3.5"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>';
+        const cols = cards.length === 4 ? 'lg:grid-cols-4' : cards.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4';
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x">
+            <div className="mx-auto max-w-3xl text-center"><Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>{subtitle && <p className="mt-3 text-body">{subtitle}</p>}</div>
+            <div className={`mt-12 grid overflow-hidden rounded-2xl bg-[#f2f6fc] sm:grid-cols-2 ${cols}`}>
+              {cards.map((c, i) => (
+                <Reveal key={i} animation="fadeInUp" delay={i * 70}><div className={`flex h-full flex-col items-center px-6 py-9 text-center ${i > 0 ? 'lg:border-l lg:border-brand/15' : ''}`}>
+                  <span className="text-brand [&>svg]:h-11 [&>svg]:w-11" dangerouslySetInnerHTML={{ __html: painIcon(c.title) }} />
+                  <p className="mt-5 font-semibold leading-snug text-ink">{c.title}</p>
+                </div></Reveal>
+              ))}
+            </div>
+          </div></section>,
+        );
+        continue;
+      }
+    }
+    // comparison table ("Why … Wins (vs Traditional …)") — two labeled columns (grey vs highlighted
+    // blue), each h3 carrying its rows as paragraphs. The generic path collapsed it to two stub cards.
+    {
+      const compUnits = units.filter((u) => (u.tag === 'h3' || u.tag === 'h4') && u.paras.length >= 2);
+      if (compUnits.length === 2 && /\bvs\.?\b|versus|\bwins\b|traditional/i.test(`${heading ?? ''} ${compUnits.map((u) => u.title).join(' ')}`)) {
+        const isTrad = (t: string) => /traditional|legacy|other|conventional|typical|\bold\b|manual/i.test(t);
+        const trad = compUnits.find((u) => isTrad(u.title)) ?? compUnits[0];
+        const prod = compUnits.find((u) => u !== trad) ?? compUnits[1];
+        const cols = [{ u: trad, blue: false }, { u: prod, blue: true }];
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x">
+            <div className="mx-auto max-w-3xl text-center"><Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>{subtitle && <p className="mt-3 text-body">{subtitle}</p>}</div>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:gap-8">
+              {cols.map(({ u, blue }, ci) => (
+                <Reveal key={ci} animation="fadeInUp" delay={ci * 100}><div className={`overflow-hidden rounded-2xl border ${blue ? 'border-brand' : 'border-surface-line'}`}>
+                  <div className={`px-6 py-5 text-center text-xl font-bold ${blue ? 'bg-brand text-white' : 'bg-[#c9ccd2] text-ink'}`}>{u.title}</div>
+                  <div className="bg-white">
+                    {u.paras.map((row, ri) => (
+                      <div key={ri} className={`px-6 py-4 text-center ${blue ? 'font-semibold text-ink' : 'text-body'} ${ri > 0 ? 'border-t border-surface-line' : ''}`}>{row}</div>
+                    ))}
+                  </div>
+                </div></Reveal>
+              ))}
+            </div>
+          </div></section>,
         );
         continue;
       }
