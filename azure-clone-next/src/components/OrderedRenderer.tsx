@@ -88,6 +88,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   const pageFaq = getFaqFull(page.url ?? '');
   let faqRendered = false;
   let solutionRendered = false; // case-study "Our Solution" (some captures duplicate the section)
+  let caseGridRendered = false; // a "Real Results" case-study grid rendered (suppresses the synthetic nav)
   // n-tabs widget content re-captured from the live (many tabbed sections rendered as flat lists)
   const pageTabs = getPageTabs(page.url ?? '');
   // Copilot Agent page extras (hero stat counters, video) the generic capture missed
@@ -525,12 +526,14 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       }
     }
     if (heading && /real results|success stories|client success|case stud/i.test(heading)) {
-      // the ai-agents sub-pages have NO "Real Results" section on the live — the capture leaked a
-      // generic case-card section (e.g. "Azure Data Services for Private Equity Firm") that doesn't
-      // belong to these pages. Skip it for /ai-agents/<agent>/ routes.
-      if (/\/ai-agents\/[^/]+\/?$/.test(page.url ?? '')) continue;
       const cards = caseCards(sec.items!);
-      out.push(cards.length >= 2 ? renderCaseCards(key++, heading, subtitle, cards, tone) : <CaseStudies key={key++} />);
+      const withImg = cards.filter((c) => c.img);
+      // ai-agents sub-pages DO show a "Real Results, Real Impact" grid on the live — four case-study
+      // cards, each with its own thumbnail (verified against kubemonitor-agent). Render it when the
+      // capture has the real image cards; only skip the leaked/imageless variant on those routes.
+      if (/\/ai-agents\/[^/]+\/?$/.test(page.url ?? '') && withImg.length < 3) continue;
+      if (cards.length >= 2) { caseGridRendered = true; out.push(renderCaseCards(key++, heading, subtitle, cards, tone)); }
+      else out.push(<CaseStudies key={key++} />);
       continue;
     }
     if (heading && /schedule a 1:1 call|book a free|get in touch with our team/i.test(heading)) { out.push(<OneToOneCTA key={key++} tone="light" />); hasForm = true; continue; }
@@ -589,8 +592,11 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   if (pageFaq && !faqRendered) { faqRendered = true; out.push(renderFaq(key++, pageFaq.heading, undefined, pageFaq.items, 'bg-surface-tint', undefined)); }
 
   // "Explore More Services" — the live links to related service/solution pages in-content;
-  // the capture missed that nav section, so render it from the verified per-page link map.
-  const moreLinks = getPageLinks(page.url ?? '');
+  // the capture missed that nav section, so render it from the verified per-page link map. Skip it
+  // when a "Real Results" case-study grid already rendered (e.g. ai-agents pages) — the live shows
+  // that grid instead of a related-services nav, so the synthetic one would just duplicate it.
+  const isAgentSub = /\/ai-agents\/[^/]+\/?$/.test(page.url ?? '');
+  const moreLinks = (caseGridRendered && isAgentSub) ? [] : getPageLinks(page.url ?? '');
   if (moreLinks.length >= 1) out.push(
     <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
       <Reveal animation="fadeInUp"><h2 className="text-center text-2xl lg:text-3xl">Explore More Services</h2></Reveal>
@@ -655,7 +661,7 @@ function renderCaseCards(key: number, heading: string, subtitle: string | undefi
     <section key={key} className={`py-20 lg:py-28 ${tone}`}><div className="container-x">
       <Reveal animation="fadeInUp"><h2 className="text-center text-2xl lg:text-3xl">{heading}</h2></Reveal>
       {subtitle && <p className="mx-auto mb-10 mt-3 max-w-2xl text-center text-body">{subtitle}</p>}{!subtitle && <div className="mb-10" />}
-      <div className={`grid grid-cols-1 gap-7 sm:grid-cols-2 ${cards.length >= 3 ? 'lg:grid-cols-3' : ''}`}>
+      <div className={`grid grid-cols-1 gap-7 sm:grid-cols-2 ${cards.length === 4 ? 'lg:grid-cols-2' : cards.length >= 3 ? 'lg:grid-cols-3' : ''}`}>
         {cards.slice(0, 6).map((c, j) => (
           <Reveal key={j} animation="fadeInUp" delay={j * 80}>
             <CaseFlip title={c.title} body={c.para} href={c.href} img={c.img} />
