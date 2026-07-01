@@ -359,6 +359,34 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         continue;
       }
     }
+    // "Industry-Specific Analytics" — the live uses a tabs widget whose per-tab dashboards the capture
+    // missed; render the captured industry cards (photo + name + Request-a-call) instead of the sparse
+    // generic layout (tiny icon + one shared button).
+    if (heading && /industry[- ]specific analytics|industry[- ]specific|industry analytics/i.test(heading)) {
+      const inds = dedupeUnits(units.slice(1).filter(isRealHead)).filter((u) => u.imgs[0]);
+      if (inds.length >= 2) {
+        const cta = units.flatMap((u) => u.ctas)[0];
+        const ctaHref = cta?.href ?? '#pgForm';
+        const ctaText = cta?.text ?? 'Request a call';
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x">
+            <div className="mx-auto max-w-3xl text-center"><Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{heading}</h2></Reveal>{subtitle && <p className="mt-3 text-body">{subtitle}</p>}</div>
+            <div className={`mt-12 grid gap-6 sm:grid-cols-2 ${inds.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'}`}>
+              {inds.map((u, i) => (
+                <Reveal key={i} animation="fadeInUp" delay={i * 70}><div className="flex h-full flex-col overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card card-hover">
+                  <div className="relative h-44 w-full overflow-hidden bg-surface-tint"><Image src={u.imgs[0].src} alt={u.title} fill sizes="(max-width:768px) 100vw, 25vw" className="object-cover" /></div>
+                  <div className="flex flex-1 flex-col p-6 text-center">
+                    <h3 className="text-lg font-semibold leading-snug text-ink">{u.title}</h3>
+                    <Link href={ctaHref} className="mt-4 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-brand">{ctaText} <span aria-hidden>→</span></Link>
+                  </div>
+                </div></Reveal>
+              ))}
+            </div>
+          </div></section>,
+        );
+        continue;
+      }
+    }
     // "The AI Advantage" (Copilot Agent pages) — lavender icon cards w/ exact SVG icons + Request a call CTA.
     // Heading differs per product (recruit: "The AI Advantage…"; it-asset: "Why You Need to Automate ITAM
     // Now"; …) so match the per-page advHeading from agent-extras, falling back to the generic phrase.
@@ -668,7 +696,9 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   // that grid instead of a related-services nav, so the synthetic one would just duplicate it.
   const isAgentSub = /\/ai-agents\/[^/]+\/?$/.test(page.url ?? '');
   const moreLinks = (caseGridRendered && isAgentSub) ? [] : getPageLinks(page.url ?? '');
-  if (moreLinks.length >= 1) out.push(
+  // a lone related-link card (often just the parent section, e.g. "Solution") isn't a real section on
+  // the live — only render this synthetic nav when there are at least two worthwhile links.
+  if (moreLinks.length >= 2) out.push(
     <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
       <Reveal animation="fadeInUp"><h2 className="text-center text-2xl lg:text-3xl">Explore More Services</h2></Reveal>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
