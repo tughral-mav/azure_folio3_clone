@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, localAsset, localImg, getCounters } from '@/lib/content';
+import { getCaptured, localAsset, localImg, getCounters, getContentLink } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Counter } from '@/components/ui/Counter';
@@ -305,18 +305,23 @@ export default function AiScenarioLibraryPage() {
             <Reveal animation="fadeInUp"><h2 className="text-center text-3xl lg:text-4xl">{real!.units[0].title}</h2></Reveal>
             {real!.units[0].paras[0] && <p className="mx-auto mt-3 max-w-2xl text-center text-body">{real!.units[0].paras[0]}</p>}
             <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-              {realCards.slice(0, 8).map((c, i) => (
+              {realCards.slice(0, 8).map((c, i) => {
+                // some case cards lack a captured link (the live's own "read more" is a dead link) —
+                // resolve by title, else fall back to the case-studies index so every card works.
+                const href = c.href || getContentLink(c.title) || '/case-studies/';
+                return (
                 <Reveal key={i} animation="fadeInUp" delay={(i % 4) * 70}>
                   <div className="flex h-full flex-col overflow-hidden rounded-2xl card-hover border border-surface-line bg-white shadow-card">
                     {c.img && <Image src={c.img} alt={c.title} width={420} height={236} className="h-40 w-full object-cover" />}
                     <div className="flex flex-1 flex-col p-6">
                       <h3 className="text-base leading-snug">{c.title}</h3>
                       {c.body && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{c.body}</p>}
-                      {c.href && <Link href={c.href} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand">Read More <span aria-hidden>→</span></Link>}
+                      <Link href={href} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand">Read More <span aria-hidden>→</span></Link>
                     </div>
                   </div>
                 </Reveal>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, getFaq, localAsset, localImg } from '@/lib/content';
+import { getCaptured, getFaq, localAsset, localImg, getContentLink } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { RetailSolutionTabs, type SolTab } from '@/components/sections/RetailSolutionTabs';
 import { TechTabs } from '@/components/sections/TechTabs';
@@ -295,9 +295,11 @@ export default function AzureDataAnalyticsPage() {
           <div className="container-x">
             <Reveal animation="fadeInUp"><h2 className="text-center text-3xl lg:text-4xl">{learn!.units[0].title}</h2></Reveal>
             <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-              {learnCards.slice(0, 6).map((c, i) => (
-                <Reveal key={i} animation="fadeInUp" delay={i * 70}><div className="flex h-full flex-col overflow-hidden rounded-2xl card-hover border border-surface-line bg-white shadow-card">{c.img && <Image src={c.img} alt={c.title} width={420} height={236} className="h-44 w-full object-cover" />}<div className="flex flex-1 flex-col p-6"><h3 className="text-base leading-snug">{c.title}</h3>{c.body && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{c.body}</p>}</div></div></Reveal>
-              ))}
+              {learnCards.slice(0, 6).map((c, i) => {
+                const href = c.href || getContentLink(c.title);
+                const inner = <div className="flex h-full flex-col overflow-hidden rounded-2xl card-hover border border-surface-line bg-white shadow-card">{c.img && <Image src={c.img} alt={c.title} width={420} height={236} className="h-44 w-full object-cover" />}<div className="flex flex-1 flex-col p-6"><h3 className="text-base leading-snug">{c.title}</h3>{c.body && <p className="mt-3 flex-1 text-sm leading-relaxed text-body">{c.body}</p>}</div></div>;
+                return <Reveal key={i} animation="fadeInUp" delay={i * 70}>{href ? <Link href={href} className="block h-full">{inner}</Link> : inner}</Reveal>;
+              })}
             </div>
           </div>
         </section>
