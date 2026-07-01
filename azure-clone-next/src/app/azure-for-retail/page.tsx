@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, getFaq, getCardIcon, localAsset, localImg } from '@/lib/content';
+import { getCaptured, getFaq, getCardIcon, localAsset, localImg, getRetailTabIcons } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { CardIcon } from '@/components/ui/CardIcon';
 import { RetailSolutionTabs, type SolTab } from '@/components/sections/RetailSolutionTabs';
@@ -72,6 +72,7 @@ export default function AzureForRetailPage() {
   const solS = page.sections.map((s) => parse(s.items ?? [])).find(({ units }) => units.some((u) => /powerful solutions to meet/i.test(u.title)))!;
   const solHead = solS.units.find((u) => u.tag === 'h2')!.title;
   const tabUnits = solS.units.filter((u) => u.tag === 'h3');
+  const retailIcon = getRetailTabIcons(); // per-feature inline SVG icons extracted from the live
   const tabs: SolTab[] = [];
   let bucket: Unit[] = [];
   for (const u of tabUnits) {
@@ -80,7 +81,7 @@ export default function AzureForRetailPage() {
       const label = bucket[0];
       const img = u.imgs[0].src;
       const cta = bucket.flatMap((b) => b.ctas)[0] ?? { text: 'Find Out More', href: FORM };
-      tabs.push({ label: label.title, body: label.paras[0] ?? '', img, cta: { label: cta.text, href: cta.href }, features: bucket.slice(1).map((f) => ({ title: f.title, body: f.paras[0] ?? '' })) });
+      tabs.push({ label: label.title, body: label.paras[0] ?? '', img, cta: { label: cta.text, href: cta.href }, features: bucket.slice(1).map((f) => ({ title: f.title, body: f.paras[0] ?? '', icon: retailIcon(f.title) })) });
       bucket = [];
     }
   }

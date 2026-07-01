@@ -218,6 +218,17 @@ export function getFlipMap(url: string): Map<string, { back: string; icon: strin
   return m;
 }
 
+// Retail "Powerful Solutions" tab sub-feature icons (per-feature inline SVGs the capture missed),
+// extracted from the live (retail-icons.mjs → content-kit/retail-tab-icons.json) keyed by feature
+// title. The bespoke retail page uses this to give each tab feature its real icon (not a checkmark).
+let _retailIcons: Record<string, string> | null = null;
+export function getRetailTabIcons(): (title: string) => string {
+  if (_retailIcons === null) { try { _retailIcons = JSON.parse(readFileSync(path.join(KIT, '..', 'retail-tab-icons.json'), 'utf8')); } catch { _retailIcons = {}; } }
+  const m = new Map<string, string>();
+  for (const [title, svg] of Object.entries(_retailIcons ?? {})) { const k = clNorm(title); if (k && svg) m.set(k, svg); }
+  return (title: string) => m.get(clNorm(title)) ?? '';
+}
+
 // n-tabs "Solutions" sections ship an eyebrow + a big intro heading (often a span the capture
 // missed, e.g. "Boost Efficiency, Cut Costs & Reduce Risks"). Extracted from the live
 // (verify/extract-tabheads.mjs → clone-kit/tab-intro.json) keyed by page slug: [eyebrow, heading].

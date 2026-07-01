@@ -11,7 +11,7 @@ export type SolTab = {
   body: string;
   img: string;
   cta: { label: string; href: string };
-  features: { title: string; body: string }[];
+  features: { title: string; body: string; icon?: string }[];
 };
 
 /** "Powerful Solutions…" — the live's tabbed interface: pill tab-bar + a 2-col
@@ -56,9 +56,11 @@ export function RetailSolutionTabs({ heading, eyebrow, tabs }: { heading: string
               <ul className="mt-6 space-y-5">
                 {t.features.map((f) => (
                   <li key={f.title} className="flex gap-3">
-                    <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-surface-chip text-brand">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" className="h-3.5 w-3.5"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                    </span>
+                    {f.icon && f.icon.startsWith('<svg')
+                      ? <span className="mt-0.5 inline-block shrink-0 [&>svg]:h-9 [&>svg]:w-auto" dangerouslySetInnerHTML={{ __html: f.icon }} />
+                      : <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-surface-chip text-brand">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" className="h-3.5 w-3.5"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                        </span>}
                     <div>
                       <h4 className="font-semibold text-ink">{f.title}</h4>
                       <p className="mt-1 text-sm leading-relaxed text-body">{f.body}</p>
