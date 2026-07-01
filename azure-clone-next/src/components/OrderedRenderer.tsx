@@ -66,7 +66,7 @@ function isChrome(items: CapturedItem[]) {
 }
 
 export function OrderedRenderer({ page, title, slug, faq = [] }: { page: CapturedPage; title: string; slug?: string; faq?: string[] }) {
-  const sections = (page.sections || []).filter((s) => s.items && s.items.length && !isChrome(s.items));
+  const rawSections = (page.sections || []).filter((s) => s.items && s.items.length && !isChrome(s.items));
   const heroBg = (page.bgImages ?? []).map(localImg).find((b) => b && !isChromeImg(b)) ?? '';
   // nested page → breadcrumb shows the parent too (Home » Parent » Page), parent linked
   const _segs = (page.url ?? '').replace(/^https?:\/\/[^/]+/, '').replace(/[?#].*$/, '').replace(/^\/|\/$/g, '').split('/').filter(Boolean);
@@ -75,6 +75,26 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     : null;
   // flip-box back content the live has (front title → back desc + icon); turns matching card grids into flip cards
   const flipMap = getFlipMap(page.url ?? '');
+  // The capture sometimes splits one Elementor flip-box row into two sections — a titled section
+  // followed by a headingless remainder (e.g. logistics "Navigating The Key Challenges…"). When both
+  // hold flip-mappable cards, stitch the remainder back onto the previous section so the full card
+  // grid renders as one (and a stray leading card isn't mistaken for the section heading).
+  const sections: typeof rawSections = [];
+  for (const sec of rawSections) {
+    const u = parse(sec.items!);
+    const headed = u.units.some((x) => x.tag === 'h1' || x.tag === 'h2');
+    const cards = u.units.filter((x) => x.tag === 'h3' || x.tag === 'h4');
+    const allFlip = cards.length >= 2 && cards.every((x) => flipMap.has(_hnorm(x.title)));
+    const prev = sections[sections.length - 1];
+    if (!headed && allFlip && prev) {
+      const prevCards = parse(prev.items!).units.filter((x) => x.tag === 'h3' || x.tag === 'h4');
+      if (prevCards.length >= 1 && prevCards.every((x) => flipMap.has(_hnorm(x.title)))) {
+        prev.items = [...(prev.items ?? []), ...(sec.items ?? [])];
+        continue;
+      }
+    }
+    sections.push({ ...sec, items: [...(sec.items ?? [])] });
+  }
   const tabIntro = getTabIntro(page.url ?? ''); // [eyebrow, big heading] for the n-tabs "Solutions" section
   // stat counters keyed by their live section heading (CTA counters are handled by OneToOneCTA)
   const pageCounters = getCounters(page.url ?? '').filter((c) => !/schedule a 1.?1|get in touch/i.test(c.section));
@@ -304,7 +324,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     }
     // "…Solve Real Business Problems" / pain-point grid — icon-topped cards on one faint band split by
     // thin dividers (the live uses 4-across). The generic path rendered these as 2-col checkmark cards.
-    if (heading && /solve real business problems|real business problems|business problems|problems? (we|it|intellifabric)\b.*solv|(common|key) (data |bi )?(challenges|problems)|pain points/i.test(heading)) {
+    if (heading && /solve real business problems|real business problems/i.test(heading)) {
       const cards = dedupeUnits(units.slice(1).filter(isRealHead)).filter((u) => u.paras.length <= 1);
       if (cards.length >= 3) {
         const painIcon = (t: string) =>
@@ -956,8 +976,8 @@ function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs
   const flips: (undefined | { back: string; icon: string; href: string })[] = entries.map((e: Unit) => flipMap?.get?.(fnorm(e.title)));
   const flipHit = flips.filter(Boolean).length;
   const isFlipSection = !bigImgs.length && flipHit >= 2 && flipHit >= Math.ceil(entries.length / 2);
-  // flip boxes sit in a single row on the live (4 cards → 4 cols), not the 2-col card grid
-  const flipCols = entries.length >= 4 ? 'lg:grid-cols-4' : entries.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2';
+  // flip boxes sit in a single row on the live (4 → 4 cols); 3 or 6 use a 3-col grid (3×1 / 3×2)
+  const flipCols = entries.length === 3 || entries.length === 6 ? 'lg:grid-cols-3' : entries.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-2';
   const flipIcon = (e: Unit, rec?: { icon: string }) => {
     const ic = rec?.icon || '';
     if (ic.startsWith('<svg')) return <span className="inline-flex h-12 w-12 items-center justify-center text-brand [&_svg]:h-10 [&_svg]:w-10" dangerouslySetInnerHTML={{ __html: ic }} />;
