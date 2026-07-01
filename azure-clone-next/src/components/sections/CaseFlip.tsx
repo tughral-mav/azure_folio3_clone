@@ -20,6 +20,9 @@ const CASE_HREF: Record<string, string> = {
   'city university': '/city-university-azure/',
   daraz: '/daraz/',
   'food verification organization': '/copilot-implementation-food-verification/',
+  // this "Real Results" card ships no Read-More href in the capture (dead on the live too) and has
+  // no dedicated study page — send it to the case-studies index so the card still links somewhere.
+  'azure data services for private equity firm': '/case-studies/',
 };
 
 /** Case-study flip card matching the live's "Real Results" flip boxes: front shows
