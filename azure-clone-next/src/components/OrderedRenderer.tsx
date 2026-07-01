@@ -87,6 +87,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   // full FAQ Q&A re-captured from the live accordion (the original capture had questions only)
   const pageFaq = getFaqFull(page.url ?? '');
   let faqRendered = false;
+  let solutionRendered = false; // case-study "Our Solution" (some captures duplicate the section)
   // n-tabs widget content re-captured from the live (many tabbed sections rendered as flat lists)
   const pageTabs = getPageTabs(page.url ?? '');
   // Copilot Agent page extras (hero stat counters, video) the generic capture missed
@@ -378,20 +379,146 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const desc = units.flatMap((u) => u.paras).filter((p) => p.length > 40 && !markerRe.test(p.trim()));
       const cimg = allImgs.filter((im) => im.w >= 140 && !isChromeImg(im.src)).sort((a, b) => b.w - a.w)[0];
       if (facts.length) {
-        const hasRight = desc.length > 0 || !!cimg;
+        // Full-width blue banner (matches the live): icon-facts on the left + a divider, then the
+        // "About The Client" heading + description on the right. Icon chosen from the fact's shape.
+        const factIcon = (f: string) =>
+          /\d|employee|\bstaff\b|\+/.test(f) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7.5" r="3"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.8a3 3 0 0 1 0 5.4M22 20a6.5 6.5 0 0 0-4.3-6.1"/></svg>'
+          : /,\s*[a-z]|\b(usa|uk|california|texas|london|city|state|county|remote)\b/i.test(f) ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-10.5a6.5 6.5 0 1 1 13 0C18.5 15.3 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.4"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h1.5M13.5 7H15M9 11h1.5M13.5 11H15M9 15h1.5M13.5 15H15"/></svg>';
         out.push(
-          <section key={key++} className={`py-16 lg:py-20 ${tone}`}><div className={`container-x grid items-stretch gap-8 ${hasRight ? 'lg:grid-cols-[0.9fr_1.4fr]' : 'mx-auto max-w-xl'}`}>
-            <div className="rounded-2xl bg-[linear-gradient(150deg,#143CD5_0%,#1742E7_60%,#2F69F2_100%)] p-8 text-white shadow-card">
-              <p className="text-sm font-semibold uppercase tracking-wider text-white/75">{eyebrow}</p>
-              {nameU && <h2 className="mt-2 text-3xl font-bold">{nameU.title}</h2>}
-              <ul className="mt-6 space-y-4">{facts.map((f, j) => <li key={j} className="border-b border-white/15 pb-3 text-sm text-white/90">{f}</li>)}</ul>
+          <section key={key++} className="bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 text-white lg:py-20"><div className="container-x grid items-center gap-10 lg:grid-cols-[0.8fr_1.6fr]">
+            <div className="grid grid-cols-3 gap-5 lg:grid-cols-1 lg:gap-7 lg:border-r lg:border-white/25 lg:pr-10">
+              {facts.map((f, j) => (
+                <div key={j} className="text-center lg:text-left">
+                  <span className="inline-flex text-white [&>svg]:h-9 [&>svg]:w-9" dangerouslySetInnerHTML={{ __html: factIcon(f) }} />
+                  <p className="mt-2 text-sm font-semibold leading-snug">{f}</p>
+                </div>
+              ))}
             </div>
-            {hasRight && (
-              <div className="flex flex-col justify-center">
-                {desc.map((p, j) => <p key={j} className="mt-3 text-body first:mt-0">{p}</p>)}
-                {cimg && <Reveal animation="zoomIn" className="mt-6"><Image src={cimg.src} alt={nameU?.title ?? title} width={560} height={320} className="h-auto w-full rounded-xl" /></Reveal>}
-              </div>
-            )}
+            <div>
+              {nameU
+                ? <><p className="text-sm font-semibold uppercase tracking-wider text-white/70">{eyebrow}</p><h2 className="mt-2 text-3xl font-bold lg:text-4xl">{nameU.title}</h2></>
+                : <h2 className="text-3xl font-bold lg:text-4xl">{eyebrow}</h2>}
+              {desc.map((p, j) => <p key={j} className="mt-4 max-w-2xl leading-relaxed text-white/90">{p}</p>)}
+            </div>
+          </div></section>,
+        );
+        continue;
+      }
+    }
+    // case-study "The Problem / Challenges": a problem statement + a list of long, standalone challenge
+    // sentences (each an h3 with no body). Live layout: left tinted panel (icon + eyebrow + heading +
+    // desc + CTA) | right numbered challenge list joined by a connecting line.
+    if (isCaseStudy) {
+      const problemMarkerRe = /^(the problem|the challenge|challenges?(\s+faced)?|problems?(\s+faced)?|key challenges?)$/i;
+      const challengeItems = units.filter((u) => (u.tag === 'h3' || u.tag === 'h4') && !u.title.trim().startsWith('<') && !problemMarkerRe.test(u.title.trim()) && u.paras.length === 0 && u.title.trim().length > 45);
+      if (challengeItems.length >= 3) {
+        const markerU = units.find((u) => problemMarkerRe.test(u.title.trim()));
+        const pHead = units.find((u) => u.tag === 'h2' && !problemMarkerRe.test(u.title.trim()))?.title ?? markerU?.title ?? heading;
+        const eyebrow = markerU && markerU.title !== pHead ? markerU.title : 'The Problem';
+        const pDesc = units.flatMap((u) => u.paras).filter((p) => p.length > 40);
+        const pCta = units.flatMap((u) => u.ctas).concat(lead.ctas).find((c) => c.text);
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x grid items-start gap-10 lg:grid-cols-[0.95fr_1.15fr] lg:gap-16">
+            <div className="rounded-2xl bg-[#eef3fb] p-8 lg:p-10">
+              <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+              </span>
+              <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand">{eyebrow}</p>
+              <h2 className="mt-2 text-3xl font-bold leading-tight text-ink lg:text-4xl">{pHead}</h2>
+              {pDesc.map((p, j) => <p key={j} className="mt-4 text-body">{p}</p>)}
+              {pCta && <Link href={pCta.href} className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:opacity-90">{pCta.text} <span aria-hidden>→</span></Link>}
+            </div>
+            <ol className="space-y-5">
+              {challengeItems.map((c, j) => (
+                <Reveal key={j} animation="fadeInUp" delay={j * 60}><li className="flex gap-5">
+                  <div className="flex flex-col items-center self-stretch">
+                    <span className="z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white shadow-md">{j + 1}</span>
+                    {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/30" aria-hidden />}
+                  </div>
+                  <p className="pt-2 text-body leading-relaxed">{c.title}</p>
+                </li></Reveal>
+              ))}
+            </ol>
+          </div></section>,
+        );
+        continue;
+      }
+    }
+    // case-study "Our Solution": eyebrow + heading + intro, then a grid of feature cards (icon + title
+    // + optional body). Detected by an "Our Solution" marker or a "Folio3 designed/implemented…" intro.
+    if (isCaseStudy) {
+      const solMarkerRe = /^(our solution|the solution|folio3 solution|the folio3 solution|solution)$/i;
+      const introSolRe = /folio3\s+(designed|implemented|partnered|developed|built|created|delivered)/i;
+      const introSol = units.some((u) => introSolRe.test(u.title) || /the (key )?(features|solution|components|capabilities)\b.*(include|encompass)/i.test(u.title));
+      const hasSolMarker = units.some((u) => solMarkerRe.test(u.title.trim()));
+      const featureUnits = dedupeUnits(units.filter((u) => (u.tag === 'h3' || u.tag === 'h4') && !u.title.trim().startsWith('<') && !solMarkerRe.test(u.title.trim()) && u.title.trim().length < 62));
+      if ((hasSolMarker || introSol) && featureUnits.length >= 2) {
+        if (solutionRendered) continue; // some captures duplicate this section — render it only once
+        solutionRendered = true;
+        const eyebrow = units.find((u) => solMarkerRe.test(u.title.trim()))?.title ?? 'Our Solution';
+        const h2s = units.filter((u) => u.tag === 'h2' && !solMarkerRe.test(u.title.trim()));
+        const introU = h2s.find((u) => introSolRe.test(u.title) || /(include|encompass)/i.test(u.title));
+        const solHead = (h2s.find((u) => u !== introU) ?? h2s[0])?.title ?? heading;
+        const solIntro = introU?.title;
+        const solCta = units.flatMap((u) => u.ctas).concat(lead.ctas).find((c) => c.text);
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-wider text-brand">{eyebrow}</p>
+              <h2 className="mt-2 text-3xl font-bold leading-tight text-ink lg:text-4xl">{solHead}</h2>
+              {solIntro && <p className="mt-5 text-body">{solIntro}</p>}
+            </div>
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {featureUnits.map((f, j) => (
+                <Reveal key={j} animation="fadeInUp" delay={j * 60}><div className="h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card card-hover">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
+                    {f.imgs[0]
+                      ? <Image src={f.imgs[0].src} alt="" width={26} height={26} className="h-6 w-6 object-contain" />
+                      : j + 1}
+                  </span>
+                  <h3 className="mt-5 text-lg font-semibold text-ink">{f.title}</h3>
+                  {f.paras[0] && <p className="mt-3 text-sm leading-relaxed text-body">{f.paras[0]}</p>}
+                </div></Reveal>
+              ))}
+            </div>
+            {solCta && <div className="mt-10 text-center"><Link href={solCta.href} className="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:opacity-90">{solCta.text} <span aria-hidden>→</span></Link></div>}
+          </div></section>,
+        );
+        continue;
+      }
+    }
+    // case-study "Business Outcomes": intro + outcome cards (captured SVG icon when present, else a big
+    // stat pulled from the label, else a check). Icons are index-aligned with the clean outcome labels.
+    if (isCaseStudy && heading && /^(business outcomes|business impact|the (results|outcomes?|impact)|key (results|outcomes)|results (achieved|delivered)|outcomes?( delivered| achieved)?)$/i.test(heading.trim())) {
+      const outcomeUnits = dedupeUnits(units.filter((u) => (u.tag === 'h3' || u.tag === 'h4') && !u.title.trim().startsWith('<')));
+      if (outcomeUnits.length >= 2) {
+        const oIntro = units[0]?.paras[0] ?? lead.paras[0];
+        const oCta = units.flatMap((u) => u.ctas).concat(lead.ctas).find((c) => c.text);
+        const icons = allImgs.filter((im) => im.src);
+        out.push(
+          <section key={key++} className={`section ${tone}`}><div className="container-x">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-bold leading-tight text-ink lg:text-4xl">{heading}</h2>
+              {oIntro && <p className="mt-5 text-body">{oIntro}</p>}
+            </div>
+            <div className={`mt-12 grid gap-6 ${outcomeUnits.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
+              {outcomeUnits.map((o, j) => {
+                const m = o.title.trim().match(/^([\d.,]+%?\+?|[\d.,]+x)\s+(.*)$/i);
+                const icon = icons[j]?.src;
+                return (
+                  <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-surface-line bg-white p-8 text-center shadow-card card-hover">
+                    {icon
+                      ? <Image src={icon} alt="" width={64} height={64} className="h-16 w-16 object-contain" />
+                      : m
+                        ? <span className="text-4xl font-bold text-brand">{m[1]}</span>
+                        : <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6"><circle cx="12" cy="12" r="9" /><path d="m8.5 12 2.5 2.5 5-5" /></svg></span>}
+                    <h3 className="mt-4 text-lg font-semibold leading-snug text-ink">{icon ? o.title : (m ? m[2] : o.title)}</h3>
+                  </div></Reveal>
+                );
+              })}
+            </div>
+            {oCta && <div className="mt-10 text-center"><Link href={oCta.href} className="inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:opacity-90">{oCta.text} <span aria-hidden>→</span></Link></div>}
           </div></section>,
         );
         continue;
