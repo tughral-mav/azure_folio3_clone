@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
-import { getBlogSlugs, getBlogPost } from '@/lib/content';
-import { Section } from '@/components/ui/Section';
+import { getBlogSlugs, getBlogPost, getBlogCategories } from '@/lib/content';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { BlogCategoryList } from '@/components/sections/BlogCategoryList';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -18,7 +17,8 @@ export default function BlogIndex() {
   const posts = getBlogSlugs()
     .map((slug) => getBlogPost(slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p))
-    .slice(0, 60);
+    .map((p) => ({ slug: p.slug, title: p.title, description: p.description ?? undefined }));
+  const categories = getBlogCategories();
 
   return (
     <>
@@ -35,21 +35,7 @@ export default function BlogIndex() {
         </div>
       </section>
       <Breadcrumb name="Blog" />
-      <Section>
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((p) => (
-          <Link
-            key={p.slug}
-            href={`/blog/${p.slug}/`}
-            className="group rounded-xl border border-surface-line bg-white p-6 shadow-card transition-shadow hover:shadow-cardHover"
-          >
-            <h3 className="text-lg leading-snug group-hover:text-brand">{p.title}</h3>
-            {p.description && <p className="mt-3 line-clamp-3 text-sm text-body">{p.description}</p>}
-            <span className="mt-4 inline-block text-sm font-semibold text-brand">Read article →</span>
-          </Link>
-        ))}
-      </div>
-      </Section>
+      <BlogCategoryList posts={posts} categories={categories} />
       <OneToOneCTA tone="dark" />
     </>
   );
