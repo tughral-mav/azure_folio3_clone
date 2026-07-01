@@ -34,9 +34,11 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'lef
           ))}
         </div>
 
-        {/* panels — render all, hide inactive (so all content + images are in the DOM) */}
-        {tabs.map((t, i) => (
-          <div key={i} className={clsx('mt-10 rounded-2xl bg-white p-6 shadow-card lg:p-10', active === i ? '' : 'hidden')}>
+        {/* Render ONLY the active panel. Rendering every panel (even hidden) inlined all tabs' icon
+            SVGs + illustrations into the HTML — hundreds of KB — and forced their images to load.
+            Switching re-renders instantly; the newly-active image loads on demand (small, edge-cached). */}
+        {tabs.map((t, i) => active !== i ? null : (
+          <div key={i} className="mt-10 rounded-2xl bg-white p-6 shadow-card lg:p-10">
             {t.heading && <h3 className="mb-2 text-2xl">{t.heading}</h3>}
             {t.body && <p className="mb-6 max-w-3xl text-sm leading-relaxed text-body">{t.body}</p>}
             {t.img && t.items.length > 0 ? (
@@ -44,7 +46,7 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'lef
               // controls which: 'right' matches the industry pages' live layout (items left, image
               // right); 'left' keeps the Copilot Agent "What Do You Get" tabs (image left).
               <div className="grid items-start gap-8 lg:grid-cols-2">
-                <Reveal animation="zoomIn" className={imageSide === 'right' ? 'lg:order-2' : undefined}><Image src={t.img} alt={t.label} width={640} height={480} className="h-auto w-full rounded-xl" /></Reveal>
+                <Reveal animation="zoomIn" className={imageSide === 'right' ? 'lg:order-2' : undefined}>{active === i && <Image src={t.img} alt={t.label} width={640} height={480} sizes="(max-width: 1024px) 100vw, 45vw" className="h-auto w-full rounded-xl" />}</Reveal>
                 <div className={imageSide === 'right' ? 'lg:order-1' : undefined}>
                   <div className="space-y-5">
                     {t.items.map((it, j) => (
@@ -79,21 +81,18 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'lef
                     ))}
                   </div>
                 ) : t.img ? (
-                  <Reveal animation="zoomIn"><Image src={t.img} alt={t.label} width={1100} height={620} className="mx-auto h-auto w-full rounded-xl" /></Reveal>
+                  <Reveal animation="zoomIn">{active === i && <Image src={t.img} alt={t.label} width={1100} height={620} sizes="(max-width: 1024px) 100vw, 60vw" className="mx-auto h-auto w-full rounded-xl" />}</Reveal>
                 ) : null}
                 {t.cta && t.cta.href && <Link href={t.cta.href} className="btn-primary mt-7 uppercase tracking-wide">{t.cta.text || 'Learn More'}</Link>}
               </>
             )}
           </div>
         ))}
-
-        {/* preload inactive tab images so switching is instant + nothing is "missing" */}
-        <div aria-hidden className="h-0 w-0 overflow-hidden">
-          {tabs.flatMap((t) => [t.img, ...t.items.map((it) => it.icon)]).filter(Boolean).map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={i} src={src as string} alt="" width={2} height={2} loading="lazy" />
-          ))}
-        </div>
+        {/* Note: only the ACTIVE panel renders its illustration (an optimized next/image), so a page
+            with many tabs loads one image, not all of them. The previous version also emitted a hidden
+            <img> per item that used the inline SVG icon strings as `src` — firing dozens of broken
+            requests and bloating the HTML; that preload block was removed. Other tabs' images load on
+            demand when their tab is selected (small, and edge-cached after first optimization). */}
       </div>
     </section>
   );
