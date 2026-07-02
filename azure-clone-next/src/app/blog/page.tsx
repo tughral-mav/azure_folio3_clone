@@ -17,7 +17,7 @@ export default function BlogIndex() {
   const posts = getBlogSlugs()
     .map((slug) => getBlogPost(slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p))
-    .map((p) => ({ slug: p.slug, title: p.title, description: p.description ?? undefined }));
+    .map((p) => ({ slug: p.slug, title: p.title, description: p.description ?? undefined, image: p.heroImage || undefined }));
   const categories = getBlogCategories();
 
   return (
