@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-export type BlogCard = { slug: string; title: string; description?: string };
+export type BlogCard = { slug: string; title: string; description?: string; image?: string };
 export type BlogCat = { label: string; slug: string; posts: string[] };
 
 /** Blog index "Categories" filter — matches the live: a left CATEGORIES sidebar of tabs + a grid of
@@ -37,7 +38,7 @@ export function BlogCategoryList({ posts, categories }: { posts: BlogCard[]; cat
                   <button
                     type="button"
                     onClick={() => setActive(t.slug)}
-                    aria-pressed={active === t.slug}
+                    aria-current={active === t.slug ? 'true' : undefined}
                     className={`block w-full border-b border-surface-line px-6 py-4 text-left text-sm transition-colors last:border-b-0 ${active === t.slug ? 'font-semibold text-brand' : 'text-body hover:bg-surface-tint hover:text-brand'}`}
                   >
                     {t.label}
@@ -55,11 +56,18 @@ export function BlogCategoryList({ posts, categories }: { posts: BlogCard[]; cat
                   <Link
                     key={p.slug}
                     href={`/blog/${p.slug}/`}
-                    className="group flex h-full flex-col rounded-xl border border-surface-line bg-white p-6 shadow-card transition-shadow hover:shadow-cardHover"
+                    className="group flex h-full flex-col overflow-hidden rounded-xl border border-surface-line bg-white shadow-card transition-shadow hover:shadow-cardHover"
                   >
-                    <h3 className="text-lg leading-snug group-hover:text-brand">{p.title}</h3>
-                    {p.description && <p className="mt-3 line-clamp-3 text-sm text-body">{p.description}</p>}
-                    <span className="mt-4 inline-block text-sm font-semibold text-brand">Read article →</span>
+                    {p.image && (
+                      <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-tint">
+                        <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col p-6">
+                      <h3 className="text-lg leading-snug group-hover:text-brand">{p.title}</h3>
+                      {p.description && <p className="mt-3 line-clamp-3 text-sm text-body">{p.description}</p>}
+                      <span className="mt-4 inline-block text-sm font-semibold text-brand">Read article →</span>
+                    </div>
                   </Link>
                 ))}
               </div>
