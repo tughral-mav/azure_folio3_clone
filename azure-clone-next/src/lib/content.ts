@@ -334,6 +334,16 @@ export function getCaptured(slug: string): CapturedPage | null {
   return data as CapturedPage;
 }
 
+/** Blog categories + the post slugs in each, matching the live blog page's "Categories" filter
+ *  (extracted from the live: blog-cats.mjs → content-kit/blog-categories.json). Powers the blog
+ *  index's category tabs. "All" is implicit (every post). */
+export type BlogCategory = { label: string; slug: string; posts: string[] };
+let _blogCats: BlogCategory[] | null = null;
+export function getBlogCategories(): BlogCategory[] {
+  if (_blogCats === null) { try { _blogCats = JSON.parse(readFileSync(path.join(KIT, '..', 'blog-categories.json'), 'utf8')); } catch { _blogCats = []; } }
+  return _blogCats ?? [];
+}
+
 /** List blog post slugs (drives generateStaticParams). */
 export function getBlogSlugs(): string[] {
   if (!existsSync(KIT)) return [];
