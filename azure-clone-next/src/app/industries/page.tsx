@@ -23,6 +23,7 @@ export default function IndustriesIndex() {
     <>
       <Section>
         <SectionHeading
+          as="h1"
           eyebrow="Industries"
           title="Azure solutions for your industry"
           subtitle="Domain-specific cloud, data and AI accelerators built on Microsoft Azure."
