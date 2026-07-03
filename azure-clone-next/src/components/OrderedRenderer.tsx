@@ -1053,6 +1053,10 @@ function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs
           <Reveal animation="fadeInRight"><Image src={img.src} alt={heading ?? title} width={560} height={620} className="mx-auto h-auto w-full rounded-2xl" /></Reveal></div></div></section>
       );
     }
+    // A card-grid section's cards use their own icons, so any other captured photo in this section is
+    // a decorative/leaked image the live doesn't show as a standalone card — consume it so it doesn't
+    // spill into the trailing "leftover images" grid (e.g. construction's stray worker photo).
+    allImgs.forEach((im: Img) => takeImg(im.src));
     // card grid — flip cards when the live renders this section as flip boxes, else static cards
     return (
       <section key={key} className={`py-20 lg:py-28 ${tone}`}><div className="container-x">{(Eyebrow || bodyHeading) && <Reveal animation="fadeInUp"><div>{Eyebrow}{bodyHeading && <h2 className="text-center text-2xl lg:text-3xl">{bodyHeading}</h2>}</div></Reveal>}{subtitle && <p className="mx-auto mb-10 mt-3 max-w-2xl text-center text-body">{subtitle}</p>}{!subtitle && (bodyHeading || Eyebrow) && <div className="mb-10" />}
