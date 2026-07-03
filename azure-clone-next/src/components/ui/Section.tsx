@@ -33,17 +33,20 @@ export function SectionHeading({
   subtitle,
   align = 'center',
   light = false,
+  as: Tag = 'h2',
 }: {
   eyebrow?: string;
   title: string;
   subtitle?: string;
   align?: 'center' | 'left';
   light?: boolean;
+  /** heading level for the title (default h2) — set to 'h1' on index pages that need a page H1 */
+  as?: 'h1' | 'h2';
 }) {
   return (
     <Reveal animation="fadeInUp" className={clsx('max-w-3xl', align === 'center' ? 'mx-auto text-center' : 'text-left')}>
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
-      <h2 className={clsx('text-3xl lg:text-4xl', light && 'text-white')}>{title}</h2>
+      <Tag className={clsx('text-3xl lg:text-4xl', light && 'text-white')}>{title}</Tag>
       {subtitle && (
         <p className={clsx('mt-4 text-lg', light ? 'text-white/70' : 'text-body')}>{subtitle}</p>
       )}
