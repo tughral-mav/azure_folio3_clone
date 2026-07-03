@@ -91,7 +91,7 @@ export default function AzureForRetailPage() {
 
   const appr = sec(/folio3 approach to azure/i)!;
   const apprU = appr.units.find((u) => u.tag === 'h2')!;
-  const apprCards = appr.units.filter((u) => u.tag === 'h3').map((u) => ({ title: u.title, body: u.paras[0] ?? '' }));
+  const apprCards = appr.units.filter((u) => u.tag === 'h3').map((u) => ({ title: u.title, body: (u.paras[0] ?? '').replace(/\s*Learn More[\s>]*$/i, '').trim() }));
 
   const wc = sec(/why choose folio3/i)!;
   const wcU = wc.units[0];
@@ -183,9 +183,16 @@ export default function AzureForRetailPage() {
         <div className="container-x">
           <div className="mx-auto max-w-3xl text-center"><Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">{apprU.title}</h2></Reveal><p className="mt-4 text-body">{apprU.paras[0]}</p></div>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {apprCards.map((c, i) => (
-              <Reveal key={c.title} animation="fadeInUp" delay={i * 80}><div className="card-hover h-full rounded-xl border border-transparent bg-surface-tint p-7"><CardIcon src={getCardIcon(SLUG, c.title)} /><h3 className="mt-4 text-xl">{c.title}</h3><p className="mt-2 text-sm leading-relaxed text-body">{c.body}</p><Link href={FORM} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">Learn More →</Link></div></Reveal>
-            ))}
+            {apprCards.map((c, i) => {
+              const ic = localImg(getCardIcon(SLUG, c.title));
+              return (
+              <Reveal key={c.title} animation="fadeInUp" delay={i * 80}><div className="card-hover flex h-full flex-col rounded-xl border border-surface-line bg-white p-7">
+                <span className="svc-ic flex h-12 w-12 items-center justify-center rounded-[10px] border border-[#e9eefb] bg-white text-brand">
+                  {ic ? <span className="svc-ic-glyph h-7 w-7" style={{ '--ic': `url("${ic}")` } as React.CSSProperties} /> : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-6 w-6"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                </span>
+                <h3 className="mt-4 text-xl">{c.title}</h3><p className="mt-2 text-sm leading-relaxed text-body">{c.body}</p><Link href={FORM} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">Learn More →</Link>
+              </div></Reveal>
+            );})}
           </div>
         </div>
       </section>
