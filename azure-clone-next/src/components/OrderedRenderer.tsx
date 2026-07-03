@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CapturedPage, CapturedItem } from '@/lib/content';
-import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getAgentExtras, type CounterRec, type ProcessSection } from '@/lib/content';
+import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getAgentExtras, getCardIcon, type CounterRec, type ProcessSection } from '@/lib/content';
 import { Counter } from '@/components/ui/Counter';
 import { FlipCard } from '@/components/sections/FlipCard';
 import { RetailSolutionTabs } from '@/components/sections/RetailSolutionTabs';
@@ -113,6 +113,10 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   const pageTabs = getPageTabs(page.url ?? '');
   // Copilot Agent page extras (hero stat counters, video) the generic capture missed
   const agentExtras = getAgentExtras(page.url ?? '');
+  // real card icons (the live uses inline SVG icons the capture missed) keyed by page slug + card
+  // title — resolves to an on-disk /icons/<slug>/<title>.svg so cards show their icon, not a checkmark.
+  const pageSlug = (page.url ?? '').replace(/^https?:\/\/[^/]+/, '').replace(/[?#].*$/, '').replace(/^\/|\/$/g, '');
+  const cardIcon = (t: string) => localImg(getCardIcon(pageSlug, t));
   // is this a case-study page? (drives the "The Customer" client-info card even when the section
   // has only company-metadata facts and no explicit marker, e.g. savills "London, UK / Real Estate")
   const isCaseStudy = (page.sections ?? []).some((s) => (s.items ?? []).some((it) => it.t === 'h' && /the problem|the challenge|our solution|folio3 solution|business outcomes|technologies involved|the approach|about the client|the customer/i.test(it.text)));
@@ -663,11 +667,14 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     // FAQ accordion — render the re-captured full Q&A when this section is the FAQ section (matched
     // by the captured FAQ heading, or the generic FAQ-heading regex).
     const faqHeadMatch = heading && pageFaq && _hnorm(heading) === _hnorm(pageFaq.heading);
-    if (heading && (faqHeadMatch || /common queries|frequently asked|^faqs?\b|what makes us the best choice/i.test(heading))) {
-      if (pageFaq && !faqRendered) { faqRendered = true; out.push(renderFaq(key++, heading, subtitle, pageFaq.items, tone, allImgs.find((im) => im.w >= 150)?.src)); continue; }
+    if (heading && (faqHeadMatch || /common queries|frequently asked|^faqs?\b|what makes us the best choice|streamline your .+ (business|operations)/i.test(heading))) {
+      // only let the re-captured page FAQ claim THIS heading (a page can have two accordion sections,
+      // e.g. manufacturing's "Major Challenges" + "Partner with Folio3…" — the latter uses faq.json Q&A).
+      if (pageFaq && !faqRendered && faqHeadMatch) { faqRendered = true; out.push(renderFaq(key++, heading, subtitle, pageFaq.items, tone, allImgs.find((im) => im.w >= 150)?.src)); continue; }
       if (faq.length) {
         const answers = units.slice(1).flatMap((u) => [u.title, ...u.paras]).filter((t) => t.length > 30);
-        const ans = answers.length ? answers : units[0].paras.filter((p) => p.length > 30);
+        // exclude the section subtitle when it sits in the answer paragraphs, else the Q↔A pairing shifts by one
+        const ans = (answers.length ? answers : units[0].paras.filter((p) => p.length > 30)).filter((a) => a !== subtitle);
         const fitems = faq.map((q, i) => ({ q, a: ans[i] ?? '' })).filter((x) => x.a);
         if (fitems.length) { out.push(renderFaq(key++, heading, subtitle, fitems, tone, allImgs.find((im) => im.w >= 150)?.src)); continue; }
       }
@@ -697,7 +704,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     const headBlocks = gHeadUnit?.blocks ?? [];
     const cnorm = (s: string) => (s || '').toLowerCase().replace(/&amp;|&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
     const sectionCounters = gHeading ? pageCounters.filter((c) => c.section && cnorm(c.section) === cnorm(gHeading)) : [];
-    const node = renderGeneric({ key: key++, tone, heading: gHeading, headTag: gHeadUnit?.tag, subtitle: gSubtitle, entries: gEntries, bigImgs, allImgs, lead, sectCta, title, takeImg, flipMap, tabIntro, headLis, sectionCounters, headBlocks, cardBgs: pageCardBgs, eyebrow: gEyebrow });
+    const node = renderGeneric({ key: key++, tone, heading: gHeading, headTag: gHeadUnit?.tag, subtitle: gSubtitle, entries: gEntries, bigImgs, allImgs, lead, sectCta, title, takeImg, flipMap, tabIntro, headLis, sectionCounters, headBlocks, cardBgs: pageCardBgs, eyebrow: gEyebrow, cardIcon });
     out.push(node);
     // guarantee: any image not yet rendered → trailing logo/illustration grid
     const leftover = allImgs.filter((im) => !rendered.has(im.src));
@@ -963,7 +970,7 @@ function renderProcessSteps(key: number, heading: string, subtitle: string | und
   );
 }
 
-function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs, allImgs, lead, sectCta, title, takeImg, flipMap, tabIntro, headLis, sectionCounters, headBlocks, cardBgs, eyebrow }: any) {
+function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs, allImgs, lead, sectCta, title, takeImg, flipMap, tabIntro, headLis, sectionCounters, headBlocks, cardBgs, eyebrow, cardIcon }: any) {
   const Eyebrow = eyebrow ? <p className="mb-2 text-center text-sm font-semibold uppercase tracking-wider text-brand">{eyebrow}</p> : null;
   const icons = allImgs.filter((im: Img) => im.w > 0 && im.w < 300);
   const CtaBtn = sectCta ? <Link href={sectCta.href} className="btn-primary mt-6 uppercase tracking-wide">{sectCta.text}</Link> : null;
@@ -1061,7 +1068,31 @@ function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs
               <h3 className="absolute inset-x-0 bottom-0 p-5 text-lg font-semibold leading-snug text-white">{e.title}</h3>
             </div></Reveal>
           ); }
-          const lnk = getContentLink(e.title); const inner = (<div className="h-full rounded-xl card-hover border border-surface-line bg-white p-6 shadow-card">{e.imgs[0] ? <Image src={takeImg(e.imgs[0].src)!} alt="" width={48} height={48} className="mb-4 h-12 w-12 object-contain" /> : <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-surface-chip text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-6 w-6"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg></div>}<h3 className="text-lg">{e.title}</h3>{e.paras[0] && <p className="mt-2 text-sm leading-relaxed text-body">{e.paras[0]}</p>}</div>); return (<Reveal key={j} animation="fadeInUp" delay={j * 80}>{lnk ? <Link href={lnk} className="block h-full">{inner}</Link> : inner}</Reveal>);
+          // real icon (extracted svg) → recolorable masked glyph; captured raster → <img>; else checkmark
+          const svgIcon = cardIcon ? cardIcon(e.title) : '';
+          const imgIcon = !svgIcon && e.imgs[0]?.src ? takeImg(e.imgs[0].src) : '';
+          // the live shows a "Learn More / Talk to an Expert / Request a Call" LINK; the capture often
+          // glued that text onto the paragraph — split it back out into a proper CTA link.
+          const ctaRe = /\s*(learn more|talk to an expert|request a call|read more|find out more)[\s>]*$/i;
+          const ctaHit = e.paras[0]?.match(ctaRe);
+          const para = ctaHit ? e.paras[0].replace(ctaRe, '').trim() : e.paras[0];
+          const cardCta = ctaHit ? ctaHit[1].replace(/\b\w/g, (c: string) => c.toUpperCase()) : '';
+          const lnk = getContentLink(e.title);
+          const inner = (
+            <div className="flex h-full flex-col rounded-xl card-hover border border-surface-line bg-white p-6 shadow-card">
+              <span className="svc-ic mb-4 flex h-12 w-12 items-center justify-center rounded-[10px] border border-[#e9eefb] bg-white text-brand">
+                {svgIcon
+                  ? <span className="svc-ic-glyph h-7 w-7" style={{ '--ic': `url("${svgIcon}")` } as React.CSSProperties} />
+                  : imgIcon
+                    ? <Image src={imgIcon} alt="" width={30} height={30} className="h-7 w-7 object-contain" />
+                    : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-6 w-6"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+              </span>
+              <h3 className="text-lg">{e.title}</h3>
+              {para && <p className="mt-2 text-sm leading-relaxed text-body">{para}</p>}
+              {cardCta && <Link href="#pgForm" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">{cardCta} <span aria-hidden>→</span></Link>}
+            </div>
+          );
+          return (<Reveal key={j} animation="fadeInUp" delay={j * 80}>{lnk && !cardCta ? <Link href={lnk} className="block h-full">{inner}</Link> : inner}</Reveal>);
         })}</div>
         <div className="text-center">{CtaBtn}</div></div></section>
     );

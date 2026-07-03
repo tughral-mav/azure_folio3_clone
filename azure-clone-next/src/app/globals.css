@@ -66,6 +66,18 @@
   .adv-icon path { transition: fill 0.3s ease; }
   .adv-card:hover .adv-icon { background-color: #1742E7; }
   .adv-card:hover .adv-icon path { fill: #ffffff; }
+  /* Service / industry icon cards: on card hover the icon box fills brand-blue and the glyph turns
+     white (matching the live's Elementor icon-box). The glyph is drawn with a CSS mask so any
+     extracted SVG recolors cleanly; the checkmark fallback uses currentColor for the same effect. */
+  .svc-ic { transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; }
+  .svc-ic-glyph {
+    background-color: #1742E7;
+    -webkit-mask: var(--ic) center / contain no-repeat;
+    mask: var(--ic) center / contain no-repeat;
+    transition: background-color 0.3s ease;
+  }
+  .card-hover:hover .svc-ic { background-color: #1742E7; border-color: #1742E7; color: #ffffff; }
+  .card-hover:hover .svc-ic-glyph { background-color: #ffffff; }
   .eyebrow {
     @apply mb-3 inline-block rounded-pill bg-surface-chip px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand;
   }
