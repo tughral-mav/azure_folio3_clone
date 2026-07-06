@@ -1,0 +1,11 @@
+# Code owners for this repository.
+#
+# Every pull request automatically requests a review from the owner listed
+# below. With "Require review from Code Owners" enabled in the branch ruleset,
+# a PR cannot be merged until this owner approves it — so every change to the
+# live site is gated on Tughral's sign-off.
+#
+# Syntax: <path pattern>   <owner>
+# "*" means "everything in the repository".
+
+*       @tughral-mav
