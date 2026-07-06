@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 
-// Full 301 map generated from the URL registry (see ../gen-redirects.mjs).
+// Full 301 map generated from the URL registry (see ../scripts/gen-redirects.mjs).
 const redirects = JSON.parse(readFileSync(new URL('./redirects.json', import.meta.url)));
 
 /** @type {import('next').NextConfig} */
