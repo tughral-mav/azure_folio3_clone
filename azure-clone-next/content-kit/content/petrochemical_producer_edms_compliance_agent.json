@@ -1,0 +1,594 @@
+{
+  "url": "https://azure.folio3.com/petrochemical-producer-edms-compliance-agent/",
+  "meta": {
+    "title": "AI Document Compliance Agent Case Study | Folio3 Azure",
+    "description": null,
+    "canonical": "https://azure.folio3.com/petrochemical-producer-edms-compliance-agent/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2026/07/petro-chemical-company.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "w": 181,
+          "h": 40,
+          "alt": "Folio3 | Azure"
+        },
+        { "t": "li", "text": "Azure Cloud Services" },
+        { "t": "li", "text": "Microsoft Fabric Services" },
+        { "t": "li", "text": "Data Integration As A Service" },
+        { "t": "li", "text": "Data Visualization as a service" },
+        { "t": "li", "text": "Data Warehousing as a Service" },
+        { "t": "li", "text": "Microsoft Copilot Consulting" },
+        { "t": "li", "text": "Copilot Scenario Library" },
+        { "t": "li", "text": "RecruitFlow Copilot" },
+        { "t": "li", "text": "SmartExpense Agent" },
+        { "t": "li", "text": "ITAsset Copilot" },
+        { "t": "li", "text": "KubeMonitor Copilot" },
+        { "t": "li", "text": "Zammad Ticketing Copilot" },
+        { "t": "li", "text": "Microsoft Power Platform" },
+        { "t": "li", "text": "Azure Managed Services" },
+        { "t": "li", "text": "Intellifabric" },
+        { "t": "li", "text": "Logistics and Transport" },
+        { "t": "li", "text": "Healthcare" },
+        { "t": "li", "text": "Retail" },
+        { "t": "li", "text": "Manufacturing" },
+        { "t": "li", "text": "Construction" },
+        { "t": "li", "text": "Success Stories" },
+        { "t": "li", "text": "Blog" },
+        { "t": "li", "text": "About Us" },
+        { "t": "li", "text": "Contact Us" },
+        { "t": "li", "text": "Azure Cloud Services" },
+        { "t": "li", "text": "Microsoft Fabric Services" },
+        { "t": "li", "text": "Data Integration As A Service" },
+        { "t": "li", "text": "Data Visualization as a service" },
+        { "t": "li", "text": "Data Warehousing as a Service" },
+        { "t": "li", "text": "Microsoft Copilot Consulting" },
+        { "t": "li", "text": "Copilot Scenario Library" },
+        { "t": "li", "text": "RecruitFlow Copilot" },
+        { "t": "li", "text": "SmartExpense Agent" },
+        { "t": "li", "text": "ITAsset Copilot" },
+        { "t": "li", "text": "KubeMonitor Copilot" },
+        { "t": "li", "text": "Zammad Ticketing Copilot" },
+        { "t": "li", "text": "Microsoft Power Platform" },
+        { "t": "li", "text": "Azure Managed Services" },
+        { "t": "li", "text": "Intellifabric" },
+        { "t": "li", "text": "Logistics and Transport" },
+        { "t": "li", "text": "Healthcare" },
+        { "t": "li", "text": "Retail" },
+        { "t": "li", "text": "Manufacturing" },
+        { "t": "li", "text": "Construction" },
+        { "t": "li", "text": "Success Stories" },
+        { "t": "li", "text": "Blog" },
+        { "t": "li", "text": "About Us" },
+        { "t": "li", "text": "Contact Us" },
+        { "t": "li", "text": "Talk with Us +1 (408) 412-3813" },
+        { "t": "cta", "text": "Get in Touch", "href": "/contact-us/" }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Azure Cloud Services",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Intellifabric",
+        "Logistics and Transport",
+        "Healthcare",
+        "Retail",
+        "Manufacturing",
+        "Construction",
+        "Success Stories",
+        "Blog",
+        "About Us",
+        "Contact Us",
+        "Talk with Us +1 (408) 412-3813"
+      ],
+      "ctas": [{ "text": "Get in Touch", "href": "/contact-us/" }],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "A KSA Petrochemical Producer Cut Report Preparation Time by up to 85% with Microsoft Copilot Studio"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Approval visibility, on-demand reporting, and template compliance, once slow and manual, now run on one SharePoint-grounded system built with Microsoft Copilot Studio and Azure."
+        },
+        {
+          "t": "cta",
+          "text": "Contact us to modernize your document workflows",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/07/petro-chemical-company.webp",
+          "w": 665,
+          "h": 631,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "A KSA Petrochemical Producer Cut Report Preparation Time by up to 85% with Microsoft Copilot Studio"
+        },
+        {
+          "tag": "h2",
+          "text": "Approval visibility, on-demand reporting, and template compliance, once slow and manual, now run on one SharePoint-grounded system built with Microsoft Copilot Studio and Azure."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Contact us to modernize your document workflows",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/07/petro-chemical-company.webp",
+          "alt": "",
+          "w": 665,
+          "h": 631
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "KSA"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Petrochemicals & Refining"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "3,000 +"
+        },
+        {
+          "t": "p",
+          "text": "About The Client"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Leading Saudi Arabian Petrochemical Producer"
+        },
+        {
+          "t": "p",
+          "text": "Our client is a leading petrochemical producer in Saudi Arabia (KSA), formed as a joint venture between two global energy and chemical leaders. It runs one of the largest integrated refining and petrochemical complexes in the Kingdom, supplying hydrocarbons and petrochemical products used worldwide in plastics, fuels, packaging, detergents, and automotive components."
+        },
+        {
+          "t": "p",
+          "text": "An operation this size runs on controlled documentation. More than 4,000 approved procedures, policies, charters, and manuals live in an Electronic Document Management System (EDMS) built on Power Apps and SharePoint."
+        }
+      ],
+      "headings": [
+        { "tag": "h3", "text": "KSA" },
+        { "tag": "h3", "text": "Petrochemicals & Refining" },
+        { "tag": "h3", "text": "3,000 +" },
+        { "tag": "h2", "text": "A Leading Saudi Arabian Petrochemical Producer" }
+      ],
+      "paragraphs": [
+        "About The Client",
+        "Our client is a leading petrochemical producer in Saudi Arabia (KSA), formed as a joint venture between two global energy and chemical leaders. It runs one of the largest integrated refining and petrochemical complexes in the Kingdom, supplying hydrocarbons and petrochemical products used worldwide in plastics, fuels, packaging, detergents, and automotive components.",
+        "An operation this size runs on controlled documentation. More than 4,000 approved procedures, policies, charters, and manuals live in an Electronic Document Management System (EDMS) built on Power Apps and SharePoint."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "The Problem"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manual Reporting, Unclear Status, and Avoidable Rework"
+        },
+        {
+          "t": "p",
+          "text": "For a controlled-document operation, storing documents was never the hard part. Seeing them was. Approval status lived out of sight, so learning where a document stood, who owned the next step, or which items were due, overdue, pending, or expired meant clicking through EDMS one screen at a time and assembling reports by hand. Compliance made it worse: strict templates lived in a manual few people read, so documents reached submission with broken formatting and Word content controls, failed review, and came back for rework that added days to every cycle."
+        },
+        {
+          "t": "cta",
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Key Business Areas Impacted Included:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manual operational reporting"
+        },
+        {
+          "t": "p",
+          "text": "Status updates required manual EDMS navigation and hand-assembled reports."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Unclear workflow status"
+        },
+        {
+          "t": "p",
+          "text": "Ownership and next steps for documents in review were invisible without clicking through multiple screens."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Avoidable document rework"
+        },
+        {
+          "t": "p",
+          "text": "Template non-compliance caused submissions to fail review and return for rework, adding days to every cycle."
+        }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "The Problem" },
+        { "tag": "h3", "text": "Manual Reporting, Unclear Status, and Avoidable Rework" },
+        { "tag": "h3", "text": "Key Business Areas Impacted Included:" },
+        { "tag": "h3", "text": "Manual operational reporting" },
+        { "tag": "h3", "text": "Unclear workflow status" },
+        { "tag": "h3", "text": "Avoidable document rework" }
+      ],
+      "paragraphs": [
+        "For a controlled-document operation, storing documents was never the hard part. Seeing them was. Approval status lived out of sight, so learning where a document stood, who owned the next step, or which items were due, overdue, pending, or expired meant clicking through EDMS one screen at a time and assembling reports by hand. Compliance made it worse: strict templates lived in a manual few people read, so documents reached submission with broken formatting and Word content controls, failed review, and came back for rework that added days to every cycle.",
+        "Status updates required manual EDMS navigation and hand-assembled reports.",
+        "Ownership and next steps for documents in review were invisible without clicking through multiple screens.",
+        "Template non-compliance caused submissions to fail review and return for rework, adding days to every cycle."
+      ],
+      "listItems": [],
+      "ctas": [{ "text": "FACING SIMILAR CHALLENGES?", "href": "#pgForm" }],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What The Client Needed"
+        },
+        {
+          "t": "p",
+          "text": "The client needed a solution that could:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Natural language search across the full controlled-document library"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A single conversational entry point for status and assigned work"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "On-demand reports for due, overdue, pending, and expired documents"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Guided authoring that applies the correct template automatically"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Automated compliance validation before the approval workflow"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Grounded answers with citations back to source documents"
+        },
+        {
+          "t": "cta",
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "What The Client Needed" },
+        { "tag": "h3", "text": "Natural language search across the full controlled-document library" },
+        { "tag": "h3", "text": "A single conversational entry point for status and assigned work" },
+        { "tag": "h3", "text": "On-demand reports for due, overdue, pending, and expired documents" },
+        { "tag": "h3", "text": "Guided authoring that applies the correct template automatically" },
+        { "tag": "h3", "text": "Automated compliance validation before the approval workflow" },
+        { "tag": "h3", "text": "Grounded answers with citations back to source documents" }
+      ],
+      "paragraphs": [
+        "The client needed a solution that could:"
+      ],
+      "listItems": [],
+      "ctas": [{ "text": "Request a call", "href": "#pgForm" }],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Folio3 Solution"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "One Grounded, Conversational Source of Truth"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 built an AI-powered, SharePoint-grounded knowledge and workflow agent on Microsoft Copilot Studio, paired with a custom document generation and validation platform on Azure."
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Solution Components"
+        },
+        {
+          "t": "li",
+          "text": "EDMS Agent grounded in SharePoint, with cited answers"
+        },
+        {
+          "t": "li",
+          "text": "Workflow Tracker Agent for status and assigned items"
+        },
+        {
+          "t": "li",
+          "text": "Report Generation Agent that exports to Excel"
+        },
+        {
+          "t": "li",
+          "text": "Guided editor that auto-populates Word templates"
+        },
+        {
+          "t": "li",
+          "text": "Validation service that flags exact compliance errors"
+        }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Folio3 Solution" },
+        { "tag": "h3", "text": "One Grounded, Conversational Source of Truth" },
+        { "tag": "h2", "text": "Solution Components" }
+      ],
+      "paragraphs": [
+        "Folio3 built an AI-powered, SharePoint-grounded knowledge and workflow agent on Microsoft Copilot Studio, paired with a custom document generation and validation platform on Azure."
+      ],
+      "listItems": [
+        "EDMS Agent grounded in SharePoint, with cited answers",
+        "Workflow Tracker Agent for status and assigned items",
+        "Report Generation Agent that exports to Excel",
+        "Guided editor that auto-populates Word templates",
+        "Validation service that flags exact compliance errors"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Ready to modernize your document workflows with AI?"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Talk to our experts to see how Microsoft Copilot Studio-powered solutions can transform your document operations."
+        },
+        {
+          "t": "cta",
+          "text": "CONTACT US TO MODERNIZE YOUR DOCUMENT WORKFLOWS",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "w": 155,
+          "h": 150,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Ready to modernize your document workflows with AI?" },
+        { "tag": "h2", "text": "Talk to our experts to see how Microsoft Copilot Studio-powered solutions can transform your document operations." }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "CONTACT US TO MODERNIZE YOUR DOCUMENT WORKFLOWS",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": "",
+          "w": 155,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "w": 283,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Schedule a 1:1 Call Today" },
+        { "tag": "h2", "text": "Get in touch with our team to solve your Azure queries" }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": "",
+          "w": 283,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "w": 300,
+          "h": 59,
+          "alt": "Azure"
+        },
+        { "t": "h", "tag": "h5", "text": "US Office" },
+        { "t": "li", "text": "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA" },
+        { "t": "li", "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566" },
+        { "t": "li", "text": "Tel: +1 408 412-3813" },
+        { "t": "li", "text": "Support: +1 (408) 512 1812" },
+        { "t": "h", "tag": "h5", "text": "UAE OFFICE" },
+        { "t": "li", "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE" },
+        { "t": "li", "text": "Tel: +971-55-6540154" },
+        { "t": "li", "text": "Tel: +971-04-2505173" },
+        { "t": "h", "tag": "h5", "text": "UK OFFICE" },
+        { "t": "li", "text": "Export House, Cawsey Way, Woking Surrey, GU21 6QX" },
+        { "t": "li", "text": "Tel: +44 (0) 14 8361 6611" },
+        { "t": "h", "tag": "h5", "text": "Mexico Office" },
+        { "t": "li", "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco" },
+        { "t": "h", "tag": "h5", "text": "Pakistan Office" },
+        { "t": "li", "text": "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi" },
+        { "t": "li", "text": "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad" },
+        { "t": "li", "text": "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore" },
+        { "t": "li", "text": "Tel: +92-21-3432 3721-4" },
+        { "t": "h", "tag": "h5", "text": "Canada Office" },
+        { "t": "li", "text": "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1" },
+        { "t": "li", "text": "Tel: +1 408 365 4638" },
+        { "t": "li", "text": "Support: +1 (408) 512 1812" },
+        { "t": "h", "tag": "h5", "text": "Bulgaria Office" },
+        { "t": "li", "text": "49 Bacho Kiro Street, Sofia, 1000, Bulgaria" },
+        { "t": "p", "text": "© 2026, Folio3 Software Inc., All rights reserved." },
+        { "t": "p", "text": "Privacy Policy & Terms of Use Cookie Policy" }
+      ],
+      "headings": [
+        { "tag": "h5", "text": "US Office" },
+        { "tag": "h5", "text": "UAE OFFICE" },
+        { "tag": "h5", "text": "UK OFFICE" },
+        { "tag": "h5", "text": "Mexico Office" },
+        { "tag": "h5", "text": "Pakistan Office" },
+        { "tag": "h5", "text": "Canada Office" },
+        { "tag": "h5", "text": "Bulgaria Office" }
+      ],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel: +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel: +971-55-6540154",
+        "Tel: +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel: +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel: +92-21-3432 3721-4",
+        "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1",
+        "Tel: +1 408 365 4638",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 300,
+          "h": 59
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "alt": "Folio3 | Azure"
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/07/petro-chemical-company.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+      "alt": ""
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2026/07/petro-chemical-company.webp"
+  ]
+}
