@@ -308,5 +308,10 @@
     "source": "/end-to-end-bi-solution/",
     "destination": "/azure-data-analytics/",
     "permanent": true
+  },
+  {
+    "source": "/power-bi-services/",
+    "destination": "/microsoft-power-platform-services/power-bi/",
+    "permanent": true
   }
 ]
