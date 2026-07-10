@@ -1,4 +1,14 @@
 {
+  "microsoft_power_platform_services_dataverse": [
+    "Why use Dataverse instead of SharePoint lists or Excel?",
+    "How does Dataverse compare to a standalone SQL Server database?",
+    "Is migrating to Dataverse disruptive?",
+    "How is Dataverse capacity cost controlled?",
+    "How is data secured in Dataverse?",
+    "Do we need Dataverse if we already have Dynamics 365?",
+    "When is Dataverse the right choice, and when is it not?",
+    "Does Dataverse support AI and Copilot solutions?"
+  ],
   "home": [
     "What is Azure Consulting?",
     "What is Microsoft Azure and How Does it Work?",
