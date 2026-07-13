@@ -88,3 +88,69 @@
 @media (prefers-reduced-motion: reduce) {
   .heroImg { animation: none; }
 }
+
+/* ---------- shared reveal (scoped) ---------- */
+.reveal { opacity: 0; }
+.reveal.in { animation: pcFadeUp 1s ease both; }
+@keyframes pcFadeUp { from { opacity: 0; transform: translate3d(0, 40px, 0); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .reveal, .reveal.in { opacity: 1; animation: none; } }
+
+/* ---------- Story 2: About The Client (blue band) ---------- */
+.clientBand {
+  background-color: #1742e7;
+  background-image: url('/wp-content/uploads/2025/07/daraz-client-bg.webp');
+  background-size: cover;
+  background-position: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #fff;
+}
+.clientGrid { display: grid; grid-template-columns: 0.8fr 1.7fr; gap: 48px; align-items: center; }
+.facts { display: flex; flex-direction: column; gap: 22px; padding-right: 40px; border-right: 1px solid rgba(255, 255, 255, 0.28); }
+.fact { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.factIcon { width: 46px; height: 46px; object-fit: contain; filter: brightness(0) invert(1); flex: none; }
+.factLabel { font-size: 15px; font-weight: 500; line-height: 18.75px; color: #fff; }
+.clientEyebrow { font-size: 15px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 10px; color: rgba(255, 255, 255, 0.85); }
+.clientName { font-size: 43.125px; line-height: 45px; font-weight: 700; text-transform: capitalize; margin: 0 0 18px; color: #fff; }
+.clientDesc { font-size: 16px; line-height: 27px; color: rgba(255, 255, 255, 0.92); margin: 0 0 14px; max-width: 60ch; }
+.clientDesc:last-child { margin-bottom: 0; }
+
+/* ---------- Story 3: The Problem (2-col) ---------- */
+.problem { padding-top: 75px; padding-bottom: 75px; background: #fff; }
+.problemGrid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
+.problemIcon { width: 70px; height: 70px; object-fit: contain; margin-bottom: 22px; }
+.eyebrowBlue { color: #1742e7; font-size: 14.85px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 14px; }
+.h2Dark { font-size: 33.75px; line-height: 48px; font-weight: 700; letter-spacing: 1px; color: #121127; margin: 0 0 20px; }
+.problemDesc { font-size: 15px; line-height: 24px; color: #121127; margin: 0 0 28px; }
+.impactH3 { font-size: 24.945px; line-height: 30px; font-weight: 700; letter-spacing: 1px; color: #121127; margin: 0 0 26px; }
+.impactList { display: flex; flex-direction: column; gap: 22px; margin-bottom: 26px; }
+.impactItem { display: flex; align-items: center; gap: 16px; }
+.impactIcon { width: 40px; height: 40px; object-fit: contain; flex: none; }
+.impactLabel { font-size: 18.75px; line-height: 30px; font-weight: 400; letter-spacing: 1px; color: #121127; }
+.searchPara { font-size: 15px; line-height: 24px; color: #121127; margin: 0; }
+
+/* ---------- Story 4: What The Client Needed (icon cards) ---------- */
+.needs { padding-top: 75px; padding-bottom: 75px; background: #fff; }
+.needsHead { text-align: center; margin-bottom: 44px; }
+.needsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.needCard {
+  background: #fff; border: 1px solid #e7ecf6; border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(20, 60, 213, 0.06);
+  padding: 34px 26px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.needCard:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(20, 60, 213, 0.12); }
+.needIcon { width: 92px; height: 92px; object-fit: contain; }
+.needTitle { font-size: 18.75px; line-height: 28.125px; font-weight: 600; color: #121127; margin: 0; }
+.center { text-align: center; }
+.mt36 { margin-top: 36px; }
+
+@media (max-width: 1023px) {
+  .clientGrid { grid-template-columns: 1fr; gap: 28px; }
+  .facts { flex-direction: row; flex-wrap: wrap; border-right: 0; padding-right: 0; border-bottom: 1px solid rgba(255,255,255,0.28); padding-bottom: 20px; }
+  .clientName { font-size: 30px; line-height: 36px; }
+  .problemGrid { grid-template-columns: 1fr; gap: 36px; }
+  .h2Dark { font-size: 26px; line-height: 34px; }
+  .needsGrid { grid-template-columns: 1fr; }
+}
