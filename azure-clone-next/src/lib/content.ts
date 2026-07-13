@@ -373,7 +373,7 @@ export function getMarketingSlugs(): { slug: string[] }[] {
   // NOTE: also exclude duplicate captures that resolve to a reserved URL — e.g.
   // end_to_end_bi_solution.json has url=/azure-data-analytics/ and would otherwise
   // generate that route via the catch-all and clobber the bespoke page's output.
-  const RESERVED = new Set(['home', 'contact_us', 'thank_you', 'blog', 'azure_for_retail', 'azure_cloud_service', 'azure_managed_services', 'azure_data_analytics', 'end_to_end_bi_solution', 'microsoft_fabric_services', 'microsoft_power_platform_services', 'microsoft_power_platform', 'ai_scenario_library']);
+  const RESERVED = new Set(['home', 'contact_us', 'thank_you', 'blog', 'azure_for_retail', 'azure_cloud_service', 'azure_managed_services', 'azure_data_analytics', 'end_to_end_bi_solution', 'microsoft_fabric_services', 'microsoft_power_platform_services', 'microsoft_power_platform', 'ai_scenario_library', 'petrochemical_producer_edms_compliance_agent']);
   return readdirSync(KIT)
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))

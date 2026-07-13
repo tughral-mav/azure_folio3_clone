@@ -1,0 +1,90 @@
+/* Scoped, pixel-matched styles for the Petrochemical EDMS case-study page.
+   Tokens extracted from the live page (verify/extract-design.mjs). Scoped via CSS Module
+   so nothing leaks into the shared templates / home page. Grows one section per BMAD story. */
+
+/* ---------- Story 1: Hero ---------- */
+.hero {
+  position: relative;
+  background-color: #eef3ff;
+  background-image: url('/wp-content/uploads/2025/07/food-crop-grower-header-bg.webp');
+  background-size: cover;
+  background-position: right center;
+  overflow: hidden;
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.eyebrow {
+  color: #1742e7;
+  font-size: 14.85px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+.h1 {
+  font-family: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
+  font-size: 52.5px;
+  line-height: 63px;
+  font-weight: 400;
+  color: #121127;
+  margin: 0;
+  letter-spacing: normal;
+}
+.h1 .hl { color: #1742e7; }
+.heroSub {
+  margin: 20px 0 0;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #1d262d;
+  max-width: 46ch;
+}
+.btnNavy {
+  display: inline-block;
+  margin-top: 28px;
+  background: #00217f;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13.125px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 15px 26px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.btnNavy:hover { background: #1640e2; }
+.heroImgWrap { position: relative; }
+.heroImg {
+  height: auto;
+  width: 100%;
+  animation: pcZoomIn 1.2s ease both;
+}
+@keyframes pcZoomIn {
+  from { opacity: 0; transform: scale3d(0.6, 0.6, 0.6); }
+  50%  { opacity: 1; }
+  to   { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+/* breadcrumb bar (blue) — matches the live "Home » …" strip */
+.crumb { background: #1742e7; }
+.crumbInner { padding: 12px 0; font-size: 14px; color: rgba(255, 255, 255, 0.9); }
+.crumbInner a { color: rgba(255, 255, 255, 0.9); }
+.crumbInner a:hover { text-decoration: underline; }
+.crumbSep { padding: 0 8px; }
+
+@media (max-width: 1023px) {
+  .heroGrid { grid-template-columns: 1fr; gap: 24px; padding-top: 48px; padding-bottom: 48px; }
+  .h1 { font-size: 34px; line-height: 42px; }
+  .heroImgWrap { order: -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroImg { animation: none; }
+}
