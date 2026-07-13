@@ -139,7 +139,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const heroTitle = seoH1 ? heroH2s[0].title : h1u.title;
       const { head, tail } = splitHi(heroTitle);
       const sub = seoH1 ? (heroH2s[1]?.title ?? heroH2s[0].paras[0] ?? h1u.paras[0]) : h1u.paras[0];
-      const heroCtas = (h1u.ctas.length ? h1u.ctas : lead.ctas).slice(0, 3);
+      const heroCtas = (h1u.ctas.length ? h1u.ctas : (lead.ctas.length ? lead.ctas : units.flatMap((u) => u.ctas))).slice(0, 3);
       const ctas = heroCtas.length ? heroCtas : [{ text: 'Speak to Our Azure Experts', href: '#pgForm' }];
       const illo = [...lead.imgs, ...units.flatMap((u) => u.imgs)].find((im) => im.w >= 180);
       // Suppress the hero background when it's the SAME image set as the foreground illustration
@@ -499,7 +499,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const eyebrow = (clientMarker && (markerRe.test(clientMarker.title.trim()) ? clientMarker.title : clientMarker.paras.find((p) => markerRe.test(p.trim())))) || 'The Customer';
       const facts = factUnits.map((u) => u.title).slice(0, 4);
       // a separate client NAME h2 (NOT the marker itself, e.g. "Alibaba"); city-university/savills have none
-      const nameU = units.find((u) => u.tag === 'h2' && u !== clientMarker && !markerRe.test(u.title.trim()) && u.title.length < 40);
+      const nameU = units.find((u) => u.tag === 'h2' && u !== clientMarker && !markerRe.test(u.title.trim()) && u.title.length < 60);
       const desc = units.flatMap((u) => u.paras).filter((p) => p.length > 40 && !markerRe.test(p.trim()));
       const cimg = allImgs.filter((im) => im.w >= 140 && !isChromeImg(im.src)).sort((a, b) => b.w - a.w)[0];
       if (facts.length) {
