@@ -26,6 +26,16 @@ const NEEDS = [
   'Automated compliance validation before the approval workflow',
   'Grounded answers with citations back to source documents',
 ].map((label, i) => ({ icon: `${ICON}/need-${i}.svg`, label }));
+const SOLUTIONS = [
+  'EDMS Agent grounded in SharePoint, with cited answers',
+  'Workflow Tracker Agent for status and assigned items',
+  'Report Generation Agent that exports to Excel',
+  'Guided editor that auto-populates Word templates',
+  'Validation service that flags exact compliance errors',
+  'Access through Microsoft Teams and Power Apps Copilot Chat',
+  'Vector and semantic search with WorkIQ grounding',
+  'An end to manual navigation of nested folders',
+].map((label, i) => ({ icon: `${ICON}/sol-${i}.svg`, label, n: i + 1 }));
 
 /**
  * Dedicated, pixel-matched rebuild of the live case study
@@ -65,8 +75,8 @@ export default function Page() {
 
   // Sections through "What The Client Needed" are bespoke below; delegate the rest (from the
   // "One Grounded…" solution section onward) to the shared renderer until each is converted.
-  const solIdx = page.sections.findIndex((s) => (s.items ?? []).some((i) => i.t === 'h' && /One Grounded, Conversational Source of Truth/i.test(i.text)));
-  const rest = { ...page, sections: solIdx >= 0 ? page.sections.slice(solIdx) : page.sections.filter((s) => !(s.items ?? []).some((i) => i.t === 'h' && i.tag === 'h1')) };
+  const restIdx = page.sections.findIndex((s) => (s.items ?? []).some((i) => i.t === 'h' && /^Key Features$/i.test(i.text)));
+  const rest = { ...page, sections: restIdx >= 0 ? page.sections.slice(restIdx) : page.sections.filter((s) => !(s.items ?? []).some((i) => i.t === 'h' && i.tag === 'h1')) };
 
   const pageUrl = `${ORIGIN}/${SLUG}/`;
   const webPageLd = { '@context': 'https://schema.org', '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: page.meta.title, description: page.meta.description, isPartOf: { '@id': `${ORIGIN}/#website` }, breadcrumb: { '@id': `${pageUrl}#breadcrumb` }, inLanguage: 'en-US' };
@@ -131,20 +141,24 @@ export default function Page() {
         <div className="container-x">
           <div className={styles.problemGrid}>
             <Reveal>
+              <div className={styles.problemLeft}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={`${ICON}/problem-0.svg`} alt="" className={styles.problemIcon} width={70} height={70} />
               <p className={styles.eyebrowBlue}>The Problem</p>
               <h2 className={styles.h2Dark}>Manual Reporting, Unclear Status, and Avoidable Rework</h2>
               <p className={styles.problemDesc}>For a controlled-document operation, storing documents was never the hard part. Seeing them was. Approval status lived out of sight, so learning where a document stood, who owned the next step, or which items were due, overdue, pending, or expired meant clicking through EDMS one screen at a time and assembling reports by hand. Compliance made it worse: strict templates lived in a manual few people read, so documents reached submission with broken formatting and Word content controls, failed review, and came back for rework that added days to every cycle. The friction showed up in three places.</p>
               <Link href="#pgForm" className={styles.btnNavy}>Facing similar challenges?</Link>
+              </div>
             </Reveal>
             <Reveal delay={120}>
               <h3 className={styles.impactH3}>Key business areas impacted included:</h3>
               <div className={styles.impactList}>
                 {IMPACTS.map((it) => (
                   <div key={it.label} className={styles.impactItem}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={it.icon} alt="" className={styles.impactIcon} width={40} height={40} />
+                    <span className={styles.impactIconWrap}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={it.icon} alt="" className={styles.impactIcon} width={34} height={34} />
+                    </span>
                     <span className={styles.impactLabel}>{it.label}</span>
                   </div>
                 ))}
@@ -174,6 +188,37 @@ export default function Page() {
           </div>
           <div className={styles.mt36 + ' ' + styles.center}>
             <Link href="#pgForm" className={styles.btnNavy}>Request a call</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- Story 5: Our Solution ---------- */}
+      <section className={styles.solution}>
+        <div className="container-x">
+          <div className={styles.solHead}>
+            <Reveal>
+              <p className={styles.solEyebrow}>Folio3 Solution</p>
+              <h2 className={styles.solH2}>One Grounded, Conversational Source of Truth</h2>
+              <p className={styles.solIntro}>Folio3 built an AI-powered, SharePoint-grounded knowledge and workflow agent on Microsoft Copilot Studio, paired with a custom document generation and validation platform on Azure. A multi-agent assistant now sits in front of the entire EDMS environment. It answers document questions in plain language, routes status and reporting requests to specialized agents, and replies only from approved SharePoint content with citations. A guided editor then populates approved Word templates and validates every document before it enters the approval workflow.</p>
+            </Reveal>
+          </div>
+          <h4 className={styles.solDelivered}>What the solution delivered:</h4>
+          <div className={styles.solGrid}>
+            {SOLUTIONS.map((s, i) => (
+              <Reveal key={s.label} delay={(i % 4) * 80}>
+                <div className={styles.solCard}>
+                  <div className={styles.solNode}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={s.icon} alt="" className={styles.solIcon} width={58} height={58} />
+                  </div>
+                  <div className={styles.solBadge}>{s.n}</div>
+                  <h3 className={styles.solTitle}>{s.label}</h3>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className={styles.solBtnWrap}>
+            <Link href="#pgForm" className={styles.btnNavy}>Modernize your document estate</Link>
           </div>
         </div>
       </section>
