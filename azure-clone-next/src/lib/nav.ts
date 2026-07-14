@@ -24,6 +24,7 @@ export const NAV: NavItem[] = [
         ],
       },
       { label: 'Microsoft Copilot Consulting', href: '/data-science-ai/microsoft-copilot-consulting/' },
+      { label: 'Custom AI App Development', href: '/data-science-ai/azure-ai-foundry-app-development/' },
       { label: 'Copilot Scenario Library', href: '/ai-scenario-library/' },
       {
         label: 'Copilot Agent',

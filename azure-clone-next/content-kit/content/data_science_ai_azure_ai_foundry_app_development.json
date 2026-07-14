@@ -1,0 +1,210 @@
+{
+  "url": "https://azure.folio3.com/data-science-ai/azure-ai-foundry-app-development/",
+  "meta": {
+    "title": "Custom AI App Development on Azure AI Foundry | Folio3 Azure",
+    "description": "Folio3 builds custom AI applications on Azure AI Foundry — copilots grounded in your data, RAG apps, document AI, and AI features added to the apps you run.",
+    "canonical": "https://azure.folio3.com/data-science-ai/azure-ai-foundry-app-development/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        { "t": "h", "tag": "h1", "text": "Custom AI App Development on Azure AI Foundry" },
+        { "t": "p", "text": "Off-the-shelf AI rarely solves your specific problem. Folio3 builds and ships custom AI applications on Azure AI Foundry — copilots grounded in your own data, retrieval-augmented generation (RAG) apps, document and knowledge tools, and AI features added directly into the systems you already run." },
+        { "t": "cta", "text": "Book an AI App Discovery Call", "href": "#pgForm" }
+      ],
+      "headings": [
+        { "tag": "h1", "text": "Custom AI App Development on Azure AI Foundry" }
+      ],
+      "paragraphs": [
+        "Off-the-shelf AI rarely solves your specific problem. Folio3 builds and ships custom AI applications on Azure AI Foundry — copilots grounded in your own data, retrieval-augmented generation (RAG) apps, document and knowledge tools, and AI features added directly into the systems you already run."
+      ],
+      "listItems": [],
+      "ctas": [
+        { "text": "Book an AI App Discovery Call", "href": "#pgForm" }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "A Microsoft Partner Built For Production AI" },
+        { "t": "p", "text": "Enterprise AI and Azure delivery experience, backed by real Microsoft designations." },
+        { "t": "h", "tag": "h3", "text": "300+ Azure & AI Engagements Delivered" },
+        { "t": "p", "text": "Cloud, data, and AI projects delivered for enterprise clients since 2013." },
+        { "t": "h", "tag": "h3", "text": "100% Client Retention" },
+        { "t": "p", "text": "Every enterprise client who partners with us for Azure AI work continues the relationship." },
+        { "t": "h", "tag": "h3", "text": "Microsoft Solutions Partner" },
+        { "t": "p", "text": "Recognized Microsoft designations spanning Data & AI, Infrastructure, and Digital & App Innovation." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "A Microsoft Partner Built For Production AI" },
+        { "tag": "h3", "text": "300+ Azure & AI Engagements Delivered" },
+        { "tag": "h3", "text": "100% Client Retention" },
+        { "tag": "h3", "text": "Microsoft Solutions Partner" }
+      ],
+      "paragraphs": [
+        "Enterprise AI and Azure delivery experience, backed by real Microsoft designations.",
+        "Cloud, data, and AI projects delivered for enterprise clients since 2013.",
+        "Every enterprise client who partners with us for Azure AI work continues the relationship.",
+        "Recognized Microsoft designations spanning Data & AI, Infrastructure, and Digital & App Innovation."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Technology We Use" },
+        { "t": "p", "text": "Azure-native AI services and application platforms we use to take intelligent products to production." },
+        { "t": "li", "text": "Azure AI Foundry" },
+        { "t": "li", "text": "Azure OpenAI Service" },
+        { "t": "li", "text": "Azure AI Search (RAG)" },
+        { "t": "li", "text": "Azure Kubernetes Service & Container Apps" },
+        { "t": "li", "text": "Microsoft Copilot Studio & Agent Service" },
+        { "t": "li", "text": "Microsoft Entra ID" }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Technology We Use" }
+      ],
+      "paragraphs": [
+        "Azure-native AI services and application platforms we use to take intelligent products to production."
+      ],
+      "listItems": [
+        "Azure AI Foundry",
+        "Azure OpenAI Service",
+        "Azure AI Search (RAG)",
+        "Azure Kubernetes Service & Container Apps",
+        "Microsoft Copilot Studio & Agent Service",
+        "Microsoft Entra ID"
+      ],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Custom AI App Development Services" },
+        { "t": "p", "text": "Off-the-shelf AI rarely fits your exact problem, so we build and modernize AI applications grounded in your data." },
+        { "t": "h", "tag": "h3", "text": "Custom Copilots & RAG Apps" },
+        { "t": "p", "text": "Retrieval-augmented generation keeps answers grounded in your own documents and systems instead of generic model knowledge." },
+        { "t": "h", "tag": "h3", "text": "AI-Infused Product Features" },
+        { "t": "p", "text": "AI capabilities added directly into the applications your teams already use every day, rather than requiring a rebuild." },
+        { "t": "h", "tag": "h3", "text": "Document & Knowledge AI" },
+        { "t": "p", "text": "Search, extraction, and summarization tools that turn unstructured documents into usable answers at scale." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Custom AI App Development Services" },
+        { "tag": "h3", "text": "Custom Copilots & RAG Apps" },
+        { "tag": "h3", "text": "AI-Infused Product Features" },
+        { "tag": "h3", "text": "Document & Knowledge AI" }
+      ],
+      "paragraphs": [
+        "Off-the-shelf AI rarely fits your exact problem, so we build and modernize AI applications grounded in your data.",
+        "Retrieval-augmented generation keeps answers grounded in your own documents and systems instead of generic model knowledge.",
+        "AI capabilities added directly into the applications your teams already use every day, rather than requiring a rebuild.",
+        "Search, extraction, and summarization tools that turn unstructured documents into usable answers at scale."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Why Build Your AI App With Folio3" },
+        { "t": "p", "text": "AI engineering, Azure architecture, and responsible-AI guardrails to take your application from idea to production." },
+        { "t": "h", "tag": "h3", "text": "Microsoft Solutions Partner Expertise" },
+        { "t": "p", "text": "Certified Azure and AI engineers with hands-on delivery experience across Data & AI, Infrastructure, and Digital & App Innovation." },
+        { "t": "h", "tag": "h3", "text": "Built For Production, Not Demos" },
+        { "t": "p", "text": "We ship applications that run in real production environments, with monitoring and support behind them, not one-off proofs of concept." },
+        { "t": "h", "tag": "h3", "text": "Responsible AI By Design" },
+        { "t": "p", "text": "Security, governance, and monitoring controls are built into every implementation from day one, not bolted on afterward." },
+        { "t": "h", "tag": "h3", "text": "End-To-End Delivery" },
+        { "t": "p", "text": "From architecture through deployment and ongoing support, so your AI application keeps evolving with your business." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Why Build Your AI App With Folio3" },
+        { "tag": "h3", "text": "Microsoft Solutions Partner Expertise" },
+        { "tag": "h3", "text": "Built For Production, Not Demos" },
+        { "tag": "h3", "text": "Responsible AI By Design" },
+        { "tag": "h3", "text": "End-To-End Delivery" }
+      ],
+      "paragraphs": [
+        "AI engineering, Azure architecture, and responsible-AI guardrails to take your application from idea to production.",
+        "Certified Azure and AI engineers with hands-on delivery experience across Data & AI, Infrastructure, and Digital & App Innovation.",
+        "We ship applications that run in real production environments, with monitoring and support behind them, not one-off proofs of concept.",
+        "Security, governance, and monitoring controls are built into every implementation from day one, not bolted on afterward.",
+        "From architecture through deployment and ongoing support, so your AI application keeps evolving with your business."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "How We Deliver Your Azure AI Foundry App" },
+        { "t": "p", "text": "A four-step delivery model built for scalability, security, and AI-readiness." },
+        { "t": "h", "tag": "h3", "text": "Discovery" },
+        { "t": "p", "text": "We audit your current environment and data, and identify the highest-value use case to start with." },
+        { "t": "h", "tag": "h3", "text": "Architecture & Design" },
+        { "t": "p", "text": "Our Azure architects design the solution with scalability, security, and responsible-AI guardrails built in from the start." },
+        { "t": "h", "tag": "h3", "text": "AI-Accelerated Build" },
+        { "t": "p", "text": "We build with AI-assisted development, automated testing, and continuous deployment for faster, more reliable delivery." },
+        { "t": "h", "tag": "h3", "text": "Launch & Support" },
+        { "t": "p", "text": "We deploy with minimal downtime, train your team, and provide ongoing managed support as the application evolves." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "How We Deliver Your Azure AI Foundry App" },
+        { "tag": "h3", "text": "Discovery" },
+        { "tag": "h3", "text": "Architecture & Design" },
+        { "tag": "h3", "text": "AI-Accelerated Build" },
+        { "tag": "h3", "text": "Launch & Support" }
+      ],
+      "paragraphs": [
+        "A four-step delivery model built for scalability, security, and AI-readiness.",
+        "We audit your current environment and data, and identify the highest-value use case to start with.",
+        "Our Azure architects design the solution with scalability, security, and responsible-AI guardrails built in from the start.",
+        "We build with AI-assisted development, automated testing, and continuous deployment for faster, more reliable delivery.",
+        "We deploy with minimal downtime, train your team, and provide ongoing managed support as the application evolves."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Frequently Asked Questions" },
+        { "t": "p", "text": "Answers to the questions we hear most about custom AI app development on Azure AI Foundry." },
+        { "t": "p", "text": "Agents automate a specific task; a custom AI application is often a fuller product experience, and the two frequently work together in the same solution." },
+        { "t": "p", "text": "Yes. Adding AI to an application you already run is one of the fastest ways to see value, and it is a core part of what we build." },
+        { "t": "p", "text": "Security and governance controls, along with Azure's built-in security patterns, are part of every build from architecture through ongoing operations." },
+        { "t": "p", "text": "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Frequently Asked Questions" }
+      ],
+      "paragraphs": [
+        "Answers to the questions we hear most about custom AI app development on Azure AI Foundry.",
+        "Agents automate a specific task; a custom AI application is often a fuller product experience, and the two frequently work together in the same solution.",
+        "Yes. Adding AI to an application you already run is one of the fastest ways to see value, and it is a core part of what we build.",
+        "Security and governance controls, along with Azure's built-in security patterns, are part of every build from architecture through ongoing operations.",
+        "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": []
+}
