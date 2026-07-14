@@ -105,23 +105,36 @@ const FRICTION = [
 ];
 
 // "The Difference" - commodity automation vs the Folio3 Zero-Friction approach.
+// Each dimension carries a line icon (Scope = reach, Focus = aim, Value = growth).
 const COMPARISON = [
   {
     dimension: 'Scope',
+    icon: <><path d="M4 9V4h5" /><path d="M20 9V4h-5" /><path d="M4 15v5h5" /><path d="M20 15v5h-5" /></>,
     commodity: 'Fixes a single form, email trigger, or list.',
     folio3: 'Connects multi-department, cross-cloud data flows end to end.',
   },
   {
     dimension: 'Focus',
+    icon: <><circle cx="12" cy="12" r="7" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" /><circle cx="12" cy="12" r="1.5" /></>,
     commodity: 'UI-first bots clicking buttons on a screen.',
     folio3: 'API-first integration built on resilient cloud connectors.',
   },
   {
     dimension: 'Value',
+    icon: <><path d="M3 17l6-6 4 4 8-8" /><path d="M15 7h6v6" /></>,
     commodity: 'An employee\'s day made slightly easier.',
     folio3: 'Shorter business cycles, Quote-to-Cash, supply chain, fulfillment.',
   },
 ];
+
+/** Small brand-tinted glyph used beside each comparison dimension label. */
+function DimIcon({ children, className = 'h-4 w-4' }: { children: React.ReactNode; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      {children}
+    </svg>
+  );
+}
 
 // "The Zero-Friction Framework" - three numbered stages.
 const FRAMEWORK = [
@@ -280,7 +293,12 @@ export default function PowerAutomateConsultingServicesPage() {
                 <tbody>
                   {COMPARISON.map((row) => (
                     <tr key={row.dimension} className="border-t border-surface-line align-top">
-                      <th scope="row" className="px-6 py-5 text-sm font-semibold text-ink">{row.dimension}</th>
+                      <th scope="row" className="px-6 py-5 text-sm font-semibold text-ink">
+                        <span className="flex items-center gap-2.5">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-surface-chip text-brand"><DimIcon>{row.icon}</DimIcon></span>
+                          {row.dimension}
+                        </span>
+                      </th>
                       <td className="px-6 py-5 text-sm leading-relaxed text-body">{row.commodity}</td>
                       <td className="border-l-2 border-brand bg-surface-blue/40 px-6 py-5 text-sm leading-relaxed text-ink">{row.folio3}</td>
                     </tr>
@@ -296,7 +314,7 @@ export default function PowerAutomateConsultingServicesPage() {
                 <dl className="mt-4 space-y-4">
                   {COMPARISON.map((row) => (
                     <div key={row.dimension}>
-                      <dt className="text-xs font-semibold uppercase tracking-wider text-muted">{row.dimension}</dt>
+                      <dt className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted"><DimIcon className="h-3.5 w-3.5 text-brand">{row.icon}</DimIcon>{row.dimension}</dt>
                       <dd className="mt-1 text-sm leading-relaxed text-body">{row.commodity}</dd>
                     </div>
                   ))}
@@ -307,7 +325,7 @@ export default function PowerAutomateConsultingServicesPage() {
                 <dl className="mt-4 space-y-4">
                   {COMPARISON.map((row) => (
                     <div key={row.dimension}>
-                      <dt className="text-xs font-semibold uppercase tracking-wider text-brand/80">{row.dimension}</dt>
+                      <dt className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand/80"><DimIcon className="h-3.5 w-3.5 text-brand">{row.icon}</DimIcon>{row.dimension}</dt>
                       <dd className="mt-1 text-sm leading-relaxed text-ink">{row.folio3}</dd>
                     </div>
                   ))}
