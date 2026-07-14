@@ -7,7 +7,7 @@ import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 import path from 'node:path';
 
-const [route, label, yArg, hArg] = process.argv.slice(2);
+const [route, label, yArg, hArg, anchor] = process.argv.slice(2);
 const y = parseInt(yArg || '0', 10);
 const height = parseInt(hArg || '900', 10);
 const OUT = path.resolve('verify/_analysis/shots');
@@ -18,6 +18,19 @@ async function shot(page, url, file) {
   await page.goto(url, { waitUntil: 'load', timeout: 90000 });
   // full lazy-load so layout is final, then back to top
   for (let i = 0; i < 2; i++) { await page.evaluate(async () => { await new Promise((r) => { let v = 0; const t = setInterval(() => { scrollBy(0, 600); v += 600; if (v > document.body.scrollHeight + 800) { clearInterval(t); r(); } }, 40); }); }); await page.waitForTimeout(500); }
+  if (anchor) {
+    // robust against lazy-load offset shifts: scroll the section heading to the top, screenshot the viewport
+    const top = await page.evaluate((t) => {
+      const h = [...document.querySelectorAll('h1,h2,h3,h4')].find((e) => (e.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase().includes(t.toLowerCase()));
+      if (!h) return null;
+      const y = h.getBoundingClientRect().top + scrollY - 40;
+      scrollTo(0, y); return y;
+    }, anchor);
+    await page.waitForTimeout(600);
+    // clip is viewport-relative for a non-fullPage screenshot; we scrolled the heading to ~40px
+    await page.screenshot({ path: file, clip: { x: 0, y: 0, width: 1440, height } });
+    return;
+  }
   await page.evaluate(() => scrollTo(0, 0));
   await page.waitForTimeout(600);
   await page.screenshot({ path: file, clip: { x: 0, y, width: 1440, height } });

@@ -5,7 +5,17 @@ import { notFound } from 'next/navigation';
 import { getCaptured, getFaq, localImg } from '@/lib/content';
 import { OrderedRenderer } from '@/components/OrderedRenderer';
 import { Reveal } from './Reveal';
+import { KeyFeaturesTabs } from './KeyFeaturesTabs';
 import styles from './styles.module.css';
+
+const OUTCOMES = [
+  { stat: '50% to 70%', desc: 'faster access to workflow, approval status, and assigned items.' },
+  { stat: '70% to 90%', desc: 'less effort preparing due, overdue, pending, and expired reports' },
+  { stat: '40% to 60%', desc: 'fewer avoidable rework and rejection cycles before initiation' },
+  { stat: '30% to 50%', desc: 'less document preparation time through guided authoring.' },
+  { stat: '60% to 80%', desc: 'faster document discovery through natural language search.' },
+  { stat: '2x to 3x', desc: 'faster creation of a submission-ready document' },
+];
 
 const ICON = '/wp-content/uploads/2026/07/pc';
 const FACTS = [
@@ -75,7 +85,7 @@ export default function Page() {
 
   // Sections through "What The Client Needed" are bespoke below; delegate the rest (from the
   // "One Grounded…" solution section onward) to the shared renderer until each is converted.
-  const restIdx = page.sections.findIndex((s) => (s.items ?? []).some((i) => i.t === 'h' && /^Key Features$/i.test(i.text)));
+  const restIdx = page.sections.findIndex((s) => (s.items ?? []).some((i) => i.t === 'h' && /Ready to modernize your document management/i.test(i.text)));
   const rest = { ...page, sections: restIdx >= 0 ? page.sections.slice(restIdx) : page.sections.filter((s) => !(s.items ?? []).some((i) => i.t === 'h' && i.tag === 'h1')) };
 
   const pageUrl = `${ORIGIN}/${SLUG}/`;
@@ -223,7 +233,41 @@ export default function Page() {
         </div>
       </section>
 
-      {/* remaining sections (shared renderer) — converted one story at a time */}
+      {/* ---------- Story 6: Key Features (tabs) ---------- */}
+      <section className={styles.kf}>
+        <div className="container-x">
+          <h2 className={styles.kfTitle}>Key Features</h2>
+          <p className={styles.kfIntro}>The solution delivered three core capability sets, each addressing a specific place where documentation used to slow the business down.</p>
+        </div>
+        <KeyFeaturesTabs />
+      </section>
+
+      {/* ---------- Story 7: Impact & Outcomes ---------- */}
+      <section className={styles.outcomes}>
+        <div className="container-x">
+          <div className={styles.outHead}>
+            <Reveal>
+              <h2 className={styles.outTitle}>Impact &amp; Outcomes</h2>
+              <p className={styles.outIntro}>The solution turned EDMS from a system that depended on manual navigation and exact document knowledge into an intelligent, guided, and compliant experience. Based on the manual steps automated, the estimated impact includes:</p>
+            </Reveal>
+          </div>
+          <div className={styles.outGrid}>
+            {OUTCOMES.map((o, i) => (
+              <Reveal key={o.stat} delay={(i % 2) * 80}>
+                <div className={styles.outCard}>
+                  <span className={styles.outStat}>{o.stat}</span>
+                  <p className={styles.outDesc}>{o.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className={styles.outBanner}>
+            <p className={styles.outBannerText}>The result: a single, grounded, conversational source of truth for controlled documentation that shortened discovery, authoring, and reporting cycles, while preserving the client&apos;s existing document governance and approval processes.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* remaining sections (shared renderer) — CTA, FAQ, lead form */}
       <OrderedRenderer page={rest} title={TITLE} slug={SLUG} faq={faq} />
     </>
   );

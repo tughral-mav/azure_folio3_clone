@@ -173,6 +173,43 @@
   .solGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---------- Story 6: Key Features (tabs) ---------- */
+.kf { background: #fff; padding-top: 70px; padding-bottom: 0; }
+.kfTitle { font-size: 37.5px; line-height: 48px; font-weight: 700; letter-spacing: 1px; color: #121127; text-align: center; margin: 0; }
+.kfIntro { font-size: 15px; line-height: 22.5px; color: #1d262d; text-align: center; max-width: 1000px; margin: 16px auto 40px; }
+.kfTabRow { display: flex; justify-content: center; gap: 10px; border-bottom: 3px solid #17c3b2; }
+.kfTab { border: 0; cursor: pointer; font-family: inherit; background: #eef1f6; color: #4b4f58; font-size: 15px; font-weight: 600; padding: 16px 26px; border-radius: 6px 6px 0 0; transition: background-color 0.25s ease, color 0.25s ease; text-transform: capitalize; }
+.kfTab.kfActive { background: #00217f; color: #fff; }
+.kfPanel { background: #f5f8fe; }
+.kfPanelInner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding: 48px 0; }
+.kfPanelHead { font-size: 33.75px; line-height: 42px; font-weight: 700; color: #121127; margin: 0 0 26px; }
+.kfFeatures { display: flex; flex-direction: column; gap: 22px; }
+.kfFeat { display: flex; gap: 16px; align-items: flex-start; }
+.kfFeatIcon { width: 44px; height: 44px; object-fit: contain; flex: none; margin-top: 2px; }
+.kfFeatTitle { font-size: 18px; font-weight: 700; color: #121127; margin: 0 0 4px; }
+.kfFeatBody { font-size: 14px; line-height: 22px; color: #4b4f58; margin: 0; }
+.kfImg { width: 100%; height: auto; border-radius: 12px; }
+
+/* ---------- Story 7: Impact & Outcomes ---------- */
+.outcomes { background: #fff; padding-top: 70px; padding-bottom: 75px; }
+.outHead { text-align: center; max-width: 1000px; margin: 0 auto 44px; }
+.outTitle { font-size: 37.5px; line-height: 48px; font-weight: 700; letter-spacing: 1px; color: #121127; margin: 0 0 18px; }
+.outIntro { font-size: 15px; line-height: 22.5px; color: #1d262d; margin: 0; }
+.outGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.outCard { display: flex; align-items: center; gap: 22px; background: #f5f8fe; border: 1px solid #e9eefb; border-radius: 12px; padding: 26px 30px; }
+.outStat { font-size: 23px; font-weight: 700; color: #1742e7; flex: none; min-width: 116px; line-height: 1.2; }
+.outDesc { font-size: 16px; line-height: 24px; color: #121127; margin: 0; }
+.outBanner { margin-top: 24px; background: #1a44e6; border-radius: 12px; padding: 30px 40px; }
+.outBannerText { font-size: 18px; line-height: 27px; font-weight: 600; color: #fff; margin: 0; text-align: center; }
+
+@media (max-width: 1023px) {
+  .kfPanelInner { grid-template-columns: 1fr; gap: 28px; }
+  .kfTabRow { flex-wrap: wrap; }
+  .outGrid { grid-template-columns: 1fr; }
+  .outCard { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .kfTitle, .outTitle { font-size: 27px; line-height: 34px; }
+}
+
 @media (max-width: 1023px) {
   .clientGrid { grid-template-columns: 1fr; gap: 28px; }
   .facts { flex-direction: row; flex-wrap: wrap; border-right: 0; padding-right: 0; border-bottom: 1px solid rgba(255,255,255,0.28); padding-bottom: 20px; }
