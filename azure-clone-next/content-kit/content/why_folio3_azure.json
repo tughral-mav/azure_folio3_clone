@@ -1,0 +1,179 @@
+{
+  "url": "https://azure.folio3.com/why-folio3-azure/",
+  "meta": {
+    "title": "Why Choose Folio3 as Your Microsoft Azure Partner | Folio3 Azure",
+    "description": "See how Folio3 compares to a typical Azure reseller: in-house Microsoft-certified engineers, fixed-scope delivery, full code ownership, and named engineers after go-live.",
+    "canonical": "https://azure.folio3.com/why-folio3-azure/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        { "t": "h", "tag": "h1", "text": "Why Choose Folio3 as Your Microsoft Azure Partner" },
+        { "t": "p", "text": "Folio3 is a Microsoft Solutions Partner with over 15 years of enterprise Azure delivery — in-house engineering teams, fixed-scope engagements, and named engineers who stay on your account after go-live." },
+        { "t": "cta", "text": "Talk to an Azure Specialist", "href": "#pgForm" }
+      ],
+      "headings": [
+        { "tag": "h1", "text": "Why Choose Folio3 as Your Microsoft Azure Partner" }
+      ],
+      "paragraphs": [
+        "Folio3 is a Microsoft Solutions Partner with over 15 years of enterprise Azure delivery — in-house engineering teams, fixed-scope engagements, and named engineers who stay on your account after go-live."
+      ],
+      "listItems": [],
+      "ctas": [
+        { "text": "Talk to an Azure Specialist", "href": "#pgForm" }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Choosing an Azure Partner Is Harder Than the Sales Deck Suggests" },
+        { "t": "p", "text": "Most enterprises don't struggle with Azure because of the technology — they struggle because of who they hired to deliver it." },
+        { "t": "h", "tag": "h3", "text": "Generalist Agencies Without Microsoft Depth" },
+        { "t": "p", "text": "Digital agencies that added \"cloud\" to their service list rarely carry the certifications or delivery hours to back it up, so architecture decisions default to whatever ships fastest, not what scales." },
+        { "t": "h", "tag": "h3", "text": "Work Quietly Subcontracted Offshore" },
+        { "t": "p", "text": "Some partners sell a senior team in the pitch, then hand delivery to a subcontracted bench you never meet and can't vet — ownership, quality, and communication all slip." },
+        { "t": "h", "tag": "h3", "text": "Vendor Lock-In by Design" },
+        { "t": "p", "text": "Proprietary frameworks, undocumented configurations, and code you don't fully own leave you dependent on the same vendor for every future change, whether you're happy with them or not." },
+        { "t": "h", "tag": "h3", "text": "Support That Ends at Go-Live" },
+        { "t": "p", "text": "Many engagements are scoped to the launch date. Once the invoice is paid, tickets queue for days and the people who built your environment have moved on to the next client." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Choosing an Azure Partner Is Harder Than the Sales Deck Suggests" },
+        { "tag": "h3", "text": "Generalist Agencies Without Microsoft Depth" },
+        { "tag": "h3", "text": "Work Quietly Subcontracted Offshore" },
+        { "tag": "h3", "text": "Vendor Lock-In by Design" },
+        { "tag": "h3", "text": "Support That Ends at Go-Live" }
+      ],
+      "paragraphs": [
+        "Most enterprises don't struggle with Azure because of the technology — they struggle because of who they hired to deliver it.",
+        "Digital agencies that added \"cloud\" to their service list rarely carry the certifications or delivery hours to back it up, so architecture decisions default to whatever ships fastest, not what scales.",
+        "Some partners sell a senior team in the pitch, then hand delivery to a subcontracted bench you never meet and can't vet — ownership, quality, and communication all slip.",
+        "Proprietary frameworks, undocumented configurations, and code you don't fully own leave you dependent on the same vendor for every future change, whether you're happy with them or not.",
+        "Many engagements are scoped to the launch date. Once the invoice is paid, tickets queue for days and the people who built your environment have moved on to the next client."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Folio3 vs. a Typical Azure Reseller" },
+        { "t": "p", "text": "The difference shows up in how the engagement actually runs, not just in what's promised." },
+        { "t": "h", "tag": "h3", "text": "Typical Azure Reseller" },
+        { "t": "p", "text": "Sells Azure licensing; delivery is an afterthought" },
+        { "t": "p", "text": "Work routed through a rotating, often offshore bench" },
+        { "t": "p", "text": "Fixed handoff at go-live, then a support ticket queue" },
+        { "t": "p", "text": "Proprietary tooling with limited documentation" },
+        { "t": "p", "text": "Open-ended time-and-materials billing" },
+        { "t": "h", "tag": "h3", "text": "Folio3" },
+        { "t": "p", "text": "Microsoft Solutions Partner with Azure delivery as the core business" },
+        { "t": "p", "text": "In-house engineering teams you can meet and vet before signing" },
+        { "t": "p", "text": "Named engineers stay assigned to your account after launch" },
+        { "t": "p", "text": "You own the code and architecture, with full documentation and handover" },
+        { "t": "p", "text": "Fixed-scope, milestone-based engagements you can hold us to" }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Folio3 vs. a Typical Azure Reseller" },
+        { "tag": "h3", "text": "Typical Azure Reseller" },
+        { "tag": "h3", "text": "Folio3" }
+      ],
+      "paragraphs": [
+        "The difference shows up in how the engagement actually runs, not just in what's promised.",
+        "Sells Azure licensing; delivery is an afterthought",
+        "Work routed through a rotating, often offshore bench",
+        "Fixed handoff at go-live, then a support ticket queue",
+        "Proprietary tooling with limited documentation",
+        "Open-ended time-and-materials billing",
+        "Microsoft Solutions Partner with Azure delivery as the core business",
+        "In-house engineering teams you can meet and vet before signing",
+        "Named engineers stay assigned to your account after launch",
+        "You own the code and architecture, with full documentation and handover",
+        "Fixed-scope, milestone-based engagements you can hold us to"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "What You Actually Get With Folio3" },
+        { "t": "p", "text": "Every engagement runs on the same operating model, regardless of company size or industry." },
+        { "t": "h", "tag": "h3", "text": "Microsoft Solutions Partner Designations" },
+        { "t": "p", "text": "Certified across Azure Infrastructure, Data & AI, and Digital & App Innovation, verified directly by Microsoft rather than self-reported." },
+        { "t": "h", "tag": "h3", "text": "200+ Certified Engineers, In-House" },
+        { "t": "p", "text": "Delivery is staffed from our own bench of Microsoft-certified architects and engineers — no undisclosed subcontractors." },
+        { "t": "h", "tag": "h3", "text": "Fixed-Scope, Milestone-Based Delivery" },
+        { "t": "p", "text": "Engagements are scoped and priced against deliverables, not open-ended hours, so budget and timeline stay predictable." },
+        { "t": "h", "tag": "h3", "text": "You Keep the Code and the Architecture" },
+        { "t": "p", "text": "Full IP ownership, documentation, and knowledge transfer at every milestone — your team can run the environment without us." },
+        { "t": "h", "tag": "h3", "text": "Named Engineers After Go-Live" },
+        { "t": "p", "text": "Post-launch support comes from engineers who already know your environment, not a shared, anonymous help desk." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "What You Actually Get With Folio3" },
+        { "tag": "h3", "text": "Microsoft Solutions Partner Designations" },
+        { "tag": "h3", "text": "200+ Certified Engineers, In-House" },
+        { "tag": "h3", "text": "Fixed-Scope, Milestone-Based Delivery" },
+        { "tag": "h3", "text": "You Keep the Code and the Architecture" },
+        { "tag": "h3", "text": "Named Engineers After Go-Live" }
+      ],
+      "paragraphs": [
+        "Every engagement runs on the same operating model, regardless of company size or industry.",
+        "Certified across Azure Infrastructure, Data & AI, and Digital & App Innovation, verified directly by Microsoft rather than self-reported.",
+        "Delivery is staffed from our own bench of Microsoft-certified architects and engineers — no undisclosed subcontractors.",
+        "Engagements are scoped and priced against deliverables, not open-ended hours, so budget and timeline stay predictable.",
+        "Full IP ownership, documentation, and knowledge transfer at every milestone — your team can run the environment without us.",
+        "Post-launch support comes from engineers who already know your environment, not a shared, anonymous help desk."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Frequently Asked Questions" },
+        { "t": "p", "text": "Objection-handling answers about hiring Folio3 as your Azure partner." },
+        { "t": "p", "text": "Folio3 is a Microsoft Solutions Partner with Azure delivery as a core practice, not an add-on service. Architecture, migration, and DevOps work is staffed from in-house, Microsoft-certified engineers rather than generalists picking up cloud work between other projects." },
+        { "t": "p", "text": "No. Every engineer assigned to your account is a Folio3 employee you can meet and vet before the engagement starts, and that team stays consistent through delivery — we don't route work to an undisclosed subcontracted bench." },
+        { "t": "p", "text": "You own it. Every engagement includes full IP ownership, documentation, and a formal knowledge-transfer handover, so your team can operate and extend the environment independently of Folio3 if you choose to." },
+        { "t": "p", "text": "Engagements are scoped and priced against defined milestones and deliverables, not open-ended time and materials, so you know the budget and timeline before work begins." },
+        { "t": "p", "text": "No. Post-launch support is handled by named engineers who already know your environment from delivery, available through optional managed-services agreements — not a shared, anonymous ticket queue." },
+        { "t": "p", "text": "Yes. We commonly work as an extension of an existing IT or development team, taking on the Azure-specific architecture, migration, or DevOps work your team doesn't have the bandwidth or certifications to own alone." },
+        { "t": "p", "text": "Folio3 holds Microsoft Solutions Partner designations across Azure Infrastructure, Data & AI, and Digital & App Innovation, backed by 200+ Microsoft-certified engineers — verifiable directly through Microsoft's Partner Center, not self-reported credentials." },
+        { "t": "p", "text": "Most clients start with a scoped assessment or a fixed-fee pilot engagement against one workload, which gives you a working deliverable and a clear view of how we operate before committing to a larger engagement." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Frequently Asked Questions" }
+      ],
+      "paragraphs": [
+        "Objection-handling answers about hiring Folio3 as your Azure partner.",
+        "Folio3 is a Microsoft Solutions Partner with Azure delivery as a core practice, not an add-on service. Architecture, migration, and DevOps work is staffed from in-house, Microsoft-certified engineers rather than generalists picking up cloud work between other projects.",
+        "No. Every engineer assigned to your account is a Folio3 employee you can meet and vet before the engagement starts, and that team stays consistent through delivery — we don't route work to an undisclosed subcontracted bench.",
+        "You own it. Every engagement includes full IP ownership, documentation, and a formal knowledge-transfer handover, so your team can operate and extend the environment independently of Folio3 if you choose to.",
+        "Engagements are scoped and priced against defined milestones and deliverables, not open-ended time and materials, so you know the budget and timeline before work begins.",
+        "No. Post-launch support is handled by named engineers who already know your environment from delivery, available through optional managed-services agreements — not a shared, anonymous ticket queue.",
+        "Yes. We commonly work as an extension of an existing IT or development team, taking on the Azure-specific architecture, migration, or DevOps work your team doesn't have the bandwidth or certifications to own alone.",
+        "Folio3 holds Microsoft Solutions Partner designations across Azure Infrastructure, Data & AI, and Digital & App Innovation, backed by 200+ Microsoft-certified engineers — verifiable directly through Microsoft's Partner Center, not self-reported credentials.",
+        "Most clients start with a scoped assessment or a fixed-fee pilot engagement against one workload, which gives you a working deliverable and a clear view of how we operate before committing to a larger engagement."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": []
+}
