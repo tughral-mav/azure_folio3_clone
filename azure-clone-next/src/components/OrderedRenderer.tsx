@@ -557,7 +557,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {challengeItems.map((c, j) => (
                 <Reveal key={j} animation="fadeInUp" delay={j * 60}><li className="flex gap-5">
                   <div className="flex flex-col items-center self-stretch">
-                    <span className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-base font-bold text-brand">{j + 1}</span>
+                    <span className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-base font-bold text-brand">{cardIcon(c.title) ? <Image src={cardIcon(c.title)} alt="" width={32} height={32} className="h-8 w-8 object-contain" /> : j + 1}</span>
                     {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/25" aria-hidden />}
                   </div>
                   <p className="pt-4 text-body leading-relaxed">{c.title}</p>
@@ -596,11 +596,9 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {featureUnits.map((f, j) => (
                 <Reveal key={j} animation="fadeInUp" delay={j * 60}><div className="h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card card-hover">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
-                    {f.imgs[0]
-                      ? <Image src={f.imgs[0].src} alt="" width={26} height={26} className="h-6 w-6 object-contain" />
-                      : j + 1}
-                  </span>
+                  {(cardIcon(f.title) || f.imgs[0]?.src)
+                    ? <Image src={(cardIcon(f.title) || f.imgs[0]?.src) as string} alt="" width={48} height={48} className="h-12 w-12 object-contain" />
+                    : <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">{j + 1}</span>}
                   <h3 className="mt-5 text-lg font-semibold text-ink">{f.title}</h3>
                   {f.paras[0] && <p className="mt-3 text-sm leading-relaxed text-body">{f.paras[0]}</p>}
                 </div></Reveal>
@@ -629,7 +627,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
             <div className={`mt-12 grid gap-6 ${outcomeUnits.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
               {outcomeUnits.map((o, j) => {
                 const m = o.title.trim().match(/^([\d.,]+%?\+?|[\d.,]+x)\s+(.*)$/i);
-                const icon = icons[j]?.src;
+                const icon = cardIcon(o.title) || icons[j]?.src;
                 return (
                   <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-[#e9eefb] bg-[#f5f8fe] p-8 text-center card-hover">
                     {icon
