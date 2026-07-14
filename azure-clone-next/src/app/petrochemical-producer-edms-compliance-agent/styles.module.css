@@ -89,11 +89,12 @@
   .heroImg { animation: none; }
 }
 
-/* ---------- shared reveal (scoped) ---------- */
-.reveal { opacity: 0; }
-.reveal.in { animation: pcFadeUp 1s ease both; }
-@keyframes pcFadeUp { from { opacity: 0; transform: translate3d(0, 40px, 0); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { .reveal, .reveal.in { opacity: 1; animation: none; } }
+/* ---------- shared reveal (scoped) ----------
+   Content is ALWAYS visible (opacity:1) — the reveal only slides it up when it enters view,
+   so a failed/absent IntersectionObserver or no-JS never hides content. */
+.reveal.in { animation: pcFadeUp 0.8s ease both; }
+@keyframes pcFadeUp { from { transform: translate3d(0, 36px, 0); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .reveal.in { animation: none; } }
 
 /* ---------- Story 2: About The Client (blue band) ---------- */
 .clientBand {
