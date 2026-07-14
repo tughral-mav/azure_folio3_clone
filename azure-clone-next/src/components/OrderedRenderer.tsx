@@ -139,7 +139,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const heroTitle = seoH1 ? heroH2s[0].title : h1u.title;
       const { head, tail } = splitHi(heroTitle);
       const sub = seoH1 ? (heroH2s[1]?.title ?? heroH2s[0].paras[0] ?? h1u.paras[0]) : h1u.paras[0];
-      const heroCtas = (h1u.ctas.length ? h1u.ctas : lead.ctas).slice(0, 3);
+      const heroCtas = (h1u.ctas.length ? h1u.ctas : (lead.ctas.length ? lead.ctas : units.flatMap((u) => u.ctas))).slice(0, 3);
       const ctas = heroCtas.length ? heroCtas : [{ text: 'Speak to Our Azure Experts', href: '#pgForm' }];
       const illo = [...lead.imgs, ...units.flatMap((u) => u.imgs)].find((im) => im.w >= 180);
       // Suppress the hero background when it's the SAME image set as the foreground illustration
@@ -499,7 +499,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       const eyebrow = (clientMarker && (markerRe.test(clientMarker.title.trim()) ? clientMarker.title : clientMarker.paras.find((p) => markerRe.test(p.trim())))) || 'The Customer';
       const facts = factUnits.map((u) => u.title).slice(0, 4);
       // a separate client NAME h2 (NOT the marker itself, e.g. "Alibaba"); city-university/savills have none
-      const nameU = units.find((u) => u.tag === 'h2' && u !== clientMarker && !markerRe.test(u.title.trim()) && u.title.length < 40);
+      const nameU = units.find((u) => u.tag === 'h2' && u !== clientMarker && !markerRe.test(u.title.trim()) && u.title.length < 60);
       const desc = units.flatMap((u) => u.paras).filter((p) => p.length > 40 && !markerRe.test(p.trim()));
       const cimg = allImgs.filter((im) => im.w >= 140 && !isChromeImg(im.src)).sort((a, b) => b.w - a.w)[0];
       if (facts.length) {
@@ -557,10 +557,10 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {challengeItems.map((c, j) => (
                 <Reveal key={j} animation="fadeInUp" delay={j * 60}><li className="flex gap-5">
                   <div className="flex flex-col items-center self-stretch">
-                    <span className="z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white shadow-md">{j + 1}</span>
-                    {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/30" aria-hidden />}
+                    <span className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-base font-bold text-brand">{cardIcon(c.title) ? <Image src={cardIcon(c.title)} alt="" width={32} height={32} className="h-8 w-8 object-contain" /> : j + 1}</span>
+                    {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/25" aria-hidden />}
                   </div>
-                  <p className="pt-2 text-body leading-relaxed">{c.title}</p>
+                  <p className="pt-4 text-body leading-relaxed">{c.title}</p>
                 </li></Reveal>
               ))}
             </ol>
@@ -596,11 +596,9 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {featureUnits.map((f, j) => (
                 <Reveal key={j} animation="fadeInUp" delay={j * 60}><div className="h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card card-hover">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
-                    {f.imgs[0]
-                      ? <Image src={f.imgs[0].src} alt="" width={26} height={26} className="h-6 w-6 object-contain" />
-                      : j + 1}
-                  </span>
+                  {(cardIcon(f.title) || f.imgs[0]?.src)
+                    ? <Image src={(cardIcon(f.title) || f.imgs[0]?.src) as string} alt="" width={48} height={48} className="h-12 w-12 object-contain" />
+                    : <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">{j + 1}</span>}
                   <h3 className="mt-5 text-lg font-semibold text-ink">{f.title}</h3>
                   {f.paras[0] && <p className="mt-3 text-sm leading-relaxed text-body">{f.paras[0]}</p>}
                 </div></Reveal>
@@ -629,15 +627,17 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
             <div className={`mt-12 grid gap-6 ${outcomeUnits.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
               {outcomeUnits.map((o, j) => {
                 const m = o.title.trim().match(/^([\d.,]+%?\+?|[\d.,]+x)\s+(.*)$/i);
-                const icon = icons[j]?.src;
+                const icon = cardIcon(o.title) || icons[j]?.src;
                 return (
-                  <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-surface-line bg-white p-8 text-center shadow-card card-hover">
+                  <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-[#e9eefb] bg-[#f5f8fe] p-8 text-center card-hover">
                     {icon
                       ? <Image src={icon} alt="" width={64} height={64} className="h-16 w-16 object-contain" />
                       : m
                         ? <span className="text-4xl font-bold text-brand">{m[1]}</span>
                         : <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6"><circle cx="12" cy="12" r="9" /><path d="m8.5 12 2.5 2.5 5-5" /></svg></span>}
                     <h3 className="mt-4 text-lg font-semibold leading-snug text-ink">{icon ? o.title : (m ? m[2] : o.title)}</h3>
+                    {o.paras[0] && o.paras[0] !== oIntro && <p className="mt-3 text-sm leading-relaxed text-body">{o.paras[0]}</p>}
+                    {o.lis.length > 0 && <ul className="mt-3 space-y-1.5 self-stretch text-left text-sm text-body">{o.lis.map((li, k) => <li key={k} className="flex gap-2"><span className="mt-0.5 text-brand">•</span><span>{li}</span></li>)}</ul>}
                   </div></Reveal>
                 );
               })}
