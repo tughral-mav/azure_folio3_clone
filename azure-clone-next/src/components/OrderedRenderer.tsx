@@ -631,13 +631,15 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
                 const m = o.title.trim().match(/^([\d.,]+%?\+?|[\d.,]+x)\s+(.*)$/i);
                 const icon = icons[j]?.src;
                 return (
-                  <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-surface-line bg-white p-8 text-center shadow-card card-hover">
+                  <Reveal key={j} animation="fadeInUp" delay={j * 70}><div className="flex h-full flex-col items-center rounded-2xl border border-[#e9eefb] bg-[#f5f8fe] p-8 text-center card-hover">
                     {icon
                       ? <Image src={icon} alt="" width={64} height={64} className="h-16 w-16 object-contain" />
                       : m
                         ? <span className="text-4xl font-bold text-brand">{m[1]}</span>
                         : <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6"><circle cx="12" cy="12" r="9" /><path d="m8.5 12 2.5 2.5 5-5" /></svg></span>}
                     <h3 className="mt-4 text-lg font-semibold leading-snug text-ink">{icon ? o.title : (m ? m[2] : o.title)}</h3>
+                    {o.paras[0] && o.paras[0] !== oIntro && <p className="mt-3 text-sm leading-relaxed text-body">{o.paras[0]}</p>}
+                    {o.lis.length > 0 && <ul className="mt-3 space-y-1.5 self-stretch text-left text-sm text-body">{o.lis.map((li, k) => <li key={k} className="flex gap-2"><span className="mt-0.5 text-brand">•</span><span>{li}</span></li>)}</ul>}
                   </div></Reveal>
                 );
               })}
