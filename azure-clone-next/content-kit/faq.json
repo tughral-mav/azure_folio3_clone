@@ -136,5 +136,15 @@
   "testimonials": [
     "What is Azure Power Platform?",
     "What is Application Modernization?"
+  ],
+  "microsoft_power_platform_services_power_virtual_agents": [
+    "How is Power Virtual Agents different from a basic FAQ chatbot?",
+    "Do we need Dataverse or Power Automate to use Power Virtual Agents?",
+    "How long does a Power Virtual Agents build take?",
+    "How is Power Virtual Agents licensed?",
+    "How is data secured when the bot handles account or customer information?",
+    "What happens when the bot cannot answer a request?",
+    "Can the bot work across Teams, web chat, and voice at the same time?",
+    "Does the bot keep improving after launch?"
   ]
 }

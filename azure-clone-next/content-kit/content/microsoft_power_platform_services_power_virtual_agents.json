@@ -1,0 +1,921 @@
+{
+  "url": "https://azure.folio3.com/microsoft-power-platform-services/power-virtual-agents/",
+  "meta": {
+    "title": "Microsoft Power Virtual Agents Consulting Services | Folio3 Azure",
+    "description": "Microsoft Power Virtual Agents consulting services from Folio3 Azure — conversation design, Power Automate and Dataverse integration, omnichannel deployment, and analytics for chatbots that actually resolve requests.",
+    "canonical": "https://azure.folio3.com/microsoft-power-platform-services/power-virtual-agents/",
+    "ogImage": null,
+    "h1Count": 1
+  },
+  "bgImages": [],
+  "images": [],
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Microsoft Power Virtual Agents Consulting Services"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 Azure designs, builds, and operates Microsoft Power Virtual Agents chatbots that resolve real customer and employee requests, not just route them. We connect every bot to the data and workflows behind it, so answers are accurate and actions actually get taken."
+        },
+        {
+          "t": "cta",
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        },
+        {
+          "t": "cta",
+          "text": "Talk to a Power Virtual Agents consultant",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Microsoft Power Virtual Agents Consulting Services"
+        }
+      ],
+      "paragraphs": [
+        "Folio3 Azure designs, builds, and operates Microsoft Power Virtual Agents chatbots that resolve real customer and employee requests, not just route them. We connect every bot to the data and workflows behind it, so answers are accurate and actions actually get taken."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Talk to a Power Virtual Agents consultant",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "The cost of support that does not scale."
+        },
+        {
+          "t": "p",
+          "text": "Ticket volume grows faster than headcount, and a chatbot with no real design behind it just adds another dead end for customers and employees to run into."
+        },
+        {
+          "t": "cta",
+          "text": "See how we fix this",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "01  Support that cannot keep up with demand"
+        },
+        {
+          "t": "p",
+          "text": "Peak periods and after-hours requests pile up faster than a human team can answer them, and every delay shows up as a lower satisfaction score."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "02  Knowledge trapped in scattered systems"
+        },
+        {
+          "t": "p",
+          "text": "Answers live across wikis, ticketing tools, and spreadsheets that no single agent, human or bot, can search in one place."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "03  Bots that escalate more than they resolve"
+        },
+        {
+          "t": "p",
+          "text": "A shallow keyword bot escalates almost everything it hears, so the team ends up supporting the bot instead of being helped by it."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "04  No visibility into what is working"
+        },
+        {
+          "t": "p",
+          "text": "Without conversation analytics, there is no way to see where the bot succeeds, where it fails, or what to fix next."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "The cost of support that does not scale."
+        },
+        {
+          "tag": "h3",
+          "text": "01  Support that cannot keep up with demand"
+        },
+        {
+          "tag": "h3",
+          "text": "02  Knowledge trapped in scattered systems"
+        },
+        {
+          "tag": "h3",
+          "text": "03  Bots that escalate more than they resolve"
+        },
+        {
+          "tag": "h3",
+          "text": "04  No visibility into what is working"
+        }
+      ],
+      "paragraphs": [
+        "Ticket volume grows faster than headcount, and a chatbot with no real design behind it just adds another dead end for customers and employees to run into.",
+        "Peak periods and after-hours requests pile up faster than a human team can answer them, and every delay shows up as a lower satisfaction score.",
+        "Answers live across wikis, ticketing tools, and spreadsheets that no single agent, human or bot, can search in one place.",
+        "A shallow keyword bot escalates almost everything it hears, so the team ends up supporting the bot instead of being helped by it.",
+        "Without conversation analytics, there is no way to see where the bot succeeds, where it fails, or what to fix next."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "See how we fix this",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Power Virtual Agents consulting services, from design to production."
+        },
+        {
+          "t": "p",
+          "text": "Folio3 Azure delivers Power Virtual Agents as a governed, production-grade layer on top of Power Platform. As a Microsoft partner, we cover the full scope of the build under one accountable team."
+        },
+        {
+          "t": "cta",
+          "text": "Explore our Power Virtual Agents services",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Conversation design and bot architecture"
+        },
+        {
+          "t": "p",
+          "text": "We design the topics, entities, and conversation flows that determine whether a bot actually resolves a request or just stalls it."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Power Automate and Dataverse integration"
+        },
+        {
+          "t": "p",
+          "text": "We connect the bot to the systems of record it needs, so it can look up, update, and act on real data instead of only describing it."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Omnichannel deployment"
+        },
+        {
+          "t": "p",
+          "text": "We publish the same bot consistently across every channel customers and employees already use."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Analytics and continuous improvement"
+        },
+        {
+          "t": "p",
+          "text": "We treat launch as the starting point, not the finish line, and tune the bot against what real conversations show."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Power Virtual Agents consulting services, from design to production."
+        },
+        {
+          "tag": "h3",
+          "text": "Conversation design and bot architecture"
+        },
+        {
+          "tag": "h3",
+          "text": "Power Automate and Dataverse integration"
+        },
+        {
+          "tag": "h3",
+          "text": "Omnichannel deployment"
+        },
+        {
+          "tag": "h3",
+          "text": "Analytics and continuous improvement"
+        }
+      ],
+      "paragraphs": [
+        "Folio3 Azure delivers Power Virtual Agents as a governed, production-grade layer on top of Power Platform. As a Microsoft partner, we cover the full scope of the build under one accountable team.",
+        "We design the topics, entities, and conversation flows that determine whether a bot actually resolves a request or just stalls it.",
+        "We connect the bot to the systems of record it needs, so it can look up, update, and act on real data instead of only describing it.",
+        "We publish the same bot consistently across every channel customers and employees already use.",
+        "We treat launch as the starting point, not the finish line, and tune the bot against what real conversations show."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Explore our Power Virtual Agents services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Power Virtual Agents build made to actually get used."
+        },
+        {
+          "t": "p",
+          "text": "Many bots ship and quietly get abandoned. Folio3 Azure builds Power Virtual Agents that hold up under real usage, not just a demo."
+        },
+        {
+          "t": "cta",
+          "text": "Talk to a Power Virtual Agents consultant",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Trained on real knowledge"
+        },
+        {
+          "t": "p",
+          "text": "Bots answer from the organization’s own documentation and systems, not a generic script disconnected from how the business actually works."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Escalates cleanly"
+        },
+        {
+          "t": "p",
+          "text": "When a bot reaches its limit, it hands off with full context instead of leaving the person stuck in a loop."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Works across channels"
+        },
+        {
+          "t": "p",
+          "text": "The same bot logic runs in Teams, on the web, and over voice, so behavior stays consistent everywhere it is deployed."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Improves after launch"
+        },
+        {
+          "t": "p",
+          "text": "Conversation data drives an ongoing tuning cycle, so coverage and accuracy grow instead of freezing at go-live."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Power Virtual Agents build made to actually get used."
+        },
+        {
+          "tag": "h3",
+          "text": "Trained on real knowledge"
+        },
+        {
+          "tag": "h3",
+          "text": "Escalates cleanly"
+        },
+        {
+          "tag": "h3",
+          "text": "Works across channels"
+        },
+        {
+          "tag": "h3",
+          "text": "Improves after launch"
+        }
+      ],
+      "paragraphs": [
+        "Many bots ship and quietly get abandoned. Folio3 Azure builds Power Virtual Agents that hold up under real usage, not just a demo.",
+        "Bots answer from the organization’s own documentation and systems, not a generic script disconnected from how the business actually works.",
+        "When a bot reaches its limit, it hands off with full context instead of leaving the person stuck in a loop.",
+        "The same bot logic runs in Teams, on the web, and over voice, so behavior stays consistent everywhere it is deployed.",
+        "Conversation data drives an ongoing tuning cycle, so coverage and accuracy grow instead of freezing at go-live."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Talk to a Power Virtual Agents consultant",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What a well-built virtual agent supports, by industry."
+        },
+        {
+          "t": "p",
+          "text": "The same design and integration approach adapts to how each sector’s support and service requests actually work. These are representative scenarios, each scoped to a defined set of intents."
+        },
+        {
+          "t": "cta",
+          "text": "Discuss your industry",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Retail and e-commerce"
+        },
+        {
+          "t": "p",
+          "text": "Order status, returns, and product questions are resolved instantly, freeing the service team for the requests that need a person."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Financial services"
+        },
+        {
+          "t": "p",
+          "text": "Balance checks, transaction lookups, and routine requests are handled inside strict identity and compliance controls."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Healthcare"
+        },
+        {
+          "t": "p",
+          "text": "Appointment scheduling and routine patient questions are automated under role-based access and data residency requirements."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manufacturing and field service"
+        },
+        {
+          "t": "p",
+          "text": "Technicians get instant answers on parts, procedures, and ticket status from a Teams bot, without leaving the tools they already use."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "What a well-built virtual agent supports, by industry."
+        },
+        {
+          "tag": "h3",
+          "text": "Retail and e-commerce"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial services"
+        },
+        {
+          "tag": "h3",
+          "text": "Healthcare"
+        },
+        {
+          "tag": "h3",
+          "text": "Manufacturing and field service"
+        }
+      ],
+      "paragraphs": [
+        "The same design and integration approach adapts to how each sector’s support and service requests actually work. These are representative scenarios, each scoped to a defined set of intents.",
+        "Order status, returns, and product questions are resolved instantly, freeing the service team for the requests that need a person.",
+        "Balance checks, transaction lookups, and routine requests are handled inside strict identity and compliance controls.",
+        "Appointment scheduling and routine patient questions are automated under role-based access and data residency requirements.",
+        "Technicians get instant answers on parts, procedures, and ticket status from a Teams bot, without leaving the tools they already use."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Discuss your industry",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Power Virtual Agents at the center of the Microsoft ecosystem."
+        },
+        {
+          "t": "p",
+          "text": "A bot is only as useful as the systems it can reach. Folio3 Azure positions Power Virtual Agents as the conversational layer across the Microsoft estate and the systems around it."
+        },
+        {
+          "t": "cta",
+          "text": "See integration options",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Power Platform"
+        },
+        {
+          "t": "p",
+          "text": "Power Virtual Agents draws on Dataverse for data, Power Automate for action, and Power Apps for anything that needs a full interface, from one connected platform."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Microsoft Teams and Omnichannel"
+        },
+        {
+          "t": "p",
+          "text": "Bots deploy natively into Teams for internal use and into web and social channels for customers, from a single build."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure AI and Bot Framework"
+        },
+        {
+          "t": "p",
+          "text": "Deeper language understanding and custom logic extend the bot through Azure AI services and the Bot Framework SDK when a scenario needs it."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Power Virtual Agents at the center of the Microsoft ecosystem."
+        },
+        {
+          "tag": "h3",
+          "text": "Power Platform"
+        },
+        {
+          "tag": "h3",
+          "text": "Microsoft Teams and Omnichannel"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure AI and Bot Framework"
+        }
+      ],
+      "paragraphs": [
+        "A bot is only as useful as the systems it can reach. Folio3 Azure positions Power Virtual Agents as the conversational layer across the Microsoft estate and the systems around it.",
+        "Power Virtual Agents draws on Dataverse for data, Power Automate for action, and Power Apps for anything that needs a full interface, from one connected platform.",
+        "Bots deploy natively into Teams for internal use and into web and social channels for customers, from a single build.",
+        "Deeper language understanding and custom logic extend the bot through Azure AI services and the Bot Framework SDK when a scenario needs it."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "See integration options",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "From first conversation to a production-ready agent."
+        },
+        {
+          "t": "p",
+          "text": "Engagements begin with the requests people actually make today and move to a governed, measured bot in clear stages."
+        },
+        {
+          "t": "cta",
+          "text": "Start with a discovery workshop",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "01  Discover"
+        },
+        {
+          "t": "p",
+          "text": "Review ticket history and transcripts to identify the highest-volume, most resolvable intents, and define the scope for version one."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "02  Design"
+        },
+        {
+          "t": "p",
+          "text": "Build the conversation flows, entities, and escalation paths for the prioritized topics, with fallback handled deliberately."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "03  Build and integrate"
+        },
+        {
+          "t": "p",
+          "text": "Connect the bot to Dataverse, Power Automate, and line-of-business systems so it can look up and act on real data."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "04  Deploy and optimize"
+        },
+        {
+          "t": "p",
+          "text": "Launch across the right channels, then tune topics and coverage from real conversation analytics."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "From first conversation to a production-ready agent."
+        },
+        {
+          "tag": "h3",
+          "text": "01  Discover"
+        },
+        {
+          "tag": "h3",
+          "text": "02  Design"
+        },
+        {
+          "tag": "h3",
+          "text": "03  Build and integrate"
+        },
+        {
+          "tag": "h3",
+          "text": "04  Deploy and optimize"
+        }
+      ],
+      "paragraphs": [
+        "Engagements begin with the requests people actually make today and move to a governed, measured bot in clear stages.",
+        "Review ticket history and transcripts to identify the highest-volume, most resolvable intents, and define the scope for version one.",
+        "Build the conversation flows, entities, and escalation paths for the prioritized topics, with fallback handled deliberately.",
+        "Connect the bot to Dataverse, Power Automate, and line-of-business systems so it can look up and act on real data.",
+        "Launch across the right channels, then tune topics and coverage from real conversation analytics."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Start with a discovery workshop",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Power Virtual Agents licensing, in plain terms."
+        },
+        {
+          "t": "p",
+          "text": "Power Virtual Agents is licensed and metered through Microsoft, and cost depends on how much conversation volume runs through premium capacity. Folio3 Azure sizes this during discovery, so cost is understood before the build begins."
+        },
+        {
+          "t": "cta",
+          "text": "Get a capacity assessment",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Message-based capacity"
+        },
+        {
+          "t": "p",
+          "text": "Sessions are metered by billed topics, and volume is estimated from real ticket history rather than guessed after launch."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Included entitlements"
+        },
+        {
+          "t": "p",
+          "text": "Many Power Apps and Power Automate licenses already include a baseline of Power Virtual Agents capacity. Folio3 Azure confirms what is already covered first."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Add-on capacity packs"
+        },
+        {
+          "t": "p",
+          "text": "Where volume exceeds included entitlements, capacity packs are sized to actual usage instead of purchased as a guess."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Power Virtual Agents licensing, in plain terms."
+        },
+        {
+          "tag": "h3",
+          "text": "Message-based capacity"
+        },
+        {
+          "tag": "h3",
+          "text": "Included entitlements"
+        },
+        {
+          "tag": "h3",
+          "text": "Add-on capacity packs"
+        }
+      ],
+      "paragraphs": [
+        "Power Virtual Agents is licensed and metered through Microsoft, and cost depends on how much conversation volume runs through premium capacity. Folio3 Azure sizes this during discovery, so cost is understood before the build begins.",
+        "Sessions are metered by billed topics, and volume is estimated from real ticket history rather than guessed after launch.",
+        "Many Power Apps and Power Automate licenses already include a baseline of Power Virtual Agents capacity. Folio3 Azure confirms what is already covered first.",
+        "Where volume exceeds included entitlements, capacity packs are sized to actual usage instead of purchased as a guess."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get a capacity assessment",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Where a well-built virtual agent pays back."
+        },
+        {
+          "t": "p",
+          "text": "A properly scoped bot returns value in three areas. These are the factors to weigh when sizing the investment."
+        },
+        {
+          "t": "cta",
+          "text": "Estimate your ROI",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Lower cost per interaction"
+        },
+        {
+          "t": "p",
+          "text": "Routine requests resolve without a human touch, so support cost per ticket drops as volume grows."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Faster resolution and higher CSAT"
+        },
+        {
+          "t": "p",
+          "text": "Instant answers to common requests cut wait time, and clean escalation keeps complex cases from getting stuck."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Freed-up human capacity"
+        },
+        {
+          "t": "p",
+          "text": "Agents and specialists spend their time on the requests that actually need judgment, not the ones a bot could have handled."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Where a well-built virtual agent pays back."
+        },
+        {
+          "tag": "h3",
+          "text": "Lower cost per interaction"
+        },
+        {
+          "tag": "h3",
+          "text": "Faster resolution and higher CSAT"
+        },
+        {
+          "tag": "h3",
+          "text": "Freed-up human capacity"
+        }
+      ],
+      "paragraphs": [
+        "A properly scoped bot returns value in three areas. These are the factors to weigh when sizing the investment.",
+        "Routine requests resolve without a human touch, so support cost per ticket drops as volume grows.",
+        "Instant answers to common requests cut wait time, and clean escalation keeps complex cases from getting stuck.",
+        "Agents and specialists spend their time on the requests that actually need judgment, not the ones a bot could have handled."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Estimate your ROI",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Microsoft partner accountable for the conversation layer."
+        },
+        {
+          "t": "p",
+          "text": "Folio3 Azure is a Microsoft partner that designs, builds, and operates Power Virtual Agents as part of broader Power Platform and Azure consulting, under one accountable team."
+        },
+        {
+          "t": "cta",
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Security and compliance by design"
+        },
+        {
+          "t": "p",
+          "text": "Authentication, data loss prevention, and access controls follow the organization’s existing policies from the first topic built."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Part of full Power Platform consulting"
+        },
+        {
+          "t": "p",
+          "text": "Power Virtual Agents, Power Automate, Power Apps, and Dataverse are delivered together, so the bot and the data and workflows behind it are designed as one."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Native to the Microsoft stack"
+        },
+        {
+          "t": "p",
+          "text": "The bot runs inside the organization’s own Microsoft and Azure environment, with no separate platform to secure or maintain."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Microsoft partner accountable for the conversation layer."
+        },
+        {
+          "tag": "h3",
+          "text": "Security and compliance by design"
+        },
+        {
+          "tag": "h3",
+          "text": "Part of full Power Platform consulting"
+        },
+        {
+          "tag": "h3",
+          "text": "Native to the Microsoft stack"
+        }
+      ],
+      "paragraphs": [
+        "Folio3 Azure is a Microsoft partner that designs, builds, and operates Power Virtual Agents as part of broader Power Platform and Azure consulting, under one accountable team.",
+        "Authentication, data loss prevention, and access controls follow the organization’s existing policies from the first topic built.",
+        "Power Virtual Agents, Power Automate, Power Apps, and Dataverse are delivered together, so the bot and the data and workflows behind it are designed as one.",
+        "The bot runs inside the organization’s own Microsoft and Azure environment, with no separate platform to secure or maintain."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "t": "p",
+          "text": "What technology leaders ask before committing to Power Virtual Agents."
+        },
+        {
+          "t": "p",
+          "text": "A basic FAQ bot matches keywords to static answers. Power Virtual Agents is built on real conversation flows, live data lookups through Power Automate and Dataverse, and clean escalation, so it can look up account details, complete actions, and hand off with context instead of only reciting text."
+        },
+        {
+          "t": "p",
+          "text": "No. Power Virtual Agents can run on static topics alone, but connecting it to Power Automate and Dataverse is what lets it look up real data and complete actions instead of just describing them, and that connection is where most of the value comes from."
+        },
+        {
+          "t": "p",
+          "text": "Timelines depend on how many intents are in scope and how many systems the bot needs to reach. A first version scoped to a handful of high-volume topics can launch in weeks; the full plan and scope are confirmed during discovery."
+        },
+        {
+          "t": "p",
+          "text": "Power Virtual Agents is metered through Microsoft by conversation volume, with many Power Apps and Power Automate licenses already including a baseline entitlement. Folio3 Azure sizes actual usage during discovery so cost is understood before the build begins."
+        },
+        {
+          "t": "p",
+          "text": "Bots follow the organization’s existing identity, data loss prevention, and access policies through Dataverse and Power Platform’s security model, so a bot never has broader access to data than the person using it would."
+        },
+        {
+          "t": "p",
+          "text": "Conversations that fall outside the bot’s scope escalate to a human agent with the full conversation history attached, so the person does not have to repeat themselves."
+        },
+        {
+          "t": "p",
+          "text": "Yes. A single bot build deploys consistently across Microsoft Teams, web and social channels, and voice, so behavior and answers stay the same no matter where the conversation starts."
+        },
+        {
+          "t": "p",
+          "text": "Yes. Folio3 Azure reviews conversation analytics after go-live and folds new intents and phrasing back into the bot, so coverage and accuracy keep growing instead of freezing at launch."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        }
+      ],
+      "paragraphs": [
+        "What technology leaders ask before committing to Power Virtual Agents.",
+        "A basic FAQ bot matches keywords to static answers. Power Virtual Agents is built on real conversation flows, live data lookups through Power Automate and Dataverse, and clean escalation, so it can look up account details, complete actions, and hand off with context instead of only reciting text.",
+        "No. Power Virtual Agents can run on static topics alone, but connecting it to Power Automate and Dataverse is what lets it look up real data and complete actions instead of just describing them, and that connection is where most of the value comes from.",
+        "Timelines depend on how many intents are in scope and how many systems the bot needs to reach. A first version scoped to a handful of high-volume topics can launch in weeks; the full plan and scope are confirmed during discovery.",
+        "Power Virtual Agents is metered through Microsoft by conversation volume, with many Power Apps and Power Automate licenses already including a baseline entitlement. Folio3 Azure sizes actual usage during discovery so cost is understood before the build begins.",
+        "Bots follow the organization’s existing identity, data loss prevention, and access policies through Dataverse and Power Platform’s security model, so a bot never has broader access to data than the person using it would.",
+        "Conversations that fall outside the bot’s scope escalate to a human agent with the full conversation history attached, so the person does not have to repeat themselves.",
+        "Yes. A single bot build deploys consistently across Microsoft Teams, web and social channels, and voice, so behavior and answers stay the same no matter where the conversation starts.",
+        "Yes. Folio3 Azure reviews conversation analytics after go-live and folds new intents and phrasing back into the bot, so coverage and accuracy keep growing instead of freezing at launch."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Start with a conversation that actually resolves things."
+        },
+        {
+          "t": "p",
+          "text": "Folio3 Azure will review your current ticket volume and show how a properly scoped Power Virtual Agents build can resolve real requests, not just route them."
+        },
+        {
+          "t": "cta",
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Start with a conversation that actually resolves things."
+        }
+      ],
+      "paragraphs": [
+        "Folio3 Azure will review your current ticket volume and show how a properly scoped Power Virtual Agents build can resolve real requests, not just route them."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Book a consultation",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    }
+  ]
+}
