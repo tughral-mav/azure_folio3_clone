@@ -557,10 +557,10 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {challengeItems.map((c, j) => (
                 <Reveal key={j} animation="fadeInUp" delay={j * 60}><li className="flex gap-5">
                   <div className="flex flex-col items-center self-stretch">
-                    <span className="z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white shadow-md">{j + 1}</span>
-                    {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/30" aria-hidden />}
+                    <span className="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-base font-bold text-brand">{j + 1}</span>
+                    {j < challengeItems.length - 1 && <span className="mt-1 w-px flex-1 border-l-2 border-dashed border-brand/25" aria-hidden />}
                   </div>
-                  <p className="pt-2 text-body leading-relaxed">{c.title}</p>
+                  <p className="pt-4 text-body leading-relaxed">{c.title}</p>
                 </li></Reveal>
               ))}
             </ol>
