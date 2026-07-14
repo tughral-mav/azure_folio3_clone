@@ -20,9 +20,13 @@ const manifest = {};
 for (const [key, arr] of Object.entries(groups)) {
   manifest[key] = [];
   arr.forEach((ic, i) => {
-    // keep the SVG intact (stripping width/height also zeroed clipPath/mask rects, which
-    // clipped some icons to nothing). Rendered size is controlled by the <img> + CSS instead.
-    const svg = ic.svg;
+    // The live's clipPath rects lose their width/height on extraction (become <rect fill="white">),
+    // which clips a 0x0 region and hides the whole icon. The clip only bounds to the viewBox anyway,
+    // so strip clip-path refs + clipPath defs entirely (masks are left untouched). Rendered size is
+    // controlled by the <img> + CSS.
+    const svg = ic.svg
+      .replace(/\s*clip-path="url\([^)]*\)"/g, '')
+      .replace(/<clipPath\b[\s\S]*?<\/clipPath>/g, '');
     const file = `${key}-${i}.svg`;
     writeFileSync(path.join(OUT, file), svg);
     manifest[key].push({ file: `/wp-content/uploads/2026/07/pc/${file}`, title: ic.title });
