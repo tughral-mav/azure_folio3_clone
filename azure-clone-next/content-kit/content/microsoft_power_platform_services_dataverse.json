@@ -27,6 +27,7 @@
       "items": [
         { "t": "h", "tag": "h2", "text": "The cost of building on an ungoverned data layer." },
         { "t": "p", "text": "Power Platform makes it easy to build applications quickly, but many organizations build them on data scattered across SharePoint lists, spreadsheets, and standalone databases. Without a governed data foundation, that speed becomes technical debt." },
+        { "t": "cta", "text": "See how we fix this", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "01  No single source of truth" },
         { "t": "p", "text": "The same records live in several places at once. Applications disagree, reports conflict, and teams lose confidence in the numbers they are given." },
         { "t": "h", "tag": "h3", "text": "02  Security and compliance gaps" },
@@ -39,13 +40,14 @@
       "headings": [{ "tag": "h2", "text": "The cost of building on an ungoverned data layer." }],
       "paragraphs": ["Power Platform makes it easy to build applications quickly, but many organizations build them on data scattered across SharePoint lists, spreadsheets, and standalone databases. Without a governed data foundation, that speed becomes technical debt."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "See how we fix this", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Dataverse consulting services, from data model to production." },
         { "t": "p", "text": "Folio3 Azure delivers Microsoft Dataverse as a governed, enterprise-ready data platform. As a Microsoft partner, we cover the full scope of Dataverse work under one accountable team." },
+        { "t": "cta", "text": "Explore our Dataverse services", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Data modeling and architecture" },
         { "t": "p", "text": "We design the tables, relationships, keys, and business rules that turn scattered records into one coherent, relational model built to grow with the organization." },
         { "t": "h", "tag": "h3", "text": "Migration to Dataverse" },
@@ -58,13 +60,14 @@
       "headings": [{ "tag": "h2", "text": "Dataverse consulting services, from data model to production." }],
       "paragraphs": ["Folio3 Azure delivers Microsoft Dataverse as a governed, enterprise-ready data platform. As a Microsoft partner, we cover the full scope of Dataverse work under one accountable team."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Explore our Dataverse services", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "A Dataverse foundation built for scale and governance." },
         { "t": "p", "text": "Many implementations treat Dataverse as a place to store tables. Folio3 Azure treats it as the governed core of the Microsoft data estate, designed for the requirements enterprises actually carry." },
+        { "t": "cta", "text": "Talk to a Dataverse consultant", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Modeled for the long term" },
         { "t": "p", "text": "The data model is designed around how the business works, not around a single app, so later applications extend it instead of duplicating it." },
         { "t": "h", "tag": "h3", "text": "Governed from day one" },
@@ -77,13 +80,14 @@
       "headings": [{ "tag": "h2", "text": "A Dataverse foundation built for scale and governance." }],
       "paragraphs": ["Many implementations treat Dataverse as a place to store tables. Folio3 Azure treats it as the governed core of the Microsoft data estate, designed for the requirements enterprises actually carry."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Talk to a Dataverse consultant", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "What a governed Dataverse foundation supports, by industry." },
         { "t": "p", "text": "The same modeling, migration, and governance approach adapts to how each sector works. These are representative scenarios, each scoped to a defined data domain." },
+        { "t": "cta", "text": "Discuss your industry", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Manufacturing" },
         { "t": "p", "text": "Production, asset, and quality data is consolidated into one model, giving shop-floor apps and reporting a single, consistent source instead of parallel spreadsheets." },
         { "t": "h", "tag": "h3", "text": "Healthcare and life sciences" },
@@ -96,13 +100,14 @@
       "headings": [{ "tag": "h2", "text": "What a governed Dataverse foundation supports, by industry." }],
       "paragraphs": ["The same modeling, migration, and governance approach adapts to how each sector works. These are representative scenarios, each scoped to a defined data domain."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Discuss your industry", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Dataverse at the center of the Microsoft ecosystem." },
         { "t": "p", "text": "A data platform is only valuable when connected to the systems that produce and consume the data. Folio3 Azure positions Dataverse as the shared data layer across the Microsoft estate and the systems around it." },
+        { "t": "cta", "text": "See integration options", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Microsoft ecosystem" },
         { "t": "p", "text": "Dataverse serves as the common data layer beneath Power Apps, Power Automate, Power BI, Copilot Studio, and Dynamics 365, so every tool draws from the same governed source." },
         { "t": "h", "tag": "h3", "text": "Azure and analytics" },
@@ -113,13 +118,14 @@
       "headings": [{ "tag": "h2", "text": "Dataverse at the center of the Microsoft ecosystem." }],
       "paragraphs": ["A data platform is only valuable when connected to the systems that produce and consume the data. Folio3 Azure positions Dataverse as the shared data layer across the Microsoft estate and the systems around it."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "See integration options", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "From scattered data to a governed Dataverse model." },
         { "t": "p", "text": "Engagements begin with the data as it stands today and move to a structured, secured platform in clear stages." },
+        { "t": "cta", "text": "Start with an assessment", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "01  Assess" },
         { "t": "p", "text": "Review current data sources, quality, and how applications use them, then define the target data model and governance requirements." },
         { "t": "h", "tag": "h3", "text": "02  Model" },
@@ -132,13 +138,14 @@
       "headings": [{ "tag": "h2", "text": "From scattered data to a governed Dataverse model." }],
       "paragraphs": ["Engagements begin with the data as it stands today and move to a structured, secured platform in clear stages."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Start with an assessment", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Migrating to Dataverse without losing the details." },
         { "t": "p", "text": "Most engagements involve moving data out of tools that were never meant to hold it. Folio3 Azure treats migration as a controlled process rather than a one-time export, scoped during discovery." },
+        { "t": "cta", "text": "Plan your migration", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "From SharePoint and Excel" },
         { "t": "p", "text": "Lists and spreadsheets are mapped into proper relational tables, replacing informal structures with enforced relationships and validation." },
         { "t": "h", "tag": "h3", "text": "From Access and SQL Server" },
@@ -149,13 +156,14 @@
       "headings": [{ "tag": "h2", "text": "Migrating to Dataverse without losing the details." }],
       "paragraphs": ["Most engagements involve moving data out of tools that were never meant to hold it. Folio3 Azure treats migration as a controlled process rather than a one-time export, scoped during discovery."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Plan your migration", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Dataverse capacity and licensing, in plain terms." },
         { "t": "p", "text": "Dataverse is licensed and metered through Microsoft, and cost depends heavily on how the data is modeled and stored. Folio3 Azure assesses capacity during discovery, so cost is understood before the build begins." },
+        { "t": "cta", "text": "Get a capacity assessment", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Database, file, and log capacity" },
         { "t": "p", "text": "Dataverse meters storage in separate categories. Modeling and archival decisions directly affect which category grows and how quickly." },
         { "t": "h", "tag": "h3", "text": "Table types" },
@@ -166,13 +174,14 @@
       "headings": [{ "tag": "h2", "text": "Dataverse capacity and licensing, in plain terms." }],
       "paragraphs": ["Dataverse is licensed and metered through Microsoft, and cost depends heavily on how the data is modeled and stored. Folio3 Azure assesses capacity during discovery, so cost is understood before the build begins."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Get a capacity assessment", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Where a governed Dataverse platform pays back." },
         { "t": "p", "text": "A well-architected data foundation returns value in three areas. These are the factors to weigh when sizing the investment." },
+        { "t": "cta", "text": "Estimate your ROI", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Less rework and duplication" },
         { "t": "p", "text": "One model removes the effort of reconciling conflicting records and rebuilding data structures for every new application." },
         { "t": "h", "tag": "h3", "text": "Faster, more reliable delivery" },
@@ -183,13 +192,14 @@
       "headings": [{ "tag": "h2", "text": "Where a governed Dataverse platform pays back." }],
       "paragraphs": ["A well-architected data foundation returns value in three areas. These are the factors to weigh when sizing the investment."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Estimate your ROI", "href": "#pgForm" }],
       "images": []
     },
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "A Microsoft partner accountable for the data foundation." },
         { "t": "p", "text": "Folio3 Azure is a Microsoft partner that designs, migrates, and governs Dataverse as part of broader Power Platform and Azure consulting, under one accountable team." },
+        { "t": "cta", "text": "Book a consultation", "href": "#pgForm" },
         { "t": "h", "tag": "h3", "text": "Security and compliance by design" },
         { "t": "p", "text": "Identity, role-based access, and data residency follow the organization's existing policies, established as the platform is built rather than added afterward." },
         { "t": "h", "tag": "h3", "text": "Part of full Power Platform consulting" },
@@ -200,7 +210,7 @@
       "headings": [{ "tag": "h2", "text": "A Microsoft partner accountable for the data foundation." }],
       "paragraphs": ["Folio3 Azure is a Microsoft partner that designs, migrates, and governs Dataverse as part of broader Power Platform and Azure consulting, under one accountable team."],
       "listItems": [],
-      "ctas": [],
+      "ctas": [{ "text": "Book a consultation", "href": "#pgForm" }],
       "images": []
     },
     {
