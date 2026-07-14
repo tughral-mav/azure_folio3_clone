@@ -1,0 +1,252 @@
+{
+  "url": "https://azure.folio3.com/data-science-ai/enterprise-mcp-for-agentic-ai/",
+  "meta": {
+    "title": "Enterprise MCP on Azure | MCP Server Development for Copilot & AI Agents | Folio3 Azure",
+    "description": "Folio3 builds MCP servers on Azure that connect Microsoft Copilot and AI agents to Microsoft Dynamics 365, SAP, and Oracle NetSuite. Assessment, build, and managed operations from a Microsoft Solutions Partner.",
+    "canonical": "https://azure.folio3.com/data-science-ai/enterprise-mcp-for-agentic-ai/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        { "t": "h", "tag": "h1", "text": "Enterprise MCP Servers That Connect AI Agents to Your Business Systems" },
+        { "t": "p", "text": "Folio3 builds and deploys MCP servers on Azure that give Microsoft Copilot and other AI agents governed access to Microsoft Dynamics 365, SAP, Oracle NetSuite, and your custom applications. Everything runs in your own Azure tenant, and you own the code." },
+        { "t": "cta", "text": "Book an MCP Assessment", "href": "#pgForm" }
+      ],
+      "headings": [
+        { "tag": "h1", "text": "Enterprise MCP Servers That Connect AI Agents to Your Business Systems" }
+      ],
+      "paragraphs": [
+        "Folio3 builds and deploys MCP servers on Azure that give Microsoft Copilot and other AI agents governed access to Microsoft Dynamics 365, SAP, Oracle NetSuite, and your custom applications. Everything runs in your own Azure tenant, and you own the code."
+      ],
+      "listItems": [],
+      "ctas": [
+        { "text": "Book an MCP Assessment", "href": "#pgForm" }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Why Copilot Can't Answer Questions About Your ERP" },
+        { "t": "p", "text": "Three issues stop most Microsoft-centric organizations from moving AI agents beyond a pilot." },
+        { "t": "h", "tag": "h3", "text": "Copilot Isn't Grounded In Your Business Systems" },
+        { "t": "p", "text": "Copilot works across Microsoft 365 files, mail, and chat. Records in Dynamics 365, SAP, or a custom application sit outside that boundary, so it has no way to retrieve them." },
+        { "t": "h", "tag": "h3", "text": "Point Solutions Don't Scale" },
+        { "t": "p", "text": "Individual teams build their own plugins, scripts, and exports. The result is duplicated work and no central record of which agent can access which system." },
+        { "t": "h", "tag": "h3", "text": "Existing Access Controls Don't Cover Agents" },
+        { "t": "p", "text": "Controls built for users and services don't fit an agent that writes to finance data. Security teams won't approve it without a clear permission and audit model." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Why Copilot Can't Answer Questions About Your ERP" },
+        { "tag": "h3", "text": "Copilot Isn't Grounded In Your Business Systems" },
+        { "tag": "h3", "text": "Point Solutions Don't Scale" },
+        { "tag": "h3", "text": "Existing Access Controls Don't Cover Agents" }
+      ],
+      "paragraphs": [
+        "Three issues stop most Microsoft-centric organizations from moving AI agents beyond a pilot.",
+        "Copilot works across Microsoft 365 files, mail, and chat. Records in Dynamics 365, SAP, or a custom application sit outside that boundary, so it has no way to retrieve them.",
+        "Individual teams build their own plugins, scripts, and exports. The result is duplicated work and no central record of which agent can access which system.",
+        "Controls built for users and services don't fit an agent that writes to finance data. Security teams won't approve it without a clear permission and audit model."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Three Ways to Work with Us" },
+        { "t": "p", "text": "Most clients start with an assessment, then move into build and ongoing support." },
+        { "t": "h", "tag": "h3", "text": "Assessment" },
+        { "t": "p", "text": "A two-week, fixed-fee engagement that documents your systems and identity model and delivers a working prototype against one system, plus a reference architecture and delivery plan." },
+        { "t": "h", "tag": "h3", "text": "Build" },
+        { "t": "p", "text": "MCP servers built, tested, and deployed to your Azure subscription over six to eight weeks per system, with authorization through Microsoft Entra ID and tracing through Azure Monitor." },
+        { "t": "h", "tag": "h3", "text": "Managed Operations" },
+        { "t": "p", "text": "Ongoing monitoring of agent traffic and cost, connectors maintained as your systems change, and named engineers assigned to your account." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Three Ways to Work with Us" },
+        { "tag": "h3", "text": "Assessment" },
+        { "tag": "h3", "text": "Build" },
+        { "tag": "h3", "text": "Managed Operations" }
+      ],
+      "paragraphs": [
+        "Most clients start with an assessment, then move into build and ongoing support.",
+        "A two-week, fixed-fee engagement that documents your systems and identity model and delivers a working prototype against one system, plus a reference architecture and delivery plan.",
+        "MCP servers built, tested, and deployed to your Azure subscription over six to eight weeks per system, with authorization through Microsoft Entra ID and tracing through Azure Monitor.",
+        "Ongoing monitoring of agent traffic and cost, connectors maintained as your systems change, and named engineers assigned to your account."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "MCP Servers for the Systems You Run" },
+        { "t": "p", "text": "We build connectors for the systems that hold your operational data, including the ones generic MCP tooling doesn't support." },
+        { "t": "h", "tag": "h3", "text": "Microsoft Dynamics 365" },
+        { "t": "p", "text": "Agents work directly against Business Central and Finance and Operations, including custom fields, to retrieve orders and invoices, create sales orders, query inventory, and route approvals against posting rules." },
+        { "t": "h", "tag": "h3", "text": "SAP" },
+        { "t": "p", "text": "We connect through the interfaces SAP actually exposes — BAPIs, IDocs, and OData from S/4HANA and ECC — to call material and order operations and enforce SAP authorization objects on every call." },
+        { "t": "h", "tag": "h3", "text": "Oracle NetSuite" },
+        { "t": "p", "text": "For organizations running NetSuite alongside Microsoft systems, agents query transactions through SuiteQL, create and amend sales orders, and reconcile records against Dynamics 365." },
+        { "t": "h", "tag": "h3", "text": "Custom Applications" },
+        { "t": "p", "text": "We build an MCP server directly over internal apps, data warehouses, and third-party APIs, including read-only database access where no API exists, rather than waiting for a replacement project." },
+        { "t": "h", "tag": "h3", "text": "Legacy & On-Premises Systems" },
+        { "t": "p", "text": "Outbound-only connectivity and Azure Private Link bring cloud agents to Dynamics AX, GP, NAV, and SAP ECC behind the firewall, with no inbound rules and no VPN." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "MCP Servers for the Systems You Run" },
+        { "tag": "h3", "text": "Microsoft Dynamics 365" },
+        { "tag": "h3", "text": "SAP" },
+        { "tag": "h3", "text": "Oracle NetSuite" },
+        { "tag": "h3", "text": "Custom Applications" },
+        { "tag": "h3", "text": "Legacy & On-Premises Systems" }
+      ],
+      "paragraphs": [
+        "We build connectors for the systems that hold your operational data, including the ones generic MCP tooling doesn't support.",
+        "Agents work directly against Business Central and Finance and Operations, including custom fields, to retrieve orders and invoices, create sales orders, query inventory, and route approvals against posting rules.",
+        "We connect through the interfaces SAP actually exposes — BAPIs, IDocs, and OData from S/4HANA and ECC — to call material and order operations and enforce SAP authorization objects on every call.",
+        "For organizations running NetSuite alongside Microsoft systems, agents query transactions through SuiteQL, create and amend sales orders, and reconcile records against Dynamics 365.",
+        "We build an MCP server directly over internal apps, data warehouses, and third-party APIs, including read-only database access where no API exists, rather than waiting for a replacement project.",
+        "Outbound-only connectivity and Azure Private Link bring cloud agents to Dynamics AX, GP, NAV, and SAP ECC behind the firewall, with no inbound rules and no VPN."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Deployed in Your Azure Tenant" },
+        { "t": "p", "text": "The MCP layer runs on Azure services your platform team already uses and governs." },
+        { "t": "h", "tag": "h3", "text": "Microsoft Entra ID" },
+        { "t": "p", "text": "Agents authenticate and authorize against your existing directory, with role-based access control and single sign-on." },
+        { "t": "h", "tag": "h3", "text": "Azure Kubernetes Service" },
+        { "t": "p", "text": "MCP servers run containerized in your subscription, scaling with demand and patched on your schedule." },
+        { "t": "h", "tag": "h3", "text": "Azure Key Vault" },
+        { "t": "p", "text": "System credentials and secrets stay inside your boundary, with rotation under your existing policy." },
+        { "t": "h", "tag": "h3", "text": "Azure Monitor" },
+        { "t": "p", "text": "Every tool call is traced with identity, arguments, and outcome, feeding your existing dashboards and alerts." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Deployed in Your Azure Tenant" },
+        { "tag": "h3", "text": "Microsoft Entra ID" },
+        { "tag": "h3", "text": "Azure Kubernetes Service" },
+        { "tag": "h3", "text": "Azure Key Vault" },
+        { "tag": "h3", "text": "Azure Monitor" }
+      ],
+      "paragraphs": [
+        "The MCP layer runs on Azure services your platform team already uses and governs.",
+        "Agents authenticate and authorize against your existing directory, with role-based access control and single sign-on.",
+        "MCP servers run containerized in your subscription, scaling with demand and patched on your schedule.",
+        "System credentials and secrets stay inside your boundary, with rotation under your existing policy.",
+        "Every tool call is traced with identity, arguments, and outcome, feeding your existing dashboards and alerts."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "ERP Integration Specialists, Not an AI Startup" },
+        { "t": "p", "text": "The difficult part of this work is the complexity of the underlying systems. Our team has been delivering Microsoft Dynamics 365 and SAP integrations for over a decade." },
+        { "t": "h", "tag": "h3", "text": "Over a Decade of ERP Delivery Experience" },
+        { "t": "p", "text": "Deep Microsoft Dynamics 365 and SAP integration expertise, not a generic API wrapper that treats every system the same." },
+        { "t": "h", "tag": "h3", "text": "Runs in Your Own Azure Subscription and Tenant" },
+        { "t": "p", "text": "No vendor cloud in between. Your data and your agents stay inside the boundary your security team already governs." },
+        { "t": "h", "tag": "h3", "text": "You Own the Code, With Full Handover" },
+        { "t": "p", "text": "The MCP servers are yours, with documentation and knowledge transfer, so your team stays in control after we leave." },
+        { "t": "h", "tag": "h3", "text": "Named Engineers After Go-Live" },
+        { "t": "p", "text": "Optional managed operations with named engineers assigned to your account, instead of a support ticket queue." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "ERP Integration Specialists, Not an AI Startup" },
+        { "tag": "h3", "text": "Over a Decade of ERP Delivery Experience" },
+        { "tag": "h3", "text": "Runs in Your Own Azure Subscription and Tenant" },
+        { "tag": "h3", "text": "You Own the Code, With Full Handover" },
+        { "tag": "h3", "text": "Named Engineers After Go-Live" }
+      ],
+      "paragraphs": [
+        "The difficult part of this work is the complexity of the underlying systems. Our team has been delivering Microsoft Dynamics 365 and SAP integrations for over a decade.",
+        "Deep Microsoft Dynamics 365 and SAP integration expertise, not a generic API wrapper that treats every system the same.",
+        "No vendor cloud in between. Your data and your agents stay inside the boundary your security team already governs.",
+        "The MCP servers are yours, with documentation and knowledge transfer, so your team stays in control after we leave.",
+        "Optional managed operations with named engineers assigned to your account, instead of a support ticket queue."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Security and Audit Controls" },
+        { "t": "p", "text": "Your security team will ask what an agent can do, who authorized it, and what it did — with controls mapped to ISO 27001, ISO 27701, SOC 2, HIPAA, GDPR, and Microsoft Solutions Partner status." },
+        { "t": "h", "tag": "h3", "text": "Every Tool Is Explicitly Registered" },
+        { "t": "p", "text": "Every action an agent can call is declared and reviewed before release, so there is a definitive list of what is permitted." },
+        { "t": "h", "tag": "h3", "text": "Authorization on Every Call" },
+        { "t": "p", "text": "Permission is checked per request against Microsoft Entra ID, scoped to the task. Write operations can require human approval." },
+        { "t": "h", "tag": "h3", "text": "Full Audit Trail" },
+        { "t": "p", "text": "Identity, arguments, decision, and outcome are logged for every call, so any agent action can be traced after the fact." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Security and Audit Controls" },
+        { "tag": "h3", "text": "Every Tool Is Explicitly Registered" },
+        { "tag": "h3", "text": "Authorization on Every Call" },
+        { "tag": "h3", "text": "Full Audit Trail" }
+      ],
+      "paragraphs": [
+        "Your security team will ask what an agent can do, who authorized it, and what it did — with controls mapped to ISO 27001, ISO 27701, SOC 2, HIPAA, GDPR, and Microsoft Solutions Partner status.",
+        "Every action an agent can call is declared and reviewed before release, so there is a definitive list of what is permitted.",
+        "Permission is checked per request against Microsoft Entra ID, scoped to the task. Write operations can require human approval.",
+        "Identity, arguments, decision, and outcome are logged for every call, so any agent action can be traced after the fact."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Real Results, Real Impact" }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h2", "text": "Frequently Asked Questions" },
+        { "t": "p", "text": "Answers to the questions we hear most about enterprise MCP on Azure." },
+        { "t": "p", "text": "Copilot is grounded in Microsoft 365 content such as files, mail, and chat. Records in Microsoft Dynamics 365, SAP, or a custom application sit outside that boundary. An MCP server exposes those records as callable actions, so Copilot can retrieve a purchase order or post an update to the system." },
+        { "t": "p", "text": "We deliver the MCP servers: tool definitions, connector code for each system, identity and authorization through Microsoft Entra ID, deployment into your Azure subscription, and logging and tracing for agent activity. Engagements start with an assessment and can continue into build and managed operations." },
+        { "t": "p", "text": "Yes. The MCP servers are deployed into your Azure subscription and the source code is yours, with documentation and knowledge transfer at handover. You can run it with your own platform team or retain us for managed operations." },
+        { "t": "p", "text": "Inside your tenant. MCP servers are containerized on Azure Kubernetes Service or Azure Container Apps within your subscription, secrets are held in Azure Key Vault, and traffic to systems can be kept off the public internet using Azure Private Link. Your data does not transit a vendor cloud." },
+        { "t": "p", "text": "Microsoft Dynamics 365, including Business Central and Finance and Operations, along with SAP, Oracle NetSuite, and older estates on Microsoft Dynamics AX, GP, and NAV. We also build MCP servers for custom line of business applications, data warehouses, and third-party APIs where no connector exists." },
+        { "t": "p", "text": "Agent permissions are modeled the same way user permissions are. Each tool is registered explicitly, authorization is enforced through Microsoft Entra ID on every call, write operations can require human approval, and each request is logged in Azure Monitor with the identity, arguments, and result." },
+        { "t": "p", "text": "The assessment runs two weeks and delivers a working prototype against one system. A first production MCP server typically follows in six to eight weeks, depending on system complexity and your security review cycle. Additional systems are faster because the platform work is already complete." },
+        { "t": "p", "text": "Yes. MCP is an open standard, so the servers we build are callable by Copilot, Copilot Studio agents, Claude, ChatGPT, and any custom orchestration. You are not committed to one assistant, and you can add another without rebuilding the integration." }
+      ],
+      "headings": [
+        { "tag": "h2", "text": "Frequently Asked Questions" }
+      ],
+      "paragraphs": [
+        "Answers to the questions we hear most about enterprise MCP on Azure.",
+        "Copilot is grounded in Microsoft 365 content such as files, mail, and chat. Records in Microsoft Dynamics 365, SAP, or a custom application sit outside that boundary. An MCP server exposes those records as callable actions, so Copilot can retrieve a purchase order or post an update to the system.",
+        "We deliver the MCP servers: tool definitions, connector code for each system, identity and authorization through Microsoft Entra ID, deployment into your Azure subscription, and logging and tracing for agent activity. Engagements start with an assessment and can continue into build and managed operations.",
+        "Yes. The MCP servers are deployed into your Azure subscription and the source code is yours, with documentation and knowledge transfer at handover. You can run it with your own platform team or retain us for managed operations.",
+        "Inside your tenant. MCP servers are containerized on Azure Kubernetes Service or Azure Container Apps within your subscription, secrets are held in Azure Key Vault, and traffic to systems can be kept off the public internet using Azure Private Link. Your data does not transit a vendor cloud.",
+        "Microsoft Dynamics 365, including Business Central and Finance and Operations, along with SAP, Oracle NetSuite, and older estates on Microsoft Dynamics AX, GP, and NAV. We also build MCP servers for custom line of business applications, data warehouses, and third-party APIs where no connector exists.",
+        "Agent permissions are modeled the same way user permissions are. Each tool is registered explicitly, authorization is enforced through Microsoft Entra ID on every call, write operations can require human approval, and each request is logged in Azure Monitor with the identity, arguments, and result.",
+        "The assessment runs two weeks and delivers a working prototype against one system. A first production MCP server typically follows in six to eight weeks, depending on system complexity and your security review cycle. Additional systems are faster because the platform work is already complete.",
+        "Yes. MCP is an open standard, so the servers we build are callable by Copilot, Copilot Studio agents, Claude, ChatGPT, and any custom orchestration. You are not committed to one assistant, and you can add another without rebuilding the integration."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": []
+}
