@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Accordion } from '@/components/sections/Accordion';
@@ -53,12 +54,14 @@ function IconBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-// FOLD 1 - hero stat strip. The years figure from the brief was left as a bracketed
-// slot pending a verified number, so it is phrased without an invented statistic.
-const STATS = [
-  { big: 'Microsoft', small: 'Solutions Partner' },
-  { big: 'Enterprise', small: 'software delivery expertise' },
-  { big: 'Discrete + process', small: 'manufacturing expertise' },
+// FOLD 1 - hero credential strip. Real Microsoft Solutions Partner designation badges
+// (the same assets used by the site-wide PartnerDesignations section), which replace
+// the brief's text stat row and its unverified "[X]+ years" placeholder.
+const PARTNER_BADGES = [
+  { src: '/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp', alt: 'Microsoft Solutions Partner - Data & AI (Azure)' },
+  { src: '/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp', alt: 'Microsoft Solutions Partner - Infrastructure (Azure)' },
+  { src: '/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp', alt: 'Microsoft Solutions Partner - Digital & App Innovation (Azure)' },
+  { src: '/wp-content/uploads/2024/08/business-application-logo-img.webp', alt: 'Microsoft Solutions Partner - Business Applications' },
 ];
 
 // FOLD 2 - the problems slowing the plant down.
@@ -226,14 +229,16 @@ export default function ManufacturingIndustryPage() {
               <Link href={FORM} className="btn bg-brand-navy uppercase tracking-wide text-white hover:bg-brand">Book a Manufacturing Cloud Assessment</Link>
               <Link href={CONTACT} className="btn border border-brand-navy uppercase tracking-wide text-brand-navy hover:bg-brand-navy hover:text-white">Talk to an Azure Expert</Link>
             </div>
-            <dl className="mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
-              {STATS.map((s) => (
-                <div key={s.big} className="border-l-2 border-brand pl-4">
-                  <dt className="text-xl font-bold text-ink">{s.big}</dt>
-                  <dd className="mt-1 text-sm text-body">{s.small}</dd>
-                </div>
-              ))}
-            </dl>
+            <div className="mt-12">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-muted">Microsoft Solutions Partner</p>
+              <div className="grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+                {PARTNER_BADGES.map((b) => (
+                  <div key={b.src} className="flex items-center justify-center rounded-xl border border-surface-line bg-white p-4 shadow-card">
+                    <Image src={b.src} alt={b.alt} width={300} height={203} className="h-auto w-full max-w-[180px] object-contain" />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
