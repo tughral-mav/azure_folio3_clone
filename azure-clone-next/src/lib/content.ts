@@ -416,6 +416,8 @@ export function getBlogPost(slug: string) {
   if (!existsSync(file)) return null;
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
     bodyHtml?: string;
+    seoTitle?: string;
+    faqs?: { q: string; a: string }[];
     related?: { title: string; href: string; image?: string }[];
   };
   if ((data as { error?: string }).error) return null;
@@ -433,6 +435,10 @@ export function getBlogPost(slug: string) {
   return {
     slug,
     title: h1?.text ?? data.meta.title,
+    // SEO <title> can differ from the visible H1 when a post ships an explicit seoTitle;
+    // falls back to the H1 (then meta.title) so every existing capture is unchanged.
+    seoTitle: data.seoTitle ?? h1?.text ?? data.meta.title,
+    faqs: data.faqs ?? [],
     description: data.meta.description,
     heroImage,
     sections: data.sections,
