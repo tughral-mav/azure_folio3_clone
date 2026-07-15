@@ -393,7 +393,7 @@
         },
         {
           "t": "p",
-          "text": "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running. A second issue was biting at the same time, in production, where it hurt most."
+          "text": "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running, while a second issue bit in production at the same time. What Wonderfold needed was not a fresh start, but a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably."
         },
         {
           "t": "cta",
@@ -426,10 +426,6 @@
         {
           "t": "p",
           "text": "The client's environment was locked down enough that another solution provider had not been able to complete the work inside it."
-        },
-        {
-          "t": "p",
-          "text": "What Wonderfold needed was not a fresh start. It was a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably."
         }
       ],
       "headings": [
@@ -451,11 +447,10 @@
         }
       ],
       "paragraphs": [
-        "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running. A second issue was biting at the same time, in production, where it hurt most.",
+        "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running, while a second issue bit in production at the same time. What Wonderfold needed was not a fresh start, but a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably.",
         "The transition to a new integration partner led to complications in the integration process, leaving the work part-finished and the path forward unclear.",
         "Fulfilled by Merchant (FBM) orders were delayed in the live environment. The orders were not appearing as expected, which caused further delays in order fulfilment downstream.",
-        "The client's environment was locked down enough that another solution provider had not been able to complete the work inside it.",
-        "What Wonderfold needed was not a fresh start. It was a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably."
+        "The client's environment was locked down enough that another solution provider had not been able to complete the work inside it."
       ],
       "listItems": [],
       "ctas": [
