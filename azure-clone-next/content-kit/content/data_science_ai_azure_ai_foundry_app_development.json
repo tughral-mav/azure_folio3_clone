@@ -29,29 +29,62 @@
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "A Microsoft Partner Built For Production AI" },
-        { "t": "p", "text": "Enterprise AI and Azure delivery experience, backed by real Microsoft designations." },
-        { "t": "h", "tag": "h3", "text": "300+ Azure & AI Engagements Delivered" },
-        { "t": "p", "text": "Cloud, data, and AI projects delivered for enterprise clients since 2013." },
-        { "t": "h", "tag": "h3", "text": "100% Client Retention" },
-        { "t": "p", "text": "Every enterprise client who partners with us for Azure AI work continues the relationship." },
+        { "t": "p", "text": "15+ years in the Azure ecosystem, backed by real Microsoft Solutions Partner designations, not a demo shop spinning up chatbot proofs of concept." },
+        { "t": "h", "tag": "h3", "text": "15+ Years On The Azure Ecosystem" },
+        { "t": "p", "text": "Deep, hands-on experience delivering Azure, data, and AI solutions for enterprise clients across industries." },
         { "t": "h", "tag": "h3", "text": "Microsoft Solutions Partner" },
-        { "t": "p", "text": "Recognized Microsoft designations spanning Data & AI, Infrastructure, and Digital & App Innovation." }
+        { "t": "p", "text": "Recognized Microsoft Solutions Partner and Microsoft Certified Solutions Partner designations spanning Azure Data & AI." }
       ],
       "headings": [
         { "tag": "h2", "text": "A Microsoft Partner Built For Production AI" },
-        { "tag": "h3", "text": "300+ Azure & AI Engagements Delivered" },
-        { "tag": "h3", "text": "100% Client Retention" },
+        { "tag": "h3", "text": "15+ Years On The Azure Ecosystem" },
         { "tag": "h3", "text": "Microsoft Solutions Partner" }
       ],
       "paragraphs": [
-        "Enterprise AI and Azure delivery experience, backed by real Microsoft designations.",
-        "Cloud, data, and AI projects delivered for enterprise clients since 2013.",
-        "Every enterprise client who partners with us for Azure AI work continues the relationship.",
-        "Recognized Microsoft designations spanning Data & AI, Infrastructure, and Digital & App Innovation."
+        "15+ years in the Azure ecosystem, backed by real Microsoft Solutions Partner designations, not a demo shop spinning up chatbot proofs of concept.",
+        "Deep, hands-on experience delivering Azure, data, and AI solutions for enterprise clients across industries.",
+        "Recognized Microsoft Solutions Partner and Microsoft Certified Solutions Partner designations spanning Azure Data & AI."
       ],
       "listItems": [],
       "ctas": [],
       "images": []
+    },
+    {
+      "items": [
+        { "t": "h", "tag": "h3", "text": "Awards & Recognition" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg", "w": 150, "h": 150, "alt": "azure_solution_architect.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg", "w": 150, "h": 150, "alt": "azure_administration.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg", "w": 150, "h": 150, "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg", "w": 150, "h": 150, "alt": "azure_security_engineer.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg", "w": 150, "h": 150, "alt": "data-analyst.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-data-engineer.svg", "w": 151, "h": 150, "alt": "azure-data-engineer.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/power_platform_developers.svg", "w": 150, "h": 150, "alt": "power_platform_developers.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-network-engineer.svg", "w": 150, "h": 150, "alt": "azure-network-engineer.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/MB-900.svg", "w": 150, "h": 150, "alt": "MB-900.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AI-102.svg", "w": 150, "h": 150, "alt": "AI-102.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/DP-100.svg", "w": 150, "h": 150, "alt": "DP-100.svg" },
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-140.svg", "w": 150, "h": 150, "alt": "AZ-140.svg" }
+      ],
+      "headings": [
+        { "tag": "h3", "text": "Awards & Recognition" }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_solution_architect.svg", "alt": "azure_solution_architect.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_administration.svg", "alt": "azure_administration.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg", "alt": "AZ-400-104-or-204-Azure-DevOps-Engineer-Expert.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure_security_engineer.svg", "alt": "azure_security_engineer.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/data-analyst.svg", "alt": "data-analyst.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-data-engineer.svg", "alt": "azure-data-engineer.svg", "w": 151, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/power_platform_developers.svg", "alt": "power_platform_developers.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/azure-network-engineer.svg", "alt": "azure-network-engineer.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/MB-900.svg", "alt": "MB-900.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AI-102.svg", "alt": "AI-102.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/DP-100.svg", "alt": "DP-100.svg", "w": 150, "h": 150 },
+        { "src": "https://azure.folio3.com/wp-content/uploads/2023/11/AZ-140.svg", "alt": "AZ-140.svg", "w": 150, "h": 150 }
+      ]
     },
     {
       "items": [
@@ -84,7 +117,7 @@
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Custom AI App Development Services" },
-        { "t": "p", "text": "Off-the-shelf AI rarely fits your exact problem, so we build and modernize AI applications grounded in your data." },
+        { "t": "p", "text": "Off-the-shelf AI rarely fits your exact problem, so we build and modernize AI applications grounded in your data, running on Azure AI Foundry's model catalog, prompt flow tooling, and evaluation pipeline rather than a single hard-coded model call." },
         { "t": "h", "tag": "h3", "text": "Custom Copilots & RAG Apps" },
         { "t": "p", "text": "Retrieval-augmented generation keeps answers grounded in your own documents and systems instead of generic model knowledge." },
         { "t": "h", "tag": "h3", "text": "AI-Infused Product Features" },
@@ -111,7 +144,7 @@
     {
       "items": [
         { "t": "h", "tag": "h2", "text": "Why Build Your AI App With Folio3" },
-        { "t": "p", "text": "AI engineering, Azure architecture, and responsible-AI guardrails to take your application from idea to production." },
+        { "t": "p", "text": "AI engineering, Azure architecture, and responsible-AI guardrails to take your application from idea to production, delivered by the same team that already runs your Azure environment rather than a separate AI vendor bolted on afterward." },
         { "t": "h", "tag": "h3", "text": "Microsoft Solutions Partner Expertise" },
         { "t": "p", "text": "Certified Azure and AI engineers with hands-on delivery experience across Data & AI, Infrastructure, and Digital & App Innovation." },
         { "t": "h", "tag": "h3", "text": "Built For Production, Not Demos" },
@@ -189,7 +222,9 @@
         { "t": "p", "text": "Agents automate a specific task; a custom AI application is often a fuller product experience, and the two frequently work together in the same solution." },
         { "t": "p", "text": "Yes. Adding AI to an application you already run is one of the fastest ways to see value, and it is a core part of what we build." },
         { "t": "p", "text": "Security and governance controls, along with Azure's built-in security patterns, are part of every build from architecture through ongoing operations." },
-        { "t": "p", "text": "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way." }
+        { "t": "p", "text": "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way." },
+        { "t": "p", "text": "It depends on the model of choice, the data volume behind retrieval, and usage patterns, so we size Azure OpenAI and Azure AI Search consumption around your actual workload during discovery rather than quoting a flat number upfront." },
+        { "t": "p", "text": "Yes. We can work alongside an in-house engineering team, handling the AI-specific pieces (model selection, prompt engineering, RAG architecture) while your team owns integration points, or we can run the build end to end." }
       ],
       "headings": [
         { "tag": "h2", "text": "Frequently Asked Questions" }
@@ -199,7 +234,9 @@
         "Agents automate a specific task; a custom AI application is often a fuller product experience, and the two frequently work together in the same solution.",
         "Yes. Adding AI to an application you already run is one of the fastest ways to see value, and it is a core part of what we build.",
         "Security and governance controls, along with Azure's built-in security patterns, are part of every build from architecture through ongoing operations.",
-        "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way."
+        "We typically scope one high-value use case first, then build toward production in iterations with measurable milestones along the way.",
+        "It depends on the model of choice, the data volume behind retrieval, and usage patterns, so we size Azure OpenAI and Azure AI Search consumption around your actual workload during discovery rather than quoting a flat number upfront.",
+        "Yes. We can work alongside an in-house engineering team, handling the AI-specific pieces (model selection, prompt engineering, RAG architecture) while your team owns integration points, or we can run the build end to end."
       ],
       "listItems": [],
       "ctas": [],
