@@ -403,11 +403,6 @@
         {
           "t": "h",
           "tag": "h3",
-          "text": "Key business areas impacted included:"
-        },
-        {
-          "t": "h",
-          "tag": "h3",
           "text": "A company change mid-integration"
         },
         {
@@ -441,10 +436,6 @@
         {
           "tag": "h2",
           "text": "A Handover That Stalled, and FBM Orders That Never Showed Up"
-        },
-        {
-          "tag": "h3",
-          "text": "Key business areas impacted included:"
         },
         {
           "tag": "h3",
@@ -939,58 +930,6 @@
     {
       "items": [
         {
-          "t": "h",
-          "tag": "h2",
-          "text": "Take A Seamless Cloud Ride With Us!"
-        },
-        {
-          "t": "h",
-          "tag": "h2",
-          "text": "Get the power to boost your business, innovation, and growth."
-        },
-        {
-          "t": "cta",
-          "text": "Get Customized Azure Cloud Services",
-          "href": "#pgForm"
-        },
-        {
-          "t": "img",
-          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
-          "w": 155,
-          "h": 150,
-          "alt": ""
-        }
-      ],
-      "headings": [
-        {
-          "tag": "h2",
-          "text": "Take A Seamless Cloud Ride With Us!"
-        },
-        {
-          "tag": "h2",
-          "text": "Get the power to boost your business, innovation, and growth."
-        }
-      ],
-      "paragraphs": [],
-      "listItems": [],
-      "ctas": [
-        {
-          "text": "Get Customized Azure Cloud Services",
-          "href": "#pgForm"
-        }
-      ],
-      "images": [
-        {
-          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
-          "alt": "",
-          "w": 155,
-          "h": 150
-        }
-      ]
-    },
-    {
-      "items": [
-        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
           "w": 283,
@@ -1027,6 +966,194 @@
           "alt": "",
           "w": 283,
           "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "w": 300,
+          "h": 59,
+          "alt": "Azure"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "t": "li",
+          "text": "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA"
+        },
+        {
+          "t": "li",
+          "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 412-3813"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-55-6540154"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +971-04-2505173"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "t": "li",
+          "text": "Export House, Cawsey Way, Woking Surrey, GU21 6QX"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +44 (0) 14 8361 6611"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "t": "li",
+          "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "t": "li",
+          "text": "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi"
+        },
+        {
+          "t": "li",
+          "text": "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad"
+        },
+        {
+          "t": "li",
+          "text": "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +92-21-3432 3721-4"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "t": "li",
+          "text": "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1"
+        },
+        {
+          "t": "li",
+          "text": "Tel: +1 408 365 4638"
+        },
+        {
+          "t": "li",
+          "text": "Support: +1 (408) 512 1812"
+        },
+        {
+          "t": "h",
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        },
+        {
+          "t": "li",
+          "text": "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+        },
+        {
+          "t": "p",
+          "text": "© 2026, Folio3 Software Inc., All rights reserved."
+        },
+        {
+          "t": "p",
+          "text": "Privacy Policy & Terms of Use Cookie Policy"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h5",
+          "text": "US Office"
+        },
+        {
+          "tag": "h5",
+          "text": "UAE OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "UK OFFICE"
+        },
+        {
+          "tag": "h5",
+          "text": "Mexico Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Pakistan Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Canada Office"
+        },
+        {
+          "tag": "h5",
+          "text": "Bulgaria Office"
+        }
+      ],
+      "paragraphs": [
+        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "Privacy Policy & Terms of Use Cookie Policy"
+      ],
+      "listItems": [
+        "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
+        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Tel: +1 408 412-3813",
+        "Support: +1 (408) 512 1812",
+        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Tel: +971-55-6540154",
+        "Tel: +971-04-2505173",
+        "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
+        "Tel: +44 (0) 14 8361 6611",
+        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
+        "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
+        "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",
+        "Tel: +92-21-3432 3721-4",
+        "3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1",
+        "Tel: +1 408 365 4638",
+        "49 Bacho Kiro Street, Sofia, 1000, Bulgaria"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
+          "alt": "Azure",
+          "w": 300,
+          "h": 59
         }
       ]
     }
@@ -1066,6 +1193,10 @@
     },
     {
       "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/04/azure_logo_ftr.png",
       "alt": ""
     }
   ],
