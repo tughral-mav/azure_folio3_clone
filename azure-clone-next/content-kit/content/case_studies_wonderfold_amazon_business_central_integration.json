@@ -389,7 +389,7 @@
         {
           "t": "h",
           "tag": "h2",
-          "text": "A Handover That Stalled, and FBM Orders That Never Showed Up"
+          "text": "Challenges Faced"
         },
         {
           "t": "p",
@@ -435,7 +435,7 @@
       "headings": [
         {
           "tag": "h2",
-          "text": "A Handover That Stalled, and FBM Orders That Never Showed Up"
+          "text": "Challenges Faced"
         },
         {
           "tag": "h3",
@@ -491,7 +491,7 @@
         {
           "t": "h",
           "tag": "h3",
-          "text": "Support for two separate Amazon storefronts"
+          "text": "Support for two separate Amazon storefronts in one ERP"
         },
         {
           "t": "h",
@@ -528,7 +528,7 @@
         },
         {
           "tag": "h3",
-          "text": "Support for two separate Amazon storefronts"
+          "text": "Support for two separate Amazon storefronts in one ERP"
         },
         {
           "tag": "h3",
@@ -805,91 +805,135 @@
         {
           "t": "h",
           "tag": "h2",
-          "text": "Impact & Outcomes"
+          "text": "Business Outcomes"
         },
         {
           "t": "p",
-          "text": "The engagement turned a stalled partner transition into a working, two-store Amazon connection to Business Central — delivered in an environment another provider could not work in."
+          "text": "The Burq connector integration delivered measurable results for our client:"
         },
         {
-          "t": "img",
-          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
-          "w": 167,
-          "h": 150,
-          "alt": ""
-        },
-        {
-          "t": "li",
-          "text": "The transition away from the previous integration partner was completed, ensuring smooth operations"
-        },
-        {
-          "t": "li",
-          "text": "FBM orders now synchronize and process correctly in the live environment, clearing the fulfilment delay"
-        },
-        {
-          "t": "li",
-          "text": "Two Amazon storefronts sync to a single Business Central instance, each with the right pricing behaviour"
-        },
-        {
-          "t": "li",
-          "text": "Work was delivered inside a restricted environment where another solution provider could not"
-        },
-        {
-          "t": "li",
-          "text": "Multiple ERP and ecommerce connections can now be established from one connector"
-        },
-        {
-          "t": "li",
-          "text": "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts"
+          "t": "h",
+          "tag": "h3",
+          "text": "Completed Partner Transition"
         },
         {
           "t": "p",
-          "text": "The result: one connector doing the work of a stalled handover and two marketplace integrations — with Amazon and Business Central holding the same picture of the business, and room to add the next connection without starting over."
+          "text": "The move away from the previous integration partner was finished cleanly, resolving the company change and ensuring smooth operations."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM Orders Flowing Again"
+        },
+        {
+          "t": "p",
+          "text": "FBM orders now synchronize and process correctly in the live environment, clearing the delay that had been holding up order fulfilment."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Two Storefronts, One ERP"
+        },
+        {
+          "t": "p",
+          "text": "Both the main Amazon store and the specialty store sync to a single Business Central instance, each with the right pricing behaviour."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Delivered in a Restricted Environment"
+        },
+        {
+          "t": "p",
+          "text": "The work was completed inside the client's restricted environment, where another solution provider had not been able to."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Room for More Connections"
+        },
+        {
+          "t": "p",
+          "text": "Multiple ERP and ecommerce connections can now be established from one connector — any Microsoft ERP with any ecommerce platform."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Analysis-Ready Data"
+        },
+        {
+          "t": "p",
+          "text": "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts."
+        },
+        {
+          "t": "cta",
+          "text": "Request a call",
+          "href": "#pgForm"
         }
       ],
       "headings": [
         {
           "tag": "h2",
-          "text": "Impact & Outcomes"
+          "text": "Business Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "Completed Partner Transition"
+        },
+        {
+          "tag": "h3",
+          "text": "FBM Orders Flowing Again"
+        },
+        {
+          "tag": "h3",
+          "text": "Two Storefronts, One ERP"
+        },
+        {
+          "tag": "h3",
+          "text": "Delivered in a Restricted Environment"
+        },
+        {
+          "tag": "h3",
+          "text": "Room for More Connections"
+        },
+        {
+          "tag": "h3",
+          "text": "Analysis-Ready Data"
         }
       ],
       "paragraphs": [
-        "The engagement turned a stalled partner transition into a working, two-store Amazon connection to Business Central — delivered in an environment another provider could not work in.",
-        "The result: one connector doing the work of a stalled handover and two marketplace integrations — with Amazon and Business Central holding the same picture of the business, and room to add the next connection without starting over."
+        "The Burq connector integration delivered measurable results for our client:",
+        "The move away from the previous integration partner was finished cleanly, resolving the company change and ensuring smooth operations.",
+        "FBM orders now synchronize and process correctly in the live environment, clearing the delay that had been holding up order fulfilment.",
+        "Both the main Amazon store and the specialty store sync to a single Business Central instance, each with the right pricing behaviour.",
+        "The work was completed inside the client's restricted environment, where another solution provider had not been able to.",
+        "Multiple ERP and ecommerce connections can now be established from one connector — any Microsoft ERP with any ecommerce platform.",
+        "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts."
       ],
-      "listItems": [
-        "The transition away from the previous integration partner was completed, ensuring smooth operations",
-        "FBM orders now synchronize and process correctly in the live environment, clearing the fulfilment delay",
-        "Two Amazon storefronts sync to a single Business Central instance, each with the right pricing behaviour",
-        "Work was delivered inside a restricted environment where another solution provider could not",
-        "Multiple ERP and ecommerce connections can now be established from one connector",
-        "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts"
-      ],
-      "ctas": [],
-      "images": [
+      "listItems": [],
+      "ctas": [
         {
-          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
-          "alt": "",
-          "w": 167,
-          "h": 150
+          "text": "Request a call",
+          "href": "#pgForm"
         }
-      ]
+      ],
+      "images": []
     },
     {
       "items": [
         {
           "t": "h",
           "tag": "h2",
-          "text": "Ready to Connect Your Marketplace to Your ERP?"
+          "text": "Take A Seamless Cloud Ride With Us!"
         },
         {
           "t": "h",
           "tag": "h2",
-          "text": "See how the Burq connector links any Microsoft ERP with any ecommerce platform."
+          "text": "Get the power to boost your business, innovation, and growth."
         },
         {
           "t": "cta",
-          "text": "Get Customized Integration Services",
+          "text": "Get Customized Azure Cloud Services",
           "href": "#pgForm"
         },
         {
@@ -903,18 +947,18 @@
       "headings": [
         {
           "tag": "h2",
-          "text": "Ready to Connect Your Marketplace to Your ERP?"
+          "text": "Take A Seamless Cloud Ride With Us!"
         },
         {
           "tag": "h2",
-          "text": "See how the Burq connector links any Microsoft ERP with any ecommerce platform."
+          "text": "Get the power to boost your business, innovation, and growth."
         }
       ],
       "paragraphs": [],
       "listItems": [],
       "ctas": [
         {
-          "text": "Get Customized Integration Services",
+          "text": "Get Customized Azure Cloud Services",
           "href": "#pgForm"
         }
       ],
@@ -1181,10 +1225,6 @@
     },
     {
       "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
-      "alt": ""
-    },
-    {
-      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
       "alt": ""
     },
     {
