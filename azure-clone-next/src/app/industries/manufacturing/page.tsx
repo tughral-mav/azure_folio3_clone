@@ -234,7 +234,7 @@ export default function ManufacturingIndustryPage() {
               <div className="grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
                 {PARTNER_BADGES.map((b) => (
                   <div key={b.src} className="flex items-center justify-center rounded-xl border border-surface-line bg-white p-4 shadow-card">
-                    <Image src={b.src} alt={b.alt} width={300} height={203} className="h-auto w-full max-w-[180px] object-contain" />
+                    <Image src={b.src} alt={b.alt} width={300} height={203} priority className="h-auto w-full max-w-[180px] object-contain" />
                   </div>
                 ))}
               </div>
