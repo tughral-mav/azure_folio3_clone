@@ -1,0 +1,1076 @@
+{
+  "url": "https://azure.folio3.com/case-studies/wonderfold-amazon-business-central-integration/",
+  "meta": {
+    "title": "Wonderfold Amazon to Business Central Integration - Azure",
+    "description": "How Folio3's Burq connector integrated two Amazon storefronts with Microsoft Dynamics 365 Business Central for Wonderfold — completing a stalled partner transition and resolving delayed FBM orders in a restricted live environment.",
+    "canonical": "https://azure.folio3.com/case-studies/wonderfold-amazon-business-central-integration/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2023/05/E-commerce-and-Retail.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "w": 181,
+          "h": 40,
+          "alt": "Folio3 | Azure"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Azure Cloud Services"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Fabric Services"
+        },
+        {
+          "t": "li",
+          "text": "Data Integration As A Service"
+        },
+        {
+          "t": "li",
+          "text": "Data Visualization as a service"
+        },
+        {
+          "t": "li",
+          "text": "Data Warehousing as a Service"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Copilot Consulting"
+        },
+        {
+          "t": "li",
+          "text": "Copilot Scenario Library"
+        },
+        {
+          "t": "li",
+          "text": "RecruitFlow Copilot"
+        },
+        {
+          "t": "li",
+          "text": "SmartExpense Agent"
+        },
+        {
+          "t": "li",
+          "text": "ITAsset Copilot"
+        },
+        {
+          "t": "li",
+          "text": "KubeMonitor Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Zammad Ticketing Copilot"
+        },
+        {
+          "t": "li",
+          "text": "Microsoft Power Platform"
+        },
+        {
+          "t": "li",
+          "text": "Azure Managed Services"
+        },
+        {
+          "t": "li",
+          "text": "Intellifabric"
+        },
+        {
+          "t": "li",
+          "text": "Logistics and Transport"
+        },
+        {
+          "t": "li",
+          "text": "Healthcare"
+        },
+        {
+          "t": "li",
+          "text": "Retail"
+        },
+        {
+          "t": "li",
+          "text": "Manufacturing"
+        },
+        {
+          "t": "li",
+          "text": "Construction"
+        },
+        {
+          "t": "li",
+          "text": "Success Stories"
+        },
+        {
+          "t": "li",
+          "text": "Blog"
+        },
+        {
+          "t": "li",
+          "text": "About Us"
+        },
+        {
+          "t": "li",
+          "text": "Contact Us"
+        },
+        {
+          "t": "li",
+          "text": "Talk with Us +1 (408) 412-3813"
+        },
+        {
+          "t": "cta",
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [
+        "Azure Cloud Services",
+        "Microsoft Fabric Services",
+        "Data Integration As A Service",
+        "Data Visualization as a service",
+        "Data Warehousing as a Service",
+        "Microsoft Copilot Consulting",
+        "Copilot Scenario Library",
+        "RecruitFlow Copilot",
+        "SmartExpense Agent",
+        "ITAsset Copilot",
+        "KubeMonitor Copilot",
+        "Zammad Ticketing Copilot",
+        "Microsoft Power Platform",
+        "Azure Managed Services",
+        "Intellifabric",
+        "Logistics and Transport",
+        "Healthcare",
+        "Retail",
+        "Manufacturing",
+        "Construction",
+        "Success Stories",
+        "Blog",
+        "About Us",
+        "Contact Us",
+        "Talk with Us +1 (408) 412-3813"
+      ],
+      "ctas": [
+        {
+          "text": "Get in Touch",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+          "alt": "Folio3 | Azure",
+          "w": 181,
+          "h": 40
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Wonderfold Connects Two Amazon Storefronts to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "How Folio3's Burq connector picked up a stalled integration handover, delivered inside a restricted environment, and got Amazon orders — including the FBM orders that had gone missing in production — flowing into Microsoft Dynamics 365 Business Central."
+        },
+        {
+          "t": "cta",
+          "text": "TALK TO AN INTEGRATION EXPERT",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/05/E-commerce-and-Retail.webp",
+          "w": 594,
+          "h": 540,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Wonderfold Connects Two Amazon Storefronts to Business Central"
+        }
+      ],
+      "paragraphs": [
+        "How Folio3's Burq connector picked up a stalled integration handover, delivered inside a restricted environment, and got Amazon orders — including the FBM orders that had gone missing in production — flowing into Microsoft Dynamics 365 Business Central."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "TALK TO AN INTEGRATION EXPERT",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/05/E-commerce-and-Retail.webp",
+          "alt": "",
+          "w": 594,
+          "h": 540
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "p",
+          "text": "Home » Case Studies » Wonderfold Amazon Business Central Integration"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [
+        "Home » Case Studies » Wonderfold Amazon Business Central Integration"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Ecommerce and Retail"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Two Amazon Storefronts"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Microsoft Dynamics 365 Business Central"
+        },
+        {
+          "t": "p",
+          "text": "About The Client"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Wonderfold"
+        },
+        {
+          "t": "p",
+          "text": "Wonderfold sells through Amazon and runs its operations on Microsoft Dynamics 365 Business Central. The business trades across two separate Amazon storefronts — a main store and a specialty store — each with its own order flow and its own pricing behaviour. Keeping both marketplaces in step with a single ERP meant every order and item price had to land in Business Central accurately and on time, without anyone rekeying it by hand."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Ecommerce and Retail"
+        },
+        {
+          "tag": "h3",
+          "text": "Two Amazon Storefronts"
+        },
+        {
+          "tag": "h3",
+          "text": "Microsoft Dynamics 365 Business Central"
+        },
+        {
+          "tag": "h2",
+          "text": "Wonderfold"
+        }
+      ],
+      "paragraphs": [
+        "About The Client",
+        "Wonderfold sells through Amazon and runs its operations on Microsoft Dynamics 365 Business Central. The business trades across two separate Amazon storefronts — a main store and a specialty store — each with its own order flow and its own pricing behaviour. Keeping both marketplaces in step with a single ERP meant every order and item price had to land in Business Central accurately and on time, without anyone rekeying it by hand."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Handover That Stalled, and FBM Orders That Never Showed Up"
+        },
+        {
+          "t": "p",
+          "text": "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running. A second issue was biting at the same time, in production, where it hurt most."
+        },
+        {
+          "t": "cta",
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Key business areas impacted included:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A company change mid-integration"
+        },
+        {
+          "t": "p",
+          "text": "The transition to a new integration partner led to complications in the integration process, leaving the work part-finished and the path forward unclear."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Delayed FBM orders"
+        },
+        {
+          "t": "p",
+          "text": "Fulfilled by Merchant (FBM) orders were delayed in the live environment. The orders were not appearing as expected, which caused further delays in order fulfilment downstream."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A restricted environment"
+        },
+        {
+          "t": "p",
+          "text": "The client's environment was locked down enough that another solution provider had not been able to complete the work inside it."
+        },
+        {
+          "t": "p",
+          "text": "What Wonderfold needed was not a fresh start. It was a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Handover That Stalled, and FBM Orders That Never Showed Up"
+        },
+        {
+          "tag": "h3",
+          "text": "Key business areas impacted included:"
+        },
+        {
+          "tag": "h3",
+          "text": "A company change mid-integration"
+        },
+        {
+          "tag": "h3",
+          "text": "Delayed FBM orders"
+        },
+        {
+          "tag": "h3",
+          "text": "A restricted environment"
+        }
+      ],
+      "paragraphs": [
+        "Wonderfold came to Folio3 mid-flight. The company was moving away from a previous integration partner, and the transition itself had become the problem — the handover introduced complications into an integration that still had to keep running. A second issue was biting at the same time, in production, where it hurt most.",
+        "The transition to a new integration partner led to complications in the integration process, leaving the work part-finished and the path forward unclear.",
+        "Fulfilled by Merchant (FBM) orders were delayed in the live environment. The orders were not appearing as expected, which caused further delays in order fulfilment downstream.",
+        "The client's environment was locked down enough that another solution provider had not been able to complete the work inside it.",
+        "What Wonderfold needed was not a fresh start. It was a partner who could pick up a part-built integration in a restricted environment, finish the transition cleanly, and make Amazon orders — all of them — appear in Business Central reliably."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "FACING SIMILAR CHALLENGES?",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What The Client Needed"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A clean handover from the previous integration partner"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Amazon orders syncing reliably into Business Central"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM orders processing correctly in the live environment"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Support for two separate Amazon storefronts"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Specialty store pricing driven by the Business Central item price"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "One integration platform able to carry further connections"
+        },
+        {
+          "t": "cta",
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "What The Client Needed"
+        },
+        {
+          "tag": "h3",
+          "text": "A clean handover from the previous integration partner"
+        },
+        {
+          "tag": "h3",
+          "text": "Amazon orders syncing reliably into Business Central"
+        },
+        {
+          "tag": "h3",
+          "text": "FBM orders processing correctly in the live environment"
+        },
+        {
+          "tag": "h3",
+          "text": "Support for two separate Amazon storefronts"
+        },
+        {
+          "tag": "h3",
+          "text": "Specialty store pricing driven by the Business Central item price"
+        },
+        {
+          "tag": "h3",
+          "text": "One integration platform able to carry further connections"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Request a call",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "One Connector, Two Amazon Stores, One ERP"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 customized its Burq connector to integrate the client’s complex JSON files with both Amazon and Business Central. The connector reads the JSON files, passes the data into Business Central, and fetches information from Amazon to sync it back. The company change was resolved and the transition completed. The FBM job was corrected and processed on live client orders, after which FBM orders synchronized and processed successfully in the live environment. What Folio3 delivered:"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Burq connector customized to the client's JSON structure"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Amazon to Business Central order and data sync"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A second integration for the Amazon specialty store"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Specialty store orders priced from the Business Central item price"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM job corrected and validated on live client orders"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Transition from the previous integration partner completed"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Delivered inside the client's restricted environment"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A platform ready for additional ERP and ecommerce connections"
+        },
+        {
+          "t": "cta",
+          "text": "SEE THE BURQ CONNECTOR IN ACTION",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "One Connector, Two Amazon Stores, One ERP"
+        },
+        {
+          "tag": "h3",
+          "text": "Burq connector customized to the client's JSON structure"
+        },
+        {
+          "tag": "h3",
+          "text": "Amazon to Business Central order and data sync"
+        },
+        {
+          "tag": "h3",
+          "text": "A second integration for the Amazon specialty store"
+        },
+        {
+          "tag": "h3",
+          "text": "Specialty store orders priced from the Business Central item price"
+        },
+        {
+          "tag": "h3",
+          "text": "FBM job corrected and validated on live client orders"
+        },
+        {
+          "tag": "h3",
+          "text": "Transition from the previous integration partner completed"
+        },
+        {
+          "tag": "h3",
+          "text": "Delivered inside the client's restricted environment"
+        },
+        {
+          "tag": "h3",
+          "text": "A platform ready for additional ERP and ecommerce connections"
+        }
+      ],
+      "paragraphs": [
+        "Folio3 customized its Burq connector to integrate the client’s complex JSON files with both Amazon and Business Central. The connector reads the JSON files, passes the data into Business Central, and fetches information from Amazon to sync it back. The company change was resolved and the transition completed. The FBM job was corrected and processed on live client orders, after which FBM orders synchronized and processed successfully in the live environment. What Folio3 delivered:"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "SEE THE BURQ CONNECTOR IN ACTION",
+          "href": "#pgForm"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Key Features"
+        },
+        {
+          "t": "p",
+          "text": "The client brought two candidate approaches to the table. Folio3 provided 100% of the input to identify the most suitable implementation, and proposed the Amazon to Business Central integration as the optimal solution — delivered in two parts, each handling a different storefront and a different pricing rule."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/effortless-integration-icon.svg",
+          "w": 216,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Amazon to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "The core integration, syncing order and item data between the main Amazon store and Business Central, with the Burq connector reading the JSON files and passing the data into BC."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/01/sales-performance-tracking-icon.svg",
+          "w": 216,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Amazon to Business Central — Specialty Store"
+        },
+        {
+          "t": "p",
+          "text": "For the specialty store, the price shown against an order is not the order price but the item price set in Business Central for that order — so what the storefront displays stays aligned with what Business Central holds."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/optimize-inventory-icon.svg",
+          "w": 216,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Complex JSON handling"
+        },
+        {
+          "t": "p",
+          "text": "The connector was customized to read the client's complex JSON files, pass the data into Business Central, and fetch information from Amazon to sync it with BC."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+          "w": 216,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Multiple connections from one platform"
+        },
+        {
+          "t": "p",
+          "text": "Burq is a one-stop solution for the full range of integration needs: multiple connections can be established, and any Microsoft ERP can be integrated with any ecommerce platform."
+        },
+        {
+          "t": "cta",
+          "text": "Achieve These With Burq",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Key Features"
+        },
+        {
+          "tag": "h3",
+          "text": "Amazon to Business Central"
+        },
+        {
+          "tag": "h3",
+          "text": "Amazon to Business Central — Specialty Store"
+        },
+        {
+          "tag": "h3",
+          "text": "Complex JSON handling"
+        },
+        {
+          "tag": "h3",
+          "text": "Multiple connections from one platform"
+        }
+      ],
+      "paragraphs": [
+        "The client brought two candidate approaches to the table. Folio3 provided 100% of the input to identify the most suitable implementation, and proposed the Amazon to Business Central integration as the optimal solution — delivered in two parts, each handling a different storefront and a different pricing rule.",
+        "The core integration, syncing order and item data between the main Amazon store and Business Central, with the Burq connector reading the JSON files and passing the data into BC.",
+        "For the specialty store, the price shown against an order is not the order price but the item price set in Business Central for that order — so what the storefront displays stays aligned with what Business Central holds.",
+        "The connector was customized to read the client's complex JSON files, pass the data into Business Central, and fetch information from Amazon to sync it with BC.",
+        "Burq is a one-stop solution for the full range of integration needs: multiple connections can be established, and any Microsoft ERP can be integrated with any ecommerce platform."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Achieve These With Burq",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/effortless-integration-icon.svg",
+          "alt": "",
+          "w": 216,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/01/sales-performance-tracking-icon.svg",
+          "alt": "",
+          "w": 216,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/optimize-inventory-icon.svg",
+          "alt": "",
+          "w": 216,
+          "h": 150
+        },
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+          "alt": "",
+          "w": 216,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Impact & Outcomes"
+        },
+        {
+          "t": "p",
+          "text": "The engagement turned a stalled partner transition into a working, two-store Amazon connection to Business Central — delivered in an environment another provider could not work in."
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
+          "w": 167,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "li",
+          "text": "The transition away from the previous integration partner was completed, ensuring smooth operations"
+        },
+        {
+          "t": "li",
+          "text": "FBM orders now synchronize and process correctly in the live environment, clearing the fulfilment delay"
+        },
+        {
+          "t": "li",
+          "text": "Two Amazon storefronts sync to a single Business Central instance, each with the right pricing behaviour"
+        },
+        {
+          "t": "li",
+          "text": "Work was delivered inside a restricted environment where another solution provider could not"
+        },
+        {
+          "t": "li",
+          "text": "Multiple ERP and ecommerce connections can now be established from one connector"
+        },
+        {
+          "t": "li",
+          "text": "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts"
+        },
+        {
+          "t": "p",
+          "text": "The result: one connector doing the work of a stalled handover and two marketplace integrations — with Amazon and Business Central holding the same picture of the business, and room to add the next connection without starting over."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Impact & Outcomes"
+        }
+      ],
+      "paragraphs": [
+        "The engagement turned a stalled partner transition into a working, two-store Amazon connection to Business Central — delivered in an environment another provider could not work in.",
+        "The result: one connector doing the work of a stalled handover and two marketplace integrations — with Amazon and Business Central holding the same picture of the business, and room to add the next connection without starting over."
+      ],
+      "listItems": [
+        "The transition away from the previous integration partner was completed, ensuring smooth operations",
+        "FBM orders now synchronize and process correctly in the live environment, clearing the fulfilment delay",
+        "Two Amazon storefronts sync to a single Business Central instance, each with the right pricing behaviour",
+        "Work was delivered inside a restricted environment where another solution provider could not",
+        "Multiple ERP and ecommerce connections can now be established from one connector",
+        "Synchronized data in Business Central gives the client the opportunity to run analysis across both storefronts"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
+          "alt": "",
+          "w": 167,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Ready to Connect Your Marketplace to Your ERP?"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "See how the Burq connector links any Microsoft ERP with any ecommerce platform."
+        },
+        {
+          "t": "cta",
+          "text": "Get Customized Integration Services",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "w": 155,
+          "h": 150,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ready to Connect Your Marketplace to Your ERP?"
+        },
+        {
+          "tag": "h2",
+          "text": "See how the Burq connector links any Microsoft ERP with any ecommerce platform."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get Customized Integration Services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": "",
+          "w": 155,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        },
+        {
+          "t": "cta",
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "w": 155,
+          "h": 150,
+          "alt": ""
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+          "alt": "",
+          "w": 155,
+          "h": 150
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "w": 283,
+          "h": 150,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Schedule a 1:1 Call Today"
+        },
+        {
+          "tag": "h2",
+          "text": "Get in touch with our team to solve your Azure queries"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+          "alt": "",
+          "w": 283,
+          "h": 150
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/05/E-commerce-and-Retail.webp",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/effortless-integration-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2026/01/sales-performance-tracking-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/optimize-inventory-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/self-service-analytics-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2025/07/improved-decision-making-icon.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/Scale-Your-Business-with-.png",
+      "alt": ""
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/08/azure-offices-map-img.webp",
+      "alt": ""
+    }
+  ],
+  "bgImages": [
+    "https://azure.folio3.com/wp-content/uploads/2025/07/food-crop-grower-header-bg.webp",
+    "https://azure.folio3.com/wp-content/uploads/2025/07/daraz-client-bg.webp"
+  ]
+}
