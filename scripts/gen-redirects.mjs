@@ -54,6 +54,7 @@ for (const { group, path } of all) {
 add('/case-studies/wph-intellifabric/', '/case-studies/popcorn-producer-intellifabric-dashboards/'); // live 301
 add('/microsoft-power-platform/', '/microsoft-power-platform-services/');
 add('/end-to-end-bi-solution/', '/azure-data-analytics/');
+// Power BI Services page moved under Microsoft Power Platform Services (nested subpage).
 add('/power-bi-services/', '/microsoft-power-platform-services/power-bi/');
 // test/junk slugs explicitly (already covered by group rules, but keep explicit for clarity)
 for (const { path } of all) {
