@@ -278,7 +278,7 @@
         {
           "t": "cta",
           "text": "Speak to our Azure experts",
-          "href": "#pgForm"
+          "href": "/contact-us/"
         },
         {
           "t": "img",
@@ -303,7 +303,7 @@
       "ctas": [
         {
           "text": "Speak to our Azure experts",
-          "href": "#pgForm"
+          "href": "/contact-us/"
         }
       ],
       "images": [
