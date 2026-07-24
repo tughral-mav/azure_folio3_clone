@@ -3,7 +3,7 @@ import { ContactForm } from '@/components/forms/ContactForm';
 import { Counter } from '@/components/ui/Counter';
 
 const STATS = [
-  { to: 5000, suffix: '+', label: 'Projects Deilvered' },
+  { to: 5000, suffix: '+', label: 'Projects Delivered' },
   { to: 700, suffix: '+', label: 'Global Employees' },
   { to: 1000, suffix: '+', label: 'Companies Served' },
   { to: 20, suffix: '+', label: 'Global Awards won' },
