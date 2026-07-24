@@ -12,9 +12,9 @@ import clsx from 'clsx';
 const SLIDES = [
   {
     eyebrow: 'Microsoft Gold Partner with Global Expertise',
-    head: 'Unlock the Power of Cloud: Build, Run & Manage ',
-    highlight: 'Applications with Azure',
-    sub: 'Develop cutting-edge apps using the up-to-date AI models available on Azure, trusted by 80% of fortune top 500 companies.',
+    head: 'The Only Azure Partner on ',
+    highlight: 'Earth',
+    sub: 'We are the only Azure partner left on Earth. Join us.',
     cta: 'Schedule a Free Consultation',
     href: '#pgForm',
     img: '/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new.webp',
