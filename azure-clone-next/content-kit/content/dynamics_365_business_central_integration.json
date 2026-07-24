@@ -1,0 +1,323 @@
+{
+  "url": "https://azure.folio3.com/dynamics-365-business-central-integration/",
+  "meta": {
+    "title": "Dynamics 365 Business Central Integration | iPaaS Connector Platform — Burq",
+    "description": "Connect Dynamics 365 Business Central to Shopify, Amazon, Salesforce, Magento, and 50+ platforms without custom code. Real-time sync. Pre-built connectors. Live in weeks.",
+    "canonical": "https://azure.folio3.com/dynamics-365-business-central-integration/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/01/integration-as-service-header-img.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/integration-as-service-header-img.webp",
+          "w": 831,
+          "h": 747,
+          "alt": "Dynamics 365 Business Central integration illustration"
+        },
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Your Platforms, Connected to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Burq connects Dynamics 365 Business Central to your ecommerce, marketplace, CRM, and shipping platforms — syncing orders, inventory, and financials in real time, without custom development."
+        },
+        {
+          "t": "cta",
+          "text": "Talk to an Expert",
+          "href": "#pgForm"
+        },
+        {
+          "t": "cta",
+          "text": "See All Integrations",
+          "href": "#pgForm"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "The Cost of Disconnected Systems"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manual data entry"
+        },
+        {
+          "t": "p",
+          "text": "Orders, inventory, and customer records copied between systems by hand. Every keystroke is a potential error. Every hour spent is overhead."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Inventory drift"
+        },
+        {
+          "t": "p",
+          "text": "Stock levels in Business Central and your storefronts fall out of sync. Overselling follows. Customer complaints follow that."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Month-end reconciliation"
+        },
+        {
+          "t": "p",
+          "text": "Finance teams spending days reconciling what should already match. The gap between your ERP and your sales channels shows up in every close."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "One integration platform. Every platform you run."
+        },
+        {
+          "t": "p",
+          "text": "Burq connects Microsoft Dynamics 365 Business Central to your entire commercial ecosystem — ecommerce storefronts, marketplaces, CRM, and 3PL — through pre-built, maintained connectors. Orders flow in. Inventory flows out. Nothing requires a developer to keep it running."
+        },
+        {
+          "t": "cta",
+          "text": "Talk to an Expert",
+          "href": "#pgForm"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Integrations"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Don't see your platform?"
+        },
+        {
+          "t": "p",
+          "text": "Burq scopes and builds integrations for platforms not listed here."
+        },
+        {
+          "t": "cta",
+          "text": "Talk to an Expert",
+          "href": "#pgForm"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What Syncs"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Orders"
+        },
+        {
+          "t": "p",
+          "text": "Platform → BC. Sales orders created automatically in Business Central the moment they're placed on any connected platform."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Inventory"
+        },
+        {
+          "t": "p",
+          "text": "BC → All platforms. Stock levels updated across every connected storefront and marketplace simultaneously when changed in Business Central."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Products & catalogue"
+        },
+        {
+          "t": "p",
+          "text": "BC → Platform. SKUs, variants, and pricing pushed from Business Central as the single source of truth."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Customers"
+        },
+        {
+          "t": "p",
+          "text": "Platform ↔ BC. New customer records created and matched — no duplicates, no manual entry."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Invoices"
+        },
+        {
+          "t": "p",
+          "text": "BC → CRM/Platform. Invoice status visible to sales and finance without switching systems."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Pricing & discounts"
+        },
+        {
+          "t": "p",
+          "text": "BC → Platform. Price lists, tier pricing, and promotions maintained in Business Central, reflected on your storefronts."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fulfilment & tracking"
+        },
+        {
+          "t": "p",
+          "text": "Shipping ↔ BC. Shipment records, tracking numbers, and delivery confirmations sync across every channel."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Order status"
+        },
+        {
+          "t": "p",
+          "text": "BC → Platform. Confirmed, shipped, and cancelled status updates reach the originating storefront in real time."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Built Differently from Generic Integration Tools"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Pre-built. Maintained. Always current."
+        },
+        {
+          "t": "p",
+          "text": "Every connector is built and maintained by Burq's engineering team. When Shopify or Amazon updates their API, Burq handles it. Your integration keeps running."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "No-code configuration"
+        },
+        {
+          "t": "p",
+          "text": "Operations teams manage sync rules, field mapping, and error handling through a UI — not a terminal. Changes take minutes, not a support ticket."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Real-time sync. Full error visibility."
+        },
+        {
+          "t": "p",
+          "text": "Data moves as events happen. Every sync is logged. Failed records retry automatically and surface in your dashboard with alerts."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "15 years of Dynamics 365 expertise"
+        },
+        {
+          "t": "p",
+          "text": "Burq is a Folio3 product. Folio3 is a Microsoft Gold Partner with over 15 years of Business Central implementation experience."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "By the Numbers"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Proof of Performance"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "HandsFree Health"
+        },
+        {
+          "t": "p",
+          "text": "WooCommerce + Business Central. Replaced a manual sync process between WooCommerce and Business Central with Burq's real-time integration — eliminating data lag and reconciliation overhead."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Franklin Creative Solutions"
+        },
+        {
+          "t": "p",
+          "text": "Amazon + Business Central. Connected Amazon Seller Central to Business Central — giving the team a single view of orders, inventory, and customer data without adding headcount."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Bioworld Merchandising"
+        },
+        {
+          "t": "p",
+          "text": "Channel Advisor + Business Central. Integrated Channel Advisor with Business Central for a global licensed apparel business — real-time visibility across marketplace and ERP for operations and finance."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Connect Business Central to your platforms"
+        },
+        {
+          "t": "p",
+          "text": "Tell us which platforms you're running. We'll walk you through how Burq connects them — what syncs, how errors are handled, and what your go-live timeline looks like. Pre-built connectors. Real-time sync. Live in weeks, not months."
+        },
+        {
+          "t": "cta",
+          "text": "Talk to an Expert",
+          "href": "#pgForm"
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "bgImages": []
+}
