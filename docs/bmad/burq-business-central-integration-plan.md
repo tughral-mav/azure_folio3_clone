@@ -1,6 +1,12 @@
 # BMAD Plan — Burq × Dynamics 365 Business Central Integration Hub
 
-Status: **AWAITING PM CONFIRMATION** (do not start Dev until the marketer approves the 3 answers below).
+Status: **DONE** — approved by marketer, built, QA-passed, PR #52 opened, preview confirmed live.
+
+QA (Playwright, prod build + live Vercel preview): HTTP 200; every heading/paragraph/FAQ/tab-row
+present; 18/18 cards show real reused icons (0 card fallbacks — the 4 checkmarks are tab-row
+glyphs by design); hero image inside its `<Reveal>` (zoomIn); counters animate to 30+/15+/50+;
+all images 200; all links resolve; #pgForm present once (no duplicate CTA band); 0 console errors.
+Preview: https://azure-folio3-clone-git-claude-azure-foli-841d23-tkay-s-projects.vercel.app/dynamics-365-business-central-integration/
 
 Slug (task): `burq-business-central-integration`
 
