@@ -59,7 +59,7 @@ export default function ContactPage() {
             </div>
             <div className="rounded-2xl bg-white p-8 shadow-cardHover ring-1 ring-surface-line">
               <span className="text-sm font-semibold uppercase tracking-wider text-brand">get in touch today!</span>
-              <div className="mt-6"><ContactForm /></div>
+              <div className="mt-6"><ContactForm redirectTo="/contact-us/thank-you/" /></div>
             </div>
           </div>
         </div>
