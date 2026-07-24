@@ -43,7 +43,10 @@ export const NAV: NavItem[] = [
   {
     label: 'Solutions',
     href: '#',
-    children: [{ label: 'Intellifabric', href: '/solution/intellifabric/' }],
+    children: [
+      { label: 'Intellifabric', href: '/solution/intellifabric/' },
+      { label: 'HR Policy Agent', href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/' },
+    ],
   },
   {
     label: 'Industry',
