@@ -1,0 +1,346 @@
+{
+  "url": "https://azure.folio3.com/case-studies/amazon-business-central-integration/",
+  "meta": {
+    "title": "Amazon to Business Central Integration Case Study",
+    "description": "How Folio3 rebuilt a multi-storefront Amazon seller's Amazon-to-Business Central integration on the Burq connector, syncing two storefronts and clearing a stalled Fulfilled-by-Merchant order backlog.",
+    "canonical": "https://azure.folio3.com/case-studies/amazon-business-central-integration/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/01/integration-as-service-header-img.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Integrating Amazon With Business Central Across Two Storefronts"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 rebuilt a multi-storefront Amazon seller's Amazon-to-Business Central integration on the Burq connector, syncing orders and items across two Amazon storefronts and clearing a stalled Fulfilled-by-Merchant order backlog."
+        },
+        {
+          "t": "cta",
+          "text": "TALK TO AN INTEGRATION EXPERT",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2024/01/integration-as-service-header-img.webp",
+          "w": 831,
+          "h": 747,
+          "alt": "Amazon to Business Central integration"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "2 Amazon Storefronts"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Dynamics 365 Business Central"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Amazon to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "About The Client"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Multi-Storefront Amazon Seller"
+        },
+        {
+          "t": "p",
+          "text": "The client sells through two separate Amazon storefronts, a primary Amazon-Business Central store and an Amazon Business Central specialty store, and runs Microsoft Dynamics 365 Business Central (BC) as its ERP. They needed Amazon order and item data to flow reliably into Business Central so that both storefronts stayed in sync."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Challenges Faced"
+        },
+        {
+          "t": "p",
+          "text": "The client's Amazon-to-Business Central integration had stalled. A change of delivery partner mid-project, together with Fulfilled-by-Merchant orders that were not processing in the live environment, was holding up order fulfilment across both storefronts."
+        },
+        {
+          "t": "cta",
+          "text": "FIX A STALLED INTEGRATION",
+          "href": "#pgForm"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "A mid-project change of integration partner disrupted the Amazon-to-Business Central rollout"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fulfilled-by-Merchant (FBM) orders were not appearing or processing in the live Business Central environment"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Previous providers could not deliver the integration within the client's restricted environment"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What The Client Needed"
+        },
+        {
+          "t": "p",
+          "text": "With order fulfilment on hold, the client needed a partner who could take over the transition and finish the integration inside their existing environment."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "One reliable integration partner"
+        },
+        {
+          "t": "p",
+          "text": "A single team to take over the transition and complete the Amazon-to-Business Central integration cleanly."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM orders flowing into Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Fulfilled-by-Merchant orders processed correctly on live customer orders and synced through to Business Central."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Both Amazon storefronts kept in sync"
+        },
+        {
+          "t": "p",
+          "text": "Consistent order and item data across the Amazon-Business Central store and the specialty store."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Our Solution"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "One Connector For Every Amazon and Business Central Sync"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Folio3 built a custom integration on the Burq connector, which reads Amazon's complex JSON files, passes the data into Business Central, and fetches information back from Amazon to keep both systems in sync. Folio3 provided 100% of the input and proposed the Amazon-to-Business Central approach as the optimal solution."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Burq connector for Amazon and Business Central"
+        },
+        {
+          "t": "p",
+          "text": "One connector establishes and manages the connection between Amazon and Business Central, replacing the stalled setup left by the previous partner."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Complex Amazon JSON parsed into Business Central"
+        },
+        {
+          "t": "p",
+          "text": "The connector reads Amazon's complex JSON files and writes the order data straight into Business Central, with no manual re-keying."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM orders processed on live customer orders"
+        },
+        {
+          "t": "p",
+          "text": "The FBM job now runs correctly on customer orders, so Fulfilled-by-Merchant orders synchronize and process in the live environment."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Specialty store priced from Business Central"
+        },
+        {
+          "t": "p",
+          "text": "For the specialty store, each order shows the item price set in Business Central rather than the Amazon order price, keeping pricing aligned with BC."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "One-stop, ERP-agnostic integration platform"
+        },
+        {
+          "t": "p",
+          "text": "The same platform can connect any Microsoft ERP with any eCommerce channel, so the client can add more connections as the business grows."
+        },
+        {
+          "t": "cta",
+          "text": "REQUEST A CALL",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Business Outcomes"
+        },
+        {
+          "t": "p",
+          "text": "With the integration rebuilt on the Burq connector, the client's Amazon and Business Central data now stays in sync, and the platform gives them room to grow."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Both Amazon storefronts synced with Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Order and item data flows reliably between Amazon and Business Central across the primary and specialty stores."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "FBM order backlog cleared"
+        },
+        {
+          "t": "p",
+          "text": "Fulfilled-by-Merchant orders are processed on live customer orders and no longer stall fulfilment."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Delivered in a restricted environment"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 completed the integration where previous providers could not, working within the client's restricted environment."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Room to add more connections"
+        },
+        {
+          "t": "p",
+          "text": "The client can now establish multiple ERP and eCommerce connections from one platform as needs change."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Analysis on synchronized data"
+        },
+        {
+          "t": "p",
+          "text": "With Amazon and Business Central data unified, the team can run analysis on a single, consistent dataset."
+        },
+        {
+          "t": "cta",
+          "text": "SCALE YOUR INTEGRATIONS",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Take A Seamless Cloud Ride With Us!"
+        },
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Get the power to boost your business, innovation, and growth."
+        },
+        {
+          "t": "cta",
+          "text": "Get Customized Azure Cloud Services",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+          "w": 510,
+          "h": 493,
+          "alt": "Scale Your Business with Our Azure Professional Services"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2024/01/integration-as-service-header-img.webp",
+      "alt": "Amazon to Business Central integration"
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+      "alt": "Scale Your Business with Our Azure Professional Services"
+    }
+  ],
+  "bgImages": []
+}
