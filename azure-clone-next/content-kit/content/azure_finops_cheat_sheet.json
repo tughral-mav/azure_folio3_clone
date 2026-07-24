@@ -4,14 +4,14 @@
     "title": "Azure FinOps Cheat Sheet: 15 Ways to Cut Your Azure Bill 30%+",
     "description": "Free Azure FinOps cheat sheet — 15 proven tactics to cut your Azure bill by 30%+ without hurting performance. Right-sizing, reservations, autoscaling & governance for IT and infrastructure leaders.",
     "canonical": "https://azure.folio3.com/azure-finops-cheat-sheet/",
-    "ogImage": "https://azure.folio3.com/wp-content/uploads/2024/12/microsoft-fabric-cost-optimization.jpg",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2023/05/x835687_Cloud_computing_technology_concept._Futuristic_illustra_a1177465-92c5-40e8-a63c-de692350ddd5.png",
     "h1Count": 1
   },
   "sections": [
     {
       "items": [
-        { "t": "h", "tag": "h1", "text": "Cut Your Azure Bill by 30%+ — Without Slowing Anything Down" },
-        { "t": "p", "text": "A field-tested FinOps cheat sheet for IT and infrastructure leaders: 15 proven tactics to eliminate cloud waste, right-size commitments, and put real governance around spend. Free, no fluff — one page per tactic." },
+        { "t": "h", "tag": "h1", "text": "Cut Your Azure Bill by Over 30%, Without Slowing Anything Down" },
+        { "t": "p", "text": "A field-tested FinOps cheat sheet for IT and infrastructure leaders: 15 proven tactics to eliminate cloud waste, right-size commitments, and put real governance around spend — without compromising performance." },
         { "t": "cta", "text": "Get the Free Cheat Sheet", "href": "#pgForm" },
         { "t": "cta", "text": "Talk to a FinOps Expert", "href": "#pgForm" },
         { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2024/09/Azure-Herobanner-Illustration-updated-new.webp", "w": 637, "h": 398, "alt": "Azure FinOps cost optimization" }
@@ -20,9 +20,9 @@
     },
     {
       "items": [
-        { "t": "h", "tag": "h2", "text": "Why Your Azure Bill Is 30%+ Too High" },
+        { "t": "h", "tag": "h2", "text": "Why You're Likely Overpaying for Azure by 30%" },
         { "t": "p", "text": "Most enterprise Azure estates carry 25–35% waste — not because teams are careless, but because spend is decentralized, usage changes faster than budgets, and no one owns the bill end to end. The good news: the biggest savings need zero re-architecture. They are commitment, right-sizing, and cleanup decisions you can act on this quarter. This cheat sheet distills the 15 highest-ROI levers into four moves." },
-        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2024/12/microsoft-fabric-cost-optimization.jpg", "w": 850, "h": 560, "alt": "Azure cloud cost optimization" }
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2023/05/x835687_Cloud_computing_technology_concept._Futuristic_illustra_a1177465-92c5-40e8-a63c-de692350ddd5.png", "w": 1280, "h": 717, "alt": "Azure cloud cost optimization concept" }
       ],
       "headings": [], "paragraphs": [], "listItems": [], "ctas": [], "images": []
     },
@@ -92,7 +92,7 @@
         { "t": "li", "text": "A 4-pillar quick-reference map — Commit, Eliminate, Scale, Govern." },
         { "t": "li", "text": "A 30-day FinOps action checklist, laid out week by week." },
         { "t": "li", "text": "A \"first five things to check on Monday\" starter list." },
-        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2024/12/strategies-for-cost-optimization-in-microsoft-fabric.jpg", "w": 800, "h": 400, "alt": "What's inside the Azure FinOps cheat sheet" }
+        { "t": "img", "src": "https://azure.folio3.com/wp-content/uploads/2024/06/business-intelligence-reporting.webp", "w": 581, "h": 461, "alt": "What's inside the Azure FinOps cheat sheet" }
       ],
       "headings": [], "paragraphs": [], "listItems": [], "ctas": [], "images": []
     },
