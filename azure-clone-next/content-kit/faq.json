@@ -136,5 +136,13 @@
   "testimonials": [
     "What is Azure Power Platform?",
     "What is Application Modernization?"
+  ],
+  "dynamics_365_business_central_integration": [
+    "Does Business Central already have a native Shopify connector — do I still need Burq?",
+    "How long does it take to go live?",
+    "Can Burq connect Salesforce and Business Central?",
+    "Is developer involvement required?",
+    "What happens when a sync fails?",
+    "How is Burq different from building a custom Business Central API integration?"
   ]
 }
