@@ -91,10 +91,53 @@ export default async function MarketingPage({ params }: { params: Promise<{ slug
     itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })),
   };
 
+  // Per-service structured data (Service graph) for designated service pages — helps answer engines
+  // and search understand the offering as a named service provided by the Organization, with its
+  // sub-services listed. Scoped to specific slugs so the other captured pages (case studies, industry
+  // pages, etc.) are unaffected; the sub-service names are taken from the page's own h3 cards.
+  const routePath = slug.join('/');
+  const SERVICE_PAGES: Record<string, { name: string; serviceType: string; services: string[] }> = {
+    'data-science-ai/microsoft-copilot-consulting': {
+      name: 'Microsoft Copilot Consulting Services',
+      serviceType: 'Microsoft Copilot consulting, implementation and adoption',
+      services: [
+        'Copilot Strategy and Planning',
+        'Copilot Readiness Assessment',
+        'Copilot Use Case Identification',
+        'Custom Copilot Solutions',
+        'Copilot Implementation and Integration',
+        'Copilot Licensing and Access Management',
+        'Copilot Governance and Compliance',
+        'Ongoing Support and Optimization',
+      ],
+    },
+  };
+  const svc = SERVICE_PAGES[routePath];
+  const serviceLd = svc
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${pageUrl}#service`,
+        name: svc.name,
+        serviceType: svc.serviceType,
+        provider: { '@id': `${ORIGIN}/#organization` },
+        areaServed: 'Worldwide',
+        url: pageUrl,
+        description,
+        mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: svc.name,
+          itemListElement: svc.services.map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
+        },
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {serviceLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />}
       <CapturedRenderer page={page} title={title} slug={slug[slug.length - 1]} faq={getFaq(slug.join('/'))} />
     </>
   );
