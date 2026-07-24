@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { LeadSchema, type LeadInput } from '@/lib/lead-schema';
 
-export function ContactForm() {
+export function ContactForm({ redirectTo = '/thank-you/' }: { redirectTo?: string } = {}) {
   const router = useRouter();
   const [serverError, setServerError] = useState<string | null>(null);
   const uid = useId(); // unique per instance → safe even if the form renders twice on a page
@@ -40,7 +40,7 @@ export function ContactForm() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...data, turnstileToken: token }),
     });
-    if (res.ok) router.push('/thank-you/');
+    if (res.ok) router.push(redirectTo);
     else if (res.status === 429) setServerError('Too many attempts. Please wait a moment and try again.');
     else setServerError('Something went wrong. Please try again.');
   }
