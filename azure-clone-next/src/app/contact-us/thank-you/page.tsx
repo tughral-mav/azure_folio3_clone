@@ -5,7 +5,7 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { ConversionBeacon } from '@/components/analytics/ConversionBeacon';
 
 export const metadata: Metadata = {
-  title: 'Thank You — Contact Us | Folio3 Azure',
+  title: 'Thank You — Contact Us',
   description: 'Thanks for contacting Folio3 Azure. A specialist will be in touch shortly — meanwhile, grab our Azure Cloud Starter Guide or book a call.',
   robots: { index: false, follow: false },
   alternates: { canonical: '/contact-us/thank-you/' },
