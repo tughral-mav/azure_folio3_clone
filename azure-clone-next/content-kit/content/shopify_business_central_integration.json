@@ -1,0 +1,536 @@
+{
+  "url": "https://azure.folio3.com/shopify-business-central-integration/",
+  "meta": {
+    "title": "Shopify to Business Central Integration | Burq iPaaS",
+    "description": "Connect Shopify to Microsoft Dynamics 365 Business Central with Burq iPaaS. Real-time orders, inventory, and customer sync, beyond what the free connector covers.",
+    "canonical": "https://azure.folio3.com/shopify-business-central-integration/",
+    "ogImage": null,
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Shopify Integration for Microsoft Dynamics 365 Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Connect Shopify to Microsoft Dynamics 365 Business Central with Burq iPaaS. Orders, inventory, pricing, and customer data sync automatically, in real time or on a schedule, across as many Shopify stores and Business Central locations as your operation needs."
+        },
+        {
+          "t": "cta",
+          "text": "Contact Us",
+          "href": "#pgForm"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Things You Can't Do With the Native Shopify to Business Central Connector"
+        },
+        {
+          "t": "p",
+          "text": "Microsoft and Shopify offer a native connector, free through the Shopify App Store. It works for a single store on a single Business Central location. Past that, the gaps show up fast."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Connect Multiple Warehouses"
+        },
+        {
+          "t": "p",
+          "text": "The native connector maps a single warehouse to a single Shopify inventory location. Multi-warehouse and multi-brand operations need custom work just to represent stock accurately."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Deploy on Prem"
+        },
+        {
+          "t": "p",
+          "text": "The native connector runs on Business Central SaaS. If you are on-premises or planning a hybrid deployment, it is not available to you at all."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Automate Reconciliation for Discounted Items"
+        },
+        {
+          "t": "p",
+          "text": "When an order has multiples of the same item split across lines with a discount applied, the connector can lose track of which line is which, and finance ends up reconciling by hand."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Catch Background Sync Errors Instantly"
+        },
+        {
+          "t": "p",
+          "text": "When product sync breaks, from a listing change or a mapping mismatch, the connector does not always log an error. Sellers have had to manually remap hundreds of SKUs before noticing anything was wrong."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manually Retry Drops"
+        },
+        {
+          "t": "p",
+          "text": "There is no dashboard, no retry logic, and no audit trail. If something drops, you are relying on someone noticing a number looks wrong."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Handle High-Volume Peak Seasons"
+        },
+        {
+          "t": "p",
+          "text": "An unmonitored connector is fine at low volume. It was not built to run unattended once order counts climb during peak season."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What Data Syncs Between Shopify and Business Central with the Integration"
+        },
+        {
+          "t": "p",
+          "text": "Burq iPaaS maps Shopify data to the matching records in Microsoft Dynamics 365 Business Central, in the direction you choose, across multiple stores and multiple Business Central locations."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Orders"
+        },
+        {
+          "t": "p",
+          "text": "New Shopify orders create sales orders or posted invoices in Business Central, with taxes, discounts, and shipping mapped to the right fields, line by line."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Inventory"
+        },
+        {
+          "t": "p",
+          "text": "Stock levels sync with Business Central across as many locations and Shopify stores as you run, so listings reflect true availability."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Pricing & discounts"
+        },
+        {
+          "t": "p",
+          "text": "Business Central price lists and customer price groups sync to Shopify, so promotions push through without manual edits."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Products & variants"
+        },
+        {
+          "t": "p",
+          "text": "Items, variants, and product images sync with Business Central in both directions, so one system is not left as the stale copy."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fulfillment"
+        },
+        {
+          "t": "p",
+          "text": "Shipment and tracking updates from Business Central sync to Shopify the moment a shipment is recorded."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Refunds & returns"
+        },
+        {
+          "t": "p",
+          "text": "Returns and cancellations sync with Business Central as credit memos, with inventory adjusted automatically."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Customers"
+        },
+        {
+          "t": "p",
+          "text": "Buyer details sync with Business Central customer records, and existing Business Central contacts sync back to Shopify."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "How Shopify Records Map to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Burq iPaaS uses dynamic field mapping, including nested mappings, concatenations, and calculated fields, so Shopify data lands in the correct Business Central record, discounted and multi-line orders included."
+        },
+        {
+          "t": "li",
+          "text": "Shopify order → Business Central sales order or posted invoice"
+        },
+        {
+          "t": "li",
+          "text": "Shopify customer → Business Central customer card"
+        },
+        {
+          "t": "li",
+          "text": "Shopify product or variant → Business Central item"
+        },
+        {
+          "t": "li",
+          "text": "Shopify discount or promotion → Business Central price list or line discount"
+        },
+        {
+          "t": "li",
+          "text": "Shopify refund or return → Business Central credit memo"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "How the Shopify Integration Runs End to End"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Event Trigger"
+        },
+        {
+          "t": "p",
+          "text": "A Shopify order, product change, fulfillment update, or refund starts a run. Sync can be real time and event-driven, or scheduled on a polling interval from every 30 seconds to overnight."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Receive and Queue"
+        },
+        {
+          "t": "p",
+          "text": "Burq iPaaS receives the event and queues it for reliable, asynchronous processing."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Transform"
+        },
+        {
+          "t": "p",
+          "text": "Mapping steps convert Shopify fields, including split and discounted order lines, into Business Central ready values."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Sync to Business Central"
+        },
+        {
+          "t": "p",
+          "text": "Secure API calls create or update sales orders, items, and customer records in Microsoft Dynamics 365 Business Central."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Log and Recover"
+        },
+        {
+          "t": "p",
+          "text": "Every record is logged. Failed records show a clear error and retry automatically on a configured interval. A record that fails three consecutive times moves to a permanent error state for manual resync, so nothing is silently dropped."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Status Back"
+        },
+        {
+          "t": "p",
+          "text": "Fulfillment and tracking details push back to refresh the Shopify order status."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "How Burq iPaaS Compares to the Native Connector"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Business Central locations"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: a single Business Central location per Shopify store. Burq iPaaS: multiple locations aggregated into one store, or multiple stores per instance."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Deployment"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: Business Central SaaS only. Burq iPaaS: SaaS, on-premises, and hybrid."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Discounted / split order lines"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: can lose line-level detail, reconciled by hand. Burq iPaaS: maps at the line level and reconciles automatically."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Error visibility"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: failures can pass without a logged error. Burq iPaaS: every record logged, with auto-retry and an audit trail."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Monitoring"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: no dashboard or resync controls. Burq iPaaS: Power BI dashboards plus a live transaction feed."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Field mapping"
+        },
+        {
+          "t": "p",
+          "text": "Native connector: fixed, out-of-the-box scope. Burq iPaaS: low-code, configurable to your existing setup."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Built for Shopify Sellers on Business Central"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Real-Time or Scheduled Sync"
+        },
+        {
+          "t": "p",
+          "text": "Run event-driven sync that moves data the moment an order, refund, or stock change happens, or schedule polling from 30 seconds to overnight, set per flow."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Low-Code Field Mapping"
+        },
+        {
+          "t": "p",
+          "text": "Business users build and adjust mappings without writing code, including nested mappings and calculated fields for discounted or split order lines, and changes go live without a release cycle."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Built-In Error Recovery"
+        },
+        {
+          "t": "p",
+          "text": "A circuit breaker halts calls to a failing service and retries when it recovers. Auto-resync retries failed records on an interval, and audit logs capture the payload for every transaction."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Multi-Location and Multi-Store Mapping"
+        },
+        {
+          "t": "p",
+          "text": "Aggregate stock across Business Central locations into one Shopify store, or run several Shopify stores against one Business Central instance."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Auto-Scaling Infrastructure"
+        },
+        {
+          "t": "p",
+          "text": "Built on Azure Kubernetes Service with throttling and load balancing, so seasonal peaks and flash sales are handled without manual tuning."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Enterprise Security and Compliance"
+        },
+        {
+          "t": "p",
+          "text": "GDPR and ISO 27001 aligned, with AES-256 encryption at rest, TLS in transit, role-based access control, multi-factor authentication, single sign-on, and secrets stored in Azure Key Vault."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Used by Multi-channel Sellers with Complex Operational Workflows"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Branded & Licensed Apparel"
+        },
+        {
+          "t": "p",
+          "text": "High SKU counts across sizes and variants, seasonal drops, and multi-channel selling on Shopify alongside Amazon or wholesale, all reconciling against one Business Central instance."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Health, Wellness & Supplement Brands"
+        },
+        {
+          "t": "p",
+          "text": "Lot tracking, compliance-sensitive order data, and DTC Shopify sales that need to reconcile cleanly against Business Central inventory and financials."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Packaging & Industrial Distribution"
+        },
+        {
+          "t": "p",
+          "text": "B2B pricing tiers and bulk order volumes on Shopify that need line-level accuracy in Business Central, not a flattened order summary."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Multi-Brand Consumer Goods Portfolios"
+        },
+        {
+          "t": "p",
+          "text": "Several Shopify storefronts under one parent company, each needing to map to the right Business Central location or entity without cross-contaminating inventory."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Outdoor & Specialty Retail"
+        },
+        {
+          "t": "p",
+          "text": "Seasonal demand spikes and multi-location fulfillment that need Business Central warehouse stock aggregated accurately into Shopify, past the native connector's single-location limit."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "On-Premises & Hybrid Business Central Users"
+        },
+        {
+          "t": "p",
+          "text": "Businesses not eligible for the SaaS-only native connector, or mid-migration between Business Central deployment types, that still need Shopify syncing without interruption."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Outcomes Our Customers Have Achieved with Shopify Integration"
+        },
+        {
+          "t": "p",
+          "text": "Burq iPaaS has helped ecommerce teams eliminate manual order entry, tighten inventory accuracy, and scale order volume without scaling headcount."
+        },
+        {
+          "t": "p",
+          "text": "Automating order injection from the storefront to Microsoft Dynamics 365 Business Central eliminated 20 to 30 minutes of manual entry per order, across roughly 1,000 orders a month. Inventory latency dropped from 24 hours to 1 hour, and syncing trade pricing and credit terms directly to the storefront let B2B customers check out without waiting on a sales quote."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Ready to Connect Shopify to Business Central?"
+        },
+        {
+          "t": "p",
+          "text": "Get real-time sync across every store and every location, without the limits of the free connector."
+        },
+        {
+          "t": "cta",
+          "text": "Contact Us",
+          "href": "#pgForm"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "t": "p",
+          "text": "Answers to common questions about connecting Shopify to Microsoft Dynamics 365 Business Central with Burq iPaaS."
+        },
+        {
+          "t": "p",
+          "text": "Yes. Microsoft and Shopify offer a native connector at no cost through the Shopify App Store. It works well for a single store on a single Business Central SaaS location. Burq iPaaS is built for sellers who have outgrown that: multiple locations, multiple stores, on-premises deployments, or reconciliation on discounted and split order lines that the native connector does not handle cleanly."
+        },
+        {
+          "t": "p",
+          "text": "Yes. Burq iPaaS aggregates stock across several Business Central locations into a single Shopify store, or connects multiple Shopify stores to one Business Central instance, so multi-warehouse and multi-brand sellers see accurate availability everywhere."
+        },
+        {
+          "t": "p",
+          "text": "Burq iPaaS supports Business Central SaaS, on-premises, and hybrid deployments. The free native connector is cloud-only, so this is one of the main reasons sellers move to Burq iPaaS."
+        },
+        {
+          "t": "p",
+          "text": "Those are different, older Microsoft ERPs, not Business Central. Burq iPaaS has connected Shopify to Dynamics 365 Finance and Operations and to legacy NAV and AX environments in past projects. If you are on one of those systems rather than Business Central, contact us and we will scope the right connector for your setup."
+        },
+        {
+          "t": "p",
+          "text": "Discount and price list data map at the line level, so a discounted item split across multiple order lines reconciles correctly in Business Central instead of needing a manual fix during close."
+        },
+        {
+          "t": "p",
+          "text": "Failed records are logged with a clear error and retried automatically on a set interval. If a record fails three consecutive times it moves to a permanent error state and can be resynced manually, so nothing is silently dropped, unlike the native connector's lack of error visibility."
+        },
+        {
+          "t": "p",
+          "text": "Most Shopify to Business Central integrations go live in a few weeks using prebuilt connectors and low-code mapping, rather than the months a fully custom build usually takes."
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "bgImages": []
+}

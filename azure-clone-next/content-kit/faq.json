@@ -136,5 +136,14 @@
   "testimonials": [
     "What is Azure Power Platform?",
     "What is Application Modernization?"
+  ],
+  "shopify_business_central_integration": [
+    "Doesn't Business Central already have a free Shopify connector?",
+    "Can Burq iPaaS handle multiple Shopify stores or multiple Business Central locations?",
+    "Does this work with Business Central on-premises, or only the cloud version?",
+    "What about Dynamics NAV, AX, or GP? We saw those come up in our research too.",
+    "How does the integration handle discounts on multi-line orders?",
+    "What happens when a record fails to sync?",
+    "How long does setup take?"
   ]
 }
