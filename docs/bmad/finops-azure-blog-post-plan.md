@@ -8,7 +8,14 @@ Target reader: CTOs, Data Architects, Enterprise BI Leaders. Funnel: TOFU. Word 
 - [x] (a) topic + keywords  — CONFIRMED: primary "Azure cost optimization" + "Azure FinOps"; ~1,000-1,200 words; FAQ+JSON-LD yes
 - [x] (b) outline  — APPROVED
 - [x] (c) draft  — APPROVED (metadata picked: title opt 1, desc opt 1)
-- [ ] (d) before the PR  <-- CURRENT
+- [x] (d) before the PR  — APPROVED (FAQ JSON-LD renderer change approved; PR approved)
+
+## SHIPPED
+- PR #50: https://github.com/tughral-mav/azure_folio3_clone/pull/50 (base master)
+- Branch: claude/finops-azure-blog-post-4jbosr
+- Vercel preview host: azure-folio3-clone-git-claude-finops-azu-577089-tkay-s-projects.vercel.app
+- Preview page: /blog/finops-on-azure/ (confirming render before handoff)
+- FAQ JSON-LD: approved + implemented (additive `faq` field -> FAQPage schema in blog renderer)
 
 ## DEV/QA STATUS
 - File written: content-kit/content/blog_finops_on_azure.json (~1,172 words)
