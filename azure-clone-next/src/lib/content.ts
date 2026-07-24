@@ -239,7 +239,7 @@ export function getTabIntro(url: string): string[] {
   return _tabIntroRaw?.[slugOfRoute(route)] ?? [];
 }
 
-// Stat counters (e.g. "98% User satisfaction", "5000+ Projects Deilvered") are Elementor counter
+// Stat counters (e.g. "98% User satisfaction", "5000+ Projects Delivered") are Elementor counter
 // widgets the capture misses entirely. Re-captured from the live (verify/extract-counters.mjs →
 // clone-kit/counters.json) keyed by page slug: [{to, pre, suf, title, section}].
 export type CounterRec = { to: string; pre: string; suf: string; title: string; section: string };
