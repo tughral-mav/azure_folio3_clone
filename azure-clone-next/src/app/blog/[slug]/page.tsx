@@ -54,11 +54,23 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       { '@type': 'ListItem', position: 3, name: post.title, item: url },
     ],
   };
+  const faqLd = post.faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <article className="container-x max-w-3xl py-16">
         <h1 className="text-3xl font-bold leading-tight lg:text-4xl">{post.title}</h1>
         {post.description && <p className="mt-4 text-lg text-body">{post.description}</p>}
