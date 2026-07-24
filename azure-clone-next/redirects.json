@@ -46,27 +46,27 @@
   },
   {
     "source": "/blog/our_cloud_service/healthcare-2/",
-    "destination": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   },
   {
     "source": "/blog/our_cloud_service/financial-services/",
-    "destination": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   },
   {
     "source": "/blog/our_cloud_service/retail/",
-    "destination": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   },
   {
     "source": "/blog/our_cloud_service/manufacturing/",
-    "destination": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   },
   {
     "source": "/blog/our_cloud_service/healthcare/",
-    "destination": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   },
   {
@@ -307,6 +307,11 @@
   {
     "source": "/end-to-end-bi-solution/",
     "destination": "/azure-data-analytics/",
+    "permanent": true
+  },
+  {
+    "source": "/azure-cloud-service/",
+    "destination": "/contact-us/",
     "permanent": true
   }
 ]
