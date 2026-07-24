@@ -136,5 +136,13 @@
   "testimonials": [
     "What is Azure Power Platform?",
     "What is Application Modernization?"
+  ],
+  "azure_kubernetes_service": [
+    "Do we have to rewrite our .NET and Java applications to run on Azure Kubernetes Service?",
+    "How does Folio3 migrate to AKS without interrupting live operations?",
+    "How is compliance and identity handled for regulated FinTech, healthcare, and telecom workloads?",
+    "What does Azure Kubernetes Service replace in our current estate?",
+    "How does AKS reduce our infrastructure and maintenance costs?",
+    "Why choose Folio3 as an Azure Kubernetes Service partner?"
   ]
 }

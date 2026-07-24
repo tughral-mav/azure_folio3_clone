@@ -1,0 +1,638 @@
+{
+  "url": "https://azure.folio3.com/azure-kubernetes-service/",
+  "meta": {
+    "title": "Azure Kubernetes Service for Enterprise App Modernization",
+    "description": "Modernize legacy .NET and Java monoliths onto Azure Kubernetes Service without a rip-and-replace. Governed, downtime-free migration from a Tier-1 Microsoft CSP.",
+    "canonical": "https://azure.folio3.com/azure-kubernetes-service/",
+    "ogImage": "https://azure.folio3.com/wp-content/uploads/2023/07/Cloud-Migration.webp",
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "Azure Kubernetes Service for Enterprise Application Modernization"
+        },
+        {
+          "t": "p",
+          "text": "Retire ageing virtual machines and monolithic IIS web servers. Folio3 containerizes your legacy .NET and Java applications and re-platforms them onto Azure Kubernetes Service (AKS) — breaking monoliths into manageable microservices through a governed, downtime-free migration."
+        },
+        {
+          "t": "cta",
+          "text": "Speak to Our Azure Experts",
+          "href": "#pgForm"
+        },
+        {
+          "t": "cta",
+          "text": "Book a Modernization Assessment",
+          "href": "/contact-us/"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/07/Cloud-Migration.webp",
+          "w": 705,
+          "h": 761,
+          "alt": "Azure Kubernetes Service enterprise application modernization"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Azure Kubernetes Service for Enterprise Application Modernization"
+        }
+      ],
+      "paragraphs": [
+        "Retire ageing virtual machines and monolithic IIS web servers. Folio3 containerizes your legacy .NET and Java applications and re-platforms them onto Azure Kubernetes Service (AKS) — breaking monoliths into manageable microservices through a governed, downtime-free migration."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Speak to Our Azure Experts",
+          "href": "#pgForm"
+        },
+        {
+          "text": "Book a Modernization Assessment",
+          "href": "/contact-us/"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/07/Cloud-Migration.webp",
+          "alt": "Azure Kubernetes Service enterprise application modernization",
+          "w": 705,
+          "h": 761
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Solve Real Business Problems"
+        },
+        {
+          "t": "p",
+          "text": "Legacy infrastructure quietly taxes every release, every audit, and every budget cycle. Azure Kubernetes Service removes that friction at its source."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Manual VM provisioning turns every deployment into a multi-day task"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Monolithic systems force expensive over-provisioning of idle servers"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Compliance and security teams inherit estates that are hard to govern"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fragmented reporting leaves leadership without a clear operational view"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Solve Real Business Problems"
+        },
+        {
+          "tag": "h3",
+          "text": "Manual VM provisioning turns every deployment into a multi-day task"
+        },
+        {
+          "tag": "h3",
+          "text": "Monolithic systems force expensive over-provisioning of idle servers"
+        },
+        {
+          "tag": "h3",
+          "text": "Compliance and security teams inherit estates that are hard to govern"
+        },
+        {
+          "tag": "h3",
+          "text": "Fragmented reporting leaves leadership without a clear operational view"
+        }
+      ],
+      "paragraphs": [
+        "Legacy infrastructure quietly taxes every release, every audit, and every budget cycle. Azure Kubernetes Service removes that friction at its source."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Structured, Secure Path off Legacy Infrastructure"
+        },
+        {
+          "t": "p",
+          "text": "Azure Kubernetes Service gives regulated enterprises a controlled platform to decompose monolithic applications into microservices — eliminating the operational risk and architectural friction of enterprise cloud modernization."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Seamless Legacy Modernization"
+        },
+        {
+          "t": "p",
+          "text": "Native support for both Linux and Windows Server containers lets your legacy .NET and Java applications be containerized with minimal code refactoring — so modernization does not become a ground-up rewrite."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Unified Enterprise Governance"
+        },
+        {
+          "t": "p",
+          "text": "Direct integration with Microsoft Entra ID (Azure Active Directory) and Azure Landing Zones enforces strict compliance and identity management out of the box, across every cluster and workload."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Downtime-Free Migrations"
+        },
+        {
+          "t": "p",
+          "text": "Built-in disaster recovery, multi-region replication, and Azure Arc support enable gradual hybrid-cloud migrations — moving workloads without interrupting live operations."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "A Structured, Secure Path off Legacy Infrastructure"
+        },
+        {
+          "tag": "h3",
+          "text": "Seamless Legacy Modernization"
+        },
+        {
+          "tag": "h3",
+          "text": "Unified Enterprise Governance"
+        },
+        {
+          "tag": "h3",
+          "text": "Downtime-Free Migrations"
+        }
+      ],
+      "paragraphs": [
+        "Azure Kubernetes Service gives regulated enterprises a controlled platform to decompose monolithic applications into microservices — eliminating the operational risk and architectural friction of enterprise cloud modernization.",
+        "Native support for both Linux and Windows Server containers lets your legacy .NET and Java applications be containerized with minimal code refactoring — so modernization does not become a ground-up rewrite.",
+        "Direct integration with Microsoft Entra ID (Azure Active Directory) and Azure Landing Zones enforces strict compliance and identity management out of the box, across every cluster and workload.",
+        "Built-in disaster recovery, multi-region replication, and Azure Arc support enable gradual hybrid-cloud migrations — moving workloads without interrupting live operations."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Why Azure Kubernetes Service Wins vs Traditional Virtual Machines"
+        },
+        {
+          "t": "p",
+          "text": "The same workloads, run two ways. Here is what changes when you move from VM-based hosting to a managed Kubernetes platform."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Traditional Virtual Machines"
+        },
+        {
+          "t": "p",
+          "text": "Manual provisioning and patching of every server"
+        },
+        {
+          "t": "p",
+          "text": "Scale by cloning whole VMs — you pay for idle capacity"
+        },
+        {
+          "t": "p",
+          "text": "Releases require scheduled downtime and change windows"
+        },
+        {
+          "t": "p",
+          "text": "Identity and compliance bolted on machine by machine"
+        },
+        {
+          "t": "p",
+          "text": "Disaster recovery is a separate, manual project"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure Kubernetes Service"
+        },
+        {
+          "t": "p",
+          "text": "Declarative, automated provisioning with self-healing nodes"
+        },
+        {
+          "t": "p",
+          "text": "Elastic pod autoscaling — pay only for what you run"
+        },
+        {
+          "t": "p",
+          "text": "Rolling, zero-downtime deployments by default"
+        },
+        {
+          "t": "p",
+          "text": "Microsoft Entra ID and Azure Policy enforced platform-wide"
+        },
+        {
+          "t": "p",
+          "text": "Multi-region replication and DR built into the platform"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Why Azure Kubernetes Service Wins vs Traditional Virtual Machines"
+        },
+        {
+          "tag": "h3",
+          "text": "Traditional Virtual Machines"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Kubernetes Service"
+        }
+      ],
+      "paragraphs": [
+        "The same workloads, run two ways. Here is what changes when you move from VM-based hosting to a managed Kubernetes platform.",
+        "Manual provisioning and patching of every server",
+        "Scale by cloning whole VMs — you pay for idle capacity",
+        "Releases require scheduled downtime and change windows",
+        "Identity and compliance bolted on machine by machine",
+        "Disaster recovery is a separate, manual project",
+        "Declarative, automated provisioning with self-healing nodes",
+        "Elastic pod autoscaling — pay only for what you run",
+        "Rolling, zero-downtime deployments by default",
+        "Microsoft Entra ID and Azure Policy enforced platform-wide",
+        "Multi-region replication and DR built into the platform"
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Product Differentiators That Map to Enterprise Outcomes"
+        },
+        {
+          "t": "p",
+          "text": "Every AKS capability we implement ties back to a board-level outcome: lower cost, higher stability, faster delivery, and stronger compliance."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Windows and Linux Container Support"
+        },
+        {
+          "t": "p",
+          "text": "Run .NET Framework, .NET Core, and Java side by side. Legacy Windows workloads containerize without a full rewrite, protecting years of embedded business logic."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Microsoft Entra ID Access Governance"
+        },
+        {
+          "t": "p",
+          "text": "Centralized identity, role-based access control, and conditional access are enforced at the cluster level — ending the per-server identity sprawl of a VM estate."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure Landing Zone Alignment"
+        },
+        {
+          "t": "p",
+          "text": "Clusters are deployed inside your enterprise-scale landing zone, inheriting network, policy, and compliance guardrails from day one."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure Arc Hybrid Management"
+        },
+        {
+          "t": "p",
+          "text": "Govern on-premises, AKS, and multi-cloud Kubernetes from a single control plane while your workloads migrate at a pace the business controls."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Multi-Region Disaster Recovery"
+        },
+        {
+          "t": "p",
+          "text": "Active-passive or active-active replication keeps regulated workloads available through regional failures and planned maintenance."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure DevOps Release Gates"
+        },
+        {
+          "t": "p",
+          "text": "CI/CD pipelines with automated release gates promote builds through environments with approvals, automated tests, and rollback baked in."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Product Differentiators That Map to Enterprise Outcomes"
+        },
+        {
+          "tag": "h3",
+          "text": "Windows and Linux Container Support"
+        },
+        {
+          "tag": "h3",
+          "text": "Microsoft Entra ID Access Governance"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Landing Zone Alignment"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure Arc Hybrid Management"
+        },
+        {
+          "tag": "h3",
+          "text": "Multi-Region Disaster Recovery"
+        },
+        {
+          "tag": "h3",
+          "text": "Azure DevOps Release Gates"
+        }
+      ],
+      "paragraphs": [
+        "Every AKS capability we implement ties back to a board-level outcome: lower cost, higher stability, faster delivery, and stronger compliance.",
+        "Run .NET Framework, .NET Core, and Java side by side. Legacy Windows workloads containerize without a full rewrite, protecting years of embedded business logic.",
+        "Centralized identity, role-based access control, and conditional access are enforced at the cluster level — ending the per-server identity sprawl of a VM estate.",
+        "Clusters are deployed inside your enterprise-scale landing zone, inheriting network, policy, and compliance guardrails from day one.",
+        "Govern on-premises, AKS, and multi-cloud Kubernetes from a single control plane while your workloads migrate at a pace the business controls.",
+        "Active-passive or active-active replication keeps regulated workloads available through regional failures and planned maintenance.",
+        "CI/CD pipelines with automated release gates promote builds through environments with approvals, automated tests, and rollback baked in."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Credentials That De-Risk Your Modernization"
+        },
+        {
+          "t": "p",
+          "text": "You are handing over business-critical systems. Folio3's Microsoft partnership and delivery scale are the assurance that your migration is in expert hands."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Tier-1 Microsoft Cloud Solution Provider"
+        },
+        {
+          "t": "p",
+          "text": "Direct (Tier-1) CSP status means licensing, support, and escalation come straight from Folio3 — with no third-party middle layer between you and Microsoft."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Microsoft Solutions Partner Designations"
+        },
+        {
+          "t": "p",
+          "text": "Recognized for Digital & App Innovation on Azure, validating proven capability in application modernization and Kubernetes delivery."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "750+ Certified Cloud Developers"
+        },
+        {
+          "t": "p",
+          "text": "A deep bench of certified Azure and Kubernetes engineers to staff enterprise migrations without resourcing delays."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "1,000+ Clients Served Worldwide"
+        },
+        {
+          "t": "p",
+          "text": "Two decades of delivery across FinTech, healthcare, and telecom — sectors where compliance and uptime are non-negotiable."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Credentials That De-Risk Your Modernization"
+        },
+        {
+          "tag": "h3",
+          "text": "Tier-1 Microsoft Cloud Solution Provider"
+        },
+        {
+          "tag": "h3",
+          "text": "Microsoft Solutions Partner Designations"
+        },
+        {
+          "tag": "h3",
+          "text": "750+ Certified Cloud Developers"
+        },
+        {
+          "tag": "h3",
+          "text": "1,000+ Clients Served Worldwide"
+        }
+      ],
+      "paragraphs": [
+        "You are handing over business-critical systems. Folio3's Microsoft partnership and delivery scale are the assurance that your migration is in expert hands.",
+        "Direct (Tier-1) CSP status means licensing, support, and escalation come straight from Folio3 — with no third-party middle layer between you and Microsoft.",
+        "Recognized for Digital & App Innovation on Azure, validating proven capability in application modernization and Kubernetes delivery.",
+        "A deep bench of certified Azure and Kubernetes engineers to staff enterprise migrations without resourcing delays.",
+        "Two decades of delivery across FinTech, healthcare, and telecom — sectors where compliance and uptime are non-negotiable."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Real Results, Real Impact"
+        },
+        {
+          "t": "p",
+          "text": "See how enterprises modernized on Microsoft Azure with Folio3."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "t": "p",
+          "text": "A global real estate advisor modernized its data and reporting platform on Azure with Folio3, consolidating analytics and scaling delivery across regions."
+        },
+        {
+          "t": "cta",
+          "text": "Read More",
+          "href": "/savills/"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "City University of Hong Kong"
+        },
+        {
+          "t": "p",
+          "text": "City University partnered with Folio3 to modernize applications on Azure, improving reliability and streamlining IT operations for staff and students."
+        },
+        {
+          "t": "cta",
+          "text": "Read More",
+          "href": "/city-university-azure/"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Real Results, Real Impact"
+        },
+        {
+          "tag": "h3",
+          "text": "Savills"
+        },
+        {
+          "tag": "h3",
+          "text": "City University of Hong Kong"
+        }
+      ],
+      "paragraphs": [
+        "See how enterprises modernized on Microsoft Azure with Folio3.",
+        "A global real estate advisor modernized its data and reporting platform on Azure with Folio3, consolidating analytics and scaling delivery across regions.",
+        "City University partnered with Folio3 to modernize applications on Azure, improving reliability and streamlining IT operations for staff and students."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Read More",
+          "href": "/savills/"
+        },
+        {
+          "text": "Read More",
+          "href": "/city-university-azure/"
+        }
+      ],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Frequently Asked Questions About Azure Kubernetes Service"
+        },
+        {
+          "t": "p",
+          "text": "Straight answers to the questions enterprise architects ask before committing to an AKS modernization program."
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Frequently Asked Questions About Azure Kubernetes Service"
+        }
+      ],
+      "paragraphs": [
+        "Straight answers to the questions enterprise architects ask before committing to an AKS modernization program."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Ready to Modernize on Azure Kubernetes Service?"
+        },
+        {
+          "t": "p",
+          "text": "Book a modernization assessment with our Azure architects and get a phased, downtime-free migration roadmap for your legacy .NET and Java estate."
+        },
+        {
+          "t": "cta",
+          "text": "Book Your Modernization Assessment",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+          "w": 510,
+          "h": 493,
+          "alt": "Modernize your enterprise applications on Azure Kubernetes Service"
+        }
+      ],
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Ready to Modernize on Azure Kubernetes Service?"
+        }
+      ],
+      "paragraphs": [
+        "Book a modernization assessment with our Azure architects and get a phased, downtime-free migration roadmap for your legacy .NET and Java estate."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Book Your Modernization Assessment",
+          "href": "#pgForm"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://azure.folio3.com/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+          "alt": "Modernize your enterprise applications on Azure Kubernetes Service",
+          "w": 510,
+          "h": 493
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/07/Cloud-Migration.webp",
+      "alt": "Azure Kubernetes Service enterprise application modernization"
+    },
+    {
+      "src": "https://azure.folio3.com/wp-content/uploads/2023/05/Scale-Your-Business-with-.png",
+      "alt": "Modernize your enterprise applications on Azure Kubernetes Service"
+    }
+  ],
+  "bgImages": []
+}
