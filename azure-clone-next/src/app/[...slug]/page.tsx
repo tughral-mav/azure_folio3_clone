@@ -90,11 +90,29 @@ export default async function MarketingPage({ params }: { params: Promise<{ slug
     '@id': `${pageUrl}#breadcrumb`,
     itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })),
   };
+  // Page-scoped Service schema (only where the page genuinely markets a delivered service).
+  // FAQPage schema is emitted separately by <Accordion> for any page with an FAQ, so it is not
+  // repeated here. Provider references the site-wide Organization node (layout.tsx) by @id.
+  const serviceLd = slug.join('/') === 'azure-for-manufacturing'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${pageUrl}#service`,
+        name: 'Azure for Manufacturing',
+        serviceType: 'Microsoft Azure cloud, data and AI services for manufacturing',
+        description,
+        url: pageUrl,
+        provider: { '@id': `${ORIGIN}/#organization` },
+        areaServed: 'Worldwide',
+        ...(ogImage ? { image: ogImage } : {}),
+      }
+    : null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {serviceLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />}
       <CapturedRenderer page={page} title={title} slug={slug[slug.length - 1]} faq={getFaq(slug.join('/'))} />
     </>
   );
