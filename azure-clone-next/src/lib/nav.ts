@@ -18,6 +18,7 @@ export const NAV: NavItem[] = [
         href: '/azure-data-analytics/',
         children: [
           { label: 'Microsoft Fabric Services', href: '/microsoft-fabric-services/' },
+          { label: '2 Microsoft Fabric Services', href: '/2-microsoft-fabric-services/' },
           { label: 'Data Integration As A Service', href: '/data-integration-as-a-service/' },
           { label: 'Data Visualization as a service', href: '/azure-data-analytics/data-visualization-as-a-service/' },
           { label: 'Data Warehousing as a Service', href: '/data-warehousing-as-a-service/' },
