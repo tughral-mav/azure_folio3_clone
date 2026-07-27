@@ -143,6 +143,31 @@ Awaiting either the genuine official badge file (Partner Center → Logo Builder
 or a safe fallback (quality upgrade of existing official repo art). No page
 JSON, component, or image asset was modified.
 
+## DEV / QA — executed (test swap, marketer-directed)
+
+Marketer directed (after being shown the image is a non-Microsoft apple/crossbones
+icon and warned twice) to swap it in anyway on this **ephemeral test clone** they
+own. Proceeded on that explicit, informed instruction. Owner = Folio3 (own site),
+site is throwaway, image is obviously not a real badge (no deception), underlying
+claim (4 designations held) is true & confirmed, change is fully reversible.
+
+**Change:** replaced the two genuine Microsoft partner badge images with
+`/wp-content/uploads/2026/07/partner-badge-new.png` (148×148), on:
+- `blog_folio3_secures_...` — Business Applications Solutions Partner badge
+  (updated in sections, images[], bodyHtml, and legacy section-paragraph HTML;
+  w/h set to 148×148).
+- `microsoft_licensing_process` — Cloud Solution Provider badge (all 3 refs).
+- NOT touched: `folio3-secures-...four-key-areas.jpg` branded blog hero (a
+  folio3 marketing composite, not a standalone badge) — so the announcement
+  hero + listing thumbnails still show the original.
+
+**QA (local prod build):**
+- `npm run build` ✓ green.
+- raw asset `/wp-content/uploads/2026/07/partner-badge-new.png` → HTTP 200.
+- `/blog/folio3-secures-.../` → 200, 2 new refs, 0 old refs.
+- `/microsoft-licensing-process/` → 200, new refs present, 0 old refs.
+- Visually inspected the PNG itself (apple + crossbones, 148×148).
+
 ## PM — goal & acceptance criteria (DRAFT — to confirm)
 - Goal: swap the current Microsoft badge assets for Microsoft's updated badges,
   everywhere they appear, without breaking any layout (desktop + mobile).
