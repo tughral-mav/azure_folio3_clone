@@ -114,6 +114,13 @@ export async function POST(req: Request) {
     );
   }
   if (process.env.HUBSPOT_PORTAL_ID && process.env.HUBSPOT_FORM_GUID) {
+    // The HubSpot form requires a separate first + last name and a Company-object
+    // name field (`0-2/name`). We only collect a single full name + optional
+    // company, so split the name and fall back so no required field is ever empty
+    // (HubSpot rejects the whole submission if a required field is missing/blank).
+    const nameParts = (lead.fullName || '').trim().split(/\s+/);
+    const firstName = nameParts[0] || lead.fullName || '';
+    const lastName = nameParts.slice(1).join(' ') || firstName || '-';
     targets.push(
       fetchWithTimeout(
         `https://api.hsforms.com/submissions/v3/integration/submit/${process.env.HUBSPOT_PORTAL_ID}/${process.env.HUBSPOT_FORM_GUID}`,
@@ -123,9 +130,10 @@ export async function POST(req: Request) {
           body: JSON.stringify({
             fields: [
               { name: 'email', value: lead.email },
-              { name: 'firstname', value: lead.fullName },
+              { name: 'firstname', value: firstName },
+              { name: 'lastname', value: lastName },
               { name: 'phone', value: lead.phone || '' },
-              { name: 'company', value: lead.company || '' },
+              { name: '0-2/name', value: lead.company || 'N/A' },
               { name: 'message', value: lead.message },
             ],
             context: { pageUri: lead.pageUrl, pageName: 'Lead' },
