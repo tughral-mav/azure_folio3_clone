@@ -63,6 +63,7 @@ export const NAV: NavItem[] = [
       { label: 'Success Stories', href: '/case-studies/' },
       { label: 'Blog', href: '/blog/' },
       { label: 'About Us', href: '/about-us/' },
+      { label: 'Privacy Policy', href: '/privacy-policy/' },
     ],
   },
   { label: 'Contact Us', href: '/contact-us/' },
