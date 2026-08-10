@@ -38,6 +38,7 @@ export const metadata: Metadata = {
 const GTM = process.env.NEXT_PUBLIC_GTM_ID;
 const CLARITY = process.env.NEXT_PUBLIC_CLARITY_ID;
 const TURNSTILE = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const HUBSPOT_TRACKING = process.env.NEXT_PUBLIC_HUBSPOT_TRACKING_ID;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -97,6 +98,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         {TURNSTILE && (
           <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
+        )}
+        {HUBSPOT_TRACKING && (
+          <Script id="hs-script-loader" strategy="afterInteractive" src={`https://js.hs-scripts.com/${HUBSPOT_TRACKING}.js`} />
         )}
       </body>
     </html>
