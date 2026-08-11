@@ -1,0 +1,411 @@
+{
+  "url": "https://azure.folio3.com/folio3-employee-self-service-app/",
+  "meta": {
+    "title": "Microsoft Employee Self-Service on Azure | Folio ESS",
+    "description": "Folio ESS is an employee self-service app for the Microsoft ecosystem. It runs on Azure, is built on Dynamics 365 Human Resources, and is secured by Azure Active Directory.",
+    "canonical": "https://azure.folio3.com/folio3-employee-self-service-app/",
+    "ogImage": null,
+    "h1Count": 1
+  },
+  "sections": [
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h1",
+          "text": "The Employee Self-Service Portal Built for Your Microsoft Ecosystem"
+        },
+        {
+          "t": "p",
+          "text": "Folio ESS is a modern employee self-service app that runs on the Microsoft cloud you already use. Hosted on Azure, built on Dynamics 365 Human Resources, and secured by Azure Active Directory — four role-based experiences across web and mobile."
+        },
+        {
+          "t": "cta",
+          "text": "Book a Demo",
+          "href": "#pgForm"
+        },
+        {
+          "t": "cta",
+          "text": "Talk to a Consultant",
+          "href": "#pgForm"
+        },
+        {
+          "t": "img",
+          "src": "/wp-content/uploads/2026/02/folio-ess-hero.svg",
+          "w": 640,
+          "h": 480,
+          "alt": "Folio ESS employee self-service portal on Azure"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Your HR Self-Service Shouldn't Live Outside Your Microsoft Cloud"
+        },
+        {
+          "t": "p",
+          "text": "You've moved your business systems to Azure. Identity is centralized in Azure Active Directory, data lives in Dataverse, and analytics runs on Power BI. So why is your employee self-service portal still a standalone third-party app fighting the stack it is supposed to live in?"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Two identity systems to manage"
+        },
+        {
+          "t": "p",
+          "text": "A standalone ESS means a second login for staff and a second directory outside Azure Active Directory for IT to maintain."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Data outside your Azure tenant"
+        },
+        {
+          "t": "p",
+          "text": "Employee records, leave balances, and expenses sit in a vendor database instead of your Dataverse and your Azure region."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Compliance you can't audit end to end"
+        },
+        {
+          "t": "p",
+          "text": "Your Azure workloads are SOC 2, ISO 27001, and GDPR covered. A third-party ESS is not necessarily any of them."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "No Power Platform reach"
+        },
+        {
+          "t": "p",
+          "text": "Standalone ESS data can't be surfaced in Power BI or automated with Power Automate without brittle, breakable connectors."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Contractors and deskless staff left out"
+        },
+        {
+          "t": "p",
+          "text": "Third-party bolt-ons were never designed for the phone-first workforce or the license-limited contractor."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "An Employee Self-Service Layer Built Into Your Microsoft Cloud"
+        },
+        {
+          "t": "p",
+          "text": "Folio ESS runs on the same Microsoft cloud your business systems already sit on — hosted on Azure, identity from Azure Active Directory, data in Dataverse, extensibility through Power Platform, and deployed by a Microsoft Solutions Partner. Nothing is bolted on: every capability comes from a Microsoft service you already own, wrapped in an experience purpose-built for employee self-service."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Folio ESS App"
+        },
+        {
+          "t": "p",
+          "text": "The web and mobile self-service experience your people actually see — four role-based views over one shared data model."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Dynamics 365 Human Resources"
+        },
+        {
+          "t": "p",
+          "text": "Reads and writes employee records straight to Dataverse, so your HR data stays in a single system of record."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Power Platform"
+        },
+        {
+          "t": "p",
+          "text": "Extend screens, approvals, and reports with the same Power Apps, Power Automate, and Power BI tooling your teams already use."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure Active Directory"
+        },
+        {
+          "t": "p",
+          "text": "One corporate identity with conditional access and MFA — no second directory for IT to manage."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Microsoft Azure"
+        },
+        {
+          "t": "p",
+          "text": "Hosting, networking, and compliance in your own Azure region, inheriting the posture you already audit."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What You Can Use Folio3 ESS For"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "What Folio3 ESS Can Do"
+        },
+        {
+          "t": "p",
+          "text": "Every capability the app ships with maps to a Microsoft service you already run — no new vendor infrastructure to procure, secure, or maintain."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure-Native Hosting"
+        },
+        {
+          "t": "p",
+          "text": "Deploys into your Azure environment with the same regions, compliance posture, and network policies as the rest of your Microsoft workloads."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Azure Active Directory SSO"
+        },
+        {
+          "t": "p",
+          "text": "One login across Outlook, Teams, Business Central, and Folio ESS, with conditional access, MFA, and privileged identity management supported."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Native Dynamics 365 HR Integration"
+        },
+        {
+          "t": "p",
+          "text": "Reads and writes directly to Dataverse — no middleware, no nightly sync, no shadow database. Employee records stay where they belong."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Power Platform Extensibility"
+        },
+        {
+          "t": "p",
+          "text": "Build with Power Apps components, automate approvals with Power Automate, and surface HR data in Power BI without adding new infrastructure."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Cross-Platform Mobile App"
+        },
+        {
+          "t": "p",
+          "text": "Native iOS and Android apps with the same role-based experience as the web, signed in through Azure Active Directory on every device."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "A Native Mobile App for iOS and Android"
+        },
+        {
+          "t": "p",
+          "text": "The mobile app is a first-class part of Folio ESS, not a mobile-web wrapper. It carries the same role model, permissions, and Azure Active Directory sign-in your workforce uses on the desktop into a form factor built for warehouses, construction sites, retail floors, and travelling staff."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Instant approval alerts"
+        },
+        {
+          "t": "p",
+          "text": "Approval requests are pushed to a manager's phone the moment they are filed, so nothing waits for someone to open a laptop."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Camera capture on the go"
+        },
+        {
+          "t": "p",
+          "text": "Snap receipts, IDs, and compliance documents straight from the phone camera into the right employee record."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Works with a weak signal"
+        },
+        {
+          "t": "p",
+          "text": "Read access to key records stays available when there is no reliable data connection on site."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Identical role and access rules"
+        },
+        {
+          "t": "p",
+          "text": "The same permissions and role model apply on mobile as on the web app, on every device."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Secured by Azure AD"
+        },
+        {
+          "t": "p",
+          "text": "Azure Active Directory sign-in with conditional access is enforced on mobile exactly as it is on the desktop."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Five Reasons Enterprise Buyers Choose It Over a Bolt-On"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Runs where your other Microsoft workloads run"
+        },
+        {
+          "t": "p",
+          "text": "Same Azure region, same tenant, same operational model — no new vendor cloud to reason about."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Uses the identity you already manage"
+        },
+        {
+          "t": "p",
+          "text": "Azure Active Directory, conditional access, and multi-factor authentication out of the box."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Inherits your compliance posture"
+        },
+        {
+          "t": "p",
+          "text": "SOC 2, ISO 27001, and GDPR covered by the underlying Azure and Microsoft services you already audit."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Extensible with Power Platform"
+        },
+        {
+          "t": "p",
+          "text": "Customize with the same low-code tools your teams already use for other Microsoft apps."
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Delivered by a Microsoft Solutions Partner"
+        },
+        {
+          "t": "p",
+          "text": "Folio3 supports the app alongside your Azure, Business Central, and Power Platform work."
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "See Folio ESS in Action"
+        },
+        {
+          "t": "p",
+          "text": "Book a walkthrough with the Folio3 team. We'll show the four role experiences and the mobile app on a live environment, and talk through what a rollout looks like inside your Azure tenant."
+        },
+        {
+          "t": "cta",
+          "text": "Book a Demo",
+          "href": "#pgForm"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    },
+    {
+      "items": [
+        {
+          "t": "h",
+          "tag": "h2",
+          "text": "Common Questions About Folio3 ESS"
+        }
+      ],
+      "headings": [],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": []
+    }
+  ],
+  "images": [],
+  "bgImages": []
+}
