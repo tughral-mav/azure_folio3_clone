@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CapturedPage, CapturedItem } from '@/lib/content';
-import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getSolutionStack, getAgentExtras, getCardIcon, type CounterRec, type ProcessSection } from '@/lib/content';
+import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getSolutionStack, getMobileShowcase, getAgentExtras, getCardIcon, type CounterRec, type ProcessSection } from '@/lib/content';
 import { Counter } from '@/components/ui/Counter';
 import { FlipCard } from '@/components/sections/FlipCard';
 import { RetailSolutionTabs } from '@/components/sections/RetailSolutionTabs';
 import { SectionTabs, type SectionTab } from '@/components/sections/SectionTabs';
 import { SolutionStack } from '@/components/sections/SolutionStack';
+import { MobileShowcase } from '@/components/sections/MobileShowcase';
 import { CaseStudies } from '@/components/sections/CaseStudies';
 import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
@@ -114,6 +115,8 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   const pageTabs = getPageTabs(page.url ?? '');
   // layered "Microsoft cloud stack" diagram (rendered in place of the matching section)
   const solutionStack = getSolutionStack(page.url ?? '');
+  // "mobile fold" — copy + checked list beside a phone mockup (image from sidecar)
+  const mobileShowcase = getMobileShowcase(page.url ?? '');
   // Copilot Agent page extras (hero stat counters, video) the generic capture missed
   const agentExtras = getAgentExtras(page.url ?? '');
   // real card icons (the live uses inline SVG icons the capture missed) keyed by page slug + card
@@ -245,6 +248,11 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     // layered "Microsoft cloud stack" diagram — render the section as a stack visual (copy + layers).
     if (solutionStack && heading && hnorm(heading) === hnorm(solutionStack.section)) {
       out.push(<SolutionStack key={key++} eyebrow={solutionStack.eyebrow} heading={heading} paragraphs={solutionStack.paragraphs} layers={solutionStack.layers} />);
+      continue;
+    }
+    // "mobile fold" — copy + checked bullet list beside a phone mockup.
+    if (mobileShowcase && heading && hnorm(heading) === hnorm(mobileShowcase.section)) {
+      out.push(<MobileShowcase key={key++} heading={heading} paragraph={units[0]?.paras[0]} bullets={units[0]?.lis ?? []} img={mobileShowcase.img} />);
       continue;
     }
     // n-tabs widget — the live renders this as interactive tabs; render the re-captured tab content.

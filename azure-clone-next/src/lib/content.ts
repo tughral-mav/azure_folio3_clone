@@ -337,6 +337,19 @@ export function getSolutionStack(url: string): SolutionStackRec | null {
   return _stackRaw?.[slugOfRoute(route)] ?? null;
 }
 
+// "Mobile fold" — a section rendered as copy + checked list on one side and a phone mockup on the
+// other. The section's own heading/intro/bullets supply the copy; this sidecar supplies the image.
+export type MobileShowcaseRec = { section: string; img: string };
+let _mobRaw: Record<string, MobileShowcaseRec> | null = null;
+export function getMobileShowcase(url: string): MobileShowcaseRec | null {
+  if (_mobRaw === null) { try { _mobRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'mobile-showcase.json'), 'utf8')); } catch { _mobRaw = {}; } }
+  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  const rec = _mobRaw?.[slugOfRoute(route)];
+  if (!rec) return null;
+  const img = localImg(rec.img);
+  return img ? { ...rec, img } : null;
+}
+
 export function getCaptured(slug: string): CapturedPage | null {
   const file = path.join(KIT, `${slugToFile(slug)}.json`);
   if (!existsSync(file)) return null;
