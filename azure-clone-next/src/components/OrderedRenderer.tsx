@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CapturedPage, CapturedItem } from '@/lib/content';
-import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getAgentExtras, getCardIcon, type CounterRec, type ProcessSection } from '@/lib/content';
+import { localAsset, localImg, getContentLink, getPageLinks, getFlipMap, getTabIntro, getCounters, getProcessSteps, getCardBgs, getTrustBand, getFaqFull, getPageTabs, getSolutionStack, getMobileShowcase, getAgentExtras, getCardIcon, type CounterRec, type ProcessSection } from '@/lib/content';
 import { Counter } from '@/components/ui/Counter';
 import { FlipCard } from '@/components/sections/FlipCard';
 import { RetailSolutionTabs } from '@/components/sections/RetailSolutionTabs';
 import { SectionTabs, type SectionTab } from '@/components/sections/SectionTabs';
+import { SolutionStack } from '@/components/sections/SolutionStack';
+import { MobileShowcase } from '@/components/sections/MobileShowcase';
 import { CaseStudies } from '@/components/sections/CaseStudies';
 import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
@@ -111,6 +113,10 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
   let caseGridRendered = false; // a "Real Results" case-study grid rendered (suppresses the synthetic nav)
   // n-tabs widget content re-captured from the live (many tabbed sections rendered as flat lists)
   const pageTabs = getPageTabs(page.url ?? '');
+  // layered "Microsoft cloud stack" diagram (rendered in place of the matching section)
+  const solutionStack = getSolutionStack(page.url ?? '');
+  // "mobile fold" — copy + checked list beside a phone mockup (image from sidecar)
+  const mobileShowcase = getMobileShowcase(page.url ?? '');
   // Copilot Agent page extras (hero stat counters, video) the generic capture missed
   const agentExtras = getAgentExtras(page.url ?? '');
   // real card icons (the live uses inline SVG icons the capture missed) keyed by page slug + card
@@ -239,6 +245,16 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
 
     // ---------- SPECIAL SECTIONS (by heading) ----------
     const hnorm = (s: string) => (s || '').toLowerCase().replace(/&amp;|&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
+    // layered "Microsoft cloud stack" diagram — render the section as a stack visual (copy + layers).
+    if (solutionStack && heading && hnorm(heading) === hnorm(solutionStack.section)) {
+      out.push(<SolutionStack key={key++} eyebrow={solutionStack.eyebrow} heading={heading} paragraphs={solutionStack.paragraphs} layers={solutionStack.layers} />);
+      continue;
+    }
+    // "mobile fold" — copy + checked bullet list beside a phone mockup.
+    if (mobileShowcase && heading && hnorm(heading) === hnorm(mobileShowcase.section)) {
+      out.push(<MobileShowcase key={key++} heading={heading} paragraph={units[0]?.paras[0]} bullets={units[0]?.lis ?? []} img={mobileShowcase.img} />);
+      continue;
+    }
     // n-tabs widget — the live renders this as interactive tabs; render the re-captured tab content.
     // Match handles 55-char truncation (startsWith) and the eyebrow↔big-heading split (via tabIntro).
     const secH3 = units.filter((u) => u.tag === 'h3').map((u) => hnorm(u.title));
@@ -258,7 +274,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
     if (tabRec && tabRec.tabs.length >= 2) {
       const tabHeading = tabRec.section && hnorm(tabRec.section) !== hnorm(heading || '') ? tabRec.section : (heading || tabRec.section);
       const eyebrow = headTag === 'h2' && tabRec.section && hnorm(tabRec.section) !== hnorm(heading || '') && hnorm(heading || '') !== hnorm(tabHeading) ? heading : undefined;
-      out.push(<SectionTabs key={key++} heading={tabHeading} eyebrow={eyebrow} tabs={tabRec.tabs} imageSide="right" />);
+      out.push(<SectionTabs key={key++} heading={tabHeading} eyebrow={eyebrow} subtitle={subtitle} tabs={tabRec.tabs} imageSide="right" />);
       continue;
     }
     // process/methodology steps (re-captured from the live's slides carousel)

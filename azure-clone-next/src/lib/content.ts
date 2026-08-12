@@ -326,6 +326,30 @@ export function getPageTabs(url: string): SectionTabRec[] {
   return uniq.map((s) => ({ ...s, tabs: s.tabs.map((t) => ({ ...t, img: t.img ? localImg(t.img) : '', items: t.items.map((it) => ({ ...it, icon: it.icon ? (it.icon.startsWith('<svg') ? it.icon : localImg(it.icon)) : '' })) })) }));
 }
 
+// "Our Microsoft cloud stack" layered diagram (e.g. Folio ESS page). A section whose heading
+// matches `.section` is rendered as a layered stack visual instead of the generic layout,
+// keyed by page slug → content-kit/solution-stack.json.
+export type SolutionStackRec = { section: string; eyebrow?: string; paragraphs: string[]; layers: { name: string; tag: string; tone: 'top' | 'mid' | 'base' }[] };
+let _stackRaw: Record<string, SolutionStackRec> | null = null;
+export function getSolutionStack(url: string): SolutionStackRec | null {
+  if (_stackRaw === null) { try { _stackRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'solution-stack.json'), 'utf8')); } catch { _stackRaw = {}; } }
+  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  return _stackRaw?.[slugOfRoute(route)] ?? null;
+}
+
+// "Mobile fold" — a section rendered as copy + checked list on one side and a phone mockup on the
+// other. The section's own heading/intro/bullets supply the copy; this sidecar supplies the image.
+export type MobileShowcaseRec = { section: string; img: string };
+let _mobRaw: Record<string, MobileShowcaseRec> | null = null;
+export function getMobileShowcase(url: string): MobileShowcaseRec | null {
+  if (_mobRaw === null) { try { _mobRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'mobile-showcase.json'), 'utf8')); } catch { _mobRaw = {}; } }
+  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  const rec = _mobRaw?.[slugOfRoute(route)];
+  if (!rec) return null;
+  const img = localImg(rec.img);
+  return img ? { ...rec, img } : null;
+}
+
 export function getCaptured(slug: string): CapturedPage | null {
   const file = path.join(KIT, `${slugToFile(slug)}.json`);
   if (!existsSync(file)) return null;
