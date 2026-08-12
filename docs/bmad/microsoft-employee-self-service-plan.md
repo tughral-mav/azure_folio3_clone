@@ -129,4 +129,13 @@ NO nav/footer sections in JSON (stripped/handled by Header/Footer). Icons: ~25 c
 - Design: our components/colours/typography throughout; mockup CSS/fonts/device illos discarded.
 
 ## SHIP
-(fill: branch pushed, PR #, preview URL)
+- Branch `content/folio3-employee-self-service-app` pushed; PR opened.
+
+## REWORK (user feedback round 1)
+Feedback: content must be VERBATIM from the HTML (no rewording), remove em dashes, rebuild the Solution as the mockup's stacked diagram, and some cards showed square-box icons.
+- **Verbatim copy**: all sections re-authored word-for-word from the mockup; em dashes removed (0 in page/stack/tabs/faq). Footer office addresses use en-dashes but that's global site chrome (every page), left untouched + flagged.
+- **Box icons**: root cause = `case-studies/*` + `power-automate`/`power-apps` SVGs have a full-bounds background `<rect fill>` → render as filled squares. Wrote an audit (24 box icons in library); re-mapped all 15 card icons to clean stroke/line icons (0 box, 0 fallback, verified 200).
+- **Solution stack**: new `SolutionStack` component + `solution-stack.json` sidecar + `getSolutionStack()` loader + OrderedRenderer branch (mirrors the tabs pattern; user authorized the small component). Renders the 5 layered rows with tag pills in our colours.
+- **Mobile**: reverted from invented title/body cards to the mockup's exact 5-bullet list.
+- **Tabs**: removed the invented per-tab intro lines; section intro now shown as the tabs subtitle (small renderer tweak). Per-role illustrations kept.
+- Rebuilt (exit 0); Playwright re-verified: verbatim text present, stack renders, clean icons, mobile bullets in `<li>`, single lead form, 0 console errors.

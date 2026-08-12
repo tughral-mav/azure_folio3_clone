@@ -326,6 +326,17 @@ export function getPageTabs(url: string): SectionTabRec[] {
   return uniq.map((s) => ({ ...s, tabs: s.tabs.map((t) => ({ ...t, img: t.img ? localImg(t.img) : '', items: t.items.map((it) => ({ ...it, icon: it.icon ? (it.icon.startsWith('<svg') ? it.icon : localImg(it.icon)) : '' })) })) }));
 }
 
+// "Our Microsoft cloud stack" layered diagram (e.g. Folio ESS page). A section whose heading
+// matches `.section` is rendered as a layered stack visual instead of the generic layout,
+// keyed by page slug → content-kit/solution-stack.json.
+export type SolutionStackRec = { section: string; eyebrow?: string; paragraphs: string[]; layers: { name: string; tag: string; tone: 'top' | 'mid' | 'base' }[] };
+let _stackRaw: Record<string, SolutionStackRec> | null = null;
+export function getSolutionStack(url: string): SolutionStackRec | null {
+  if (_stackRaw === null) { try { _stackRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'solution-stack.json'), 'utf8')); } catch { _stackRaw = {}; } }
+  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  return _stackRaw?.[slugOfRoute(route)] ?? null;
+}
+
 export function getCaptured(slug: string): CapturedPage | null {
   const file = path.join(KIT, `${slugToFile(slug)}.json`);
   if (!existsSync(file)) return null;

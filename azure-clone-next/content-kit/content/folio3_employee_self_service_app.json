@@ -17,7 +17,7 @@
         },
         {
           "t": "p",
-          "text": "Folio ESS is a modern employee self-service app that runs on the Microsoft cloud you already use. Hosted on Azure, built on Dynamics 365 Human Resources, and secured by Azure Active Directory — four role-based experiences across web and mobile."
+          "text": "Folio ESS is a modern employee self-service app that runs on the Microsoft cloud you already use. Hosted on Azure. Built on Dynamics 365 Human Resources. Secured by Azure Active Directory. Four role-based experiences, web and mobile."
         },
         {
           "t": "cta",
@@ -52,7 +52,7 @@
         },
         {
           "t": "p",
-          "text": "You've moved your business systems to Azure. Identity is centralized in Azure Active Directory, data lives in Dataverse, and analytics runs on Power BI. So why is your employee self-service portal still a standalone third-party app fighting the stack it is supposed to live in?"
+          "text": "You have moved your business systems to Azure. Identity is centralized in Azure Active Directory. Data lives in Dataverse. Analytics runs on Power BI. So why is your employee self-service portal still a standalone third-party app fighting the stack it is supposed to live in?"
         },
         {
           "t": "h",
@@ -61,7 +61,7 @@
         },
         {
           "t": "p",
-          "text": "A standalone ESS means a second login for staff and a second directory outside Azure Active Directory for IT to maintain."
+          "text": "A standalone ESS means a second login for staff and a second directory outside Azure Active Directory for IT."
         },
         {
           "t": "h",
@@ -70,16 +70,16 @@
         },
         {
           "t": "p",
-          "text": "Employee records, leave balances, and expenses sit in a vendor database instead of your Dataverse and your Azure region."
+          "text": "Employee records, leave balances, and expenses in a vendor database instead of your Dataverse and your Azure region."
         },
         {
           "t": "h",
           "tag": "h3",
-          "text": "Compliance you can't audit end to end"
+          "text": "Compliance you can't audit end-to-end"
         },
         {
           "t": "p",
-          "text": "Your Azure workloads are SOC 2, ISO 27001, and GDPR covered. A third-party ESS is not necessarily any of them."
+          "text": "Your Azure workloads are SOC 2, ISO 27001, and GDPR-covered. Your third-party ESS isn't necessarily."
         },
         {
           "t": "h",
@@ -88,7 +88,7 @@
         },
         {
           "t": "p",
-          "text": "Standalone ESS data can't be surfaced in Power BI or automated with Power Automate without brittle, breakable connectors."
+          "text": "Standalone ESS data can't be surfaced in Power BI or automated with Power Automate without brittle connectors."
         },
         {
           "t": "h",
@@ -112,55 +112,6 @@
           "t": "h",
           "tag": "h2",
           "text": "An Employee Self-Service Layer Built Into Your Microsoft Cloud"
-        },
-        {
-          "t": "p",
-          "text": "Folio ESS runs on the same Microsoft cloud your business systems already sit on — hosted on Azure, identity from Azure Active Directory, data in Dataverse, extensibility through Power Platform, and deployed by a Microsoft Solutions Partner. Nothing is bolted on: every capability comes from a Microsoft service you already own, wrapped in an experience purpose-built for employee self-service."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Folio ESS App"
-        },
-        {
-          "t": "p",
-          "text": "The web and mobile self-service experience your people actually see — four role-based views over one shared data model."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Dynamics 365 Human Resources"
-        },
-        {
-          "t": "p",
-          "text": "Reads and writes employee records straight to Dataverse, so your HR data stays in a single system of record."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Power Platform"
-        },
-        {
-          "t": "p",
-          "text": "Extend screens, approvals, and reports with the same Power Apps, Power Automate, and Power BI tooling your teams already use."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Azure Active Directory"
-        },
-        {
-          "t": "p",
-          "text": "One corporate identity with conditional access and MFA — no second directory for IT to manage."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Microsoft Azure"
-        },
-        {
-          "t": "p",
-          "text": "Hosting, networking, and compliance in your own Azure region, inheriting the posture you already audit."
         }
       ],
       "headings": [],
@@ -175,6 +126,10 @@
           "t": "h",
           "tag": "h2",
           "text": "What You Can Use Folio3 ESS For"
+        },
+        {
+          "t": "p",
+          "text": "The app is organized around the four everyday workflows that generate the most HR support tickets in a Microsoft-cloud environment. Each has scoped access, its own screens, and a distinct adoption curve."
         }
       ],
       "headings": [],
@@ -192,7 +147,7 @@
         },
         {
           "t": "p",
-          "text": "Every capability the app ships with maps to a Microsoft service you already run — no new vendor infrastructure to procure, secure, or maintain."
+          "text": "Every capability the app ships with maps to a Microsoft service you already run. No new vendor infrastructure to procure, secure, or maintain."
         },
         {
           "t": "h",
@@ -210,7 +165,7 @@
         },
         {
           "t": "p",
-          "text": "One login across Outlook, Teams, Business Central, and Folio ESS, with conditional access, MFA, and privileged identity management supported."
+          "text": "One login across Outlook, Teams, Business Central, and Folio ESS. Conditional access, MFA, and privileged identity management supported."
         },
         {
           "t": "h",
@@ -219,7 +174,7 @@
         },
         {
           "t": "p",
-          "text": "Reads and writes directly to Dataverse — no middleware, no nightly sync, no shadow database. Employee records stay where they belong."
+          "text": "Reads and writes directly to Dataverse. No middleware, no nightly sync, no shadow database. Employee records stay where they belong."
         },
         {
           "t": "h",
@@ -237,7 +192,7 @@
         },
         {
           "t": "p",
-          "text": "Native iOS and Android apps with the same role-based experience as the web, signed in through Azure Active Directory on every device."
+          "text": "Native iOS and Android apps with the same role-based experience as the web app. Single sign-on through Azure Active Directory on every device."
         }
       ],
       "headings": [],
@@ -255,52 +210,27 @@
         },
         {
           "t": "p",
-          "text": "The mobile app is a first-class part of Folio ESS, not a mobile-web wrapper. It carries the same role model, permissions, and Azure Active Directory sign-in your workforce uses on the desktop into a form factor built for warehouses, construction sites, retail floors, and travelling staff."
+          "text": "The mobile app is a first-class part of Folio ESS, not a mobile-web wrapper. It carries the same role model, the same permissions, and the same Azure Active Directory sign-in your workforce uses on the desktop, into a form factor built for warehouses, construction sites, retail floors, and traveling staff."
         },
         {
-          "t": "h",
-          "tag": "h3",
-          "text": "Instant approval alerts"
+          "t": "li",
+          "text": "Approval alerts pushed to the phone the moment a request is filed"
         },
         {
-          "t": "p",
-          "text": "Approval requests are pushed to a manager's phone the moment they are filed, so nothing waits for someone to open a laptop."
+          "t": "li",
+          "text": "Camera capture for receipts, IDs, and compliance documents"
         },
         {
-          "t": "h",
-          "tag": "h3",
-          "text": "Camera capture on the go"
+          "t": "li",
+          "text": "Read access to key records when there is no data connection"
         },
         {
-          "t": "p",
-          "text": "Snap receipts, IDs, and compliance documents straight from the phone camera into the right employee record."
+          "t": "li",
+          "text": "Role and access rules identical to the web app on every device"
         },
         {
-          "t": "h",
-          "tag": "h3",
-          "text": "Works with a weak signal"
-        },
-        {
-          "t": "p",
-          "text": "Read access to key records stays available when there is no reliable data connection on site."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Identical role and access rules"
-        },
-        {
-          "t": "p",
-          "text": "The same permissions and role model apply on mobile as on the web app, on every device."
-        },
-        {
-          "t": "h",
-          "tag": "h3",
-          "text": "Secured by Azure AD"
-        },
-        {
-          "t": "p",
-          "text": "Azure Active Directory sign-in with conditional access is enforced on mobile exactly as it is on the desktop."
+          "t": "li",
+          "text": "Azure Active Directory sign-in with conditional access enforced"
         }
       ],
       "headings": [],
@@ -323,7 +253,7 @@
         },
         {
           "t": "p",
-          "text": "Same Azure region, same tenant, same operational model — no new vendor cloud to reason about."
+          "text": "Same Azure region, same tenant, same operational model. No new vendor cloud to reason about."
         },
         {
           "t": "h",
@@ -332,7 +262,7 @@
         },
         {
           "t": "p",
-          "text": "Azure Active Directory, conditional access, and multi-factor authentication out of the box."
+          "text": "Azure Active Directory, conditional access, and multifactor authentication out of the box."
         },
         {
           "t": "h",
@@ -350,7 +280,7 @@
         },
         {
           "t": "p",
-          "text": "Customize with the same low-code tools your teams already use for other Microsoft apps."
+          "text": "Customize with the same tools your teams already use for other Microsoft apps."
         },
         {
           "t": "h",
@@ -359,7 +289,7 @@
         },
         {
           "t": "p",
-          "text": "Folio3 supports the app alongside your Azure, Business Central, and Power Platform work."
+          "text": "Folio3 supports the app alongside Azure, Business Central, and Power Platform work."
         }
       ],
       "headings": [],
@@ -377,7 +307,7 @@
         },
         {
           "t": "p",
-          "text": "Book a walkthrough with the Folio3 team. We'll show the four role experiences and the mobile app on a live environment, and talk through what a rollout looks like inside your Azure tenant."
+          "text": "Book a walkthrough with the Folio3 team. We will show the four role experiences and the mobile app on a live environment and discuss what a rollout would look like inside your Azure tenant."
         },
         {
           "t": "cta",
