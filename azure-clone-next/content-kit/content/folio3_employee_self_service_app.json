@@ -31,10 +31,10 @@
         },
         {
           "t": "img",
-          "src": "/wp-content/uploads/2026/02/folio-ess-hero.svg",
-          "w": 640,
-          "h": 480,
-          "alt": "Folio ESS employee self-service portal on Azure"
+          "src": "/wp-content/uploads/2026/02/ess-shot-dashboard.png",
+          "w": 1918,
+          "h": 1032,
+          "alt": "Folio ESS employee self-service app dashboard"
         }
       ],
       "headings": [],
@@ -236,20 +236,6 @@
         {
           "t": "li",
           "text": "Azure Active Directory sign-in with conditional access enforced"
-        }
-      ],
-      "headings": [],
-      "paragraphs": [],
-      "listItems": [],
-      "ctas": [],
-      "images": []
-    },
-    {
-      "items": [
-        {
-          "t": "h",
-          "tag": "h2",
-          "text": "A Closer Look Inside Folio ESS"
         }
       ],
       "headings": [],

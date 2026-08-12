@@ -350,20 +350,6 @@ export function getMobileShowcase(url: string): MobileShowcaseRec | null {
   return img ? { ...rec, img } : null;
 }
 
-// Product-tour screenshot gallery — a section rendered as a grid of framed app screenshots,
-// keyed by page slug → content-kit/screenshot-gallery.json.
-export type GalleryShot = { src: string; w: number; h: number; caption?: string };
-export type GalleryRec = { section: string; eyebrow?: string; subtitle?: string; items: GalleryShot[] };
-let _galRaw: Record<string, GalleryRec> | null = null;
-export function getGallery(url: string): GalleryRec | null {
-  if (_galRaw === null) { try { _galRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'screenshot-gallery.json'), 'utf8')); } catch { _galRaw = {}; } }
-  const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
-  const rec = _galRaw?.[slugOfRoute(route)];
-  if (!rec) return null;
-  const items = rec.items.map((s) => ({ ...s, src: localImg(s.src) })).filter((s) => s.src);
-  return items.length ? { ...rec, items } : null;
-}
-
 export function getCaptured(slug: string): CapturedPage | null {
   const file = path.join(KIT, `${slugToFile(slug)}.json`);
   if (!existsSync(file)) return null;
