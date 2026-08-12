@@ -25,7 +25,7 @@ export function MobileShowcase({ heading, paragraph, bullets, img }: { heading: 
             )}
           </div>
           <Reveal animation="zoomIn">
-            <Image src={img} alt="Folio ESS mobile app" width={560} height={600} sizes="(max-width: 1024px) 80vw, 44vw" className="mx-auto h-auto w-full max-w-sm" />
+            <Image src={img} alt="Folio ESS mobile app" width={341} height={622} sizes="(max-width: 1024px) 60vw, 30vw" className="mx-auto h-auto w-full max-w-[300px]" />
           </Reveal>
         </div>
       </div>
