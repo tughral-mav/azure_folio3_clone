@@ -1,8 +1,8 @@
 {
   "url": "https://azure.folio3.com/folio3-employee-self-service-app/",
   "meta": {
-    "title": "Microsoft Employee Self-Service on Azure | Folio ESS",
-    "description": "Folio ESS is an employee self-service app for the Microsoft ecosystem. It runs on Azure, is built on Dynamics 365 Human Resources, and is secured by Azure Active Directory.",
+    "title": "Employee Self-Service App for Microsoft Dynamics 365 HR | Folio ESS",
+    "description": "Folio ESS is an employee self-service app for Microsoft Dynamics 365 Human Resources. Web and mobile, hosted on Azure and secured by Azure Active Directory, with role-based self-service for your whole workforce.",
     "canonical": "https://azure.folio3.com/folio3-employee-self-service-app/",
     "ogImage": null,
     "h1Count": 1
@@ -13,11 +13,11 @@
         {
           "t": "h",
           "tag": "h1",
-          "text": "The Employee Self-Service Portal Built for Your Microsoft Ecosystem"
+          "text": "The Employee Self-Service App for Microsoft Dynamics 365 HR"
         },
         {
           "t": "p",
-          "text": "Folio ESS is a modern employee self-service app that runs on the Microsoft cloud you already use. Hosted on Azure. Built on Dynamics 365 Human Resources. Secured by Azure Active Directory. Four role-based experiences, web and mobile."
+          "text": "Folio ESS is a modern employee self-service app for the Microsoft cloud you already use. Hosted on Azure. Built on Dynamics 365 Human Resources. Secured by Azure Active Directory. Four role-based experiences, web and mobile."
         },
         {
           "t": "cta",
@@ -31,10 +31,10 @@
         },
         {
           "t": "img",
-          "src": "/wp-content/uploads/2026/02/folio-ess-hero.svg",
-          "w": 640,
-          "h": 480,
-          "alt": "Folio ESS employee self-service portal on Azure"
+          "src": "/wp-content/uploads/2026/02/ess-shot-dashboard.png",
+          "w": 1918,
+          "h": 1032,
+          "alt": "Folio ESS employee self-service app dashboard"
         }
       ],
       "headings": [],
@@ -52,7 +52,7 @@
         },
         {
           "t": "p",
-          "text": "You have moved your business systems to Azure. Identity is centralized in Azure Active Directory. Data lives in Dataverse. Analytics runs on Power BI. So why is your employee self-service portal still a standalone third-party app fighting the stack it is supposed to live in?"
+          "text": "You have moved your business systems to Azure. Identity is centralized in Azure Active Directory. Data lives in Dataverse. Analytics runs on Power BI. So why is your employee self-service portal app still a standalone third-party tool fighting the Microsoft stack it is supposed to live in?"
         },
         {
           "t": "h",
@@ -193,6 +193,11 @@
         {
           "t": "p",
           "text": "Native iOS and Android apps with the same role-based experience as the web app. Single sign-on through Azure Active Directory on every device."
+        },
+        {
+          "t": "cta",
+          "text": "Explore Microsoft Power Platform",
+          "href": "/microsoft-power-platform-services/"
         }
       ],
       "headings": [],
@@ -210,7 +215,7 @@
         },
         {
           "t": "p",
-          "text": "The mobile app is a first-class part of Folio ESS, not a mobile-web wrapper. It carries the same role model, the same permissions, and the same Azure Active Directory sign-in your workforce uses on the desktop, into a form factor built for warehouses, construction sites, retail floors, and traveling staff."
+          "text": "The employee self-service mobile app is a first-class part of Folio ESS, not a mobile-web wrapper. It carries the same role model, the same permissions, and the same Azure Active Directory sign-in your workforce uses on the desktop, into a form factor built for warehouses, construction sites, retail floors, and traveling staff."
         },
         {
           "t": "li",
@@ -290,6 +295,11 @@
         {
           "t": "p",
           "text": "Folio3 supports the app alongside Azure, Business Central, and Power Platform work."
+        },
+        {
+          "t": "cta",
+          "text": "Book a Demo",
+          "href": "#pgForm"
         }
       ],
       "headings": [],

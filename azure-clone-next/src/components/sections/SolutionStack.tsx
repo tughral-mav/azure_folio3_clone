@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import { Reveal } from '@/components/ui/Reveal';
 
-export type StackLayer = { name: string; tag: string; tone: 'top' | 'mid' | 'base' };
+export type StackLayer = { name: string; tag: string; tone: 'top' | 'mid' | 'base'; href?: string };
 
 /** Layered "Microsoft cloud stack" diagram: copy on one side, a stack of labelled layers
  *  (each with a tag pill) on the other. Modelled on the Folio ESS solution section. */
@@ -31,7 +32,9 @@ export function SolutionStack({ eyebrow, heading, paragraphs, layers }: { eyebro
               <div className="flex flex-col gap-3">
                 {layers.map((l, i) => (
                   <div key={i} className={`flex items-center justify-between gap-4 rounded-xl px-5 py-4 ${row(l.tone)}`}>
-                    <span className="font-heading text-sm font-semibold sm:text-base">{l.name}</span>
+                    {l.href
+                      ? <Link href={l.href} className="font-heading text-sm font-semibold underline-offset-4 hover:underline sm:text-base">{l.name}</Link>
+                      : <span className="font-heading text-sm font-semibold sm:text-base">{l.name}</span>}
                     <span className={`shrink-0 rounded px-2.5 py-1 text-xs font-medium tracking-wide ${pill(l.tone)}`}>{l.tag}</span>
                   </div>
                 ))}
