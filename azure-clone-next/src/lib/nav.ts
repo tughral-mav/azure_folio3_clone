@@ -43,7 +43,10 @@ export const NAV: NavItem[] = [
   {
     label: 'Solutions',
     href: '#',
-    children: [{ label: 'Intellifabric', href: '/solution/intellifabric/' }],
+    children: [
+      { label: 'Intellifabric', href: '/solution/intellifabric/' },
+      { label: 'Folio3 ESS App', href: '/folio3-employee-self-service-app/' },
+    ],
   },
   {
     label: 'Industry',
