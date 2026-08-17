@@ -26,8 +26,13 @@ type Img = { src: string; w: number; h: number };
 type Block = { t: 'p' | 'li'; text: string } | { t: 'img'; img: Img };
 type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: Img[]; ctas: Cta[]; blocks: Block[] };
 
+// An absolute URL to ANOTHER host is a genuine outbound link (e.g. a Microsoft Marketplace
+// listing). localAsset() strips scheme+host from EVERY absolute URL — correct for the capture,
+// where every URL was ours, but it would silently turn an outbound link into a same-site 404.
+// So localise our own origin only, and pass third-party URLs through untouched.
+const isExternalHref = (h: string) => /^https?:\/\//i.test(h) && !/^https?:\/\/(www\.)?azure\.folio3\.com/i.test(h);
 const cleanCta = (text: string, href: string | null): Cta | undefined =>
-  text && href && href !== '#' ? { text: text.trim(), href: localAsset(href) || href } : undefined;
+  text && href && href !== '#' ? { text: text.trim(), href: isExternalHref(href) ? href : localAsset(href) || href } : undefined;
 // Only the SITE's own logo is chrome — not content images that merely contain
 // "azure-logo" in their filename (e.g. partner-designation badges "*-azure-logo-img.webp").
 const isChromeImg = (src: string) => /folio3_by_azure|folio3[-_]azure|azure-logo\.(?:svg|png|webp|jpe?g)|\/logo[-.]/i.test(src);
@@ -163,7 +168,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
                 {ctas.map((c, j) => (
-                  <Link key={j} href={c.href} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
+                  <Link key={j} href={c.href} {...(isExternalHref(c.href) ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
                     {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
                     {c.text}
                   </Link>
