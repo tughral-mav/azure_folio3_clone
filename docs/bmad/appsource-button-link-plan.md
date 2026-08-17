@@ -143,6 +143,37 @@ builds on it) and widening its blast radius for one link is the wrong trade.
 | 2 | Point the hero CTA at the marketplace URL (`items[]` + legacy `ctas[]`) | `content-kit/content/ai_agents_smartexpense_agent.json` | blocked on #1 |
 | 3 | Build + Playwright verify, open PR, load preview | — | blocked on #2 |
 
+## QA RESULTS (story 3) — verified on the Vercel preview
+
+Branch was **rebased onto current master** (477ad06) partway through: the first preview was cut
+from an older base (44e6362) that predated master's `SectionTabs subtitle` feature, which made
+one paragraph look like a regression. It was not — rebasing removed the discrepancy.
+
+Preview: `https://azure-folio3-clone-galz2k68r-tkay-s-projects.vercel.app` (commit 682f24c, build success)
+Master baseline used for parity: `https://azure-folio3-clone-a432j5ow7-tkay-s-projects.vercel.app`
+
+| Check | Result |
+|---|---|
+| AppSource button href | full Marketplace URL, `?tab=Overview` intact |
+| new tab | `target="_blank" rel="noopener noreferrer"`, button visible |
+| other hero buttons | `#pgForm` / `#vidDemo`, no target — unchanged |
+| headings + paragraphs (73 checked) | 27 not in SSR HTML on **both** mine and master → **zero regression** (pre-existing: inactive tab panels / flip-card backs render client-side) |
+| hero image | loads, wrapper class `reveal is-in a-zoomIn` → zoomIn + float animation intact |
+| images | 36 unique all HTTP 200; 0 broken in-browser after warm load |
+| console errors | 0 |
+| duplicated section / CTA band | none — 11 sections, 42 hrefs, same as master |
+| **full rendered-HTML diff vs master** | **only that one `<a>`** (rest = Next build ID + RSC index renumbering) |
+| regression spot-check (fabric / retail / case-studies) | byte-identical to master; the one `azure.folio3.com` href per page is the `<link rel=canonical>` tag, unchanged |
+| Marketplace URL | resolves in a real browser — "AI Powered HR Management with Microsoft Copilot" |
+
+Screenshot tool **timed out** (Browser pane not displayed → page not compositing frames).
+Reported rather than skipped; all assertions above were counted in the DOM instead.
+
+## BLOCKED: pull request not opened
+`gh` is not installed, no `GH_TOKEN`/`GITHUB_TOKEN` is set, and reading the stored git
+credential was blocked by the sandbox (correctly — it is a credential read). The branch is
+pushed and built; the PR itself needs a human click. See the handover message.
+
 ## QA checklist for story 3
 - rendered hero `<a>` for "View On AppSource" has the full marketplace URL incl. `?tab=Overview`
 - "Request a Callback" → `#pgForm`, "Video Demo" → `#vidDemo` unchanged
