@@ -290,11 +290,6 @@
           "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.expensemanagementagent?tab=Overview"
         },
         {
-          "t": "cta",
-          "text": "Video Demo",
-          "href": "#vidDemo"
-        },
-        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2025/11/head-smartexpense-copilot.webp",
           "w": 823,
@@ -324,10 +319,6 @@
         {
           "text": "View On AppSource",
           "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.expensemanagementagent?tab=Overview"
-        },
-        {
-          "text": "Video Demo",
-          "href": "#vidDemo"
         }
       ],
       "images": [
