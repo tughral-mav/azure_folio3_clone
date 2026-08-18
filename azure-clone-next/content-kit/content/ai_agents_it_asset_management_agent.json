@@ -287,12 +287,7 @@
         {
           "t": "cta",
           "text": "View On AppSource",
-          "href": "#pgForm"
-        },
-        {
-          "t": "cta",
-          "text": "Video Demo",
-          "href": "#vidDemo"
+          "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.itassetcopilot?tab=Overview"
         },
         {
           "t": "h",
@@ -341,11 +336,7 @@
         },
         {
           "text": "View On AppSource",
-          "href": "#pgForm"
-        },
-        {
-          "text": "Video Demo",
-          "href": "#vidDemo"
+          "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.itassetcopilot?tab=Overview"
         }
       ],
       "images": [
