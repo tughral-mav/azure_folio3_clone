@@ -26,8 +26,9 @@ type Img = { src: string; w: number; h: number };
 type Block = { t: 'p' | 'li'; text: string } | { t: 'img'; img: Img };
 type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: Img[]; ctas: Cta[]; blocks: Block[] };
 
+const isExternalHref = (href: string) => /^https?:\/\//i.test(href) && !/^https?:\/\/(www\.)?azure\.folio3\.com/i.test(href);
 const cleanCta = (text: string, href: string | null): Cta | undefined =>
-  text && href && href !== '#' ? { text: text.trim(), href: localAsset(href) || href } : undefined;
+  text && href && href !== '#' ? { text: text.trim(), href: isExternalHref(href) ? href : (localAsset(href) || href) } : undefined;
 // Only the SITE's own logo is chrome — not content images that merely contain
 // "azure-logo" in their filename (e.g. partner-designation badges "*-azure-logo-img.webp").
 const isChromeImg = (src: string) => /folio3_by_azure|folio3[-_]azure|azure-logo\.(?:svg|png|webp|jpe?g)|\/logo[-.]/i.test(src);
@@ -162,12 +163,15 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               <h1 className="text-4xl font-bold leading-[1.15] text-ink lg:text-5xl">{head}{tail && <span className="text-brand">{tail}</span>}</h1>
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
-                {ctas.map((c, j) => (
-                  <Link key={j} href={c.href} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
-                    {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
-                    {c.text}
-                  </Link>
-                ))}
+                {ctas.map((c, j) => {
+                  const ext = isExternalHref(c.href);
+                  return (
+                    <Link key={j} href={c.href} {...(ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
+                      {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
+                      {c.text}
+                    </Link>
+                  );
+                })}
               </div>
               {agentExtras?.heroStats?.length ? (
                 <div className="mt-10 flex flex-wrap gap-x-10 gap-y-6">
