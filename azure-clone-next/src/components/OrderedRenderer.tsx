@@ -445,7 +445,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         (agentExtras.videoHeading && hnorm(agentExtras.videoHeading).includes(hnorm(heading).slice(0, 18))))) {
       const vh = agentExtras.videoHeading || heading;
       out.push(
-        <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
+        <section key={key++} id="video-demo" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24"><div className="container-x">
           <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{vh}</h2>
           <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={vh} />
         </div></section>,
