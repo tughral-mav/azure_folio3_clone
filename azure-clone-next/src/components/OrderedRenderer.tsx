@@ -26,8 +26,11 @@ type Img = { src: string; w: number; h: number };
 type Block = { t: 'p' | 'li'; text: string } | { t: 'img'; img: Img };
 type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: Img[]; ctas: Cta[]; blocks: Block[] };
 
+// External (non-azure.folio3.com) http(s) URLs are preserved verbatim; localAsset would
+// otherwise strip the origin and break links to third-party sites (e.g. Microsoft AppSource).
+const isExternalHref = (href: string) => /^https?:\/\//i.test(href) && !/(?:^|\/\/)([^/]*\.)?azure\.folio3\.com(?:$|\/)/i.test(href);
 const cleanCta = (text: string, href: string | null): Cta | undefined =>
-  text && href && href !== '#' ? { text: text.trim(), href: localAsset(href) || href } : undefined;
+  text && href && href !== '#' ? { text: text.trim(), href: isExternalHref(href) ? href : (localAsset(href) || href) } : undefined;
 // Only the SITE's own logo is chrome — not content images that merely contain
 // "azure-logo" in their filename (e.g. partner-designation badges "*-azure-logo-img.webp").
 const isChromeImg = (src: string) => /folio3_by_azure|folio3[-_]azure|azure-logo\.(?:svg|png|webp|jpe?g)|\/logo[-.]/i.test(src);
@@ -162,12 +165,20 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               <h1 className="text-4xl font-bold leading-[1.15] text-ink lg:text-5xl">{head}{tail && <span className="text-brand">{tail}</span>}</h1>
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
-                {ctas.map((c, j) => (
-                  <Link key={j} href={c.href} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
-                    {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
-                    {c.text}
-                  </Link>
-                ))}
+                {ctas.map((c, j) => {
+                  const external = isExternalHref(c.href);
+                  return (
+                    <Link
+                      key={j}
+                      href={c.href}
+                      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}
+                    >
+                      {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
+                      {c.text}
+                    </Link>
+                  );
+                })}
               </div>
               {agentExtras?.heroStats?.length ? (
                 <div className="mt-10 flex flex-wrap gap-x-10 gap-y-6">
@@ -445,7 +456,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         (agentExtras.videoHeading && hnorm(agentExtras.videoHeading).includes(hnorm(heading).slice(0, 18))))) {
       const vh = agentExtras.videoHeading || heading;
       out.push(
-        <section key={key++} className="bg-surface-tint py-16 lg:py-24"><div className="container-x">
+        <section key={key++} id="vidDemo" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24"><div className="container-x">
           <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{vh}</h2>
           <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={vh} />
         </div></section>,
