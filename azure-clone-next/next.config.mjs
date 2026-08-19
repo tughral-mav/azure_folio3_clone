@@ -27,5 +27,12 @@ const nextConfig = {
   async redirects() {
     return redirects;
   },
+  async rewrites() {
+    return [
+      // The CPQ landing page ships as a static file in public/; Next doesn't
+      // resolve directory indexes there, so map the clean nav URL to the file.
+      { source: '/solution/dynamics-365-cpq/', destination: '/solution/dynamics-365-cpq/index.html' },
+    ];
+  },
 };
 export default nextConfig;
