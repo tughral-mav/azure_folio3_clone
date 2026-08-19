@@ -2,7 +2,7 @@
   "url": "https://azure.folio3.com/solution/dynamics-cpq/",
   "meta": {
     "title": "Dynamics 365 CPQ Solution for Microsoft CRM",
-    "description": "A Configure, Price, Quote (CPQ) solution built into the Microsoft Dynamics 365 CRM Quote entity. Excel-familiar grid, on Power Apps and Logic Apps.",
+    "description": "A Configure, Price, Quote (CPQ) solution that sits on the standard Microsoft Dynamics 365 CRM Quote entity. Excel-familiar grid, built on Power Apps and Azure Logic Apps.",
     "canonical": "https://azure.folio3.com/solution/dynamics-cpq/",
     "ogImage": null,
     "h1Count": 1
@@ -17,7 +17,7 @@
         },
         {
           "t": "p",
-          "text": "The Dynamics CPQ solution is a Configure, Price, Quote (CPQ) extension that lives inside Microsoft Dynamics 365 CRM. It ships with a CRM implementation, sits on the standard Quote entity, and replaces Excel-based quoting with a spreadsheet-familiar grid your sales team can adopt in an afternoon. Built on Power Apps and Logic Apps."
+          "text": "The Dynamics CPQ solution is a Configure, Price, Quote extension that lives inside the standard Microsoft Dynamics 365 CRM Quote entity. It's built on Power Apps, with Azure Logic Apps handling the integrations back to cost sheets, vendor price lists, and downstream finance systems. Because it's scoped to ship alongside a Dynamics CRM implementation rather than as a follow-on project, quoting is available on the same record your sales team already works in from day one. Teams already comfortable building quotes in Excel typically pick up the grid without formal training, since the interaction is deliberately the same."
         },
         {
           "t": "cta",
@@ -34,7 +34,7 @@
           "src": "/wp-content/uploads/2026/08/cpq-lines-pricing.png",
           "w": 1763,
           "h": 385,
-          "alt": "Dynamics 365 CPQ Lines view showing per-line cost, discount, margin, and multi-currency totals inside the Microsoft CRM Quote entity"
+          "alt": "Dynamics 365 CPQ Lines view showing per-line cost, discount, margin, currency, and VAT columns inside the Microsoft CRM Quote entity"
         }
       ],
       "headings": [],
@@ -52,7 +52,7 @@
         },
         {
           "t": "p",
-          "text": "Your sales team lives in Microsoft Dynamics 365 CRM. Your opportunities, accounts, and forecasts are already there. But when a deal needs to be quoted, everyone drops into a spreadsheet outside the CRM. Formulas break, margins get keyed by hand, and the price the customer sees is disconnected from the opportunity it belongs to."
+          "text": "In most Dynamics 365 CRM deployments, the opportunity record is where the sales team spends its day. Quoting tends to live somewhere else: a spreadsheet a rep copies from a previous deal, edits by hand, and sends over email. The disconnect between the CRM opportunity and the spreadsheet the customer actually sees is where the specific problems below tend to show up."
         },
         {
           "t": "h",
@@ -61,7 +61,7 @@
         },
         {
           "t": "p",
-          "text": "Every quote starts from a copy of last quarter's Excel file. One cell reference points at the wrong row, and the margin the customer signs is not the margin your finance team was expecting."
+          "text": "Every new quote typically starts as a copy of last quarter's file. A cell reference lands on the wrong row, or an inherited formula reads the wrong VAT rate, and the margin the customer signs turns out to be a percentage the finance team never approved. Nobody notices until the invoice."
         },
         {
           "t": "h",
@@ -70,7 +70,7 @@
         },
         {
           "t": "p",
-          "text": "The Excel file sits on a laptop, a shared drive, or an email thread. The Dynamics 365 CRM opportunity has no idea a live quote exists, so pipeline value, forecast, and win-loss reporting all miss it."
+          "text": "The spreadsheet ends up wherever the rep last saved it: a laptop, an email thread, sometimes a shared drive nobody else has been told about. The Dynamics opportunity has no idea the quote exists, so pipeline reporting keeps showing the state of the deal from before quoting started."
         },
         {
           "t": "h",
@@ -79,7 +79,7 @@
         },
         {
           "t": "p",
-          "text": "When a deal closes below target margin, there is no trail: no record of who changed the discount, when, or against which cost. Finance ends up reverse-engineering the quote from the invoice."
+          "text": "When a deal closes below target margin, there's rarely a trail. No record of who applied the discount, when, or against which underlying cost. Finance ends up reverse-engineering the quote from the invoice, which is slow, and usually inconclusive."
         },
         {
           "t": "h",
@@ -88,7 +88,7 @@
         },
         {
           "t": "p",
-          "text": "Someone on the sales-ops team spends the last week of every month adding up quotes across product categories, business units, and vendors. It is a job that only exists because the underlying data lives in files, not in the CRM."
+          "text": "In sales-ops teams we've worked with, someone spends the last week of every month adding up quotes across product categories, business units, and vendors. It's a job that exists only because the underlying data lives in files instead of in the CRM. When the mix shifts mid-month, the roll-up starts over."
         },
         {
           "t": "h",
@@ -97,7 +97,7 @@
         },
         {
           "t": "p",
-          "text": "There is no gate between an aggressive discount and the customer's inbox. Approval means an informal chat, and by the time a manager sees the quote it has already been sent."
+          "text": "In the spreadsheet workflow, there's nothing sitting between an aggressive discount and the customer's inbox. Approval is an informal chat, and by the time a sales manager sees the numbers, the quote has usually already been sent."
         }
       ],
       "headings": [],
@@ -115,18 +115,18 @@
         },
         {
           "t": "p",
-          "text": "Open a Quote record in Microsoft Dynamics 365 CRM. Next to Summary, Details, and Related, there is a new tab: CPQ Lines. That is the entire solution — no separate app, no second login, no side-by-side windows. The pricing grid, the roll-up, the totals, and the approvals all live on the record your salespeople already use."
+          "text": "Open a Quote record in Microsoft Dynamics 365 CRM. Alongside Summary, Details, and Related, there is a new tab: CPQ Lines. That tab is the entire solution. There's no separate application to install, no second login, and nothing to import back into the CRM after the quote is finished. The pricing grid, the roll-up totals, and the approval workflow all read and write against the same record your sales team already opens."
         },
         {
           "t": "img",
           "src": "/wp-content/uploads/2026/08/cpq-lines-products.png",
           "w": 1762,
           "h": 366,
-          "alt": "CPQ Lines showing multi-vendor product line items — LOB Division, Product OEM, Supplier, and Microsoft product SKUs — as a native tab on the Dynamics 365 CRM Quote entity"
+          "alt": "CPQ Lines view showing multi-vendor product line items — LOB Division, Product OEM, Supplier, Microsoft SKUs, and description — as a native tab on the Dynamics 365 CRM Quote entity"
         },
         {
           "t": "p",
-          "text": "The grid is deliberately Excel-shaped. Add lines, clear cells, paste values, save. Your team's muscle memory transfers directly, without the reformatting risk of an actual spreadsheet."
+          "text": "The grid is deliberately Excel-shaped, because that's the interaction the sales team already has muscle memory for. Add lines, clear selected cells, paste values, save. The training curve is shorter than a from-scratch CPQ interface would be, and the reformatting risks that come with an actual spreadsheet aren't present because the underlying columns are typed and validated."
         }
       ],
       "headings": [],
@@ -144,7 +144,7 @@
         },
         {
           "t": "p",
-          "text": "Salespeople work in Lines while they build a quote. Finance and management review it in Summary. Both views read from the same record — no export, no reconciliation."
+          "text": "Salespeople work in Lines while they build the quote. Finance and management review it in Summary. Both views read from one Dataverse record, so there's no export step and nothing to reconcile between the version sales is editing and the version management is approving."
         }
       ],
       "headings": [],
@@ -162,7 +162,7 @@
         },
         {
           "t": "p",
-          "text": "Every capability the solution ships with maps to a Microsoft service you already run. No vendor infrastructure to procure, secure, or maintain."
+          "text": "The capabilities below cover the shape of quoting for multi-vendor, multi-currency deals. Every one of them maps to a Microsoft service you already run, so there's no new vendor infrastructure to procure, secure, or maintain."
         },
         {
           "t": "h",
@@ -171,7 +171,7 @@
         },
         {
           "t": "p",
-          "text": "Each line carries unit cost, total cost, recommended margin, discount percentage, and computed selling price. Change any input, and the totals recalculate in place — the same responsiveness a salesperson expects from a spreadsheet."
+          "text": "Each line carries unit cost, total cost, recommended margin, discount percentage, and computed selling price. When any input changes, the totals recalculate in place, which is the responsiveness a salesperson expects from a spreadsheet but with typed columns and validation the spreadsheet doesn't have."
         },
         {
           "t": "h",
@@ -180,7 +180,7 @@
         },
         {
           "t": "p",
-          "text": "Every line records the OEM, the supplier, and whether the deal is being sold as an agent or a principal. Purpose-built for resellers, distributors, and IT services companies quoting deals that span multiple vendors on one purchase order."
+          "text": "Every line records the OEM, the supplier, and whether the deal is being sold as an agent or as a principal. That structure exists because a typical reseller quote is rarely one vendor: it might be a Microsoft licensing line, a Ribbon SBC hardware line, and a services attachment, all on the same purchase order."
         },
         {
           "t": "h",
@@ -189,7 +189,7 @@
         },
         {
           "t": "p",
-          "text": "The Summary view collapses hundreds of line items into a per-category, per-LOB, per-supplier view — with total cost, total selling price, and computed margin per row. No monthly reconciliation, no side calculations."
+          "text": "The Summary view collapses hundreds of line items into a per-category, per-LOB, per-supplier view. Each row carries its own total cost, total selling price, and computed margin. Because the roll-up is derived from the same record as Lines, there's no monthly reconciliation and no side calculations to keep in sync."
         },
         {
           "t": "h",
@@ -198,7 +198,7 @@
         },
         {
           "t": "p",
-          "text": "Set the currency on the quote and the CPQ solution handles the local tax posture — VAT, discount, and shipping and admin fees roll into a final selling price the customer will actually see."
+          "text": "Currency is set on the quote and the CPQ solution handles the local tax posture from there. VAT, discount, shipping, and admin fees roll into the final selling price the customer sees, so the multi-currency work isn't handled after the fact by a separate finance calculation."
         },
         {
           "t": "h",
@@ -207,7 +207,7 @@
         },
         {
           "t": "p",
-          "text": "Each line carries a discount category and a performance-obligation description, so revenue recognition and standalone-selling-price (SSP) reporting drop straight out of the quote — not out of a finance-team spreadsheet after the fact."
+          "text": "Each line carries a discount category and a performance-obligation description. That makes revenue-recognition and stand-alone selling price (SSP) reporting derivable directly from the quote data, rather than being reconstructed by finance after close. For teams operating under IFRS 15, this is the shape the standard actually asks for."
         },
         {
           "t": "h",
@@ -216,7 +216,7 @@
         },
         {
           "t": "p",
-          "text": "The CPQ Lines tab sits alongside Summary, Details, and Related on the standard Dynamics 365 Quote. No context switching, no separate login, no export back to the CRM. What sales sees is what management approves is what finance reports on."
+          "text": "The CPQ Lines tab sits alongside Summary, Details, and Related on the standard Dynamics 365 Quote form. There's no context switching, no separate login, and no export back to the CRM at the end. Sales, management, and finance all look at the same record, which is what removes most of the classic \"whose number is right\" arguments."
         }
       ],
       "headings": [],
@@ -234,7 +234,7 @@
         },
         {
           "t": "p",
-          "text": "Nothing about the CPQ solution introduces new vendor infrastructure. It is Microsoft cloud, from the pricing grid all the way down to identity."
+          "text": "Nothing in this CPQ solution introduces new vendor infrastructure. It's Microsoft cloud from the pricing grid down to the identity layer, which matters for organizations whose IT team already has an established operating model for Microsoft services and doesn't want a second one."
         },
         {
           "t": "h",
@@ -243,7 +243,7 @@
         },
         {
           "t": "p",
-          "text": "The Excel-familiar CPQ Lines and Summary views are a Power App embedded on the Dynamics Quote form. Anything a Power App can do — validation rules, computed columns, custom controls — is available for extension without leaving the Microsoft toolchain."
+          "text": "The Excel-familiar CPQ Lines and Summary views are a Power App embedded on the Dynamics Quote form. Anything a Power App can do (validation rules, computed columns, custom controls) is available for extension later without pulling in a new toolchain."
         },
         {
           "t": "h",
@@ -252,7 +252,7 @@
         },
         {
           "t": "p",
-          "text": "Cost sheets, vendor price lists, discount matrices, and downstream systems like ERP and finance are wired in through Azure Logic Apps. Each connector is a first-class Microsoft artifact your team can monitor, secure, and modify."
+          "text": "Cost sheets, vendor price lists, discount matrices, and downstream systems like ERP and finance are wired in through Azure Logic Apps. Each connector is a first-class Microsoft artifact your team can monitor, secure, and modify with the tooling they already use for other Azure workloads."
         },
         {
           "t": "h",
@@ -261,7 +261,7 @@
         },
         {
           "t": "p",
-          "text": "CPQ data lives in Dataverse alongside the rest of your Dynamics 365 CRM records — the same tenant, the same region, the same backup and retention policies. No shadow database on someone's laptop."
+          "text": "CPQ data lives in Dataverse alongside the rest of your Dynamics 365 CRM records. Same tenant, same region, same backup and retention policies. There's no shadow database sitting on someone's laptop or in a vendor cloud you'd have to reason about separately."
         },
         {
           "t": "h",
@@ -270,7 +270,7 @@
         },
         {
           "t": "p",
-          "text": "Users sign in with the same Azure Active Directory credentials they use for Outlook, Teams, and Dynamics itself. Conditional access, multi-factor authentication, and role-based access apply automatically."
+          "text": "Users sign in with the Azure Active Directory credentials they already use for Outlook, Teams, and Dynamics itself. Conditional access, multi-factor authentication, and role-based access controls apply automatically, because there isn't a second identity system to configure."
         },
         {
           "t": "cta",
@@ -293,14 +293,14 @@
         },
         {
           "t": "p",
-          "text": "The Summary view is where multi-vendor, multi-category quotes stop being a spreadsheet problem. Every line rolls up by discount category, business unit, and supplier — with cost, selling price, and margin per row and per quote. This is the view your sales manager approves and your finance team signs off."
+          "text": "The Summary view is where multi-vendor, multi-category quotes stop being a spreadsheet problem. Every line rolls up by discount category, business unit, and supplier, with cost, selling price, and margin computed per row and for the quote as a whole. This is the view sales managers approve against and finance signs off on before the quote is issued."
         },
         {
           "t": "img",
           "src": "/wp-content/uploads/2026/08/cpq-summary-rollup.png",
           "w": 1772,
           "h": 409,
-          "alt": "Dynamics CPQ Summary view rolling up multi-vendor quote lines by discount category, LOB, and supplier — with cost, margin, and total selling price per row"
+          "alt": "Dynamics CPQ Summary view rolling up multi-vendor quote lines by discount category, LOB, and supplier, with cost, selling price, and margin per row"
         }
       ],
       "headings": [],
@@ -318,7 +318,7 @@
         },
         {
           "t": "p",
-          "text": "This CPQ solution is deliberately opinionated. It is the strongest fit for organizations that have chosen Microsoft Dynamics 365 as their system of record for sales, project operations, and accounting — and want quoting to live in the same place as the opportunity."
+          "text": "This solution is opinionated about who it works well for. The strongest fit is a company that has already committed to Dynamics 365 as the system of record for sales, and where project operations or accounting are running on the same platform, so the numbers on the quote have somewhere useful to flow after the deal closes. It fits less well as a standalone quoting tool bolted onto a CRM you're not otherwise invested in. If Salesforce is your CRM of record, a Salesforce-native CPQ is almost certainly the better answer."
         },
         {
           "t": "h",
@@ -327,25 +327,25 @@
         },
         {
           "t": "p",
-          "text": "Multi-vendor line items, agent-versus-principal handling, and per-line performance obligations are built for reseller economics — Microsoft licensing, hardware, professional services, and managed services on the same quote."
+          "text": "A reseller's quote is rarely one vendor. The multi-vendor line detail (OEM, supplier, agent-versus-principal treatment) and the per-line performance-obligation field are built for the mix a typical reseller PO actually carries: licensing from one manufacturer, hardware from another, and services attached to both."
         },
         {
           "t": "h",
           "tag": "h3",
-          "text": "Services companies with Project Operations"
+          "text": "Services companies on Dynamics 365 Project Operations"
         },
         {
           "t": "p",
-          "text": "Quoting on the CRM your delivery team already runs in Dynamics 365 Project Operations means the sold price flows into the project without a hand-off. No re-keying between systems."
+          "text": "If your delivery team is already running in Dynamics 365 Project Operations, quoting on the same platform means the sold price and the project scope arrive at delivery on the same record. No hand-off between systems, and no re-keying between the sales world and the delivery world."
         },
         {
           "t": "h",
           "tag": "h3",
-          "text": "Teams migrating off Excel-based quoting"
+          "text": "Teams moving off spreadsheet-based quoting"
         },
         {
           "t": "p",
-          "text": "If your sales team can already build a quote in Excel, they can already use this solution. The interface is the same — the difference is that the data lives in the CRM."
+          "text": "For teams whose current quoting process is a shared Excel template, the switching cost is mostly about data model rather than user experience. The grid interaction is the same, so the muscle memory transfers. What changes is where the record actually lives, which is the point of the move."
         }
       ],
       "headings": [],
@@ -368,7 +368,7 @@
         },
         {
           "t": "p",
-          "text": "The CPQ solution is scoped, configured, and deployed as part of the Dynamics 365 CRM implementation — not a follow-on project. Your salespeople get quoting on day one instead of six months in."
+          "text": "The CPQ solution is scoped, configured, and deployed as part of the Dynamics 365 CRM implementation project, rather than as a separate engagement six months later. In practice, that means the sales team has quoting available in the CRM from the day the CRM itself goes live."
         },
         {
           "t": "h",
@@ -377,7 +377,7 @@
         },
         {
           "t": "p",
-          "text": "Folio3 is a Microsoft Solutions Partner and supports the CPQ solution alongside Dynamics 365, Business Central, Azure, and Power Platform work — one delivery team, one support relationship."
+          "text": "Folio3 is a Microsoft Solutions Partner and supports this CPQ solution alongside our Dynamics 365, Business Central, Azure, and Power Platform work. One delivery team, one support relationship, and the same account owner across the surrounding Microsoft stack."
         },
         {
           "t": "h",
@@ -386,7 +386,7 @@
         },
         {
           "t": "p",
-          "text": "New columns, alternate approval flows, additional integrations, and custom validation rules are built with the same Power Apps and Power Automate tooling your team already uses on other Microsoft applications."
+          "text": "New columns, alternate approval flows, additional integrations, and custom validation rules are built with the same Power Apps and Power Automate tooling your team already uses on other Microsoft applications. No specialist toolchain, and no separate certification for admins."
         },
         {
           "t": "h",
@@ -395,7 +395,7 @@
         },
         {
           "t": "p",
-          "text": "VAT, multi-currency, and regional compliance are handled inside the solution — configured to match the markets your business operates in, not shoehorned into a generic template."
+          "text": "VAT handling, multi-currency posture, and regional compliance rules are configured to match the markets your business actually operates in, rather than shoehorned into a generic template that assumes a single home country."
         },
         {
           "t": "h",
@@ -404,7 +404,7 @@
         },
         {
           "t": "p",
-          "text": "Charts, dashboards, and margin visualization over quote data are planned as a follow-on phase on top of the same Dataverse tables, using Power BI. The data model ships ready for it."
+          "text": "Charts, dashboards, and margin visualization over quote data are planned as a follow-on phase, built with Power BI on top of the same Dataverse tables. The data model already carries the fields the analytics work will need, so this is a delivery order decision rather than a re-architecture."
         },
         {
           "t": "cta",
@@ -427,7 +427,7 @@
         },
         {
           "t": "p",
-          "text": "Book a walkthrough with the Folio3 team. We will show the CPQ Lines and Summary views on a live Dynamics 365 CRM environment, and discuss what a rollout would look like alongside your Microsoft CRM implementation."
+          "text": "Book a walkthrough with the Folio3 team. We'll show the CPQ Lines and Summary views on a live Dynamics 365 CRM environment, and talk through what a rollout would look like against your specific tax posture, vendor mix, and CRM implementation timeline."
         },
         {
           "t": "cta",
