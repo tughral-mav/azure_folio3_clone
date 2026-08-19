@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Metadata } from 'next';
+import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { CpqScripts } from './cpq-scripts';
 
 /**
@@ -145,10 +146,17 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="cpq-page">
-      <style dangerouslySetInnerHTML={{ __html: SCOPED_STYLE }} />
-      <div dangerouslySetInnerHTML={{ __html: BODY }} />
-      <CpqScripts />
-    </div>
+    <>
+      <div className="cpq-page">
+        <style dangerouslySetInnerHTML={{ __html: SCOPED_STYLE }} />
+        <div dangerouslySetInnerHTML={{ __html: BODY }} />
+        <CpqScripts />
+      </div>
+      {/* Shared "Schedule a 1:1 Call" lead form — same one every content-kit
+          page appends via the renderer. Sits outside `.cpq-page` so the CPQ's
+          scoped styles don't override the form's site-wide look. The CPQ
+          #pgForm anchor CTAs target the form's id inside this component. */}
+      <OneToOneCTA tone="light" />
+    </>
   );
 }
