@@ -42,7 +42,11 @@ function titleFromSlug(slug: string[]) {
   return slug[slug.length - 1]
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
+    .join(' ')
+    // Preserve all-caps tech acronyms that get flattened by generic title-case.
+    .replace(/\bCpq\b/g, 'CPQ')
+    .replace(/\bCrm\b/g, 'CRM')
+    .replace(/\bErp\b/g, 'ERP');
 }
 
 export default async function MarketingPage({ params }: { params: Promise<{ slug: string[] }> }) {
@@ -68,7 +72,7 @@ export default async function MarketingPage({ params }: { params: Promise<{ slug
     crumbs.push({
       name: i === slug.length - 1
         ? crumbName
-        : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\bAi\b/g, 'AI').replace(/\bBi\b/g, 'BI'),
+        : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\bAi\b/g, 'AI').replace(/\bBi\b/g, 'BI').replace(/\bCpq\b/g, 'CPQ').replace(/\bCrm\b/g, 'CRM').replace(/\bErp\b/g, 'ERP'),
       url: `${ORIGIN}/${slug.slice(0, i + 1).join('/')}/`,
     });
   });
