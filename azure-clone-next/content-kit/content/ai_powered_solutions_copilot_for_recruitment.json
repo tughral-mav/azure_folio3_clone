@@ -287,12 +287,12 @@
         {
           "t": "cta",
           "text": "View On AppSource",
-          "href": "#pgForm"
+          "href": "https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/43a018cc-d6c8-4cdb-ac01-6dc9f1442c61/overview"
         },
         {
           "t": "cta",
           "text": "Video Demo",
-          "href": "#pgForm"
+          "href": "#video-demo"
         },
         {
           "t": "img",
@@ -323,11 +323,11 @@
         },
         {
           "text": "View On AppSource",
-          "href": "#pgForm"
+          "href": "https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/43a018cc-d6c8-4cdb-ac01-6dc9f1442c61/overview"
         },
         {
           "text": "Video Demo",
-          "href": "#pgForm"
+          "href": "#video-demo"
         }
       ],
       "images": [
