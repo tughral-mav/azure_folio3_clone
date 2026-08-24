@@ -4,6 +4,7 @@ import { getBlogSlugs, getBlogPost, getBlogCategories } from '@/lib/content';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { BlogCategoryList } from '@/components/sections/BlogCategoryList';
+import { PromoBanner } from '@/components/sections/PromoBanner';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -37,6 +38,7 @@ export default function BlogIndex() {
       <Breadcrumb name="Blog" />
       <BlogCategoryList posts={posts} categories={categories} />
       <OneToOneCTA tone="dark" />
+      <PromoBanner />
     </>
   );
 }
