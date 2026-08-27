@@ -23,6 +23,7 @@ Requires Pillow:  python3 -m pip install pillow
 """
 
 import argparse
+import glob
 import os
 import sys
 
@@ -35,6 +36,26 @@ SHOT_W, SHOT_H = 1280, 720
 LOGO_MIN, LOGO_MAX = 216, 350
 LOGO_DEFAULT = 280
 LOGO_MEDIUM, LOGO_SMALL = 90, 48
+
+
+def expand_inputs(paths):
+    """Resolve each argument, expanding wildcards ourselves.
+
+    Windows shells hand '*.png' through to Python unexpanded, so relying on the
+    shell would make the documented wildcard usage fail there.
+    """
+    resolved = []
+    for path in paths:
+        if any(ch in path for ch in "*?["):
+            matches = sorted(glob.glob(path))
+            if not matches:
+                sys.exit(f"no files matched {path!r}")
+            resolved += matches
+        elif not os.path.isfile(path):
+            sys.exit(f"file not found: {path}")
+        else:
+            resolved.append(path)
+    return resolved
 
 
 def sample_pad_colour(img):
@@ -169,9 +190,9 @@ def main():
     os.makedirs(args.outdir, exist_ok=True)
 
     written, failed = [], []
-    for path in args.logo:
+    for path in expand_inputs(args.logo):
         written += format_logo(path, args.outdir, args.logo_size, args.pad)
-    for path in args.screenshot:
+    for path in expand_inputs(args.screenshot):
         written += format_screenshot(path, args.outdir, args.mode, args.gravity, args.pad)
 
     for out, size, original in written:
