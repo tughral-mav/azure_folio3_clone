@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { ExternalLink } from '@/components/layout/ExternalLink';
 
 const HOSTS: Record<string, string> = {
   'folio3.ai': 'ai',
@@ -205,9 +206,9 @@ function ItemRow({ item, current }: { item: Item; current: string | null }) {
     );
   }
   return (
-    <a className="fn-item" href={item.href}>
+    <ExternalLink className="fn-item" href={item.href}>
       {inner}
-    </a>
+    </ExternalLink>
   );
 }
 
@@ -332,7 +333,7 @@ const CSS = `
   align-items: center;
   gap: 8px;
   height: 40px;
-  padding: 0 14px;
+  padding: 0 10px;
   border: 1px solid var(--fn-line);
   border-radius: 6px;
   color: var(--fn-fg);
@@ -446,9 +447,9 @@ const CSS = `
   .fn-root .fn-panel { width: min(560px, calc(100vw - 24px)); }
 }
 
-/* on tighter desktop widths, collapse to an icon-only pill so the primary
-   header nav and CTAs keep their room */
-@media (max-width: 1535px) {
+/* below xl (1280px), the site nav starts to run out of room; collapse the
+   trigger to icon-only rather than wrapping the header */
+@media (max-width: 1279px) {
   .fn-root .fn-trigger-label { display: none; }
   .fn-root .fn-trigger { padding: 0 10px; }
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { OFFICES } from '@/lib/offices';
+import { ExternalLink } from '@/components/layout/ExternalLink';
 
 const NETWORK_PRACTICES: { label: string; href: string }[] = [
   { label: 'AI/ML', href: 'https://www.folio3.ai/' },
@@ -61,13 +62,13 @@ export function Footer() {
           <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3 lg:grid-cols-5">
             {NETWORK_PRACTICES.map((p) => (
               <li key={p.label}>
-                <a
+                <ExternalLink
                   href={p.href}
                   className="group flex items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
                 >
                   <span aria-hidden className="text-white/40 group-hover:text-white">&bull;</span>
                   <span>{p.label}</span>
-                </a>
+                </ExternalLink>
               </li>
             ))}
           </ul>

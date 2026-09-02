@@ -29,14 +29,14 @@ export function Header() {
         scrolled && 'shadow-card'
       )}
     >
-      <div className="container-x flex h-20 items-center justify-between gap-6">
+      <div className="container-x flex h-20 items-center justify-between gap-3">
         {/* logo + nav grouped left (matches live header distribution) */}
-        <div className="flex items-center gap-6 xl:gap-[80px]">
+        <div className="flex items-center gap-6">
           <Link href="/" className="flex shrink-0 items-center" aria-label="Folio3 Azure">
             <Image src="/wp-content/uploads/2022/06/folio3_by_azure.svg" alt="Folio3 Azure" width={186} height={40} priority className="h-10 w-[186px] max-w-none" />
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
           {NAV.map((item, i) => {
             const active = openIdx === i;
             // live hover: a 3px #2F69F2 underline that grows from the centre out (~0.3s ease-out)
@@ -119,7 +119,7 @@ export function Header() {
         </div>
 
         {/* right: Folio3 Network + phone block + GET IN TOUCH */}
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <FolioNetworkNav />
           <a href={`tel:${PHONE.replace(/[^+\d]/g, '')}`} className="flex items-center gap-2">
             <span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand text-white">
@@ -130,7 +130,7 @@ export function Header() {
               <span className="block text-sm font-semibold text-ink">{PHONE}</span>
             </span>
           </a>
-          <Link href="/contact-us/" className="whitespace-nowrap rounded-md bg-brand-navy px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-brand xl:px-6">
+          <Link href="/contact-us/" className="whitespace-nowrap rounded-md bg-brand-navy px-4 py-3 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-brand xl:px-5">
             Get in Touch
           </Link>
         </div>
