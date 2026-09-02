@@ -13,7 +13,7 @@ const SLIDES = [
   {
     eyebrow: 'Microsoft Gold Partner with Global Expertise',
     head: 'Unlock the Power of Cloud: Build, Run & Manage ',
-    highlight: 'Applications with Azure*',
+    highlight: 'Applications with Azure',
     sub: 'Develop cutting-edge apps using the up-to-date AI models available on Azure, trusted by 80% of fortune top 500 companies.',
     cta: 'Schedule a Free Consultation',
     href: '#pgForm',
