@@ -90,7 +90,9 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor={fid('hearAboutUs')} className="sr-only">How did you hear about us?</label>
+        <label htmlFor={fid('hearAboutUs')} className="mb-1 block text-sm text-ink">
+          How did you hear about us?
+        </label>
         <select
           id={fid('hearAboutUs')}
           name="hearAboutUs"
@@ -99,7 +101,7 @@ export function ContactForm() {
           value={hearAboutUs}
           onChange={(e) => setHearAboutUs(e.target.value)}
         >
-          <option value="">How did you hear about us?</option>
+          <option value="">Select an option</option>
           {HEAR_ABOUT_US_OPTIONS.map((opt) => (
             <option key={opt} value={opt}>{opt}</option>
           ))}
