@@ -189,30 +189,33 @@ function ItemRow({ item, current }: { item: Item; current: string | null }) {
   const isCurrent = current === item.key;
   const inner = (
     <>
-      <span className="f3-ic">{item.icon}</span>
-      <span className="f3-txt">
-        <span className="f3-label">{item.label}</span>
-        <span className="f3-desc">{item.desc}</span>
+      <span className="fn-ic">{item.icon}</span>
+      <span className="fn-txt">
+        <span className="fn-label">{item.label}</span>
+        <span className="fn-desc">{item.desc}</span>
       </span>
-      {isCurrent && <span className="f3-here">You&apos;re here</span>}
+      {isCurrent && <span className="fn-here">You&apos;re here</span>}
     </>
   );
-  const cls = 'f3-item';
   if (isCurrent) {
     return (
-      <span className={cls} aria-current="true" style={{ cursor: 'default' }}>
+      <span className="fn-item" aria-current="true" style={{ cursor: 'default' }}>
         {inner}
       </span>
     );
   }
   return (
-    <a className={cls} href={item.href}>
+    <a className="fn-item" href={item.href}>
       {inner}
     </a>
   );
 }
 
-export function GlobalRibbon({ current: currentProp }: { current?: string }) {
+/**
+ * "Folio3 Network" dropdown — embedded on the right of the main site Header.
+ * Bordered button with a 9-dot glyph opens a 3-column panel of Folio3 practices.
+ */
+export function FolioNetworkNav({ current: currentProp }: { current?: string }) {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState<string | null>(currentProp ?? null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -241,54 +244,47 @@ export function GlobalRibbon({ current: currentProp }: { current?: string }) {
   return (
     <>
       <style>{CSS}</style>
-      <div ref={rootRef} className={`f3-ribbon${open ? ' f3-open' : ''}`}>
-        <div className="f3-bar">
-          <nav className="f3-links" aria-label="Folio3 corporate">
-            <a href="https://folio3.com/about-us/">About us</a>
-            <a href="https://folio3.com/">Company</a>
-          </nav>
+      <div ref={rootRef} className={`fn-root${open ? ' fn-open' : ''}`}>
+        <button
+          type="button"
+          className="fn-trigger"
+          aria-expanded={open}
+          aria-controls="fn-panel"
+          onClick={(e) => {
+            e.stopPropagation();
+            setOpen((v) => !v);
+          }}
+        >
+          <svg className="fn-dots" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+            <rect x="0" y="0" width="3" height="3" />
+            <rect x="4.5" y="0" width="3" height="3" />
+            <rect x="9" y="0" width="3" height="3" />
+            <rect x="0" y="4.5" width="3" height="3" />
+            <rect x="4.5" y="4.5" width="3" height="3" />
+            <rect x="9" y="4.5" width="3" height="3" />
+            <rect x="0" y="9" width="3" height="3" />
+            <rect x="4.5" y="9" width="3" height="3" />
+            <rect x="9" y="9" width="3" height="3" />
+          </svg>
+          <span className="fn-trigger-label">Folio3 Network</span>
+          <svg className="fn-caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+            <path d="M2 4l3 3 3-3" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
 
-          <button
-            type="button"
-            className="f3-trigger"
-            aria-expanded={open}
-            aria-controls="f3-panel"
-            onClick={(e) => {
-              e.stopPropagation();
-              setOpen((v) => !v);
-            }}
-          >
-            <svg className="f3-dots" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
-              <rect x="0" y="0" width="3" height="3" />
-              <rect x="4.5" y="0" width="3" height="3" />
-              <rect x="9" y="0" width="3" height="3" />
-              <rect x="0" y="4.5" width="3" height="3" />
-              <rect x="4.5" y="4.5" width="3" height="3" />
-              <rect x="9" y="4.5" width="3" height="3" />
-              <rect x="0" y="9" width="3" height="3" />
-              <rect x="4.5" y="9" width="3" height="3" />
-              <rect x="9" y="9" width="3" height="3" />
-            </svg>
-            <span className="f3-trigger-label">Folio3 Network</span>
-            <svg className="f3-caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-              <path d="M2 4l3 3 3-3" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div className="f3-panel" id="f3-panel">
-          <div className="f3-grid">
-            <div className="f3-col">
+        <div className="fn-panel" id="fn-panel">
+          <div className="fn-grid">
+            <div className="fn-col">
               {TECH.map((it) => (
                 <ItemRow key={it.key} item={it} current={current} />
               ))}
             </div>
-            <div className="f3-col">
+            <div className="fn-col">
               {INDUSTRIES.map((it) => (
                 <ItemRow key={it.key} item={it} current={current} />
               ))}
             </div>
-            <div className="f3-col">
+            <div className="fn-col">
               {PLATFORMS.map((it) => (
                 <ItemRow key={it.key} item={it} current={current} />
               ))}
@@ -301,46 +297,27 @@ export function GlobalRibbon({ current: currentProp }: { current?: string }) {
 }
 
 const CSS = `
-.f3-ribbon,
-.f3-ribbon *,
-.f3-ribbon *::before,
-.f3-ribbon *::after { box-sizing: border-box; }
+.fn-root,
+.fn-root *,
+.fn-root *::before,
+.fn-root *::after { box-sizing: border-box; }
 
-.f3-ribbon {
-  --f3-bg: #12161c;
-  --f3-fg: #e8eaed;
-  --f3-fg-dim: #9aa3ad;
-  --f3-line: rgba(255,255,255,.14);
-  --f3-panel: #ffffff;
-  --f3-panel-fg: #121127;
-  --f3-panel-dim: #6a6c70;
-  --f3-panel-line: #e8ecf5;
-  --f3-panel-hover: #f5f8fe;
-  --f3-accent: #1742E7;
+.fn-root {
+  --fn-fg: #121127;
+  --fn-fg-dim: #6a6c70;
+  --fn-line: #d9def0;
+  --fn-panel: #ffffff;
+  --fn-panel-line: #e8ecf5;
+  --fn-panel-hover: #f5f8fe;
+  --fn-accent: #1742E7;
   position: relative;
-  z-index: 60;
-  background: var(--f3-bg);
-  color: var(--f3-fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 13px;
   line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
-.f3-ribbon .f3-bar {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.f3-ribbon a,
-.f3-ribbon button {
+.fn-root a,
+.fn-root button {
   font: inherit;
   color: inherit;
   text-decoration: none;
@@ -350,86 +327,85 @@ const CSS = `
   cursor: pointer;
 }
 
-.f3-ribbon .f3-links { display: flex; align-items: center; gap: 22px; }
-.f3-ribbon .f3-links a { color: var(--f3-fg-dim); transition: color .15s ease; }
-.f3-ribbon .f3-links a:hover { color: var(--f3-fg); }
-
-.f3-ribbon .f3-trigger {
+.fn-root .fn-trigger {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  height: 26px;
-  padding: 0 12px;
-  border: 1px solid var(--f3-line);
-  border-radius: 5px;
-  color: var(--f3-fg);
-  transition: background .15s ease, border-color .15s ease;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--fn-line);
+  border-radius: 6px;
+  color: var(--fn-fg);
+  background: #fff;
+  font-weight: 600;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+  white-space: nowrap;
 }
-.f3-ribbon .f3-trigger:hover,
-.f3-ribbon .f3-trigger[aria-expanded="true"] {
-  background: rgba(255,255,255,.07);
-  border-color: rgba(255,255,255,.28);
+.fn-root .fn-trigger:hover,
+.fn-root .fn-trigger[aria-expanded="true"] {
+  border-color: var(--fn-accent);
+  color: var(--fn-accent);
 }
 
-.f3-ribbon .f3-dots { display: block; flex: none; }
-.f3-ribbon .f3-dots rect { fill: var(--f3-fg-dim); }
-.f3-ribbon .f3-caret { display: block; flex: none; transition: transform .18s ease; }
-.f3-ribbon .f3-trigger[aria-expanded="true"] .f3-caret { transform: rotate(180deg); }
-.f3-ribbon .f3-caret path { stroke: var(--f3-fg-dim); }
+.fn-root .fn-dots { display: block; flex: none; }
+.fn-root .fn-dots rect { fill: currentColor; }
+.fn-root .fn-caret { display: block; flex: none; transition: transform .18s ease; }
+.fn-root .fn-trigger[aria-expanded="true"] .fn-caret { transform: rotate(180deg); }
+.fn-root .fn-caret path { stroke: currentColor; }
 
-.f3-ribbon .f3-panel {
+.fn-root .fn-panel {
   display: none;
   position: absolute;
-  top: 100%;
-  right: 20px;
-  width: min(960px, calc(100vw - 40px));
-  margin-top: 8px;
-  background: var(--f3-panel);
-  color: var(--f3-panel-fg);
-  border: 1px solid var(--f3-panel-line);
-  border-radius: 10px;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(920px, calc(100vw - 40px));
+  background: var(--fn-panel);
+  color: var(--fn-fg);
+  border: 1px solid var(--fn-panel-line);
+  border-radius: 12px;
   box-shadow: 0 24px 48px rgba(5,13,32,.18);
+  z-index: 60;
 }
-.f3-ribbon.f3-open .f3-panel { display: block; }
+.fn-root.fn-open .fn-panel { display: block; }
 
-.f3-ribbon .f3-grid {
+.fn-root .fn-grid {
   padding: 22px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px 20px;
 }
 
-.f3-ribbon .f3-col { display: flex; flex-direction: column; gap: 4px; }
+.fn-root .fn-col { display: flex; flex-direction: column; gap: 4px; }
 
-.f3-ribbon .f3-item {
+.fn-root .fn-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   padding: 10px 12px;
   border-radius: 8px;
-  color: var(--f3-panel-fg);
+  color: var(--fn-fg);
   transition: background .15s ease;
   position: relative;
 }
-.f3-ribbon .f3-item:hover { background: var(--f3-panel-hover); }
-.f3-ribbon .f3-item[aria-current="true"] { background: var(--f3-panel-hover); }
+.fn-root .fn-item:hover { background: var(--fn-panel-hover); }
+.fn-root .fn-item[aria-current="true"] { background: var(--fn-panel-hover); }
 
-.f3-ribbon .f3-ic {
+.fn-root .fn-ic {
   flex: none;
   width: 36px;
   height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--f3-panel-line);
+  border: 1px solid var(--fn-panel-line);
   border-radius: 6px;
-  color: var(--f3-accent);
+  color: var(--fn-accent);
   background: #fff;
 }
-.f3-ribbon .f3-ic svg { display: block; }
-.f3-ribbon .f3-ic svg path,
-.f3-ribbon .f3-ic svg circle,
-.f3-ribbon .f3-ic svg rect {
+.fn-root .fn-ic svg { display: block; }
+.fn-root .fn-ic svg path,
+.fn-root .fn-ic svg circle,
+.fn-root .fn-ic svg rect {
   stroke: currentColor;
   fill: none;
   stroke-width: 1.6;
@@ -437,48 +413,47 @@ const CSS = `
   stroke-linejoin: round;
 }
 
-.f3-ribbon .f3-txt { display: flex; flex-direction: column; min-width: 0; }
-.f3-ribbon .f3-label {
+.fn-root .fn-txt { display: flex; flex-direction: column; min-width: 0; }
+.fn-root .fn-label {
   font-size: 14px;
   font-weight: 700;
-  color: var(--f3-panel-fg);
+  color: var(--fn-fg);
   line-height: 1.25;
 }
-.f3-ribbon .f3-desc {
+.fn-root .fn-desc {
   margin-top: 2px;
   font-size: 12px;
-  color: var(--f3-panel-dim);
+  color: var(--fn-fg-dim);
   line-height: 1.35;
 }
-.f3-ribbon .f3-here {
+.fn-root .fn-here {
   position: absolute;
   top: 10px;
   right: 12px;
   font-size: 11px;
   font-weight: 600;
-  color: var(--f3-accent);
+  color: var(--fn-accent);
 }
 
-.f3-ribbon :focus-visible {
-  outline: 2px solid var(--f3-accent);
+.fn-root :focus-visible {
+  outline: 2px solid var(--fn-accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
 @media (max-width: 900px) {
-  .f3-ribbon .f3-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .f3-ribbon .f3-panel { right: 12px; left: 12px; width: auto; }
+  .fn-root .fn-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fn-root .fn-panel { width: min(560px, calc(100vw - 24px)); }
 }
 
 @media (max-width: 620px) {
-  .f3-ribbon .f3-bar { padding: 0 14px; gap: 10px; }
-  .f3-ribbon .f3-trigger-label { display: none; }
-  .f3-ribbon .f3-trigger { padding: 0 8px; }
-  .f3-ribbon .f3-links { gap: 16px; }
-  .f3-ribbon .f3-grid { grid-template-columns: 1fr; gap: 4px; padding: 14px; }
+  .fn-root .fn-trigger { padding: 0 10px; height: 36px; }
+  .fn-root .fn-trigger-label { display: none; }
+  .fn-root .fn-panel { grid-template-columns: 1fr; }
+  .fn-root .fn-grid { grid-template-columns: 1fr; gap: 4px; padding: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .f3-ribbon * { transition: none !important; }
+  .fn-root * { transition: none !important; }
 }
 `;

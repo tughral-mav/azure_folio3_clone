@@ -21,28 +21,6 @@ const NETWORK_PRACTICES: { label: string; href: string }[] = [
 export function Footer() {
   return (
     <footer className="bg-brand-ink text-white/75">
-      <div className="border-b border-white/10">
-        <div className="container-x grid grid-cols-1 items-start gap-8 py-10 lg:grid-cols-[minmax(0,260px)_1fr]">
-          <div>
-            <p className="text-xl font-semibold text-white">Folio3 Network</p>
-            <p className="mt-2 text-sm text-white/60">One company, twelve specialist practices.</p>
-          </div>
-          <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3 lg:grid-cols-5">
-            {NETWORK_PRACTICES.map((p) => (
-              <li key={p.label}>
-                <a
-                  href={p.href}
-                  className="group flex items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
-                >
-                  <span aria-hidden className="text-white/40 group-hover:text-white">&bull;</span>
-                  <span>{p.label}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
       <div className="container-x py-16">
         <Image
           src="/wp-content/uploads/2023/04/azure_logo_ftr.png"
@@ -71,6 +49,28 @@ export function Footer() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="container-x grid grid-cols-1 items-start gap-8 py-10 lg:grid-cols-[minmax(0,260px)_1fr]">
+          <div>
+            <p className="text-xl font-semibold text-white">Folio3 Network</p>
+            <p className="mt-2 text-sm text-white/60">One company, twelve specialist practices.</p>
+          </div>
+          <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-3 lg:grid-cols-5">
+            {NETWORK_PRACTICES.map((p) => (
+              <li key={p.label}>
+                <a
+                  href={p.href}
+                  className="group flex items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
+                >
+                  <span aria-hidden className="text-white/40 group-hover:text-white">&bull;</span>
+                  <span>{p.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

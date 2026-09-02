@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { NAV } from '@/lib/nav';
 import { PHONE } from '@/lib/offices';
+import { FolioNetworkNav } from '@/components/layout/GlobalRibbon';
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -117,8 +118,9 @@ export function Header() {
           </nav>
         </div>
 
-        {/* right: phone block + GET IN TOUCH */}
+        {/* right: Folio3 Network + phone block + GET IN TOUCH */}
         <div className="hidden items-center gap-5 lg:flex">
+          <FolioNetworkNav />
           <a href={`tel:${PHONE.replace(/[^+\d]/g, '')}`} className="flex items-center gap-2">
             <span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand text-white">
               <PhoneIcon />
