@@ -32,8 +32,8 @@ export function Header() {
       <div className="container-x flex h-20 items-center justify-between gap-6">
         {/* logo + nav grouped left (matches live header distribution) */}
         <div className="flex items-center gap-6 xl:gap-[80px]">
-          <Link href="/" className="flex items-center" aria-label="Folio3 Azure">
-            <Image src="/wp-content/uploads/2022/06/folio3_by_azure.svg" alt="Folio3 Azure" width={186} height={40} priority />
+          <Link href="/" className="flex shrink-0 items-center" aria-label="Folio3 Azure">
+            <Image src="/wp-content/uploads/2022/06/folio3_by_azure.svg" alt="Folio3 Azure" width={186} height={40} priority className="h-10 w-[186px] max-w-none" />
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">

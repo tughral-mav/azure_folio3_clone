@@ -446,9 +446,15 @@ const CSS = `
   .fn-root .fn-panel { width: min(560px, calc(100vw - 24px)); }
 }
 
+/* on tighter desktop widths, collapse to an icon-only pill so the primary
+   header nav and CTAs keep their room */
+@media (max-width: 1535px) {
+  .fn-root .fn-trigger-label { display: none; }
+  .fn-root .fn-trigger { padding: 0 10px; }
+}
+
 @media (max-width: 620px) {
   .fn-root .fn-trigger { padding: 0 10px; height: 36px; }
-  .fn-root .fn-trigger-label { display: none; }
   .fn-root .fn-panel { grid-template-columns: 1fr; }
   .fn-root .fn-grid { grid-template-columns: 1fr; gap: 4px; padding: 14px; }
 }
