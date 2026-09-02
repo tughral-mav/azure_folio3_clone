@@ -7,9 +7,21 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { LeadSchema, type LeadInput } from '@/lib/lead-schema';
 
+const HEAR_ABOUT_US_OPTIONS = [
+  'AI Search or Chatbot (ChatGPT, Gemini, Perplexity, Claude, Grok, CoPilot, etc.)',
+  'Internet Research',
+  'Advertisements',
+  'Social Media',
+  'Microsoft Azure Marketplace/AppSource',
+  'Event or Trade Show',
+  'Other (Please Specify)',
+];
+
 export function ContactForm() {
   const router = useRouter();
   const [serverError, setServerError] = useState<string | null>(null);
+  const [hearAboutUs, setHearAboutUs] = useState('');
+  const [hearAboutUsOther, setHearAboutUsOther] = useState('');
   const uid = useId(); // unique per instance → safe even if the form renders twice on a page
   const fid = (n: string) => `${uid}-${n}`;
   const eid = (n: string) => `${uid}-${n}-err`;
@@ -76,6 +88,37 @@ export function ContactForm() {
         <textarea id={fid('message')} rows={5} className={field} placeholder="How can we help? *" aria-required="true" aria-invalid={errors.message ? 'true' : 'false'} aria-describedby={errors.message ? eid('message') : undefined} {...register('message')} />
         {errors.message && <p id={eid('message')} role="alert" className={err}>{errors.message.message}</p>}
       </div>
+
+      <div>
+        <label htmlFor={fid('hearAboutUs')} className="sr-only">How did you hear about us?</label>
+        <select
+          id={fid('hearAboutUs')}
+          name="hearAboutUs"
+          data-clarity-unmask="true"
+          className={field}
+          value={hearAboutUs}
+          onChange={(e) => setHearAboutUs(e.target.value)}
+        >
+          <option value="">How did you hear about us?</option>
+          {HEAR_ABOUT_US_OPTIONS.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+      </div>
+      {hearAboutUs === 'Other (Please Specify)' && (
+        <div>
+          <label htmlFor={fid('hearAboutUsOther')} className="sr-only">Please specify</label>
+          <input
+            id={fid('hearAboutUsOther')}
+            name="hearAboutUsOther"
+            data-clarity-unmask="true"
+            className={field}
+            placeholder="Please specify"
+            value={hearAboutUsOther}
+            onChange={(e) => setHearAboutUsOther(e.target.value)}
+          />
+        </div>
+      )}
 
       {/* honeypot — hidden from users, bots fill it → silently rejected */}
       <input type="text" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" {...register('website')} />
