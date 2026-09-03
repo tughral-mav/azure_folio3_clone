@@ -287,12 +287,12 @@
         {
           "t": "cta",
           "text": "View On AppSource",
-          "href": "#pgForm"
+          "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.ai-powered-hr-management-with-microsoft-copilot?tab=Overview"
         },
         {
           "t": "cta",
           "text": "Video Demo",
-          "href": "#pgForm"
+          "href": "#video-demo"
         },
         {
           "t": "img",
@@ -323,11 +323,11 @@
         },
         {
           "text": "View On AppSource",
-          "href": "#pgForm"
+          "href": "https://marketplace.microsoft.com/en-us/product/saas/folio3software.ai-powered-hr-management-with-microsoft-copilot?tab=Overview"
         },
         {
           "text": "Video Demo",
-          "href": "#pgForm"
+          "href": "#video-demo"
         }
       ],
       "images": [
