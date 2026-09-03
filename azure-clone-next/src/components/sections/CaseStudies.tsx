@@ -16,7 +16,7 @@ const CASES = [
     name: 'CityU',
     img: '/wp-content/uploads/2023/06/City4.webp',
     blurb: 'The City University of Seattle is a highly-rated private university located in Seattle — data platform on Azure.',
-    href: '/city-university-azure/',
+    href: '/case-studies/city-university-azure/',
   },
 ];
 

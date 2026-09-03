@@ -1,9 +1,9 @@
 {
-  "url": "https://azure.folio3.com/city-university-azure/",
+  "url": "https://azure.folio3.com/case-studies/city-university-azure/",
   "meta": {
     "title": "City University & azure - Azure",
     "description": null,
-    "canonical": "https://azure.folio3.com/city-university-azure/",
+    "canonical": "https://azure.folio3.com/case-studies/city-university-azure/",
     "ogImage": "https://azure.folio3.com/wp-content/uploads/2023/06/Folio3-Azure-Case-Study.webp",
     "h1Count": 1
   },
@@ -319,12 +319,12 @@
       "items": [
         {
           "t": "p",
-          "text": "Home » City University & azure"
+          "text": "Home \u00bb City University & azure"
         }
       ],
       "headings": [],
       "paragraphs": [
-        "Home » City University & azure"
+        "Home \u00bb City University & azure"
       ],
       "listItems": [],
       "ctas": [],
@@ -417,7 +417,7 @@
         },
         {
           "t": "li",
-          "text": "Difficulty in the creation of a new portal for the University’s alumni using the Power Platform (either Model-Driven App or Canvas app)."
+          "text": "Difficulty in the creation of a new portal for the University\u2019s alumni using the Power Platform (either Model-Driven App or Canvas app)."
         },
         {
           "t": "h",
@@ -467,7 +467,7 @@
         "No proper support and customization services.",
         "Problems encountered with the data migration process from one environment to another.",
         "Issues with the customization of the production environment as the client wanted segregation of all entities (components, Dataverse Table, Multiple App in one solution, etc.) with their dependencies into a single solution.",
-        "Difficulty in the creation of a new portal for the University’s alumni using the Power Platform (either Model-Driven App or Canvas app)."
+        "Difficulty in the creation of a new portal for the University\u2019s alumni using the Power Platform (either Model-Driven App or Canvas app)."
       ],
       "ctas": [],
       "images": []
@@ -750,7 +750,7 @@
         },
         {
           "t": "li",
-          "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
+          "text": "Pleasanton, California \u2013 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
         },
         {
           "t": "li",
@@ -767,7 +767,7 @@
         },
         {
           "t": "li",
-          "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
+          "text": "Dubai, UAE \u2013 Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
         },
         {
           "t": "li",
@@ -797,7 +797,7 @@
         },
         {
           "t": "li",
-          "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+          "text": "EPICENTRIA, Avenida Netzahualc\u00f3yotl 1597, Ciudad del Sol, Zapopan, Jalisco"
         },
         {
           "t": "h",
@@ -848,7 +848,7 @@
         },
         {
           "t": "p",
-          "text": "© 2026, Folio3 Software Inc., All rights reserved."
+          "text": "\u00a9 2026, Folio3 Software Inc., All rights reserved."
         },
         {
           "t": "p",
@@ -886,20 +886,20 @@
         }
       ],
       "paragraphs": [
-        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "\u00a9 2026, Folio3 Software Inc., All rights reserved.",
         "Privacy Policy & Terms of Use Cookie Policy"
       ],
       "listItems": [
         "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
-        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Pleasanton, California \u2013 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
         "Tel: +1 408 412-3813",
         "Support: +1 (408) 512 1812",
-        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Dubai, UAE \u2013 Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
         "Tel: +971-55-6540154",
         "Tel: +971-04-2505173",
         "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
         "Tel: +44 (0) 14 8361 6611",
-        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "EPICENTRIA, Avenida Netzahualc\u00f3yotl 1597, Ciudad del Sol, Zapopan, Jalisco",
         "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
         "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
         "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",

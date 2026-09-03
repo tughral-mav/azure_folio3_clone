@@ -52,6 +52,17 @@ for (const { group, path } of all) {
 // one-off odd pages + live page-merge redirects (verified against the live site)
 // NOTE: /testimonials/ is a REAL 200 page on the live (renders testimonials.json) — do NOT redirect it.
 add('/case-studies/wph-intellifabric/', '/case-studies/popcorn-producer-intellifabric-dashboards/'); // live 301
+// Case study URL restructure: root-level case study slugs moved under /case-studies/ (single-hop 301s).
+const CASE_STUDIES_MOVED = [
+  'azure-automated-data-reporting-for-slb',
+  'copilot-implementation-food-verification',
+  'implementing-power-bi-dashboard-for-food-crop-grower',
+  'power-bi-financial-reporting-for-alibaba',
+  'microsoft-fabric-reporting-for-real-estate',
+  'city-university-azure',
+  'automated-data-reporting',
+];
+for (const slug of CASE_STUDIES_MOVED) add(`/${slug}/`, `/case-studies/${slug}/`);
 add('/microsoft-power-platform/', '/microsoft-power-platform-services/');
 add('/end-to-end-bi-solution/', '/azure-data-analytics/');
 add('/folio3-employee-self-service-app/', '/solution/folio3-employee-self-service-app/');

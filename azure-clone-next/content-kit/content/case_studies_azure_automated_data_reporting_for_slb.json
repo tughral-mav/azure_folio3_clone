@@ -1,9 +1,9 @@
 {
-  "url": "https://azure.folio3.com/azure-automated-data-reporting-for-slb/",
+  "url": "https://azure.folio3.com/case-studies/azure-automated-data-reporting-for-slb/",
   "meta": {
     "title": "Azure Automated Data Reporting With 99.9% Data Accuracy For SLB",
     "description": "See how Folio3 implemented azure automated data reporting solution for SLB to ingest, store, and visualize oil/gas data via Power BI dashboards",
-    "canonical": "https://azure.folio3.com/azure-automated-data-reporting-for-slb/",
+    "canonical": "https://azure.folio3.com/case-studies/azure-automated-data-reporting-for-slb/",
     "ogImage": "https://azure.folio3.com/wp-content/uploads/2025/07/automatic-data-reporting.webp",
     "h1Count": 1
   },
@@ -319,12 +319,12 @@
       "items": [
         {
           "t": "p",
-          "text": "Home » Azure Automated Data Reporting For SLB"
+          "text": "Home \u00bb Azure Automated Data Reporting For SLB"
         }
       ],
       "headings": [],
       "paragraphs": [
-        "Home » Azure Automated Data Reporting For SLB"
+        "Home \u00bb Azure Automated Data Reporting For SLB"
       ],
       "listItems": [],
       "ctas": [],
@@ -514,7 +514,7 @@
         },
         {
           "t": "p",
-          "text": "Utilizing Microsoft Azure’s data services (Azure Data Factory and Azure Databricks) to upgrade manual data consolidation to efficient data ingestion from Azure SQL Database and Google Analytics, and improving data quality, respectively."
+          "text": "Utilizing Microsoft Azure\u2019s data services (Azure Data Factory and Azure Databricks) to upgrade manual data consolidation to efficient data ingestion from Azure SQL Database and Google Analytics, and improving data quality, respectively."
         },
         {
           "t": "h",
@@ -562,7 +562,7 @@
         }
       ],
       "paragraphs": [
-        "Utilizing Microsoft Azure’s data services (Azure Data Factory and Azure Databricks) to upgrade manual data consolidation to efficient data ingestion from Azure SQL Database and Google Analytics, and improving data quality, respectively.",
+        "Utilizing Microsoft Azure\u2019s data services (Azure Data Factory and Azure Databricks) to upgrade manual data consolidation to efficient data ingestion from Azure SQL Database and Google Analytics, and improving data quality, respectively.",
         "Serving as a central repository for all raw and processed data, laying down a secure and scalable foundation.",
         "Delineating complex operational data in interactive dashboards and reports using Power BI. This was made accessible through the OFMP portal."
       ],
@@ -750,7 +750,7 @@
         },
         {
           "t": "p",
-          "text": "The implementation of an automated data reporting solution powered by Microsoft Azure Data Services delivered significant and measurable results to SLB’s OFMP team, giving them the ability to efficiently extract, transform, load and report their data."
+          "text": "The implementation of an automated data reporting solution powered by Microsoft Azure Data Services delivered significant and measurable results to SLB\u2019s OFMP team, giving them the ability to efficiently extract, transform, load and report their data."
         },
         {
           "t": "h",
@@ -820,7 +820,7 @@
         }
       ],
       "paragraphs": [
-        "The implementation of an automated data reporting solution powered by Microsoft Azure Data Services delivered significant and measurable results to SLB’s OFMP team, giving them the ability to efficiently extract, transform, load and report their data.",
+        "The implementation of an automated data reporting solution powered by Microsoft Azure Data Services delivered significant and measurable results to SLB\u2019s OFMP team, giving them the ability to efficiently extract, transform, load and report their data.",
         "Gaining direct access to data and reporting tools reduced massive dependence on the technical teams and DBAs and increased their productivity by 5%.",
         "The creation of a unified reporting platform provided instant insights into key operational metrics such as:",
         "Achieved 99.9% data accuracy through automation of data ingestion and reporting, paving the way for more reliable data to work with."
@@ -953,7 +953,7 @@
         },
         {
           "t": "li",
-          "text": "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
+          "text": "Pleasanton, California \u2013 6701 Koll Center Parkway, #250 Pleasanton, CA 94566"
         },
         {
           "t": "li",
@@ -970,7 +970,7 @@
         },
         {
           "t": "li",
-          "text": "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
+          "text": "Dubai, UAE \u2013 Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE"
         },
         {
           "t": "li",
@@ -1000,7 +1000,7 @@
         },
         {
           "t": "li",
-          "text": "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco"
+          "text": "EPICENTRIA, Avenida Netzahualc\u00f3yotl 1597, Ciudad del Sol, Zapopan, Jalisco"
         },
         {
           "t": "h",
@@ -1051,7 +1051,7 @@
         },
         {
           "t": "p",
-          "text": "© 2026, Folio3 Software Inc., All rights reserved."
+          "text": "\u00a9 2026, Folio3 Software Inc., All rights reserved."
         },
         {
           "t": "p",
@@ -1089,20 +1089,20 @@
         }
       ],
       "paragraphs": [
-        "© 2026, Folio3 Software Inc., All rights reserved.",
+        "\u00a9 2026, Folio3 Software Inc., All rights reserved.",
         "Privacy Policy & Terms of Use Cookie Policy"
       ],
       "listItems": [
         "160 Bovet Road, Suite # 101, San Mateo, CA 94402 USA",
-        "Pleasanton, California – 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
+        "Pleasanton, California \u2013 6701 Koll Center Parkway, #250 Pleasanton, CA 94566",
         "Tel: +1 408 412-3813",
         "Support: +1 (408) 512 1812",
-        "Dubai, UAE – Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
+        "Dubai, UAE \u2013 Dubai Internet City, 1st Floor, Building Number 12, Premises ED 29, Dubai, UAE",
         "Tel: +971-55-6540154",
         "Tel: +971-04-2505173",
         "Export House, Cawsey Way, Woking Surrey, GU21 6QX",
         "Tel: +44 (0) 14 8361 6611",
-        "EPICENTRIA, Avenida Netzahualcóyotl 1597, Ciudad del Sol, Zapopan, Jalisco",
+        "EPICENTRIA, Avenida Netzahualc\u00f3yotl 1597, Ciudad del Sol, Zapopan, Jalisco",
         "Plot 26, Block B, SMCH Society, Main Shahrah-e-Faisal, Karachi",
         "Corporate 7 by Maaksons, Executive Block, Civic Center 1, Gulberg Green, Islamabad",
         "First Floor, Blue Mall 8-R, MM Alam Road Gulberg III, Lahore",

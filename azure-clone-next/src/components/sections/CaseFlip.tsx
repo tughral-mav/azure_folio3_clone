@@ -9,17 +9,17 @@ import { useState } from 'react';
  *  main pages show the thumbnail. Fall back to these so every case card has one. */
 const CASE_IMG: Record<string, string> = {
   '/savills/': '/wp-content/uploads/2023/06/savills-cs.webp',
-  '/city-university-azure/': '/wp-content/uploads/2023/06/City4.webp',
-  '/copilot-implementation-food-verification/': '/wp-content/uploads/2025/07/food-verification.webp',
+  '/case-studies/city-university-azure/': '/wp-content/uploads/2023/06/City4.webp',
+  '/case-studies/copilot-implementation-food-verification/': '/wp-content/uploads/2025/07/food-verification.webp',
 };
 // some "Real Results" sections ship the case NAME only (no Read-More cta captured) — map the
 // known cases to their study page so the card still links where the live links.
 const CASE_HREF: Record<string, string> = {
   savills: '/savills/',
-  cityu: '/city-university-azure/',
-  'city university': '/city-university-azure/',
+  cityu: '/case-studies/city-university-azure/',
+  'city university': '/case-studies/city-university-azure/',
   daraz: '/daraz/',
-  'food verification organization': '/copilot-implementation-food-verification/',
+  'food verification organization': '/case-studies/copilot-implementation-food-verification/',
   // this "Real Results" card ships no Read-More href in the capture (dead on the live too) and has
   // no dedicated study page — send it to the case-studies index so the card still links somewhere.
   'azure data services for private equity firm': '/case-studies/',

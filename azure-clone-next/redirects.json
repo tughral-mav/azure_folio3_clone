@@ -300,6 +300,41 @@
     "permanent": true
   },
   {
+    "source": "/azure-automated-data-reporting-for-slb/",
+    "destination": "/case-studies/azure-automated-data-reporting-for-slb/",
+    "permanent": true
+  },
+  {
+    "source": "/copilot-implementation-food-verification/",
+    "destination": "/case-studies/copilot-implementation-food-verification/",
+    "permanent": true
+  },
+  {
+    "source": "/implementing-power-bi-dashboard-for-food-crop-grower/",
+    "destination": "/case-studies/implementing-power-bi-dashboard-for-food-crop-grower/",
+    "permanent": true
+  },
+  {
+    "source": "/power-bi-financial-reporting-for-alibaba/",
+    "destination": "/case-studies/power-bi-financial-reporting-for-alibaba/",
+    "permanent": true
+  },
+  {
+    "source": "/microsoft-fabric-reporting-for-real-estate/",
+    "destination": "/case-studies/microsoft-fabric-reporting-for-real-estate/",
+    "permanent": true
+  },
+  {
+    "source": "/city-university-azure/",
+    "destination": "/case-studies/city-university-azure/",
+    "permanent": true
+  },
+  {
+    "source": "/automated-data-reporting/",
+    "destination": "/case-studies/automated-data-reporting/",
+    "permanent": true
+  },
+  {
     "source": "/microsoft-power-platform/",
     "destination": "/microsoft-power-platform-services/",
     "permanent": true
