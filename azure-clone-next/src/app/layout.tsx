@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { LeaveSiteConfirm } from '@/components/layout/ExternalLink';
+import { ExploreFolio3Drawer } from '@/components/layout/ExploreFolio3Drawer';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <ExploreFolio3Drawer />
         <LeaveSiteConfirm />
 
         {/* Deferred tracking — replaces GTM/Clarity that render-block today */}
