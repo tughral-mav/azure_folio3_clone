@@ -28,12 +28,11 @@ type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: 
 
 const cleanCta = (text: string, href: string | null): Cta | undefined => {
   if (!text || !href || href === '#') return undefined;
-  // preserve absolute external URLs verbatim (e.g. Microsoft AppSource marketplace) —
-  // localAsset() would strip their origin and break the link.
-  const isExternal = /^https?:\/\//i.test(href) && !/^https?:\/\/([^/]*\.)?azure\.folio3\.com/i.test(href);
+  // Preserve absolute URLs pointing off-site (e.g. Microsoft AppSource) — only strip
+  // the origin for the live's own azure.folio3.com links so they render as in-clone paths.
+  const isExternal = /^https?:\/\//i.test(href) && !/^https?:\/\/(?:www\.)?azure\.folio3\.com/i.test(href);
   return { text: text.trim(), href: isExternal ? href : (localAsset(href) || href) };
 };
-const isExternalUrl = (href: string) => /^https?:\/\//i.test(href) && !/^https?:\/\/([^/]*\.)?azure\.folio3\.com/i.test(href);
 // Only the SITE's own logo is chrome — not content images that merely contain
 // "azure-logo" in their filename (e.g. partner-designation badges "*-azure-logo-img.webp").
 const isChromeImg = (src: string) => /folio3_by_azure|folio3[-_]azure|azure-logo\.(?:svg|png|webp|jpe?g)|\/logo[-.]/i.test(src);
@@ -169,9 +168,14 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
                 {ctas.map((c, j) => {
-                  const ext = isExternalUrl(c.href);
+                  const external = /^https?:\/\//i.test(c.href);
                   return (
-                    <Link key={j} href={c.href} {...(ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
+                    <Link
+                      key={j}
+                      href={c.href}
+                      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}
+                    >
                       {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
                       {c.text}
                     </Link>
