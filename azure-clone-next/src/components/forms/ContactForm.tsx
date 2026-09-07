@@ -7,9 +7,22 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { LeadSchema, type LeadInput } from '@/lib/lead-schema';
 
+const HEAR_ABOUT_US_OPTIONS = [
+  'AI Search or Chatbot (ChatGPT, Gemini, Perplexity, Claude, Grok, CoPilot, etc.)',
+  'Internet Research',
+  'Advertisements',
+  'Social Media',
+  'Microsoft Azure Marketplace/AppSource',
+  'Event or Trade Show',
+  'Other (Please Specify)',
+];
+
 export function ContactForm() {
   const router = useRouter();
   const [serverError, setServerError] = useState<string | null>(null);
+  const [hearAboutUs, setHearAboutUs] = useState('');
+  const [hearAboutUsOther, setHearAboutUsOther] = useState('');
+  const [hearAboutUsError, setHearAboutUsError] = useState<string | null>(null);
   const uid = useId(); // unique per instance → safe even if the form renders twice on a page
   const fid = (n: string) => `${uid}-${n}`;
   const eid = (n: string) => `${uid}-${n}-err`;
@@ -33,6 +46,15 @@ export function ContactForm() {
 
   async function onSubmit(data: LeadInput) {
     setServerError(null);
+    if (!hearAboutUs) {
+      setHearAboutUsError('Please let us know how you heard about us.');
+      return;
+    }
+    if (hearAboutUs === 'Other (Please Specify)' && !hearAboutUsOther.trim()) {
+      setHearAboutUsError('Please specify how you heard about us.');
+      return;
+    }
+    setHearAboutUsError(null);
     // attach Turnstile token if the widget rendered
     const token = (document.querySelector('input[name="cf-turnstile-response"]') as HTMLInputElement | null)?.value;
     const res = await fetch('/api/lead/', {
@@ -76,6 +98,57 @@ export function ContactForm() {
         <textarea id={fid('message')} rows={5} className={field} placeholder="How can we help? *" aria-required="true" aria-invalid={errors.message ? 'true' : 'false'} aria-describedby={errors.message ? eid('message') : undefined} {...register('message')} />
         {errors.message && <p id={eid('message')} role="alert" className={err}>{errors.message.message}</p>}
       </div>
+
+      <div>
+        <label htmlFor={fid('hearAboutUs')} className="mb-1 block text-sm text-ink">
+          How did you hear about us? <span aria-hidden>*</span>
+        </label>
+        <select
+          id={fid('hearAboutUs')}
+          name="hearAboutUs"
+          data-clarity-unmask="true"
+          className={field}
+          value={hearAboutUs}
+          aria-required="true"
+          aria-invalid={hearAboutUsError && !hearAboutUs ? 'true' : 'false'}
+          aria-describedby={hearAboutUsError ? eid('hearAboutUs') : undefined}
+          onChange={(e) => {
+            setHearAboutUs(e.target.value);
+            if (e.target.value) setHearAboutUsError(null);
+          }}
+        >
+          <option value="">Select an option</option>
+          {HEAR_ABOUT_US_OPTIONS.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+        {hearAboutUsError && hearAboutUs !== 'Other (Please Specify)' && (
+          <p id={eid('hearAboutUs')} role="alert" className={err}>{hearAboutUsError}</p>
+        )}
+      </div>
+      {hearAboutUs === 'Other (Please Specify)' && (
+        <div>
+          <label htmlFor={fid('hearAboutUsOther')} className="sr-only">Please specify</label>
+          <input
+            id={fid('hearAboutUsOther')}
+            name="hearAboutUsOther"
+            data-clarity-unmask="true"
+            className={field}
+            placeholder="Please specify *"
+            aria-required="true"
+            aria-invalid={hearAboutUsError && !hearAboutUsOther.trim() ? 'true' : 'false'}
+            aria-describedby={hearAboutUsError ? eid('hearAboutUsOther') : undefined}
+            value={hearAboutUsOther}
+            onChange={(e) => {
+              setHearAboutUsOther(e.target.value);
+              if (e.target.value.trim()) setHearAboutUsError(null);
+            }}
+          />
+          {hearAboutUsError && (
+            <p id={eid('hearAboutUsOther')} role="alert" className={err}>{hearAboutUsError}</p>
+          )}
+        </div>
+      )}
 
       {/* honeypot — hidden from users, bots fill it → silently rejected */}
       <input type="text" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" {...register('website')} />

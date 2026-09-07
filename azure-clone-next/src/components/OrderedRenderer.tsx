@@ -26,11 +26,13 @@ type Img = { src: string; w: number; h: number };
 type Block = { t: 'p' | 'li'; text: string } | { t: 'img'; img: Img };
 type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: Img[]; ctas: Cta[]; blocks: Block[] };
 
-// External (non-azure.folio3.com) http(s) URLs are preserved verbatim; localAsset would
-// otherwise strip the origin and break links to third-party sites (e.g. Microsoft AppSource).
-const isExternalHref = (href: string) => /^https?:\/\//i.test(href) && !/(?:^|\/\/)([^/]*\.)?azure\.folio3\.com(?:$|\/)/i.test(href);
-const cleanCta = (text: string, href: string | null): Cta | undefined =>
-  text && href && href !== '#' ? { text: text.trim(), href: isExternalHref(href) ? href : (localAsset(href) || href) } : undefined;
+const cleanCta = (text: string, href: string | null): Cta | undefined => {
+  if (!text || !href || href === '#') return undefined;
+  // Preserve absolute URLs pointing off-site (e.g. Microsoft AppSource) — only strip
+  // the origin for the live's own azure.folio3.com links so they render as in-clone paths.
+  const isExternal = /^https?:\/\//i.test(href) && !/^https?:\/\/(?:www\.)?azure\.folio3\.com/i.test(href);
+  return { text: text.trim(), href: isExternal ? href : (localAsset(href) || href) };
+};
 // Only the SITE's own logo is chrome — not content images that merely contain
 // "azure-logo" in their filename (e.g. partner-designation badges "*-azure-logo-img.webp").
 const isChromeImg = (src: string) => /folio3_by_azure|folio3[-_]azure|azure-logo\.(?:svg|png|webp|jpe?g)|\/logo[-.]/i.test(src);
@@ -166,7 +168,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
               {sub && <p className="mt-6 max-w-xl text-lg text-body">{sub}</p>}
               <div className="mt-8 flex flex-wrap gap-4">
                 {ctas.map((c, j) => {
-                  const external = isExternalHref(c.href);
+                  const external = /^https?:\/\//i.test(c.href);
                   return (
                     <Link
                       key={j}

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { HeroSlider } from '@/components/sections/HeroSlider';
-import { Counter } from '@/components/ui/Counter';
 
 const STATS = [
   { to: 500, suffix: '+', label: 'Our Clients' },
@@ -24,7 +23,7 @@ export function HomeHero() {
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
           {STATS.map((s) => (
             <div key={s.label}>
-              <Counter to={s.to} suffix={s.suffix} className="text-4xl font-bold text-brand" />
+              <div className="text-4xl font-bold text-brand">{s.to}{s.suffix}</div>
               <div className="mt-1 text-sm text-body">{s.label}</div>
             </div>
           ))}
