@@ -308,5 +308,10 @@
     "source": "/end-to-end-bi-solution/",
     "destination": "/azure-data-analytics/",
     "permanent": true
+  },
+  {
+    "source": "/folio3-employee-self-service-app/",
+    "destination": "/solution/folio3-employee-self-service-app/",
+    "permanent": true
   }
 ]

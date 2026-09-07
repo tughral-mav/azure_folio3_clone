@@ -28,8 +28,8 @@ type Unit = { tag: string; title: string; paras: string[]; lis: string[]; imgs: 
 
 const cleanCta = (text: string, href: string | null): Cta | undefined => {
   if (!text || !href || href === '#') return undefined;
-  // External URLs to a different host (e.g. Microsoft Partner links) must pass through
-  // untouched — localAsset would strip their origin and turn them into a same-site path.
+  // Preserve absolute URLs pointing off-site (e.g. Microsoft AppSource) — only strip
+  // the origin for the live's own azure.folio3.com links so they render as in-clone paths.
   const isExternal = /^https?:\/\//i.test(href) && !/^https?:\/\/(?:www\.)?azure\.folio3\.com/i.test(href);
   return { text: text.trim(), href: isExternal ? href : (localAsset(href) || href) };
 };
@@ -170,7 +170,12 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
                 {ctas.map((c, j) => {
                   const external = /^https?:\/\//i.test(c.href);
                   return (
-                    <Link key={j} href={c.href} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}>
+                    <Link
+                      key={j}
+                      href={c.href}
+                      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className={j === 0 ? 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide' : 'btn-outline inline-flex items-center gap-2 uppercase tracking-wide'}
+                    >
                       {/video/i.test(c.text) && <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>}
                       {c.text}
                     </Link>
@@ -453,7 +458,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
         (agentExtras.videoHeading && hnorm(agentExtras.videoHeading).includes(hnorm(heading).slice(0, 18))))) {
       const vh = agentExtras.videoHeading || heading;
       out.push(
-        <section key={key++} id="video-demo" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24"><div className="container-x">
+        <section key={key++} id="vidDemo" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24"><div className="container-x">
           <h2 className="mx-auto mb-10 max-w-4xl text-center text-3xl font-bold leading-tight text-ink lg:text-4xl">{vh}</h2>
           <VideoEmbed youtube={agentExtras.video.youtube} poster={agentExtras.video.poster} title={vh} />
         </div></section>,
