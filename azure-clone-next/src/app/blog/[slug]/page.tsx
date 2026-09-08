@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getBlogPost(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: post.seoTitle,
     description: post.description ?? undefined,
     alternates: { canonical: `/blog/${slug}/` },
     openGraph: { title: post.title, description: post.description ?? undefined, type: 'article', images: post.heroImage ? [post.heroImage] : [] },
@@ -55,10 +55,23 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     ],
   };
 
+  // FAQPage schema — emitted only for posts that ship an FAQ block (helps AI answer engines
+  // surface the Q&A). Existing captures carry no `faqs`, so nothing changes for them.
+  const faqLd = post.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <article className="container-x max-w-3xl py-16">
         <h1 className="text-3xl font-bold leading-tight lg:text-4xl">{post.title}</h1>
         {post.description && <p className="mt-4 text-lg text-body">{post.description}</p>}
