@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink } from '@/components/layout/ExternalLink';
+import { withFolio3Utm } from '@/lib/folio3-utm';
 
 const HOSTS: Record<string, string> = {
   'folio3.ai': 'ai',
@@ -206,7 +207,7 @@ function ItemRow({ item, current }: { item: Item; current: string | null }) {
     );
   }
   return (
-    <ExternalLink className="fn-item" href={item.href}>
+    <ExternalLink className="fn-item" href={withFolio3Utm(item.href, 'nav')}>
       {inner}
     </ExternalLink>
   );

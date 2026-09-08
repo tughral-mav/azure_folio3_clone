@@ -2,11 +2,13 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink } from '@/components/layout/ExternalLink';
+import { withFolio3Utm } from '@/lib/folio3-utm';
 
 const HOSTS: Record<string, string> = {
   'folio3.ai': 'ai',
   'data.folio3.com': 'data',
   'cloud.folio3.com': 'cloud',
+  'azure.folio3.com': 'azure',
   'folio3.com': 'appdev',
   'netsuite.folio3.com': 'netsuite',
   'dynamics.folio3.com': 'dynamics',
@@ -41,6 +43,7 @@ const TECHNOLOGY: Item[] = [
 ];
 
 const PLATFORMS: Item[] = [
+  { key: 'azure', label: 'Microsoft Azure', href: 'https://azure.folio3.com/', desc: 'Azure cloud consulting and managed services' },
   { key: 'netsuite', label: 'NetSuite', href: 'https://netsuite.folio3.com/', desc: 'ERP implementation and support' },
   { key: 'dynamics', label: 'Microsoft Dynamics', href: 'https://dynamics.folio3.com/', desc: 'Dynamics 365 and Business Central' },
   { key: 'salesforce', label: 'Salesforce', href: 'https://crm.folio3.com/salesforce/', desc: 'CRM consulting and integration' },
@@ -73,7 +76,7 @@ function Row({ item, current }: { item: Item; current: string | null }) {
     );
   }
   return (
-    <ExternalLink className="ef-item" href={item.href}>
+    <ExternalLink className="ef-item" href={withFolio3Utm(item.href, 'sidebar')}>
       {inner}
     </ExternalLink>
   );
