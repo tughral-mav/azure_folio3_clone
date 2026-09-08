@@ -1,0 +1,14 @@
+{
+  "id": "blog-50off-2026-summer",
+  "enabled": true,
+  "startDate": "2026-07-24",
+  "endDate": "2026-08-31",
+  "scrollTrigger": 0.1,
+  "frequencyCapDays": 30,
+  "eyebrow": "Limited-time offer",
+  "headline": "Half price on every Folio3 service",
+  "body": "For a limited time, get 50% off all Azure, data & AI engagements. Let's scope yours.",
+  "ctaLabel": "Get my 50% off",
+  "ctaHref": "/contact-us/",
+  "dismissLabel": "Close offer"
+}
