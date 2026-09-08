@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { OFFICES } from '@/lib/offices';
 import { ExternalLink } from '@/components/layout/ExternalLink';
+import { withFolio3Utm } from '@/lib/folio3-utm';
 
 const NETWORK_PRACTICES: { label: string; href: string }[] = [
   { label: 'AI/ML', href: 'https://www.folio3.ai/' },
@@ -63,7 +64,7 @@ export function Footer() {
             {NETWORK_PRACTICES.map((p) => (
               <li key={p.label}>
                 <ExternalLink
-                  href={p.href}
+                  href={withFolio3Utm(p.href, 'footer')}
                   className="group flex items-center gap-2 text-sm text-white/80 transition-colors hover:text-white"
                 >
                   <span aria-hidden className="text-white/40 group-hover:text-white">&bull;</span>
