@@ -38,7 +38,7 @@ export const OFFICES: Office[] = [
   },
   {
     country: 'Canada Office',
-    lines: ['3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1', 'Tel: +1 408 365 4638', 'Support: +1 (408) 512 1812'],
+    lines: ['3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1', 'Tel: +1 323 555 6439', 'Support: +1 (408) 512 1812'],
   },
   {
     country: 'Bulgaria Office',
