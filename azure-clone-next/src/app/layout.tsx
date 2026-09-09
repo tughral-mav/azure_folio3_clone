@@ -89,6 +89,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ExploreFolio3Drawer />
         <LeaveSiteConfirm />
 
+        {/* Google tag (gtag.js) — GA4 */}
+        <Script
+          id="ga4-src"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-4QS7S9118J"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4QS7S9118J');
+        `}</Script>
+
         {/* Deferred tracking — replaces GTM/Clarity that render-block today */}
         {GTM && (
           <Script id="gtm" strategy="afterInteractive">{`
