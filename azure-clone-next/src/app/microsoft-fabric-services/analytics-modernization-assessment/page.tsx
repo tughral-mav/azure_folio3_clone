@@ -177,24 +177,79 @@ export default function AnalyticsModernizationAssessmentPage() {
     <>
       {/* Fold 1 — Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x relative py-16 lg:py-24">
-          <div className="max-w-3xl">
+        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-2 lg:py-24">
+          <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">Microsoft Fabric Services</p>
             <h1 className="text-4xl font-bold leading-[1.15] text-ink lg:text-5xl">
               Analytics Modernization Assessment for Microsoft Fabric
             </h1>
-            <p className="mt-6 text-lg text-body">
+            <p className="mt-6 max-w-xl text-lg text-body">
               A 4-week, fixed-scope audit of your data estate by a Microsoft Solutions Partner. We benchmark your current
               analytics stack, classify every workload for Microsoft Fabric and AI readiness, and hand over a costed
               migration roadmap — before you commit to a single license or Copilot seat.
-            </p>
-            <p className="mt-4 text-sm text-body">
-              Microsoft Solutions Partner · Data &amp; AI (Azure) &nbsp;|&nbsp; 500+ clients across 7+ global offices &nbsp;|&nbsp; 20+ years delivering enterprise data platforms
             </p>
             <div className="mt-8">
               <Link href={FORM_HREF} className="btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide">
                 Schedule a Free Consultation
               </Link>
+            </div>
+          </div>
+          <Reveal animation="zoomIn" className="relative">
+            <Image
+              src="/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp"
+              alt="Team reviewing a Microsoft Fabric analytics dashboard"
+              width={620}
+              height={460}
+              priority
+              className="h-auto w-full"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Trust strip — sits directly under the hero */}
+      <section className="bg-[linear-gradient(180deg,#f4f7fb_0%,#eef3f8_100%)]">
+        <div className="container-x grid grid-cols-1 gap-8 py-8 md:grid-cols-3 md:gap-6 lg:py-10">
+          <div className="flex items-center gap-4">
+            <span aria-hidden className="shrink-0">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="17" height="17" fill="#F25022" />
+                <rect x="23" y="4" width="17" height="17" fill="#7FBA00" />
+                <rect x="4" y="23" width="17" height="17" fill="#00A4EF" />
+                <rect x="23" y="23" width="17" height="17" fill="#FFB900" />
+              </svg>
+            </span>
+            <div>
+              <div className="text-sm font-semibold leading-snug text-ink">Microsoft Solutions Partner</div>
+              <div className="text-sm text-body">Data &amp; AI (Azure)</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <span aria-hidden className="shrink-0 text-brand">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="9" cy="8" r="3.2" />
+                <path d="M2.5 19c0-3 3-5 6.5-5s6.5 2 6.5 5" />
+                <circle cx="17" cy="7" r="2.6" />
+                <path d="M15 13.5c3 .3 5.5 2.2 5.5 5" />
+              </svg>
+            </span>
+            <div>
+              <div className="text-2xl font-bold leading-none text-ink">500+</div>
+              <div className="text-sm text-body">clients across 7+ global offices</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <span aria-hidden className="shrink-0 text-brand">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3c2.8 3 4.2 6 4.2 9s-1.4 6-4.2 9" />
+                <path d="M12 3c-2.8 3-4.2 6-4.2 9s1.4 6 4.2 9" />
+              </svg>
+            </span>
+            <div>
+              <div className="text-2xl font-bold leading-none text-ink">20+</div>
+              <div className="text-sm text-body">years delivering enterprise data platforms</div>
             </div>
           </div>
         </div>
