@@ -55,6 +55,7 @@ add('/case-studies/wph-intellifabric/', '/case-studies/popcorn-producer-intellif
 add('/microsoft-power-platform/', '/microsoft-power-platform-services/');
 add('/end-to-end-bi-solution/', '/azure-data-analytics/');
 add('/folio3-employee-self-service-app/', '/solution/folio3-employee-self-service-app/');
+add('/copilot-implementation-food-verification/', '/case-studies/copilot-implementation-food-verification/');
 // test/junk slugs explicitly (already covered by group rules, but keep explicit for clarity)
 for (const { path } of all) {
   if (/(manufactring-test|e-commerce-and-retail-\d|healthcare-2|financial-services-2)/.test(path) && !seen.has(path)) {

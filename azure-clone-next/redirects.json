@@ -313,5 +313,10 @@
     "source": "/folio3-employee-self-service-app/",
     "destination": "/solution/folio3-employee-self-service-app/",
     "permanent": true
+  },
+  {
+    "source": "/copilot-implementation-food-verification/",
+    "destination": "/case-studies/copilot-implementation-food-verification/",
+    "permanent": true
   }
 ]
