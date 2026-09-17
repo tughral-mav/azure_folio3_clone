@@ -322,10 +322,16 @@ export default function AnalyticsModernizationAssessmentPage() {
               least three of the following:
             </p>
           </Reveal>
-          <ul className="mx-auto mt-10 max-w-3xl space-y-4">
+          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-10 gap-y-6 md:grid-cols-2">
             {painPoints.map((p, i) => (
               <li key={i} className="flex gap-3 text-body">
-                <span aria-hidden className="mt-1 shrink-0 text-brand">✕</span>
+                <span aria-hidden className="mt-0.5 shrink-0 text-[#d93636]">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M8.5 8.5l7 7" />
+                    <path d="M15.5 8.5l-7 7" />
+                  </svg>
+                </span>
                 <span className="leading-relaxed">{p}</span>
               </li>
             ))}
