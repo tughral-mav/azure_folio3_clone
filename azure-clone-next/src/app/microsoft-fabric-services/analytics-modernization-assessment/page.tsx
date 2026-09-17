@@ -215,25 +215,7 @@ export default function AnalyticsModernizationAssessmentPage() {
     <>
       {/* Fold 1 — Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x relative pt-8 lg:pt-10">
-          {/* Partner badge strip */}
-          <div className="flex flex-wrap items-center gap-4">
-            <Image
-              src="/wp-content/uploads/2022/06/folio3_by_azure.svg"
-              alt="Folio3 Azure"
-              width={160}
-              height={36}
-              priority
-              className="h-9 w-auto"
-            />
-            <span aria-hidden className="h-8 w-px bg-ink/20" />
-            <div className="text-sm leading-tight text-ink">
-              <div className="font-semibold">Microsoft Solutions Partner</div>
-              <div className="text-body">Data &amp; AI (Azure)</div>
-            </div>
-          </div>
-        </div>
-        <div className="container-x relative grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
+        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-2 lg:py-24">
           <div>
             <h1 className="text-4xl font-bold leading-[1.1] text-ink lg:text-5xl xl:text-6xl">
               Analytics Modernization Assessment for{' '}
