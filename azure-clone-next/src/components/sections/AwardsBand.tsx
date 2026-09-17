@@ -39,10 +39,12 @@ export function AwardsBand({ autoScroll = false }: { autoScroll?: boolean } = {}
         <div className="shrink-0">
           <h3 className="text-xl font-bold leading-tight text-white">Awards &amp;</h3>
           <h3 className="text-xl font-bold leading-tight text-white">Recognization</h3>
-          <div className="mt-3 flex gap-2">
-            <button type="button" aria-label="Previous" onClick={() => scroll(-1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">‹</button>
-            <button type="button" aria-label="Next" onClick={() => scroll(1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">›</button>
-          </div>
+          {!autoScroll && (
+            <div className="mt-3 flex gap-2">
+              <button type="button" aria-label="Previous" onClick={() => scroll(-1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">‹</button>
+              <button type="button" aria-label="Next" onClick={() => scroll(1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">›</button>
+            </div>
+          )}
         </div>
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-4">
