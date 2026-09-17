@@ -1,8 +1,9 @@
 'use client';
 
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
 /** "Awards & Recognition" — bright-blue slider band of Microsoft certification
  *  badges + nav arrows (matches the live cert-badge slider). */
@@ -24,8 +25,12 @@ const BADGES = [
   '/wp-content/uploads/2023/07/mirosoft_certified_trainer.svg',
 ];
 
-export function AwardsBand() {
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true, align: 'start', dragFree: true });
+export function AwardsBand({ autoScroll = false }: { autoScroll?: boolean } = {}) {
+  const plugins = useMemo(
+    () => (autoScroll ? [Autoplay({ delay: 1000, stopOnInteraction: false, stopOnMouseEnter: true })] : []),
+    [autoScroll]
+  );
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true, align: 'start', dragFree: true }, plugins);
   const scroll = useCallback((d: -1 | 1) => embla && (d === 1 ? embla.scrollNext() : embla.scrollPrev()), [embla]);
 
   return (
@@ -34,10 +39,12 @@ export function AwardsBand() {
         <div className="shrink-0">
           <h3 className="text-xl font-bold leading-tight text-white">Awards &amp;</h3>
           <h3 className="text-xl font-bold leading-tight text-white">Recognization</h3>
-          <div className="mt-3 flex gap-2">
-            <button type="button" aria-label="Previous" onClick={() => scroll(-1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">‹</button>
-            <button type="button" aria-label="Next" onClick={() => scroll(1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">›</button>
-          </div>
+          {!autoScroll && (
+            <div className="mt-3 flex gap-2">
+              <button type="button" aria-label="Previous" onClick={() => scroll(-1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">‹</button>
+              <button type="button" aria-label="Next" onClick={() => scroll(1)} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand-bright">›</button>
+            </div>
+          )}
         </div>
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-4">
