@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { Reveal } from '@/components/ui/Reveal';
 import { AwardsBand } from '@/components/sections/AwardsBand';
 import { CaseStudies } from '@/components/sections/CaseStudies';
-import { ConsultationForm } from '@/components/forms/ConsultationForm';
+import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/analytics-modernization-assessment';
 const TITLE = 'Analytics Modernization Assessment | Microsoft Fabric | Folio3';
 const DESCRIPTION =
   'Free Analytics Modernization Assessment by a Microsoft Solutions Partner. Get your Fabric Readiness Score, gap analysis, and 4-week migration roadmap.';
 const OG_IMAGE = '/wp-content/uploads/2023/07/Microsoft-Fabric-Implementation-Services.webp';
-const FORM_HREF = '#consultation';
+const FORM_HREF = '#pgForm';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -124,10 +124,6 @@ const faqs = [
   {
     q: 'What is an Analytics Modernization Assessment?',
     a: "An Analytics Modernization Assessment is a structured audit of your current data platform, reporting stack, and analytics workloads. It identifies which workloads are ready to move to Microsoft Fabric, quantifies the cost and ROI of the migration, and produces a prioritized roadmap. Folio3's version is delivered by a Microsoft Solutions Partner in Data & AI and runs 4 weeks with fixed scope.",
-  },
-  {
-    q: 'How much does the Microsoft Fabric readiness assessment cost?',
-    a: 'The initial consultation is free. The full 4-week assessment is a fixed-price engagement scoped to your data estate size and complexity, typically ranging from USD 25,000 to USD 75,000. If you engage Folio3 for the migration, the full assessment fee is credited against your Microsoft Fabric migration services invoice.',
   },
   {
     q: 'Do we have to commit to a Fabric migration to book the assessment?',
@@ -738,27 +734,7 @@ export default function AnalyticsModernizationAssessmentPage() {
         </div>
       </section>
 
-      <section id="consultation" className="bg-brand-ink py-20">
-        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand/80">Schedule a free consultation</p>
-            <h2 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl">
-              Get your Fabric Readiness Score in 4 weeks.
-            </h2>
-            <p className="mt-4 max-w-md text-white/80">
-              Talk to a Microsoft Solutions Partner about your data estate. Fixed scope, fixed price, and every deliverable
-              is yours to keep.
-            </p>
-          </div>
-          <div className="rounded-2xl bg-white p-8 shadow-cardHover">
-            <h2 className="text-2xl">Schedule a Free Consultation</h2>
-            <p className="mt-2 text-sm text-body">Tell us about your current data platform and we&apos;ll be in touch.</p>
-            <div className="mt-6">
-              <ConsultationForm />
-            </div>
-          </div>
-        </div>
-      </section>
+      <OneToOneCTA />
 
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
