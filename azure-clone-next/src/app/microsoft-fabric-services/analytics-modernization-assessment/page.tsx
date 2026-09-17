@@ -432,73 +432,123 @@ export default function AnalyticsModernizationAssessmentPage() {
               gets its own scored section in the final report, so nothing important gets buried inside a summary paragraph.
             </p>
           </Reveal>
-          <div className="mt-12 space-y-6">
-            <Reveal animation="fadeInUp">
-              <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Architecture and infrastructure</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  The full topology of your current platform, sources, ingestion, storage, compute, pipelines, dependencies,
-                  and security posture. We identify what is already Fabric-ready, what is not, and where technical debt is
-                  concentrated across{' '}
-                  <a href="https://azure.folio3.com/azure-data-analytics/" className="text-brand underline">
-                    Azure Synapse, Azure Data Factory
-                  </a>
-                  , on-premise SQL Server, and any parallel Databricks or Snowflake estate. Sits alongside the wider{' '}
-                  <a href="https://azure.folio3.com/azure-cloud-service/" className="text-brand underline">
-                    Azure cloud services
-                  </a>{' '}
-                  portfolio Folio3 runs for enterprise customers.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal animation="fadeInUp" delay={70}>
-              <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Data engineering and operations</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  How well your ingestion, orchestration, and processing layers translate to Fabric&apos;s lake-centric
-                  model on OneLake. Pipeline complexity, scheduling maturity, notebook and stored-procedure inventory, and
-                  the real run cost of your current DataOps setup.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal animation="fadeInUp" delay={140}>
-              <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Analytics, BI, AI, and self-service</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  Where your{' '}
-                  <a href="https://azure.folio3.com/microsoft-power-platform/" className="text-brand underline">
-                    Power BI reports, semantic models
-                  </a>
-                  , KPIs, data products, and AI workloads stand today, and how each one lands in Microsoft Fabric with
-                  Direct Lake and Copilot in Fabric enabled. Self-service maturity for the business users who will
-                  actually be using the platform after migration.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal animation="fadeInUp" delay={210}>
-              <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Governance and compliance</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  DataOps and DevOps maturity, access controls, monitoring, audit logging, and alignment with your
-                  enterprise security and regulatory obligations. Every finding is mapped against a Microsoft Purview
-                  target-state model so remediation is actionable, not abstract. Ongoing enforcement is handled by{' '}
-                  <a href="https://azure.folio3.com/azure-managed-services/" className="text-brand underline">
-                    Folio3&apos;s Azure managed services
-                  </a>{' '}
-                  after migration.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal animation="fadeInUp" delay={280}>
-              <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Skills and team capability</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  An honest read on which of your data engineering, BI, and platform skills carry directly into Fabric,
-                  which need targeted upskilling, and where you may need to hire or partner. The most expensive Fabric
-                  mistakes are not architectural, they are the skills gaps nobody scoped for.
-                </p>
-              </div>
-            </Reveal>
+          <div className="mx-auto mt-12 max-w-5xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
+            {[
+              {
+                title: 'Architecture and infrastructure',
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 11L12 4l9 7" />
+                    <path d="M5 10v10h14V10" />
+                    <path d="M10 20v-6h4v6" />
+                  </svg>
+                ),
+                body: (
+                  <>
+                    The full topology of your current platform, sources, ingestion, storage, compute, pipelines,
+                    dependencies, and security posture. We identify what is already Fabric-ready, what is not, and
+                    where technical debt is concentrated across{' '}
+                    <a href="https://azure.folio3.com/azure-data-analytics/" className="text-brand underline">
+                      Azure Synapse, Azure Data Factory
+                    </a>
+                    , on-premise SQL Server, and any parallel Databricks or Snowflake estate. Sits alongside the
+                    wider{' '}
+                    <a href="https://azure.folio3.com/azure-cloud-service/" className="text-brand underline">
+                      Azure cloud services
+                    </a>{' '}
+                    portfolio Folio3 runs for enterprise customers.
+                  </>
+                ),
+              },
+              {
+                title: 'Data engineering and operations',
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <ellipse cx="12" cy="5.5" rx="7.5" ry="2.5" />
+                    <path d="M4.5 5.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+                    <path d="M4.5 11.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+                  </svg>
+                ),
+                body: (
+                  <>
+                    How well your ingestion, orchestration, and processing layers translate to Fabric&apos;s lake-centric
+                    model on OneLake. Pipeline complexity, scheduling maturity, notebook and stored-procedure inventory,
+                    and the real run cost of your current DataOps setup.
+                  </>
+                ),
+              },
+              {
+                title: 'Analytics, BI, AI, and self-service',
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 20V10" />
+                    <path d="M10 20V4" />
+                    <path d="M16 20v-8" />
+                    <path d="M22 20v-4" />
+                    <path d="M3 20h19" />
+                  </svg>
+                ),
+                body: (
+                  <>
+                    Where your{' '}
+                    <a href="https://azure.folio3.com/microsoft-power-platform/" className="text-brand underline">
+                      Power BI reports, semantic models
+                    </a>
+                    , KPIs, data products, and AI workloads stand today, and how each one lands in Microsoft Fabric with
+                    Direct Lake and Copilot in Fabric enabled. Self-service maturity for the business users who will
+                    actually be using the platform after migration.
+                  </>
+                ),
+              },
+              {
+                title: 'Governance and compliance',
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9.5-4.6-1.1-8-5-8-9.5V6l8-3z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                ),
+                body: (
+                  <>
+                    DataOps and DevOps maturity, access controls, monitoring, audit logging, and alignment with your
+                    enterprise security and regulatory obligations. Every finding is mapped against a Microsoft Purview
+                    target-state model so remediation is actionable, not abstract. Ongoing enforcement is handled by{' '}
+                    <a href="https://azure.folio3.com/azure-managed-services/" className="text-brand underline">
+                      Folio3&apos;s Azure managed services
+                    </a>{' '}
+                    after migration.
+                  </>
+                ),
+              },
+              {
+                title: 'Skills and team capability',
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="9" cy="8" r="3.2" />
+                    <path d="M2.5 19c0-3 3-5 6.5-5s6.5 2 6.5 5" />
+                    <circle cx="17" cy="7" r="2.6" />
+                    <path d="M15 13.5c3 .3 5.5 2.2 5.5 5" />
+                  </svg>
+                ),
+                body: (
+                  <>
+                    An honest read on which of your data engineering, BI, and platform skills carry directly into Fabric,
+                    which need targeted upskilling, and where you may need to hire or partner. The most expensive Fabric
+                    mistakes are not architectural, they are the skills gaps nobody scoped for.
+                  </>
+                ),
+              },
+            ].map((row, i) => (
+              <Reveal key={row.title} animation="fadeInUp" delay={i * 60}>
+                <div className="grid gap-4 p-6 sm:p-8 md:grid-cols-[64px_minmax(0,220px)_1fr] md:items-start md:gap-6">
+                  <div aria-hidden className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#e6efff] text-brand">
+                    {row.icon}
+                  </div>
+                  <h3 className="text-base font-semibold leading-snug text-ink md:text-lg">{row.title}</h3>
+                  <p className="text-sm leading-relaxed text-body">{row.body}</p>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
