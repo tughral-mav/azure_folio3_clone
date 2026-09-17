@@ -525,22 +525,32 @@ export default function AnalyticsModernizationAssessmentPage() {
           </div>
           <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
             <Reveal animation="fadeInUp">
-              <div className="h-full rounded-2xl border-l-4 border-brand bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Deliverables you keep</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  Assessment report of approximately 40 pages, 3-year TCO model in Excel, reference architecture diagrams,
-                  workload classification matrix, and an executive summary deck ready for board-level review.
-                </p>
+              <div className="h-full rounded-2xl border border-surface-line bg-[#f4f7fb] p-8">
+                <h3 className="text-lg font-semibold text-ink">Deliverables you keep</h3>
+                <ul className="mt-5 space-y-3 text-sm text-body">
+                  {[
+                    'Assessment report (~40 pages)',
+                    '3-year TCO model in Excel',
+                    'Reference architecture diagrams',
+                    'Workload classification matrix',
+                    'Executive summary deck for board-level review',
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span aria-hidden className="mt-0.5 shrink-0 text-brand">✓</span>
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Reveal>
             <Reveal animation="fadeInUp" delay={80}>
-              <div className="h-full rounded-2xl border-l-4 border-brand-navy bg-white p-7 shadow-card">
-                <h3 className="text-lg font-semibold">Who this assessment is built for</h3>
-                <p className="mt-3 text-sm leading-relaxed text-body">
-                  CIOs, CTOs, and Chief Data Officers evaluating Microsoft Fabric. Heads of Data &amp; Analytics and
-                  Enterprise Architects planning a data platform consolidation. VPs of BI moving off legacy Synapse,
-                  Teradata, on-premise SQL Server, or fragmented Databricks estates.
-                </p>
+              <div className="h-full rounded-2xl border border-surface-line bg-[#f4f7fb] p-8">
+                <h3 className="text-lg font-semibold text-ink">Who this assessment is built for</h3>
+                <div className="mt-5 space-y-4 text-sm leading-relaxed text-body">
+                  <p>CIOs, CTOs, and Chief Data Officers evaluating Microsoft Fabric.</p>
+                  <p>Heads of Data &amp; Analytics and Enterprise Architects planning a data platform consolidation.</p>
+                  <p>VPs of BI moving off legacy Synapse, Teradata, on-premise SQL Server, or fragmented Databricks estates.</p>
+                </div>
               </div>
             </Reveal>
           </div>
