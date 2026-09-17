@@ -215,16 +215,35 @@ export default function AnalyticsModernizationAssessmentPage() {
     <>
       {/* Fold 1 — Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-2 lg:py-24">
+        <div className="container-x relative pt-8 lg:pt-10">
+          {/* Partner badge strip */}
+          <div className="flex flex-wrap items-center gap-4">
+            <Image
+              src="/wp-content/uploads/2022/06/folio3_by_azure.svg"
+              alt="Folio3 Azure"
+              width={160}
+              height={36}
+              priority
+              className="h-9 w-auto"
+            />
+            <span aria-hidden className="h-8 w-px bg-ink/20" />
+            <div className="text-sm leading-tight text-ink">
+              <div className="font-semibold">Microsoft Solutions Partner</div>
+              <div className="text-body">Data &amp; AI (Azure)</div>
+            </div>
+          </div>
+        </div>
+        <div className="container-x relative grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">Microsoft Fabric Services</p>
-            <h1 className="text-4xl font-bold leading-[1.15] text-ink lg:text-5xl">
-              Analytics Modernization Assessment for Microsoft Fabric
+            <h1 className="text-4xl font-bold leading-[1.1] text-ink lg:text-5xl xl:text-6xl">
+              Analytics Modernization Assessment for{' '}
+              <span className="text-brand">Microsoft Fabric</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-body">
-              A 4-week, fixed-scope audit of your data estate by a Microsoft Solutions Partner. We benchmark your current
-              analytics stack, classify every workload for Microsoft Fabric and AI readiness, and hand over a costed
-              migration roadmap — before you commit to a single license or Copilot seat.
+              <span className="font-semibold text-ink">A 4-week, fixed-scope audit</span> of your data estate by a
+              Microsoft Solutions Partner. We benchmark your current analytics stack, classify every workload for
+              Microsoft Fabric and AI readiness, and hand over a costed migration roadmap — before you commit to a
+              single license or Copilot seat.
             </p>
             <div className="mt-8">
               <Link href={FORM_HREF} className="btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide">
@@ -235,7 +254,7 @@ export default function AnalyticsModernizationAssessmentPage() {
           <Reveal animation="zoomIn" className="relative">
             <Image
               src="/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp"
-              alt="Team reviewing a Microsoft Fabric analytics dashboard"
+              alt="Microsoft Fabric analytics dashboard on a laptop"
               width={620}
               height={460}
               priority
