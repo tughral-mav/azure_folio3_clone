@@ -660,7 +660,7 @@ export default function AnalyticsModernizationAssessmentPage() {
       </section>
 
       {/* Fold 9 — Awards & Recognition */}
-      <AwardsBand />
+      <AwardsBand autoScroll />
       <section className="bg-surface-tint py-10">
         <div className="container-x text-center">
           <p className="text-sm text-body">
