@@ -3,8 +3,50 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Reveal } from '@/components/ui/Reveal';
 import { AwardsBand } from '@/components/sections/AwardsBand';
-import { CaseStudies } from '@/components/sections/CaseStudies';
+import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScrollCases';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+
+// Real Results — latest first. Savills and City University of Seattle are
+// preserved (per the brief); the other 4 are recent case studies pulled from
+// the site's Client Success Stories index.
+const caseStudies: CaseItem[] = [
+  {
+    name: 'Agentic HR Policy Feedback',
+    img: '/wp-content/uploads/2026/02/hr-policy.webp',
+    blurb: 'An agentic solution that collects HR policy feedback, updates the policy document, and generates reporting for enterprise HR teams.',
+    href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/',
+  },
+  {
+    name: 'Copilot Studio HR Policy Agent',
+    img: '/wp-content/uploads/2026/02/real-estate-1.webp',
+    blurb: 'Microsoft Copilot Studio-based HR policy agent that automates HR operations end-to-end.',
+    href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/',
+  },
+  {
+    name: 'Weaver Popcorn Hybrids',
+    img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp',
+    blurb: 'Weaver Popcorn Hybrids modernizes analytics with IntelliFabric on Microsoft Fabric.',
+    href: '/case-studies/wph-intellifabric/',
+  },
+  {
+    name: 'Alibaba — Power BI Reporting',
+    img: '/wp-content/uploads/2025/07/alibaba-achieves-faster-financial-closings-with-power-bi-reporting.webp',
+    blurb: 'Alibaba achieves 37% faster financial closings with Power BI reporting.',
+    href: '/power-bi-financial-reporting-for-alibaba/',
+  },
+  {
+    name: 'Savills',
+    img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp',
+    blurb: 'Microsoft Fabric reporting boosts Savills’ operational efficiency by 13%.',
+    href: '/savills/',
+  },
+  {
+    name: 'City University of Seattle',
+    img: '/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp',
+    blurb: 'Power Apps solution and data platform on Azure for The City University of Seattle.',
+    href: '/city-university-azure/',
+  },
+];
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/analytics-modernization-assessment';
 const TITLE = 'Analytics Modernization Assessment | Microsoft Fabric | Folio3';
@@ -711,8 +753,8 @@ export default function AnalyticsModernizationAssessmentPage() {
         </div>
       </section>
 
-      {/* Fold 12 — Real Results, Real Impact (reuses homepage CaseStudies component) */}
-      <CaseStudies />
+      {/* Fold 12 — Real Results, Real Impact (auto-scrolling horizontal strip) */}
+      <AutoScrollCases cases={caseStudies} />
 
       {/* Fold 13 — FAQs + Consultation form */}
       <section className="py-16 lg:py-24">
