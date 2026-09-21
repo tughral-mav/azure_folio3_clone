@@ -3,7 +3,47 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Reveal } from '@/components/ui/Reveal';
 import { AwardsBand } from '@/components/sections/AwardsBand';
+import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScrollCases';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+
+const caseStudies: CaseItem[] = [
+  {
+    name: 'Weaver Popcorn Hybrids',
+    img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp',
+    blurb: 'Weaver Popcorn Hybrids modernizes analytics with IntelliFabric on Microsoft Fabric.',
+    href: '/case-studies/wph-intellifabric/',
+  },
+  {
+    name: 'Savills',
+    img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp',
+    blurb: 'Microsoft Fabric reporting boosts Savills’ operational efficiency by 13%.',
+    href: '/savills/',
+  },
+  {
+    name: 'Alibaba — Power BI Reporting',
+    img: '/wp-content/uploads/2025/07/alibaba-achieves-faster-financial-closings-with-power-bi-reporting.webp',
+    blurb: 'Alibaba achieves 37% faster financial closings with Power BI reporting.',
+    href: '/power-bi-financial-reporting-for-alibaba/',
+  },
+  {
+    name: 'City University of Seattle',
+    img: '/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp',
+    blurb: 'Power Apps solution and data platform on Azure for The City University of Seattle.',
+    href: '/city-university-azure/',
+  },
+  {
+    name: 'Agentic HR Policy Feedback',
+    img: '/wp-content/uploads/2026/02/hr-policy.webp',
+    blurb: 'An agentic solution that collects HR policy feedback, updates the policy document, and generates reporting for enterprise HR teams.',
+    href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/',
+  },
+  {
+    name: 'Copilot Studio HR Policy Agent',
+    img: '/wp-content/uploads/2026/02/real-estate-1.webp',
+    blurb: 'Microsoft Copilot Studio-based HR policy agent that automates HR operations end-to-end.',
+    href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/',
+  },
+];
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/training/';
 const TITLE = 'Microsoft Fabric Training for Enterprise Teams | Folio3 Azure';
@@ -429,6 +469,9 @@ export default function MicrosoftFabricTrainingPage() {
         </div>
       </section>
 
+      {/* Awards & Recognition */}
+      <AwardsBand autoScroll />
+
       {/* Hands-on labs and capstone */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
@@ -622,8 +665,21 @@ export default function MicrosoftFabricTrainingPage() {
         </div>
       </section>
 
-      {/* Awards */}
-      <AwardsBand autoScroll />
+      {/* Real Results — case studies */}
+      <section className="py-16 lg:py-20">
+        <div className="container-x">
+          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
+            <span className="eyebrow">Real results</span>
+            <h2 className="text-3xl lg:text-4xl">Enterprises that turned Fabric learning into delivery</h2>
+            <p className="mt-4 text-body">
+              A sample of Folio3 client engagements where training, readiness, and Microsoft Fabric implementation came together to move real business outcomes.
+            </p>
+          </Reveal>
+        </div>
+        <div className="mt-12">
+          <AutoScrollCases cases={caseStudies} />
+        </div>
+      </section>
 
       {/* FAQs */}
       <section className="py-16 lg:py-24">
