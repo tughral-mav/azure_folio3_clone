@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Metadata } from 'next';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { AwardsBand } from '@/components/sections/AwardsBand';
 import { FaqScripts } from './faq-scripts';
 
 const HTML_PATH = join(
@@ -17,7 +18,11 @@ const BODY_RAW = HTML_SRC.match(/<body[^>]*>([\s\S]*?)<\/body>/)?.[1] ?? '';
 const FONTS_HREF =
   HTML_SRC.match(/<link[^>]+fonts\.googleapis\.com[^>]+href="([^"]+)"/)?.[1] ?? '';
 
-const BODY = BODY_RAW.replace(/<script[\s\S]*?<\/script>/g, '');
+const BODY_NO_SCRIPTS = BODY_RAW.replace(/<script[\s\S]*?<\/script>/g, '');
+const AWARDS_MARKER = '<!-- AWARDS_SLOT -->';
+const [BODY_BEFORE_AWARDS, BODY_AFTER_AWARDS] = BODY_NO_SCRIPTS.includes(AWARDS_MARKER)
+  ? (BODY_NO_SCRIPTS.split(AWARDS_MARKER) as [string, string])
+  : [BODY_NO_SCRIPTS, ''];
 
 const SCOPE = '.bc-dash-page';
 
@@ -130,7 +135,13 @@ export default function Page() {
     <>
       <div className="bc-dash-page">
         <style dangerouslySetInnerHTML={{ __html: SCOPED_STYLE }} />
-        <div dangerouslySetInnerHTML={{ __html: BODY }} />
+        <div dangerouslySetInnerHTML={{ __html: BODY_BEFORE_AWARDS }} />
+        {BODY_AFTER_AWARDS && (
+          <>
+            <AwardsBand autoScroll />
+            <div dangerouslySetInnerHTML={{ __html: BODY_AFTER_AWARDS }} />
+          </>
+        )}
         <FaqScripts />
       </div>
       <OneToOneCTA tone="light" />
