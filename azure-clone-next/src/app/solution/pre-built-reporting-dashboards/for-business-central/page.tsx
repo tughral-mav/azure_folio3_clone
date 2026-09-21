@@ -115,14 +115,14 @@ const SCOPED_STYLE =
   scopeCss(STYLE_RAW, SCOPE);
 
 export const metadata: Metadata = {
-  title: 'Pre-Built Power BI Dashboards for Business Central | Folio3 Azure',
+  title: 'Pre-Built Power BI Dashboards for Business Central',
   description:
     'Get pre-built Power BI dashboards for Dynamics 365 Business Central. Track finance, sales, inventory, purchasing, and operations with Folio3 Azure.',
   alternates: {
     canonical: '/solution/pre-built-reporting-dashboards/for-business-central/',
   },
   openGraph: {
-    title: 'Pre-Built Power BI Dashboards for Business Central | Folio3 Azure',
+    title: 'Pre-Built Power BI Dashboards for Business Central',
     description:
       'Get pre-built Power BI dashboards for Dynamics 365 Business Central. Track finance, sales, inventory, purchasing, and operations with Folio3 Azure.',
     type: 'website',
