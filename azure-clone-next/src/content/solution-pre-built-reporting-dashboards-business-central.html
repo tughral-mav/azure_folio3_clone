@@ -129,6 +129,45 @@ Supporting keywords: business central reporting dashboards, dynamics 365 busines
     line-height: 1.65;
   }
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-footnote {
+    margin-top: 28px;
+    font-size: 0.875rem;
+    color: var(--ink-500);
+    max-width: 560px;
+    line-height: 1.55;
+  }
+
+  /* Trust strip */
+  .trust-strip {
+    background: white;
+    border-top: 1px solid var(--surface-line);
+    border-bottom: 1px solid var(--surface-line);
+    padding: 40px 0;
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  .trust-item .trust-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--brand-navy);
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .trust-item .trust-detail {
+    font-size: 0.8125rem;
+    color: var(--ink-500);
+    line-height: 1.5;
+  }
+  .trust-item + .trust-item { border-left: 1px solid var(--surface-line); padding-left: 24px; }
+  @media (max-width: 720px) {
+    .trust-grid { grid-template-columns: 1fr; gap: 20px; }
+    .trust-item + .trust-item { border-left: none; padding-left: 0; border-top: 1px solid var(--surface-line); padding-top: 20px; }
+  }
 
   /* Dashboard mock */
   .dash-mock {
@@ -414,13 +453,15 @@ Supporting keywords: business central reporting dashboards, dynamics 365 busines
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Business Central Analytics Solution</span>
+        <span class="eyebrow">Business Central Reporting &amp; Analytics</span>
         <h1>Pre-Built Power BI Dashboards for Dynamics 365 Business Central</h1>
-        <p class="hero-sub">Turn your Business Central data into clear, actionable insights with ready-to-use Power BI dashboards built for finance, sales, inventory, purchasing, operations, and executive decision-making.</p>
+        <p class="hero-sub">Turn Business Central data into decision-ready insights with pre-built Power BI dashboards for finance, sales, inventory, purchasing, operations, and leadership.</p>
+        <p class="hero-sub" style="margin-top: -12px;">Replace manual reporting and disconnected spreadsheets with role-based dashboards that can be configured around your KPIs, reporting priorities, companies, and business structure.</p>
         <div class="hero-cta">
           <a href="#pgForm" class="btn btn-primary on-blue">Book a Dashboard Demo</a>
           <a href="#modules" class="btn btn-secondary">Explore Dashboard Modules</a>
         </div>
+        <p class="hero-footnote">Built for Dynamics 365 Business Central. Delivered by a Microsoft Solutions Partner. Designed to scale with Power BI, Azure, and Microsoft Fabric.</p>
       </div>
       <div>
         <div class="dash-mock" aria-hidden="true">
@@ -451,6 +492,26 @@ Supporting keywords: business central reporting dashboards, dynamics 365 busines
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip" style="padding: 40px 0;">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-label">Microsoft Solutions Partner</div>
+        <div class="trust-detail">Data &amp; AI (Azure) · Infrastructure (Azure) · Digital &amp; App Innovation (Azure) · Business Applications</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-label">Direct Tier 1 Microsoft CSP</div>
+        <div class="trust-detail">15+ years of cloud &amp; digital delivery experience</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-label">Microsoft Stack Expertise</div>
+        <div class="trust-detail">Power BI · Azure · Microsoft Fabric · Dynamics 365</div>
       </div>
     </div>
   </div>
