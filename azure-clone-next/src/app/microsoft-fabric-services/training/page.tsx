@@ -5,7 +5,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { AwardsBand } from '@/components/sections/AwardsBand';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
-const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-training/';
+const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/training/';
 const TITLE = 'Microsoft Fabric Training for Enterprise Teams | Folio3 Azure';
 const DESCRIPTION =
   'Build Microsoft Fabric capabilities across analytics, data engineering, Power BI, governance, and OneLake. Folio3 delivers hands-on private, virtual, and onsite training tailored to your team and data environment.';
@@ -334,7 +334,9 @@ export default function MicrosoftFabricTrainingPage() {
           <span className="px-2">/</span>
           <Link href="/#services" className="hover:underline">Services</Link>
           <span className="px-2">/</span>
-          <span>Microsoft Fabric Training</span>
+          <Link href="/microsoft-fabric-services/" className="hover:underline">Microsoft Fabric Services</Link>
+          <span className="px-2">/</span>
+          <span>Training</span>
         </div>
       </div>
 
