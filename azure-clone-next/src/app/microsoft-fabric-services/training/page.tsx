@@ -294,7 +294,7 @@ export default function MicrosoftFabricTrainingPage() {
               <span className="text-brand">data, teams, and adoption goals</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-body">
-              Give your data, BI, and engineering teams the practical Microsoft Fabric skills they need to build governed, scalable analytics solutions. Folio3 delivers live, hands-on training — virtually, onsite, or in a hybrid format — tailored to your current Azure and Power BI environment, learner roles, business use cases, and Fabric adoption roadmap.
+              Give your data, BI, and engineering teams the practical Microsoft Fabric skills they need to build governed, scalable analytics solutions. Folio3 delivers live, hands-on training, virtually, on-site, or in a hybrid format, tailored to your current Azure and Power BI environment, learner roles, business use cases, and Fabric adoption roadmap.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href={FORM_HREF} className="btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide">
