@@ -234,37 +234,6 @@ const deliverySteps = [
   },
 ];
 
-const comparison = [
-  {
-    approach: 'Native D365 reports and workspaces',
-    limitation:
-      'Useful for operational views, but may not provide the cross-functional executive analytics required by every organization.',
-    folio3:
-      'Extend D365 reporting with role-based Power BI dashboards and a governed analytics foundation.',
-  },
-  {
-    approach: 'Spreadsheet-based reporting',
-    limitation:
-      'Manual consolidation, version-control issues, delayed insight, and limited interactivity.',
-    folio3:
-      'Deliver interactive dashboards with centralized KPI definitions and controlled refreshes.',
-  },
-  {
-    approach: 'Fully custom BI development',
-    limitation:
-      'Flexible, but can require longer discovery, modeling, and development cycles.',
-    folio3:
-      'Use pre-built dashboard patterns to accelerate delivery while retaining configuration and extension options.',
-  },
-  {
-    approach: 'Isolated dashboard projects',
-    limitation:
-      'Can create inconsistent data definitions and difficult maintenance.',
-    folio3:
-      'Connect reporting to Azure and Microsoft Fabric data architecture for scalability and governance.',
-  },
-];
-
 const faqs = [
   {
     q: 'What are pre-built Dynamics 365 F&SCM dashboards?',
@@ -701,40 +670,6 @@ export default function PreBuiltD365DashboardsPage() {
             </a>{' '}
             built with Azure and Power BI.
           </p>
-        </div>
-      </section>
-
-      {/* Why Choose Folio3 (comparison) */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
-            <span className="eyebrow">Why Folio3</span>
-            <h2 className="mt-3 text-3xl lg:text-4xl">Why choose Folio3</h2>
-            <p className="mt-4 text-body">
-              Folio3 is a Microsoft Solutions Partner focused on Azure cloud, data analytics, Microsoft Fabric, and
-              Copilot, with services centered on data integration, real-time dashboards, and scalable analytics.
-            </p>
-          </Reveal>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {comparison.map((row, i) => (
-              <Reveal key={row.approach} animation="fadeInUp" delay={i * 60}>
-                <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-brand">
-                    Common approach
-                  </div>
-                  <div className="mt-1 text-base font-semibold text-ink">{row.approach}</div>
-                  <div className="mt-4 text-sm text-body">
-                    <span className="font-semibold text-ink">Typical limitation: </span>
-                    {row.limitation}
-                  </div>
-                  <div className="mt-3 rounded-lg bg-surface-tint p-4 text-sm text-body">
-                    <span className="font-semibold text-brand">Folio3 approach: </span>
-                    {row.folio3}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
