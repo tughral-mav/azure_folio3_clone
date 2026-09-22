@@ -304,16 +304,40 @@ const whyFolio3 = [
 
 const caseStudies: CaseItem[] = [
   {
-    name: 'Savills',
-    img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp',
-    blurb: 'Microsoft Fabric reporting delivered a consolidated, real-time view of global operations and improved operational efficiency by 13%.',
-    href: 'https://azure.folio3.com/microsoft-fabric-reporting-for-real-estate/',
+    name: 'Agentic HR Policy Feedback',
+    img: '/wp-content/uploads/2026/02/hr-policy.webp',
+    blurb: 'An agentic solution that collects HR policy feedback, updates the policy document, and generates reporting for enterprise HR teams.',
+    href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/',
   },
   {
-    name: 'Cattle Feeding Company',
+    name: 'Copilot Studio HR Policy Agent',
+    img: '/wp-content/uploads/2026/02/real-estate-1.webp',
+    blurb: 'Microsoft Copilot Studio-based HR policy agent that automates HR operations end-to-end.',
+    href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/',
+  },
+  {
+    name: 'Weaver Popcorn Hybrids',
     img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp',
-    blurb: 'Plug-and-play data ingestion and reporting on IntelliFabric and Microsoft Fabric supporting operational visibility and animal well-being.',
-    href: 'https://azure.folio3.com/case-studies/',
+    blurb: 'Weaver Popcorn Hybrids modernizes analytics with IntelliFabric on Microsoft Fabric.',
+    href: '/case-studies/wph-intellifabric/',
+  },
+  {
+    name: 'Alibaba — Power BI Reporting',
+    img: '/wp-content/uploads/2025/07/alibaba-achieves-faster-financial-closings-with-power-bi-reporting.webp',
+    blurb: 'Alibaba achieves 37% faster financial closings with Power BI reporting.',
+    href: '/power-bi-financial-reporting-for-alibaba/',
+  },
+  {
+    name: 'Savills',
+    img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp',
+    blurb: 'Microsoft Fabric reporting boosts Savills’ operational efficiency by 13%.',
+    href: '/savills/',
+  },
+  {
+    name: 'City University of Seattle',
+    img: '/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp',
+    blurb: 'Power Apps solution and data platform on Azure for The City University of Seattle.',
+    href: '/city-university-azure/',
   },
 ];
 
@@ -678,25 +702,7 @@ export default function HireMicrosoftFabricConsultantPage() {
       <AwardsBand autoScroll />
 
       {/* Fold 14 — Client Results */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl lg:text-4xl">Client results</h2>
-            <p className="mt-4 text-body">
-              Folio3 helped Savills improve reporting and analytics with a scalable Microsoft Fabric solution that
-              created a consolidated, real-time view of global operations — improving operational efficiency by 13%.
-              Folio3 also implemented a plug-and-play data ingestion and reporting solution using IntelliFabric and
-              Microsoft Fabric for a cattle feeding company to support better operational visibility and animal
-              well-being outcomes. Want to see more?{' '}
-              <a href="https://azure.folio3.com/case-studies/" className="text-brand underline">
-                Explore Folio3 case studies
-              </a>
-              .
-            </p>
-          </Reveal>
-        </div>
-        <AutoScrollCases cases={caseStudies} />
-      </section>
+      <AutoScrollCases cases={caseStudies} />
 
       {/* Fold 15 — FAQs */}
       <section className="bg-surface-tint py-16 lg:py-24">
