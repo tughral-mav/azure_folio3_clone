@@ -697,37 +697,6 @@ export default function PreBuiltD365DashboardsPage() {
         </div>
       </section>
 
-      {/* Ready to Modernize CTA */}
-      <section className="relative overflow-hidden bg-brand-ink py-16 lg:py-20">
-        <div className="container-x text-center">
-          <Reveal animation="fadeInUp">
-            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
-              Ready to modernize D365 reporting?
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-white/80">
-              Give finance and supply-chain teams a faster path from Dynamics 365 F&amp;SCM data to confident
-              decisions. Explore pre-built Power BI dashboards for Finance, Procurement, Inventory, Warehouse,
-              Production, and Executive Reporting—delivered on a scalable Microsoft Azure and Microsoft Fabric
-              foundation.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link
-                href={FORM_HREF}
-                className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide"
-              >
-                Explore the Dashboard Catalog
-              </Link>
-              <Link
-                href={FORM_HREF}
-                className="btn border border-white/60 text-white hover:bg-white hover:text-brand uppercase tracking-wide"
-              >
-                Book a Live Dashboard Demo
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       <OneToOneCTA />
 
       <script
