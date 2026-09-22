@@ -38,13 +38,72 @@ const heroBullets = [
   'Create a scalable reporting foundation for additional analytics, forecasting, and AI use cases',
 ];
 
-const foundationStack = [
-  'Dynamics 365 Finance and Supply Chain Management data',
-  'Microsoft Azure data integration and storage services',
-  'Microsoft Fabric data engineering, warehousing, and governance capabilities',
-  'Power BI dashboards, reports, semantic models, and secure sharing',
-  'Additional enterprise data sources when reporting requires a broader operational view',
+type FoundationItem = { text: string; icon: 'database' | 'cloud' | 'fabric' | 'chart' | 'sources' };
+
+const foundationStack: FoundationItem[] = [
+  { text: 'Dynamics 365 Finance and Supply Chain Management data', icon: 'database' },
+  { text: 'Microsoft Azure data integration and storage services', icon: 'cloud' },
+  { text: 'Microsoft Fabric data engineering, warehousing, and governance capabilities', icon: 'fabric' },
+  { text: 'Power BI dashboards, reports, semantic models, and secure sharing', icon: 'chart' },
+  { text: 'Additional enterprise data sources when reporting requires a broader operational view', icon: 'sources' },
 ];
+
+function FoundationIcon({ name }: { name: FoundationItem['icon'] }) {
+  const common = {
+    width: 28,
+    height: 28,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.7,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  };
+  switch (name) {
+    case 'database':
+      return (
+        <svg {...common}>
+          <ellipse cx="12" cy="5.5" rx="7.5" ry="2.5" />
+          <path d="M4.5 5.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+          <path d="M4.5 11.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+        </svg>
+      );
+    case 'cloud':
+      return (
+        <svg {...common}>
+          <path d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6 11a4 4 0 0 0 1 7z" />
+          <path d="M9 14l3-3 3 3" />
+          <path d="M12 11v6" />
+        </svg>
+      );
+    case 'fabric':
+      return (
+        <svg {...common}>
+          <path d="M12 3l8 4v6c0 4.5-3.5 7.5-8 8-4.5-.5-8-3.5-8-8V7l8-4z" />
+          <path d="M9 12l2 2 4-4" />
+        </svg>
+      );
+    case 'chart':
+      return (
+        <svg {...common}>
+          <path d="M4 20V10" />
+          <path d="M10 20V4" />
+          <path d="M16 20v-8" />
+          <path d="M22 20v-4" />
+          <path d="M3 20h19" />
+        </svg>
+      );
+    case 'sources':
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <path d="M12 3c2.8 3 4.2 6 4.2 9s-1.4 6-4.2 9" />
+          <path d="M12 3c-2.8 3-4.2 6-4.2 9s1.4 6 4.2 9" />
+        </svg>
+      );
+  }
+}
 
 type Coverage = {
   title: string;
@@ -435,23 +494,12 @@ export default function PreBuiltD365DashboardsPage() {
           </Reveal>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {foundationStack.map((f, i) => (
-              <Reveal key={i} animation="fadeInUp" delay={i * 60}>
+              <Reveal key={f.text} animation="fadeInUp" delay={i * 60}>
                 <div className="h-full rounded-2xl border border-surface-line bg-white p-6 shadow-card">
                   <div className="text-brand">
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M4 7h16M4 12h16M4 17h10" />
-                    </svg>
+                    <FoundationIcon name={f.icon} />
                   </div>
-                  <p className="mt-3 text-sm leading-relaxed text-body">{f}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-body">{f.text}</p>
                 </div>
               </Reveal>
             ))}
