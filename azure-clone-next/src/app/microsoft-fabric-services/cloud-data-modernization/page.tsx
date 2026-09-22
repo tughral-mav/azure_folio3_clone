@@ -7,9 +7,9 @@ import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScroll
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/cloud-data-modernization';
-const TITLE = 'Microsoft Fabric Cloud Data Modernization Services | Folio3';
+const TITLE = 'Microsoft Fabric Data Modernization Services | Folio3';
 const DESCRIPTION =
-  'Modernize fragmented data platforms with Microsoft Fabric. Folio3 delivers Fabric consulting, readiness assessments, implementation, OneLake, Lakehouse, Power BI, governance, and migration services.';
+  'Modernize data platforms with Microsoft Fabric. Folio3 unifies analytics, data engineering, governance, migration, and AI-ready insights.';
 const OG_IMAGE = '/wp-content/uploads/2023/07/Microsoft-Fabric-Implementation-Services.webp';
 const FORM_HREF = '#pgForm';
 
