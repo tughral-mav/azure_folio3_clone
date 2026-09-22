@@ -318,55 +318,6 @@ export default function MicrosoftFabricTrainingPage() {
         </div>
       </section>
 
-      {/* Trust strip */}
-      <section className="bg-[linear-gradient(180deg,#f4f7fb_0%,#eef3f8_100%)]">
-        <div className="container-x grid grid-cols-1 gap-8 py-8 md:grid-cols-3 md:gap-6 lg:py-10">
-          <div className="flex items-center gap-4">
-            <span aria-hidden className="shrink-0">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="4" width="17" height="17" fill="#F25022" />
-                <rect x="23" y="4" width="17" height="17" fill="#7FBA00" />
-                <rect x="4" y="23" width="17" height="17" fill="#00A4EF" />
-                <rect x="23" y="23" width="17" height="17" fill="#FFB900" />
-              </svg>
-            </span>
-            <div>
-              <div className="text-sm font-semibold leading-snug text-ink">Live, hands-on delivery</div>
-              <div className="text-sm text-body">Virtual, onsite, or hybrid</div>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <span aria-hidden className="shrink-0 text-brand">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="9" cy="8" r="3.2" />
-                <path d="M2.5 19c0-3 3-5 6.5-5s6.5 2 6.5 5" />
-                <circle cx="17" cy="7" r="2.6" />
-                <path d="M15 13.5c3 .3 5.5 2.2 5.5 5" />
-              </svg>
-            </span>
-            <div>
-              <div className="text-2xl font-bold leading-none text-ink">5</div>
-              <div className="text-sm text-body">Role-based learning paths</div>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <span aria-hidden className="shrink-0 text-brand">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 20V10" />
-                <path d="M10 20V4" />
-                <path d="M16 20v-8" />
-                <path d="M22 20v-4" />
-                <path d="M3 20h19" />
-              </svg>
-            </span>
-            <div>
-              <div className="text-2xl font-bold leading-none text-ink">OneLake to Power BI</div>
-              <div className="text-sm text-body">End-to-end labs and capstone</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Breadcrumb */}
       <div className="bg-brand">
         <div className="container-x py-3 text-sm text-white/90">
