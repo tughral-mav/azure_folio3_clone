@@ -6,7 +6,7 @@ import { AwardsBand } from '@/components/sections/AwardsBand';
 import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScrollCases';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
-const SLUG = 'hire-microsoft-fabric-consultant';
+const SLUG = 'microsoft-fabric-services/hire-microsoft-fabric-consultant';
 const CANONICAL = `https://azure.folio3.com/${SLUG}/`;
 const TITLE = 'Hire Microsoft Fabric Consultants | Folio3';
 const DESCRIPTION =
