@@ -616,56 +616,6 @@ export default function HireMicrosoftFabricConsultantPage() {
         </div>
       </section>
 
-      {/* Fold 9 — IntelliFabric */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x grid items-center gap-10 lg:grid-cols-2">
-          <Reveal animation="fadeInUp">
-            <span className="eyebrow">Accelerator</span>
-            <h2 className="mt-3 text-3xl lg:text-4xl">Accelerate time to insight with IntelliFabric</h2>
-            <p className="mt-4 text-body">
-              For organizations that want a faster route to governed, self-service analytics,{' '}
-              <a href="https://azure.folio3.com/solution/intellifabric/" className="text-brand underline">
-                IntelliFabric
-              </a>{' '}
-              is Folio3&apos;s industry-ready analytics solution built on Microsoft Fabric.
-            </p>
-            <p className="mt-3 text-body">
-              IntelliFabric combines pre-built dashboards, governed data models, modern Fabric architecture, and reusable
-              accelerators to help teams reduce the time and complexity associated with building analytics capabilities
-              from scratch. It can be tailored to your operational and industry needs while preserving the flexibility of
-              Microsoft Fabric.
-            </p>
-            <ul className="mt-5 space-y-2">
-              {[
-                'Organizations that need faster reporting and analytics outcomes',
-                'Teams that want pre-built dashboards and governed models',
-                'Businesses seeking a scalable analytics operating model',
-                'Companies that want to reduce custom BI development time',
-              ].map((b) => (
-                <li key={b} className="flex gap-2 text-body">
-                  <span aria-hidden className="mt-1 shrink-0 text-brand">✓</span>
-                  <span className="leading-relaxed">{b}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6">
-              <Link href={FORM_HREF} className="btn-primary uppercase tracking-wide">
-                Explore IntelliFabric
-              </Link>
-            </div>
-          </Reveal>
-          <Reveal animation="zoomIn">
-            <Image
-              src="/wp-content/uploads/2024/06/microsoft-fabric-pricing.jpg"
-              alt="IntelliFabric analytics accelerator on Microsoft Fabric"
-              width={620}
-              height={460}
-              className="h-auto w-full rounded-2xl shadow-card"
-            />
-          </Reveal>
-        </div>
-      </section>
-
       {/* Fold 10 — Business-Critical Use Cases */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
