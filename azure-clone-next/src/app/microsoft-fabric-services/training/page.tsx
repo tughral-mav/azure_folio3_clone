@@ -46,9 +46,9 @@ const caseStudies: CaseItem[] = [
 ];
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/training/';
-const TITLE = 'Microsoft Fabric Training for Enterprise Teams | Folio3 Azure';
+const TITLE = 'Microsoft Fabric Training | Folio3';
 const DESCRIPTION =
-  'Build Microsoft Fabric capabilities across analytics, data engineering, Power BI, governance, and OneLake. Folio3 delivers hands-on private, virtual, and onsite training tailored to your team and data environment.';
+  'Upskill your team with Microsoft Fabric training in analytics, Power BI, data engineering, governance, and OneLake.';
 const OG_IMAGE = '/wp-content/uploads/2023/07/Microsoft-Fabric-Implementation-Services.webp';
 const FORM_HREF = '#pgForm';
 
