@@ -410,8 +410,7 @@ export default function MicrosoftFabricTrainingPage() {
           <Reveal animation="fadeInUp" className="mx-auto mt-10 max-w-5xl rounded-2xl border border-brand/20 bg-[#f4f7ff] p-8">
             <h3 className="text-xl font-semibold text-ink">Custom Microsoft Fabric training for teams</h3>
             <p className="mt-3 text-sm leading-relaxed text-body">
-              <span className="font-semibold text-ink">Best for:</span> organizations with specific workloads, technical standards, learning objectives, or adoption plans. We tailor the agenda around your team&apos;s roles, current skills, source systems, Power BI estate, Azure services, data architecture, and target business outcomes. If you are weighing prebuilt vs. custom Fabric approaches, review the comparison of{' '}
-              <a href="https://azure.folio3.com/blog/intellifabric-vs-custom-microsoft-fabric/" className="text-brand underline">IntelliFabric vs custom Microsoft Fabric solutions</a>.
+              <span className="font-semibold text-ink">Best for:</span> organizations with specific workloads, technical standards, learning objectives, or adoption plans. We tailor the agenda around your team&apos;s roles, current skills, source systems, Power BI estate, Azure services, data architecture, and target business outcomes.
             </p>
             <div className="mt-6">
               <Link href={FORM_HREF} className="btn-primary uppercase tracking-wide">Request a Custom Training Plan</Link>
