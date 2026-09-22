@@ -6,14 +6,14 @@ import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScroll
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL = 'https://azure.folio3.com/microsoft-fabric-services/cloud-data-modernization';
-const TITLE = 'Microsoft Fabric Data Modernization Services | Folio3';
+const TITLE = 'Microsoft Fabric Data Modernization Services | Folio3 Azure';
 const DESCRIPTION =
   'Modernize data platforms with Microsoft Fabric. Folio3 unifies analytics, data engineering, governance, migration, and AI-ready insights.';
 const OG_IMAGE = '/wp-content/uploads/2023/07/Microsoft-Fabric-Implementation-Services.webp';
 const FORM_HREF = '#pgForm';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
