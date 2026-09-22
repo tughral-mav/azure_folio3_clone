@@ -5,14 +5,14 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL =
   'https://azure.folio3.com/solution/pre-built-reporting-dashboards/for-dynamics-365';
-const TITLE = 'Pre-Built Power BI Dashboards for Dynamics 365 F&SCM | Folio3 Azure';
+const TITLE = 'Power BI Dashboards for Dynamics 365 F&SCM | Folio3';
 const DESCRIPTION =
-  'Accelerate reporting for Dynamics 365 Finance & Supply Chain Management with pre-built Power BI dashboards, governed Microsoft Fabric data models, and Azure-powered analytics from Folio3.';
+  'Accelerate Dynamics 365 Finance and Supply Chain reporting with pre-built Power BI dashboards, Fabric data models, and Azure analytics.';
 const OG_IMAGE = '/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp';
 const FORM_HREF = '#pgForm';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
