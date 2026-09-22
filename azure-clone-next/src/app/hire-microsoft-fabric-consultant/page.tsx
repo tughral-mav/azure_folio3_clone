@@ -679,6 +679,30 @@ export default function HireMicrosoftFabricConsultantPage() {
         </div>
       </section>
 
+      {/* CTA banner — after Delivery Approach */}
+      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#0b1a52_0%,#143CD5_55%,#2F69F2_100%)] py-16 lg:py-20">
+        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_30%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
+        <div className="container-x relative text-center">
+          <Reveal animation="fadeInUp">
+            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
+              Ready to build a more connected, governed analytics foundation?
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-white/85">
+              Hire Microsoft Fabric consultants from Folio3 to turn data complexity into trusted, scalable insights.
+              Start with a Fabric readiness discussion and define the right path for your organization.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <Link href={FORM_HREF} className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide">
+                Get a Free Fabric Readiness Assessment
+              </Link>
+              <Link href={FORM_HREF} className="btn border border-white text-white hover:bg-white hover:text-brand uppercase tracking-wide">
+                Talk to a Fabric Consultant
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Fold 12 — Why Folio3 */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
@@ -721,30 +745,6 @@ export default function HireMicrosoftFabricConsultantPage() {
               </details>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Fold 16 — Final CTA */}
-      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#0b1a52_0%,#143CD5_55%,#2F69F2_100%)] py-16 lg:py-20">
-        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_30%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
-        <div className="container-x relative text-center">
-          <Reveal animation="fadeInUp">
-            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
-              Ready to build a more connected, governed analytics foundation?
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-white/85">
-              Hire Microsoft Fabric consultants from Folio3 to turn data complexity into trusted, scalable insights.
-              Start with a Fabric readiness discussion and define the right path for your organization.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link href={FORM_HREF} className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide">
-                Get a Free Fabric Readiness Assessment
-              </Link>
-              <Link href={FORM_HREF} className="btn border border-white text-white hover:bg-white hover:text-brand uppercase tracking-wide">
-                Talk to a Fabric Consultant
-              </Link>
-            </div>
-          </Reveal>
         </div>
       </section>
 
