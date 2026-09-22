@@ -71,13 +71,6 @@ export const metadata: Metadata = {
   },
 };
 
-const proofPoints = [
-  'Role-based learning for analysts, Power BI developers, data engineers, architects, and administrators.',
-  'Hands-on labs across OneLake, Lakehouse, Data Factory, pipelines, notebooks, warehouses, semantic models, Power BI, and governance.',
-  'Private team workshops using relevant business scenarios and, where appropriate, your own data environment.',
-  'Optional readiness assessment, architecture guidance, mentoring, and implementation support after training.',
-];
-
 const outcomes = [
   'Navigate Fabric workloads and organize workspaces effectively.',
   'Build Lakehouses and Warehouses for analytics workloads.',
@@ -330,20 +323,6 @@ export default function MicrosoftFabricTrainingPage() {
           <span>Training</span>
         </div>
       </div>
-
-      {/* Proof points */}
-      <section className="py-16 lg:py-20">
-        <div className="container-x">
-          <ul className="mx-auto grid max-w-5xl grid-cols-1 gap-x-10 gap-y-6 md:grid-cols-2">
-            {proofPoints.map((p) => (
-              <li key={p} className="flex gap-3 text-body">
-                <span aria-hidden className="mt-1 shrink-0 text-brand">✓</span>
-                <span className="leading-relaxed">{p}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       {/* What Is Microsoft Fabric Training */}
       <section className="bg-surface-tint py-16 lg:py-24">
