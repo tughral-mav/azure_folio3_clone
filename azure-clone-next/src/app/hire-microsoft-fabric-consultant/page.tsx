@@ -279,26 +279,63 @@ const deliverySteps = [
   },
 ];
 
-const whyFolio3 = [
+type WhyItem = { title: string; body: string; icon: React.ReactNode };
+
+const whyFolio3: WhyItem[] = [
   {
     title: 'Microsoft Ecosystem Expertise',
     body: 'Folio3 is a Microsoft Solutions Partner with deep experience across Azure, data and AI, Power BI, Power Platform, Dynamics 365, Microsoft 365, and Copilot. This lets us design Fabric solutions that work within your broader Microsoft environment.',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <rect x="2" y="2" width="9" height="9" fill="#F25022" />
+        <rect x="13" y="2" width="9" height="9" fill="#7FBA00" />
+        <rect x="2" y="13" width="9" height="9" fill="#00A4EF" />
+        <rect x="13" y="13" width="9" height="9" fill="#FFB900" />
+      </svg>
+    ),
   },
   {
     title: 'From Strategy to Production',
     body: 'We do more than recommend a roadmap. Our team can assess, architect, implement, migrate, optimize, and support your Fabric environment through its full lifecycle.',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M3 17l4-4 4 3 6-8 4 5" />
+        <path d="M3 20h18" />
+        <circle cx="17" cy="8" r="1.4" />
+      </svg>
+    ),
   },
   {
     title: 'Faster Analytics With IntelliFabric',
     body: 'When the use case fits, IntelliFabric gives organizations a head start with industry-ready dashboards, governed data models, and a modern analytics operating model built on Microsoft Fabric.',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
+      </svg>
+    ),
   },
   {
     title: 'Business-Led Delivery',
     body: 'We tie technical decisions to reporting needs, operational KPIs, adoption goals, governance requirements, and measurable business outcomes.',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="5" />
+        <circle cx="12" cy="12" r="1.6" fill="currentColor" />
+      </svg>
+    ),
   },
   {
     title: 'Flexible Team Structure',
     body: 'Engage one specialist, a fractional architect, a focused implementation team, or an ongoing managed services partner based on your priorities and internal capacity.',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <circle cx="9" cy="8" r="3.2" />
+        <path d="M2.5 19c0-3 3-5 6.5-5s6.5 2 6.5 5" />
+        <circle cx="17" cy="7" r="2.6" />
+        <path d="M15 13.5c3 .3 5.5 2.2 5.5 5" />
+      </svg>
+    ),
   },
 ];
 
@@ -713,7 +750,10 @@ export default function HireMicrosoftFabricConsultantPage() {
             {whyFolio3.map((w, i) => (
               <Reveal key={w.title} animation="fadeInUp" delay={i * 60}>
                 <div className="h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                  <h3 className="text-lg font-semibold leading-snug">{w.title}</h3>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
+                    {w.icon}
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold leading-snug">{w.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-body">{w.body}</p>
                 </div>
               </Reveal>
