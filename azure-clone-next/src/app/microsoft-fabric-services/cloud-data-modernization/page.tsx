@@ -411,10 +411,6 @@ export default function CloudDataModernizationPage() {
               </div>
             ))}
           </div>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-sm text-body">
-            Bring your data integration, engineering, warehousing, real-time analytics, data science, and Power BI
-            workloads together on one modern analytics platform.
-          </p>
         </div>
       </section>
 
