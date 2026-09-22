@@ -110,16 +110,22 @@ const SCOPED_STYLE =
   scopeCss(STYLE_RAW, SCOPE);
 
 export const metadata: Metadata = {
-  title: 'Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3',
+  title: 'Pre-Built Reporting Dashboards |',
   description:
-    'Connect Dynamics 365 Business Central to pre-built Power BI dashboards for finance, sales, inventory, purchasing, AP, AR, and more.',
+    'Get pre-built Power BI dashboards for Dynamics 365 Business Central to track finance, sales, inventory, purchasing, AP, and AR.',
   alternates: { canonical: '/solution/business-central-power-bi-dashboards/' },
   openGraph: {
-    title: 'Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3',
+    title: 'Power BI Dashboards for Business Central | Folio3',
     description:
-      'Connect Dynamics 365 Business Central to pre-built Power BI dashboards for finance, sales, inventory, purchasing, AP, AR, and more.',
+      'Get pre-built Power BI dashboards for Dynamics 365 Business Central to track finance, sales, inventory, purchasing, AP, and AR.',
     type: 'website',
     url: '/solution/business-central-power-bi-dashboards/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Power BI Dashboards for Business Central | Folio3',
+    description:
+      'Get pre-built Power BI dashboards for Dynamics 365 Business Central to track finance, sales, inventory, purchasing, AP, and AR.',
   },
 };
 

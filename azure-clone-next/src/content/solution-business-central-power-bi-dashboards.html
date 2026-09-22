@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-Meta Title: Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3
-Meta Description: Connect Dynamics 365 Business Central to pre-built Power BI dashboards for finance, sales, inventory, purchasing, AP, AR, and more.
+Meta Title: Pre-Built Reporting Dashboards |
+Meta Description: Get pre-built Power BI dashboards for Dynamics 365 Business Central to track finance, sales, inventory, purchasing, AP, and AR.
 Slug: /solution/business-central-power-bi-dashboards/
 Primary keyword: Business Central Power BI dashboards
+Note: the head block below is authoring-only reference. The rendered page's
+title, meta description, and OG/Twitter tags come from the Next.js `metadata`
+export in ../src/app/solution/business-central-power-bi-dashboards/page.tsx —
+only the page body is injected into the site layout.
 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3</title>
+<title>Pre-Built Reporting Dashboards |</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -189,6 +193,45 @@ Primary keyword: Business Central Power BI dashboards
   .bars { display: flex; align-items: flex-end; gap: 6px; height: 78px; }
   .bars .bar { flex: 1; background: linear-gradient(180deg, #6D8FF5 0%, var(--brand-blue) 100%); border-radius: 3px 3px 0 0; }
   .bars .bar.alt { background: linear-gradient(180deg, #FFD879 0%, var(--accent-gold) 100%); }
+
+  /* ===== TRUST STRIP ===== */
+  .trust {
+    padding: 40px 0 44px;
+    background: #fff;
+    border-bottom: 1px solid var(--surface-line);
+  }
+  .trust-label {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-500);
+    margin-bottom: 24px;
+  }
+  .trust-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px 56px;
+    flex-wrap: wrap;
+  }
+  .trust-row img {
+    height: 44px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    opacity: 0.85;
+    filter: grayscale(0.05);
+    transition: opacity 0.2s ease;
+  }
+  .trust-row img:hover { opacity: 1; }
+  @media (max-width: 640px) {
+    .trust { padding: 32px 0; }
+    .trust-row { gap: 24px 32px; }
+    .trust-row img { height: 34px; max-width: 120px; }
+  }
 
   /* ===== VALUE BULLETS ===== */
   .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 40px; margin-top: 8px; }
@@ -403,6 +446,20 @@ Primary keyword: Business Central Power BI dashboards
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-label="Trusted by organizations around the globe">
+  <div class="wrap">
+    <div class="trust-label">Trusted by Organizations Around the Globe</div>
+    <div class="trust-row">
+      <img src="/wp-content/uploads/2024/01/ias-savills-logo.webp" alt="Savills" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-cityu-logo.webp" alt="CityU of Seattle" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-daraz-logo.webp" alt="Daraz" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-rff-logo.webp" alt="Rombola Family Farms" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2025/07/superior-farms-logo.webp" alt="Superior Farms" loading="lazy" width="160" height="44" />
     </div>
   </div>
 </section>
