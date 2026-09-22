@@ -326,19 +326,6 @@ only the page body is injected into the site layout.
   .process-step h3 { font-size: 1.075rem; margin-bottom: 8px; }
   .process-step p { color: var(--ink-700); font-size: 0.95rem; }
 
-  /* ===== CASE STUDY ===== */
-  .case {
-    background: linear-gradient(135deg, var(--brand-navy) 0%, #163775 100%);
-    color: #fff; border-radius: var(--radius-lg); padding: 44px 52px;
-    display: grid; grid-template-columns: 1.4fr 1fr; gap: 44px; align-items: center;
-  }
-  .case h3 { color: #fff; font-size: 1.65rem; margin-bottom: 14px; }
-  .case p { color: rgba(255,255,255,0.85); font-size: 1rem; }
-  .case-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  .case-stat { background: rgba(255,255,255,0.06); border-radius: var(--radius); padding: 18px; border: 1px solid rgba(255,255,255,0.1); }
-  .case-stat .n { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--accent-gold); }
-  .case-stat .l { font-size: 0.82rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
-
   /* ===== WHY ===== */
   .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
   .why-item {
@@ -389,8 +376,7 @@ only the page body is injected into the site layout.
   @media (max-width: 960px) {
     section { padding: 64px 0; }
     .hero { padding: 72px 0 60px; }
-    .hero-grid, .problem-grid, .case { grid-template-columns: 1fr; gap: 32px; }
-    .case { padding: 32px 28px; }
+    .hero-grid, .problem-grid { grid-template-columns: 1fr; gap: 32px; }
     .dash-cards, .foundation-grid, .process-grid, .why-grid { grid-template-columns: 1fr; }
     .value-grid { grid-template-columns: 1fr; }
     .dash-mock { margin: 0 auto; }
@@ -693,27 +679,6 @@ only the page body is injected into the site layout.
       <div class="process-step"><span class="num">06</span><h3>Extend When Ready</h3><p>Add more sources, custom dashboards, warehouse/lakehouse capabilities, predictive models, and self-service analytics as maturity grows.</p></div>
     </div>
     <p style="margin-top: 24px; color: var(--ink-500); font-size: 0.95rem;">Folio3's <a href="/azure-data-analytics/">end-to-end data analytics services</a> can support this progression — from integration and centralized storage to visualization and predictive analytics.</p>
-  </div>
-</section>
-
-<!-- ============ CASE STUDY ============ -->
-<section class="section-tight">
-  <div class="wrap">
-    <div class="case">
-      <div>
-        <span class="eyebrow on-dark">Customer Story</span>
-        <h3 style="margin-top: 12px;">Proven Business Central Analytics for Real Operations</h3>
-        <p>Folio3 helped a leading popcorn producer turn Microsoft Dynamics 365 Business Central data into a unified, decision-enabling analytics asset. The implementation included secure Business Central integration, automated extraction and transformation, and pre-built dashboards for Finance, Sales, and Inventory.</p>
-        <p style="margin-top: 14px;">The organization gained real-time KPI tracking against budgets and historical benchmarks, stronger profitability oversight, aging-based inventory valuation, COGS visibility, and less dependence on manual reporting.</p>
-        <a href="/case-studies/popcorn-producer-intellifabric-dashboards/" class="btn btn-secondary on-dark" style="margin-top: 24px;">Read the Business Central Dashboard Case Study</a>
-      </div>
-      <div class="case-stats">
-        <div class="case-stat"><div class="n">Real-time</div><div class="l">KPI tracking vs. budgets and history</div></div>
-        <div class="case-stat"><div class="n">Aging-based</div><div class="l">Inventory valuation and COGS visibility</div></div>
-        <div class="case-stat"><div class="n">3 modules</div><div class="l">Finance, Sales, and Inventory launched</div></div>
-        <div class="case-stat"><div class="n">Less manual</div><div class="l">Reporting effort across finance and ops</div></div>
-      </div>
-    </div>
   </div>
 </section>
 
