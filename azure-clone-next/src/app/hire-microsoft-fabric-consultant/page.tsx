@@ -8,9 +8,9 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const SLUG = 'hire-microsoft-fabric-consultant';
 const CANONICAL = `https://azure.folio3.com/${SLUG}/`;
-const TITLE = 'Hire Microsoft Fabric Consultants | Consulting, Migration & Implementation | Folio3';
+const TITLE = 'Hire Microsoft Fabric Consultants | Folio3';
 const DESCRIPTION =
-  'Hire Microsoft Fabric consultants from Folio3 to assess, implement, migrate, govern, and optimize Microsoft Fabric. Get expert support for OneLake, Power BI, Fabric Data Factory, data warehousing, and analytics.';
+  'Hire Microsoft Fabric consultants for strategy, migration, data engineering, governance, Power BI, and scalable analytics.';
 const OG_IMAGE = '/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp';
 const FORM_HREF = '#pgForm';
 
