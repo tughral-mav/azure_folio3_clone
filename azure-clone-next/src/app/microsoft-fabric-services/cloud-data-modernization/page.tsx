@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Reveal } from '@/components/ui/Reveal';
-import { AwardsBand } from '@/components/sections/AwardsBand';
 import { AutoScrollCases, type CaseItem } from '@/components/sections/AutoScrollCases';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
@@ -772,8 +771,108 @@ export default function CloudDataModernizationPage() {
         </div>
       </section>
 
-      {/* Awards */}
-      <AwardsBand autoScroll />
+      {/* Solutions */}
+      <section aria-labelledby="fabric-solutions-heading" className="bg-surface-tint py-16 lg:py-24">
+        <div className="container-x">
+          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
+            <span className="eyebrow">Solutions</span>
+            <h2 id="fabric-solutions-heading" className="text-3xl lg:text-4xl">
+              Microsoft Fabric Solutions
+            </h2>
+            <p className="mt-4 text-body">
+              Explore Microsoft Fabric solutions designed to unify your data, modernize analytics, and turn trusted
+              insights into action.
+            </p>
+          </Reveal>
+          <ul role="list" className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: 'Data Engineering',
+                body: 'Build scalable data pipelines and transform raw data into reliable, analytics-ready assets.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 7h4l2 3h10" />
+                    <path d="M4 17h4l2-3" />
+                    <rect x="16" y="14" width="6" height="6" rx="1" />
+                    <rect x="2" y="4" width="6" height="6" rx="1" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Data Integration',
+                body: 'Connect data across systems, eliminate silos, and create a unified data foundation.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="6" r="3" />
+                    <circle cx="18" cy="18" r="3" />
+                    <path d="M8.5 10.5l7-3" />
+                    <path d="M8.5 13.5l7 3" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Data Warehousing',
+                body: 'Modernize your warehouse with a high-performance, governed platform for enterprise analytics.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <ellipse cx="12" cy="5.5" rx="7.5" ry="2.5" />
+                    <path d="M4.5 5.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+                    <path d="M4.5 11.5v6c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-6" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Business Intelligence',
+                body: 'Deliver actionable insights with interactive Power BI dashboards and self-service reporting.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 20V10" />
+                    <path d="M10 20V4" />
+                    <path d="M16 20v-8" />
+                    <path d="M22 20v-4" />
+                    <path d="M3 20h19" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Real-Time Intelligence',
+                body: 'Monitor live data, detect trends faster, and make decisions as events happen.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 12h3l2-5 4 10 2-5h7" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Data Governance',
+                body: 'Strengthen security, compliance, and data quality across your Microsoft Fabric environment.',
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9.5-4.6-1.1-8-5-8-9.5V6l8-3z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                ),
+              },
+            ].map((s, i) => (
+              <li key={s.title}>
+                <Reveal animation="fadeInUp" delay={i * 60}>
+                  <article
+                    tabIndex={0}
+                    className="group flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card outline-none transition-colors duration-200 hover:border-brand hover:shadow-cardHover focus-visible:border-brand focus-visible:ring-2 focus-visible:ring-brand/40"
+                  >
+                    <div aria-hidden className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#e6efff] text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                      {s.icon}
+                    </div>
+                    <h3 className="mt-5 text-lg font-semibold leading-snug text-ink">{s.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-body">{s.body}</p>
+                  </article>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       {/* Fold 10 — FAQs */}
       <section className="py-16 lg:py-24">
