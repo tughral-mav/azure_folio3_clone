@@ -463,16 +463,6 @@ export default function HireMicrosoftFabricConsultantPage() {
               foundation built around Microsoft Fabric and OneLake. Our consultants work alongside your business, data,
               IT, and analytics teams to deliver a practical roadmap — and execute it.
             </p>
-            <p className="mt-3 text-body">
-              New to the platform? Start with Folio3&apos;s overview of{' '}
-              <a
-                href="https://azure.folio3.com/blog/what-is-microsoft-fabric-features-benefits-use-cases/"
-                className="text-brand underline"
-              >
-                what Microsoft Fabric is and how it supports unified analytics
-              </a>
-              .
-            </p>
           </Reveal>
         </div>
       </section>
