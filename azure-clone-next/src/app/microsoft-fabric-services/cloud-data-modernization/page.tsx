@@ -370,19 +370,11 @@ export default function CloudDataModernizationPage() {
               <span className="text-brand">Microsoft Fabric</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-body">
-              Unify siloed data, modernize legacy analytics, and build a trusted, AI-ready data foundation with Microsoft
-              Fabric.
+              Unify your data, modernize analytics, and build an AI-ready foundation with Microsoft Fabric.
             </p>
             <p className="mt-4 max-w-xl text-base text-body">
-              Folio3 helps organizations replace disconnected data pipelines, warehouses, dashboards, and reporting tools
-              with a unified Microsoft Fabric platform. From strategy and assessment to implementation, migration,
-              governance, and optimization, our Microsoft Fabric experts help you turn complex data environments into
-              scalable business intelligence.
-            </p>
-            <p className="mt-4 max-w-xl text-base text-body">
-              Whether you are modernizing Azure Synapse, Azure Data Factory, Power BI, SQL Server, data lakes, or legacy
-              reporting systems, Folio3 provides the architecture, engineering, and delivery support required to move
-              forward with confidence.
+              Replace disconnected data tools with a secure, scalable Microsoft Fabric platform. From strategy and
+              migration to governance and optimization, Folio3 helps you turn complex data into business-ready insights.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={FORM_HREF} className="btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide">
