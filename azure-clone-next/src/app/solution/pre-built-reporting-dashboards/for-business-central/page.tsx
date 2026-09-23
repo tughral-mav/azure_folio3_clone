@@ -824,33 +824,6 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-20">
-        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
-        <div className="container-x relative text-center">
-          <Reveal animation="fadeInUp">
-            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
-              Ready to turn Business Central data into clear, decision-ready dashboards?
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-white/85">
-              Start with pre-built Power BI dashboards for the Business Central reporting areas that matter most,
-              then tailor the experience to your teams, KPIs, and decision-making needs.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link href={demo.href} className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide">
-                {demo.label}
-              </Link>
-              <Link
-                href={expert.href}
-                className="btn border border-white text-white hover:bg-white hover:text-brand uppercase tracking-wide"
-              >
-                {expert.label}
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       <OneToOneCTA
         formTitle="Schedule a 1:1 Business Central Dashboard Consultation"
         formCopy="Tell us about your Dynamics 365 Business Central reporting needs, and our team will help you identify the right dashboard starting point."
