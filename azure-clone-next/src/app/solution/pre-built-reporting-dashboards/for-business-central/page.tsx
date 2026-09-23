@@ -104,6 +104,22 @@ const dashboards: Dashboard[] = [
     ],
   },
   {
+    title: 'Accounts Payable Dashboard',
+    image: { src: `${IMG}/bc-expenses-dashboard.webp`, h: 900, alt: 'Business Central expenses dashboard showing operating expenses, expenses vs budget, and spend by GL account category' },
+    lead: 'Improve visibility into supplier commitments, upcoming payments, payable aging, and vendor exposure.',
+    body: 'Instead of reviewing disconnected payment and vendor reports, finance teams can see what is due, what is overdue, which vendors represent the largest payable balances, and how payables change over time.',
+    insights: [
+      'Total accounts payable',
+      'Outstanding and overdue payables',
+      'Payables aging by vendor',
+      'Upcoming payment obligations',
+      'Top vendors by balance or spend',
+      'Payable trends by period',
+      'Open purchase invoice visibility',
+      'Payables by company, department, or other relevant dimension',
+    ],
+  },
+  {
     title: 'Sales and Customer Dashboard',
     image: { src: `${IMG}/bc-sales-overview-dashboard.webp`, h: 900, alt: 'Business Central sales dashboard showing sales vs budget and sales by customer, country, salesperson, and department' },
     lead: 'Help sales and commercial teams understand which customers, products, salespeople, and regions drive revenue and margin.',
@@ -120,6 +136,22 @@ const dashboards: Dashboard[] = [
     ],
   },
   {
+    title: 'Purchasing Dashboard',
+    image: { src: `${IMG}/bc-purchasing-supplier-delivery-dashboard.webp`, h: 900, alt: 'Business Central purchasing dashboard showing supplier on-time delivery, delay by supplier, and delay distribution' },
+    lead: 'Bring more control and visibility to spend, suppliers, purchase orders, and procurement performance.',
+    body: 'A Business Central purchasing dashboard gives procurement and finance teams a clearer picture of open commitments, vendor spend, purchasing patterns, and supplier activity.',
+    insights: [
+      'Open purchase orders',
+      'Purchase spend by vendor, item, category, and period',
+      'Purchase trends over time',
+      'Top suppliers by spend',
+      'Outstanding purchase commitments',
+      'Vendor performance indicators',
+      'Open order value and delivery status',
+      'Purchasing by location, department, or company',
+    ],
+  },
+  {
     title: 'Inventory Dashboard',
     image: { src: `${IMG}/bc-inventory-valuation-dashboard.webp`, h: 900, alt: 'Business Central inventory dashboard showing inventory valuation over time by item and posting group' },
     lead: 'Turn inventory data into visibility that supports better purchasing, sales, operations, and working-capital decisions.',
@@ -133,36 +165,6 @@ const dashboards: Dashboard[] = [
       'High-value inventory items',
       'Item sales and profitability trends',
       'Inventory aging and excess-stock visibility where data is available',
-    ],
-  },
-  {
-    title: 'Accounts Payable Dashboard',
-    lead: 'Improve visibility into supplier commitments, upcoming payments, payable aging, and vendor exposure.',
-    body: 'Instead of reviewing disconnected payment and vendor reports, finance teams can see what is due, what is overdue, which vendors represent the largest payable balances, and how payables change over time.',
-    insights: [
-      'Total accounts payable',
-      'Outstanding and overdue payables',
-      'Payables aging by vendor',
-      'Upcoming payment obligations',
-      'Top vendors by balance or spend',
-      'Payable trends by period',
-      'Open purchase invoice visibility',
-      'Payables by company, department, or other relevant dimension',
-    ],
-  },
-  {
-    title: 'Purchasing Dashboard',
-    lead: 'Bring more control and visibility to spend, suppliers, purchase orders, and procurement performance.',
-    body: 'A Business Central purchasing dashboard gives procurement and finance teams a clearer picture of open commitments, vendor spend, purchasing patterns, and supplier activity.',
-    insights: [
-      'Open purchase orders',
-      'Purchase spend by vendor, item, category, and period',
-      'Purchase trends over time',
-      'Top suppliers by spend',
-      'Outstanding purchase commitments',
-      'Vendor performance indicators',
-      'Open order value and delivery status',
-      'Purchasing by location, department, or company',
     ],
   },
 ];
@@ -526,7 +528,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </p>
           </Reveal>
           <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {dashboards.filter((d) => d.image).map((d, i) => (
+            {dashboards.map((d, i) => (
               <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
                 <DashboardCard d={d} />
               </Reveal>
@@ -554,11 +556,6 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                 <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
               </div>
             </Reveal>
-            {dashboards.filter((d) => !d.image).map((d, i) => (
-              <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
-                <DashboardCard d={d} />
-              </Reveal>
-            ))}
           </div>
           <CtaRow primary="Explore Your Business Central Reporting Requirements" secondary="Request Dashboard Catalog" />
         </div>
