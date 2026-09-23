@@ -12,6 +12,8 @@ export type DashboardFunction = {
   items: string[];
   /** Real dashboard screenshot. When unset, a coded preview is shown instead. */
   img?: string;
+  /** Pixel height of `img` at its 1600px width (defaults to 913). */
+  imgHeight?: number;
   preview: { accent: string; kpis: { label: string; value: string }[]; bars: number[] };
 };
 
@@ -23,7 +25,7 @@ function DashboardPreview({ fn }: { fn: DashboardFunction }) {
           src={fn.img}
           alt={`${fn.title} — pre-built Power BI reporting dashboard`}
           width={1600}
-          height={913}
+          height={fn.imgHeight ?? 913}
           sizes="(min-width: 1024px) 50vw, 100vw"
           className="h-auto w-full rounded-xl border border-surface-line shadow-card"
         />

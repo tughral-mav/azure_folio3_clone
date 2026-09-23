@@ -44,7 +44,8 @@ const challengeBullets = [
 const dashboardFunctions: DashboardFunction[] = [
   {
     id: 'executive',
-    img: '/wp-content/uploads/2026/09/executive-dashboard-power-bi.webp',
+    img: '/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp',
+    imgHeight: 850,
     tab: 'Executive',
     title: 'Executive and Leadership Dashboards',
     body: 'Give leadership a connected view of revenue, profitability, growth, cash position, operational performance, customer trends, and strategic KPIs. Replace disconnected management reports with a clear executive reporting layer.',
@@ -127,6 +128,8 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'marketing',
+    img: '/wp-content/uploads/2026/09/marketing-campaign-growth-dashboard-power-bi.webp',
+    imgHeight: 850,
     tab: 'Marketing',
     title: 'Marketing Reporting Dashboards',
     body: 'Connect your marketing data to measure campaign performance, spend, leads, conversion, pipeline contribution, website activity, and channel ROI. Centralize data from advertising platforms, analytics tools, CRM systems, marketing automation, and e-commerce platforms.',
@@ -182,6 +185,8 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'ecommerce',
+    img: '/wp-content/uploads/2026/09/ecommerce-retail-sales-dashboard-power-bi.webp',
+    imgHeight: 817,
     tab: 'E-commerce & Retail',
     title: 'E-commerce and Retail Dashboards',
     body: 'Bring together store, product, order, customer, inventory, marketing, and fulfillment performance. Give retail and e-commerce teams a shared view of what is selling, which channels are performing, and where growth opportunities exist.',
@@ -209,6 +214,8 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'service',
+    img: '/wp-content/uploads/2026/09/customer-service-sla-dashboard-power-bi.webp',
+    imgHeight: 913,
     tab: 'Customer Service',
     title: 'Customer Service and Support Dashboards',
     body: 'Track service quality, ticket volume, response times, SLA performance, resolution trends, customer satisfaction, and agent workload across support operations.',
