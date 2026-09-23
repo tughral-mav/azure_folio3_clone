@@ -123,10 +123,8 @@ export default function AzureManagedServicesPage() {
   const learn = sec(/learn more about our services/i);
   const learnCards = learn ? imgHeadCards(learn.raw) : [];
 
-  const faqS = sec(/common queries are resolved/i);
   const faq = getFaqFull(`/${SLUG}/`);
   const faqItems = faq?.items ?? [];
-  const faqImg = faqS ? [...faqS.lead.imgs, ...faqS.units.flatMap((u) => u.imgs)].find((i) => i.src)?.src : undefined;
 
   return (
     <>
@@ -250,8 +248,7 @@ export default function AzureManagedServicesPage() {
           <div className="container-x">
             <Reveal animation="fadeInUp"><h2 id="faq-heading" className="text-center text-3xl lg:text-4xl">{faq.heading}</h2></Reveal>
             {faq.intro && <p className="mx-auto mt-4 max-w-3xl text-center text-body">{faq.intro}</p>}
-            <div className={`mt-10 ${faqImg ? 'grid items-start gap-10 lg:grid-cols-[1fr_1.2fr]' : 'mx-auto max-w-3xl'}`}>
-              {faqImg && <Reveal animation="zoomIn"><Image src={faqImg} alt="" width={520} height={460} className="h-auto w-full rounded-2xl" /></Reveal>}
+            <div className="mx-auto mt-10 max-w-3xl">
               <Accordion items={faqItems} headingLevel="h3" />
             </div>
           </div>
