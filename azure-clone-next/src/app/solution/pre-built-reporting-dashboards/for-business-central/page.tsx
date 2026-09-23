@@ -73,7 +73,7 @@ const dashboards: Dashboard[] = [
   },
   {
     title: 'Finance Dashboard',
-    image: { src: `${IMG}/bc-financial-dashboard.webp`, h: 903, alt: 'Business Central financial dashboard showing net operating income, property income breakdown, and debt load' },
+    image: { src: `${IMG}/bc-finance-overview-dashboard.webp`, h: 900, alt: 'Business Central financial dashboard showing gross profit, net profit, balance sheet, and income statement' },
     lead: 'Turn Business Central financial data into a more visual, timely, and actionable reporting experience.',
     body: 'Track profit and loss, balance-sheet indicators, cash flow, budget versus actual, trial balance trends, profitability by dimension, aging, and period-over-period performance. Finance teams can investigate variances faster and give leadership a more accessible view of business performance.',
     insights: [
@@ -88,8 +88,24 @@ const dashboards: Dashboard[] = [
     ],
   },
   {
+    title: 'Accounts Receivable Dashboard',
+    image: { src: `${IMG}/bc-accounts-receivable-dashboard.webp`, h: 900, alt: 'Business Central accounts receivable dashboard showing overdue balance, aging groups, and balance by customer and salesperson' },
+    lead: 'Make collections and cash-flow risk easier to monitor.',
+    body: 'Give finance teams a clear view of outstanding invoices, overdue balances, customer aging, collection priorities, and concentration risk. Drill into customers, invoice status, due dates, and aging buckets to focus follow-up efforts where they matter most.',
+    insights: [
+      'Outstanding receivables',
+      'Aging by customer and period',
+      'Overdue invoice value',
+      'Top overdue customers',
+      'Collection trends',
+      'Customer payment behavior',
+      'Days sales outstanding indicators',
+      'Receivables by business unit, location, or company where applicable',
+    ],
+  },
+  {
     title: 'Sales and Customer Dashboard',
-    image: { src: `${IMG}/bc-sales-dashboard.webp`, h: 795, alt: 'Business Central sales dashboard showing top products, stores, sales agents, and sales by date and category' },
+    image: { src: `${IMG}/bc-sales-overview-dashboard.webp`, h: 900, alt: 'Business Central sales dashboard showing sales vs budget and sales by customer, country, salesperson, and department' },
     lead: 'Help sales and commercial teams understand which customers, products, salespeople, and regions drive revenue and margin.',
     body: 'Move beyond static sales reports with a dashboard that makes it easier to identify high-value customers, sales trends, margin movement, top and underperforming products, and period-based performance.',
     insights: [
@@ -117,21 +133,6 @@ const dashboards: Dashboard[] = [
       'High-value inventory items',
       'Item sales and profitability trends',
       'Inventory aging and excess-stock visibility where data is available',
-    ],
-  },
-  {
-    title: 'Accounts Receivable Dashboard',
-    lead: 'Make collections and cash-flow risk easier to monitor.',
-    body: 'Give finance teams a clear view of outstanding invoices, overdue balances, customer aging, collection priorities, and concentration risk. Drill into customers, invoice status, due dates, and aging buckets to focus follow-up efforts where they matter most.',
-    insights: [
-      'Outstanding receivables',
-      'Aging by customer and period',
-      'Overdue invoice value',
-      'Top overdue customers',
-      'Collection trends',
-      'Customer payment behavior',
-      'Days sales outstanding indicators',
-      'Receivables by business unit, location, or company where applicable',
     ],
   },
   {
@@ -341,6 +342,52 @@ function CtaRow({ primary, secondary }: { primary: string; secondary?: string })
   );
 }
 
+function DashboardCard({ d }: { d: Dashboard }) {
+  return (
+    <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
+      {d.image && (
+        <Image
+          src={d.image.src}
+          alt={d.image.alt}
+          width={1600}
+          height={d.image.h}
+          sizes="(min-width: 1024px) 45vw, 100vw"
+          className="mb-5 h-auto w-full rounded-lg border border-surface-line"
+        />
+      )}
+      <h3 className="text-xl font-semibold text-ink">{d.title}</h3>
+      <p className="mt-3 font-medium leading-relaxed text-ink">{d.lead}</p>
+      {d.body && <p className="mt-2 text-sm leading-relaxed text-body">{d.body}</p>}
+      <div className="mt-5 text-xs font-semibold uppercase tracking-wider text-brand">
+        Key insights can include
+      </div>
+      <ul className="mt-3 grid grid-cols-1 gap-2 text-sm text-body sm:grid-cols-2">
+        {d.insights.map((a) => (
+          <li key={a} className="flex gap-2">
+            <span aria-hidden className="mt-1 shrink-0 text-brand">•</span>
+            <span>{a}</span>
+          </li>
+        ))}
+      </ul>
+      {d.title === 'Finance Dashboard' && (
+        <p className="mt-5 rounded-lg bg-surface-tint p-4 text-sm text-body">
+          Business Central financial dashboards draw on Folio3&apos;s{' '}
+          <Link
+            href="/azure-data-analytics/data-visualization-as-a-service/"
+            className="text-brand underline"
+          >
+            Azure data analysis and visualization
+          </Link>{' '}
+          expertise.
+        </p>
+      )}
+      {d.image && (
+        <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
+      )}
+    </div>
+  );
+}
+
 export default function PreBuiltBusinessCentralDashboardsPage() {
   return (
     <>
@@ -479,49 +526,9 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </p>
           </Reveal>
           <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {dashboards.map((d, i) => (
+            {dashboards.filter((d) => d.image).map((d, i) => (
               <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
-                <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-                  {d.image && (
-                    <Image
-                      src={d.image.src}
-                      alt={d.image.alt}
-                      width={1600}
-                      height={d.image.h}
-                      sizes="(min-width: 1024px) 45vw, 100vw"
-                      className="mb-5 h-auto w-full rounded-lg border border-surface-line"
-                    />
-                  )}
-                  <h3 className="text-xl font-semibold text-ink">{d.title}</h3>
-                  <p className="mt-3 font-medium leading-relaxed text-ink">{d.lead}</p>
-                  {d.body && <p className="mt-2 text-sm leading-relaxed text-body">{d.body}</p>}
-                  <div className="mt-5 text-xs font-semibold uppercase tracking-wider text-brand">
-                    Key insights can include
-                  </div>
-                  <ul className="mt-3 grid grid-cols-1 gap-2 text-sm text-body sm:grid-cols-2">
-                    {d.insights.map((a) => (
-                      <li key={a} className="flex gap-2">
-                        <span aria-hidden className="mt-1 shrink-0 text-brand">•</span>
-                        <span>{a}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {d.title === 'Finance Dashboard' && (
-                    <p className="mt-5 rounded-lg bg-surface-tint p-4 text-sm text-body">
-                      Business Central financial dashboards draw on Folio3&apos;s{' '}
-                      <Link
-                        href="/azure-data-analytics/data-visualization-as-a-service/"
-                        className="text-brand underline"
-                      >
-                        Azure data analysis and visualization
-                      </Link>{' '}
-                      expertise.
-                    </p>
-                  )}
-                  {d.image && (
-                    <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
-                  )}
-                </div>
+                <DashboardCard d={d} />
               </Reveal>
             ))}
             <Reveal animation="fadeInUp" delay={70}>
@@ -547,6 +554,11 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                 <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
               </div>
             </Reveal>
+            {dashboards.filter((d) => !d.image).map((d, i) => (
+              <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
+                <DashboardCard d={d} />
+              </Reveal>
+            ))}
           </div>
           <CtaRow primary="Explore Your Business Central Reporting Requirements" secondary="Request Dashboard Catalog" />
         </div>
