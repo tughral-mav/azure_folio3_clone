@@ -299,15 +299,15 @@ export function getAgentExtras(url: string): AgentExtras | null {
 
 // Full FAQ Q&A re-captured from the live's accordion (verify/extract-faq.mjs → clone-kit/faq-full.json).
 // The original capture stored questions only + the answers weren't reliably matched.
-let _faqFullRaw: Record<string, { heading: string; items: { q: string; a: string }[] }> | null = null;
-export function getFaqFull(url: string): { heading: string; items: { q: string; a: string }[] } | null {
+let _faqFullRaw: Record<string, { heading: string; intro?: string; items: { q: string; a: string }[] }> | null = null;
+export function getFaqFull(url: string): { heading: string; intro?: string; items: { q: string; a: string }[] } | null {
   if (_faqFullRaw === null) { try { _faqFullRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'faq-full.json'), 'utf8')); } catch { _faqFullRaw = {}; } }
   const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
   const rec = _faqFullRaw?.[slugOfRoute(route)];
   if (!rec || rec.items.length < 2) return null;
   // some accordion titles ship a leading icon as raw <img …> markup — strip any HTML tags.
   const clean = (s: string) => (s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-  return { heading: clean(rec.heading), items: rec.items.map((it) => ({ q: clean(it.q), a: clean(it.a) })) };
+  return { heading: clean(rec.heading), ...(rec.intro ? { intro: clean(rec.intro) } : {}), items: rec.items.map((it) => ({ q: clean(it.q), a: clean(it.a) })) };
 }
 
 // Full n-tabs widget structure re-captured from the live (verify/extract-tabs.mjs →
