@@ -7,7 +7,9 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL =
   'https://azure.folio3.com/solution/pre-built-reporting-dashboards/for-business-central';
-const TITLE = 'Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3';
+const TITLE = 'Business Central Power BI Dashboards | Folio3';
+const META_DESCRIPTION =
+  'Pre-built Power BI dashboards for Dynamics 365 Business Central. Get clear finance, sales, purchasing, inventory, and executive insights with Folio3.';
 const DESCRIPTION =
   'Get faster, clearer insights from Dynamics 365 Business Central with pre-built Power BI dashboards for finance, sales, purchasing, inventory, and executive reporting. Tailored and implemented by Folio3.';
 const OG_TITLE = 'Pre-Built Reporting Dashboards for Dynamics 365 Business Central';
@@ -25,7 +27,7 @@ const CTA_EXPERT = 'Talk to a Reporting Expert';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
-  description: DESCRIPTION,
+  description: META_DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: OG_TITLE,
