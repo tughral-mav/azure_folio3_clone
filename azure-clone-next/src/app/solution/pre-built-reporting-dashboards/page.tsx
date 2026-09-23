@@ -6,9 +6,9 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { DashboardTabs, type DashboardFunction } from './dashboard-tabs';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards';
-const TITLE = 'Pre-Built Reporting Dashboards | Power BI & Azure Analytics | Folio3';
+const TITLE = 'Pre-Built Reporting Dashboards | Power BI & Azure |';
 const DESCRIPTION =
-  'Pre-built Power BI reporting dashboards for finance, sales, operations, marketing, ERP, CRM, and e-commerce data. Folio3 configures scalable Azure analytics solutions around your KPIs.';
+  'Deploy pre-built Power BI dashboards for finance, sales, marketing, operations, ERP, CRM, and e-commerce data. Configured and scaled on Azure by Folio3.';
 const OG_IMAGE = '/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp';
 const FORM_HREF = '#pgForm';
 
