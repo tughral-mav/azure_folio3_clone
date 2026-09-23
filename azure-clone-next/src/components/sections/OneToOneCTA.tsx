@@ -9,7 +9,15 @@ const STATS = [
 
 /** "Schedule a 1:1 Call Today" — left column: short headline + stats row;
  *  right column: lead form (the visual focus). */
-export function OneToOneCTA({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
+export function OneToOneCTA({
+  tone = 'dark',
+  formTitle = 'Schedule a 1:1 Call Today',
+  formCopy = 'Get in touch with our team to solve your Azure queries.',
+}: {
+  tone?: 'dark' | 'light';
+  formTitle?: string;
+  formCopy?: string;
+}) {
   const dark = tone === 'dark';
   return (
     <section id="pgForm" className={`relative overflow-hidden py-20 ${dark ? 'bg-brand-ink' : 'bg-surface-tint'}`}>
@@ -32,8 +40,8 @@ export function OneToOneCTA({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
 
         {/* right: lead form */}
         <div className="rounded-2xl bg-white p-8 shadow-cardHover">
-          <h2 className="text-2xl">Schedule a 1:1 Call Today</h2>
-          <p className="mt-2 text-sm text-body">Get in touch with our team to solve your Azure queries.</p>
+          <h2 className="text-2xl">{formTitle}</h2>
+          <p className="mt-2 text-sm text-body">{formCopy}</p>
           <div className="mt-6">
             <ContactForm />
           </div>
