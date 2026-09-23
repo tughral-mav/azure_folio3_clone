@@ -886,7 +886,6 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
         <div className="container-x">
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl lg:text-4xl">Frequently Asked Questions</h2>
-            <p className="mt-4 text-body">Power BI reports for Business Central — what teams ask before getting started.</p>
           </Reveal>
           <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
             {faqs.map((f, i) => (
