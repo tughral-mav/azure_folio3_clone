@@ -556,10 +556,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
               priorities.
             </p>
           </Reveal>
-          <h3 className="mx-auto mt-12 max-w-3xl text-center text-xl font-semibold text-ink">
-            Customize dashboards around your business
-          </h3>
-          <ul className="mx-auto mt-6 grid max-w-5xl grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2">
+          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2">
             {customization.map((c) => (
               <Check key={c}>{c}</Check>
             ))}
