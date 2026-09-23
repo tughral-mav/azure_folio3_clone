@@ -7,9 +7,9 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const CANONICAL =
   'https://azure.folio3.com/solution/pre-built-reporting-dashboards/for-business-central';
-const TITLE = 'Pre-Built Dashboards for Dynamics 365 Business Central | Folio3';
+const TITLE = 'Pre-Built Power BI Dashboards for Dynamics 365 Business Central | Folio3';
 const DESCRIPTION =
-  'Get faster, clearer insights from Dynamics 365 Business Central with pre-built Power BI dashboards for finance, sales, purchasing, inventory, and executive reporting.';
+  'Get faster, clearer insights from Dynamics 365 Business Central with pre-built Power BI dashboards for finance, sales, purchasing, inventory, and executive reporting. Tailored and implemented by Folio3.';
 const OG_TITLE = 'Pre-Built Reporting Dashboards for Dynamics 365 Business Central';
 const OG_DESCRIPTION =
   'Transform Business Central data into decision-ready Power BI dashboards for finance, sales, purchasing, inventory, and leadership teams.';
@@ -17,7 +17,11 @@ const OG_IMAGE = '/wp-content/uploads/2026/09/bc-distribution-dashboard.webp';
 const FORM_HREF = '#pgForm';
 const CATALOG_HREF = '#dashboards';
 const IMG = '/wp-content/uploads/2026/09';
-const ILLUSTRATIVE_LABEL = 'Illustrative dashboard—configured around your Business Central environment.';
+const DISCLAIMER =
+  'Dashboard visuals are illustrative. Folio3 configures reporting views around your Business Central data structure, KPIs, business dimensions, and user requirements.';
+const CTA_DEMO = 'Book a Business Central Dashboard Demo';
+const CTA_CATALOG = 'View Dashboard Catalog';
+const CTA_EXPERT = 'Talk to a Reporting Expert';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -49,124 +53,114 @@ const painBullets = [
 
 type Dashboard = {
   title: string;
-  lead: string;
-  body?: string;
-  insights: string[];
-  image?: { src: string; alt: string; h: number };
+  description: string;
+  chips: string[];
+  image: { src: string; alt: string; h: number };
 };
 
-const dashboards: Dashboard[] = [
+const coreDashboards: Dashboard[] = [
   {
     title: 'Executive Overview Dashboard',
-    image: { src: `${IMG}/bc-executive-summary-dashboard.webp`, h: 828, alt: 'Business Central executive dashboard in Power BI showing sales, profit, costs, customers, and stock trends' },
-    lead: 'Give leadership a high-level view of business health without waiting for multiple reports from multiple teams.',
-    body: 'Monitor revenue, gross profit, margin trends, cash position, overdue receivables, overdue payables, inventory value, budget variance, sales trends, and top-performing customers or products from one executive view.',
-    insights: [
-      'Revenue, gross profit, and profitability trends',
-      'Actual versus budget and prior-period comparison',
-      'Cash and working-capital indicators',
-      'Overdue receivables and payables',
-      'Inventory value and inventory movement',
-      'Top customers, products, regions, and business units',
-      'Sales performance and margin visibility',
-    ],
+    description:
+      'Give leadership a unified view of business performance without waiting for reports from multiple teams.',
+    chips: ['Revenue & Profit', 'Cash Position', 'Budget Variance', 'Top Customers'],
+    image: {
+      src: `${IMG}/bc-executive-summary-dashboard.webp`,
+      h: 828,
+      alt: 'Dynamics 365 Business Central dashboards — executive overview of sales, profit, costs, and customers',
+    },
   },
   {
     title: 'Finance Dashboard',
-    image: { src: `${IMG}/bc-finance-overview-dashboard.webp`, h: 900, alt: 'Business Central financial dashboard showing gross profit, net profit, balance sheet, and income statement' },
-    lead: 'Turn Business Central financial data into a more visual, timely, and actionable reporting experience.',
-    body: 'Track profit and loss, balance-sheet indicators, cash flow, budget versus actual, trial balance trends, profitability by dimension, aging, and period-over-period performance. Finance teams can investigate variances faster and give leadership a more accessible view of business performance.',
-    insights: [
-      'Profit and loss analysis',
-      'Budget versus actual performance',
-      'Actual versus prior month, quarter, or year',
-      'Revenue, expense, and margin trends',
-      'Cash flow and liquidity indicators',
-      'Trial balance and account-level analysis',
-      'Profitability by department, location, project, or other Business Central dimensions',
-      'Accounts receivable and accounts payable aging',
-    ],
-  },
-  {
-    title: 'Accounts Receivable Dashboard',
-    image: { src: `${IMG}/bc-accounts-receivable-dashboard.webp`, h: 900, alt: 'Business Central accounts receivable dashboard showing overdue balance, aging groups, and balance by customer and salesperson' },
-    lead: 'Make collections and cash-flow risk easier to monitor.',
-    body: 'Give finance teams a clear view of outstanding invoices, overdue balances, customer aging, collection priorities, and concentration risk. Drill into customers, invoice status, due dates, and aging buckets to focus follow-up efforts where they matter most.',
-    insights: [
-      'Outstanding receivables',
-      'Aging by customer and period',
-      'Overdue invoice value',
-      'Top overdue customers',
-      'Collection trends',
-      'Customer payment behavior',
-      'Days sales outstanding indicators',
-      'Receivables by business unit, location, or company where applicable',
-    ],
-  },
-  {
-    title: 'Accounts Payable Dashboard',
-    image: { src: `${IMG}/bc-expenses-dashboard.webp`, h: 900, alt: 'Business Central expenses dashboard showing operating expenses, expenses vs budget, and spend by GL account category' },
-    lead: 'Improve visibility into supplier commitments, upcoming payments, payable aging, and vendor exposure.',
-    body: 'Instead of reviewing disconnected payment and vendor reports, finance teams can see what is due, what is overdue, which vendors represent the largest payable balances, and how payables change over time.',
-    insights: [
-      'Total accounts payable',
-      'Outstanding and overdue payables',
-      'Payables aging by vendor',
-      'Upcoming payment obligations',
-      'Top vendors by balance or spend',
-      'Payable trends by period',
-      'Open purchase invoice visibility',
-      'Payables by company, department, or other relevant dimension',
-    ],
+    description:
+      'Turn Business Central financial data into clear, interactive views of performance, profitability, cash flow, and variance.',
+    chips: ['P&L Performance', 'Budget vs. Actual', 'Cash Flow', 'Margin Trends'],
+    image: {
+      src: `${IMG}/bc-finance-overview-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central financial dashboards showing gross profit, net profit, balance sheet, and income statement',
+    },
   },
   {
     title: 'Sales and Customer Dashboard',
-    image: { src: `${IMG}/bc-sales-overview-dashboard.webp`, h: 900, alt: 'Business Central sales dashboard showing sales vs budget and sales by customer, country, salesperson, and department' },
-    lead: 'Help sales and commercial teams understand which customers, products, salespeople, and regions drive revenue and margin.',
-    body: 'Move beyond static sales reports with a dashboard that makes it easier to identify high-value customers, sales trends, margin movement, top and underperforming products, and period-based performance.',
-    insights: [
-      'Sales by customer, salesperson, product, category, and region',
-      'Sales trend by day, week, month, quarter, or year',
-      'Gross margin and profitability analysis',
-      'Top customers and customer concentration',
-      'Top-selling and underperforming items',
-      'Sales order, invoice, and fulfillment trends',
-      'Customer profitability and purchase behavior',
-      'Sales target or budget comparison where data is available',
-    ],
+    description:
+      'Understand which customers, products, salespeople, and regions are influencing revenue and margin.',
+    chips: ['Sales Trends', 'Customer Profitability', 'Top Products', 'Salesperson Performance'],
+    image: {
+      src: `${IMG}/bc-sales-overview-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central sales dashboard showing sales vs budget by customer, country, salesperson, and department',
+    },
   },
   {
-    title: 'Purchasing Dashboard',
-    image: { src: `${IMG}/bc-purchasing-supplier-delivery-dashboard.webp`, h: 900, alt: 'Business Central purchasing dashboard showing supplier on-time delivery, delay by supplier, and delay distribution' },
-    lead: 'Bring more control and visibility to spend, suppliers, purchase orders, and procurement performance.',
-    body: 'A Business Central purchasing dashboard gives procurement and finance teams a clearer picture of open commitments, vendor spend, purchasing patterns, and supplier activity.',
-    insights: [
-      'Open purchase orders',
-      'Purchase spend by vendor, item, category, and period',
-      'Purchase trends over time',
-      'Top suppliers by spend',
-      'Outstanding purchase commitments',
-      'Vendor performance indicators',
-      'Open order value and delivery status',
-      'Purchasing by location, department, or company',
-    ],
+    title: 'Accounts Receivable Dashboard',
+    description:
+      'Help finance teams prioritize collections, monitor overdue balances, and identify cash-flow risk earlier.',
+    chips: ['Outstanding Receivables', 'Aging Analysis', 'Overdue Invoices', 'Collection Trends'],
+    image: {
+      src: `${IMG}/bc-accounts-receivable-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central accounts receivable dashboard showing overdue balance, aging groups, and balance by customer',
+    },
   },
   {
     title: 'Inventory Dashboard',
-    image: { src: `${IMG}/bc-inventory-valuation-dashboard.webp`, h: 900, alt: 'Business Central inventory dashboard showing inventory valuation over time by item and posting group' },
-    lead: 'Turn inventory data into visibility that supports better purchasing, sales, operations, and working-capital decisions.',
-    body: 'Monitor stock on hand, inventory value, product movement, slow-moving items, stock exposure, item-level performance, and inventory trends. Use the dashboard to spot where cash is tied up, where demand is changing, and where teams may need to review replenishment or purchasing decisions.',
-    insights: [
-      'Inventory quantity on hand',
-      'Inventory value and valuation trends',
-      'Inventory by location, category, item, or warehouse',
-      'Fast-moving and slow-moving items',
-      'Stock movement and turnover indicators',
-      'High-value inventory items',
-      'Item sales and profitability trends',
-      'Inventory aging and excess-stock visibility where data is available',
-    ],
+    description:
+      'Track stock value, item movement, and inventory exposure to support stronger purchasing and working-capital decisions.',
+    chips: ['Stock on Hand', 'Inventory Value', 'Slow-Moving Items', 'Inventory Turnover'],
+    image: {
+      src: `${IMG}/bc-inventory-valuation-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central inventory dashboard showing inventory valuation over time by item and posting group',
+    },
   },
+  {
+    title: 'Purchasing Dashboard',
+    description:
+      'Bring more visibility to purchase commitments, supplier spend, open orders, and procurement performance.',
+    chips: ['Open Purchase Orders', 'Vendor Spend', 'Purchase Trends', 'Supplier Performance'],
+    image: {
+      src: `${IMG}/bc-purchasing-supplier-delivery-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central purchasing dashboard showing supplier on-time delivery and delay by supplier',
+    },
+  },
+];
+
+const additionalDashboards: Dashboard[] = [
+  {
+    title: 'Accounts Payable Dashboard',
+    description:
+      'Improve visibility into supplier commitments, upcoming payments, payable aging, and vendor exposure.',
+    chips: ['Payables Aging', 'Upcoming Payments', 'Vendor Balances', 'Open Purchase Invoices'],
+    image: {
+      src: `${IMG}/bc-expenses-dashboard.webp`,
+      h: 900,
+      alt: 'Business Central spend dashboard showing operating expenses and expenses vs budget by GL account',
+    },
+  },
+  {
+    title: 'Project and Operational Dashboard',
+    description:
+      'Extend reporting for organizations using Business Central projects, jobs, services, manufacturing, or other operational modules.',
+    chips: ['Project Profitability', 'Cost vs. Budget', 'Work in Progress', 'Operational KPIs'],
+    image: {
+      src: `${IMG}/bc-project-monitoring-dashboard.webp`,
+      h: 903,
+      alt: 'Business Central project dashboard showing actual vs planned budget, cost breakdown, SPI, and CPI',
+    },
+  },
+];
+
+const included = [
+  'Business Central reporting discovery workshop',
+  'Pre-built Power BI dashboard foundation',
+  'KPI, dimension, and filter configuration',
+  'Dashboard design review and refinement',
+  'Business Central data connection guidance',
+  'Power BI workspace and sharing guidance',
+  'User enablement and dashboard adoption support',
+  'Optional post-launch dashboard enhancement support',
 ];
 
 const customization = [
@@ -254,7 +248,7 @@ const faqs: Faq[] = [
   },
   {
     q: 'Which Business Central dashboard areas can Folio3 support?',
-    a: 'The standard focus areas include executive reporting, finance, sales, accounts receivable, accounts payable, purchasing, inventory, and operational reporting. Additional dashboard areas can be planned based on your Business Central configuration, available data, and reporting priorities.',
+    a: 'The standard focus areas include executive reporting, Business Central financial dashboards, a Business Central sales dashboard, accounts receivable and accounts payable reporting, a Business Central purchasing dashboard, a Business Central inventory dashboard, and operational reporting. Additional dashboard areas can be planned based on your Business Central configuration, available data, and reporting priorities.',
   },
   {
     q: 'Can the dashboards be customized?',
@@ -329,63 +323,59 @@ function Check({ children }: { children: ReactNode }) {
   );
 }
 
-function CtaRow({ primary, secondary }: { primary: string; secondary?: string }) {
+type Cta = { label: string; href: string };
+const demo: Cta = { label: CTA_DEMO, href: FORM_HREF };
+const catalog: Cta = { label: CTA_CATALOG, href: CATALOG_HREF };
+const expert: Cta = { label: CTA_EXPERT, href: FORM_HREF };
+
+function CtaRow({ primary, secondary }: { primary: Cta; secondary?: Cta }) {
   return (
     <div className="mt-10 flex flex-wrap justify-center gap-3">
-      <Link href={FORM_HREF} className={primaryBtn}>
-        {primary}
+      <Link href={primary.href} className={primaryBtn}>
+        {primary.label}
       </Link>
       {secondary && (
-        <Link href={FORM_HREF} className={outlineBtn}>
-          {secondary}
+        <Link href={secondary.href} className={outlineBtn}>
+          {secondary.label}
         </Link>
       )}
     </div>
   );
 }
 
-function DashboardCard({ d }: { d: Dashboard }) {
+function Chips({ items }: { items: string[] }) {
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-      {d.image && (
-        <Image
-          src={d.image.src}
-          alt={d.image.alt}
-          width={1600}
-          height={d.image.h}
-          sizes="(min-width: 1024px) 45vw, 100vw"
-          className="mb-5 h-auto w-full rounded-lg border border-surface-line"
-        />
-      )}
-      <h3 className="text-xl font-semibold text-ink">{d.title}</h3>
-      <p className="mt-3 font-medium leading-relaxed text-ink">{d.lead}</p>
-      {d.body && <p className="mt-2 text-sm leading-relaxed text-body">{d.body}</p>}
-      <div className="mt-5 text-xs font-semibold uppercase tracking-wider text-brand">
-        Key insights can include
-      </div>
-      <ul className="mt-3 grid grid-cols-1 gap-2 text-sm text-body sm:grid-cols-2">
-        {d.insights.map((a) => (
-          <li key={a} className="flex gap-2">
-            <span aria-hidden className="mt-1 shrink-0 text-brand">•</span>
-            <span>{a}</span>
-          </li>
-        ))}
-      </ul>
-      {d.title === 'Finance Dashboard' && (
-        <p className="mt-5 rounded-lg bg-surface-tint p-4 text-sm text-body">
-          Business Central financial dashboards draw on Folio3&apos;s{' '}
-          <Link
-            href="/azure-data-analytics/data-visualization-as-a-service/"
-            className="text-brand underline"
-          >
-            Azure data analysis and visualization
-          </Link>{' '}
-          expertise.
-        </p>
-      )}
-      {d.image && (
-        <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
-      )}
+    <ul className="mt-auto flex flex-wrap gap-2 pt-5">
+      {items.map((c) => (
+        <li
+          key={c}
+          className="rounded-full bg-surface-tint px-3 py-1 text-xs font-medium leading-snug text-brand"
+        >
+          {c}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function DashboardCard({ d, compact = false }: { d: Dashboard; compact?: boolean }) {
+  return (
+    <div
+      className={`flex h-full flex-col rounded-2xl border border-surface-line bg-white shadow-card ${
+        compact ? 'p-5' : 'p-6'
+      }`}
+    >
+      <Image
+        src={d.image.src}
+        alt={d.image.alt}
+        width={1600}
+        height={d.image.h}
+        sizes={compact ? '(min-width: 768px) 40vw, 100vw' : '(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw'}
+        className="h-auto w-full rounded-lg border border-surface-line"
+      />
+      <h3 className={`mt-5 font-semibold text-ink ${compact ? 'text-lg' : 'text-xl'}`}>{d.title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-body">{d.description}</p>
+      <Chips items={d.chips} />
     </div>
   );
 }
@@ -413,11 +403,11 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
               information they need in one place.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href={FORM_HREF} className={primaryBtn}>
-                Book a Business Central Dashboard Demo
+              <Link href={demo.href} className={primaryBtn}>
+                {demo.label}
               </Link>
-              <Link href={CATALOG_HREF} className={outlineBtn}>
-                View Dashboard Catalog
+              <Link href={catalog.href} className={outlineBtn}>
+                {catalog.label}
               </Link>
             </div>
             <p className="mt-4 text-sm font-medium text-body">
@@ -435,9 +425,6 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="h-auto w-full"
               />
-              <figcaption className="border-t border-surface-line px-4 py-3 text-[11px] italic text-body">
-                {ILLUSTRATIVE_LABEL}
-              </figcaption>
             </figure>
           </Reveal>
         </div>
@@ -468,11 +455,11 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
               manually, wait for month-end reporting, or struggle to find the KPI behind a business problem.
             </p>
             <p className="mt-3 text-body">
-              Folio3&apos;s pre-built reporting dashboards for Business Central help you move from scattered data
-              to a more connected reporting experience.
+              Folio3&apos;s Business Central reporting dashboards help you move from scattered data to a more
+              connected reporting experience.
             </p>
             <p className="mt-3 text-body">
-              With interactive Power BI dashboards, your teams can explore performance, identify trends, monitor
+              With interactive Business Central Power BI dashboards, your teams can explore performance, identify trends, monitor
               exceptions, and drill into the numbers behind the results—without relying on disconnected Excel files
               or starting every reporting request from zero.
             </p>
@@ -505,7 +492,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </Link>{' '}
             foundation.
           </p>
-          <CtaRow primary="Talk to a Power BI Reporting Expert" secondary="See Dashboard Use Cases" />
+          <CtaRow primary={expert} secondary={catalog} />
         </div>
       </section>
 
@@ -513,51 +500,55 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
       <section id="dashboards" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
-            <span className="eyebrow">Dashboard Catalog</span>
-            <h2 className="mt-3 text-3xl lg:text-4xl">One Dashboard Solution for Every Business Central Team</h2>
+            <span className="eyebrow">Business Central Dashboard Catalog</span>
+            <h2 className="mt-3 text-3xl lg:text-4xl">Reporting Dashboards for Every Business Central Team</h2>
             <p className="mt-4 text-body">
-              Your reporting needs are not limited to one department. Folio3 delivers a practical dashboard
-              foundation for the functions that depend on Business Central data every day.
+              Start with pre-built Power BI dashboards for the Business Central areas that matter most—finance,
+              sales, receivables, purchasing, inventory, and executive reporting. Folio3 configures each dashboard
+              around your Business Central data, KPIs, dimensions, and user roles.
             </p>
             <p className="mt-3 text-body">
               Our{' '}
               <Link href="/power-bi-services/" className="text-brand underline">
                 Power BI dashboard development
               </Link>{' '}
-              team configures each Dynamics 365 Business Central dashboard around your KPIs, dimensions, and users.
+              team configures each Business Central dashboard around your reporting priorities, dimensions, and users.
             </p>
           </Reveal>
-          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {dashboards.map((d, i) => (
-              <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {coreDashboards.map((d, i) => (
+              <Reveal key={d.title} animation="fadeInUp" delay={(i % 3) * 70}>
                 <DashboardCard d={d} />
               </Reveal>
             ))}
-            <Reveal animation="fadeInUp" delay={70}>
-              <div className="flex h-full flex-col rounded-2xl border border-dashed border-brand/50 bg-white p-7 shadow-card">
-                <Image
-                  src={`${IMG}/bc-project-monitoring-dashboard.webp`}
-                  alt="Business Central project monitoring dashboard showing actual vs planned budget, cost breakdown, SPI, and CPI"
-                  width={1600}
-                  height={903}
-                  sizes="(min-width: 1024px) 45vw, 100vw"
-                  className="mb-5 h-auto w-full rounded-lg border border-surface-line"
-                />
-                <h3 className="text-xl font-semibold text-ink">Project and Operational Dashboard</h3>
-                <p className="mt-3 font-medium leading-relaxed text-ink">
-                  Where your Business Central implementation includes projects, jobs, services, manufacturing, or
-                  other operational data, Folio3 can extend reporting beyond core finance.
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-body">
-                  Gain better visibility into project profitability, cost versus budget, operational KPIs, resource
-                  utilization, work in progress, production, capacity, or other role-specific metrics based on your
-                  Business Central configuration and business needs.
-                </p>
-                <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
-              </div>
-            </Reveal>
           </div>
-          <CtaRow primary="Explore Your Business Central Reporting Requirements" secondary="Request Dashboard Catalog" />
+          <p className="mx-auto mt-8 max-w-3xl text-center text-xs italic text-body">{DISCLAIMER}</p>
+          <CtaRow primary={{ label: CTA_CATALOG, href: FORM_HREF }} secondary={demo} />
+
+          {/* Additional Reporting Areas */}
+          <details className="group mx-auto mt-14 max-w-5xl rounded-2xl border border-surface-line bg-white shadow-card">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
+              <span>
+                <span className="block text-xl font-semibold text-ink">Additional Reporting Areas</span>
+                <span className="mt-1 block text-sm text-body">
+                  Extend your Business Central reporting with additional dashboards based on the modules, data, and
+                  operational priorities relevant to your organization.
+                </span>
+              </span>
+              <span aria-hidden className="text-2xl text-brand transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div className="border-t border-surface-line px-6 pb-6 pt-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                {additionalDashboards.map((d) => (
+                  <DashboardCard key={d.title} d={d} compact />
+                ))}
+              </div>
+              <p className="mt-6 text-center text-sm text-body">
+                Additional dashboard areas are scoped based on your Business Central configuration, available data,
+                and reporting requirements.
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -572,8 +563,8 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
               generic view of its business.
             </p>
             <p className="mt-3 text-body">
-              Folio3 starts with a dashboard foundation designed for Dynamics 365 Business Central and then works
-              with your team to align the reporting experience with your KPIs, reporting structure, and operational
+              Folio3 starts with Dynamics 365 Business Central dashboards designed as a reporting foundation, then
+              works with your team to align the reporting experience with your KPIs, reporting structure, and operational
               priorities.
             </p>
           </Reveal>
@@ -593,7 +584,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </Link>{' '}
             can extend the solution.
           </p>
-          <CtaRow primary="Discuss Dashboard Customization" />
+          <CtaRow primary={expert} />
         </div>
       </section>
 
@@ -626,7 +617,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </Link>
             .
           </p>
-          <CtaRow primary="Schedule a Free Consultation" secondary="Ask About Your Business Central Setup" />
+          <CtaRow primary={expert} />
         </div>
       </section>
 
@@ -705,15 +696,43 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                 requirements for business-critical reporting data.
               </p>
               <Link href={FORM_HREF} className={`${primaryBtn} mt-6`}>
-                Talk to an Azure Data Analytics Expert
+                {CTA_EXPERT}
               </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* What's Included */}
+      <section className="bg-surface-tint py-16 lg:py-20">
+        <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.2fr]">
+          <Reveal animation="fadeInUp">
+            <span className="eyebrow">What&apos;s Included</span>
+            <h2 className="mt-3 text-3xl lg:text-4xl">What You Receive With Your Dashboard Implementation</h2>
+            <p className="mt-4 text-body">
+              Folio3 combines a pre-built Business Central reporting foundation with the implementation support
+              needed to make dashboards relevant, usable, and ready for your teams.
+            </p>
+            <Link href={expert.href} className={`${primaryBtn} mt-8`}>
+              {expert.label}
+            </Link>
+          </Reveal>
+          <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
+            <ul className="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+              {included.map((item) => (
+                <Check key={item}>{item}</Check>
+              ))}
+            </ul>
+            <p className="mt-6 border-t border-surface-line pt-4 text-sm text-body">
+              The final scope is aligned with your Business Central environment, selected dashboard areas, data
+              availability, security requirements, and reporting priorities.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Use Folio3 Instead of Building from Scratch? */}
-      <section className="bg-surface-tint py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container-x">
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
             <span className="eyebrow">Compare Reporting Options</span>
@@ -781,12 +800,12 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </Link>{' '}
             support model.
           </p>
-          <CtaRow primary="Request a Business Central Dashboard Demo" secondary="Compare Reporting Options" />
+          <CtaRow primary={demo} secondary={catalog} />
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="py-16 lg:py-24">
+      <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl lg:text-4xl">Frequently Asked Questions</h2>
@@ -817,15 +836,37 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
         </div>
       </section>
 
-      <OneToOneCTA />
+      {/* Final CTA */}
+      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-20">
+        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
+        <div className="container-x relative text-center">
+          <Reveal animation="fadeInUp">
+            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
+              Ready to turn Business Central data into clear, decision-ready dashboards?
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-white/85">
+              Start with pre-built Power BI dashboards for the Business Central reporting areas that matter most,
+              then tailor the experience to your teams, KPIs, and decision-making needs.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <Link href={demo.href} className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide">
+                {demo.label}
+              </Link>
+              <Link
+                href={expert.href}
+                className="btn border border-white text-white hover:bg-white hover:text-brand uppercase tracking-wide"
+              >
+                {expert.label}
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
-      {/* Sticky desktop CTA */}
-      <Link
-        href={FORM_HREF}
-        className="fixed right-0 top-1/2 z-50 hidden -translate-y-1/2 rounded-l-md bg-brand-navy px-3 py-4 text-xs font-semibold uppercase tracking-wide text-white shadow-card [writing-mode:vertical-rl] hover:bg-brand lg:block"
-      >
-        Book a Demo
-      </Link>
+      <OneToOneCTA
+        formTitle="Schedule a 1:1 Business Central Dashboard Consultation"
+        formCopy="Tell us about your Dynamics 365 Business Central reporting needs, and our team will help you identify the right dashboard starting point."
+      />
 
       <script
         type="application/ld+json"
