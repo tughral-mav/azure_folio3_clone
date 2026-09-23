@@ -452,30 +452,16 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             <span className="eyebrow">Business Central Reporting</span>
             <h2 className="mt-3 text-3xl lg:text-4xl">Make Business Central Reporting Easier to Use</h2>
             <p className="mt-4 text-body">
-              Business Central holds critical financial and operational data, but turning that data into useful
-              insight can still take too much time. Teams often export data to spreadsheets, reconcile reports
-              manually, wait for month-end reporting, or struggle to find the KPI behind a business problem.
-            </p>
-            <p className="mt-3 text-body">
-              Folio3&apos;s Business Central reporting dashboards help you move from scattered data to a more
-              connected reporting experience.
-            </p>
-            <p className="mt-3 text-body">
-              With interactive Business Central Power BI dashboards, your teams can explore performance, identify trends, monitor
-              exceptions, and drill into the numbers behind the results—without relying on disconnected Excel files
-              or starting every reporting request from zero.
-            </p>
-            <p className="mt-3 text-body">
-              Microsoft supports Power BI reporting and embedded report experiences within Business Central,
-              including options to connect reports across functional areas. Folio3 helps turn those capabilities
-              into a business-ready reporting solution tailored to your reporting priorities.
-            </p>
-            <p className="mt-3 text-body">
-              Folio3 combines Business Central reporting expertise with its broader{' '}
+              Business Central holds critical financial and operational data, but turning it into clear, useful
+              insight can still take too much time. Folio3’s pre-built Power BI dashboards for Dynamics 365 Business
+              Central help finance, sales, purchasing, inventory, and leadership teams move beyond spreadsheet exports
+              and manual report reconciliation to explore KPIs, monitor exceptions, identify trends, and drill into
+              the numbers behind the results. Backed by Folio3’s{' '}
               <Link href="/azure-data-analytics/" className="text-brand underline">
                 Azure Data Analytics
               </Link>{' '}
-              capabilities to help organizations turn operational data into usable business insight.
+              capabilities, the solution creates a more connected, decision-ready reporting experience without
+              building every report from scratch.
             </p>
           </Reveal>
           <h3 className="mx-auto mt-12 max-w-3xl text-center text-xl font-semibold text-ink">
