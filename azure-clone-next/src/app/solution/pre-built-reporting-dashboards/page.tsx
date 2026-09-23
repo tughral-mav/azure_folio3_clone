@@ -44,6 +44,7 @@ const challengeBullets = [
 const dashboardFunctions: DashboardFunction[] = [
   {
     id: 'executive',
+    img: '/wp-content/uploads/2026/09/executive-dashboard-power-bi.webp',
     tab: 'Executive',
     title: 'Executive and Leadership Dashboards',
     body: 'Give leadership a connected view of revenue, profitability, growth, cash position, operational performance, customer trends, and strategic KPIs. Replace disconnected management reports with a clear executive reporting layer.',
@@ -70,6 +71,7 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'finance',
+    img: '/wp-content/uploads/2026/09/financial-reporting-dashboard-power-bi.webp',
     tab: 'Finance',
     title: 'Financial Reporting Dashboards',
     body: 'Give finance teams faster visibility into business performance with interactive views of financial data. Analyze profit and loss, budgeting, cash flow, accounts receivable, accounts payable, expenses, revenue trends, and financial performance across entities or cost centers.',
@@ -97,6 +99,7 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'sales',
+    img: '/wp-content/uploads/2026/09/sales-performance-dashboard-power-bi.webp',
     tab: 'Sales',
     title: 'Sales Performance Dashboards',
     body: 'Help sales leaders monitor pipeline health, revenue performance, conversion, account activity, win rates, team productivity, and forecast accuracy in one view.',
@@ -151,6 +154,7 @@ const dashboardFunctions: DashboardFunction[] = [
   },
   {
     id: 'operations',
+    img: '/wp-content/uploads/2026/09/operations-production-dashboard-power-bi.webp',
     tab: 'Operations & Supply Chain',
     title: 'Operations and Supply Chain Dashboards',
     body: 'Turn operational data into live, practical visibility for inventory, procurement, fulfillment, production, vendor management, and supply chain performance.',

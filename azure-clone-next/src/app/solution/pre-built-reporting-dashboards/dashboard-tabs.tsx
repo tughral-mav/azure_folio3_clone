@@ -18,13 +18,16 @@ export type DashboardFunction = {
 function DashboardPreview({ fn }: { fn: DashboardFunction }) {
   if (fn.img) {
     return (
-      <Image
-        src={fn.img}
-        alt={`${fn.title} — pre-built Power BI reporting dashboard`}
-        width={1200}
-        height={750}
-        className="h-auto w-full rounded-xl border border-surface-line shadow-card"
-      />
+      <a href={fn.img} target="_blank" rel="noopener" className="block cursor-zoom-in" title="Open full-size dashboard">
+        <Image
+          src={fn.img}
+          alt={`${fn.title} — pre-built Power BI reporting dashboard`}
+          width={1600}
+          height={913}
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="h-auto w-full rounded-xl border border-surface-line shadow-card"
+        />
+      </a>
     );
   }
   const { accent, kpis, bars } = fn.preview;
