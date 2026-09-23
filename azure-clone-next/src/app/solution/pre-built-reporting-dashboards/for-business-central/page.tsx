@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CircleCheckBig, DatabaseZap, Target, TrendingUp } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
@@ -262,10 +263,10 @@ const customization = [
 ];
 
 const steps = [
-  { n: '01', title: 'Discover Your Reporting Priorities' },
-  { n: '02', title: 'Connect and Configure' },
-  { n: '03', title: 'Review, Refine, and Go Live' },
-  { n: '04', title: 'Improve as Your Needs Evolve' },
+  { n: '01', title: 'Discover Your Reporting Priorities', Icon: Target },
+  { n: '02', title: 'Connect and Configure', Icon: DatabaseZap },
+  { n: '03', title: 'Review, Refine, and Go Live', Icon: CircleCheckBig },
+  { n: '04', title: 'Improve as Your Needs Evolve', Icon: TrendingUp },
 ];
 
 const foundation = [
@@ -668,11 +669,12 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                   delay={i * 90}
                   className="group flex items-center gap-6 lg:flex-col lg:gap-5 lg:text-center"
                 >
-                  <span className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] text-2xl font-bold text-white shadow-cardHover ring-8 ring-surface-tint transition-transform duration-300 group-hover:scale-110">
+                  <span className="relative flex h-20 w-20 shrink-0 flex-col items-center justify-center gap-1 rounded-full bg-[linear-gradient(135deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] text-2xl font-bold leading-none text-white shadow-cardHover ring-8 ring-surface-tint transition-transform duration-300 group-hover:scale-110">
                     <span
                       aria-hidden
                       className="absolute inset-1.5 rounded-full border border-dashed border-white/40"
                     />
+                    <s.Icon aria-hidden="true" size={16} strokeWidth={2} className="text-white/90" />
                     {s.n}
                   </span>
                   <h3 className="text-lg font-semibold leading-snug text-ink lg:max-w-[14rem]">{s.title}</h3>
