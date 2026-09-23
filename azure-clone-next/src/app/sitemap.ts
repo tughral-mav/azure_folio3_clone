@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/azure-cloud-service/', '/azure-data-analytics/', '/azure-managed-services/', '/azure-for-retail/',
     '/microsoft-fabric-services/', '/microsoft-fabric-services/analytics-modernization-assessment/',
     '/microsoft-fabric-services/cloud-data-modernization/',
+    '/solution/pre-built-reporting-dashboards/',
     '/microsoft-power-platform-services/', '/ai-scenario-library/',
   ];
   // every catch-all design page (so the sitemap covers the full site, not a hardcoded subset)
