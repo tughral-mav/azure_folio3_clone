@@ -175,26 +175,10 @@ const customization = [
 ];
 
 const steps = [
-  {
-    n: '01',
-    title: 'Discover Your Reporting Priorities',
-    body: 'We begin by understanding your Business Central setup, users, reporting gaps, key KPIs, dimensions, required dashboard areas, and decision-making needs.',
-  },
-  {
-    n: '02',
-    title: 'Connect and Configure',
-    body: 'Our team configures the required data connection and dashboard foundation, then aligns dashboard views, metrics, filters, security requirements, and visualizations with your requirements. Business Central supports Power BI report connections and embedded Power BI experiences, including selecting Power BI workspaces for functional reporting areas.',
-  },
-  {
-    n: '03',
-    title: 'Review, Refine, and Go Live',
-    body: 'Your stakeholders review the dashboards, validate reporting logic, and provide feedback. Folio3 refines the experience, supports user enablement, and helps prepare teams to use the dashboards effectively.',
-  },
-  {
-    n: '04',
-    title: 'Improve as Your Needs Evolve',
-    body: 'Reporting requirements change as your business changes. Folio3 can help you enhance KPIs, create additional dashboard views, introduce new data sources, and optimize your Power BI reporting environment over time.',
-  },
+  { n: '01', title: 'Discover Your Reporting Priorities' },
+  { n: '02', title: 'Connect and Configure' },
+  { n: '03', title: 'Review, Refine, and Go Live' },
+  { n: '04', title: 'Improve as Your Needs Evolve' },
 ];
 
 const foundation = [
@@ -584,17 +568,31 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
               Business Central environment and reporting priorities.
             </p>
           </Reveal>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <ol className="relative mx-auto mt-14 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-6">
+            {/* connector: vertical on mobile/tablet, horizontal on desktop */}
+            <span
+              aria-hidden
+              className="absolute bottom-10 left-10 top-10 w-0.5 bg-gradient-to-b from-brand via-brand/60 to-[#2F69F2]/40 lg:bottom-auto lg:left-[12.5%] lg:right-[12.5%] lg:top-10 lg:h-0.5 lg:w-auto lg:bg-gradient-to-r"
+            />
             {steps.map((s, i) => (
-              <Reveal key={s.n} animation="fadeInUp" delay={i * 60}>
-                <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                  <div className="text-3xl font-bold text-brand">{s.n}</div>
-                  <h3 className="mt-3 text-base font-semibold leading-snug">{s.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-body">{s.body}</p>
-                </div>
-              </Reveal>
+              <li key={s.n} className="relative">
+                <Reveal
+                  animation="fadeInUp"
+                  delay={i * 90}
+                  className="group flex items-center gap-6 lg:flex-col lg:gap-5 lg:text-center"
+                >
+                  <span className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] text-2xl font-bold text-white shadow-cardHover ring-8 ring-surface-tint transition-transform duration-300 group-hover:scale-110">
+                    <span
+                      aria-hidden
+                      className="absolute inset-1.5 rounded-full border border-dashed border-white/40"
+                    />
+                    {s.n}
+                  </span>
+                  <h3 className="text-lg font-semibold leading-snug text-ink lg:max-w-[14rem]">{s.title}</h3>
+                </Reveal>
+              </li>
             ))}
-          </div>
+          </ol>
           <p className="mx-auto mt-10 max-w-3xl text-center text-body">
             Discovery, architecture, and implementation are backed by Folio3&apos;s{' '}
             <Link href="/azure-cloud-service/" className="text-brand underline">
