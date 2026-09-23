@@ -9,7 +9,7 @@ const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboa
 const TITLE = 'Pre-Built Reporting Dashboards | Power BI & Azure Analytics | Folio3';
 const DESCRIPTION =
   'Pre-built Power BI reporting dashboards for finance, sales, operations, marketing, ERP, CRM, and e-commerce data. Folio3 configures scalable Azure analytics solutions around your KPIs.';
-const OG_IMAGE = '/wp-content/uploads/2025/07/power-bi-ipad-screen.webp';
+const OG_IMAGE = '/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp';
 const FORM_HREF = '#pgForm';
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: CANONICAL,
     type: 'website',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Pre-built reporting dashboards' }],
+    images: [{ url: OG_IMAGE, width: 1600, height: 850, alt: 'Pre-built reporting dashboards' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -483,14 +483,23 @@ export default function PreBuiltReportingDashboardsPage() {
               deliver analytics across devices, collaboration tools, applications, and business systems.
             </p>
           </div>
-          <Reveal animation="zoomIn" className="relative">
+          <Reveal animation="zoomIn" className="relative pb-6 pr-6 sm:pb-10 sm:pr-10">
             <Image
-              src="/wp-content/uploads/2025/07/power-bi-ipad-screen.webp"
-              alt="Pre-built Power BI reporting dashboards on Azure"
-              width={736}
-              height={533}
+              src="/wp-content/uploads/2026/09/distribution-dashboard-power-bi.webp"
+              alt=""
+              aria-hidden
+              width={1600}
+              height={913}
+              className="absolute right-0 top-10 h-auto w-[88%] rounded-xl border border-surface-line opacity-90 shadow-card sm:top-14"
+            />
+            <Image
+              src="/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp"
+              alt="Pre-built Power BI executive reporting dashboard on Azure"
+              width={1600}
+              height={850}
               priority
-              className="h-auto w-full"
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="relative h-auto w-[92%] rounded-xl border border-surface-line bg-white shadow-[0_24px_60px_-20px_rgba(20,40,120,0.45)]"
             />
           </Reveal>
         </div>
