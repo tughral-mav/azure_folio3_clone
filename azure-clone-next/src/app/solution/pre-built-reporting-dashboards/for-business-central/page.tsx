@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
@@ -12,9 +13,10 @@ const DESCRIPTION =
 const OG_TITLE = 'Pre-Built Reporting Dashboards for Dynamics 365 Business Central';
 const OG_DESCRIPTION =
   'Transform Business Central data into decision-ready Power BI dashboards for finance, sales, purchasing, inventory, and leadership teams.';
-const OG_IMAGE = '/wp-content/uploads/2024/06/microsoft-fabric-services-ipad-screen.webp';
+const OG_IMAGE = '/wp-content/uploads/2026/09/bc-distribution-dashboard.webp';
 const FORM_HREF = '#pgForm';
 const CATALOG_HREF = '#dashboards';
+const IMG = '/wp-content/uploads/2026/09';
 const ILLUSTRATIVE_LABEL = 'Illustrative dashboard—configured around your Business Central environment.';
 
 export const metadata: Metadata = {
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     description: OG_DESCRIPTION,
     url: CANONICAL,
     type: 'website',
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: OG_TITLE }],
+    images: [{ url: OG_IMAGE, width: 1600, height: 900, alt: OG_TITLE }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,11 +52,13 @@ type Dashboard = {
   lead: string;
   body?: string;
   insights: string[];
+  image?: { src: string; alt: string; h: number };
 };
 
 const dashboards: Dashboard[] = [
   {
     title: 'Executive Overview Dashboard',
+    image: { src: `${IMG}/bc-executive-summary-dashboard.webp`, h: 828, alt: 'Business Central executive dashboard in Power BI showing sales, profit, costs, customers, and stock trends' },
     lead: 'Give leadership a high-level view of business health without waiting for multiple reports from multiple teams.',
     body: 'Monitor revenue, gross profit, margin trends, cash position, overdue receivables, overdue payables, inventory value, budget variance, sales trends, and top-performing customers or products from one executive view.',
     insights: [
@@ -69,6 +73,7 @@ const dashboards: Dashboard[] = [
   },
   {
     title: 'Finance Dashboard',
+    image: { src: `${IMG}/bc-financial-dashboard.webp`, h: 903, alt: 'Business Central financial dashboard showing net operating income, property income breakdown, and debt load' },
     lead: 'Turn Business Central financial data into a more visual, timely, and actionable reporting experience.',
     body: 'Track profit and loss, balance-sheet indicators, cash flow, budget versus actual, trial balance trends, profitability by dimension, aging, and period-over-period performance. Finance teams can investigate variances faster and give leadership a more accessible view of business performance.',
     insights: [
@@ -84,6 +89,7 @@ const dashboards: Dashboard[] = [
   },
   {
     title: 'Sales and Customer Dashboard',
+    image: { src: `${IMG}/bc-sales-dashboard.webp`, h: 795, alt: 'Business Central sales dashboard showing top products, stores, sales agents, and sales by date and category' },
     lead: 'Help sales and commercial teams understand which customers, products, salespeople, and regions drive revenue and margin.',
     body: 'Move beyond static sales reports with a dashboard that makes it easier to identify high-value customers, sales trends, margin movement, top and underperforming products, and period-based performance.',
     insights: [
@@ -95,6 +101,22 @@ const dashboards: Dashboard[] = [
       'Sales order, invoice, and fulfillment trends',
       'Customer profitability and purchase behavior',
       'Sales target or budget comparison where data is available',
+    ],
+  },
+  {
+    title: 'Inventory Dashboard',
+    image: { src: `${IMG}/bc-inventory-valuation-dashboard.webp`, h: 900, alt: 'Business Central inventory dashboard showing inventory valuation over time by item and posting group' },
+    lead: 'Turn inventory data into visibility that supports better purchasing, sales, operations, and working-capital decisions.',
+    body: 'Monitor stock on hand, inventory value, product movement, slow-moving items, stock exposure, item-level performance, and inventory trends. Use the dashboard to spot where cash is tied up, where demand is changing, and where teams may need to review replenishment or purchasing decisions.',
+    insights: [
+      'Inventory quantity on hand',
+      'Inventory value and valuation trends',
+      'Inventory by location, category, item, or warehouse',
+      'Fast-moving and slow-moving items',
+      'Stock movement and turnover indicators',
+      'High-value inventory items',
+      'Item sales and profitability trends',
+      'Inventory aging and excess-stock visibility where data is available',
     ],
   },
   {
@@ -140,21 +162,6 @@ const dashboards: Dashboard[] = [
       'Vendor performance indicators',
       'Open order value and delivery status',
       'Purchasing by location, department, or company',
-    ],
-  },
-  {
-    title: 'Inventory Dashboard',
-    lead: 'Turn inventory data into visibility that supports better purchasing, sales, operations, and working-capital decisions.',
-    body: 'Monitor stock on hand, inventory value, product movement, slow-moving items, stock exposure, item-level performance, and inventory trends. Use the dashboard to spot where cash is tied up, where demand is changing, and where teams may need to review replenishment or purchasing decisions.',
-    insights: [
-      'Inventory quantity on hand',
-      'Inventory value and valuation trends',
-      'Inventory by location, category, item, or warehouse',
-      'Fast-moving and slow-moving items',
-      'Stock movement and turnover indicators',
-      'High-value inventory items',
-      'Item sales and profitability trends',
-      'Inventory aging and excess-stock visibility where data is available',
     ],
   },
 ];
@@ -369,41 +376,17 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </p>
           </div>
           <Reveal animation="zoomIn" className="relative">
-            <figure
-              aria-label="Business Central Power BI dashboards — executive overview example"
-              className="rounded-2xl border border-surface-line bg-white p-6 shadow-card"
-            >
-              <div className="flex items-center justify-between border-b border-surface-line pb-3">
-                <div className="text-sm font-semibold text-ink">Business Central · Executive Overview</div>
-                <div className="text-xs text-body">Power BI</div>
-              </div>
-              <div className="mt-4 grid grid-cols-3 gap-3">
-                {[
-                  'Revenue',
-                  'Gross Profit',
-                  'Cash Position',
-                  'Overdue Receivables',
-                  'Overdue Payables',
-                  'Inventory Value',
-                ].map((label, i) => (
-                  <div key={label} className="rounded-lg bg-surface-tint p-3">
-                    <div className="h-3 rounded bg-brand/70" style={{ width: `${55 + ((i * 13) % 40)}%` }} />
-                    <div className="mt-2 text-[11px] leading-snug text-body">{label}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 h-28 rounded-lg bg-[linear-gradient(135deg,#eaf1ff_0%,#d5e3ff_100%)] p-3">
-                <div className="flex h-full items-end gap-1.5">
-                  {[36, 48, 42, 60, 55, 72, 68, 84, 78, 90, 85, 96].map((h, i) => (
-                    <div key={i} style={{ height: `${h}%` }} className="flex-1 rounded-t bg-brand/80" />
-                  ))}
-                </div>
-              </div>
-              <div className="mt-3 flex justify-between text-[11px] text-body">
-                <span>Actual vs. Budget</span>
-                <span>Drill: company · dimension · period</span>
-              </div>
-              <figcaption className="mt-4 border-t border-surface-line pt-3 text-[11px] italic text-body">
+            <figure className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
+              <Image
+                src={`${IMG}/bc-distribution-dashboard.webp`}
+                alt="Business Central Power BI dashboards — distribution view with order fulfillment accuracy, order cycle time, and on-time delivery"
+                width={1600}
+                height={900}
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="h-auto w-full"
+              />
+              <figcaption className="border-t border-surface-line px-4 py-3 text-[11px] italic text-body">
                 {ILLUSTRATIVE_LABEL}
               </figcaption>
             </figure>
@@ -499,6 +482,16 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             {dashboards.map((d, i) => (
               <Reveal key={d.title} animation="fadeInUp" delay={(i % 2) * 70}>
                 <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
+                  {d.image && (
+                    <Image
+                      src={d.image.src}
+                      alt={d.image.alt}
+                      width={1600}
+                      height={d.image.h}
+                      sizes="(min-width: 1024px) 45vw, 100vw"
+                      className="mb-5 h-auto w-full rounded-lg border border-surface-line"
+                    />
+                  )}
                   <h3 className="text-xl font-semibold text-ink">{d.title}</h3>
                   <p className="mt-3 font-medium leading-relaxed text-ink">{d.lead}</p>
                   {d.body && <p className="mt-2 text-sm leading-relaxed text-body">{d.body}</p>}
@@ -525,12 +518,22 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                       expertise.
                     </p>
                   )}
-                  <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
+                  {d.image && (
+                    <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
+                  )}
                 </div>
               </Reveal>
             ))}
             <Reveal animation="fadeInUp" delay={70}>
               <div className="flex h-full flex-col rounded-2xl border border-dashed border-brand/50 bg-white p-7 shadow-card">
+                <Image
+                  src={`${IMG}/bc-project-monitoring-dashboard.webp`}
+                  alt="Business Central project monitoring dashboard showing actual vs planned budget, cost breakdown, SPI, and CPI"
+                  width={1600}
+                  height={903}
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="mb-5 h-auto w-full rounded-lg border border-surface-line"
+                />
                 <h3 className="text-xl font-semibold text-ink">Project and Operational Dashboard</h3>
                 <p className="mt-3 font-medium leading-relaxed text-ink">
                   Where your Business Central implementation includes projects, jobs, services, manufacturing, or
@@ -541,6 +544,7 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
                   utilization, work in progress, production, capacity, or other role-specific metrics based on your
                   Business Central configuration and business needs.
                 </p>
+                <p className="mt-auto pt-5 text-[11px] italic text-body">{ILLUSTRATIVE_LABEL}</p>
               </div>
             </Reveal>
           </div>
