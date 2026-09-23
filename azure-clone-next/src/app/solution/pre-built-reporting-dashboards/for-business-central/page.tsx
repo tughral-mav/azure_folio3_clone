@@ -154,16 +154,103 @@ const additionalDashboards: Dashboard[] = [
   },
 ];
 
-const included = [
-  'Business Central reporting discovery workshop',
-  'Pre-built Power BI dashboard foundation',
-  'KPI, dimension, and filter configuration',
-  'Dashboard design review and refinement',
-  'Business Central data connection guidance',
-  'Power BI workspace and sharing guidance',
-  'User enablement and dashboard adoption support',
-  'Optional post-launch dashboard enhancement support',
+type IncludedIcon = 'workshop' | 'foundation' | 'filters' | 'review' | 'connect' | 'share' | 'training' | 'support';
+
+const included: { text: string; icon: IncludedIcon }[] = [
+  { text: 'Business Central reporting discovery workshop', icon: 'workshop' },
+  { text: 'Pre-built Power BI dashboard foundation', icon: 'foundation' },
+  { text: 'KPI, dimension, and filter configuration', icon: 'filters' },
+  { text: 'Dashboard design review and refinement', icon: 'review' },
+  { text: 'Business Central data connection guidance', icon: 'connect' },
+  { text: 'Power BI workspace and sharing guidance', icon: 'share' },
+  { text: 'User enablement and dashboard adoption support', icon: 'training' },
+  { text: 'Optional post-launch dashboard enhancement support', icon: 'support' },
 ];
+
+function IncludedIconSvg({ name }: { name: IncludedIcon }) {
+  const common = {
+    width: 20,
+    height: 20,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.8,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+    'aria-hidden': true,
+  };
+  switch (name) {
+    case 'workshop':
+      return (
+        <svg {...common}>
+          <circle cx="9" cy="8" r="3" />
+          <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+          <path d="M16 5.5a3 3 0 0 1 0 5" />
+          <path d="M18 14.5c1.8.8 3 2.6 3 5.5" />
+        </svg>
+      );
+    case 'foundation':
+      return (
+        <svg {...common}>
+          <rect x="3" y="3" width="7" height="9" rx="1.5" />
+          <rect x="14" y="3" width="7" height="5" rx="1.5" />
+          <rect x="14" y="12" width="7" height="9" rx="1.5" />
+          <rect x="3" y="16" width="7" height="5" rx="1.5" />
+        </svg>
+      );
+    case 'filters':
+      return (
+        <svg {...common}>
+          <path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12" />
+          <circle cx="16" cy="6" r="2" />
+          <circle cx="10" cy="12" r="2" />
+          <circle cx="18" cy="18" r="2" />
+        </svg>
+      );
+    case 'review':
+      return (
+        <svg {...common}>
+          <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      );
+    case 'connect':
+      return (
+        <svg {...common}>
+          <ellipse cx="12" cy="5" rx="7" ry="2.5" />
+          <path d="M5 5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V5" />
+          <path d="M12 13.5V17" />
+          <path d="M8 21h8M12 17v4" />
+        </svg>
+      );
+    case 'share':
+      return (
+        <svg {...common}>
+          <circle cx="18" cy="5" r="2.5" />
+          <circle cx="6" cy="12" r="2.5" />
+          <circle cx="18" cy="19" r="2.5" />
+          <path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4" />
+        </svg>
+      );
+    case 'training':
+      return (
+        <svg {...common}>
+          <path d="M2 9l10-5 10 5-10 5-10-5z" />
+          <path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
+          <path d="M22 9v6" />
+        </svg>
+      );
+    case 'support':
+      return (
+        <svg {...common}>
+          <path d="M21 12a9 9 0 1 1-3-6.7" />
+          <path d="M21 4v5h-5" />
+          <path d="M9 12l2 2 4-4" />
+        </svg>
+      );
+  }
+}
+
 
 const customization = [
   'Choose the KPI tiles, visuals, and measures that matter to each team.',
@@ -701,9 +788,14 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
             </Link>
           </Reveal>
           <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-            <ul className="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
               {included.map((item) => (
-                <Check key={item}>{item}</Check>
+                <li key={item.text} className="group flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-200 group-hover:bg-brand group-hover:text-white">
+                    <IncludedIconSvg name={item.icon} />
+                  </span>
+                  <span className="text-sm font-medium leading-snug text-ink">{item.text}</span>
+                </li>
               ))}
             </ul>
             <p className="mt-6 border-t border-surface-line pt-4 text-sm text-body">
