@@ -820,32 +820,6 @@ export default function PreBuiltBusinessCentralDashboardsPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="bg-brand-ink py-14">
-        <div className="container-x text-center">
-          <h2 className="mx-auto max-w-3xl text-2xl font-bold leading-tight text-white lg:text-3xl">
-            Ready to turn Business Central data into clear, decision-ready dashboards?
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-white/85">
-            <Link href="/contact-us/" className="underline hover:text-white">
-              Schedule a free consultation
-            </Link>{' '}
-            with Folio3.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link href={FORM_HREF} className="btn bg-white text-brand hover:bg-surface-chip uppercase tracking-wide">
-              Book a Business Central Dashboard Demo
-            </Link>
-            <Link
-              href={FORM_HREF}
-              className="btn border border-white text-white hover:bg-white hover:text-brand uppercase tracking-wide"
-            >
-              Talk to an Azure Data Analytics Expert
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <OneToOneCTA />
 
       {/* Sticky desktop CTA */}
