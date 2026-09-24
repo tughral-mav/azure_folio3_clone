@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, getFaq, localAsset, localImg, getContentLink } from '@/lib/content';
+import { getCaptured, getFaqFull, localAsset, localImg, getContentLink } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { FeatureGroups, type FeatureGroup } from '@/components/sections/FeatureGroups';
 import { CaseFlip } from '@/components/sections/CaseFlip';
@@ -123,10 +123,8 @@ export default function AzureManagedServicesPage() {
   const learn = sec(/learn more about our services/i);
   const learnCards = learn ? imgHeadCards(learn.raw) : [];
 
-  const faqS = sec(/common queries are resolved/i);
-  const faqAnswers = faqS ? faqS.units[0].paras.slice(1) : [];
-  const faqItems = getFaq(SLUG).map((q, i) => ({ q, a: faqAnswers[i] ?? '' })).filter((x) => x.a);
-  const faqImg = faqS ? [...faqS.lead.imgs, ...faqS.units.flatMap((u) => u.imgs)].find((i) => i.src)?.src : undefined;
+  const faq = getFaqFull(`/${SLUG}/`);
+  const faqItems = faq?.items ?? [];
 
   return (
     <>
@@ -245,13 +243,13 @@ export default function AzureManagedServicesPage() {
       )}
 
       {/* FAQ */}
-      {faqItems.length > 0 && faqS && (
-        <section className="py-16 lg:py-24">
+      {faqItems.length > 0 && faq && (
+        <section className="py-16 lg:py-24" aria-labelledby="faq-heading">
           <div className="container-x">
-            <Reveal animation="fadeInUp"><h2 className="text-center text-3xl lg:text-4xl">{faqS.units[0].title}</h2></Reveal>
-            <div className={`mt-10 ${faqImg ? 'grid items-start gap-10 lg:grid-cols-[1fr_1.2fr]' : 'mx-auto max-w-3xl'}`}>
-              {faqImg && <Reveal animation="zoomIn"><Image src={faqImg} alt="" width={520} height={460} className="h-auto w-full rounded-2xl" /></Reveal>}
-              <Accordion items={faqItems} />
+            <Reveal animation="fadeInUp"><h2 id="faq-heading" className="text-center text-3xl lg:text-4xl">{faq.heading}</h2></Reveal>
+            {faq.intro && <p className="mx-auto mt-4 max-w-3xl text-center text-body">{faq.intro}</p>}
+            <div className="mx-auto mt-10 max-w-3xl">
+              <Accordion items={faqItems} headingLevel="h3" />
             </div>
           </div>
         </section>
