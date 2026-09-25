@@ -10,10 +10,7 @@ import {
   Boxes,
   Building2,
   ChartLine,
-  ClipboardCheck,
-  Compass,
   Database,
-  DatabaseZap,
   FileSearch,
   Headset,
   Hammer,
@@ -22,8 +19,6 @@ import {
   Layers,
   LayoutDashboard,
   MessageSquareText,
-  Network,
-  PlugZap,
   Rocket,
   ScrollText,
   Search,
@@ -33,12 +28,12 @@ import {
   TrendingUp,
   Truck,
   UsersRound,
-  Workflow,
   type LucideIcon,
 } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { FaqAccordion } from './FaqAccordion';
+import { ServicesTabs } from './ServicesTabs';
 
 const CANONICAL = 'https://azure.folio3.com/ai-agents/fabric-data-agents/';
 const TITLE = 'Microsoft Fabric Data Agent Implementation Services | Folio3';
@@ -143,108 +138,6 @@ const comparisonRows = [
   ['Security model', 'Can follow underlying Fabric data permissions', 'Depends on the application’s identity and security architecture'],
   ['Best use case', 'Governed enterprise-data analytics', 'General productivity and unstructured knowledge tasks'],
 ];
-
-type Service = {
-  title: string;
-  intro: string;
-  bullets?: string[];
-  chips?: string[];
-  Icon: LucideIcon;
-};
-
-const services: Service[] = [
-  {
-    title: 'Fabric Data Agent Strategy and Use-Case Discovery',
-    intro:
-      'Our Microsoft Fabric Data Agent consulting starts by identifying the business domains, user roles, priority questions, and measurable outcomes that will create value.',
-    bullets: [
-      'Business use-case prioritization.',
-      'Stakeholder and user-persona mapping.',
-      'Question-library design.',
-      'Success metrics and pilot roadmap.',
-    ],
-    Icon: Compass,
-  },
-  {
-    title: 'Data Foundation and Semantic Model Readiness',
-    intro:
-      'We prepare the Fabric data sources and Power BI semantic models behind the agent so answers draw on governed business logic.',
-    bullets: [
-      'Fabric data-source selection and assessment.',
-      'Power BI semantic-model review and optimization.',
-      'KPI, measure, relationship, and metadata validation.',
-      'Business glossary and verified-answer configuration.',
-    ],
-    Icon: DatabaseZap,
-  },
-  {
-    title: 'AI Data Agent Design and Business Context',
-    intro:
-      'We design each AI Data Agent in Microsoft Fabric around the terminology, KPIs, and decision workflows your teams already use.',
-    bullets: [
-      'Mapping business questions to approved Fabric sources.',
-      'Defining business terms, synonyms, measures, and date logic.',
-      'Setting source boundaries and escalation paths.',
-      'Testing ambiguous questions and edge cases.',
-    ],
-    Icon: Workflow,
-  },
-  {
-    title: 'Microsoft Fabric Data Agent Development',
-    intro:
-      'Our Microsoft Fabric Data Agent implementation covers configuration, instructions, testing, and production deployment.',
-    bullets: [
-      'Data-source connections and agent configuration.',
-      'Domain-specific instructions and example queries.',
-      'User acceptance testing.',
-      'Production deployment and knowledge transfer.',
-    ],
-    Icon: Bot,
-  },
-  {
-    title: 'Microsoft Foundry and Copilot Integration',
-    intro:
-      'We integrate Fabric Data Agents with Microsoft Foundry (formerly Azure AI Foundry), Copilot Studio, and the Microsoft experiences your teams already use.',
-    chips: [
-      'Microsoft Foundry',
-      'Copilot Studio',
-      'Microsoft Teams',
-      'Microsoft 365 Copilot',
-      'Power Apps',
-      'Custom enterprise applications',
-    ],
-    Icon: Network,
-  },
-  {
-    title: 'Governance, Security, and Access Controls',
-    intro:
-      'Fabric Data Agent governance is designed around the identity, security, and compliance controls that protect your organization’s information.',
-    bullets: [
-      'Microsoft Entra ID authentication and least-privilege access.',
-      'Role-based, row-level, and column-level security validation.',
-      'Approved data-source and business-domain boundaries.',
-      'Sensitivity labels, lineage, and audit requirements.',
-    ],
-    Icon: ShieldCheck,
-  },
-];
-
-const qualityService: Service = {
-  title: 'Answer Quality, Validation, and Optimization',
-  intro:
-    'A Data Agent should not go live merely because it can return an answer, so we validate that it answers the right business question with the correct governed data and user permissions.',
-  bullets: [
-    'Business-question test libraries.',
-    'Expected-answer and source validation.',
-    'KPI, measure, calculation, filter, and date-logic checks.',
-    'Permission and security-role testing.',
-    'Terminology, synonym, and ambiguity testing.',
-    'Stakeholder acceptance testing.',
-    'Regression testing after model or source changes.',
-    'Adoption monitoring and continuous improvement.',
-  ],
-  Icon: ClipboardCheck,
-};
 
 const proofPoints: { title: string; Icon: LucideIcon }[] = [
   { title: 'End-to-end Fabric and Azure AI implementation', Icon: Rocket },
@@ -626,43 +519,6 @@ function CtaRow({ primary, secondary }: { primary: string; secondary?: string })
   );
 }
 
-function ServiceCard({ s, featured = false }: { s: Service; featured?: boolean }) {
-  return (
-    <div
-      className={`group h-full rounded-2xl border p-7 transition-shadow duration-200 hover:shadow-cardHover ${
-        featured ? 'border-brand/30 bg-brand/5 shadow-card ring-1 ring-brand/10' : 'border-surface-line bg-white shadow-card'
-      }`}
-    >
-      <div className="flex items-start gap-4">
-        <IconBadge Icon={s.Icon} size="lg" />
-        <h3 className="pt-1 text-xl font-semibold leading-snug text-ink">{s.title}</h3>
-      </div>
-      <p className="mt-4 text-sm leading-relaxed text-body">{s.intro}</p>
-      {s.bullets && (
-        <ul
-          className={`mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm ${featured ? 'md:grid-cols-2' : ''}`}
-        >
-          {s.bullets.map((b) => (
-            <Check key={b}>{b}</Check>
-          ))}
-        </ul>
-      )}
-      {s.chips && (
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {s.chips.map((c) => (
-            <li
-              key={c}
-              className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-surface-chip px-3 py-1.5 text-xs font-medium text-brand"
-            >
-              <PlugZap aria-hidden="true" size={12} /> {c}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-}
-
 /** Horizontal timeline on desktop, vertical on mobile. */
 function Timeline({ steps }: { steps: Step[] }) {
   return (
@@ -984,16 +840,7 @@ export default function FabricDataAgentsPage() {
               chat interface.
             </p>
           </SectionHead>
-          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {services.map((s, i) => (
-              <Reveal key={s.title} animation="fadeInUp" delay={(i % 2) * 70}>
-                <ServiceCard s={s} />
-              </Reveal>
-            ))}
-            <Reveal animation="fadeInUp" className="lg:col-span-2">
-              <ServiceCard s={qualityService} featured />
-            </Reveal>
-          </div>
+          <ServicesTabs />
           <CtaRow primary={CTA_ASSESSMENT} secondary={CTA_SPECIALIST} />
         </div>
       </section>
