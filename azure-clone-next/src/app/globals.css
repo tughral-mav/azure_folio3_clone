@@ -108,6 +108,9 @@
   .post-body blockquote { @apply my-6 border-l-4 border-brand pl-4 italic text-ink; }
   .post-body table { @apply my-6 w-full border-collapse text-sm; }
   .post-body td, .post-body th { @apply border border-surface-line px-3 py-2 text-left; }
+  .post-body .wp-block-table { @apply my-6 overflow-x-auto; }
+  .post-body .wp-block-table table { @apply my-0; }
+  .post-body figcaption { @apply -mt-3 text-center text-sm text-body; }
 
   /* Blog "Table of Contents" (ez-toc grey theme) — the post bodyHtml ships the ez-toc markup
      but the plugin CSS was missing, so it rendered as a raw bulleted list. Match the live's
