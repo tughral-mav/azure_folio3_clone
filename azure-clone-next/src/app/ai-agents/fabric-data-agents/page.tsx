@@ -425,8 +425,8 @@ const useCases: UseCase[] = [
     ),
     Icon: Building2,
     image: {
-      src: '/wp-content/uploads/2023/06/savills-cs.webp',
-      alt: 'Aerial view of a residential property portfolio representing real estate and asset operations',
+      src: `${IMG}/real-estate-property-portfolio-dashboard-power-bi.webp`,
+      alt: 'Illustrative Power BI property portfolio dashboard showing occupancy rate by property against a 90% target, occupancy trend, lease expiries, and open work orders',
     },
     question: 'Which properties have the lowest occupancy?',
   },
