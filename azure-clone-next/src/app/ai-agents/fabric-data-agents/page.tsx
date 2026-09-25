@@ -32,6 +32,7 @@ import {
 } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { AwardsBand } from '@/components/sections/AwardsBand';
 import { FaqAccordion } from './FaqAccordion';
 import { ServicesTabs } from './ServicesTabs';
 
@@ -707,6 +708,9 @@ export default function FabricDataAgentsPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* Awards & Recognition */}
+      <AwardsBand autoScroll title="Awards & Recognition" />
 
       {/* At a Glance (table 1 of 2) */}
       <section className="bg-surface-tint py-16 lg:py-24">
