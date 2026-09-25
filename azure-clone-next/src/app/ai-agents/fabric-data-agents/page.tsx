@@ -69,6 +69,14 @@ export const metadata: Metadata = {
   },
 };
 
+const trustLogos = [
+  { src: '/wp-content/uploads/2024/01/ias-savills-logo.webp', alt: 'Savills', w: 196, h: 92 },
+  { src: '/wp-content/uploads/2024/01/ias-cityu-logo.webp', alt: 'City University of Seattle', w: 186, h: 87 },
+  { src: '/wp-content/uploads/2024/01/ias-daraz-logo.webp', alt: 'Daraz', w: 190, h: 89 },
+  { src: '/wp-content/uploads/2024/01/ias-rff-logo.webp', alt: 'Rombola Family Farms', w: 196, h: 92 },
+  { src: '/wp-content/uploads/2025/07/superior-farms-logo.webp', alt: 'Superior Farms', w: 268, h: 121 },
+];
+
 const glance = [
   {
     q: 'What do they do?',
@@ -654,13 +662,18 @@ export default function FabricDataAgentsPage() {
                 {CTA_PILOT}
               </Link>
             </div>
-            <ul aria-label="Supported Fabric data sources" className="mt-8 flex flex-wrap gap-2 text-xs font-medium text-brand">
-              {['Power BI semantic models', 'Lakehouse', 'Warehouse', 'KQL databases', 'OneLake'].map((s) => (
-                <li key={s} className="rounded-full border border-brand/20 bg-white/70 px-3 py-1">
-                  {s}
-                </li>
-              ))}
-            </ul>
+            <div className="mt-10">
+              <p className="text-xs font-semibold uppercase tracking-wider text-body/80">
+                Trusted by organizations around the globe
+              </p>
+              <ul className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-4 sm:gap-x-8">
+                {trustLogos.map((l) => (
+                  <li key={l.src}>
+                    <Image src={l.src} alt={l.alt} width={l.w} height={l.h} className="h-9 w-auto object-contain lg:h-10" />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <Reveal animation="zoomIn">
             <HeroVisual />
@@ -690,6 +703,10 @@ export default function FabricDataAgentsPage() {
               ask questions in natural language about governed enterprise data in Microsoft Fabric. They can use
               approved sources such as Power BI semantic models, Lakehouses, Warehouses, and KQL databases to return
               relevant answers while respecting access controls on the underlying data.
+            </p>
+            <p className="mt-3 text-body">
+              Fabric Data Agents can work with approved sources such as Power BI semantic models, Lakehouses,
+              Warehouses, and KQL databases—using OneLake as the unified data foundation where applicable.
             </p>
             <p className="mt-3 text-body">
               Folio3 implements Fabric Data Agents with the data foundation, semantic context, security, validation,
