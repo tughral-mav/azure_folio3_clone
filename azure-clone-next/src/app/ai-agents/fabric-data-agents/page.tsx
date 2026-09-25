@@ -926,6 +926,34 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
+      {/* CTA banner */}
+      <section className={`relative overflow-hidden ${gradientBg} py-16 lg:py-20`}>
+        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
+        <div className="container-x relative text-center">
+          <Reveal animation="fadeInUp">
+            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
+              Build a Production-Ready Microsoft Fabric Data Agent With Folio3
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-white/85">
+              Move from fragmented dashboards, reporting queues, and disconnected data sources to governed,
+              natural-language answers from your Microsoft Fabric environment.
+            </p>
+            <p className="mx-auto mt-3 max-w-2xl text-white/85">
+              Folio3 helps you prepare the data foundation, configure the Data Agent, validate answer quality,
+              integrate it with Microsoft and Azure experiences, and scale it securely across your organization.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <Link href={FORM_HREF} className={whiteBtn}>
+                {CTA_ASSESSMENT}
+              </Link>
+              <Link href={FORM_HREF} className={whiteOutlineBtn}>
+                {CTA_SPECIALIST}
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* What Folio3 Implements */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
@@ -1303,34 +1331,6 @@ export default function FabricDataAgentsPage() {
         <div className="container-x">
           <SectionHead title="Frequently Asked Questions" />
           <FaqAccordion faqs={faqs} />
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className={`relative overflow-hidden ${gradientBg} py-16 lg:py-20`}>
-        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
-        <div className="container-x relative text-center">
-          <Reveal animation="fadeInUp">
-            <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
-              Build a Production-Ready Microsoft Fabric Data Agent With Folio3
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-white/85">
-              Move from fragmented dashboards, reporting queues, and disconnected data sources to governed,
-              natural-language answers from your Microsoft Fabric environment.
-            </p>
-            <p className="mx-auto mt-3 max-w-2xl text-white/85">
-              Folio3 helps you prepare the data foundation, configure the Data Agent, validate answer quality,
-              integrate it with Microsoft and Azure experiences, and scale it securely across your organization.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link href={FORM_HREF} className={whiteBtn}>
-                {CTA_ASSESSMENT}
-              </Link>
-              <Link href={FORM_HREF} className={whiteOutlineBtn}>
-                {CTA_SPECIALIST}
-              </Link>
-            </div>
-          </Reveal>
         </div>
       </section>
 
