@@ -50,6 +50,7 @@ export const NAV: NavItem[] = [
         href: '/solution/pre-built-reporting-dashboards/',
         children: [
           { label: 'For Dynamics 365', href: '/solution/pre-built-reporting-dashboards/for-dynamics-365/' },
+          { label: 'For Business Central', href: '/solution/pre-built-reporting-dashboards/for-business-central/' },
         ],
       },
       { label: 'Employee Self-Service App', href: '/solution/folio3-employee-self-service-app/' },
