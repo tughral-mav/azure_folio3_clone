@@ -55,6 +55,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: META_DESCRIPTION,
   alternates: { canonical: CANONICAL },
+  robots: { index: true, follow: true },
   openGraph: {
     title: TITLE,
     description: META_DESCRIPTION,
