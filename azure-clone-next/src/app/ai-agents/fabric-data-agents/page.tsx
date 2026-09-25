@@ -680,10 +680,6 @@ function HeroVisual() {
           </div>
         </div>
       </div>
-      <figcaption className="mx-auto mt-4 max-w-sm text-center text-[11px] leading-snug text-body lg:ml-auto lg:mr-0 lg:mt-3 lg:max-w-[16rem] lg:text-right">
-        Illustrative example. Actual responses depend on approved Fabric data sources, semantic models, configured
-        business definitions, and user permissions.
-      </figcaption>
     </figure>
   );
 }
