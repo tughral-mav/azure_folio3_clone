@@ -43,7 +43,7 @@ import { FaqAccordion } from './FaqAccordion';
 const CANONICAL = 'https://azure.folio3.com/ai-agents/fabric-data-agents/';
 const TITLE = 'Microsoft Fabric Data Agent Implementation Services | Folio3';
 const META_DESCRIPTION =
-  'Folio3 implements secure Microsoft Fabric Data Agents for enterprise analytics. Prepare your Fabric data, configure AI agents, validate answers, and deploy with Microsoft Foundry and Copilot integration.';
+  'Implement secure Microsoft Fabric Data Agents with Folio3. Prepare data, validate answers, and deploy with Foundry and Copilot integration.';
 const H1 = 'Microsoft Fabric Data Agent Implementation Services';
 const OG_IMAGE = '/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp';
 const FORM_HREF = '#pgForm';
