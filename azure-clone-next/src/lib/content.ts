@@ -439,6 +439,7 @@ export function getBlogPost(slug: string) {
   const file = path.join(KIT, `blog_${slug.replace(/-/g, '_')}.json`);
   if (!existsSync(file)) return null;
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
+    meta: { seoTitle?: string; seoDescription?: string };
     bodyHtml?: string;
     related?: { title: string; href: string; image?: string }[];
   };
@@ -458,6 +459,9 @@ export function getBlogPost(slug: string) {
     slug,
     title: h1?.text ?? data.meta.title,
     description: data.meta.description,
+    // optional SEO overrides (meta/OG tags only; H1 + on-page intro keep title/description)
+    seoTitle: data.meta.seoTitle,
+    seoDescription: data.meta.seoDescription,
     heroImage,
     sections: data.sections,
     body,
