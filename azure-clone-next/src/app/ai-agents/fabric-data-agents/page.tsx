@@ -38,17 +38,21 @@ import {
 } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { FaqAccordion } from './FaqAccordion';
 
 const CANONICAL = 'https://azure.folio3.com/ai-agents/fabric-data-agents/';
-const TITLE = 'Microsoft Fabric Data Agents Overview & Development Services | Folio3';
+const TITLE = 'Microsoft Fabric Data Agent Implementation Services | Folio3';
 const META_DESCRIPTION =
-  'Build secure Microsoft Fabric Data Agents with Folio3. Enable natural-language answers from OneLake, Power BI, Lakehouse, Warehouse, and KQL data with Microsoft Foundry and Copilot integration.';
-const H1 = 'Microsoft Fabric Data Agent Development Services';
+  'Folio3 implements secure Microsoft Fabric Data Agents for enterprise analytics. Prepare your Fabric data, configure AI agents, validate answers, and deploy with Microsoft Foundry and Copilot integration.';
+const H1 = 'Microsoft Fabric Data Agent Implementation Services';
 const OG_IMAGE = '/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp';
 const FORM_HREF = '#pgForm';
 const IMG = '/wp-content/uploads/2026/09';
-const CTA_ASSESSMENT = 'Book a Fabric Data Agent Readiness Assessment';
-const CTA_EXPERT = 'Talk to a Fabric AI Expert';
+const CTA_ASSESSMENT = 'Book a Fabric Data Agent Implementation Assessment';
+const CTA_PILOT = 'Scope Your Fabric Data Agent Pilot';
+const CTA_SPECIALIST = 'Talk to a Microsoft Fabric AI Specialist';
+const EXAMPLE_QUESTION =
+  'Which sales regions are below their gross-margin target this quarter, and what caused the change from last quarter?';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -80,15 +84,11 @@ const glance = [
   },
   {
     q: 'Do they respect permissions?',
-    a: 'Yes. Access should follow the permissions applied to the underlying Fabric data sources.',
+    a: 'Yes. Access follows the permissions applied to underlying Fabric data sources.',
   },
   {
     q: 'Where can users access them?',
-    a: 'Microsoft Fabric, Microsoft Foundry, Copilot Studio, Microsoft Teams, Microsoft 365 Copilot, and custom applications.',
-  },
-  {
-    q: 'What improves answer quality?',
-    a: 'Curated data sources, semantic models, business definitions, AI instructions, verified answers, and testing.',
+    a: 'Microsoft Fabric, Microsoft Foundry, Copilot Studio, Teams, Microsoft 365 Copilot, and custom applications.',
   },
 ];
 
@@ -103,79 +103,44 @@ const exampleSteps = [
 
 type IconCard = { title: string; text: string; Icon: LucideIcon };
 
-const reliability: IconCard[] = [
+const implementCards: IconCard[] = [
   {
     title: 'Governed Data Sources',
-    text: 'Connect the agent to approved Power BI semantic models, Lakehouses, Warehouses, and KQL databases rather than unstructured or unapproved sources.',
+    text: 'Connect the Data Agent to approved Power BI semantic models, Lakehouses, Warehouses, and KQL databases.',
     Icon: Database,
   },
   {
-    title: 'Business Context',
-    text: 'Define KPIs, measures, relationships, terminology, metadata, business rules, and data ownership so the agent understands what each metric means in your organization.',
+    title: 'Semantic and Business Context',
+    text: 'Define KPIs, measures, relationships, metadata, business definitions, terminology, and data ownership.',
     Icon: Layers,
   },
   {
-    title: 'Agent Instructions',
-    text: 'Configure the context that guides how the Data Agent interprets questions, prioritizes approved sources, handles ambiguous terms, and responds to users.',
+    title: 'Agent Instructions and Example Queries',
+    text: 'Configure agent behavior, data-source instructions, example business questions, source priorities, and rules for ambiguous requests.',
     Icon: ScrollText,
   },
   {
-    title: 'Role-Based Access',
-    text: 'Align agent responses with Microsoft Entra ID, source permissions, and row-level or column-level security requirements.',
+    title: 'Role-Based Security',
+    text: 'Align Data Agent behavior with Microsoft Entra ID, source permissions, role-based access, row-level security, and column-level security.',
     Icon: KeyRound,
   },
   {
-    title: 'Answer Validation',
-    text: 'Test real business questions, calculations, dates, filters, and expected outputs before making the agent available to users.',
+    title: 'Answer Quality Validation',
+    text: 'Test real business questions, calculations, dates, filters, terminology, expected outputs, and access behavior before release.',
     Icon: BadgeCheck,
   },
   {
-    title: 'Continuous Improvement',
-    text: 'Monitor usage, identify unanswered questions, refine business context, and test changes as your data model and reporting needs evolve.',
-    Icon: TrendingUp,
-  },
-];
-
-type Step = { title: string; text: string; Icon: LucideIcon };
-
-const howItWorks: Step[] = [
-  {
-    title: 'Connect approved data sources',
-    text: 'The Data Agent connects to selected Microsoft Fabric sources, such as a Power BI semantic model, Lakehouse, Warehouse, or KQL database.',
-    Icon: PlugZap,
-  },
-  {
-    title: 'Add business context',
-    text: 'Folio3 configures KPIs, business terminology, measures, relationships, metadata, AI instructions, and verified answers.',
-    Icon: Layers,
-  },
-  {
-    title: 'Ask a question in natural language',
-    text: 'A user asks a question such as, “What caused customer churn to increase last month?”',
-    Icon: MessageSquareText,
-  },
-  {
-    title: 'Apply permissions and query the data',
-    text: 'The agent uses the user’s authorized access to query the relevant Fabric source.',
-    Icon: ShieldCheck,
-  },
-  {
-    title: 'Return a business-ready answer',
-    text: 'The response is based on approved data, business logic, semantic context, and security permissions.',
-    Icon: Sparkles,
-  },
-  {
-    title: 'Improve over time',
-    text: 'Folio3 monitors adoption, improves instructions and model context, and retests the Data Agent after relevant changes.',
+    title: 'Continuous Optimization',
+    text: 'Monitor usage, refine business context, manage changes, test updates, and expand the agent into additional business domains.',
     Icon: TrendingUp,
   },
 ];
 
 const comparisonRows = [
   ['Primary purpose', 'Answer questions about approved Microsoft Fabric data', 'Provide broad conversational assistance'],
-  ['Data grounding', 'Uses selected Fabric sources and semantic context', 'Depends on public knowledge, uploaded files, or custom retrieval'],
-  ['Business logic', 'Can use measures, relationships, metadata, instructions, and verified answers', 'Usually needs separate prompting and data engineering'],
-  ['Security model', 'Can follow underlying Fabric data permissions', 'Depends on the identity and security architecture around it'],
+  ['Data grounding', 'Uses selected Fabric sources and semantic context', 'Uses public knowledge, uploaded files, or custom retrieval'],
+  ['Business logic', 'Uses measures, relationships, metadata, instructions, and verified answers', 'Usually requires separate prompt and data engineering'],
+  ['Security model', 'Can follow underlying Fabric data permissions', 'Depends on the application’s identity and security architecture'],
   ['Best use case', 'Governed enterprise-data analytics', 'General productivity and unstructured knowledge tasks'],
 ];
 
@@ -184,7 +149,6 @@ type Service = {
   intro: string;
   bullets?: string[];
   chips?: string[];
-  note?: string;
   Icon: LucideIcon;
 };
 
@@ -192,42 +156,35 @@ const services: Service[] = [
   {
     title: 'Fabric Data Agent Strategy and Use-Case Discovery',
     intro:
-      'We identify the business domains, user roles, priority questions, data sources, and measurable outcomes that will create value from a Data Agent.',
+      'Our Microsoft Fabric Data Agent consulting starts by identifying the business domains, user roles, priority questions, and measurable outcomes that will create value.',
     bullets: [
       'Business use-case prioritization.',
       'Stakeholder and user-persona mapping.',
-      'Data-source and integration review.',
       'Question-library design.',
-      'Success metrics and acceptance criteria.',
-      'Pilot and scale-up roadmap.',
+      'Success metrics and pilot roadmap.',
     ],
     Icon: Compass,
   },
   {
     title: 'Data Foundation and Semantic Model Readiness',
     intro:
-      'Data Agents need high-quality data and clear business logic. Folio3 prepares the Fabric foundation behind the agent.',
+      'We prepare the Fabric data sources and Power BI semantic models behind the agent so answers draw on governed business logic.',
     bullets: [
       'Fabric data-source selection and assessment.',
       'Power BI semantic-model review and optimization.',
       'KPI, measure, relationship, and metadata validation.',
-      'AI-ready schema and data-description improvements.',
-      'Data-quality and ownership assessment.',
-      'Business glossary and terminology alignment.',
-      'Verified question and answer configuration.',
+      'Business glossary and verified-answer configuration.',
     ],
     Icon: DatabaseZap,
   },
   {
     title: 'AI Data Agent Design and Business Context',
     intro:
-      'Folio3 designs AI Data Agents in Microsoft Fabric around the terminology, KPIs, decision workflows, and domain expertise your teams already use.',
+      'We design each AI Data Agent in Microsoft Fabric around the terminology, KPIs, and decision workflows your teams already use.',
     bullets: [
       'Mapping business questions to approved Fabric sources.',
-      'Configuring data-source instructions and domain rules.',
       'Defining business terms, synonyms, measures, and date logic.',
       'Setting source boundaries and escalation paths.',
-      'Preparing agents for finance, sales, operations, supply chain, service, and executive use cases.',
       'Testing ambiguous questions and edge cases.',
     ],
     Icon: Workflow,
@@ -235,22 +192,19 @@ const services: Service[] = [
   {
     title: 'Microsoft Fabric Data Agent Development',
     intro:
-      'We configure and implement Data Agents that align with your data sources, business context, access model, and user needs.',
+      'Our Microsoft Fabric Data Agent implementation covers configuration, instructions, testing, and production deployment.',
     bullets: [
       'Data-source connections and agent configuration.',
-      'Domain-specific instructions.',
-      'Natural-language question design.',
-      'Source prioritization and answer behavior.',
+      'Domain-specific instructions and example queries.',
       'User acceptance testing.',
-      'Technical documentation and knowledge transfer.',
-      'Production deployment support.',
+      'Production deployment and knowledge transfer.',
     ],
     Icon: Bot,
   },
   {
-    title: 'Azure AI Foundry and Copilot Integration',
+    title: 'Microsoft Foundry and Copilot Integration',
     intro:
-      'Extend Fabric intelligence beyond dashboards and analytics workspaces. Folio3 can integrate Fabric Data Agents with Microsoft Foundry, Copilot Studio, Microsoft Teams, Microsoft 365 Copilot, Power Apps, and custom enterprise applications.',
+      'We integrate Fabric Data Agents with Microsoft Foundry (formerly Azure AI Foundry), Copilot Studio, and the Microsoft experiences your teams already use.',
     chips: [
       'Microsoft Foundry',
       'Copilot Studio',
@@ -259,44 +213,44 @@ const services: Service[] = [
       'Power Apps',
       'Custom enterprise applications',
     ],
-    note:
-      'Microsoft Foundry supports building AI agents that can use Fabric Data Agents for enterprise data analysis. Microsoft Copilot Studio can also use a Fabric Data Agent as a connected agent to help ground a custom agent’s answers in organizational data.',
     Icon: Network,
   },
   {
     title: 'Governance, Security, and Access Controls',
     intro:
-      'Folio3 designs Fabric Data Agent solutions around the identity, security, and governance controls that protect your organization’s information.',
+      'Fabric Data Agent governance is designed around the identity, security, and compliance controls that protect your organization’s information.',
     bullets: [
-      'Microsoft Entra ID authentication.',
-      'Source-level permissions and least-privilege access.',
-      'Role-based access controls.',
-      'Row-level and column-level security validation.',
+      'Microsoft Entra ID authentication and least-privilege access.',
+      'Role-based, row-level, and column-level security validation.',
       'Approved data-source and business-domain boundaries.',
-      'Sensitivity labels and compliance alignment.',
-      'Data lineage, auditability, and monitoring requirements.',
-      'Secure deployment across Fabric, Foundry, Copilot Studio, and custom applications.',
+      'Sensitivity labels, lineage, and audit requirements.',
     ],
-    note:
-      'Users querying through a Fabric Data Agent need the appropriate permissions for underlying data sources. Depending on the source, this can mean Read permission for a semantic model, SELECT permission for a Warehouse, or Reader access for a KQL database.',
     Icon: ShieldCheck,
   },
-  {
-    title: 'Answer Quality, Validation, and Optimization',
-    intro:
-      'A Data Agent should not go live merely because it can return an answer. Folio3 validates whether it answers the right business question, uses the correct governed data, and respects the appropriate user permissions.',
-    bullets: [
-      'Business-question test libraries.',
-      'Expected-answer and source validation.',
-      'KPI, measure, calculation, filter, and date-logic checks.',
-      'Permission and security-role testing.',
-      'Terminology, synonym, and ambiguity testing.',
-      'Stakeholder acceptance testing.',
-      'Regression testing after model or source changes.',
-      'Adoption monitoring and continuous improvement.',
-    ],
-    Icon: ClipboardCheck,
-  },
+];
+
+const qualityService: Service = {
+  title: 'Answer Quality, Validation, and Optimization',
+  intro:
+    'A Data Agent should not go live merely because it can return an answer, so we validate that it answers the right business question with the correct governed data and user permissions.',
+  bullets: [
+    'Business-question test libraries.',
+    'Expected-answer and source validation.',
+    'KPI, measure, calculation, filter, and date-logic checks.',
+    'Permission and security-role testing.',
+    'Terminology, synonym, and ambiguity testing.',
+    'Stakeholder acceptance testing.',
+    'Regression testing after model or source changes.',
+    'Adoption monitoring and continuous improvement.',
+  ],
+  Icon: ClipboardCheck,
+};
+
+const proofPoints: { title: string; Icon: LucideIcon }[] = [
+  { title: 'End-to-end Fabric and Azure AI implementation', Icon: Rocket },
+  { title: 'Semantic-model and business-context design', Icon: Layers },
+  { title: 'Security, permissions, and governance validation', Icon: ShieldCheck },
+  { title: 'Pilot-to-production delivery and managed optimization', Icon: TrendingUp },
 ];
 
 type Layer = { title: string; text: string; Icon: LucideIcon; highlight?: boolean };
@@ -343,7 +297,7 @@ const channels: IconCard[] = [
   },
   {
     title: 'Microsoft Foundry',
-    text: 'Use Fabric Data Agents as a governed enterprise-data capability within custom AI applications, broader agent workflows, and Azure-based solutions. Microsoft Foundry is designed to help organizations build and operate AI agents with models, tools, data, observability, and controls.',
+    text: 'Use Fabric Data Agents as a governed enterprise-data capability within custom AI applications, broader agent workflows, and Azure-based solutions.',
     Icon: Sparkles,
   },
   {
@@ -353,7 +307,7 @@ const channels: IconCard[] = [
   },
   {
     title: 'Microsoft Teams and Microsoft 365 Copilot',
-    text: 'Bring conversational data insights to users in the Microsoft collaboration environments they work in every day. Fabric tenant settings can enable external consumption scenarios, including Foundry, Copilot Studio, Microsoft 365 Copilot, and MCP-based use cases.',
+    text: 'Bring conversational data insights to users in the Microsoft collaboration environments they work in every day.',
     Icon: MessageSquareText,
   },
   {
@@ -400,13 +354,12 @@ const useCases: UseCase[] = [
     text: (
       <>
         Enable finance teams to ask questions about revenue, margin, expenses, cash flow, budget variance, forecast
-        performance, and cost drivers using governed data and approved business metrics. Learn how Folio3 connects
-        Azure, Fabric, and Copilot for{' '}
+        performance, and cost drivers using governed data and approved business metrics. Learn how Folio3 connects{' '}
         <Link
           href="/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/"
           className="text-brand underline"
         >
-          financial planning
+          Azure, Fabric, and Copilot for financial planning
         </Link>
         .
       </>
@@ -414,7 +367,7 @@ const useCases: UseCase[] = [
     Icon: Landmark,
     image: {
       src: `${IMG}/financial-reporting-dashboard-power-bi.webp`,
-      alt: 'Finance dashboard in Power BI showing revenue, margin, and budget variance — data a Fabric Data Agent can answer questions about',
+      alt: 'Illustrative Power BI finance dashboard showing revenue, margin, and budget variance that a Fabric Data Agent can answer questions about',
     },
     question: 'Why did operating expenses exceed budget in Q3?',
   },
@@ -424,7 +377,7 @@ const useCases: UseCase[] = [
     Icon: ChartLine,
     image: {
       src: `${IMG}/sales-performance-dashboard-power-bi.webp`,
-      alt: 'Sales performance dashboard in Power BI showing pipeline, territory, and account trends',
+      alt: 'Illustrative Power BI sales performance dashboard showing pipeline, territory, and account trends',
     },
     question: 'Which accounts need attention this month?',
   },
@@ -434,7 +387,7 @@ const useCases: UseCase[] = [
     Icon: Truck,
     image: {
       src: `${IMG}/distribution-dashboard-power-bi.webp`,
-      alt: 'Distribution and operations dashboard in Power BI showing fulfillment and on-time delivery performance',
+      alt: 'Illustrative Power BI distribution dashboard showing fulfillment and on-time delivery performance',
     },
     question: 'Where is inventory risk increasing?',
   },
@@ -444,7 +397,7 @@ const useCases: UseCase[] = [
     Icon: Headset,
     image: {
       src: `${IMG}/customer-service-sla-dashboard-power-bi.webp`,
-      alt: 'Customer service SLA dashboard in Power BI showing case volume and resolution time',
+      alt: 'Illustrative Power BI customer service SLA dashboard showing case volume and resolution time',
     },
     question: 'Which issue types are driving escalations?',
   },
@@ -454,7 +407,7 @@ const useCases: UseCase[] = [
     Icon: Target,
     image: {
       src: `${IMG}/executive-summary-dashboard-power-bi.webp`,
-      alt: 'Executive summary dashboard in Power BI comparing revenue, profit, and performance drivers across periods',
+      alt: 'Illustrative Power BI executive summary dashboard comparing revenue, profit, and performance drivers across periods',
     },
     question: 'How did we perform versus last quarter?',
   },
@@ -473,55 +426,57 @@ const useCases: UseCase[] = [
     Icon: Building2,
     image: {
       src: '/wp-content/uploads/2023/06/savills-cs.webp',
-      alt: 'Aerial view of a residential property portfolio — real estate and asset operations use case',
+      alt: 'Aerial view of a residential property portfolio representing real estate and asset operations',
     },
     question: 'Which properties have the lowest occupancy?',
   },
 ];
 
+type Step = { title: string; text: string; Icon: LucideIcon };
+
 const delivery: Step[] = [
   {
     title: 'Discover',
-    text: 'We define your business domain, user roles, high-value questions, desired outcomes, available sources, security requirements, and preferred deployment destination.',
+    text: 'Define business goals, user roles, priority questions, source systems, target outcomes, and deployment requirements.',
     Icon: Search,
   },
   {
     title: 'Prepare',
-    text: 'We assess data quality, semantic models, KPIs, metadata, business definitions, access controls, and overall Fabric readiness.',
+    text: 'Assess data quality, Fabric sources, semantic models, business definitions, permissions, governance, and readiness.',
     Icon: FileSearch,
   },
   {
     title: 'Build',
-    text: 'We configure the Fabric Data Agent, connect approved data sources, create domain instructions, and design the experience for target users.',
+    text: 'Configure the Data Agent, connect approved sources, create instructions, establish business context, and design the user experience.',
     Icon: Hammer,
   },
   {
     title: 'Validate',
-    text: 'We test business questions, calculations, data grounding, filters, permissions, terminology, edge cases, and stakeholder acceptance.',
+    text: 'Test business questions, answer logic, calculations, filters, security, terminology, and stakeholder acceptance.',
     Icon: BadgeCheck,
   },
   {
     title: 'Deploy',
-    text: 'We publish the approved solution to Microsoft Fabric, Microsoft Foundry, Copilot Studio, Microsoft Teams, Microsoft 365 Copilot, Power Apps, or a custom application.',
+    text: 'Publish the Data Agent to Microsoft Fabric, Foundry, Copilot Studio, Teams, Microsoft 365 Copilot, Power Apps, or a custom application.',
     Icon: Rocket,
   },
   {
     title: 'Optimize',
-    text: 'We analyze usage, improve answer quality, update business context, expand approved sources, and support governance as the solution scales.',
+    text: 'Monitor usage, improve answer quality, update business context, add sources, and scale governance as adoption grows.',
     Icon: Activity,
   },
 ];
 
 const pilot = [
-  'One priority business domain, such as finance, sales, operations, supply chain, or customer service.',
-  'One to three approved Microsoft Fabric data sources.',
-  'A library of high-priority business questions.',
-  'Data-source and semantic-model readiness work.',
-  'KPI definitions, terminology, and Data Agent instructions.',
-  'Security, permissions, and role-based validation.',
-  'Answer-quality testing and stakeholder acceptance.',
-  'Deployment recommendations for Fabric, Foundry, Copilot Studio, Teams, Microsoft 365 Copilot, or a custom application.',
-  'A roadmap to expand into additional data sources, teams, and use cases.',
+  'One priority business domain',
+  'One to three approved Fabric data sources',
+  'Priority business-question library',
+  'Data-source and semantic-model readiness',
+  'KPI definitions, instructions, and example queries',
+  'Security and role-based access validation',
+  'Answer-quality testing and stakeholder acceptance',
+  'Deployment recommendation',
+  'Scale-up roadmap',
 ];
 
 const managed = [
@@ -542,8 +497,8 @@ const faqs = [
     a: 'Microsoft Fabric Data Agents are AI-powered conversational experiences that let authorized users ask natural-language questions about approved Microsoft Fabric data sources. They can use Power BI semantic models, Lakehouses, Warehouses, and KQL databases to provide responses based on governed enterprise data.',
   },
   {
-    q: 'What is included in a Microsoft Fabric Data Agents overview?',
-    a: 'A Microsoft Fabric Data Agents overview explains what Data Agents are, which sources they can use, how users ask questions, how permissions are applied, and where the agent can be deployed. A complete overview should also address semantic-model readiness, business context, security, testing, governance, and user adoption.',
+    q: 'What is included in Microsoft Fabric Data Agent implementation services?',
+    a: 'Microsoft Fabric Data Agent implementation services typically include readiness assessment, use-case discovery, data-source and Power BI semantic-model preparation, business context and agent instructions, security and permission validation, answer-quality testing, deployment to Fabric, Microsoft Foundry, Copilot Studio, Teams, or a custom application, and ongoing optimization. Folio3 scopes each engagement around your data, users, and priority business questions.',
   },
   {
     q: 'How do AI Data Agents in Microsoft Fabric work?',
@@ -567,7 +522,7 @@ const faqs = [
   },
   {
     q: 'Can Fabric Data Agents work with Copilot Studio?',
-    a: 'Yes. Microsoft documents that Fabric Data Agents can be added to custom Microsoft Copilot Studio agents as connected agents, enabling the custom agent to use governed Fabric data to ground responses.',
+    a: 'Yes. A Fabric Data Agent can be added to a custom Microsoft Copilot Studio agent as a connected agent, enabling the custom agent to use governed Fabric data to ground its responses.',
   },
   {
     q: 'What is required before implementing a Fabric Data Agent?',
@@ -594,7 +549,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: H1,
-    serviceType: 'Microsoft Fabric Data Agent development',
+    serviceType: 'Microsoft Fabric Data Agent implementation',
     provider: PROVIDER,
     areaServed: 'Worldwide',
     url: CANONICAL,
@@ -622,6 +577,8 @@ const jsonLd = [
 
 const primaryBtn = 'btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide';
 const outlineBtn = 'btn border border-brand text-brand hover:bg-brand hover:text-white uppercase tracking-wide';
+const whiteBtn = 'btn bg-white uppercase tracking-wide text-brand hover:bg-surface-chip';
+const whiteOutlineBtn = 'btn border border-white uppercase tracking-wide text-white hover:bg-white hover:text-brand';
 const gradientBg = 'bg-[linear-gradient(135deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)]';
 
 function Check({ children, light = false }: { children: ReactNode; light?: boolean }) {
@@ -669,6 +626,43 @@ function CtaRow({ primary, secondary }: { primary: string; secondary?: string })
   );
 }
 
+function ServiceCard({ s, featured = false }: { s: Service; featured?: boolean }) {
+  return (
+    <div
+      className={`group h-full rounded-2xl border p-7 transition-shadow duration-200 hover:shadow-cardHover ${
+        featured ? 'border-brand/30 bg-brand/5 shadow-card ring-1 ring-brand/10' : 'border-surface-line bg-white shadow-card'
+      }`}
+    >
+      <div className="flex items-start gap-4">
+        <IconBadge Icon={s.Icon} size="lg" />
+        <h3 className="pt-1 text-xl font-semibold leading-snug text-ink">{s.title}</h3>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-body">{s.intro}</p>
+      {s.bullets && (
+        <ul
+          className={`mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm ${featured ? 'md:grid-cols-2' : ''}`}
+        >
+          {s.bullets.map((b) => (
+            <Check key={b}>{b}</Check>
+          ))}
+        </ul>
+      )}
+      {s.chips && (
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {s.chips.map((c) => (
+            <li
+              key={c}
+              className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-surface-chip px-3 py-1.5 text-xs font-medium text-brand"
+            >
+              <PlugZap aria-hidden="true" size={12} /> {c}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 /** Horizontal timeline on desktop, vertical on mobile. */
 function Timeline({ steps }: { steps: Step[] }) {
   return (
@@ -685,7 +679,7 @@ function Timeline({ steps }: { steps: Step[] }) {
             className="group flex items-start gap-5 lg:flex-col lg:items-center lg:gap-4 lg:text-center"
           >
             <span
-              className={`relative flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-full ${gradientBg} text-white shadow-cardHover ring-8 ring-white transition-transform duration-300 group-hover:scale-110`}
+              className={`relative flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-full ${gradientBg} text-white shadow-cardHover ring-8 ring-surface-tint transition-transform duration-300 group-hover:scale-110`}
             >
               <s.Icon aria-hidden="true" size={22} strokeWidth={1.9} />
               <span className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-brand shadow-card">
@@ -712,61 +706,67 @@ function HeroVisual() {
     { r: 'West', v: 71, miss: true },
   ];
   return (
-    <div className="relative">
-      <figure className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
-        <Image
-          src={`${IMG}/executive-summary-dashboard-power-bi.webp`}
-          alt="Microsoft Fabric Data Agents answer questions over governed Power BI dashboards and semantic models"
-          width={1600}
-          height={900}
-          priority
-          sizes="(min-width: 1024px) 50vw, 100vw"
-          className="h-auto w-full"
-        />
-      </figure>
-      <div className="relative mx-auto -mt-12 w-[92%] max-w-sm rounded-2xl border border-surface-line bg-white/95 p-4 shadow-cardHover backdrop-blur lg:absolute lg:-bottom-16 lg:-left-10 lg:mx-0 lg:mt-0 lg:w-[62%] lg:max-w-[19rem]">
-        <div className="flex items-center gap-2 border-b border-surface-line pb-3">
-          <span className={`flex h-8 w-8 items-center justify-center rounded-lg ${gradientBg} text-white`}>
-            <Bot aria-hidden="true" size={16} />
-          </span>
-          <div className="leading-tight">
-            <p className="text-sm font-semibold text-ink">Fabric Data Agent</p>
-            <p className="text-[11px] text-body">Sales semantic model · Warehouse</p>
-          </div>
+    <figure>
+      <div className="relative">
+        <div className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
+          <Image
+            src={`${IMG}/executive-summary-dashboard-power-bi.webp`}
+            alt="Illustrative Power BI executive dashboard behind a Microsoft Fabric Data Agent chat answering a gross-margin question"
+            width={1600}
+            height={900}
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="h-auto w-full"
+          />
         </div>
-        <p className="ml-auto mt-3 w-fit max-w-[90%] rounded-2xl rounded-br-sm bg-brand px-3 py-2 text-xs leading-snug text-white">
-          Which sales regions missed their gross-margin target this quarter?
-        </p>
-        <div className="mt-3 rounded-2xl rounded-bl-sm bg-surface-tint px-3 py-3">
-          <p className="text-xs leading-snug text-ink">
-            <span className="font-semibold">2 of 4 regions</span> are below target. West shows the largest gap
-            versus the previous quarter.
+        <div className="relative mx-auto -mt-12 w-[92%] max-w-sm rounded-2xl border border-surface-line bg-white/95 p-4 shadow-cardHover backdrop-blur lg:absolute lg:-bottom-24 lg:-left-10 lg:mx-0 lg:mt-0 lg:w-[66%] lg:max-w-[20rem]">
+          <div className="flex items-center gap-2 border-b border-surface-line pb-3">
+            <span className={`flex h-8 w-8 items-center justify-center rounded-lg ${gradientBg} text-white`}>
+              <Bot aria-hidden="true" size={16} />
+            </span>
+            <div className="leading-tight">
+              <p className="text-sm font-semibold text-ink">Fabric Data Agent</p>
+              <p className="text-[11px] text-body">Sales semantic model · Warehouse</p>
+            </div>
+          </div>
+          <p className="ml-auto mt-3 w-fit max-w-[92%] rounded-2xl rounded-br-sm bg-brand px-3 py-2 text-xs leading-snug text-white">
+            {EXAMPLE_QUESTION}
           </p>
-          <div className="mt-3 space-y-1.5" aria-hidden>
-            {bars.map((b) => (
-              <div key={b.r} className="flex items-center gap-2 text-[10px] text-body">
-                <span className="w-9">{b.r}</span>
-                <span className="relative h-2 flex-1 rounded-full bg-white">
-                  <span
-                    className={`absolute inset-y-0 left-0 rounded-full ${b.miss ? 'bg-[#F59E0B]' : 'bg-brand'}`}
-                    style={{ width: `${b.v}%` }}
-                  />
-                  <span className="absolute inset-y-[-3px] left-[85%] w-px bg-ink/50" />
-                </span>
-              </div>
-            ))}
+          <div className="mt-3 rounded-2xl rounded-bl-sm bg-surface-tint px-3 py-3">
+            <p className="text-xs leading-snug text-ink">
+              <span className="font-semibold">2 of 4 regions</span> are below target. West shows the largest gap
+              versus last quarter, driven mainly by lower-margin product mix.
+            </p>
+            <div className="mt-3 space-y-1.5" aria-hidden>
+              {bars.map((b) => (
+                <div key={b.r} className="flex items-center gap-2 text-[10px] text-body">
+                  <span className="w-9">{b.r}</span>
+                  <span className="relative h-2 flex-1 rounded-full bg-white">
+                    <span
+                      className={`absolute inset-y-0 left-0 rounded-full ${b.miss ? 'bg-[#F59E0B]' : 'bg-brand'}`}
+                      style={{ width: `${b.v}%` }}
+                    />
+                    <span className="absolute inset-y-[-3px] left-[85%] w-px bg-ink/50" />
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          <span className="inline-flex items-center gap-1 rounded-full bg-[#E7F7EE] px-2 py-0.5 text-[10px] font-medium text-[#137A3E]">
-            <ShieldCheck aria-hidden="true" size={11} /> Row-level security applied
-          </span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-surface-chip px-2 py-0.5 text-[10px] font-medium text-brand">
-            <BadgeCheck aria-hidden="true" size={11} /> Verified measure
-          </span>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <span className="inline-flex items-center gap-1 rounded-full bg-[#E7F7EE] px-2 py-0.5 text-[10px] font-medium text-[#137A3E]">
+              <ShieldCheck aria-hidden="true" size={11} /> Row-level security applied
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-surface-chip px-2 py-0.5 text-[10px] font-medium text-brand">
+              <BadgeCheck aria-hidden="true" size={11} /> Verified measure
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+      <figcaption className="mx-auto mt-4 max-w-sm text-center text-[11px] leading-snug text-body lg:ml-auto lg:mr-0 lg:mt-3 lg:max-w-[16rem] lg:text-right">
+        Illustrative example. Actual responses depend on approved Fabric data sources, semantic models, configured
+        business definitions, and user permissions.
+      </figcaption>
+    </figure>
   );
 }
 
@@ -779,26 +779,25 @@ export default function FabricDataAgentsPage() {
           <div>
             <span className="eyebrow">AI Agents · Microsoft Fabric</span>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] text-ink lg:text-5xl xl:text-[3.4rem]">
-              Microsoft Fabric <span className="text-brand">Data Agent</span> Development Services
+              Microsoft Fabric <span className="text-brand">Data Agent</span> Implementation Services
             </h1>
             <p className="mt-6 max-w-xl text-lg font-medium text-ink/90">
-              Build secure, governed Microsoft Fabric Data Agents that turn enterprise data into clear, actionable
-              answers.
+              Build and deploy secure, governed Microsoft Fabric Data Agents with Folio3.
             </p>
             <p className="mt-4 max-w-xl text-body">
-              Folio3 designs, configures, tests, and deploys AI Data Agents in Microsoft Fabric that let users ask
-              questions in natural language and get trusted insights from Power BI semantic models, Lakehouses,
-              Warehouses, KQL databases, and OneLake, without needing SQL, DAX, or KQL expertise.
+              We help organizations assess Fabric readiness, prepare data and semantic models, configure AI Data
+              Agents, validate answer quality, integrate with Microsoft Foundry and Copilot experiences, and scale
+              conversational analytics across the enterprise.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={FORM_HREF} className={primaryBtn}>
                 {CTA_ASSESSMENT}
               </Link>
               <Link href={FORM_HREF} className={outlineBtn}>
-                {CTA_EXPERT}
+                {CTA_PILOT}
               </Link>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-2 text-xs font-medium text-brand">
+            <ul aria-label="Supported Fabric data sources" className="mt-8 flex flex-wrap gap-2 text-xs font-medium text-brand">
               {['Power BI semantic models', 'Lakehouse', 'Warehouse', 'KQL databases', 'OneLake'].map((s) => (
                 <li key={s} className="rounded-full border border-brand/20 bg-white/70 px-3 py-1">
                   {s}
@@ -819,7 +818,7 @@ export default function FabricDataAgentsPage() {
           <span className="px-2">/</span>
           <Link href="/ai-agents/" className="hover:underline">AI Agents</Link>
           <span className="px-2">/</span>
-          <span>Fabric Data Agents</span>
+          <span aria-current="page">Fabric Data Agents</span>
         </nav>
       </div>
 
@@ -827,29 +826,23 @@ export default function FabricDataAgentsPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal animation="fadeInLeft">
-            <span className="eyebrow">Overview</span>
+            <span className="eyebrow">Microsoft Fabric Data Agents Overview</span>
             <h2 className="mt-3 text-3xl lg:text-4xl">What Are Microsoft Fabric Data Agents?</h2>
             <p className="mt-4 text-body">
-              This Microsoft Fabric Data Agents overview explains how organizations can give authorized users a
-              conversational way to explore governed enterprise data.
+              Microsoft Fabric Data Agents are AI-powered conversational experiences that allow authorized users to
+              ask questions in natural language about governed enterprise data in Microsoft Fabric. They can use
+              approved sources such as Power BI semantic models, Lakehouses, Warehouses, and KQL databases to return
+              relevant answers while respecting access controls on the underlying data.
             </p>
             <p className="mt-3 text-body">
-              Microsoft Fabric Data Agents are AI-powered experiences that let users ask natural-language questions
-              about approved business data in Microsoft Fabric. They can use sources such as Power BI semantic models,
-              Lakehouses, Warehouses, and KQL databases to return relevant answers while respecting the access
-              controls applied to the underlying data.
-            </p>
-            <p className="mt-3 text-body">
-              Folio3 helps organizations move beyond fragmented dashboards and reporting queues with secure
-              conversational analytics. We combine Microsoft Fabric engineering, semantic-model design, Azure AI
-              integration, governance, and answer-quality validation to build Data Agents that support confident
-              business decisions.
+              Folio3 implements Fabric Data Agents with the data foundation, semantic context, security, validation,
+              integration, and managed support required for enterprise use.
             </p>
           </Reveal>
           <Reveal animation="fadeInRight">
             <Image
               src="/wp-content/uploads/2026/01/what-is-intellifabric.webp"
-              alt="Business user exploring governed Microsoft Fabric data, Power BI semantic models, and automated data pipelines"
+              alt="Business user reviewing governed Microsoft Fabric data, a Power BI semantic model, and automated data pipelines"
               width={816}
               height={607}
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -859,7 +852,7 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
-      {/* At a Glance */}
+      {/* At a Glance (table 1 of 2) */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Quick Answers" title="Microsoft Fabric Data Agents at a Glance" />
@@ -899,9 +892,8 @@ export default function FabricDataAgentsPage() {
             </p>
             <div className="mt-6 rounded-r-2xl border-l-4 border-brand bg-surface-tint p-6">
               <p className="text-body">
-                Microsoft recommends preparing Power BI semantic models for AI use with AI-ready schemas, verified
-                answers, clear descriptions, relevant measures, and business-specific instructions. These practices
-                improve the agent’s ability to interpret questions and provide useful answers.
+                Reliable responses depend on curated data sources, semantic models, KPI definitions, business
+                terminology, agent instructions, verified examples, and testing.
               </p>
             </div>
           </Reveal>
@@ -913,8 +905,7 @@ export default function FabricDataAgentsPage() {
                   <MessageSquareText aria-hidden="true" size={18} />
                 </span>
                 <p className="rounded-2xl rounded-tl-sm bg-brand px-4 py-3 text-sm font-medium leading-relaxed text-white">
-                  “Which sales regions missed their gross-margin target this quarter, and what changed compared with
-                  the previous quarter?”
+                  “{EXAMPLE_QUESTION}”
                 </p>
               </div>
               <p className="mt-6 flex items-center gap-2 text-sm font-semibold text-ink">
@@ -935,12 +926,15 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
-      {/* What Makes a Fabric Data Agent Reliable? */}
+      {/* What Folio3 Implements */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead eyebrow="Built on Trust" title="What Makes a Fabric Data Agent Reliable?" />
+          <SectionHead
+            eyebrow="Production-Ready"
+            title="What Folio3 Implements for Production-Ready Fabric Data Agents"
+          />
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {reliability.map((c, i) => (
+            {implementCards.map((c, i) => (
               <Reveal key={c.title} animation="fadeInUp" delay={(i % 3) * 70}>
                 <div className="group h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card transition-shadow duration-200 hover:shadow-cardHover">
                   <IconBadge Icon={c.Icon} />
@@ -953,109 +947,69 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
-      {/* How Microsoft Fabric Data Agents Work */}
+      {/* Implementation Services */}
       <section className="py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead eyebrow="How It Works" title="How Microsoft Fabric Data Agents Work" />
-          <Timeline steps={howItWorks} />
-        </div>
-      </section>
-
-      {/* Fabric Data Agents vs. Generic AI Chatbots */}
-      <section className="bg-surface-tint py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead eyebrow="Compare" title="Microsoft Fabric Data Agents vs. Generic AI Chatbots" />
-          <div className="mx-auto mt-10 max-w-5xl overflow-x-auto rounded-2xl border border-surface-line bg-white shadow-card">
-            <table className="w-full min-w-[640px] text-left text-sm">
-              <thead>
-                <tr className="bg-brand-navy text-white">
-                  <th scope="col" className="px-5 py-4 font-semibold">Capability</th>
-                  <th scope="col" className="bg-brand px-5 py-4 font-semibold">
-                    <span className="inline-flex items-center gap-2">
-                      <Bot aria-hidden="true" size={16} /> Microsoft Fabric Data Agent
-                    </span>
-                  </th>
-                  <th scope="col" className="px-5 py-4 font-semibold">Generic AI Chatbot</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-surface-line">
-                {comparisonRows.map(([cap, agent, bot]) => (
-                  <tr key={cap}>
-                    <th scope="row" className="px-5 py-4 align-top font-semibold text-ink">{cap}</th>
-                    <td className="bg-brand/5 px-5 py-4 align-top font-medium text-ink">
-                      <span className="flex gap-2">
-                        <span aria-hidden className="text-brand">✓</span>
-                        {agent}
-                      </span>
-                    </td>
-                    <td className="px-5 py-4 align-top text-body">{bot}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Microsoft Fabric Data Agent Services */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead eyebrow="Our Services" title="Microsoft Fabric Data Agent Services">
+          <SectionHead eyebrow="Our Services" title="Microsoft Fabric Data Agent Implementation Services">
             <p className="mt-4 text-body">
-              Folio3 provides end-to-end services to plan, build, deploy, and optimize Microsoft Fabric Data Agents
-              for enterprise use.
+              Folio3 provides end-to-end implementation services for organizations that need more than a basic AI
+              chat interface.
             </p>
           </SectionHead>
           <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
             {services.map((s, i) => (
-              <Reveal
-                key={s.title}
-                animation="fadeInUp"
-                delay={(i % 2) * 70}
-                className={i === services.length - 1 ? 'lg:col-span-2' : undefined}
-              >
-                <div className="group h-full rounded-2xl border border-surface-line bg-white p-7 shadow-card transition-shadow duration-200 hover:shadow-cardHover">
-                  <div className="flex items-start gap-4">
-                    <IconBadge Icon={s.Icon} size="lg" />
-                    <h3 className="pt-1 text-xl font-semibold leading-snug text-ink">{s.title}</h3>
-                  </div>
-                  <p className="mt-4 text-sm leading-relaxed text-body">{s.intro}</p>
-                  {s.bullets && (
-                    <ul
-                      className={`mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 text-sm ${
-                        i === services.length - 1 ? 'md:grid-cols-2' : ''
-                      }`}
-                    >
-                      {s.bullets.map((b) => (
-                        <Check key={b}>{b}</Check>
-                      ))}
-                    </ul>
-                  )}
-                  {s.chips && (
-                    <ul className="mt-5 flex flex-wrap gap-2">
-                      {s.chips.map((c) => (
-                        <li
-                          key={c}
-                          className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-surface-chip px-3 py-1.5 text-xs font-medium text-brand"
-                        >
-                          <PlugZap aria-hidden="true" size={12} /> {c}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {s.note && (
-                    <p className="mt-5 rounded-xl bg-surface-tint p-4 text-sm leading-relaxed text-body">{s.note}</p>
-                  )}
-                </div>
+              <Reveal key={s.title} animation="fadeInUp" delay={(i % 2) * 70}>
+                <ServiceCard s={s} />
               </Reveal>
             ))}
+            <Reveal animation="fadeInUp" className="lg:col-span-2">
+              <ServiceCard s={qualityService} featured />
+            </Reveal>
           </div>
-          <CtaRow primary={CTA_ASSESSMENT} secondary={CTA_EXPERT} />
+          <CtaRow primary={CTA_ASSESSMENT} secondary={CTA_SPECIALIST} />
+        </div>
+      </section>
+
+      {/* Why Organizations Choose Folio3 */}
+      <section className="bg-surface-tint py-16 lg:py-24">
+        <div className="container-x grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
+          <Reveal animation="fadeInLeft">
+            <span className="eyebrow">Why Folio3</span>
+            <h2 className="mt-3 text-3xl lg:text-4xl">Why Organizations Choose Folio3</h2>
+            <p className="mt-4 text-body">
+              Folio3 brings together Microsoft Fabric engineering, Power BI semantic modeling, Azure AI integration,
+              security controls, answer-quality validation, and managed optimization in one implementation team.
+            </p>
+            <p className="mt-3 text-body">
+              We help organizations avoid the common mistake of connecting AI directly to unprepared data. Instead, we
+              establish the governed data foundation, business context, access model, and testing process needed for
+              trusted enterprise answers.
+            </p>
+            <p className="mt-5 text-body">
+              See how Folio3 used{' '}
+              <Link href="/microsoft-fabric-reporting-for-real-estate/" className="text-brand underline">
+                Microsoft Fabric reporting to improve real-estate operational efficiency for Savills
+              </Link>
+              .
+            </p>
+          </Reveal>
+          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {proofPoints.map((p, i) => (
+              <li key={p.title}>
+                <Reveal animation="fadeInUp" delay={i * 70} className="h-full">
+                  <div className="group flex h-full flex-col gap-4 rounded-2xl border border-surface-line bg-white p-6 shadow-card transition-shadow duration-200 hover:shadow-cardHover">
+                    <IconBadge Icon={p.Icon} />
+                    <p className="text-base font-semibold leading-snug text-ink">{p.title}</p>
+                  </div>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       {/* Built for Your Microsoft Fabric and Azure Data Estate */}
-      <section className="bg-surface-tint py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Reference Architecture" title="Built for Your Microsoft Fabric and Azure Data Estate">
             <p className="mt-4 text-body">
@@ -1099,7 +1053,7 @@ export default function FabricDataAgentsPage() {
               ))}
             </ol>
             <Reveal animation="fadeInRight" className="h-full">
-              <aside className="flex h-full flex-col rounded-2xl border-2 border-dashed border-brand/40 bg-white p-6">
+              <aside className="flex h-full flex-col rounded-2xl border-2 border-dashed border-brand/40 bg-surface-tint p-6">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy text-white">
                   <ShieldCheck aria-hidden="true" size={22} strokeWidth={1.8} />
                 </span>
@@ -1112,8 +1066,8 @@ export default function FabricDataAgentsPage() {
             </Reveal>
           </div>
           <p className="mx-auto mt-10 max-w-3xl text-center text-body">
-            Folio3 can also help strengthen the reporting and semantic layer behind your Data Agent through{' '}
-            <Link href="/microsoft-fabric-services/" className="text-brand underline">
+            Folio3 can also strengthen the reporting and semantic layer behind your Data Agent through{' '}
+            <Link href="/blog/integrating-microsoft-fabric-in-power-bi/" className="text-brand underline">
               Microsoft Fabric and Power BI integration
             </Link>
             .
@@ -1122,7 +1076,7 @@ export default function FabricDataAgentsPage() {
       </section>
 
       {/* Put Trusted Data Answers Where Work Happens */}
-      <section className="py-16 lg:py-24">
+      <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Deployment Options" title="Put Trusted Data Answers Where Work Happens">
             <p className="mt-4 text-body">
@@ -1145,16 +1099,24 @@ export default function FabricDataAgentsPage() {
               </Reveal>
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-xs italic text-body">
+            Available integration paths depend on Microsoft product availability, licensing, tenant settings, security
+            configuration, and your organization’s approved architecture.
+          </p>
         </div>
       </section>
 
-      {/* Is Your Fabric Environment Ready for a Data Agent? */}
+      {/* Readiness */}
       <section className="relative overflow-hidden bg-brand-ink py-16 lg:py-24">
         <div className="pointer-events-none absolute inset-0 [background:radial-gradient(50%_80%_at_85%_20%,rgba(47,105,242,0.35)_0%,transparent_60%)]" />
         <div className="container-x relative grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <span className="eyebrow">Readiness Assessment</span>
-            <h2 className="mt-3 text-3xl text-white lg:text-4xl">Is Your Fabric Environment Ready for a Data Agent?</h2>
+            <h2 className="mt-3 text-3xl text-white lg:text-4xl">Assess Your Microsoft Fabric Data Agent Readiness</h2>
+            <p className="mt-4 max-w-xl text-white/80">
+              Wondering whether your Fabric environment is ready for a Data Agent? Folio3 evaluates the data, semantic
+              model, security, business context, and deployment requirements needed for a successful implementation.
+            </p>
             <ol className="mt-8 space-y-5">
               {readiness.map((r, i) => (
                 <li key={r.title}>
@@ -1170,14 +1132,14 @@ export default function FabricDataAgentsPage() {
                 </li>
               ))}
             </ol>
-            <Link href={FORM_HREF} className="btn mt-10 bg-white uppercase tracking-wide text-brand hover:bg-surface-chip">
-              Get Your Fabric Data Agent Readiness Assessment
+            <Link href={FORM_HREF} className={`${whiteBtn} mt-10`}>
+              {CTA_ASSESSMENT}
             </Link>
           </div>
           <Reveal animation="zoomIn">
             <Image
               src="/wp-content/uploads/2026/01/intellifabric-screens.webp"
-              alt="Microsoft Fabric and Power BI dashboards on tablets — the governed data foundation a Fabric Data Agent relies on"
+              alt="Illustrative Microsoft Fabric and Power BI dashboards on tablets, representing the governed data foundation a Fabric Data Agent relies on"
               width={757}
               height={601}
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -1190,7 +1152,12 @@ export default function FabricDataAgentsPage() {
       {/* Use Cases */}
       <section className="py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead eyebrow="Use Cases" title="Microsoft Fabric Data Agent Use Cases" />
+          <SectionHead eyebrow="Use Cases" title="Microsoft Fabric Data Agent Use Cases">
+            <p className="mt-4 text-body">
+              Conversational analytics in Microsoft Fabric gives each team governed answers to the questions it asks
+              most.
+            </p>
+          </SectionHead>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {useCases.map((u, i) => (
               <Reveal key={u.title} animation="fadeInUp" delay={(i % 3) * 70}>
@@ -1226,12 +1193,48 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
-      {/* Delivery Process */}
+      {/* Implementation Process */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead eyebrow="Delivery Process" title="Our Microsoft Fabric Data Agent Delivery Process" />
+          <SectionHead eyebrow="Implementation Process" title="Our Microsoft Fabric Data Agent Implementation Process" />
           <Timeline steps={delivery} />
           <CtaRow primary={CTA_ASSESSMENT} />
+        </div>
+      </section>
+
+      {/* Fabric Data Agents vs. Generic AI Chatbots (table 2 of 2) */}
+      <section className="py-16 lg:py-24">
+        <div className="container-x">
+          <SectionHead eyebrow="Compare" title="Microsoft Fabric Data Agents vs. Generic AI Chatbots" />
+          <div className="mx-auto mt-10 max-w-5xl overflow-x-auto rounded-2xl border border-surface-line bg-white shadow-card">
+            <table className="w-full min-w-[640px] text-left text-sm">
+              <thead>
+                <tr className="bg-brand-navy text-white">
+                  <th scope="col" className="px-5 py-4 font-semibold">Capability</th>
+                  <th scope="col" className="bg-brand px-5 py-4 font-semibold">
+                    <span className="inline-flex items-center gap-2">
+                      <Bot aria-hidden="true" size={16} /> Microsoft Fabric Data Agent
+                    </span>
+                  </th>
+                  <th scope="col" className="px-5 py-4 font-semibold">Generic AI Chatbot</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-surface-line">
+                {comparisonRows.map(([cap, agent, bot]) => (
+                  <tr key={cap}>
+                    <th scope="row" className="px-5 py-4 align-top font-semibold text-ink">{cap}</th>
+                    <td className="bg-brand/5 px-5 py-4 align-top font-medium text-ink">
+                      <span className="flex gap-2">
+                        <span aria-hidden className="text-brand">✓</span>
+                        {agent}
+                      </span>
+                    </td>
+                    <td className="px-5 py-4 align-top text-body">{bot}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -1247,17 +1250,17 @@ export default function FabricDataAgentsPage() {
               Launch a Governed Microsoft Fabric Data Agent Pilot
             </h2>
             <p className="mt-4 text-white/85">
-              Start with one business domain, demonstrate value, and create a scalable foundation for enterprise
-              rollout.
+              Start with a focused business domain, demonstrate value, and create a scalable foundation for
+              enterprise rollout.
             </p>
-            <Link href={FORM_HREF} className="btn mt-8 bg-white uppercase tracking-wide text-brand hover:bg-surface-chip">
-              Scope Your Fabric Data Agent Pilot
+            <Link href={FORM_HREF} className={`${whiteBtn} mt-8`}>
+              {CTA_PILOT}
             </Link>
           </Reveal>
           <Reveal animation="fadeInRight">
             <div className="rounded-2xl border border-white/20 bg-white/10 p-7 backdrop-blur">
-              <p className="text-sm font-semibold uppercase tracking-wider text-white/80">A pilot can include</p>
-              <ul className="mt-5 space-y-3 text-sm">
+              <p className="text-sm font-semibold uppercase tracking-wider text-white/80">A pilot includes</p>
+              <ul className="mt-5 grid grid-cols-1 gap-x-6 gap-y-3 text-sm sm:grid-cols-2">
                 {pilot.map((p) => (
                   <Check key={p} light>
                     {p}
@@ -1269,18 +1272,18 @@ export default function FabricDataAgentsPage() {
         </div>
       </section>
 
-      {/* Managed Fabric AI Agent Services */}
+      {/* Managed Services */}
       <section className="py-16 lg:py-24">
         <div className="container-x grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
           <Reveal animation="fadeInLeft">
             <span className="eyebrow">Managed Services</span>
-            <h2 className="mt-3 text-3xl lg:text-4xl">Managed Fabric AI Agent Services</h2>
+            <h2 className="mt-3 text-3xl lg:text-4xl">Managed Fabric Data Agent Optimization and Support</h2>
             <p className="mt-4 text-body">
-              A production Fabric Data Agent needs ongoing attention as business definitions, data sources,
-              permissions, semantic models, and user needs evolve.
+              A production Data Agent needs continuous attention as business definitions, data sources, semantic
+              models, permissions, and user needs evolve.
             </p>
             <Link href={FORM_HREF} className={`${primaryBtn} mt-8`}>
-              {CTA_EXPERT}
+              {CTA_SPECIALIST}
             </Link>
           </Reveal>
           <Reveal animation="fadeInRight">
@@ -1299,46 +1302,32 @@ export default function FabricDataAgentsPage() {
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <SectionHead title="Frequently Asked Questions" />
-          <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
-            {faqs.map((f, i) => (
-              <details key={f.q} open={i === 0} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
-                  <span className="text-base font-semibold text-ink">{f.q}</span>
-                  <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
-                </summary>
-                <div className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion faqs={faqs} />
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-20">
+      <section className={`relative overflow-hidden ${gradientBg} py-16 lg:py-20`}>
         <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
         <div className="container-x relative text-center">
           <Reveal animation="fadeInUp">
             <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">
-              Build a Trusted Fabric Data Agent With Folio3
+              Build a Production-Ready Microsoft Fabric Data Agent With Folio3
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-white/85">
-              Move from fragmented dashboards, reporting queues, and disconnected data sources to secure,
+              Move from fragmented dashboards, reporting queues, and disconnected data sources to governed,
               natural-language answers from your Microsoft Fabric environment.
             </p>
             <p className="mx-auto mt-3 max-w-2xl text-white/85">
-              Folio3 helps you assess readiness, prepare your data foundation, configure Microsoft Fabric Data Agents,
-              integrate them with Microsoft Foundry and Copilot experiences, validate answer quality, and scale them
-              securely across your organization.
+              Folio3 helps you prepare the data foundation, configure the Data Agent, validate answer quality,
+              integrate it with Microsoft and Azure experiences, and scale it securely across your organization.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link href={FORM_HREF} className="btn bg-white uppercase tracking-wide text-brand hover:bg-surface-chip">
+              <Link href={FORM_HREF} className={whiteBtn}>
                 {CTA_ASSESSMENT}
               </Link>
-              <Link
-                href={FORM_HREF}
-                className="btn border border-white uppercase tracking-wide text-white hover:bg-white hover:text-brand"
-              >
-                Speak With a Microsoft Fabric AI Specialist
+              <Link href={FORM_HREF} className={whiteOutlineBtn}>
+                {CTA_SPECIALIST}
               </Link>
             </div>
           </Reveal>
@@ -1346,8 +1335,8 @@ export default function FabricDataAgentsPage() {
       </section>
 
       <OneToOneCTA
-        formTitle="Schedule a 1:1 Fabric Data Agent Consultation"
-        formCopy="Tell us about your Microsoft Fabric environment and the questions your teams need answered, and our team will help you plan the right Data Agent starting point."
+        formTitle="Book a Fabric Data Agent Implementation Assessment"
+        formCopy="Tell us about your Microsoft Fabric environment, priority business questions, and target users. Our team will assess your readiness and recommend the right implementation path, pilot scope, and deployment approach."
       />
 
       {jsonLd.map((d) => (
