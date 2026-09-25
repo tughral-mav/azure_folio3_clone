@@ -45,6 +45,7 @@ export const NAV: NavItem[] = [
     href: '#',
     children: [
       { label: 'Intellifabric', href: '/solution/intellifabric/' },
+      { label: 'Pre-Built Reporting Dashboards', href: '/solution/pre-built-reporting-dashboards/' },
       { label: 'Employee Self-Service App', href: '/solution/folio3-employee-self-service-app/' },
       { label: 'Dynamics 365 CPQ', href: '/solution/dynamics-365-cpq/' },
     ],
