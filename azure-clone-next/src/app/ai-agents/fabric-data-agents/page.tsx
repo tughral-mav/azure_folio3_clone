@@ -35,6 +35,7 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { AwardsBand } from '@/components/sections/AwardsBand';
 import { FaqAccordion } from './FaqAccordion';
 import { ServicesTabs } from './ServicesTabs';
+import { CaseStudySlider, type CaseStudy } from './CaseStudySlider';
 
 const CANONICAL = 'https://azure.folio3.com/ai-agents/fabric-data-agents/';
 const TITLE = 'Microsoft Fabric Data Agent Implementation Services | Folio3';
@@ -393,15 +394,15 @@ const managed = [
   'Expansion into additional business domains.',
 ];
 
-const caseStudies = [
+const caseStudies: CaseStudy[] = [
   {
     client: 'Savills',
     tag: 'Real Estate · Microsoft Fabric',
     stat: '13%',
-    statLabel: 'operational efficiency gain',
+    statLabel: 'Improvement in real-estate operational efficiency',
     title: 'Microsoft Fabric Reporting Boosts Real Estate Operational Efficiency',
     summary:
-      'Consolidated Dynamics F&O, Salesforce, and file-based data into a Fabric Lakehouse medallion architecture for a real-time view of global operations.',
+      'Folio3 unified reporting and operational data in Microsoft Fabric to provide Savills with more timely, connected decision support.',
     href: '/microsoft-fabric-reporting-for-real-estate/',
     img: { src: '/wp-content/uploads/2025/07/Microsoft-Fabric-Reporting-Boosts-Real.webp', w: 836, h: 544 },
     alt: 'Illustration of Microsoft Fabric reporting and analytics for a real estate business',
@@ -410,7 +411,7 @@ const caseStudies = [
     client: 'Saudi petrochemical producer',
     tag: 'Petrochemicals · Copilot Studio agent',
     stat: 'Up to 90%',
-    statLabel: 'faster report preparation',
+    statLabel: 'Faster report preparation',
     title: 'Grounded Compliance Agent for Controlled Documents',
     summary:
       'A multi-agent assistant answers document questions in plain language from approved SharePoint content with citations and produces on-demand status reports.',
@@ -422,7 +423,7 @@ const caseStudies = [
     client: 'Real Estate Regulation Company',
     tag: 'Government · Copilot Studio agent',
     stat: '60%',
-    statLabel: 'increase in HR productivity',
+    statLabel: 'Increase in HR productivity',
     title: 'AI HR Policy Agent Grounded in Approved Policy',
     summary:
       'Employees get 24/7 natural-language answers backed by official HR documentation, with guardrails that keep responses on-topic and compliant.',
@@ -1250,45 +1251,10 @@ export default function FabricDataAgentsPage() {
         <div className="container-x">
           <SectionHead eyebrow="Case Studies" title="Microsoft Fabric and AI Agent Success Stories">
             <p className="mt-4 text-body">
-              Real Folio3 projects across Microsoft Fabric data foundations and governed AI agents grounded in approved
-              enterprise content.
+              Real Folio3 projects across Microsoft Fabric, enterprise analytics, and governed AI-agent implementations.
             </p>
           </SectionHead>
-          <ul className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
-            {caseStudies.map((c, i) => (
-              <li key={c.href}>
-                <Reveal animation="fadeInUp" delay={(i % 2) * 70} className="h-full">
-                  <Link
-                    href={c.href}
-                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card transition-shadow duration-200 hover:shadow-cardHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-                  >
-                    <div className="relative h-44 bg-[linear-gradient(135deg,#eef3f8_0%,#dfeaf5_100%)]">
-                      <Image
-                        src={c.img.src}
-                        alt={c.alt}
-                        fill
-                        sizes="(min-width: 768px) 45vw, 100vw"
-                        className="object-contain p-4 transition-transform duration-500 group-hover:scale-105 motion-reduce:transition-none"
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col p-6">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-brand">{c.tag}</p>
-                      <p className="mt-4">
-                        <span className="block whitespace-nowrap text-3xl font-bold leading-none text-ink">{c.stat}</span>
-                        <span className="mt-1.5 block text-sm text-body">{c.statLabel}</span>
-                      </p>
-                      <h3 className="mt-3 text-lg font-semibold leading-snug text-ink group-hover:text-brand">{c.title}</h3>
-                      <p className="mt-1 text-xs font-medium text-body/80">{c.client}</p>
-                      <p className="mt-3 text-sm leading-relaxed text-body">{c.summary}</p>
-                      <span className="mt-auto pt-5 text-sm font-semibold text-brand">
-                        Read case study <span aria-hidden>→</span>
-                      </span>
-                    </div>
-                  </Link>
-                </Reveal>
-              </li>
-            ))}
-          </ul>
+          <CaseStudySlider items={caseStudies} />
         </div>
       </section>
 
