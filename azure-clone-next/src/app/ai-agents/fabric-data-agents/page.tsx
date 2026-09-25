@@ -697,10 +697,10 @@ export default function FabricDataAgentsPage() {
           </Reveal>
           <Reveal animation="fadeInRight">
             <Image
-              src="/wp-content/uploads/2026/01/what-is-intellifabric.webp"
-              alt="Business user reviewing governed Microsoft Fabric data, a Power BI semantic model, and automated data pipelines"
-              width={816}
-              height={607}
+              src={`${IMG}/microsoft-fabric-data-agents-overview.webp`}
+              alt="Illustration of a Microsoft Fabric Data Agent answering a margin question from approved Fabric sources, including a Power BI semantic model, Lakehouse, Warehouse, and KQL database, with row-level security applied through Microsoft Entra ID"
+              width={1200}
+              height={900}
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="h-auto w-full"
             />
