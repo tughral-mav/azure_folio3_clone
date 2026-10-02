@@ -6,6 +6,7 @@ import { LogoCloud } from '@/components/sections/LogoCloud';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Reveal } from '@/components/ui/Reveal';
 import { SupportSteps } from './SupportSteps';
+import { HeroDashboard } from './HeroDashboard';
 
 const ORIGIN = 'https://azure.folio3.com';
 const PATH = '/azure-managed-services/application-managed-services/';
@@ -210,18 +211,8 @@ export default function ApplicationManagedServicesPage() {
               <Link href={FORM} className="btn-outline uppercase tracking-wide">Talk to an Azure Engineer</Link>
             </div>
           </div>
-          <Reveal animation="zoomIn">
-            <div className="rounded-3xl bg-brand-ink p-8 text-white shadow-cardHover lg:p-10">
-              <p className="text-sm font-semibold uppercase tracking-wider text-white/70">Your 8-week handover</p>
-              <ol className="mt-6 space-y-5">
-                {HANDOVER.map((h, i) => (
-                  <li key={h.t} className="flex gap-4">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold">{i + 1}</span>
-                    <div><p className="font-semibold text-white">{h.t}</p><p className="text-sm text-white/70">{h.p}</p></div>
-                  </li>
-                ))}
-              </ol>
-            </div>
+          <Reveal animation="zoomIn" className="px-4 py-6 sm:px-6">
+            <HeroDashboard />
           </Reveal>
         </div>
       </section>
