@@ -344,20 +344,31 @@ export default function ApplicationManagedServicesPage() {
         </div>
       </section>
 
-      {/* FOLD 9 — HANDOVER */}
+      {/* FOLD 9 — HANDOVER (left-aligned intro + horizontal timeline; vertical on mobile) */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
-          <Head eyebrow="Structured handover" title="We Take Over Apps We Didn't Build" sub={<>Switching support partners shouldn&apos;t put your app at risk. Our structured handover moves knowledge from your team, or your previous vendor, to ours without a gap in cover. We&apos;ve done it for everything from internal tools to customer-facing <a href="https://folio3.com/app-development/" className={LINK}>custom web and mobile apps</a>.</>} />
-          <ol className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {HANDOVER.map((h, i) => (
-              <li key={h.t} className="relative rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                <span className="inline-block rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold text-brand">{h.p}</span>
-                <h3 className="mt-4 text-lg">{i + 1}. {h.t}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-body">{h.d}</p>
-              </li>
-            ))}
+          <div className="max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Structured handover</p>
+            <Reveal animation="fadeInUp"><h2 className={H2}>We Take Over Apps We Didn&apos;t Build</h2></Reveal>
+            <p className="mt-4 leading-relaxed text-body">Switching support partners shouldn&apos;t put your app at risk. Our structured handover moves knowledge from your team, or your previous vendor, to ours without a gap in cover. We&apos;ve done it for everything from internal tools to customer-facing <a href="https://folio3.com/app-development/" className={LINK}>custom web and mobile apps</a>.</p>
+          </div>
+          <ol className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-0">
+            {HANDOVER.map((h, i) => {
+              const last = i === HANDOVER.length - 1;
+              return (
+                <li key={h.t} className="relative pl-12 lg:pl-0 lg:pr-8">
+                  {!last && <span aria-hidden="true" className="absolute left-[11px] top-7 -bottom-10 w-0.5 bg-brand/25 lg:left-7 lg:right-0 lg:top-[11px] lg:bottom-auto lg:h-0.5 lg:w-auto" />}
+                  <span aria-hidden="true" className={`absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full ring-4 lg:static ${last ? 'bg-brand-navy ring-brand-navy/15' : 'bg-brand ring-brand/15'}`}>
+                    {last && <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg>}
+                  </span>
+                  <p className={`text-xs font-semibold uppercase tracking-wider lg:mt-6 ${last ? 'text-brand-navy' : 'text-brand'}`}>{h.p}</p>
+                  <h3 className="mt-2 text-xl">{h.t}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-body">{h.d}</p>
+                </li>
+              );
+            })}
           </ol>
-          <div className="mt-10 text-center"><Link href={FORM} className="btn-primary uppercase tracking-wide">Plan My Handover</Link></div>
+          <div className="mt-12"><Link href={FORM} className="btn-primary uppercase tracking-wide">Plan My Handover</Link></div>
         </div>
       </section>
 
