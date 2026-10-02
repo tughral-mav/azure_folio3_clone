@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // bespoke routes that have their own app/ page (not produced by the generic renderer)
   const bespoke = [
     '/', '/services/', '/about-us/', '/contact-us/', '/industries/', '/blog/', '/case-studies/',
-    '/azure-cloud-service/', '/azure-cloud/cloud-migration/', '/azure-data-analytics/', '/azure-managed-services/', '/azure-for-retail/',
+    '/azure-cloud-service/', '/azure-cloud/cloud-migration/', '/azure-data-analytics/', '/azure-managed-services/', '/azure-managed-services/application-managed-services/', '/azure-for-retail/',
     '/microsoft-fabric-services/', '/microsoft-fabric-services/analytics-modernization-assessment/',
     '/microsoft-fabric-services/cloud-data-modernization/',
     '/solution/pre-built-reporting-dashboards/',
