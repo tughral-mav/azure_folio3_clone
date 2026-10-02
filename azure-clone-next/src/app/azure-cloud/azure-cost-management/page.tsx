@@ -3,7 +3,10 @@ import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  ArrowRight,
+  CirclePause,
+  CreditCard,
+  Maximize2,
+  UserRoundX,
   Building2,
   Clapperboard,
   FileSearch,
@@ -38,11 +41,11 @@ export const metadata: Metadata = {
   openGraph: { title: TITLE, description: META_DESCRIPTION, url: CANONICAL, type: 'website' },
 };
 
-const whyBillsClimb = [
-  { title: 'Idle and orphaned resources', text: 'Test VMs left running, unattached disks and old snapshots keep billing long after the project ends.', fix: 'Waste cleanup', fixText: 'We remove idle resources, unattached disks and stale snapshots.' },
-  { title: 'Oversized workloads', text: 'Resources sized for peak traffic sit mostly idle the rest of the time.', fix: 'Rightsizing', fixText: 'We resize over-provisioned VMs, databases and app plans.' },
-  { title: 'Pay-as-you-go by default', text: 'Steady workloads stay on full retail rates when reservations or savings plans would cost far less.', fix: 'Reservations & savings plans', fixText: 'We recommend the right mix of reserved instances and savings plans for steady workloads.' },
-  { title: 'No ownership', text: 'Without tags, budgets or alerts, nobody knows which team or product is driving the bill until finance asks.', fix: 'Governance & cost allocation', fixText: 'We set up tags, budgets and alerts so every dollar maps to a team, product or customer.' },
+const whyBillsClimb: { title: string; text: string; Icon: LucideIcon }[] = [
+  { title: 'Idle and orphaned resources', text: 'Test VMs left running, unattached disks and old snapshots keep billing long after the project ends.', Icon: CirclePause },
+  { title: 'Oversized workloads', text: 'Resources sized for peak traffic sit mostly idle the rest of the time.', Icon: Maximize2 },
+  { title: 'Pay-as-you-go by default', text: 'Steady workloads stay on full retail rates when reservations or savings plans would cost far less.', Icon: CreditCard },
+  { title: 'No ownership', text: 'Without tags, budgets or alerts, nobody knows which team or product is driving the bill until finance asks.', Icon: UserRoundX },
 ];
 
 const services: { title: string; text: ReactNode; Icon: LucideIcon }[] = [
@@ -218,48 +221,39 @@ export default function AzureCostManagementPage() {
       </div>
 
       {/* Why Azure bills keep climbing */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Reveal animation="fadeInUp" className="max-w-3xl">
+      <section className="bg-surface-tint py-16 lg:py-24">
+        <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+          <Reveal animation="fadeInLeft" className="lg:sticky lg:top-28">
             <h2 className="text-3xl lg:text-4xl">Why Azure Bills Keep Climbing</h2>
-            <p className="mt-4 text-body">
+            <p className="mt-5 text-body">
               Azure makes it easy to spin up resources in minutes. It makes it just as easy to forget them. Most overspend isn&apos;t one big mistake; it&apos;s dozens of small ones that compound every month.
             </p>
+            <p className="mt-4 text-sm text-body">
+              If you moved workloads with a{' '}
+              <Link href="/azure-cloud-service/" className="font-medium text-brand hover:underline">lift-and-shift Azure cloud migration</Link>
+              , there&apos;s a good chance they were sized for your old data center, not for Azure.
+            </p>
           </Reveal>
-          <div className="mt-10">
-            <div className="hidden grid-cols-[1fr_auto_1fr] gap-6 border-b-2 border-ink/80 pb-3 text-xs font-semibold uppercase tracking-wider text-body md:grid">
-              <span>What drives the bill up</span>
-              <span className="w-6" aria-hidden />
-              <span>How we fix it</span>
-            </div>
-            <ul className="divide-y divide-surface-line border-b border-surface-line">
-              {whyBillsClimb.map((c, i) => (
-                <li key={c.title}>
-                  <Reveal animation="fadeInUp" delay={i * 70} className="grid items-center gap-4 py-6 md:grid-cols-[1fr_auto_1fr] md:gap-6">
+          <ul className="space-y-4">
+            {whyBillsClimb.map((c, i) => (
+              <li key={c.title}>
+                <Reveal animation="fadeInRight" delay={i * 80}>
+                  <div className="group flex gap-4 rounded-2xl card-hover border border-surface-line bg-white p-5 shadow-card sm:p-6">
+                    <IconBadge Icon={c.Icon} />
                     <div>
                       <h3 className="text-lg text-ink">{c.title}</h3>
                       <p className="mt-1 text-sm leading-relaxed text-body">{c.text}</p>
                     </div>
-                    <ArrowRight aria-hidden="true" className="hidden text-brand md:block" size={22} strokeWidth={2} />
-                    <div className="rounded-xl border-l-4 border-brand bg-surface-tint px-5 py-4">
-                      <p className="text-sm font-semibold text-brand"><span className="sr-only">How we fix it: </span>{c.fix}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-body">{c.fixText}</p>
-                    </div>
-                  </Reveal>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <p className="mt-8 max-w-3xl text-body">
-            If you moved workloads with a{' '}
-            <Link href="/azure-cloud-service/" className="font-medium text-brand hover:underline">lift-and-shift Azure cloud migration</Link>
-            , there&apos;s a good chance they were sized for your old data center, not for Azure.
-          </p>
+                  </div>
+                </Reveal>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       {/* Services */}
-      <section className="bg-surface-tint py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead title="Our Azure Cost Management Services">
             Azure cost optimization services that cover every lever on your bill: what you run, how big it is, how you pay for it and who is accountable for it.
