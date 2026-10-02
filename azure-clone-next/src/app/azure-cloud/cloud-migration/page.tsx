@@ -26,11 +26,18 @@ const LOGOS = [
   { src: '/wp-content/uploads/2024/01/ias-daraz-logo.webp', alt: 'Daraz' },
 ];
 
+const ICON_PATHS: Record<string, string> = {
+  bolt: 'M13 2 4 14h7l-1 8 9-12h-7l1-8Z',
+  wallet: 'M3 7a2 2 0 0 1 2-2h12v3M3 7v10a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-1Zm13 6h2',
+  lock: 'M6 11h12v9H6zM8 11V8a4 4 0 0 1 8 0v3',
+  spark: 'M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3Zm7 11 .8 2.2 2.2.8-2.2.8L19 20l-.8-2.2-2.2-.8 2.2-.8L19 14Z',
+};
+
 const WHY_AZURE = [
-  { t: 'Scale on demand', d: 'Add compute and storage in minutes instead of buying hardware.' },
-  { t: 'Pay for what you use', d: 'Move capital spend to monthly operating costs you can right-size.' },
-  { t: 'Stronger security', d: 'Microsoft Defender for Cloud, Entra ID and Azure Policy protect workloads from day one.' },
-  { t: 'Ready for AI and analytics', d: 'Data in Azure connects directly to Microsoft Fabric, Azure AI and Copilot.' },
+  { icon: 'bolt', t: 'Scale on demand', d: 'Add compute and storage in minutes instead of buying hardware.' },
+  { icon: 'wallet', t: 'Pay for what you use', d: 'Move capital spend to monthly operating costs you can right-size.' },
+  { icon: 'lock', t: 'Stronger security', d: 'Microsoft Defender for Cloud, Entra ID and Azure Policy protect workloads from day one.' },
+  { icon: 'spark', t: 'Ready for AI and analytics', d: 'Data in Azure connects directly to Microsoft Fabric, Azure AI and Copilot.' },
 ];
 
 const CHALLENGES = [
@@ -215,18 +222,25 @@ export default function AzureCloudMigrationPage() {
         </nav>
       </div>
 
-      {/* FOLD 3 — WHY AZURE */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Head title="Why Move Your Workloads to Microsoft Azure?" />
-          <div className="mx-auto mt-6 max-w-3xl space-y-4 text-body">
-            <p>Aging servers, data center renewal bills and apps that cannot scale all push teams toward the cloud. Azure cloud migration gives you capacity on demand and Microsoft-grade security. It also connects natively to the tools you already use: Microsoft 365, Dynamics 365, Power BI and Entra ID.</p>
-            <p>Folio3&apos;s Azure cloud migration services take you from &ldquo;we should move&rdquo; to a running Azure environment. We assess what you have, decide what moves and how, and migrate in waves so your business keeps running. Not sure Azure is the right cloud? See how <Link href="/blog/comparing-aws-azure-google-cloud-services/" className="font-semibold text-brand hover:underline">Azure compares with AWS and Google Cloud</Link>.</p>
+      {/* FOLD 3 — WHY AZURE (copy left, staggered 2x2 icon cards right) */}
+      <section className="bg-[#f8fbfe] py-16 lg:py-24">
+        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand">Why Azure</p>
+            <Reveal animation="fadeInUp"><h2 className="text-4xl font-bold leading-[1.1] text-ink lg:text-5xl">Why Move Your Workloads to Microsoft Azure?</h2></Reveal>
+            <p className="mt-8 text-lg leading-relaxed text-body">Aging servers, data center renewal bills and apps that cannot scale all push teams toward the cloud. Azure cloud migration gives you capacity on demand and Microsoft-grade security. It also connects natively to the tools you already use: Microsoft 365, Dynamics 365, Power BI and Entra ID.</p>
+            <p className="mt-5 leading-relaxed text-body">Folio3&apos;s Azure cloud migration services take you from &ldquo;we should move&rdquo; to a running Azure environment. We assess what you have, decide what moves and how, and migrate in waves so your business keeps running. Not sure Azure is the right cloud? <Link href="/blog/comparing-aws-azure-google-cloud-services/" className="font-semibold text-brand underline">See how Azure compares with AWS and Google Cloud.</Link></p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {WHY_AZURE.map((c, i) => (
-              <Reveal key={c.t} animation="fadeInUp" delay={i * 80}>
-                <div className="h-full rounded-2xl card-hover border border-surface-line bg-white p-6 shadow-card"><h3 className="text-lg">{c.t}</h3><p className="mt-2 text-sm leading-relaxed text-body">{c.d}</p></div>
+              <Reveal key={c.t} animation="fadeInUp" delay={i * 80} className={i % 2 === 1 ? 'sm:mt-10' : ''}>
+                <div className="h-full rounded-[2rem] border border-[#dfe9f5] bg-white p-8">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#1a6cf0_0%,#00b4f0_100%)]">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={ICON_PATHS[c.icon]} /></svg>
+                  </span>
+                  <h3 className="mt-6 text-xl text-ink">{c.t}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-body">{c.d}</p>
+                </div>
               </Reveal>
             ))}
           </div>
