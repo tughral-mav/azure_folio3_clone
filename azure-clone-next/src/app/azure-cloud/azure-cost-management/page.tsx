@@ -387,18 +387,6 @@ export default function AzureCostManagementPage() {
         </div>
       </section>
 
-      {/* Why Folio3 */}
-      <section className="bg-surface-tint py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead title="Why Teams Choose Folio3 as Their Azure Cost Optimization Partner">
-            Certified Azure engineers, a Direct (Tier 1) Microsoft CSP view of both usage and billing, and tooling that stays in your own tenant.
-          </SectionHead>
-          <div className="mt-8 text-center">
-            <Link href="/case-studies/" className={outlineBtn}>Read the Full Case Study</Link>
-          </div>
-        </div>
-      </section>
-
       {/* FAQs */}
       <section className="py-16 lg:py-24">
         <div className="container-x">
