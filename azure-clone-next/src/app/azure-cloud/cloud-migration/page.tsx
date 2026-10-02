@@ -145,12 +145,6 @@ const RELATED = [
   { t: 'AI Agents', d: 'Put AI agents to work on tickets, expenses and IT assets.', href: '/ai-agents/', l: 'Azure AI agents' },
 ];
 
-const INSIGHTS = [
-  { t: 'Synapse to Fabric migration guide', href: '/blog/migration-from-synapse-to-microsoft-fabric/' },
-  { t: 'Data warehouse modernization on Azure', href: '/blog/data-warehouse-modernization-azure/' },
-  { t: 'Microsoft Azure trends', href: '/blog/microsoft-azure-trends/' },
-];
-
 const FAQS = [
   { q: 'What is Azure cloud migration?', a: 'Azure cloud migration is moving servers, applications, databases and data from on-premises data centers or another cloud to Microsoft Azure. It can be a straight move (rehost) or include upgrades and redesigns (replatform, refactor).' },
   { q: 'How long does an Azure migration take?', a: 'It depends on how many workloads you have and how complex they are. A few servers can move in weeks; a full data center exit usually runs several months in waves. You get a timeline after the assessment.' },
@@ -467,18 +461,6 @@ export default function AzureCloudMigrationPage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* FOLD 19 — RESOURCES */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Head title="Azure Migration Insights" />
-          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-            {INSIGHTS.map((r) => (
-              <li key={r.href}><Link href={r.href} className="flex h-full items-center justify-between gap-3 rounded-2xl card-hover border border-surface-line bg-white p-6 font-semibold text-ink shadow-card">{r.t}<span className="text-brand" aria-hidden="true">→</span></Link></li>
-            ))}
-          </ul>
         </div>
       </section>
 
