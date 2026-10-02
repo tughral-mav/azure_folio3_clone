@@ -5,6 +5,7 @@ import { Accordion } from '@/components/sections/Accordion';
 import { LogoCloud } from '@/components/sections/LogoCloud';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Reveal } from '@/components/ui/Reveal';
+import { SupportSteps } from './SupportSteps';
 
 const ORIGIN = 'https://azure.folio3.com';
 const PATH = '/azure-managed-services/application-managed-services/';
@@ -298,14 +299,7 @@ export default function ApplicationManagedServicesPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <Head eyebrow="Process" title="How Our Azure Application Support Works" sub="L2 and L3 application support, with a clear path from reported issue to verified fix." />
-          <ol className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {SUPPORT_STEPS.map((s, i) => (
-              <li key={s.t} className="rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                <span className="text-3xl font-bold text-brand">{String(i + 1).padStart(2, '0')}</span>
-                <h3 className="mt-2 text-lg">{s.t}</h3><p className="mt-2 text-sm leading-relaxed text-body">{s.d}</p>
-              </li>
-            ))}
-          </ol>
+          <SupportSteps steps={SUPPORT_STEPS.map((s) => s.t)} />
         </div>
       </section>
 
