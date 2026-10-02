@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Accordion } from '@/components/sections/Accordion';
-import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Reveal } from '@/components/ui/Reveal';
+import { CaseScroller } from './CaseScroller';
 import { CapabilityTabs, type Capability } from './CapabilityTabs';
 
 const ORIGIN = 'https://azure.folio3.com';
@@ -132,8 +132,16 @@ const COST_POINTS = [
 ];
 
 const CASES = [
-  { title: 'Savills', body: 'Global real-estate services provider listed on the London Stock Exchange — modernized analytics on Azure.', href: '/savills/', img: '/wp-content/uploads/2023/06/savills-cs.webp' },
-  { title: 'City University of Seattle', body: 'Highly-rated private university in Seattle — data platform on Azure.', href: '/city-university-azure/', img: '/wp-content/uploads/2023/06/City4.webp' },
+  { title: "Savills \u2014 Microsoft Fabric Reporting Boosting Operational Efficiency by 13%", img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp', href: '/microsoft-fabric-reporting-for-real-estate/' },
+  { title: "Power Apps Solution for City University", img: '/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp', href: '/city-university-azure/' },
+  { title: "Azure Automate Data Reporting for SLB with 99.9% Data Accuracy", img: '/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp', href: '/azure-automated-data-reporting-for-slb/' },
+  { title: "Alibaba Achieves 37% Faster Financial Closings With Power BI Reporting", img: '/wp-content/uploads/2025/07/alibaba-achieves-faster-financial-closings-with-power-bi-reporting.webp', href: '/power-bi-financial-reporting-for-alibaba/' },
+  { title: "Automating Food Plan Management & Saving 60% Time with Copilot", img: '/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp', href: '/copilot-implementation-food-verification/' },
+  { title: "Microsoft Fabric Services for a Cattle Feeding Company to Maximize Animal Well-Being by 20%", img: '/wp-content/uploads/2025/07/microsoft-fabric-services-for-a-cattle-feeding-company-to-maximize-animal-well-being.webp', href: '/automated-data-reporting/' },
+  { title: "Power BI Dashboards for a Food Crop Grower, Improving Yield Potential by 12%", img: '/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp', href: '/implementing-power-bi-dashboard-for-food-crop-grower/' },
+  { title: "Weaver Popcorn Hybrids", img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp', href: '/case-studies/popcorn-producer-intellifabric-dashboards/' },
+  { title: "Agentic HR Policy Feedback", img: '/wp-content/uploads/2026/02/hr-policy.webp', href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/' },
+  { title: "Automates HR Operations", img: '/wp-content/uploads/2026/02/real-estate-1.webp', href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/' },
 ];
 
 const RELATED = [
@@ -450,9 +458,7 @@ export default function AzureCloudMigrationPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <Head title="Azure Case Studies" />
-          <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-7 sm:grid-cols-2">
-            {CASES.map((c, i) => <Reveal key={c.title} animation="fadeInUp" delay={i * 70}><CaseFlip title={c.title} body={c.body} href={c.href} img={c.img} /></Reveal>)}
-          </div>
+          <CaseScroller cases={CASES} />
           <p className="mt-8 text-center"><Link href="/case-studies/" className="font-semibold text-brand hover:underline">View all Azure case studies →</Link></p>
         </div>
       </section>
