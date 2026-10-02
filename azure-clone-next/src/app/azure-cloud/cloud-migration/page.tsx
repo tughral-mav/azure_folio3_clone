@@ -97,12 +97,6 @@ const STEPS = [
   { t: 'Optimize and hand over', d: 'We right-size resources, tune costs, document the environment and train your team.' },
 ];
 
-const ENGAGEMENTS = [
-  { t: 'Migration assessment', d: 'Inventory, dependency map, cost estimate and wave plan.' },
-  { t: 'Pilot migration', d: 'Azure environment setup plus one workload migrated end to end.' },
-  { t: 'Full migration', d: 'All waves migrated, optimized and handed over.' },
-];
-
 const USE_CASES: { t: string; d: string; link?: { text: string; href: string } }[] = [
   { t: 'Data Center Exit', d: 'Leave on-premises hardware and hosting contracts behind by moving every workload to Azure on a fixed wave plan.' },
   { t: 'ERP and CRM Migration', d: "Move Dynamics AX, Dynamics 365 and Business Central workloads and their integrations to Azure, with help from Folio3's in-house ERP team." },
@@ -351,12 +345,6 @@ export default function AzureCloudMigrationPage() {
               </li>
             ))}
           </ol>
-          <h3 className="mt-14 text-center text-2xl">Engagement options</h3>
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {ENGAGEMENTS.map((e) => (
-              <div key={e.t} className="rounded-2xl border border-brand/20 bg-white p-6 text-center shadow-card"><h4 className="text-lg font-semibold text-ink">{e.t}</h4><p className="mt-2 text-sm text-body">{e.d}</p></div>
-            ))}
-          </div>
         </div>
       </section>
 
