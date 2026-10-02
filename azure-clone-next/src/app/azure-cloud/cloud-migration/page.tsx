@@ -123,6 +123,8 @@ const WHY_FOLIO3 = [
 
 const DESIGNATIONS = ['Infrastructure (Azure)', 'Data & AI (Azure)', 'Digital & App Innovation (Azure)', 'Business Applications'];
 
+const SUPPORT_TAGS = ['24/7 monitoring', 'Patching', 'Backup checks', 'Security reviews', 'Monthly cost reports'];
+
 const COST_POINTS = [
   'Right-size VMs and databases from real usage data gathered during assessment.',
   'Audit your Azure environment after go-live to find further savings.',
@@ -416,22 +418,31 @@ export default function AzureCloudMigrationPage() {
         </div>
       </section>
 
-      {/* FOLD 15 — COST OPTIMIZATION */}
+      {/* FOLDS 15 + 16 — COST OPTIMIZATION (light card) + POST-MIGRATION SUPPORT (dark panel) */}
       <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Head title="Cost Optimization Built Into Every Migration" sub="We plan cost before migration, not after the first invoice." />
-          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-            {COST_POINTS.map((p) => <li key={p} className="rounded-2xl border border-surface-line bg-white p-6 text-sm leading-relaxed text-body shadow-card">{p}</li>)}
-          </ul>
-        </div>
-      </section>
-
-      {/* FOLD 16 — POST-MIGRATION SUPPORT */}
-      <section className="bg-surface-tint py-16 lg:py-20">
-        <div className="container-x text-center">
-          <Head title="After Go-Live: Ongoing Azure Support" />
-          <p className="mx-auto mt-4 max-w-3xl text-body">Migration is the start, not the finish. Our <Link href="/azure-managed-services/" className="font-semibold text-brand hover:underline">Azure managed services</Link> team keeps your new environment healthy with 24/7 monitoring, patching, backup checks, security reviews and monthly cost reports.</p>
-          <div className="mt-8"><CtaButton>Ask About Managed Azure Support</CtaButton></div>
+        <div className="container-x grid gap-6 lg:grid-cols-2 lg:gap-8">
+          <div className="rounded-3xl border border-surface-line bg-white p-8 shadow-card lg:p-12">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Cost Optimization</p>
+            <Reveal animation="fadeInUp"><h2 className={H2}>Cost Optimization Built Into Every Migration</h2></Reveal>
+            <p className="mt-4 text-body">We plan cost before migration, not after the first invoice.</p>
+            <ul className="mt-8 space-y-4">
+              {COST_POINTS.map((p) => (
+                <li key={p} className="flex gap-3 text-sm leading-relaxed text-ink">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0 text-brand" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg>
+                  {p}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-col rounded-3xl bg-brand-ink p-8 text-white lg:p-12">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">Post-Migration Support</p>
+            <h2 className="text-3xl leading-tight text-white lg:text-4xl">After Go-Live: Ongoing Azure Support</h2>
+            <p className="mt-4 leading-relaxed text-white/75">Migration is the start, not the finish. Our <Link href="/azure-managed-services/" className="font-semibold text-white underline-offset-4 hover:underline">Azure managed services</Link> team keeps your new environment healthy with 24/7 monitoring, patching, backup checks, security reviews and monthly cost reports.</p>
+            <ul className="mt-6 flex flex-wrap gap-3">
+              {SUPPORT_TAGS.map((t) => <li key={t} className="rounded-full border border-white/20 px-4 py-2 text-sm text-white">{t}</li>)}
+            </ul>
+            <div className="mt-auto pt-8"><Link href={FORM} className="btn-primary">Ask About Managed Azure Support <span aria-hidden="true" className="ml-2">→</span></Link></div>
+          </div>
         </div>
       </section>
 
