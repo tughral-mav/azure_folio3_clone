@@ -328,19 +328,22 @@ export default function ApplicationManagedServicesPage() {
         </div>
       </section>
 
-      {/* FOLD 8 — REPORTING */}
+      {/* FOLD 8 — REPORTING (heading left, 2x2 items right) */}
       <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Head eyebrow="Reporting" title="Clear Reporting and a Named Point of Contact" sub="You always know what we did, what we found, and what we recommend next." />
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {REPORTING.map((r, i) => (
-              <Reveal key={r.t} animation="fadeInUp" delay={i * 80}>
-                <div className="h-full rounded-2xl card-hover border border-surface-line bg-white p-6 shadow-card">
-                  <h3 className="text-lg">{r.t}</h3><p className="mt-2 text-sm leading-relaxed text-body">{r.d}</p>
-                </div>
-              </Reveal>
-            ))}
+        <div className="container-x grid gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Reporting</p>
+            <Reveal animation="fadeInUp"><h2 className={H2}>Clear Reporting and a Named Point of Contact</h2></Reveal>
+            <p className="mt-4 leading-relaxed text-body">You always know what we did, what we found, and what we recommend next.</p>
           </div>
+          <ul className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2">
+            {REPORTING.map((r) => (
+              <li key={r.t} className="border-t-2 border-brand pt-5">
+                <h3 className="text-lg">{r.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-body">{r.d}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
