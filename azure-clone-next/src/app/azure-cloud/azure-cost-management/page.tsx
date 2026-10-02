@@ -289,7 +289,7 @@ export default function AzureCostManagementPage() {
       </section>
 
       {/* Engagement models */}
-      <section className="bg-surface-tint py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead title="Choose How You Want to Work With Us" />
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -313,26 +313,29 @@ export default function AzureCostManagementPage() {
       </section>
 
       {/* Tools */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead title="Built on Azure's Own Cost Tools. No Lock-In.">
-            We work inside the tools you already own, so every dashboard, budget and policy stays yours when the engagement ends.
-          </SectionHead>
-          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
-            {tools.map(([name, text]) => (
-              <li key={name} className="flex gap-3 rounded-xl border border-surface-line bg-white p-5 shadow-card">
-                <span aria-hidden className="mt-0.5 shrink-0 text-brand">✓</span>
-                <p className="text-sm leading-relaxed text-body"><strong className="text-ink">{name}:</strong> {text}</p>
-              </li>
-            ))}
-          </ul>
-          <div className="mx-auto mt-10 max-w-3xl space-y-3 text-center text-body">
-            <p>
+      <section className="bg-surface-tint py-16 lg:py-24">
+        <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+          <Reveal animation="fadeInLeft">
+            <h2 className="text-3xl lg:text-4xl">Built on Azure&apos;s Own Cost Tools. No Lock-In.</h2>
+            <p className="mt-5 text-body">
+              We work inside the tools you already own, so every dashboard, budget and policy stays yours when the engagement ends.
+            </p>
+            <p className="mt-4 text-body">Many cost management providers run your data through their own proprietary platform. We keep everything in your Azure tenant.</p>
+            <p className="mt-4 text-body">
               Want finance and engineering on one cost view? We build custom spend dashboards with Power BI and the{' '}
               <Link href="/microsoft-power-platform-services/" className="font-medium text-brand hover:underline">Microsoft Power Platform</Link>.
             </p>
-            <p>Many cost management providers run your data through their own proprietary platform. We keep everything in your Azure tenant.</p>
-          </div>
+          </Reveal>
+          <Reveal animation="fadeInRight">
+            <ul className="divide-y divide-surface-line rounded-2xl border border-surface-line bg-white px-6 shadow-card sm:px-8">
+              {tools.map(([name, text]) => (
+                <li key={name} className="py-5">
+                  <h3 className="text-base font-semibold text-ink">{name}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-body first-letter:uppercase">{text}</p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         </div>
       </section>
 
