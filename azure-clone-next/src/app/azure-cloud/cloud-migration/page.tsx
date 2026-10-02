@@ -223,23 +223,23 @@ export default function AzureCloudMigrationPage() {
       </div>
 
       {/* FOLD 3 — WHY AZURE (copy left, staggered 2x2 icon cards right) */}
-      <section className="bg-[#f8fbfe] py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand">Why Azure</p>
-            <Reveal animation="fadeInUp"><h2 className="text-4xl font-bold leading-[1.1] text-ink lg:text-5xl">Why Move Your Workloads to Microsoft Azure?</h2></Reveal>
-            <p className="mt-8 text-lg leading-relaxed text-body">Aging servers, data center renewal bills and apps that cannot scale all push teams toward the cloud. Azure cloud migration gives you capacity on demand and Microsoft-grade security. It also connects natively to the tools you already use: Microsoft 365, Dynamics 365, Power BI and Entra ID.</p>
-            <p className="mt-5 leading-relaxed text-body">Folio3&apos;s Azure cloud migration services take you from &ldquo;we should move&rdquo; to a running Azure environment. We assess what you have, decide what moves and how, and migrate in waves so your business keeps running. Not sure Azure is the right cloud? <Link href="/blog/comparing-aws-azure-google-cloud-services/" className="font-semibold text-brand underline">See how Azure compares with AWS and Google Cloud.</Link></p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">Why Azure</p>
+            <Reveal animation="fadeInUp"><h2 className={H2}>Why Move Your Workloads to Microsoft Azure?</h2></Reveal>
+            <p className="mt-6 leading-relaxed text-body">Aging servers, data center renewal bills and apps that cannot scale all push teams toward the cloud. Azure cloud migration gives you capacity on demand and Microsoft-grade security. It also connects natively to the tools you already use: Microsoft 365, Dynamics 365, Power BI and Entra ID.</p>
+            <p className="mt-4 leading-relaxed text-body">Folio3&apos;s Azure cloud migration services take you from &ldquo;we should move&rdquo; to a running Azure environment. We assess what you have, decide what moves and how, and migrate in waves so your business keeps running. Not sure Azure is the right cloud? <Link href="/blog/comparing-aws-azure-google-cloud-services/" className="font-semibold text-brand hover:underline">See how Azure compares with AWS and Google Cloud.</Link></p>
           </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {WHY_AZURE.map((c, i) => (
               <Reveal key={c.t} animation="fadeInUp" delay={i * 80} className={i % 2 === 1 ? 'sm:mt-10' : ''}>
-                <div className="h-full rounded-[2rem] border border-[#dfe9f5] bg-white p-8">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#1a6cf0_0%,#00b4f0_100%)]">
-                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={ICON_PATHS[c.icon]} /></svg>
+                <div className="h-full rounded-2xl card-hover border border-surface-line bg-white p-6 shadow-card">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={ICON_PATHS[c.icon]} /></svg>
                   </span>
-                  <h3 className="mt-6 text-xl text-ink">{c.t}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-body">{c.d}</p>
+                  <h3 className="mt-4 text-lg">{c.t}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-body">{c.d}</p>
                 </div>
               </Reveal>
             ))}
