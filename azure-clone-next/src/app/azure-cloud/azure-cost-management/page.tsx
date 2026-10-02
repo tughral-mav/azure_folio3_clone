@@ -7,7 +7,6 @@ import {
   CreditCard,
   Maximize2,
   UserRoundX,
-  Building2,
   Clapperboard,
   FileSearch,
   HeartPulse,
@@ -386,16 +385,19 @@ export default function AzureCostManagementPage() {
       </section>
 
       {/* Architecture */}
-      <section className={`${gradientBg} py-16 lg:py-20`}>
-        <div className="container-x text-center text-white">
-          <Building2 aria-hidden="true" className="mx-auto mb-4" size={36} strokeWidth={1.6} />
-          <h2 className="mx-auto max-w-3xl text-3xl font-bold lg:text-4xl">Cost Control Starts With the Right Architecture</h2>
-          <p className="mx-auto mt-4 max-w-3xl text-white/90">
-            The cheapest Azure resource is the one you designed out before deployment. When cost reviews point to bigger changes, like re-platforming an app, consolidating subscriptions or rethinking your landing zone, our{' '}
-            <Link href="/azure-cloud-service/" className="font-semibold underline">Azure cloud strategy and consulting</Link>
-            {' '}team plans the change so savings are built in from day one.
-          </p>
-          <Link href={FORM_HREF} className="btn mt-8 bg-white uppercase tracking-wide text-brand hover:bg-surface-chip">Talk to an Azure Architect</Link>
+      <section className={`${gradientBg} py-14 lg:py-16`}>
+        <div className="container-x grid items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-16">
+          <Reveal animation="fadeInLeft">
+            <h2 className="max-w-3xl text-3xl font-bold leading-tight text-white lg:text-4xl">Cost Control Starts With the Right Architecture</h2>
+            <p className="mt-4 max-w-3xl leading-relaxed text-white/90">
+              The cheapest Azure resource is the one you designed out before deployment. When cost reviews point to bigger changes, like re-platforming an app, consolidating subscriptions or rethinking your landing zone, our{' '}
+              <Link href="/azure-cloud-service/" className="font-semibold text-white underline underline-offset-2 hover:text-white/80">Azure cloud strategy and consulting</Link>
+              {' '}team plans the change so savings are built in from day one.
+            </p>
+          </Reveal>
+          <Reveal animation="fadeInRight">
+            <Link href={FORM_HREF} className="btn bg-white uppercase tracking-wide text-brand-navy shadow-card hover:bg-surface-chip">Talk to an Azure Architect</Link>
+          </Reveal>
         </div>
       </section>
 
