@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   Building2,
@@ -333,6 +334,23 @@ export default function AzureCostManagementPage() {
             </p>
             <p>Many cost management providers run your data through their own proprietary platform. We keep everything in your Azure tenant.</p>
           </div>
+          <Reveal animation="fadeInUp" className="mx-auto mt-12 max-w-4xl">
+            <figure>
+              <div className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
+                <Image
+                  src="/wp-content/uploads/2026/09/bc-expenses-dashboard.webp"
+                  alt="Example Power BI expense dashboard showing spend against budget, budget variance over time and spend by category"
+                  width={1600}
+                  height={900}
+                  sizes="(min-width: 1024px) 896px, 100vw"
+                  className="h-auto w-full"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-body">
+                Example Power BI dashboard: spend vs. budget, variance and cost by category. Your cost dashboards are built the same way, from your own Azure data.
+              </figcaption>
+            </figure>
+          </Reveal>
         </div>
       </section>
 
