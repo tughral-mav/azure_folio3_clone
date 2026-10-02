@@ -139,9 +139,9 @@ const CASES = [
   { title: "Automating Food Plan Management & Saving 60% Time with Copilot", img: '/wp-content/uploads/2025/07/automating-food-plan-management-saving-time-with-copilot.webp', href: '/copilot-implementation-food-verification/' },
   { title: "Microsoft Fabric Services for a Cattle Feeding Company to Maximize Animal Well-Being by 20%", img: '/wp-content/uploads/2025/07/microsoft-fabric-services-for-a-cattle-feeding-company-to-maximize-animal-well-being.webp', href: '/automated-data-reporting/' },
   { title: "Power BI Dashboards for a Food Crop Grower, Improving Yield Potential by 12%", img: '/wp-content/uploads/2025/07/power-bi-dashboards-for-a-food-crop-grower-improving-yield-potential.webp', href: '/implementing-power-bi-dashboard-for-food-crop-grower/' },
-  { title: "Weaver Popcorn Hybrids", img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp', href: '/case-studies/popcorn-producer-intellifabric-dashboards/' },
-  { title: "Agentic HR Policy Feedback", img: '/wp-content/uploads/2026/02/hr-policy.webp', href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/' },
-  { title: "Automates HR Operations", img: '/wp-content/uploads/2026/02/real-estate-1.webp', href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/' },
+  { title: "Weaver Popcorn Hybrids", img: '/wp-content/uploads/2026/01/financial-performance-monitoring.webp', href: '/case-studies/popcorn-producer-intellifabric-dashboards/' },
+  { title: "Agentic HR Policy Feedback", img: '/wp-content/uploads/2026/01/agentic-hr-policy-feedback-update-reporting-solution.webp', href: '/case-studies/agentic-hr-policy-feedback-update-and-reporting-solution/' },
+  { title: "Automates HR Operations", img: '/wp-content/uploads/2026/01/automates-hr-operations-microsoft-studio-copilot.webp', href: '/case-studies/microsoft-copilot-studio-based-hr-policy-agent/' },
 ];
 
 const RELATED = [
