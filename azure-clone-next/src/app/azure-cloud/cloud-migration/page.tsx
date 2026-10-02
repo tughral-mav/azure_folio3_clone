@@ -30,6 +30,13 @@ const ICON_PATHS: Record<string, string> = {
   bolt: 'M13 2 4 14h7l-1 8 9-12h-7l1-8Z',
   wallet: 'M3 7a2 2 0 0 1 2-2h12v3M3 7v10a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-1Zm13 6h2',
   lock: 'M6 11h12v9H6zM8 11V8a4 4 0 0 1 8 0v3',
+  server: 'M4 4h16v6H4zM4 14h16v6H4zM7.5 7h.01M7.5 17h.01',
+  layers: 'm12 3 9 5-9 5-9-5 9-5ZM3 13l9 5 9-5M3 17.5l9 5 9-5',
+  network: 'M9 3h6v5H9zM3 16h6v5H3zM15 16h6v5h-6zM12 8v4M6 16v-4h12v4',
+  drive: 'M4 14h16v6H4zM4 14l2.5-8h11L20 14M7.5 17h.01',
+  database: 'M5 6c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3Zm0 0v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3',
+  chart: 'M4 4v16h16M9 16v-5M13 16V8M17 16v-8',
+  cloud: 'M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18H7Z',
   spark: 'M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3Zm7 11 .8 2.2 2.2.8-2.2.8L19 20l-.8-2.2-2.2-.8 2.2-.8L19 14Z',
 };
 
@@ -48,15 +55,15 @@ const CHALLENGES = [
   { t: 'Your team lacks Azure skills.', d: 'Certified Folio3 engineers do the heavy lifting, document everything, and train your team at handover.' },
 ];
 
-const SERVICES: { t: string; d: string; link?: { text: string; href: string } }[] = [
-  { t: 'Lift-and-Shift to Azure', d: "Move servers and VMs to Azure as they are, with no code changes. It's the fastest way out of a data center before a lease or hardware renewal." },
-  { t: 'Replatforming', d: 'Upgrade operating systems and software while you move, and switch to managed services such as Azure SQL and Azure App Service to cut maintenance.' },
-  { t: 'Application Modernization', d: 'Refactor or rebuild legacy apps as cloud-native services on AKS, App Service or Azure Functions so they scale and ship faster.', link: { text: 'Modernize your app with Azure', href: '/blog/modernize-your-app-with-azure/' } },
-  { t: 'Hybrid Setups', d: 'Keep some systems on-premises and run others in Azure, managed as one estate. This works well for regulated data or phased moves.', link: { text: 'Managing hybrid cloud with Azure Arc', href: '/blog/managing-hybrid-cloud-with-azure-arc/' } },
-  { t: 'Server and VM Migration', d: 'Migrate Windows Server and Linux workloads from on-premises to Azure virtual machines, with tested cutovers.' },
-  { t: 'Database Migration', d: 'Move SQL Server, MySQL, PostgreSQL and Oracle databases to Azure SQL or Azure Database services, with schema checks and data validation.' },
-  { t: 'Data Warehouse and Analytics Migration', d: 'Shift legacy warehouses and Azure Synapse workloads to Microsoft Fabric, so data and reporting run on one platform.', link: { text: 'Microsoft Fabric migration', href: '/microsoft-fabric-services/microsoft-fabric-migration/' } },
-  { t: 'AWS and Google Cloud to Azure', d: 'Consolidate on Azure from AWS or Google Cloud. We map each service to its Azure equivalent so nothing breaks in transit.' },
+const SERVICES: { icon: string; t: string; d: string; link?: { text: string; href: string } }[] = [
+  { icon: 'server', t: 'Lift-and-Shift to Azure', d: "Move servers and VMs to Azure as they are, with no code changes. It's the fastest way out of a data center before a lease or hardware renewal." },
+  { icon: 'layers', t: 'Replatforming', d: 'Upgrade operating systems and software while you move, and switch to managed services such as Azure SQL and Azure App Service to cut maintenance.' },
+  { icon: 'spark', t: 'Application Modernization', d: 'Refactor or rebuild legacy apps as cloud-native services on AKS, App Service or Azure Functions so they scale and ship faster.', link: { text: 'Modernize your app with Azure', href: '/blog/modernize-your-app-with-azure/' } },
+  { icon: 'network', t: 'Hybrid Setups', d: 'Keep some systems on-premises and run others in Azure, managed as one estate. This works well for regulated data or phased moves.', link: { text: 'Managing hybrid cloud with Azure Arc', href: '/blog/managing-hybrid-cloud-with-azure-arc/' } },
+  { icon: 'drive', t: 'Server and VM Migration', d: 'Migrate Windows Server and Linux workloads from on-premises to Azure virtual machines, with tested cutovers.' },
+  { icon: 'database', t: 'Database Migration', d: 'Move SQL Server, MySQL, PostgreSQL and Oracle databases to Azure SQL or Azure Database services, with schema checks and data validation.' },
+  { icon: 'chart', t: 'Data Warehouse and Analytics Migration', d: 'Shift legacy warehouses and Azure Synapse workloads to Microsoft Fabric, so data and reporting run on one platform.', link: { text: 'Microsoft Fabric migration', href: '/microsoft-fabric-services/microsoft-fabric-migration/' } },
+  { icon: 'cloud', t: 'AWS and Google Cloud to Azure', d: 'Consolidate on Azure from AWS or Google Cloud. We map each service to its Azure equivalent so nothing breaks in transit.' },
 ];
 
 const CAPABILITIES: Capability[] = [
@@ -275,19 +282,27 @@ export default function AzureCloudMigrationPage() {
         </div>
       </section>
 
-      {/* FOLD 6 — MIGRATION SERVICES */}
+      {/* FOLD 6 — MIGRATION SERVICES (header row + one divided grid panel) */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
-          <Head title="Our Azure Migration Services" sub="Whatever you run today, we have a path to Azure for it." />
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {SERVICES.map((s, i) => (
-              <Reveal key={s.t} animation="fadeInUp" delay={(i % 2) * 80}>
-                <div className="h-full rounded-2xl card-hover border border-surface-line bg-white p-6 shadow-card">
-                  <h3 className="text-lg">{s.t}</h3><p className="mt-2 text-sm leading-relaxed text-body">{s.d}</p>
-                  {s.link && <Link href={s.link.href} className="mt-3 inline-block text-sm font-semibold text-brand hover:underline">{s.link.text} →</Link>}
-                </div>
-              </Reveal>
-            ))}
+          <div className="grid items-end gap-4 lg:grid-cols-[2fr_1fr] lg:gap-12">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Services</p>
+              <Reveal animation="fadeInUp"><h2 className={H2}>Our Azure Migration Services</h2></Reveal>
+            </div>
+            <p className="text-body">Whatever you run today, we have a path to Azure for it.</p>
+          </div>
+          <div className="mt-10 overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
+            <ul className="grid grid-cols-1 gap-px bg-surface-line sm:grid-cols-2 lg:grid-cols-4">
+              {SERVICES.map((sv) => (
+                <li key={sv.t} className="flex flex-col bg-white p-6 lg:p-8">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="text-brand" aria-hidden="true"><path d={ICON_PATHS[sv.icon]} /></svg>
+                  <h3 className="mt-5 text-lg">{sv.t}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-body">{sv.d}</p>
+                  {sv.link && <Link href={sv.link.href} className="mt-3 inline-block text-sm font-semibold text-brand hover:underline">{sv.link.text} →</Link>}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
