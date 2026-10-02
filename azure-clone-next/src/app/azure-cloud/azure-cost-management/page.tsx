@@ -40,14 +40,6 @@ export const metadata: Metadata = {
   openGraph: { title: TITLE, description: META_DESCRIPTION, url: CANONICAL, type: 'website' },
 };
 
-const badges = [
-  'Infrastructure (Azure)',
-  'Data & AI (Azure)',
-  'Digital & App Innovation (Azure)',
-  'Business Applications',
-  'Direct (Tier 1) Microsoft CSP',
-];
-
 const whyBillsClimb: { title: string; text: string; Icon: LucideIcon }[] = [
   { title: 'Idle and orphaned resources', text: 'Test VMs left running, unattached disks and old snapshots keep billing long after the project ends.', Icon: Cloud },
   { title: 'Oversized workloads', text: 'Resources sized for peak traffic sit mostly idle the rest of the time.', Icon: Gauge },
@@ -197,14 +189,6 @@ export default function AzureCostManagementPage() {
               <Link href={FORM_HREF} className={primaryBtn}>{CTA_CONSULT}</Link>
               <Link href="#how-we-work" className={outlineBtn}>See How We Work</Link>
             </div>
-            <ul className="mt-10 flex flex-wrap gap-2" aria-label="Microsoft partner designations">
-              {badges.map((b) => (
-                <li key={b} className="rounded-full border border-surface-line bg-white px-3 py-1 text-xs font-medium text-brand">{b}</li>
-              ))}
-            </ul>
-            <p className="mt-5 max-w-2xl text-sm text-body">
-              As a Direct Microsoft CSP, Folio3 sees both sides of your Azure costs: what you consume and what you pay for it.
-            </p>
           </div>
         </div>
       </section>
