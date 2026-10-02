@@ -409,10 +409,7 @@ export default function AzureCostManagementPage() {
         </div>
       </section>
 
-      <OneToOneCTA
-        formTitle="Find Out Where Your Azure Budget Is Going"
-        formCopy="Book a free 30-minute Azure cost consultation. A senior engineer will review your setup with you and point out where you're most likely overspending. You leave with clear next steps whether you work with us or not."
-      />
+      <OneToOneCTA />
 
       {jsonLd.map((d) => (
         <script key={d['@type']} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(d) }} />
