@@ -121,12 +121,7 @@ const WHY_FOLIO3 = [
   { t: 'No surprises', d: 'A fixed wave plan, a pilot before full migration, and cost estimates before you commit.' },
 ];
 
-const BADGES = [
-  { src: '/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp', alt: 'Infrastructure - Azure' },
-  { src: '/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp', alt: 'Data & AI - Azure' },
-  { src: '/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp', alt: 'Digital & App Innovation - Azure' },
-  { src: '/wp-content/uploads/2024/08/business-application-logo-img.webp', alt: 'Business Applications' },
-];
+const DESIGNATIONS = ['Infrastructure (Azure)', 'Data & AI (Azure)', 'Digital & App Innovation (Azure)', 'Business Applications'];
 
 const COST_POINTS = [
   'Right-size VMs and databases from real usage data gathered during assessment.',
@@ -385,27 +380,39 @@ export default function AzureCloudMigrationPage() {
         </div>
       </section>
 
-      {/* FOLD 13 — WHY FOLIO3 */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Head title="Why Choose Folio3 as Your Azure Migration Partner" />
-          <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-            {WHY_FOLIO3.map((w) => (
-              <li key={w.t} className="rounded-2xl border border-surface-line bg-white p-6 shadow-card"><h3 className="text-lg">{w.t}</h3><p className="mt-2 text-sm leading-relaxed text-body">{w.d}</p></li>
-            ))}
-          </ul>
-          <p className="mt-8 text-center"><Link href="/about-us/" className="font-semibold text-brand hover:underline">Learn more about Folio3 Azure →</Link></p>
-        </div>
-      </section>
-
-      {/* FOLD 14 — CREDENTIALS */}
+      {/* FOLDS 13 + 14 — WHY FOLIO3 (checklist left) + CREDENTIALS (dark panel right) */}
       <section className="bg-surface-tint py-16 lg:py-24">
-        <div className="container-x">
-          <Head title="A Certified Azure Migration Partner" sub="Microsoft awards Solutions Partner designations only to partners that score at least 70 of 100 points on performance, skilling and customer success. Folio3 holds four." />
-          <div className="mt-10 grid grid-cols-2 items-center gap-6 lg:grid-cols-4">
-            {BADGES.map((b) => <Image key={b.src} src={b.src} alt={b.alt} width={300} height={203} className="mx-auto h-auto w-full max-w-[260px] object-contain" />)}
+        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Why Folio3</p>
+            <Reveal animation="fadeInUp"><h2 className={H2}>Why Choose Folio3 as Your Azure Migration Partner</h2></Reveal>
+            <ul className="mt-8 space-y-6">
+              {WHY_FOLIO3.map((w) => (
+                <li key={w.t} className="flex gap-4">
+                  <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5" /></svg>
+                  </span>
+                  <div><h3 className="text-lg">{w.t}</h3><p className="mt-1 text-sm leading-relaxed text-body">{w.d}</p></div>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-8"><Link href="/about-us/" className="font-semibold text-brand hover:underline">Learn more about Folio3 Azure →</Link></p>
           </div>
-          <p className="mt-8 text-center"><Link href="/about-us/" className="font-semibold text-brand hover:underline">Read more about Folio3&apos;s Microsoft Solutions Partner designations →</Link></p>
+          <div className="rounded-3xl bg-brand-ink p-8 text-white lg:p-12">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">Credentials</p>
+            <h2 className="text-3xl leading-tight text-white">A Certified Azure Migration Partner</h2>
+            <p className="mt-4 leading-relaxed text-white/75">Microsoft awards Solutions Partner designations only to partners that score at least 70 of 100 points on performance, skilling and customer success. Folio3 holds four.</p>
+            <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {DESIGNATIONS.map((d) => (
+                <li key={d} className="rounded-2xl border border-white/15 p-5">
+                  <svg viewBox="0 0 24 24" width="28" height="28" className="text-brand" fill="currentColor" aria-hidden="true"><path d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z" /></svg>
+                  <p className="mt-4 text-xs text-white/65">Solutions Partner</p>
+                  <p className="mt-1 font-semibold text-white">{d}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-8"><Link href="/about-us/" className="font-semibold text-white underline-offset-4 hover:underline">Read more about Folio3&apos;s Microsoft Solutions Partner designations →</Link></p>
+          </div>
         </div>
       </section>
 
