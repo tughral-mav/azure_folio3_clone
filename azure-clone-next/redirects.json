@@ -313,5 +313,10 @@
     "source": "/folio3-employee-self-service-app/",
     "destination": "/solution/folio3-employee-self-service-app/",
     "permanent": true
+  },
+  {
+    "source": "/azure-managed-services/application-managed-services/",
+    "destination": "/managed-services/application-managed-services/",
+    "permanent": true
   }
 ]
