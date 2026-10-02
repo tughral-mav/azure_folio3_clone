@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Accordion } from '@/components/sections/Accordion';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Reveal } from '@/components/ui/Reveal';
@@ -197,8 +198,8 @@ export default function AzureCloudMigrationPage() {
 
       {/* FOLD 1 — HERO */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x py-16 lg:py-24">
-          <div className="max-w-3xl">
+        <div className="container-x grid items-center gap-10 py-16 lg:grid-cols-[1.05fr_1fr] lg:py-24">
+          <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">Azure Cloud Migration</p>
             <h1 className="text-4xl font-bold leading-[1.15] text-ink lg:text-5xl">Azure Cloud Migration Services, Planned Around Your Business</h1>
             <p className="mt-6 text-lg text-body">Folio3 moves your servers, applications and databases from on-premises or another cloud to Microsoft Azure in planned waves. An Azure team stays with you after go-live.</p>
@@ -207,6 +208,9 @@ export default function AzureCloudMigrationPage() {
               <Link href={FORM} className="btn-outline uppercase tracking-wide">Talk to an Azure Engineer</Link>
             </div>
           </div>
+          <Reveal animation="zoomIn">
+            <Image src="/wp-content/uploads/2026/09/executive-summary-dashboard-power-bi.webp" alt="Azure executive summary dashboard on migrated data" width={800} height={425} priority sizes="(max-width:1024px) 90vw, 540px" className="mx-auto h-auto w-full max-w-xl rounded-2xl border border-surface-line bg-white shadow-cardHover" />
+          </Reveal>
         </div>
       </section>
 
