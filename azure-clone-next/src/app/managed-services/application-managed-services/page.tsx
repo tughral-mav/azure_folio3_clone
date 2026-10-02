@@ -9,7 +9,7 @@ import { SupportSteps } from './SupportSteps';
 import { HeroDashboard } from './HeroDashboard';
 
 const ORIGIN = 'https://azure.folio3.com';
-const PATH = '/azure-managed-services/application-managed-services/';
+const PATH = '/managed-services/application-managed-services/';
 const FORM = '#pgForm';
 const TITLE = 'Application Managed Services on Azure | Folio3';
 const DESC = '24/7 application managed services for Azure apps: L2/L3 support, full-stack monitoring, fixes and releases by certified engineers. Talk to Folio3.';
