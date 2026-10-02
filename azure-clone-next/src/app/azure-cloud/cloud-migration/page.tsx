@@ -37,6 +37,10 @@ const ICON_PATHS: Record<string, string> = {
   database: 'M5 6c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3Zm0 0v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3',
   chart: 'M4 4v16h16M9 16v-5M13 16V8M17 16v-8',
   cloud: 'M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18H7Z',
+  code: 'm8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14',
+  shield: 'M12 3 4.5 6v5.5c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5V6L12 3Zm-3 9 2.2 2.2L15.5 10',
+  backup: 'M4 12a8 8 0 1 0 2.5-5.8M4 4v4h4M12 8v4l3 2',
+  box: 'm12 3 8 4.5v9L12 21l-8-4.5v-9L12 3ZM4 7.5l8 4.5 8-4.5M12 12v9',
   spark: 'M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3Zm7 11 .8 2.2 2.2.8-2.2.8L19 20l-.8-2.2-2.2-.8 2.2-.8L19 14Z',
 };
 
@@ -67,12 +71,12 @@ const SERVICES: { icon: string; t: string; d: string; link?: { text: string; hre
 ];
 
 const CAPABILITIES: Capability[] = [
-  { label: 'Cloud Architecture and Planning', body: 'We map your existing infrastructure to the right Azure models and design the target environment before any workload moves.' },
-  { label: 'DevOps and Automation', body: 'Infrastructure as code, CI/CD pipelines, and one-click deployments and rollback make every migration wave repeatable.', link: { text: 'Azure DevOps test automation', href: '/blog/azure-devops-test-automation/' } },
-  { label: 'Security and Identity', body: 'Microsoft Entra ID, role-based access, encryption, network segmentation and Defender for Cloud protect data during and after the move.' },
-  { label: 'Backup and Disaster Recovery', body: 'Azure Backup and Azure Site Recovery, with a secondary region, keep you running if a region fails.' },
-  { label: 'Containers and Kubernetes', body: 'We move containerized apps to Azure Kubernetes Service and set up monitoring from day one.', link: { text: 'KubeMonitor agent for AKS', href: '/ai-agents/kubemonitor-agent/' } },
-  { label: 'Data and Analytics', body: 'We bring reporting and analytics along, so dashboards work on day one in Azure.', link: { text: 'Cloud data modernization', href: '/microsoft-fabric-services/cloud-data-modernization/' } },
+  { label: 'Cloud Architecture and Planning', icon: ICON_PATHS.network, body: 'We map your existing infrastructure to the right Azure models and design the target environment before any workload moves.' },
+  { label: 'DevOps and Automation', icon: ICON_PATHS.code, body: 'Infrastructure as code, CI/CD pipelines, and one-click deployments and rollback make every migration wave repeatable.', link: { text: 'Azure DevOps test automation', href: '/blog/azure-devops-test-automation/' } },
+  { label: 'Security and Identity', icon: ICON_PATHS.shield, body: 'Microsoft Entra ID, role-based access, encryption, network segmentation and Defender for Cloud protect data during and after the move.' },
+  { label: 'Backup and Disaster Recovery', icon: ICON_PATHS.backup, body: 'Azure Backup and Azure Site Recovery, with a secondary region, keep you running if a region fails.' },
+  { label: 'Containers and Kubernetes', icon: ICON_PATHS.box, body: 'We move containerized apps to Azure Kubernetes Service and set up monitoring from day one.', link: { text: 'KubeMonitor agent for AKS', href: '/ai-agents/kubemonitor-agent/' } },
+  { label: 'Data and Analytics', icon: ICON_PATHS.chart, body: 'We bring reporting and analytics along, so dashboards work on day one in Azure.', link: { text: 'Cloud data modernization', href: '/microsoft-fabric-services/cloud-data-modernization/' } },
 ];
 
 const STRATEGIES = [
@@ -307,10 +311,11 @@ export default function AzureCloudMigrationPage() {
         </div>
       </section>
 
-      {/* FOLD 7 — CAPABILITIES (tabs) */}
-      <section className="py-16 lg:py-24 bg-[linear-gradient(180deg,#eef5fc_0%,#dbeafa_100%)]">
+      {/* FOLD 7 — CAPABILITIES (vertical tabs + detail panel) */}
+      <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
-          <Head title="Everything Your Migration Needs, Under One Team" />
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">Capabilities</p>
+          <Reveal animation="fadeInUp"><h2 className={`max-w-3xl ${H2}`}>Everything Your Migration Needs, Under One Team</h2></Reveal>
           <CapabilityTabs items={CAPABILITIES} />
         </div>
       </section>
