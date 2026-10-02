@@ -96,16 +96,6 @@ const SLAS = [
   { p: 'P4 Low', e: 'Cosmetic issue or minor request', r: '2 business days', t: 'Next planned release' },
 ];
 
-const TIERS = ['Essential', 'Advanced', 'Dedicated'];
-const TIER_ROWS: [string, string, string, string][] = [
-  ['Best for', 'Stable apps with few changes', 'Business-critical apps', 'Large or fast-changing portfolios'],
-  ['Support hours', 'Business hours', '24/7 for P1 and P2', '24/7'],
-  ['Monitoring', 'Azure and application', 'Azure and application', 'Azure and application, with custom dashboards'],
-  ['L2/L3 fixes', 'Included', 'Included', 'Included'],
-  ['Enhancement hours', 'Pay as you go', 'Monthly allowance', 'Dedicated pod'],
-  ['Reviews', 'Monthly report', 'Monthly report and quarterly review', 'Monthly report, quarterly review and named architect'],
-];
-
 const APPS = [
   { icon: 'code', t: 'Custom web apps and APIs', d: '.NET, Node.js, Python and Java apps on App Service, AKS or Functions.' },
   { icon: 'phone', t: 'Mobile app backends', d: 'APIs, push notifications, authentication and data sync.' },
@@ -385,25 +375,6 @@ export default function ApplicationManagedServicesPage() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      {/* FOLD 11 — ENGAGEMENT MODELS */}
-      <section className="bg-surface-tint py-16 lg:py-24">
-        <div className="container-x">
-          <Head eyebrow="Pricing" title="Flexible Engagement Models" sub="Pricing is a predictable monthly fee, based on how many applications we support and how complex they are, not on your Azure spend." />
-          <div className="mx-auto mt-10 max-w-5xl overflow-x-auto rounded-2xl border border-surface-line shadow-card">
-            <table className="w-full min-w-[720px] text-left text-sm">
-              <thead className="bg-brand-navy text-white"><tr><th scope="col" className="px-5 py-4"><span className="sr-only">Feature</span></th>{TIERS.map((t) => <th key={t} scope="col" className="px-5 py-4 text-base">{t}</th>)}</tr></thead>
-              <tbody className="divide-y divide-surface-line bg-white">
-                {TIER_ROWS.map(([k, ...v]) => (
-                  <tr key={k}><th scope="row" className="px-5 py-4 font-semibold text-ink">{k}</th>{v.map((c, i) => <td key={i} className="px-5 py-4 text-body">{c}</td>)}</tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-body">You can also simplify billing by buying your Azure subscriptions through our Direct (Tier 1) Microsoft CSP <Link href="/microsoft-licensing-process/" className={LINK}>licensing programme</Link>, with support and licences on one invoice.</p>
-          <div className="mt-8 text-center"><Link href={FORM} className="btn-primary uppercase tracking-wide">Get a Quote</Link></div>
         </div>
       </section>
 
