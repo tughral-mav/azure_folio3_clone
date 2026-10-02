@@ -176,8 +176,8 @@ export default function AzureCostManagementPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x relative py-16 lg:py-24">
-          <div className="max-w-3xl">
+        <div className="container-x relative grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_1fr] lg:py-24">
+          <div>
             <span className="eyebrow">Azure Cloud · Cost Management</span>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] text-ink lg:text-5xl">
               Azure Cost Management Services That Cut <span className="text-brand">Waste, Not Performance</span>
@@ -190,6 +190,21 @@ export default function AzureCostManagementPage() {
               <Link href="#how-we-work" className={outlineBtn}>See How We Work</Link>
             </div>
           </div>
+          <Reveal animation="zoomIn">
+            <figure>
+              <div className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
+                <Image
+                  src="/wp-content/uploads/2026/09/bc-expenses-dashboard.webp"
+                  alt="Example Power BI cost dashboard showing spend against budget, budget variance over time and spend by category"
+                  width={1600}
+                  height={900}
+                  priority
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="h-auto w-full"
+                />
+              </div>
+            </figure>
+          </Reveal>
         </div>
       </section>
 
@@ -318,23 +333,6 @@ export default function AzureCostManagementPage() {
             </p>
             <p>Many cost management providers run your data through their own proprietary platform. We keep everything in your Azure tenant.</p>
           </div>
-          <Reveal animation="fadeInUp" className="mx-auto mt-12 max-w-4xl">
-            <figure>
-              <div className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card">
-                <Image
-                  src="/wp-content/uploads/2026/09/bc-expenses-dashboard.webp"
-                  alt="Example Power BI expense dashboard showing spend against budget, budget variance over time and spend by category"
-                  width={1600}
-                  height={900}
-                  sizes="(min-width: 1024px) 896px, 100vw"
-                  className="h-auto w-full"
-                />
-              </div>
-              <figcaption className="mt-3 text-center text-sm text-body">
-                Example Power BI dashboard: spend vs. budget, variance and cost by category. Your cost dashboards are built the same way, from your own Azure data.
-              </figcaption>
-            </figure>
-          </Reveal>
         </div>
       </section>
 
