@@ -94,6 +94,7 @@ export function HeroDashboard() {
               </ul>
             </div>
           </div>
+          <p className="text-right"><span className="inline-block rounded-full border border-surface-line bg-surface-tint px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted">Illustrative</span></p>
         </div>
       </div>
 
