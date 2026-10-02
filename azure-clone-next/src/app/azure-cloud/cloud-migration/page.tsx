@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Accordion } from '@/components/sections/Accordion';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { Reveal } from '@/components/ui/Reveal';
@@ -19,12 +18,6 @@ export const metadata: Metadata = {
   alternates: { canonical: PATH },
   openGraph: { title: `${TITLE} | Folio3 Azure`, description: DESC, type: 'website', url: PATH },
 };
-
-const LOGOS = [
-  { src: '/wp-content/uploads/2024/01/ias-savills-logo.webp', alt: 'Savills' },
-  { src: '/wp-content/uploads/2024/01/ias-cityu-logo.webp', alt: 'City University of Seattle' },
-  { src: '/wp-content/uploads/2024/01/ias-daraz-logo.webp', alt: 'Daraz' },
-];
 
 const ICON_PATHS: Record<string, string> = {
   bolt: 'M13 2 4 14h7l-1 8 9-12h-7l1-8Z',
@@ -212,13 +205,6 @@ export default function AzureCloudMigrationPage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href={FORM} className="btn bg-brand-navy text-white hover:bg-brand uppercase tracking-wide">Book My Free Migration Assessment</Link>
               <Link href={FORM} className="btn-outline uppercase tracking-wide">Talk to an Azure Engineer</Link>
-            </div>
-            <p className="mt-8 text-sm font-medium text-ink">Microsoft Solutions Partner for Infrastructure (Azure) · 5,000+ projects delivered · US, UK, UAE and Canada</p>
-          </div>
-          <div className="mt-12">
-            <p className="mb-6 text-xs font-semibold uppercase tracking-wider text-muted">Trusted by teams at</p>
-            <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
-              {LOGOS.map((l) => <Image key={l.src} src={l.src} alt={l.alt} width={120} height={48} className="h-10 w-auto object-contain" />)}
             </div>
           </div>
         </div>
