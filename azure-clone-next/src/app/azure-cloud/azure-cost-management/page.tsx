@@ -74,10 +74,10 @@ const steps = [
 ];
 
 const engagements = [
-  { title: 'Free Azure Cost Consultation', best: "Best for teams that suspect overspend but don't know where.", text: 'A 30-minute call, your top 3 savings opportunities and a recommended next step.' },
-  { title: 'Azure Cost Optimization Project', best: 'Best for a one-time cleanup after migration or a bill spike.', text: 'A full cost assessment, a prioritized savings plan with estimates, and implementation of the agreed changes.' },
-  { title: 'Managed Azure Cost Management', best: 'Best for ongoing control as you grow.', text: 'Monthly cost reviews, anomaly alerts, commitment tuning, governance upkeep and 24/7 monitoring.' },
-  { title: 'CSP Licensing & Billing', best: 'Best for buying Azure and Microsoft licenses more efficiently.', text: 'Consolidated billing through a Direct (Tier 1) CSP, a licensing review and a Hybrid Benefit eligibility check.' },
+  { title: 'Free Azure Cost Consultation', cta: 'Book a Free Call', best: "Best for teams that suspect overspend but don't know where.", text: 'A 30-minute call, your top 3 savings opportunities and a recommended next step.' },
+  { title: 'Azure Cost Optimization Project', cta: 'Start a Project', best: 'Best for a one-time cleanup after migration or a bill spike.', text: 'A full cost assessment, a prioritized savings plan with estimates, and implementation of the agreed changes.' },
+  { title: 'Managed Azure Cost Management', cta: 'Talk About Managed', best: 'Best for ongoing control as you grow.', text: 'Monthly cost reviews, anomaly alerts, commitment tuning, governance upkeep and 24/7 monitoring.' },
+  { title: 'CSP Licensing & Billing', cta: 'Review My Licensing', best: 'Best for buying Azure and Microsoft licenses more efficiently.', text: 'Consolidated billing through a Direct (Tier 1) CSP, a licensing review and a Hybrid Benefit eligibility check.' },
 ];
 
 const tools = [
@@ -267,7 +267,7 @@ export default function AzureCostManagementPage() {
       <AwardsBand autoScroll title="Awards & Recognition" />
 
       {/* Process */}
-      <section id="how-we-work" className="scroll-mt-24 py-16 lg:py-24">
+      <section id="how-we-work" className="scroll-mt-24 bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <SectionHead title="How Our Azure FinOps Process Works">
             A five-step loop built on FinOps practices and the Microsoft Well-Architected Framework cost pillar. Savings come early; governance keeps them.
@@ -291,24 +291,25 @@ export default function AzureCostManagementPage() {
       {/* Engagement models */}
       <section className="py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead title="Choose How You Want to Work With Us" />
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <Reveal animation="fadeInUp"><h2 className="text-3xl lg:text-4xl">Choose How You Want to Work With Us</h2></Reveal>
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {engagements.map((e, i) => (
               <Reveal key={e.title} animation="fadeInUp" delay={i * 70}>
-                <div className="h-full rounded-2xl card-hover border border-surface-line bg-white p-7 shadow-card">
-                  <h3 className="text-xl">{e.title}</h3>
-                  <p className="mt-2 text-sm font-semibold text-brand">{e.best}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-body">{e.text}</p>
+                <div className="flex h-full flex-col rounded-2xl card-hover border border-surface-line bg-white p-6 shadow-card">
+                  <h3 className="text-lg leading-snug">{e.title}</h3>
+                  <p className="mt-3 text-xs leading-relaxed text-body/80">{e.best}</p>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-body">{e.text}</p>
+                  <Link href={FORM_HREF} className={`mt-6 w-full justify-center text-center ${i === 0 ? primaryBtn : outlineBtn}`}>{e.cta}</Link>
                 </div>
               </Reveal>
             ))}
           </div>
-          <p className="mx-auto mt-10 max-w-3xl text-center text-body">
+          <p className="mt-8 max-w-3xl text-body">
             Already need day-to-day support too? Cost management is built into our{' '}
             <Link href="/azure-managed-services/" className="font-medium text-brand hover:underline">Azure managed services</Link>
             , alongside 24/7 monitoring and security management.
           </p>
-          <div className="mt-6 text-center"><Link href={FORM_HREF} className={primaryBtn}>{CTA_CONSULT}</Link></div>
+          <div className="mt-6"><Link href={FORM_HREF} className={primaryBtn}>{CTA_CONSULT}</Link></div>
         </div>
       </section>
 
