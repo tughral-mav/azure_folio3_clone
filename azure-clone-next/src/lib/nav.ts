@@ -37,7 +37,13 @@ export const NAV: NavItem[] = [
         ],
       },
       { label: 'Microsoft Power Platform', href: '/microsoft-power-platform-services/' },
-      { label: 'Azure Managed Services', href: '/azure-managed-services/' },
+      {
+        label: 'Azure Managed Services',
+        href: '/azure-managed-services/',
+        children: [
+          { label: 'Application Managed Services', href: '/managed-services/application-managed-services/' },
+        ],
+      },
     ],
   },
   {

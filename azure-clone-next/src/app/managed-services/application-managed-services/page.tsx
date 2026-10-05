@@ -230,15 +230,6 @@ export default function ApplicationManagedServicesPage() {
         <div className="container-x"><LogoCloud title="Trusted by teams that run business-critical apps on Azure" logos={LOGOS} /></div>
       </section>
 
-      {/* FOLD 3 — STATS */}
-      <section className="bg-brand-ink py-14">
-        <div className="container-x">
-          <dl className="grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
-            {STATS.map((s) => (<div key={s.l}><dd className="text-4xl font-bold text-white">{s.v}</dd><dt className="mt-1 text-sm text-white/70">{s.l}</dt></div>))}
-          </dl>
-        </div>
-      </section>
-
       {/* FOLD 4 — WHAT ARE APPLICATION MANAGED SERVICES? */}
       <section className="py-16 lg:py-24">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
@@ -329,6 +320,15 @@ export default function ApplicationManagedServicesPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* FOLD 3 — STATS (placed after Reporting) */}
+      <section className="bg-brand-ink py-14">
+        <div className="container-x">
+          <dl className="grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
+            {STATS.map((s) => (<div key={s.l}><dd className="text-4xl font-bold text-white">{s.v}</dd><dt className="mt-1 text-sm text-white/70">{s.l}</dt></div>))}
+          </dl>
         </div>
       </section>
 
