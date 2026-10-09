@@ -766,24 +766,6 @@ export default function FinancialForecastingPage() {
         </div>
       </section>
 
-      {/* Fold 17: FAQ */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <Heading eyebrow="FAQ" title="Financial Forecasting Dashboard FAQs" />
-          <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
-            {faqs.map((f, i) => (
-              <details key={f.q} open={i === 0} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
-                  <h3 className="text-base font-semibold text-ink">{f.q}</h3>
-                  <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
-                </summary>
-                <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Fold 18: Final CTA */}
       <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-20">
         <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
@@ -799,6 +781,24 @@ export default function FinancialForecastingPage() {
               <Link href="/contact-us/" className="font-semibold text-white underline">Talk to a Folio3 Azure expert</Link>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* Fold 17: FAQ */}
+      <section className="py-16 lg:py-24">
+        <div className="container-x">
+          <Heading eyebrow="FAQ" title="Financial Forecasting Dashboard FAQs" />
+          <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
+            {faqs.map((f, i) => (
+              <details key={f.q} open={i === 0} className="group">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
+                  <h3 className="text-base font-semibold text-ink">{f.q}</h3>
+                  <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
