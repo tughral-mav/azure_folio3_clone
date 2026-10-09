@@ -791,10 +791,7 @@ export default function RetailDataAnalyticsPage() {
         </div>
       </section>
 
-      <OneToOneCTA
-        formTitle="Book a Retail Dashboard Demo"
-        formCopy="Tell us about your POS, ERP and e-commerce systems, and we will show the retail pack on sample data."
-      />
+      <OneToOneCTA />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
