@@ -402,11 +402,7 @@ export default function RetailDataAnalyticsPage() {
           <div className="mt-10">
             <DashboardTabs functions={dashboards} />
           </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-xs italic text-body">
-            Dashboard visuals are examples from Folio3 Power BI deployments using sample data. Folio3 configures each
-            view around your stores, channels, products and KPIs.
-          </p>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-body">
+          <p className="mx-auto mt-10 max-w-3xl text-center text-body">
             For deeper supplier, logistics and procurement reporting, pair the pack with Folio3&apos;s{' '}
             <Link href="/azure-data-analytics/supply-chain-analytics/" className={link}>
               supply chain analytics
