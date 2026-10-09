@@ -807,10 +807,7 @@ export default function FinancialForecastingPage() {
         </div>
       </section>
 
-      <OneToOneCTA
-        formTitle="Book a Free Financial Forecasting Dashboard Demo"
-        formCopy="Tell us about your ERP, entities and forecasting process, and we will show how the dashboard maps to your data."
-      />
+      <OneToOneCTA tone="light" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
