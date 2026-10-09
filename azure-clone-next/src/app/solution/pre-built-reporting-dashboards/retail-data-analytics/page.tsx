@@ -440,13 +440,6 @@ export default function RetailDataAnalyticsPage() {
               </tbody>
             </table>
           </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-body">
-            Running Business Central without a POS? See our{' '}
-            <Link href="/solution/pre-built-reporting-dashboards/for-business-central/" className={link}>
-              pre-built Business Central dashboards
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
