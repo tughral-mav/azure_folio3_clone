@@ -345,16 +345,6 @@ export default function RetailDataAnalyticsPage() {
               Connect your POS, ERP and e-commerce data to ready-made Power BI dashboards. Track sales, inventory,
               store and customer KPIs in one place, live in weeks rather than months.
             </p>
-            <p className="mt-4 max-w-xl text-body">
-              Retail data analytics is the practice of combining point-of-sale, inventory, e-commerce and customer
-              data to measure and improve sales, margin and stock performance. We deliver it through Pre-Built
-              Reporting Dashboards: ready-made Power BI dashboards, a governed retail data model and automated data
-              pipelines, mapped to your systems in weeks. Moving to Microsoft Fabric? The same dashboards run on{' '}
-              <Link href="/solution/intellifabric/" className={link}>
-                IntelliFabric
-              </Link>
-              .
-            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={FORM_HREF} className={primaryBtn}>
                 Book a Retail Dashboard Demo
