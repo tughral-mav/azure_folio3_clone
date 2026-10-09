@@ -10,11 +10,11 @@ const SWIPE_PX = 50;
 const CLONES = 3;
 
 /**
- * "What's inside" dashboard carousel: one row, 3/2/1 cards per view, auto-advances every 2s,
+ * Card carousel (used for the dashboard views and the case studies): one row, 3/2/1 cards per view, auto-advances every 2s,
  * loops seamlessly via appended clones. Slides are server-rendered children, so every card's
  * text stays in the HTML; clones are only added after hydration and hidden from AT.
  */
-export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; label: string }) {
+export function DashboardCarousel({ slides, label, itemName = 'dashboard' }: { slides: ReactNode[]; label: string; itemName?: string }) {
   const n = slides.length;
   const [index, setIndex] = useState(0);
   const [animate, setAnimate] = useState(true);
@@ -30,6 +30,8 @@ export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; labe
   const indexRef = useRef(0);
   indexRef.current = index;
   const drag = useRef<{ x: number; id: number } | null>(null);
+  // set when a drag actually moved, so the click that ends it doesn't follow a link inside a card
+  const moved = useRef(false);
 
   useEffect(() => {
     setMounted(true);
@@ -113,17 +115,23 @@ export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; labe
   const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     drag.current = { x: e.clientX, id: e.pointerId };
+    moved.current = false;
     e.currentTarget.setPointerCapture(e.pointerId);
     setDragging(true);
     setAnimate(false);
   };
   const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
-    if (drag.current?.id === e.pointerId) setDx(e.clientX - drag.current.x);
+    if (drag.current?.id !== e.pointerId) return;
+    const d = e.clientX - drag.current.x;
+    if (Math.abs(d) > 5) moved.current = true;
+    setDx(d);
   };
   const endDrag = (e: PointerEvent<HTMLDivElement>, cancelled = false) => {
     if (drag.current?.id !== e.pointerId) return;
     const delta = cancelled ? 0 : e.clientX - drag.current.x;
     drag.current = null;
+    // the click (if any) fires right after pointerup; clear afterwards so later keyboard clicks still work
+    window.setTimeout(() => { moved.current = false; }, 0);
     setDragging(false);
     setDx(0);
     if (Math.abs(delta) > SWIPE_PX) moveBy(delta < 0 ? 1 : -1);
@@ -157,6 +165,13 @@ export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; labe
           onPointerUp={(e) => endDrag(e)}
           onPointerCancel={(e) => endDrag(e, true)}
           onDragStart={(e) => e.preventDefault()}
+          onClickCapture={(e) => {
+            if (moved.current) {
+              e.preventDefault();
+              e.stopPropagation();
+              moved.current = false;
+            }
+          }}
         >
           <div
             className={clsx(s.track, (!animate || dragging) && s.noTransition)}
@@ -177,10 +192,10 @@ export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; labe
               ))}
           </div>
         </div>
-        <button type="button" className={clsx(s.arrow, s.prev)} aria-label="Previous dashboard" onClick={() => moveBy(-1)}>
+        <button type="button" className={clsx(s.arrow, s.prev)} aria-label={`Previous ${itemName}`} onClick={() => moveBy(-1)}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
         </button>
-        <button type="button" className={clsx(s.arrow, s.next)} aria-label="Next dashboard" onClick={() => moveBy(1)}>
+        <button type="button" className={clsx(s.arrow, s.next)} aria-label={`Next ${itemName}`} onClick={() => moveBy(1)}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
         </button>
       </div>
@@ -190,7 +205,7 @@ export function DashboardCarousel({ slides, label }: { slides: ReactNode[]; labe
             key={i}
             type="button"
             className={clsx(s.dot, i === active && s.dotActive)}
-            aria-label={`Go to dashboard ${i + 1} of ${n}`}
+            aria-label={`Go to ${itemName} ${i + 1} of ${n}`}
             aria-current={i === active ? 'true' : undefined}
             onClick={() => goTo(i)}
           />

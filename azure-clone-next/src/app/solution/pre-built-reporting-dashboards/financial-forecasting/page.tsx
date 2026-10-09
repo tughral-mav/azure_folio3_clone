@@ -146,6 +146,44 @@ const compareRows = [
   ['AI and Copilot', 'Included', 'No', 'Varies', 'Extra development'],
 ];
 
+type Proof = { client: string; stat?: string; statLabel?: string; headline?: string; desc: string; link: { text: string; href: string } };
+
+const proof: Proof[] = [
+  {
+    client: 'Weaver Popcorn Hybrids',
+    headline: 'Pre-built Finance, Sales and Inventory dashboards',
+    desc: 'Replaced manual reporting with pre-built Finance, Sales and Inventory dashboards on Dynamics 365 Business Central.',
+    link: { text: 'Read the IntelliFabric dashboards case study', href: '/case-studies/popcorn-producer-intellifabric-dashboards/' },
+  },
+  {
+    client: 'Daraz (Alibaba Group)',
+    stat: '37%',
+    statLabel: 'faster financial closings',
+    desc: 'After Folio3 rebuilt its Power BI financial reporting for very large datasets.',
+    link: { text: 'See how we optimised Power BI financial reporting', href: '/power-bi-financial-reporting-for-alibaba/' },
+  },
+  {
+    client: 'SLB',
+    stat: '99.9%',
+    statLabel: 'data accuracy',
+    desc: 'Automated data ingestion and Power BI reporting on Azure gave teams direct access to reliable data, with less dependence on DBAs.',
+    link: { text: 'Read the SLB automated reporting case study', href: '/azure-automated-data-reporting-for-slb/' },
+  },
+  {
+    client: 'Savills',
+    stat: '13%',
+    statLabel: 'operational efficiency gain',
+    desc: 'Microsoft Fabric reporting gave the global real estate firm a single, real-time view of its operations.',
+    link: { text: 'Read the Savills Microsoft Fabric case study', href: '/microsoft-fabric-reporting-for-real-estate/' },
+  },
+  {
+    client: 'Food crop grower',
+    headline: 'Real-time yield estimates against history',
+    desc: 'A Power BI grower portal centralised contracts and field operations, comparing real-time yield estimates with historical data.',
+    link: { text: 'Read the Power BI grower portal case study', href: '/implementing-power-bi-dashboard-for-food-crop-grower/' },
+  },
+];
+
 const security = [
   'Data stays in your own Microsoft Fabric and Azure tenant.',
   'Row-level security limits each user to their entity, region or department.',
@@ -255,6 +293,26 @@ function ViewCard({ v }: { v: View }) {
           <li key={c} className="rounded-full bg-surface-tint px-3 py-1 text-xs font-medium text-brand">{c}</li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+function ProofCard({ c }: { c: Proof }) {
+  return (
+    <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
+      <p className="text-sm font-semibold uppercase tracking-wider text-muted">{c.client}</p>
+      {c.stat ? (
+        <>
+          <p className="mt-3 text-5xl font-bold text-brand">{c.stat}</p>
+          <p className="mt-1 text-lg font-semibold text-ink">{c.statLabel}</p>
+        </>
+      ) : (
+        <p className="mt-3 text-2xl font-bold text-ink">{c.headline}</p>
+      )}
+      <p className="mt-3 text-body">{c.desc}</p>
+      <Link href={c.link.href} draggable={false} className={`${link} mt-auto pt-5 font-semibold`}>
+        {c.link.text}
+      </Link>
     </div>
   );
 }
@@ -658,29 +716,8 @@ export default function FinancialForecastingPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <Heading eyebrow="Proof" title="Results from Folio3 Finance Analytics Projects" />
-          <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-            <Reveal animation="fadeInUp" className="flex flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-              <p className="text-sm font-semibold uppercase tracking-wider text-muted">Weaver Popcorn Hybrids</p>
-              <p className="mt-3 text-2xl font-bold text-ink">Pre-built Finance, Sales and Inventory dashboards</p>
-              <p className="mt-3 text-body">
-                Replaced manual reporting with pre-built Finance, Sales and Inventory dashboards on Dynamics 365
-                Business Central.
-              </p>
-              <Link href="/case-studies/popcorn-producer-intellifabric-dashboards/" className={`${link} mt-auto pt-5 font-semibold`}>
-                Read the IntelliFabric dashboards case study
-              </Link>
-            </Reveal>
-            <Reveal animation="fadeInUp" delay={80} className="flex flex-col rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-              <p className="text-sm font-semibold uppercase tracking-wider text-muted">Daraz (Alibaba Group)</p>
-              <p className="mt-3 text-5xl font-bold text-brand">37%</p>
-              <p className="mt-1 text-lg font-semibold text-ink">faster financial closings</p>
-              <p className="mt-3 text-body">
-                After Folio3 rebuilt its Power BI financial reporting for very large datasets.
-              </p>
-              <Link href="/power-bi-financial-reporting-for-alibaba/" className={`${link} mt-auto pt-5 font-semibold`}>
-                See how we optimised Power BI financial reporting
-              </Link>
-            </Reveal>
+          <div className="mt-12">
+            <DashboardCarousel label="Case studies" itemName="case study" slides={proof.map((c) => <ProofCard key={c.client} c={c} />)} />
           </div>
         </div>
       </section>

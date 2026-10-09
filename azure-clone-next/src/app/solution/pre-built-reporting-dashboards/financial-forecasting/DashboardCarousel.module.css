@@ -24,7 +24,8 @@
   }
 }
 
-.viewport img {
+.viewport img,
+.viewport a {
   -webkit-user-drag: none;
   user-select: none;
 }
