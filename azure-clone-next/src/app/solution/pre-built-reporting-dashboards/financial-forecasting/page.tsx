@@ -6,6 +6,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { CashFlowThumb, ForecastHeroDashboard, ScenarioThumb } from './ForecastVisuals';
 import { ScenarioPlanner } from './ScenarioPlanner';
+import { DeploySteps } from './DeploySteps';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards/financial-forecasting/';
 const TITLE = 'Financial Forecasting Dashboard | Power BI & Fabric | Folio3';
@@ -131,21 +132,7 @@ const roles = [
   { r: 'IT and data teams', d: 'A governed Fabric platform instead of scattered Excel models.' },
 ];
 
-const deploy: { t: string; d: ReactNode }[] = [
-  { t: 'Discovery.', d: 'We review your chart of accounts, entities, KPIs and forecasting process.' },
-  { t: 'Connect data.', d: 'Fabric pipelines bring in ERP, CRM and budget data; we validate totals against your ledger.' },
-  { t: 'Configure.', d: 'The pre-built dashboard is mapped to your accounts, and forecasting models are trained on your history.' },
-  { t: 'Test and train.', d: 'Finance users test forecasts against known periods and learn the dashboard.' },
-  {
-    t: 'Go live and support.',
-    d: (
-      <>
-        Scheduled refreshes run in production, with monitoring and enhancements through{' '}
-        <Link href="/azure-managed-services/" className="text-brand underline">Azure managed services</Link>.
-      </>
-    ),
-  },
-];
+const deploy = ['Discovery', 'Connect data', 'Configure', 'Test and train', 'Go live and support'];
 
 const compareHead = ['Criteria', 'Folio3 pre-built dashboard', 'Excel models', 'FP&A software', 'Custom Power BI build'];
 const compareRows = [
@@ -509,9 +496,9 @@ export default function FinancialForecastingPage() {
             </p>
             <p className="mt-4 text-body">
               The platform is set up through our{' '}
-              <Link href="/microsoft-fabric-services/" className={link}>Microsoft Fabric implementation services</Link>, with the
+              Microsoft Fabric implementation services, with the
               lakehouse delivered under our{' '}
-              <Link href="/data-warehousing-as-a-service/" className={link}>data warehousing as a service</Link> model. Already on
+              data warehousing as a service model. Already on
               Azure Synapse or a legacy warehouse? Our{' '}
               <Link href="/microsoft-fabric-services/microsoft-fabric-migration/" className={link}>Microsoft Fabric migration</Link>{' '}
               team moves it first.
@@ -600,21 +587,13 @@ export default function FinancialForecastingPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <Heading eyebrow="Deployment" title="From Kickoff to Live Forecasts in Weeks" />
-          <ol className="relative mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-6">
-            <span aria-hidden className="absolute bottom-6 left-6 top-6 w-0.5 bg-gradient-to-b from-brand to-[#2F69F2]/40 lg:bottom-auto lg:left-[10%] lg:right-[10%] lg:top-6 lg:h-0.5 lg:w-auto lg:bg-gradient-to-r" />
-            {deploy.map((s, i) => (
-              <li key={s.t}><Reveal animation="fadeInUp" delay={i * 80} className="h-full relative flex gap-5 lg:flex-col lg:items-center lg:text-center">
-                <span className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#143CD5_0%,#2F69F2_100%)] font-bold text-white ring-8 ring-white">{i + 1}</span>
-                <div>
-                  <h3 className="text-lg font-semibold text-ink">{s.t.replace('.', '')}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-body">{s.d}</p>
-                </div>
-              </Reveal></li>
-            ))}
-          </ol>
+          <div className="mx-auto max-w-6xl">
+            <DeploySteps steps={deploy} />
+          </div>
           <p className="mx-auto mt-12 max-w-3xl text-center text-body">
             Folio3 already deploys 10+ pre-built Business Central dashboards within a week; forecasting adds the time
-            needed to train models on your history.
+            needed to train models on your history. After go-live, refreshes are monitored and enhanced through{' '}
+            <Link href="/azure-managed-services/" className={link}>Azure managed services</Link>.
           </p>
           <CtaRow />
         </div>
