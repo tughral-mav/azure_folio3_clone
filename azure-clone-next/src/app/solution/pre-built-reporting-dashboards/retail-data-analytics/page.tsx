@@ -72,8 +72,8 @@ const dashboards: DashboardFunction[] = [
     body: 'How is the business doing today vs plan and last year? One page for leadership with net sales, margin and growth across every store and channel.',
     listLabel: 'Key KPIs',
     items: ['Net sales', 'Gross margin %', 'Like-for-like growth', 'Average transaction value (ATV)'],
-    img: `${IMG}/ecommerce-retail-sales-dashboard-power-bi.webp`,
-    imgHeight: 817,
+    img: `${IMG}/executive-summary-dashboard-power-bi.webp`,
+    imgHeight: 850,
     preview: { accent: '#1742E7', kpis: [], bars: [] },
   },
   {
@@ -115,9 +115,16 @@ const dashboards: DashboardFunction[] = [
     body: 'Who are the best customers, and are they coming back? Segment shoppers and track loyalty across stores and online.',
     listLabel: 'Key KPIs',
     items: ['Repeat rate', 'Customer lifetime value (CLV)', 'RFM segments', 'Basket size'],
-    img: `${IMG}/executive-summary-dashboard-power-bi.webp`,
-    imgHeight: 850,
-    preview: { accent: '#1742E7', kpis: [], bars: [] },
+    preview: {
+      accent: '#1742E7',
+      kpis: [
+        { label: 'Repeat rate', value: '38.2%' },
+        { label: 'Avg CLV', value: '$1,240' },
+        { label: 'Champions (RFM)', value: '12.6%' },
+        { label: 'Basket size', value: '3.4 items' },
+      ],
+      bars: [30, 44, 52, 47, 61, 58, 72, 69, 80, 86],
+    },
   },
   {
     id: 'omnichannel',
@@ -328,7 +335,7 @@ export default function RetailDataAnalyticsPage() {
     <>
       {/* 1. Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(110deg,#eef3f8_0%,#dfeaf5_100%)]">
-        <div className="container-x relative grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_1fr] lg:py-24">
+        <div className="container-x relative grid items-center gap-12 py-16 lg:grid-cols-[1fr_1.1fr] lg:py-24">
           <div>
             <span className="eyebrow">Pre-Built Reporting Dashboards · Retail</span>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] text-ink lg:text-5xl xl:text-6xl">
