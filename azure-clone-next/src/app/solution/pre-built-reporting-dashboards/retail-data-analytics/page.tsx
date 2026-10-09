@@ -675,7 +675,7 @@ export default function RetailDataAnalyticsPage() {
         <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
         <div className="container-x relative">
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Retail and Commerce Clients</h2>
+            <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Folio3 Analytics Clients</h2>
             <p className="mt-4 text-white/85">
               More than 100 retail companies worldwide use Folio3&apos;s retail analytics solutions, from single stores
               to large chains.
