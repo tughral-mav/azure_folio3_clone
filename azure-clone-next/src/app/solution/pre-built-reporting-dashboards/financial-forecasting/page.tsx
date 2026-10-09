@@ -175,22 +175,6 @@ const suites = [
   { t: 'Retail analytics dashboards', href: '/azure-data-analytics/retail-analytics/' },
 ];
 
-const why: { t: string; d: ReactNode }[] = [
-  { t: 'Microsoft Solutions Partner', d: ' for Data & AI and Infrastructure on Azure, plus Business Applications.' },
-  { t: '20+ years in business intelligence', d: ', with architects holding 27 Microsoft BI certifications.' },
-  { t: '200+ Microsoft certified experts', d: ' and 5,000+ projects delivered.' },
-  { t: 'Pre-built, not from scratch', d: ': IntelliFabric starts you with a tested data model and dashboards.' },
-  {
-    t: 'One partner end to end',
-    d: (
-      <>
-        : data platform, AI models, dashboards and support, backed by our full{' '}
-        <Link href="/power-bi-services/" className="text-brand underline">Power BI business intelligence services</Link>.
-      </>
-    ),
-  },
-];
-
 const faqs = [
   { q: 'What is a financial forecasting dashboard?', a: "A financial forecasting dashboard is a live report that projects revenue, expenses and cash from historical actuals and drivers, and compares them with budget and actuals. Folio3's version is a pre-built Power BI dashboard on Microsoft Fabric that refreshes from your ERP automatically." },
   { q: 'Can Power BI do financial forecasting?', a: 'Yes, Power BI can forecast natively using exponential smoothing on line charts, which suits quick trend views. For revenue, expense and cash forecasts that need seasonality and business drivers, Folio3 adds Azure Machine Learning models and shows their output in Power BI.' },
@@ -747,20 +731,6 @@ export default function FinancialForecastingPage() {
                   {s.t}
                 </Link>
               </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Fold 16: Why Folio3 */}
-      <section className="bg-surface-tint py-16 lg:py-24">
-        <div className="container-x">
-          <Heading eyebrow="Why Folio3" title="Why Choose Folio3 for Financial Forecasting" />
-          <ul className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {why.map((w, i) => (
-              <li key={w.t}><Reveal animation="fadeInUp" delay={(i % 3) * 70} className="h-full rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                <p className="text-body"><strong className="text-ink">{w.t}</strong>{w.d}</p>
-              </Reveal></li>
             ))}
           </ul>
         </div>
