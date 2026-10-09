@@ -24,7 +24,6 @@ const OG_DESCRIPTION =
   'Sales, inventory, store and customer dashboards that connect to your POS, ERP and e-commerce data. Built by Folio3, a Microsoft Solutions Partner.';
 const OG_IMAGE = '/wp-content/uploads/2026/09/ecommerce-retail-sales-dashboard-power-bi.webp';
 const LAST_UPDATED_ISO = '2026-10-09';
-const LAST_UPDATED = 'October 9, 2026';
 const FORM_HREF = '#pgForm';
 const FABRIC_ASSESSMENT_HREF = '/microsoft-fabric-services/analytics-modernization-assessment/';
 const IMG = '/wp-content/uploads/2026/09';
@@ -54,13 +53,6 @@ const problems = [
   'Inventory and margin are reported separately, so slow movers and stockouts surface too late.',
   'Stores, regions and channels calculate KPIs differently, so no one trusts a single number.',
   'Custom BI projects take months and depend on a few analysts.',
-];
-
-const trustStrip = [
-  { v: '8', l: 'pre-built retail dashboards' },
-  { v: '2–3 wks', l: 'to first dashboards' },
-  { v: '4–6 wks', l: 'to the full pack' },
-  { v: '100+', l: 'retailers use Folio3 retail analytics' },
 ];
 
 /** The 8 retail dashboards. Real Folio3 Power BI screenshots where one matches; a coded preview otherwise. */
@@ -373,22 +365,6 @@ export default function RetailDataAnalyticsPage() {
           <span className="px-2">/</span>
           <span>Retail Data Analytics</span>
         </div>
-      </div>
-
-      {/* Trust strip */}
-      <div className="border-b border-surface-line bg-white">
-        <ul className="container-x grid grid-cols-2 gap-6 py-8 text-center md:grid-cols-4">
-          {trustStrip.map((s) => (
-            <li key={s.l}>
-              <p className="text-3xl font-bold text-brand">{s.v}</p>
-              <p className="mt-1 text-sm text-body">{s.l}</p>
-            </li>
-          ))}
-        </ul>
-        <p className="container-x pb-4 text-center text-xs text-muted">
-          Folio3 Pre-Built Reporting Dashboards: Retail Data Analytics · Last updated{' '}
-          <time dateTime={LAST_UPDATED_ISO}>{LAST_UPDATED}</time>
-        </p>
       </div>
 
       {/* 2. Problem */}
