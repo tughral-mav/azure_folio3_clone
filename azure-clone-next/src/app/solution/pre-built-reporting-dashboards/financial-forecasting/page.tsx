@@ -15,7 +15,6 @@ const META_DESCRIPTION =
   'Pre-built financial forecasting dashboard on Microsoft Fabric & Power BI. Rolling revenue, cash and expense forecasts with Azure ML and Copilot. Book a demo.';
 const OG_TITLE = 'Financial Forecasting Dashboard on Microsoft Fabric | Folio3';
 const OG_IMAGE = '/wp-content/uploads/2026/09/bc-finance-overview-dashboard.webp';
-const LAST_UPDATED = { iso: '2026-10-09', label: 'October 9, 2026' };
 const PRODUCT = 'Folio3 IntelliFabric Financial Forecasting Dashboard';
 const IMG = '/wp-content/uploads/2026/09';
 const FORM_HREF = '#pgForm';
@@ -348,9 +347,6 @@ export default function FinancialForecastingPage() {
             <span className="px-2">»</span>
             <span>Financial Forecasting</span>
           </nav>
-          <span className="text-xs text-white/75">
-            Last updated <time dateTime={LAST_UPDATED.iso}>{LAST_UPDATED.label}</time>
-          </span>
         </div>
       </div>
 
