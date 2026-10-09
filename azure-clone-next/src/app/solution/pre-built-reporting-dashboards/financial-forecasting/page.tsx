@@ -7,6 +7,7 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { CashFlowThumb, ForecastHeroDashboard, ScenarioThumb } from './ForecastVisuals';
 import { ScenarioPlanner } from './ScenarioPlanner';
 import { DeploySteps } from './DeploySteps';
+import { DashboardCarousel } from './DashboardCarousel';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards/financial-forecasting/';
 const TITLE = 'Financial Forecasting Dashboard | Power BI & Fabric | Folio3';
@@ -237,6 +238,27 @@ function CtaRow() {
   );
 }
 
+function ViewCard({ v }: { v: View }) {
+  return (
+    <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-5 shadow-card">
+      {v.image ? (
+        <Image src={v.image.src} alt={v.image.alt} width={1600} height={v.image.h} loading="lazy" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 100vw" className="aspect-[16/9] h-auto w-full rounded-lg border border-surface-line object-cover object-left-top" />
+      ) : v.thumb === 'cash' ? (
+        <CashFlowThumb />
+      ) : (
+        <ScenarioThumb />
+      )}
+      <h3 className="mt-5 text-xl font-semibold text-ink">{v.title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-body">{v.desc}</p>
+      <ul className="mt-auto flex flex-wrap gap-2 pt-5">
+        {v.chips.map((c) => (
+          <li key={c} className="rounded-full bg-surface-tint px-3 py-1 text-xs font-medium text-brand">{c}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function SourceIcon({ name }: { name: (typeof sources)[number]['icon'] }) {
   const p = { width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
   switch (name) {
@@ -282,7 +304,18 @@ export default function FinancialForecastingPage() {
             </ul>
           </div>
           <Reveal animation="zoomIn" className="relative">
-            <ForecastHeroDashboard />
+            {/* real Folio3 Power BI finance dashboards layered behind the illustrative forecast card */}
+            <div className="relative px-2 py-8 sm:px-6 sm:py-12">
+              <div aria-hidden="true" className="pointer-events-none absolute -right-8 top-0 w-[80%] rotate-[4deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
+                <Image src={`${IMG}/bc-finance-overview-dashboard.webp`} alt="" width={1600} height={900} priority sizes="(min-width: 1024px) 38vw, 80vw" className="h-auto w-full" />
+              </div>
+              <div aria-hidden="true" className="pointer-events-none absolute -left-10 bottom-0 w-[66%] -rotate-[5deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
+                <Image src={`${IMG}/bc-expenses-dashboard.webp`} alt="" width={1600} height={900} sizes="(min-width: 1024px) 32vw, 66vw" className="h-auto w-full" />
+              </div>
+              <div className="relative">
+                <ForecastHeroDashboard />
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -368,27 +401,8 @@ export default function FinancialForecastingPage() {
               Seven views, from the rolling revenue forecast to the board summary, on one Power BI semantic model.
             </p>
           </Heading>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {views.map((v, i) => (
-              <Reveal key={v.title} animation="fadeInUp" delay={(i % 3) * 70} className={i === views.length - 1 ? 'lg:col-start-2' : undefined}>
-                <div className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-5 shadow-card">
-                  {v.image ? (
-                    <Image src={v.image.src} alt={v.image.alt} width={1600} height={v.image.h} sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw" className="aspect-[16/9] h-auto w-full rounded-lg border border-surface-line object-cover object-left-top" />
-                  ) : v.thumb === 'cash' ? (
-                    <CashFlowThumb />
-                  ) : (
-                    <ScenarioThumb />
-                  )}
-                  <h3 className="mt-5 text-xl font-semibold text-ink">{v.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-body">{v.desc}</p>
-                  <ul className="mt-auto flex flex-wrap gap-2 pt-5">
-                    {v.chips.map((c) => (
-                      <li key={c} className="rounded-full bg-surface-tint px-3 py-1 text-xs font-medium text-brand">{c}</li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mt-12">
+            <DashboardCarousel label="Pre-built dashboards" slides={views.map((v) => <ViewCard key={v.title} v={v} />)} />
           </div>
           <p className="mx-auto mt-10 max-w-3xl text-center text-body">
             Every view is customised to your chart of accounts, entities and KPIs during setup. The visual layer follows
