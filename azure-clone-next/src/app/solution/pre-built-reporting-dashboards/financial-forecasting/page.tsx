@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BrainCircuit, ChartLine, Target, UserPen } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { CashFlowThumb, ScenarioThumb } from './ForecastVisuals';
@@ -103,10 +104,10 @@ const views: View[] = [
 ];
 
 const method = [
-  { t: 'Built-in Power BI forecasting', d: "for quick trend views. Power BI's native forecast uses exponential smoothing on time-series data." },
-  { t: 'Azure Machine Learning models', d: 'for revenue, expense and cash forecasts. Models account for seasonality and add drivers such as pipeline, headcount or pricing. The most accurate model for your data is selected and deployed.' },
-  { t: 'Accuracy tracking.', d: 'Each forecast is scored against actuals every period (for example with MAPE), so finance can see how reliable each line is.' },
-  { t: 'Human override.', d: 'Analysts can adjust any forecast line; the dashboard keeps both the model and the adjusted value.' },
+  { Icon: ChartLine, t: 'Built-in Power BI forecasting', d: "for quick trend views. Power BI's native forecast uses exponential smoothing on time-series data." },
+  { Icon: BrainCircuit, t: 'Azure Machine Learning models', d: 'for revenue, expense and cash forecasts. Models account for seasonality and add drivers such as pipeline, headcount or pricing. The most accurate model for your data is selected and deployed.' },
+  { Icon: Target, t: 'Accuracy tracking.', d: 'Each forecast is scored against actuals every period (for example with MAPE), so finance can see how reliable each line is.' },
+  { Icon: UserPen, t: 'Human override.', d: 'Analysts can adjust any forecast line; the dashboard keeps both the model and the adjusted value.' },
 ];
 
 const sources = [
@@ -442,14 +443,16 @@ export default function FinancialForecastingPage() {
               <Link href="/data-science-ai/" className={link}>machine learning and predictive analytics team</Link>.
             </p>
           </Reveal>
-          <ol className="space-y-4">
+          <ul className="space-y-4">
             {method.map((m, i) => (
-              <li key={m.t}><Reveal animation="fadeInUp" delay={i * 70} className="h-full flex gap-5 rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#143CD5_0%,#2F69F2_100%)] font-bold text-white">{i + 1}</span>
+              <li key={m.t}><Reveal animation="fadeInUp" delay={i * 70} className="group h-full flex gap-5 rounded-2xl border border-surface-line bg-white p-6 shadow-card">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-200 group-hover:bg-brand group-hover:text-white">
+                  <m.Icon aria-hidden="true" size={22} strokeWidth={1.8} />
+                </span>
                 <p className="text-body"><strong className="text-ink">{m.t}</strong> {m.d}</p>
               </Reveal></li>
             ))}
-          </ol>
+          </ul>
         </div>
       </section>
 
