@@ -1,0 +1,127 @@
+/* Scoped to the "What's inside" dashboard carousel only. */
+
+.root {
+  --per: 1;
+  --gap: 1.5rem; /* same as the previous grid's gap-6 */
+  position: relative;
+}
+@media (min-width: 768px) {
+  .root { --per: 2; }
+}
+@media (min-width: 1200px) {
+  .root { --per: 3; }
+}
+
+.viewport {
+  overflow: hidden;
+  touch-action: pan-y;
+}
+/* clip sideways only, so the cards' drop shadow isn't cut off above/below the row */
+@supports (overflow-x: clip) {
+  .viewport {
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+}
+
+.viewport img,
+.viewport a {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  /* index * (one slide + one gap); % is relative to the track's own width = viewport width */
+  transform: translate3d(calc(var(--i, 0) * -1 * (100% + var(--gap)) / var(--per) + var(--dx, 0px)), 0, 0);
+  transition: transform 600ms ease-in-out;
+  will-change: transform;
+}
+.noTransition {
+  transition: none;
+}
+
+.slide {
+  flex: 0 0 calc((100% - (var(--per) - 1) * var(--gap)) / var(--per));
+  min-width: 0;
+  display: flex; /* stretch the card to the tallest slide */
+}
+.slide > * {
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid #dae3f8;
+  background: #fff;
+  color: #3e4a7a;
+  box-shadow: 0 6px 20px rgba(0, 33, 127, 0.14);
+  transform: translateY(-50%);
+  transition: background-color 150ms, color 150ms;
+}
+.arrow:hover {
+  background: #3e4a7a;
+  color: #fff;
+}
+.arrow:focus-visible {
+  outline: 2px solid #1742e7;
+  outline-offset: 2px;
+}
+.prev { left: 1rem; }
+.next { right: 0.5rem; }
+/* phones: keep arrows over the card image, clear of the title and the site's side tab */
+@media (max-width: 767px) {
+  .arrow { top: 6.75rem; }
+}
+@media (min-width: 768px) {
+  .prev { left: -0.75rem; }
+  .next { right: -0.75rem; }
+}
+@media (min-width: 1280px) {
+  .prev { left: -1.375rem; }
+  .next { right: -1.375rem; }
+}
+
+.dots {
+  position: relative; /* stay above the viewport's shadow padding so every dot is clickable */
+  z-index: 1;
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.dot {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 9999px;
+  background: #c5cde3;
+  transition: width 300ms ease-in-out, background-color 300ms;
+}
+.dot:focus-visible {
+  outline: 2px solid #1742e7;
+  outline-offset: 2px;
+}
+.dotActive {
+  width: 1.75rem;
+  background: #3e4a7a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track,
+  .dot {
+    transition: none;
+  }
+}

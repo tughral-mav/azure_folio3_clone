@@ -57,6 +57,7 @@ export const NAV: NavItem[] = [
         children: [
           { label: 'For Dynamics 365', href: '/solution/pre-built-reporting-dashboards/for-dynamics-365/' },
           { label: 'For Business Central', href: '/solution/pre-built-reporting-dashboards/for-business-central/' },
+          { label: 'Financial Forecasting', href: '/solution/pre-built-reporting-dashboards/financial-forecasting/' },
           { label: 'Retail Data Analytics', href: '/solution/pre-built-reporting-dashboards/retail-data-analytics/' },
         ],
       },
