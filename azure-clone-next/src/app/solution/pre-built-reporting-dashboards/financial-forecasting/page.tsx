@@ -96,10 +96,10 @@ const views: View[] = [
     image: { src: `${IMG}/bc-finance-overview-dashboard.webp`, h: 900, alt: 'Finance KPI dashboard showing gross profit margin, net profit margin, EBIT, balance sheet and income statement' },
   },
   {
-    title: 'Board summary',
+    title: 'Executive summary',
     desc: 'A one-page scorecard with growth rates, key variances and forecast accuracy.',
     chips: ['One-page scorecard', 'Growth rates', 'Forecast accuracy'],
-    image: { src: `${IMG}/bc-executive-summary-dashboard.webp`, h: 828, alt: 'Executive board summary dashboard with sales, profit, costs and year-over-year change' },
+    image: { src: `${IMG}/bc-executive-summary-dashboard.webp`, h: 828, alt: 'Executive summary dashboard with sales, profit, costs and year-over-year change' },
   },
 ];
 
@@ -398,7 +398,7 @@ export default function FinancialForecastingPage() {
         <div className="container-x">
           <Heading eyebrow="Dashboard views" title="What's Inside the Financial Forecasting Dashboard">
             <p className="mt-4 text-body">
-              Seven views, from the rolling revenue forecast to the board summary, on one Power BI semantic model.
+              Seven views, from the rolling revenue forecast to the executive summary, on one Power BI semantic model.
             </p>
           </Heading>
           <div className="mt-12">
