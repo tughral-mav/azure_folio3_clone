@@ -432,13 +432,6 @@ export default function FinancialForecastingPage() {
               Models are built and maintained by our{' '}
               <Link href="/data-science-ai/" className={link}>machine learning and predictive analytics team</Link>.
             </p>
-            <figure className="mt-8 rounded-2xl border border-surface-line bg-surface-tint p-6">
-              <p className="text-3xl font-bold text-brand">50% less time</p>
-              <figcaption className="mt-2 text-sm text-body">
-                spent forecasting and $2.4M in annual savings for Microsoft&apos;s own finance team using Azure Machine
-                Learning. Source: Microsoft Frontier Finance, Financial forecasting.
-              </figcaption>
-            </figure>
           </Reveal>
           <ol className="space-y-4">
             {method.map((m, i) => (
