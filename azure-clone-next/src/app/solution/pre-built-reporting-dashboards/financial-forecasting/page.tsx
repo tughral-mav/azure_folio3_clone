@@ -421,9 +421,6 @@ export default function FinancialForecastingPage() {
             the same standards as our{' '}
             <Link href="/azure-data-analytics/data-visualization-as-a-service/" className={link}>data visualization as a service</Link> work.
           </p>
-          <p className="mx-auto mt-3 max-w-3xl text-center text-xs italic text-body">
-            Dashboard visuals are illustrative and use sample data. Folio3 configures each view around your ledger, entities and KPIs.
-          </p>
           <CtaRow />
         </div>
       </section>
