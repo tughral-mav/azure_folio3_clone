@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/microsoft-fabric-services/', '/microsoft-fabric-services/analytics-modernization-assessment/',
     '/microsoft-fabric-services/cloud-data-modernization/',
     '/solution/pre-built-reporting-dashboards/',
+    '/solution/pre-built-reporting-dashboards/retail-data-analytics/',
     '/ai-agents/fabric-data-agents/',
     '/azure-cloud/azure-cost-management/',
     '/microsoft-power-platform-services/', '/ai-scenario-library/',
