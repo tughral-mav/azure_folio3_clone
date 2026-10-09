@@ -14,6 +14,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { DashboardTabs, type DashboardFunction } from '../dashboard-tabs';
 import { HeroDashboard } from './HeroDashboard';
+import { ResultsScroller, type ResultCase } from './ResultsScroller';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards/retail-data-analytics/';
 const TITLE = 'Retail Data Analytics: Pre-Built Power BI Dashboards | Folio3';
@@ -183,6 +184,51 @@ const comparisonRows = [
   ['Governance and security', 'Row-level security, IT-governed', 'Depends on the build', 'Minimal'],
   ['Customization', 'Mapped to your KPIs', 'Unlimited', 'Manual, by your team'],
   ['Ongoing support', 'Managed by Folio3', 'Varies', 'None'],
+];
+
+const results: ResultCase[] = [
+  {
+    stat: '37%',
+    client: 'Alibaba',
+    body: "Folio3's Power BI reporting delivered 37% faster financial closings for a marketplace serving 100,000+ brands and 30 million shoppers.",
+    href: '/power-bi-financial-reporting-for-alibaba/',
+    cta: 'Read the Alibaba case study',
+  },
+  {
+    stat: '3 dashboards',
+    client: 'Weaver Popcorn Hybrids',
+    body: 'Pre-built Finance, Sales and Inventory dashboards on IntelliFabric replaced manual reporting on Dynamics 365 Business Central data, with Budget vs Actual tracked in real time.',
+    href: '/case-studies/popcorn-producer-intellifabric-dashboards/',
+    cta: 'See the IntelliFabric dashboards case study',
+  },
+  {
+    stat: '13%',
+    client: 'Savills',
+    body: 'Microsoft Fabric reporting boosted operational efficiency by 13%, giving the real estate leader unified, real-time intelligence.',
+    href: '/microsoft-fabric-reporting-for-real-estate/',
+    cta: 'Read the Savills case study',
+  },
+  {
+    stat: '99.9%',
+    client: 'SLB',
+    body: 'Azure automated data reporting ingests, stores and visualizes oil and gas data in Power BI dashboards with 99.9% data accuracy.',
+    href: '/azure-automated-data-reporting-for-slb/',
+    cta: 'Read the SLB case study',
+  },
+  {
+    stat: '12%',
+    client: 'Food Crop Grower',
+    body: 'A Power BI data portal for farm operations, contract management and grower engagement improved yield potential by 12%.',
+    href: '/implementing-power-bi-dashboard-for-food-crop-grower/',
+    cta: 'Read the food crop grower case study',
+  },
+  {
+    stat: '20%',
+    client: 'Cattle Feeding Company',
+    body: 'IntelliFabric, a plug-and-play data ingestion and reporting solution built on Microsoft Fabric, helped maximize animal well-being by 20%.',
+    href: '/automated-data-reporting/',
+    cta: 'Read the cattle feeding case study',
+  },
 ];
 
 const steps = [
@@ -635,32 +681,8 @@ export default function RetailDataAnalyticsPage() {
               to large chains.
             </p>
           </Reveal>
-          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="rounded-2xl bg-white p-7 shadow-card">
-              <p className="text-4xl font-bold text-brand">37%</p>
-              <h3 className="mt-2 text-xl font-semibold text-ink">Alibaba</h3>
-              <p className="mt-3 text-body">
-                Folio3&apos;s Power BI reporting delivered 37% faster financial closings for a marketplace serving
-                100,000+ brands and 30 million shoppers.
-              </p>
-              <Link href="/power-bi-financial-reporting-for-alibaba/" className={`${link} mt-4 inline-block font-semibold`}>
-                Read the Alibaba case study
-              </Link>
-            </div>
-            <div className="rounded-2xl bg-white p-7 shadow-card">
-              <p className="text-4xl font-bold text-brand">3 dashboards</p>
-              <h3 className="mt-2 text-xl font-semibold text-ink">Weaver Popcorn Hybrids</h3>
-              <p className="mt-3 text-body">
-                Pre-built Finance, Sales and Inventory dashboards on IntelliFabric replaced manual reporting on Dynamics
-                365 Business Central data, with Budget vs Actual tracked in real time.
-              </p>
-              <Link
-                href="/case-studies/popcorn-producer-intellifabric-dashboards/"
-                className={`${link} mt-4 inline-block font-semibold`}
-              >
-                See the IntelliFabric dashboards case study
-              </Link>
-            </div>
+          <div className="mx-auto mt-10 max-w-6xl">
+            <ResultsScroller cases={results} />
           </div>
         </div>
       </section>
