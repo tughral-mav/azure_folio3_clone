@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
-import { CashFlowThumb, ForecastHeroDashboard, ScenarioThumb } from './ForecastVisuals';
+import { CashFlowThumb, ScenarioThumb } from './ForecastVisuals';
 import { ScenarioPlanner } from './ScenarioPlanner';
 import { DeploySteps } from './DeploySteps';
 import { DashboardCarousel } from './DashboardCarousel';
@@ -304,16 +304,32 @@ export default function FinancialForecastingPage() {
             </ul>
           </div>
           <Reveal animation="zoomIn" className="relative">
-            {/* real Folio3 Power BI finance dashboards layered behind the illustrative forecast card */}
-            <div className="relative px-2 py-8 sm:px-6 sm:py-12">
-              <div aria-hidden="true" className="pointer-events-none absolute -right-8 top-0 w-[80%] rotate-[4deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
-                <Image src={`${IMG}/bc-finance-overview-dashboard.webp`} alt="" width={1600} height={900} priority sizes="(min-width: 1024px) 38vw, 80vw" className="h-auto w-full" />
+            {/* real Folio3 Power BI finance dashboards, layered */}
+            <div className="relative px-2 py-10 sm:px-6 sm:py-14">
+              <div aria-hidden="true" className="pointer-events-none absolute -right-8 top-0 w-[72%] rotate-[4deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
+                <Image src={`${IMG}/bc-expenses-dashboard.webp`} alt="" width={1600} height={900} sizes="(min-width: 1024px) 34vw, 72vw" className="h-auto w-full" />
               </div>
-              <div aria-hidden="true" className="pointer-events-none absolute -left-10 bottom-0 w-[66%] -rotate-[5deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
-                <Image src={`${IMG}/bc-expenses-dashboard.webp`} alt="" width={1600} height={900} sizes="(min-width: 1024px) 32vw, 66vw" className="h-auto w-full" />
+              <div aria-hidden="true" className="pointer-events-none absolute -left-10 bottom-0 w-[62%] -rotate-[5deg] overflow-hidden rounded-xl border border-white shadow-cardHover">
+                <Image src={`${IMG}/bc-sales-overview-dashboard.webp`} alt="" width={1600} height={900} sizes="(min-width: 1024px) 30vw, 62vw" className="h-auto w-full" />
               </div>
-              <div className="relative">
-                <ForecastHeroDashboard />
+              <figure className="relative overflow-hidden rounded-2xl border border-surface-line bg-white shadow-cardHover">
+                <div className="flex items-center gap-2 border-b border-surface-line bg-brand-ink px-4 py-2.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-white/25" /><span className="h-2.5 w-2.5 rounded-full bg-white/25" /><span className="h-2.5 w-2.5 rounded-full bg-white/25" />
+                  <span className="ml-2 text-xs font-semibold text-white/80">Power BI · Finance Overview</span>
+                </div>
+                <Image
+                  src={`${IMG}/bc-finance-overview-dashboard.webp`}
+                  alt="Folio3 Power BI finance dashboard showing gross profit, net profit margin, EBIT, balance sheet and income statement"
+                  width={1600}
+                  height={900}
+                  priority
+                  sizes="(min-width: 1024px) 46vw, 100vw"
+                  className="h-auto w-full"
+                />
+              </figure>
+              <div className="absolute -bottom-1 right-2 hidden rounded-xl border border-surface-line bg-white px-4 py-3 shadow-cardHover sm:block">
+                <p className="text-[11px] text-muted">Built on</p>
+                <p className="text-sm font-bold text-ink">Microsoft Fabric + Power BI</p>
               </div>
             </div>
           </Reveal>
