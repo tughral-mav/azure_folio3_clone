@@ -367,26 +367,6 @@ export default function HealthcareDataAnalyticsPage() {
         </ul>
       </section>
 
-      {/* 3. Proof band */}
-      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-10">
-        <div className="container-x">
-          <dl className="grid grid-cols-2 gap-6 text-center text-white lg:grid-cols-4">
-            {[
-              ['750+', 'certified developers'],
-              ['1,000+', 'clients worldwide'],
-              ['Since 2005', 'in application modernization'],
-              ['24/7', 'support and maintenance'],
-            ].map(([v, l]) => (
-              <div key={l}>
-                <dt className="sr-only">{l}</dt>
-                <dd className="text-3xl font-bold lg:text-4xl">{v}</dd>
-                <dd className="mt-1 text-sm text-white/85">{l}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
       {/* 4. What are pre-built healthcare dashboards? */}
       <section className="py-16 lg:py-24">
         <div className="container-x mx-auto max-w-3xl">
@@ -409,6 +389,26 @@ export default function HealthcareDataAnalyticsPage() {
               than start over.
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      {/* 3. Proof band */}
+      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-10">
+        <div className="container-x">
+          <dl className="grid grid-cols-2 gap-6 text-center text-white lg:grid-cols-4">
+            {[
+              ['750+', 'certified developers'],
+              ['1,000+', 'clients worldwide'],
+              ['Since 2005', 'in application modernization'],
+              ['24/7', 'support and maintenance'],
+            ].map(([v, l]) => (
+              <div key={l}>
+                <dt className="sr-only">{l}</dt>
+                <dd className="text-3xl font-bold lg:text-4xl">{v}</dd>
+                <dd className="mt-1 text-sm text-white/85">{l}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
