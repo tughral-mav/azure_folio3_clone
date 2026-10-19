@@ -21,6 +21,7 @@ import {
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { HeroDashboard } from './HeroDashboard';
+import { PlanTimeline } from './PlanTimeline';
 
 const ORIGIN = 'https://azure.folio3.com';
 const CANONICAL = `${ORIGIN}/solution/pre-built-reporting-dashboards/healthcare-data-analytics/`;
@@ -596,26 +597,10 @@ export default function HealthcareDataAnalyticsPage() {
       {/* 10. Engagement plan */}
       <section className="py-16 lg:py-24">
         <div className="container-x">
-          <SectionHead eyebrow="Engagement Plan" title="From Kickoff to Live Dashboards in About Six Weeks">
-          </SectionHead>
-          <ol className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {plan.map((p, i) => (
-              <li key={p.t}>
-                <Reveal animation="fadeInUp" delay={i * 60} className="h-full">
-                  <div className="h-full rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                    <div className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">
-                        {i + 1}
-                      </span>
-                      <span className="text-xs font-semibold uppercase tracking-wide text-brand">{p.when}</span>
-                    </div>
-                    <h3 className="mt-4 text-lg font-semibold text-ink">{p.t}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-body">{p.d}</p>
-                  </div>
-                </Reveal>
-              </li>
-            ))}
-          </ol>
+          <SectionHead eyebrow="Engagement Plan" title="From Kickoff to Live Dashboards in About Six Weeks" />
+          <div className="mx-auto max-w-6xl">
+            <PlanTimeline steps={plan} />
+          </div>
         </div>
       </section>
 
