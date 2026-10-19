@@ -30,7 +30,6 @@ const META_DESCRIPTION =
 const OG_TITLE = 'Pre-Built Healthcare Dashboards, Live in Weeks';
 const OG_IMAGE = '/wp-content/uploads/2025/07/healthcare-power-bi.webp';
 const LAST_UPDATED_ISO = '2026-10-16';
-const LAST_UPDATED = 'October 16, 2026';
 const FORM_HREF = '#pgForm';
 
 export const metadata: Metadata = {
@@ -327,7 +326,7 @@ export default function HealthcareDataAnalyticsPage() {
 
       {/* Breadcrumb */}
       <div className="bg-brand">
-        <div className="container-x flex flex-wrap items-center justify-between gap-2 py-3 text-sm text-white/90">
+        <div className="container-x py-3 text-sm text-white/90">
           <nav aria-label="Breadcrumb">
             <Link href="/" className="hover:underline">Home</Link>
             <span className="px-2">»</span>
@@ -337,9 +336,6 @@ export default function HealthcareDataAnalyticsPage() {
             <span className="px-2">»</span>
             <span>Healthcare Data Analytics</span>
           </nav>
-          <span className="text-white/75">
-            Last updated <time dateTime={LAST_UPDATED_ISO}>{LAST_UPDATED}</time>
-          </span>
         </div>
       </div>
 
