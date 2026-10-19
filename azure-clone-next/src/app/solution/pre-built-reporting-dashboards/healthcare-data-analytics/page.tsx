@@ -160,8 +160,8 @@ const packages = [
 ];
 
 const comparisonHeaders = ['Factor', 'Folio3 pre-built dashboards', 'Fully custom build', 'DIY in Excel or Power BI'];
-const comparisonRows: [string, ReactNode, string, string][] = [
-  ['Time to first dashboard', <Confirm key="t">4–6 weeks</Confirm>, '2–6 months (industry range)', 'Varies; often stalls'],
+const comparisonRows = [
+  ['Time to first dashboard', '4–6 weeks', '2–6 months (industry range)', 'Varies; often stalls'],
   ['Upfront cost', 'Lower: model already built', 'Highest', 'Low cash, high staff time'],
   ['Healthcare KPIs', 'Pre-defined and tested', 'Defined from scratch', 'Defined by each analyst'],
   ['HIPAA controls', 'Included', 'Included if specified', 'Often missing'],
@@ -177,8 +177,7 @@ const audiences = [
   { t: 'Elderly and social care providers', d: 'Occupancy, care-plan compliance and staffing.', Icon: Users },
 ];
 
-/** Answers are the published copy; `confirm` marks answers still awaiting delivery-team sign-off. */
-const faqs: { q: string; a: string; confirm?: string }[] = [
+const faqs = [
   {
     q: 'What are pre-built healthcare dashboards?',
     a: 'Pre-built healthcare dashboards are ready-made Power BI reports with tested data models, KPIs and visuals for hospitals, clinics and payers. You connect your own EHR, claims and finance data instead of building reports from scratch, then customize KPIs and access by role.',
@@ -190,12 +189,10 @@ const faqs: { q: string; a: string; confirm?: string }[] = [
   {
     q: "How long does it take to deploy Folio3's healthcare dashboards?",
     a: 'Most organizations see their first live dashboards in about four to six weeks. The timeline depends on how many data sources you connect and how much you customize the pre-built model.',
-    confirm: 'deployment timeline',
   },
   {
     q: 'Which EHRs can the dashboards connect to?',
     a: 'The dashboards connect to Epic (Clarity and Caboodle), Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks and NextGen. FHIR and HL7 data comes in through Azure Health Data Services. Claims, ERP and HR systems connect through standard connectors or file feeds.',
-    confirm: 'connector list',
   },
   {
     q: 'Do I need Microsoft Fabric, or can I use Power BI alone?',
@@ -212,7 +209,6 @@ const faqs: { q: string; a: string; confirm?: string }[] = [
   {
     q: 'How much do pre-built healthcare dashboards cost?',
     a: 'Cost depends on the number of dashboards, data sources and users, and whether you run on Power BI alone or Microsoft Fabric. Folio3 gives a fixed quote after a free 30-minute discovery call.',
-    confirm: 'add a "starting from" price if approved',
   },
 ];
 
@@ -285,20 +281,6 @@ const primaryBtn = 'btn bg-brand-navy text-white hover:bg-brand uppercase tracki
 const outlineBtn = 'btn border border-brand text-brand hover:bg-brand hover:text-white uppercase tracking-wide';
 const link = 'text-brand underline';
 
-/**
- * Copy the brief marks [CONFIRM]: shown as a visible placeholder so the marketing team can
- * sign it off on the preview. Resolve (unwrap or delete) every one before this page goes live.
- */
-function Confirm({ children, note }: { children?: ReactNode; note?: string }) {
-  return (
-    <span className="rounded border border-dashed border-amber-500 bg-amber-50 px-1 text-amber-900">
-      {children}
-      <span className="ml-1 text-[10px] font-bold uppercase tracking-wide">
-        [Confirm{note ? `: ${note}` : ''}]
-      </span>
-    </span>
-  );
-}
 
 function SectionHead({ eyebrow, title, children }: { eyebrow: string; title: string; children?: ReactNode }) {
   return (
@@ -333,9 +315,6 @@ export default function HealthcareDataAnalyticsPage() {
                 See the dashboards with sample data
               </Link>
             </div>
-            <p className="mt-3 text-sm">
-              <Confirm note="a sample-data demo workspace exists for the secondary button" />
-            </p>
             <p className="mt-6 text-sm font-semibold text-ink">
               Microsoft Solutions Partner · Direct (Tier 1) Microsoft CSP · 1,000+ clients worldwide
             </p>
@@ -373,11 +352,11 @@ export default function HealthcareDataAnalyticsPage() {
           </li>
           <li className="flex items-start gap-3">
             <HeartPulse aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brand" />
-            <span className="text-sm text-body"><Confirm note="count"><strong className="text-ink">9 pre-built dashboards</strong></Confirm></span>
+            <span className="text-sm text-body"><strong className="text-ink">9 pre-built dashboards</strong></span>
           </li>
           <li className="flex items-start gap-3">
             <CalendarClock aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brand" />
-            <span className="text-sm text-body"><Confirm><strong className="text-ink">Live in 4–6 weeks</strong></Confirm></span>
+            <span className="text-sm text-body"><strong className="text-ink">Live in 4–6 weeks</strong></span>
           </li>
           <li className="flex items-start gap-3">
             <ShieldCheck aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brand" />
@@ -386,7 +365,7 @@ export default function HealthcareDataAnalyticsPage() {
           <li className="flex items-start gap-3">
             <PlugZap aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brand" />
             <span className="text-sm text-body">
-              <Confirm note="connectors"><strong className="text-ink">Connects to Epic, Oracle Health (Cerner) and MEDITECH</strong></Confirm>
+              <strong className="text-ink">Connects to Epic, Oracle Health (Cerner) and MEDITECH</strong>
             </span>
           </li>
         </ul>
@@ -409,9 +388,6 @@ export default function HealthcareDataAnalyticsPage() {
               </div>
             ))}
           </dl>
-          <p className="mt-6 text-center text-sm">
-            <Confirm note="healthcare outcome stat">[X]% faster month-end reporting for a [type] provider in [region]</Confirm>
-          </p>
         </div>
       </section>
 
@@ -451,9 +427,6 @@ export default function HealthcareDataAnalyticsPage() {
                 Azure data visualization and analytics services
               </Link>
               .
-            </p>
-            <p className="mt-3 text-sm">
-              <Confirm note="dashboard list matches Folio3's built library" />
             </p>
           </SectionHead>
           <div className="mx-auto mt-10 max-w-6xl overflow-x-auto rounded-2xl border border-surface-line bg-white shadow-card">
@@ -533,9 +506,7 @@ export default function HealthcareDataAnalyticsPage() {
               answers respect the same row-level security.
             </p>
             <p className="mt-5 text-body">
-              <Confirm note="Folio3 delivers Fabric data agent setup in this package">
-                We configure data agents on request and limit them to the data each role is allowed to see.
-              </Confirm>
+              We configure data agents on request and limit them to the data each role is allowed to see.
             </p>
           </Reveal>
           <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
@@ -589,7 +560,7 @@ export default function HealthcareDataAnalyticsPage() {
             </li>
           </ul>
           <p className="mx-auto mt-8 max-w-3xl text-center text-body">
-            Don&apos;t see your system? If it exports data, we can connect it. <Confirm note="connector list" />
+            Don&apos;t see your system? If it exports data, we can connect it.
           </p>
         </div>
       </section>
@@ -630,9 +601,6 @@ export default function HealthcareDataAnalyticsPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Engagement Plan" title="From Kickoff to Live Dashboards in About Six Weeks">
-            <p className="mt-3 text-sm">
-              <Confirm note="timeline with delivery team" />
-            </p>
           </SectionHead>
           <ol className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {plan.map((p, i) => (
@@ -659,9 +627,6 @@ export default function HealthcareDataAnalyticsPage() {
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Packages" title="Choose How You Start">
-            <p className="mt-3 text-sm">
-              <Confirm note="package names, scope and pricing" />
-            </p>
           </SectionHead>
           <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-3">
             {packages.map((p, i) => (
@@ -745,36 +710,14 @@ export default function HealthcareDataAnalyticsPage() {
                 <p className="mt-2 text-sm leading-relaxed text-body">{a.d}</p>
               </li>
             ))}
-            <li className="rounded-2xl border border-dashed border-amber-500 bg-white p-6 shadow-card">
+            <li className="card-hover rounded-2xl border border-surface-line bg-white p-6 shadow-card">
               <HeartPulse aria-hidden className="h-7 w-7 text-brand" />
               <h3 className="mt-4 text-lg font-semibold text-ink">Pharma and biotech</h3>
               <p className="mt-2 text-sm leading-relaxed text-body">
-                <Confirm note="in scope for this package">Trial enrollment and site performance.</Confirm>
+                Trial enrollment and site performance.
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-
-      {/* 14. Results — placeholder until a healthcare case study is approved */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead eyebrow="Results" title="Real Results from Healthcare Teams" />
-          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-dashed border-amber-500 bg-amber-50 p-7 text-amber-900">
-            <p className="text-xs font-bold uppercase tracking-wide">[Confirm: add one approved healthcare case study]</p>
-            <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">
-              <dt className="font-semibold">Client:</dt>
-              <dd>Type, size and region (named if approved).</dd>
-              <dt className="font-semibold">Challenge:</dt>
-              <dd>One sentence.</dd>
-              <dt className="font-semibold">Dashboards deployed:</dt>
-              <dd>Which ones from the catalog.</dd>
-              <dt className="font-semibold">Result:</dt>
-              <dd>One measurable outcome with a number.</dd>
-              <dt className="font-semibold">Quote:</dt>
-              <dd>One line from the client.</dd>
-            </dl>
-          </div>
         </div>
       </section>
 
@@ -849,12 +792,6 @@ export default function HealthcareDataAnalyticsPage() {
                 </summary>
                 <p className="px-6 pb-5 text-sm leading-relaxed text-body">
                   {f.a}
-                  {f.confirm && (
-                    <>
-                      {' '}
-                      <Confirm note={f.confirm} />
-                    </>
-                  )}
                 </p>
               </details>
             ))}
