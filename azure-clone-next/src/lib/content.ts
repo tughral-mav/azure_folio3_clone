@@ -441,6 +441,7 @@ export function getBlogPost(slug: string) {
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
     meta: { seoTitle?: string; seoDescription?: string };
     bodyHtml?: string;
+    faq?: { q: string; a: string }[];
     related?: { title: string; href: string; image?: string }[];
   };
   if ((data as { error?: string }).error) return null;
@@ -466,6 +467,8 @@ export function getBlogPost(slug: string) {
     sections: data.sections,
     body,
     bodyHtml,
+    // optional FAQ entries → FAQPage JSON-LD (the visible FAQ lives in bodyHtml)
+    faq: data.faq ?? [],
     related: (data.related ?? [])
       .map((r) => {
         const href = localAsset(r.href);
