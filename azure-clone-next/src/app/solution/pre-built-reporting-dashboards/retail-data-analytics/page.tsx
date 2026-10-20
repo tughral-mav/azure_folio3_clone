@@ -27,9 +27,9 @@ import { DashboardScroller } from './DashboardScroller';
 import { HeroDashboard } from './HeroDashboard';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards/retail-data-analytics/';
-const TITLE = 'Retail Data Analytics Dashboards on Azure & Power BI | Folio3';
+const TITLE = 'Retail Data Analytics Dashboards on Power BI | Folio3';
 const META_DESCRIPTION =
-  'Pre-built retail data analytics dashboards on Microsoft Fabric and Power BI. Sales, inventory, store and customer KPIs from Dynamics 365, POS and e-commerce in weeks.';
+  'Pre-built retail data analytics dashboards on Microsoft Fabric and Power BI. Sales, inventory, store and customer KPIs from Dynamics 365 and POS in weeks.';
 const OG_TITLE = 'Pre-Built Retail Data Analytics Dashboards on Microsoft Fabric';
 const OG_IMAGE = '/wp-content/uploads/2026/09/ecommerce-retail-sales-dashboard-power-bi.webp';
 const LAST_UPDATED_ISO = '2026-10-20';
@@ -59,7 +59,6 @@ export const metadata: Metadata = {
 
 const proofBar = [
   'Microsoft Solution Partner – Data & AI',
-  'Direct (Tier 1) Microsoft CSP',
   '200+ certified experts',
   '1,000+ clients worldwide',
 ];
@@ -780,10 +779,6 @@ export default function RetailDataAnalyticsPage() {
                 </li>
               ))}
             </ol>
-            <figcaption className="mt-5 text-center text-sm text-muted">
-              Source systems flow through Fabric pipelines into one governed OneLake lakehouse that feeds every
-              dashboard and AI workload.
-            </figcaption>
           </figure>
           <div className="mx-auto mt-10 max-w-4xl space-y-5 text-body">
             <p>
@@ -837,10 +832,6 @@ export default function RetailDataAnalyticsPage() {
               </div>
             ))}
           </div>
-          <p className="mx-auto mt-10 max-w-3xl text-center text-body">
-            Connectors not listed are scoped during discovery; most are delivered as a Data Factory pipeline in the
-            first sprint.
-          </p>
         </div>
       </section>
 
@@ -1141,7 +1132,7 @@ export default function RetailDataAnalyticsPage() {
         </div>
       </section>
 
-      <OneToOneCTA formTitle="Book a 30-Minute Discovery Call" formCopy="Tell us which ERP and POS you run, and we will show your numbers in the retail dashboards." />
+      <OneToOneCTA />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
