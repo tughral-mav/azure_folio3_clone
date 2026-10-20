@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { DashboardScroller } from './DashboardScroller';
 import { HeroDashboard } from './HeroDashboard';
 
 const CANONICAL = 'https://azure.folio3.com/solution/pre-built-reporting-dashboards/retail-data-analytics/';
@@ -522,24 +523,32 @@ export default function RetailDataAnalyticsPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Before and After" title="Manual Reporting vs Pre-Built Dashboards: What Changes Day to Day" />
-          <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 md:grid-cols-2">
-            {beforeAfter.map((b, i) => (
-              <Reveal key={b.t} animation="fadeInUp" delay={(i % 2) * 80} className="h-full">
-                <div className="h-full rounded-2xl border border-surface-line bg-white p-6 shadow-card">
-                  <h3 className="text-lg font-semibold text-ink">{b.t}</h3>
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                    <div className="rounded-xl bg-[#FDF1EC] p-4">
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#B23C0C]">Before</p>
-                      <p className="mt-1 text-sm leading-relaxed text-body">{b.before}</p>
-                    </div>
-                    <div className="rounded-xl bg-brand/5 p-4">
-                      <p className="text-xs font-bold uppercase tracking-wider text-brand">After</p>
-                      <p className="mt-1 text-sm leading-relaxed text-ink">{b.after}</p>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mx-auto mt-10 max-w-6xl overflow-x-auto rounded-2xl border border-surface-line bg-white shadow-card">
+            <table className="w-full min-w-[720px] text-left text-sm">
+              <caption className="sr-only">What changes day to day when retailers move from manual reporting to pre-built dashboards</caption>
+              <thead>
+                <tr className="bg-brand-navy text-white">
+                  <th scope="col" className="w-1/5 px-5 py-4 font-semibold">Task</th>
+                  <th scope="col" className="px-5 py-4 font-semibold">Before: manual reporting</th>
+                  <th scope="col" className="bg-brand px-5 py-4 font-semibold">After: pre-built dashboards</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-surface-line">
+                {beforeAfter.map((b) => (
+                  <tr key={b.t} className="align-top">
+                    <th scope="row" className="px-5 py-4 font-semibold text-ink">{b.t}</th>
+                    <td className="px-5 py-4 leading-relaxed text-body">
+                      <span aria-hidden className="mr-2 font-bold text-[#D9480F]">✕</span>
+                      {b.before}
+                    </td>
+                    <td className="bg-brand/5 px-5 py-4 font-medium leading-relaxed text-ink">
+                      <span aria-hidden className="mr-2 font-bold text-brand">✓</span>
+                      {b.after}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -552,46 +561,52 @@ export default function RetailDataAnalyticsPage() {
               Seven retail reporting dashboards ship in the pack, all on one shared retail data model.
             </p>
           </SectionHead>
-          <div className="mx-auto mt-10 max-w-6xl overflow-x-auto rounded-2xl border border-surface-line bg-white shadow-card">
-            <table className="w-full min-w-[860px] text-left text-sm">
-              <caption className="sr-only">Retail reporting dashboards included in the Folio3 retail pack</caption>
-              <thead>
-                <tr className="bg-brand-navy text-white">
-                  <th scope="col" className="px-4 py-4 font-semibold">Dashboard</th>
-                  <th scope="col" className="px-4 py-4 font-semibold">KPIs and views</th>
-                  <th scope="col" className="px-4 py-4 font-semibold">Primary users</th>
-                  <th scope="col" className="px-4 py-4 font-semibold">Typical sources</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-surface-line">
-                {dashboards.map((d) => (
-                  <tr key={d.name} className="align-top">
-                    <th scope="row" className="w-[240px] px-4 py-4 font-semibold text-ink">
-                      <span className="block overflow-hidden rounded-lg border border-surface-line bg-surface-tint">
-                        {d.img ? (
-                          <Image
-                            src={d.img}
-                            alt={`${d.name} dashboard in Power BI: ${d.kpis}`}
-                            width={600}
-                            height={340}
-                            sizes="220px"
-                            className="aspect-[600/340] h-auto w-full object-cover object-top"
-                          />
-                        ) : (
-                          <span className="flex aspect-[600/340] items-center justify-center bg-[linear-gradient(135deg,#eef3f8_0%,#dfeaf5_100%)]">
-                            <d.Icon aria-hidden size={36} strokeWidth={1.6} className="text-brand" />
-                          </span>
-                        )}
+          <div className="mx-auto mt-10 max-w-6xl">
+            <DashboardScroller label="Retail reporting dashboards included in the Folio3 retail pack">
+              {dashboards.map((d, i) => (
+                <li
+                  key={d.name}
+                  className="flex w-[85%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card sm:w-[340px]"
+                >
+                  <div className="relative border-b border-surface-line bg-surface-tint">
+                    {d.img ? (
+                      <Image
+                        src={d.img}
+                        alt={`${d.name} dashboard in Power BI: ${d.kpis}`}
+                        width={600}
+                        height={340}
+                        sizes="340px"
+                        className="aspect-[600/340] h-auto w-full object-cover object-top"
+                      />
+                    ) : (
+                      <span className="flex aspect-[600/340] items-center justify-center bg-[linear-gradient(135deg,#eef3f8_0%,#dfeaf5_100%)]">
+                        <d.Icon aria-hidden size={44} strokeWidth={1.6} className="text-brand" />
                       </span>
-                      <span className="mt-3 block">{d.name}</span>
-                    </th>
-                    <td className="px-4 py-4 leading-relaxed text-body">{d.kpis}</td>
-                    <td className="px-4 py-4 text-body">{d.users}</td>
-                    <td className="px-4 py-4 text-body">{d.sources}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                    )}
+                    <span className="absolute left-3 top-3 rounded-full bg-brand px-2.5 py-1 text-[11px] font-bold text-white">
+                      {String(i + 1).padStart(2, '0')} / {String(dashboards.length).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="text-xl font-semibold text-ink">{d.name}</h3>
+                    <dl className="mt-4 space-y-3 text-sm leading-relaxed text-body">
+                      <div>
+                        <dt className="font-semibold text-ink">KPIs and views</dt>
+                        <dd>{d.kpis}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold text-ink">Primary users</dt>
+                        <dd>{d.users}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold text-ink">Typical sources</dt>
+                        <dd>{d.sources}</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </li>
+              ))}
+            </DashboardScroller>
           </div>
           <p className="mx-auto mt-10 max-w-3xl text-center text-body">
             Every dashboard includes scheduled refresh, mobile layouts and drill-through to transaction detail;
