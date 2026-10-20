@@ -27,11 +27,11 @@ export function HeroDashboard() {
       {/* floating badges */}
       <div className="absolute -bottom-5 -left-4 hidden rounded-xl border border-surface-line bg-white px-4 py-3 shadow-cardHover sm:block">
         <p className="text-[11px] text-muted">Sources unified</p>
-        <p className="text-sm font-bold text-ink">POS · ERP · E-commerce</p>
+        <p className="text-sm font-bold text-ink">Dynamics 365 · POS · E-commerce</p>
       </div>
       <div className="absolute -right-4 -top-5 hidden rounded-xl bg-brand px-4 py-3 text-white shadow-cardHover sm:block">
-        <p className="text-[11px] text-white/80">First dashboards</p>
-        <p className="text-sm font-bold">In 2–3 weeks</p>
+        <p className="text-[11px] text-white/80">Typically live</p>
+        <p className="text-sm font-bold">In 6–8 weeks</p>
       </div>
     </div>
   );
