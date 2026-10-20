@@ -14,6 +14,7 @@ import {
   PlugZap,
   ScrollText,
   ShieldCheck,
+  Sparkles,
   Stethoscope,
   Tags,
   Users,
@@ -22,6 +23,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { HeroDashboard } from './HeroDashboard';
 import { PlanTimeline } from './PlanTimeline';
+import { DashboardGallery } from './DashboardGallery';
 
 const ORIGIN = 'https://azure.folio3.com';
 const CANONICAL = `${ORIGIN}/solution/pre-built-reporting-dashboards/healthcare-data-analytics/`;
@@ -119,6 +121,13 @@ const agentQuestions = [
   'Which units had the highest 30-day readmission rate last quarter?',
   'Show denied claims over $10,000 by payer this month.',
   'How did ED wait times change after we added the evening shift?',
+];
+
+const agentAnswer = [
+  { unit: 'Cardiology', rate: 15.1 },
+  { unit: 'Pulmonary', rate: 13.7 },
+  { unit: 'Med-Surg', rate: 12.4 },
+  { unit: 'Ortho', rate: 7.9 },
 ];
 
 const systems = ['Epic', 'Oracle Health (Cerner)', 'MEDITECH', 'athenahealth', 'eClinicalWorks', 'NextGen', 'Dynamics 365', 'NetSuite', 'SAP'];
@@ -449,6 +458,10 @@ export default function HealthcareDataAnalyticsPage() {
               </tbody>
             </table>
           </div>
+          <Reveal animation="fadeInUp" className="mt-14">
+            <p className="mb-6 text-center text-lg font-semibold text-ink">Preview the dashboards</p>
+            <DashboardGallery />
+          </Reveal>
         </div>
       </section>
 
@@ -506,15 +519,47 @@ export default function HealthcareDataAnalyticsPage() {
               We configure data agents on request and limit them to the data each role is allowed to see.
             </p>
           </Reveal>
-          <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
-            <h3 className="text-lg font-semibold text-ink">Example questions your teams can ask</h3>
-            <ul className="mt-5 space-y-3">
-              {agentQuestions.map((q) => (
-                <li key={q} className="rounded-xl bg-surface-tint px-4 py-3 text-body">
-                  &ldquo;{q}&rdquo;
-                </li>
-              ))}
-            </ul>
+          <div className="overflow-hidden rounded-2xl border border-surface-line bg-white shadow-cardHover">
+            <div className="flex items-center gap-2 border-b border-surface-line bg-brand-ink px-5 py-3">
+              <Sparkles aria-hidden className="h-4 w-4 text-white/80" />
+              <span className="text-xs font-semibold text-white/85">Fabric data agent · Healthcare model</span>
+            </div>
+            <div className="space-y-4 p-5 sm:p-6">
+              <h3 className="sr-only">Example questions your teams can ask</h3>
+              <Reveal animation="fadeInLeft" className="flex justify-end">
+                <p className="max-w-[85%] rounded-2xl rounded-br-sm bg-brand px-4 py-3 text-sm text-white">{agentQuestions[0]}</p>
+              </Reveal>
+              <Reveal animation="fadeInUp" delay={300}>
+                <div aria-label="Sample answer from a Fabric data agent" className="max-w-[92%] rounded-2xl rounded-bl-sm bg-surface-tint px-4 py-4 text-sm text-body">
+                  <p>
+                    <strong className="text-ink">Cardiology</strong> had the highest 30-day readmission rate last quarter at{' '}
+                    <strong className="text-ink">15.1%</strong>, followed by Pulmonary at 13.7%.
+                  </p>
+                  <div aria-hidden className="mt-4 space-y-2">
+                    {agentAnswer.map((u) => (
+                      <div key={u.unit} className="flex items-center gap-2">
+                        <span className="w-20 shrink-0 text-[11px] text-body">{u.unit}</span>
+                        <span className="h-2 flex-1 rounded-full bg-white">
+                          <span className="block h-2 rounded-full bg-brand" style={{ width: `${(u.rate / 15.1) * 100}%` }} />
+                        </span>
+                        <span className="w-10 shrink-0 text-right text-[11px] font-semibold text-ink">{u.rate}%</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-3 text-[11px] text-muted">Source: Clinical Quality model · row-level security applied · sample data</p>
+                </div>
+              </Reveal>
+              <div className="border-t border-surface-line pt-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted">More questions your teams can ask</p>
+                <ul className="mt-3 space-y-2">
+                  {agentQuestions.slice(1).map((q) => (
+                    <li key={q} className="rounded-xl border border-surface-line px-4 py-2.5 text-sm text-body">
+                      &ldquo;{q}&rdquo;
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
