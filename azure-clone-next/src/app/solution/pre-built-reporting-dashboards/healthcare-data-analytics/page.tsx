@@ -23,7 +23,6 @@ import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { HeroDashboard } from './HeroDashboard';
 import { PlanTimeline } from './PlanTimeline';
-import { DashboardGallery } from './DashboardGallery';
 import { RealDashboards } from './RealDashboards';
 import { ResultsScroller, type ResultCase } from '../retail-data-analytics/ResultsScroller';
 
@@ -502,16 +501,12 @@ export default function HealthcareDataAnalyticsPage() {
               </tbody>
             </table>
           </div>
-          <Reveal animation="fadeInUp" className="mt-14">
-            <p className="mb-6 text-center text-lg font-semibold text-ink">Preview the dashboards</p>
-            <DashboardGallery />
-          </Reveal>
           <Reveal animation="fadeInUp" className="mt-16">
             <div className="mx-auto max-w-3xl text-center">
               <h3 className="text-2xl font-semibold text-ink lg:text-3xl">Real Power BI Dashboards Built by Folio3</h3>
               <p className="mt-3 text-body">
-                The healthcare previews above use sample data. Below are real Power BI dashboards Folio3 has built for
-                finance, inventory and operations teams, shown on demo data. Click any one to see it full size.
+                Real Power BI dashboards Folio3 has built for finance, inventory and operations teams, shown on demo
+                data. Click any one to see it full size.
               </p>
             </div>
             <div className="mx-auto mt-8 max-w-6xl">
