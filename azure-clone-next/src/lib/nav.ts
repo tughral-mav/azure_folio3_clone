@@ -59,6 +59,7 @@ export const NAV: NavItem[] = [
           { label: 'For Business Central', href: '/solution/pre-built-reporting-dashboards/for-business-central/' },
           { label: 'Financial Forecasting', href: '/solution/pre-built-reporting-dashboards/financial-forecasting/' },
           { label: 'Retail Data Analytics', href: '/solution/pre-built-reporting-dashboards/retail-data-analytics/' },
+          { label: 'Healthcare Data Analytics', href: '/solution/pre-built-reporting-dashboards/healthcare-data-analytics/' },
         ],
       },
       { label: 'Employee Self-Service App', href: '/solution/folio3-employee-self-service-app/' },
