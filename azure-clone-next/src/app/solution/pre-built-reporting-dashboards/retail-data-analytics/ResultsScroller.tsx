@@ -7,7 +7,7 @@ export type ResultCase = { stat: string; client: string; body: string; href: str
 
 /** Horizontal case-study strip that advances one card every 2 seconds, loops back to the start,
  *  pauses on hover/focus, and respects prefers-reduced-motion. All cards stay in the HTML. */
-export function ResultsScroller({ cases }: { cases: ResultCase[] }) {
+export function ResultsScroller({ cases, label = 'Retail and commerce client results' }: { cases: ResultCase[]; label?: string }) {
   const ref = useRef<HTMLUListElement | null>(null);
   const idx = useRef(0);
   const [paused, setPaused] = useState(false);
@@ -43,7 +43,7 @@ export function ResultsScroller({ cases }: { cases: ResultCase[] }) {
     >
       <ul
         ref={ref}
-        aria-label="Retail and commerce client results"
+        aria-label={label}
         className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {cases.map((c) => (
