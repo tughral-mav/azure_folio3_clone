@@ -371,9 +371,6 @@ export default function HealthcareDataAnalyticsPage() {
                 See the dashboards with sample data
               </Link>
             </div>
-            <p className="mt-6 text-sm font-semibold text-ink">
-              Microsoft Solutions Partner · Direct (Tier 1) Microsoft CSP · 1,000+ clients worldwide
-            </p>
           </div>
           <Reveal animation="zoomIn" className="relative pb-6">
             <HeroDashboard />
