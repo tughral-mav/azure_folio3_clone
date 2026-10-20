@@ -1016,7 +1016,42 @@ export default function RetailDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 13. Why Folio3 */}
+      {/* 13. Results */}
+      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-24">
+        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
+        <div className="container-x relative">
+          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Folio3 Analytics Customers</h2>
+          </Reveal>
+          <div className="mx-auto mt-10 max-w-6xl">
+            <DashboardScroller label="Folio3 analytics case studies" itemNoun="case study">
+              {results.map((r) => (
+                <li
+                  key={r.client}
+                  className="flex w-[85%] shrink-0 snap-start flex-col rounded-2xl bg-white p-7 shadow-cardHover sm:w-[340px]"
+                >
+                  <p className="text-4xl font-bold text-brand">{r.stat}</p>
+                  <h3 className="mt-3 text-xl font-semibold text-ink">{r.client}</h3>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-muted">{r.tag}</p>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-body">{r.body}</p>
+                  <Link href={r.href} className="mt-5 text-sm font-semibold text-brand hover:underline">
+                    {r.cta} →
+                  </Link>
+                </li>
+              ))}
+            </DashboardScroller>
+          </div>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-white/90">
+            More stories are in our{' '}
+            <Link href="/case-studies/" className="font-semibold text-white underline">
+              case studies
+            </Link>{' '}
+            library.
+          </p>
+        </div>
+      </section>
+
+      {/* 14. Why Folio3 */}
       <section className="bg-surface-tint py-16 lg:py-24">
         <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.2fr]">
           <Reveal animation="fadeInUp">
@@ -1058,41 +1093,6 @@ export default function RetailDataAnalyticsPage() {
               practice.
             </Check>
           </ul>
-        </div>
-      </section>
-
-      {/* 14. Results */}
-      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-24">
-        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
-        <div className="container-x relative">
-          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Folio3 Analytics Customers</h2>
-          </Reveal>
-          <div className="mx-auto mt-10 max-w-6xl">
-            <DashboardScroller label="Folio3 analytics case studies" itemNoun="case study">
-              {results.map((r) => (
-                <li
-                  key={r.client}
-                  className="flex w-[85%] shrink-0 snap-start flex-col rounded-2xl bg-white p-7 shadow-cardHover sm:w-[340px]"
-                >
-                  <p className="text-4xl font-bold text-brand">{r.stat}</p>
-                  <h3 className="mt-3 text-xl font-semibold text-ink">{r.client}</h3>
-                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-muted">{r.tag}</p>
-                  <p className="mt-4 flex-1 text-sm leading-relaxed text-body">{r.body}</p>
-                  <Link href={r.href} className="mt-5 text-sm font-semibold text-brand hover:underline">
-                    {r.cta} →
-                  </Link>
-                </li>
-              ))}
-            </DashboardScroller>
-          </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-white/90">
-            More stories are in our{' '}
-            <Link href="/case-studies/" className="font-semibold text-white underline">
-              case studies
-            </Link>{' '}
-            library.
-          </p>
         </div>
       </section>
 
