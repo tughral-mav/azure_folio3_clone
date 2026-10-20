@@ -565,6 +565,13 @@ export default function PreBuiltReportingDashboardsPage() {
             </Link>
             .
           </p>
+          <p className="mx-auto mt-4 max-w-3xl text-center text-body">
+            Working in healthcare? See our{' '}
+            <Link href="/solution/pre-built-reporting-dashboards/healthcare-data-analytics/" className="text-brand underline">
+              pre-built healthcare dashboards
+            </Link>{' '}
+            for hospitals, clinics and payers on Power BI and Microsoft Fabric.
+          </p>
           <div className="mt-8 text-center">
             <Link href={FORM_HREF} className="btn-primary uppercase tracking-wide">
               Schedule a Free Consultation
