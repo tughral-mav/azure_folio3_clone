@@ -24,6 +24,7 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { HeroDashboard } from './HeroDashboard';
 import { PlanTimeline } from './PlanTimeline';
 import { DashboardGallery } from './DashboardGallery';
+import { ResultsScroller, type ResultCase } from '../retail-data-analytics/ResultsScroller';
 
 const ORIGIN = 'https://azure.folio3.com';
 const CANONICAL = `${ORIGIN}/solution/pre-built-reporting-dashboards/healthcare-data-analytics/`;
@@ -184,6 +185,51 @@ const audiences = [
   { t: 'Payers and health plans', d: 'Claims trends, cost per member and payment integrity.', Icon: ClipboardCheck },
   { t: 'Diagnostic and imaging providers', d: 'Test turnaround, equipment utilization and referral sources.', Icon: Activity },
   { t: 'Elderly and social care providers', d: 'Occupancy, care-plan compliance and staffing.', Icon: Users },
+];
+
+const results: ResultCase[] = [
+  {
+    stat: '37%',
+    client: 'Alibaba',
+    body: "Folio3's Power BI reporting delivered 37% faster financial closings for a marketplace serving 100,000+ brands and 30 million shoppers.",
+    href: '/power-bi-financial-reporting-for-alibaba/',
+    cta: 'Read the Alibaba case study',
+  },
+  {
+    stat: '3 dashboards',
+    client: 'Weaver Popcorn Hybrids',
+    body: 'Pre-built Finance, Sales and Inventory dashboards on IntelliFabric replaced manual reporting on Dynamics 365 Business Central data, with Budget vs Actual tracked in real time.',
+    href: '/case-studies/popcorn-producer-intellifabric-dashboards/',
+    cta: 'See the IntelliFabric dashboards case study',
+  },
+  {
+    stat: '13%',
+    client: 'Savills',
+    body: 'Microsoft Fabric reporting boosted operational efficiency by 13%, giving the real estate leader unified, real-time intelligence.',
+    href: '/microsoft-fabric-reporting-for-real-estate/',
+    cta: 'Read the Savills case study',
+  },
+  {
+    stat: '99.9%',
+    client: 'SLB',
+    body: 'Azure automated data reporting ingests, stores and visualizes oil and gas data in Power BI dashboards with 99.9% data accuracy.',
+    href: '/azure-automated-data-reporting-for-slb/',
+    cta: 'Read the SLB case study',
+  },
+  {
+    stat: '12%',
+    client: 'Food Crop Grower',
+    body: 'A Power BI data portal for farm operations, contract management and grower engagement improved yield potential by 12%.',
+    href: '/implementing-power-bi-dashboard-for-food-crop-grower/',
+    cta: 'Read the food crop grower case study',
+  },
+  {
+    stat: '20%',
+    client: 'Cattle Feeding Company',
+    body: 'IntelliFabric, a plug-and-play data ingestion and reporting solution built on Microsoft Fabric, helped maximize animal well-being by 20%.',
+    href: '/automated-data-reporting/',
+    cta: 'Read the cattle feeding case study',
+  },
 ];
 
 const faqs = [
@@ -760,6 +806,23 @@ export default function HealthcareDataAnalyticsPage() {
               architecture reviews.
             </p>
           </SectionHead>
+        </div>
+      </section>
+
+      {/* Case studies — Folio3 analytics client results (from the site's case studies) */}
+      <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-24">
+        <div className="pointer-events-none absolute inset-0 [background:radial-gradient(60%_120%_at_70%_30%,rgba(255,255,255,0.18)_0%,transparent_60%)]" />
+        <div className="container-x relative">
+          <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Folio3 Analytics Clients</h2>
+            <p className="mt-4 text-white/85">
+              The same Power BI and Microsoft Fabric team behind these dashboards has delivered measurable results for
+              clients across industries.
+            </p>
+          </Reveal>
+          <div className="mx-auto mt-10 max-w-6xl">
+            <ResultsScroller cases={results} label="Folio3 analytics client results" />
+          </div>
         </div>
       </section>
 
