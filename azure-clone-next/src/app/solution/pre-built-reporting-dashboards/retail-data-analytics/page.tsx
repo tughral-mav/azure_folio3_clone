@@ -4,7 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Building2,
+  Code2,
   Factory,
+  FileSpreadsheet,
+  FolderUp,
+  Gift,
   Globe2,
   LayoutDashboard,
   Network,
@@ -223,12 +227,57 @@ const architecture = [
   { t: 'Copilot and alerts', d: 'Stock, pricing and staffing alerts on the same data' },
 ];
 
-const connectors = [
-  { k: 'ERP', v: ['Dynamics 365 Business Central', 'Dynamics 365 Finance & Operations', 'Dynamics 365 Commerce', 'NetSuite'] },
-  { k: 'POS and retail management', v: ['LS Central', 'Dynamics 365 Commerce POS', 'Lightspeed', 'Square', 'Custom POS via SQL or API'] },
-  { k: 'E-commerce', v: ['Shopify', 'Magento/Adobe Commerce', 'BigCommerce', 'WooCommerce'] },
-  { k: 'Customer and marketing', v: ['Dynamics 365 Customer Insights', 'Salesforce', 'HubSpot', 'Loyalty platforms'] },
-  { k: 'Files and legacy', v: ['Excel', 'CSV', 'SFTP drops', 'On-premises SQL Server'] },
+/** Connector tiles: a brand logo where we have one, a lettered mark or a generic icon otherwise. */
+type Connector = { name: string; logo?: string; logoClass?: string; mark?: string; Icon?: LucideIcon };
+const LOGO = '/logos/connectors';
+const D365 = `${LOGO}/dynamics-365.png`;
+const connectors: { k: string; v: Connector[] }[] = [
+  {
+    k: 'ERP',
+    v: [
+      { name: 'Dynamics 365 Business Central', logo: D365 },
+      { name: 'Dynamics 365 Finance & Operations', logo: D365 },
+      { name: 'Dynamics 365 Commerce', logo: D365 },
+      { name: 'NetSuite', mark: 'N' },
+    ],
+  },
+  {
+    k: 'POS and retail management',
+    v: [
+      { name: 'LS Central', mark: 'LS' },
+      { name: 'Dynamics 365 Commerce POS', logo: D365 },
+      { name: 'Lightspeed', mark: 'L' },
+      { name: 'Square', logo: `${LOGO}/square.svg` },
+      { name: 'Custom POS via SQL or API', Icon: Code2 },
+    ],
+  },
+  {
+    k: 'E-commerce',
+    v: [
+      { name: 'Shopify', logo: `${LOGO}/shopify.svg` },
+      { name: 'Magento/Adobe Commerce', logo: `${LOGO}/magento.svg` },
+      { name: 'BigCommerce', logo: `${LOGO}/bigcommerce.svg` },
+      { name: 'WooCommerce', logo: `${LOGO}/woocommerce.svg`, logoClass: 'h-5 w-[92px]' },
+    ],
+  },
+  {
+    k: 'Customer and marketing',
+    v: [
+      { name: 'Dynamics 365 Customer Insights', logo: D365 },
+      { name: 'Salesforce', logo: `${LOGO}/salesforce.svg` },
+      { name: 'HubSpot', logo: `${LOGO}/hubspot.svg` },
+      { name: 'Loyalty platforms', Icon: Gift },
+    ],
+  },
+  {
+    k: 'Files and legacy',
+    v: [
+      { name: 'Excel', logo: `${LOGO}/excel.png` },
+      { name: 'CSV', Icon: FileSpreadsheet },
+      { name: 'SFTP drops', Icon: FolderUp },
+      { name: 'On-premises SQL Server', logo: `${LOGO}/sql-server.png`, logoClass: 'h-10 w-10' },
+    ],
+  },
 ];
 
 const steps = [
@@ -716,20 +765,32 @@ export default function RetailDataAnalyticsPage() {
       <section className="py-16 lg:py-24">
         <div className="container-x">
           <SectionHead eyebrow="Connectors" title="Connects to the Systems Retailers Already Run" />
-          <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
-            {connectors.map((c, i) => (
-              <Reveal key={c.k} animation="fadeInUp" delay={i * 60} className="h-full">
-                <div className="h-full rounded-2xl border border-surface-line bg-white p-5 shadow-card">
-                  <h3 className="text-base font-semibold text-ink">{c.k}</h3>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {c.v.map((v) => (
-                      <li key={v} className="rounded-full bg-surface-tint px-3 py-1 text-xs font-medium text-ink">
-                        {v}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
+          <div className="mx-auto mt-10 max-w-6xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
+            {connectors.map((c) => (
+              <div key={c.k} className="grid gap-4 p-5 sm:p-6 lg:grid-cols-[200px_1fr] lg:items-center lg:gap-8">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-brand">{c.k}</h3>
+                <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                  {c.v.map((v) => (
+                    <li
+                      key={v.name}
+                      className="flex h-full flex-col items-center gap-2 rounded-xl border border-surface-line px-3 py-4 text-center transition hover:border-brand/40 hover:shadow-card"
+                    >
+                      <span className="flex h-10 min-w-10 items-center justify-center">
+                        {v.logo ? (
+                          <Image src={v.logo} alt="" width={92} height={40} className={`object-contain ${v.logoClass ?? 'h-9 w-9'}`} />
+                        ) : v.Icon ? (
+                          <v.Icon aria-hidden size={28} strokeWidth={1.6} className="text-brand" />
+                        ) : (
+                          <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-navy text-sm font-bold text-white">
+                            {v.mark}
+                          </span>
+                        )}
+                      </span>
+                      <span className="text-xs font-medium leading-snug text-ink">{v.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
           <p className="mx-auto mt-10 max-w-3xl text-center text-body">
