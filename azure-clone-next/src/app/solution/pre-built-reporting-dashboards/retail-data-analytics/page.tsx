@@ -280,6 +280,13 @@ const connectors: { k: string; v: Connector[] }[] = [
   },
 ];
 
+const partnerBadges = [
+  { src: '/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp', alt: 'Microsoft Solutions Partner: Data & AI, Azure' },
+  { src: '/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp', alt: 'Microsoft Solutions Partner: Infrastructure, Azure' },
+  { src: '/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp', alt: 'Microsoft Solutions Partner: Digital & App Innovation, Azure' },
+  { src: '/wp-content/uploads/2024/08/business-application-logo-img.webp', alt: 'Microsoft Solutions Partner: Business Applications' },
+];
+
 const steps = [
   {
     n: '01',
@@ -337,18 +344,55 @@ const comparisonRows: ReactNode[][] = [
   ],
 ];
 
+/** Folio3 analytics case studies published on this site; each stat is taken from its case study page. */
 const results = [
   {
+    stat: 'Same-day',
     client: 'Weaver Popcorn Hybrids',
+    tag: 'Consumer goods · IntelliFabric',
     body: 'Replaced manual Business Central reporting with pre-built Finance, Sales and Inventory dashboards on an Azure-native architecture; leadership moved from "yesterday\'s picture" to same-day numbers.',
     href: '/case-studies/popcorn-producer-intellifabric-dashboards/',
     cta: 'Read the Weaver Popcorn case study',
   },
   {
-    client: 'Alibaba (retail)',
-    body: 'Power BI financial reporting enabling real-time performance tracking and faster financial closings.',
+    stat: '37%',
+    client: 'Alibaba',
+    tag: 'Retail marketplace · Power BI',
+    body: 'Power BI financial reporting enabling real-time performance tracking and 37% faster financial closings.',
     href: '/power-bi-financial-reporting-for-alibaba/',
     cta: 'Read the Alibaba case study',
+  },
+  {
+    stat: '10M+',
+    client: 'Daraz',
+    tag: 'Online retail · Power BI on Azure',
+    body: "South Asia's leading online marketplace, with 10 million+ products, uses Folio3's Azure expertise to power its Power BI reporting.",
+    href: '/daraz/',
+    cta: 'Read the Daraz case study',
+  },
+  {
+    stat: '13%',
+    client: 'Savills',
+    tag: 'Real estate · Microsoft Fabric',
+    body: 'Microsoft Fabric reporting gave the real estate leader unified, real-time intelligence and boosted operational efficiency by 13%.',
+    href: '/microsoft-fabric-reporting-for-real-estate/',
+    cta: 'Read the Savills case study',
+  },
+  {
+    stat: '99.9%',
+    client: 'SLB',
+    tag: 'Energy · Azure data reporting',
+    body: 'Automated Azure data pipelines ingest, store and visualise operational data in Power BI with 99.9% data accuracy.',
+    href: '/azure-automated-data-reporting-for-slb/',
+    cta: 'Read the SLB case study',
+  },
+  {
+    stat: '12%',
+    client: 'Food Crop Grower',
+    tag: 'Agriculture · Power BI',
+    body: 'Power BI gave real-time visibility of grower operations, improving yield potential by 12%.',
+    href: '/implementing-power-bi-dashboard-for-food-crop-grower/',
+    cta: 'Read the food crop grower case study',
   },
 ];
 
@@ -810,14 +854,13 @@ export default function RetailDataAnalyticsPage() {
               Your data stays in your Azure tenant. Folio3 deploys the lakehouse, pipelines and Power BI workspaces
               into your subscription, and you hold the admin rights from day one.
             </p>
-            <Image
-              src="/wp-content/uploads/2024/09/folio3-secures-microsoft-solution-partner-designation-in-four-key-areas.jpg"
-              alt="Folio3 Microsoft Solution Partner designations in Data & AI, Infrastructure, Digital & App Innovation and Business Applications"
-              width={850}
-              height={560}
-              sizes="(min-width: 1024px) 28rem, 100vw"
-              className="mt-8 h-auto w-full max-w-md rounded-2xl border border-surface-line shadow-card"
-            />
+            <ul className="mt-8 grid max-w-md grid-cols-2 gap-4">
+              {partnerBadges.map((b) => (
+                <li key={b.src} className="overflow-hidden rounded-xl border border-surface-line bg-white shadow-card">
+                  <Image src={b.src} alt={b.alt} width={352} height={238} sizes="14rem" className="h-auto w-full" />
+                </li>
+              ))}
+            </ul>
           </Reveal>
           <div className="rounded-2xl border border-surface-line bg-white p-7 shadow-card">
             <ul className="space-y-4">
@@ -849,9 +892,6 @@ export default function RetailDataAnalyticsPage() {
                 over-licensed at launch.
               </Check>
             </ul>
-            <p className="mt-6 border-t border-surface-line pt-5 text-sm font-medium text-ink">
-              There is no Folio3-hosted SaaS layer and no per-dashboard subscription; the assets are yours.
-            </p>
           </div>
         </div>
       </section>
@@ -1028,18 +1068,23 @@ export default function RetailDataAnalyticsPage() {
           <Reveal animation="fadeInUp" className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-white lg:text-4xl">Results from Folio3 Analytics Customers</h2>
           </Reveal>
-          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-            {results.map((r, i) => (
-              <Reveal key={r.client} animation="fadeInUp" delay={i * 80} className="h-full">
-                <div className="flex h-full flex-col rounded-2xl bg-white p-7 shadow-cardHover">
-                  <h3 className="text-xl font-semibold text-ink">{r.client}</h3>
-                  <p className="mt-3 flex-1 leading-relaxed text-body">{r.body}</p>
+          <div className="mx-auto mt-10 max-w-6xl">
+            <DashboardScroller label="Folio3 analytics case studies" itemNoun="case study">
+              {results.map((r) => (
+                <li
+                  key={r.client}
+                  className="flex w-[85%] shrink-0 snap-start flex-col rounded-2xl bg-white p-7 shadow-cardHover sm:w-[340px]"
+                >
+                  <p className="text-4xl font-bold text-brand">{r.stat}</p>
+                  <h3 className="mt-3 text-xl font-semibold text-ink">{r.client}</h3>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-muted">{r.tag}</p>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-body">{r.body}</p>
                   <Link href={r.href} className="mt-5 text-sm font-semibold text-brand hover:underline">
                     {r.cta} →
                   </Link>
-                </div>
-              </Reveal>
-            ))}
+                </li>
+              ))}
+            </DashboardScroller>
           </div>
           <p className="mx-auto mt-8 max-w-3xl text-center text-white/90">
             More stories are in our{' '}

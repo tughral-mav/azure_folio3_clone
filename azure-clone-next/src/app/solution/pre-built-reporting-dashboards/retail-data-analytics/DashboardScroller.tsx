@@ -3,8 +3,16 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-/** Horizontal, snap-scrolling track for the dashboard cards, with prev/next buttons. */
-export function DashboardScroller({ children, label }: { children: ReactNode; label: string }) {
+/** Horizontal, snap-scrolling card track with prev/next buttons. */
+export function DashboardScroller({
+  children,
+  label,
+  itemNoun = 'dashboard',
+}: {
+  children: ReactNode;
+  label: string;
+  itemNoun?: string;
+}) {
   const track = useRef<HTMLUListElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
@@ -44,10 +52,10 @@ export function DashboardScroller({ children, label }: { children: ReactNode; la
         {children}
       </ul>
       <div className="mt-6 flex justify-center gap-3">
-        <button type="button" className={btn} onClick={() => scrollBy(-1)} disabled={atStart} aria-label="Previous dashboard">
+        <button type="button" className={btn} onClick={() => scrollBy(-1)} disabled={atStart} aria-label={`Previous ${itemNoun}`}>
           <ChevronLeft aria-hidden size={20} />
         </button>
-        <button type="button" className={btn} onClick={() => scrollBy(1)} disabled={atEnd} aria-label="Next dashboard">
+        <button type="button" className={btn} onClick={() => scrollBy(1)} disabled={atEnd} aria-label={`Next ${itemNoun}`}>
           <ChevronRight aria-hidden size={20} />
         </button>
       </div>
