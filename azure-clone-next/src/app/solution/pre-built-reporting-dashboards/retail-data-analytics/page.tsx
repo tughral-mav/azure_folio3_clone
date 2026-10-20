@@ -116,7 +116,7 @@ const beforeAfter = [
 
 type Dashboard = { name: string; kpis: string; users: string; sources: string; img?: string; Icon: LucideIcon };
 
-/** The seven dashboards in the retail pack. A real Folio3 Power BI screenshot where one matches; an icon tile otherwise. */
+/** The seven dashboards in the retail pack, each shown with the closest real Folio3 Power BI screenshot (sample data). */
 const dashboards: Dashboard[] = [
   {
     name: 'Retail Sales Overview',
@@ -131,6 +131,7 @@ const dashboards: Dashboard[] = [
     kpis: 'Sales per store and per square foot, conversion, average transaction value, basket size, top and bottom stores, staff sales',
     users: 'Regional and store managers',
     sources: 'POS, workforce/scheduling',
+    img: `${IMG}/marketing-campaign-growth-dashboard-power-bi.webp`,
     Icon: Store,
   },
   {
@@ -146,6 +147,7 @@ const dashboards: Dashboard[] = [
     kpis: 'Category contribution, margin mix, price-band analysis, new-product tracking, markdown impact',
     users: 'Merchandising, buying',
     sources: 'ERP, POS',
+    img: `${IMG}/ecommerce-retail-sales-dashboard-power-bi.webp`,
     Icon: ShoppingBasket,
   },
   {
@@ -153,6 +155,7 @@ const dashboards: Dashboard[] = [
     kpis: 'Repeat-purchase rate, customer lifetime value, basket composition, market-basket affinities, loyalty segment performance',
     users: 'Marketing, CRM',
     sources: 'POS, e-commerce, loyalty/CRM',
+    img: `${IMG}/executive-summary-dashboard-power-bi.webp`,
     Icon: Users,
   },
   {
@@ -656,12 +659,12 @@ export default function RetailDataAnalyticsPage() {
           </SectionHead>
           <div className="mx-auto mt-10 max-w-6xl">
             <DashboardScroller label="Retail reporting dashboards included in the Folio3 retail pack">
-              {dashboards.map((d, i) => (
+              {dashboards.map((d) => (
                 <li
                   key={d.name}
                   className="flex w-[85%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-surface-line bg-white shadow-card sm:w-[340px]"
                 >
-                  <div className="relative border-b border-surface-line bg-surface-tint">
+                  <div className="border-b border-surface-line bg-surface-tint">
                     {d.img ? (
                       <Image
                         src={d.img}
@@ -676,9 +679,6 @@ export default function RetailDataAnalyticsPage() {
                         <d.Icon aria-hidden size={44} strokeWidth={1.6} className="text-brand" />
                       </span>
                     )}
-                    <span className="absolute left-3 top-3 rounded-full bg-brand px-2.5 py-1 text-[11px] font-bold text-white">
-                      {String(i + 1).padStart(2, '0')} / {String(dashboards.length).padStart(2, '0')}
-                    </span>
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h3 className="text-xl font-semibold text-ink">{d.name}</h3>
@@ -1096,25 +1096,7 @@ export default function RetailDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* 15. FAQ (answers stay in the DOM so crawlers and LLMs can read them) */}
-      <section className="py-16 lg:py-24">
-        <div className="container-x">
-          <SectionHead eyebrow="FAQs" title="Frequently Asked Questions" />
-          <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
-            {faqs.map((f, i) => (
-              <details key={f.q} open={i === 0} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
-                  <h3 className="text-base font-semibold text-ink">{f.q}</h3>
-                  <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
-                </summary>
-                <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 16. Final CTA */}
+      {/* 15. CTA banner */}
       <section className="relative overflow-hidden bg-[linear-gradient(120deg,#143CD5_0%,#1742E7_55%,#2F69F2_100%)] py-16 lg:py-20">
         <div className="container-x relative text-center">
           <Reveal animation="fadeInUp">
@@ -1138,6 +1120,24 @@ export default function RetailDataAnalyticsPage() {
               </Link>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* 16. FAQ (answers stay in the DOM so crawlers and LLMs can read them) */}
+      <section className="py-16 lg:py-24">
+        <div className="container-x">
+          <SectionHead eyebrow="FAQs" title="Frequently Asked Questions" />
+          <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-line rounded-2xl border border-surface-line bg-white shadow-card">
+            {faqs.map((f, i) => (
+              <details key={f.q} open={i === 0} className="group">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left">
+                  <h3 className="text-base font-semibold text-ink">{f.q}</h3>
+                  <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
