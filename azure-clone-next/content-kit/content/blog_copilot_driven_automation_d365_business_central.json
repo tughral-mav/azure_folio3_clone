@@ -1,0 +1,222 @@
+{
+ "url": "https://azure.folio3.com/blog/copilot-driven-automation-d365-business-central/",
+ "capturedRobust": true,
+ "meta": {
+  "title": "Copilot-Driven Automation: Transforming Processes in D365 BC",
+  "description": "See how Copilot in Business Central automates finance, sales, and supply chain processes in D365 BC, plus Sales Order Agent, Copilot Studio, and Azure AI tie-ins.",
+  "seoTitle": "Copilot in Business Central: D365 Automation",
+  "seoDescription": "See how Copilot in Business Central automates finance, sales, and supply chain processes in D365 BC, plus Sales Order Agent, Copilot Studio, and Azure AI.",
+  "canonical": "https://azure.folio3.com/blog/copilot-driven-automation-d365-business-central/",
+  "ogImage": "https://azure.folio3.com/wp-content/uploads/2026/10/copilot-driven-automation-d365-business-central.jpg",
+  "h1Count": 1
+ },
+ "sections": [
+  {
+   "headings": [
+    {
+     "tag": "h1",
+     "text": "Copilot-Driven Automation: Transforming Processes in D365 BC"
+    },
+    {
+     "tag": "h2",
+     "text": "What is Copilot in Business Central?"
+    },
+    {
+     "tag": "h2",
+     "text": "Why Copilot-driven automation matters inside D365 BC"
+    },
+    {
+     "tag": "h2",
+     "text": "The Copilot in Business Central feature set, mapped to the processes it automates"
+    },
+    {
+     "tag": "h3",
+     "text": "Finance and Record-to-Report"
+    },
+    {
+     "tag": "h3",
+     "text": "Sales and Quote-to-Cash"
+    },
+    {
+     "tag": "h3",
+     "text": "Procurement and Procure-to-Pay"
+    },
+    {
+     "tag": "h3",
+     "text": "Supply chain and inventory"
+    },
+    {
+     "tag": "h3",
+     "text": "Cross-process: autofill, summarize, and chat"
+    },
+    {
+     "tag": "h2",
+     "text": "The agent era: where Copilot in Business Central is heading"
+    },
+    {
+     "tag": "h2",
+     "text": "Where Copilot in Business Central meets Azure AI"
+    },
+    {
+     "tag": "h2",
+     "text": "Business impact: what Copilot in BC actually moves"
+    },
+    {
+     "tag": "h2",
+     "text": "Getting started with Copilot in Business Central"
+    },
+    {
+     "tag": "h2",
+     "text": "Where Folio3 fits"
+    },
+    {
+     "tag": "h2",
+     "text": "Common questions about Copilot in Business Central (FAQ)"
+    },
+    {
+     "tag": "h3",
+     "text": "Is Copilot in Business Central free?"
+    },
+    {
+     "tag": "h3",
+     "text": "Does Copilot in Business Central work on-premises?"
+    },
+    {
+     "tag": "h3",
+     "text": "Is my data used to train the AI models?"
+    },
+    {
+     "tag": "h3",
+     "text": "Can Copilot in BC see my Microsoft 365 data?"
+    },
+    {
+     "tag": "h3",
+     "text": "What are Business Central agents?"
+    },
+    {
+     "tag": "h3",
+     "text": "Can partners extend Copilot?"
+    }
+   ],
+   "paragraphs": [
+    "According to recent survey data, over 30,000 small to medium-sized businesses in 2025 rely on Dynamics 365 Business Central for finance, sales, and operations, and nearly 93% of them are already using it to report revenue growth. That installed base is now the launchpad for the biggest shift in SMB ERP in a decade: Copilot in Business Central is turning D365 BC from a passive system of record into an active, conversational operating layer that automates work across the entire process map.",
+    "This guide walks through what Copilot in Business Central actually does, which processes it transforms end to end, how the new agent layer (Sales Order Agent, Payables Agent, Copilot Studio) changes the ceiling of what you can automate, and how it ties back into the broader Azure AI stack you may already be running.",
+    "Copilot in Business Central is Microsoft’s AI-powered assistant built directly into Dynamics 365 Business Central, designed to automate routine tasks, surface insights, and let users interact with ERP data using natural language. Since the 2023 Wave 2 release, it has been integrated into Business Central, is available exclusively in Business Central online environments, leverages natural language processing to understand user queries, and includes a growing set of features tailored to different roles and tasks.",
+    "Three facts worth stating up front, because they drive almost every ROI question that follows:",
+    "For a deeper look at how Microsoft’s AI stack layers on top of your data estate, our breakdown of Microsoft Fabric’s features, capabilities, and strategic insights explains the data foundation Copilot ultimately relies on.",
+    "Most “AI in ERP” conversations stall at feature tours, autofill, summaries, marketing text. That framing undersells what’s actually happening. Copilot’s real impact in Business Central isn’t that it adds buttons; it’s that it collapses entire multi-step processes into a single prompt, and now, with the agent layer, into a background workflow that runs without a human in the loop.",
+    "Three structural shifts are driving the change:",
+    "Rather than another feature list, here is what each capability actually replaces in an SMB operating model.",
+    "Microsoft Copilot in Business Central automates reconciliation, accelerates reporting, and unlocks real-time financial insights. In practice:",
+    "For teams that need to push these finance signals outward to downstream reporting, our automated data reporting practice connects BC’s Copilot outputs to the dashboards your leadership team actually opens.",
+    "Sales users spend disproportionate time keying order lines, searching the catalog, and reconciling emailed POs. Copilot in Business Central compresses that work:",
+    "This is where the agent layer bites hardest. The Payables Agent handles vendor invoice intake, matching, and posting preparation. Autofill with Copilot speeds routine data entry, and chat with Copilot lets purchasers ask questions like “what did we pay this vendor last quarter?” without building a report.",
+    "Demand forecasting, late-order detection, and item substitution suggestions all surface inside the same Copilot interface rather than as separate add-ons.",
+    "Three horizontal features touch every module:",
+    "Most content in this space still describes Copilot v1. The real 2026 story is the agent layer.",
+    "Microsoft is publishing guidance for Business Central partners on how agents are designed, built, governed, and deployed, demonstrating practical AI automation scenarios, and positioning Business Central as a platform for improving productivity and business processes with AI. The underlying mechanics that make this work are new:",
+    "The bottom line: Copilot in Business Central is no longer only an in-app assistant. It is the user-facing surface of an agent fabric that extends across BC, Microsoft 365, and the broader Azure stack.",
+    "The feature that most SMB-focused posts leave out is the Azure layer underneath. Copilot in BC is powered by Azure OpenAI Service, which means two important things:",
+    "This Azure-layer story is the differentiator most Dynamics-partner blogs miss, and it’s where process automation inside BC meets the broader AI roadmap your IT leadership is already building.",
+    "The value of Microsoft Copilot in Dynamics 365 Business Central is not confined to a single department; it ripples across every function, compounding into tangible gains for the entire organization. In addition to automation, Copilot adds precision and consistency, providing finance teams more confidence in their numbers and more time for strategic analysis. By simplifying processes such as order fulfillment and content creation, Copilot enables you to bring products to market faster and respond to shifting demands with greater agility.",
+    "The practical outcomes we see across Folio3 implementations:",
+    "If you want to see pattern examples across industries before scoping your own build, Folio3’s library of ready-to-deploy Microsoft Copilot services is organized by business function so you can start from a known pattern.",
+    "A short, honest sequence that avoids the “turn it on and see” trap most teams fall into.",
+    "For enterprises moving from “Copilot is on” to “Copilot runs these processes,” Folio3’s catalog of pre-built AI agents on Azure shortcuts the Copilot Studio build phase.",
+    "Folio3 is a Microsoft Solutions Partner working across the Azure AI, Power Platform, and Dynamics 365 Business Central stack. For teams planning Copilot-driven automation inside D365 BC, our work usually covers three layers:",
+    "Book a 30-minute discovery call with an Azure engineer and we’ll walk through which processes in your BC environment are the shortest path to Copilot-driven ROI.",
+    "Currently, Copilot in Business Central is included with your Business Central licence at no extra cost. Extended scenarios that build on Azure OpenAI Service (custom agents, grounding on your own documents) consume separate Azure resources.",
+    "No. Copilot is exclusive to Business Central online.",
+    "No. Business data is not used to train the underlying language model, and all Copilot interactions respect existing role-based access and security settings within Dynamics 365.",
+    "Currently, there’s no direct connection between Copilot in Business Central and Microsoft 365 Copilot. Copilot features inside Business Central are unaware of your Microsoft 365 data. Microsoft 365 Copilot, in the other direction, can read Business Central data.",
+    "Business Central ships agents including the Sales Order Agent and Payables Agent, which run in the background to automate transactional work. Custom agents can be built in Copilot Studio against Business Central through the MCP Server for BC.",
+    "Partners can extend Copilot using Business Central’s development platform by registering new capabilities through the AI module."
+   ],
+   "listItems": [
+    "It is included in your BC license. Copilot is currently included with Business Central licenses at no additional cost.",
+    "It is online-only. It works exclusively with Business Central online, it isn’t available for on-premises or private cloud deployments.",
+    "It respects your existing security model. Copilot adheres to Business Central’s existing security model, and access to Copilot features is governed by standard Business Central permission sets.",
+    "Natural language replaces navigation. Users describe outcomes; Copilot executes against the right pages, tables, and extensions.",
+    "AI runs inside the flow of work. Copilot lives on the pages your team already uses, vendor records, sales orders, bank reconciliations, not in a separate tool.",
+    "Agents move from assistive to autonomous. Business Central now ships Sales Order Agent and Payables Agent overviews, meaning entire transactional loops can run with human-in-the-loop oversight instead of human-in-the-loop execution.",
+    "Bank account reconciliation: Copilot matches imported bank statement lines to ledger entries by comparing descriptions, amounts, dates, and patterns, cutting the volume of unmatched transactions that need manual review.",
+    "Analysis assist: Finance users ask questions of ledger and sub-ledger data in natural language and get grouped, filtered results back without building a view from scratch.",
+    "Narrative drafting: Period commentary, variance notes, and executive summaries are drafted from the underlying numbers instead of written cold.",
+    "Sales line suggestions: Copilot proposes line items based on historical patterns, substitutes, and current availability.",
+    "Marketing text generation: Product descriptions for new SKUs are drafted from attributes, which is especially useful for teams rolling out online storefronts.",
+    "Sales Order Agent: The Sales Order Agent is an AI-powered tool that runs in the background and utilizes AI to help make decisions faster and easier. It can read inbound customer order emails, resolve customer and item records, draft a sales order inside BC, and queue it for a human to approve.",
+    "Autofill with Copilot: automatically fills fields without extra searching; pulls information from online and from data within your system to make suggestions, and consolidates all suggestions in one panel.",
+    "Summarize with Copilot: a Summary box appears on document pages so you can learn the most important details quickly.",
+    "Chat with Copilot: natural-language questions against your BC data, with answers grounded in records you have permission to see.",
+    "MCP Server for Business Central: A new MCP Server for Business Central lets partners create custom agents in Microsoft Copilot Studio that connect directly to Business Central and access advanced capabilities. This is the integration surface that turns BC into an addressable backend for any Copilot Studio agent.",
+    "Copilot Studio for BC: low-code agent builder that reads from and writes to Business Central through governed connectors. For a hands-on walkthrough, our team’s deep-dive on creating a custom agent in Microsoft Copilot Studio for Business Central covers the end-to-end build.",
+    "Industry agents: ready-to-deploy agents for finance, HR, supply chain, and sustainability. Folio3’s Copilot Agent Library catalogs pre-built scenarios so teams don’t start from a blank Copilot Studio canvas.",
+    "Your data is not used to train the underlying model. Business data is not used to train the underlying language model, and all Copilot interactions respect existing role-based access and security settings within Dynamics 365.",
+    "You can extend Copilot with the same Azure services you already govern. Azure AI Search, Azure Functions, Logic Apps, and Microsoft Fabric all plug into Copilot Studio agents built against BC. If Fabric is new to your data team, the features, benefits and use cases of Microsoft Fabric explain how OneLake and Fabric’s AI capabilities fit alongside Business Central’s Copilot. For enterprises standing up Fabric as the analytics backbone for ERP-driven AI, our Microsoft Fabric services covers assessment through deployment.",
+    "Finance: faster monthly close, fewer unmatched bank lines, higher confidence in reported numbers.",
+    "Sales: shorter quote-to-order cycles, fewer rekey errors, higher sales rep throughput.",
+    "Procurement: automated invoice intake, cleaner three-way matching, fewer late payments.",
+    "IT / Admin: smaller training burden for new BC users and fewer tickets for “how do I find X in BC?”",
+    "Confirm you are on BC online. On-premises and private cloud don’t qualify.",
+    "Open the Copilot & agent capabilities page. Press Alt + Q, search for “Copilot & agent capabilities,” and review which features are Generally Available vs. Preview in your region.",
+    "Check Azure region vs. OpenAI endpoint. If your BC environment is in a region whose Azure OpenAI endpoint sits elsewhere, you’ll be prompted to allow data movement across geographies.",
+    "Grant permissions deliberately. Copilot access is governed by standard BC permission sets; grant per role, not per user.",
+    "Decide where agents fit. Start with one process: Sales Order Agent for inbound email orders is a common first use case, before building custom agents in Copilot Studio.",
+    "Plan the Azure extension layer. If you expect to extend Copilot (custom skills, grounding on your docs, cross-system actions), pre-scope the Azure OpenAI Service, Azure AI Search, and connector work.",
+    "BC + Copilot activation: enabling the right Copilot features for your role mix, aligned with permissions, data residency, and preview-vs-GA risk.",
+    "Agent builds on Copilot Studio: custom agents against Business Central using the MCP Server for BC, grounded in your docs and connected to Azure OpenAI.",
+    "Azure AI + data layer: Fabric for the analytical surface, Azure OpenAI for custom models, and governed pipelines so agents act on fresh, trustworthy data."
+   ],
+   "ctas": [],
+   "images": []
+  }
+ ],
+ "images": [
+  {
+   "src": "https://azure.folio3.com/wp-content/uploads/2026/10/copilot-driven-automation-d365-business-central.jpg",
+   "alt": "Copilot-Driven Automation: Transforming Processes in D365 BC"
+  }
+ ],
+ "bgImages": [],
+ "bodyHtml": "<p>According to recent survey data, over 30,000 small to medium-sized businesses in 2025 rely on Dynamics 365 Business Central for finance, sales, and operations, and nearly 93% of them are already using it to report revenue growth. That installed base is now the launchpad for the biggest shift in SMB ERP in a decade: Copilot in Business Central is turning D365 BC from a passive system of record into an active, conversational operating layer that automates work across the entire process map.</p>\n<p>This guide walks through what Copilot in Business Central actually does, which processes it transforms end to end, how the new agent layer (Sales Order Agent, Payables Agent, Copilot Studio) changes the ceiling of what you can automate, and how it ties back into the broader Azure AI stack you may already be running.</p>\n<div id=\"ez-toc-container\" class=\"ez-toc-v2_0_82_2 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction\"><div class=\"ez-toc-title-container\"><p class=\"ez-toc-title\">Table of Contents</p><span class=\"ez-toc-title-toggle\"><a href=\"#\" class=\"ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle\" aria-label=\"Toggle Table of Content\"></a></span></div><nav><ul class=\"ez-toc-list ez-toc-list-level-1 \"><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-1\" href=\"#What_is_Copilot_in_Business_Central\">What is Copilot in Business Central?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-2\" href=\"#Why_Copilot-driven_automation_matters_inside_D365_BC\">Why Copilot-driven automation matters inside D365 BC</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-3\" href=\"#The_Copilot_in_Business_Central_feature_set_mapped_to_the_processes_it_automates\">The Copilot in Business Central feature set, mapped to the processes it automates</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-4\" href=\"#Finance_and_Record-to-Report\">Finance and Record-to-Report</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-5\" href=\"#Sales_and_Quote-to-Cash\">Sales and Quote-to-Cash</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-6\" href=\"#Procurement_and_Procure-to-Pay\">Procurement and Procure-to-Pay</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-7\" href=\"#Supply_chain_and_inventory\">Supply chain and inventory</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-8\" href=\"#Cross-process_autofill_summarize_and_chat\">Cross-process: autofill, summarize, and chat</a></li></ul></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-9\" href=\"#The_agent_era_where_Copilot_in_Business_Central_is_heading\">The agent era: where Copilot in Business Central is heading</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-10\" href=\"#Where_Copilot_in_Business_Central_meets_Azure_AI\">Where Copilot in Business Central meets Azure AI</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-11\" href=\"#Business_impact_what_Copilot_in_BC_actually_moves\">Business impact: what Copilot in BC actually moves</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-12\" href=\"#Getting_started_with_Copilot_in_Business_Central\">Getting started with Copilot in Business Central</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-13\" href=\"#Where_Folio3_fits\">Where Folio3 fits</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-2\"><a class=\"ez-toc-link ez-toc-heading-14\" href=\"#Common_questions_about_Copilot_in_Business_Central_FAQ\">Common questions about Copilot in Business Central (FAQ)</a><ul class=\"ez-toc-list-level-3\"><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-15\" href=\"#Is_Copilot_in_Business_Central_free\">Is Copilot in Business Central free?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-16\" href=\"#Does_Copilot_in_Business_Central_work_on-premises\">Does Copilot in Business Central work on-premises?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-17\" href=\"#Is_my_data_used_to_train_the_AI_models\">Is my data used to train the AI models?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-18\" href=\"#Can_Copilot_in_BC_see_my_Microsoft_365_data\">Can Copilot in BC see my Microsoft 365 data?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-19\" href=\"#What_are_Business_Central_agents\">What are Business Central agents?</a></li><li class=\"ez-toc-page-1 ez-toc-heading-level-3\"><a class=\"ez-toc-link ez-toc-heading-20\" href=\"#Can_partners_extend_Copilot\">Can partners extend Copilot?</a></li></ul></li></ul></nav></div>\n<h2><span class=\"ez-toc-section\" id=\"What_is_Copilot_in_Business_Central\"></span>What is Copilot in Business Central?<span class=\"ez-toc-section-end\"></span></h2>\n<p>Copilot in Business Central is Microsoft&#8217;s AI-powered assistant built directly into Dynamics 365 Business Central, designed to automate routine tasks, surface insights, and let users interact with ERP data using natural language. Since the 2023 Wave 2 release, it has been integrated into Business Central, is available exclusively in Business Central online environments, leverages natural language processing to understand user queries, and includes a growing set of features tailored to different roles and tasks.</p>\n<p>Three facts worth stating up front, because they drive almost every ROI question that follows:</p>\n<ul><li><strong>It is included in your BC license.</strong> Copilot is currently included with Business Central licenses at no additional cost.</li><li><strong>It is online-only.</strong> It works exclusively with Business Central online, it isn&#8217;t available for on-premises or private cloud deployments.</li><li><strong>It respects your existing security model.</strong> Copilot adheres to Business Central&#8217;s existing security model, and access to Copilot features is governed by standard Business Central permission sets.</li></ul>\n<p>For a deeper look at how Microsoft&#8217;s AI stack layers on top of your data estate, our breakdown of <a href=\"https://azure.folio3.com/blog/what-is-microsoft-fabric/\">Microsoft Fabric&#8217;s features, capabilities, and strategic insights</a> explains the data foundation Copilot ultimately relies on.</p>\n<h2><span class=\"ez-toc-section\" id=\"Why_Copilot-driven_automation_matters_inside_D365_BC\"></span>Why Copilot-driven automation matters inside D365 BC<span class=\"ez-toc-section-end\"></span></h2>\n<p>Most &#8220;AI in ERP&#8221; conversations stall at feature tours, autofill, summaries, marketing text. That framing undersells what&#8217;s actually happening. Copilot&#8217;s real impact in Business Central isn&#8217;t that it adds buttons; it&#8217;s that it collapses entire multi-step processes into a single prompt, and now, with the agent layer, into a background workflow that runs without a human in the loop.</p>\n<p>Three structural shifts are driving the change:</p>\n<ol><li><strong>Natural language replaces navigation.</strong> Users describe outcomes; Copilot executes against the right pages, tables, and extensions.</li><li><strong>AI runs inside the flow of work.</strong> Copilot lives on the pages your team already uses, vendor records, sales orders, bank reconciliations, not in a separate tool.</li><li><strong>Agents move from assistive to autonomous.</strong> Business Central now ships Sales Order Agent and Payables Agent overviews, meaning entire transactional loops can run with human-in-the-loop oversight instead of human-in-the-loop execution.</li></ol>\n<h2><span class=\"ez-toc-section\" id=\"The_Copilot_in_Business_Central_feature_set_mapped_to_the_processes_it_automates\"></span>The Copilot in Business Central feature set, mapped to the processes it automates<span class=\"ez-toc-section-end\"></span></h2>\n<p>Rather than another feature list, here is what each capability actually replaces in an SMB operating model.</p>\n<h3><span class=\"ez-toc-section\" id=\"Finance_and_Record-to-Report\"></span>Finance and Record-to-Report<span class=\"ez-toc-section-end\"></span></h3>\n<p>Microsoft Copilot in Business Central automates reconciliation, accelerates reporting, and unlocks real-time financial insights. In practice:</p>\n<ul><li><strong>Bank account reconciliation</strong>: Copilot matches imported bank statement lines to ledger entries by comparing descriptions, amounts, dates, and patterns, cutting the volume of unmatched transactions that need manual review.</li><li><strong>Analysis assist</strong>: Finance users ask questions of ledger and sub-ledger data in natural language and get grouped, filtered results back without building a view from scratch.</li><li><strong>Narrative drafting</strong>: Period commentary, variance notes, and executive summaries are drafted from the underlying numbers instead of written cold.</li></ul>\n<p>For teams that need to push these finance signals outward to downstream reporting, our <a href=\"https://azure.folio3.com/automated-data-reporting/\">automated data reporting</a> practice connects BC&#8217;s Copilot outputs to the dashboards your leadership team actually opens.</p>\n<h3><span class=\"ez-toc-section\" id=\"Sales_and_Quote-to-Cash\"></span>Sales and Quote-to-Cash<span class=\"ez-toc-section-end\"></span></h3>\n<p>Sales users spend disproportionate time keying order lines, searching the catalog, and reconciling emailed POs. Copilot in Business Central compresses that work:</p>\n<ul><li><strong>Sales line suggestions</strong>: Copilot proposes line items based on historical patterns, substitutes, and current availability.</li><li><strong>Marketing text generation</strong>: Product descriptions for new SKUs are drafted from attributes, which is especially useful for teams rolling out online storefronts.</li><li><strong>Sales Order Agent</strong>: The Sales Order Agent is an AI-powered tool that runs in the background and utilizes AI to help make decisions faster and easier. It can read inbound customer order emails, resolve customer and item records, draft a sales order inside BC, and queue it for a human to approve.</li></ul>\n<h3><span class=\"ez-toc-section\" id=\"Procurement_and_Procure-to-Pay\"></span>Procurement and Procure-to-Pay<span class=\"ez-toc-section-end\"></span></h3>\n<p>This is where the agent layer bites hardest. The Payables Agent handles vendor invoice intake, matching, and posting preparation. Autofill with Copilot speeds routine data entry, and chat with Copilot lets purchasers ask questions like &#8220;what did we pay this vendor last quarter?&#8221; without building a report.</p>\n<h3><span class=\"ez-toc-section\" id=\"Supply_chain_and_inventory\"></span>Supply chain and inventory<span class=\"ez-toc-section-end\"></span></h3>\n<p>Demand forecasting, late-order detection, and item substitution suggestions all surface inside the same Copilot interface rather than as separate add-ons.</p>\n<h3><span class=\"ez-toc-section\" id=\"Cross-process_autofill_summarize_and_chat\"></span>Cross-process: autofill, summarize, and chat<span class=\"ez-toc-section-end\"></span></h3>\n<p>Three horizontal features touch every module:</p>\n<ul><li><strong>Autofill with Copilot</strong>: automatically fills fields without extra searching; pulls information from online and from data within your system to make suggestions, and consolidates all suggestions in one panel.</li><li><strong>Summarize with Copilot</strong>: a Summary box appears on document pages so you can learn the most important details quickly.</li><li><strong>Chat with Copilot</strong>: natural-language questions against your BC data, with answers grounded in records you have permission to see.</li></ul>\n<h2><span class=\"ez-toc-section\" id=\"The_agent_era_where_Copilot_in_Business_Central_is_heading\"></span>The agent era: where Copilot in Business Central is heading<span class=\"ez-toc-section-end\"></span></h2>\n<p>Most content in this space still describes Copilot v1. The real 2026 story is the agent layer.</p>\n<p>Microsoft is publishing guidance for Business Central partners on how agents are designed, built, governed, and deployed, demonstrating practical AI automation scenarios, and positioning Business Central as a platform for improving productivity and business processes with AI. The underlying mechanics that make this work are new:</p>\n<ul><li><strong>MCP Server for Business Central</strong>: A new MCP Server for Business Central lets partners create custom agents in Microsoft Copilot Studio that connect directly to Business Central and access advanced capabilities. This is the integration surface that turns BC into an addressable backend for any Copilot Studio agent.</li><li><strong>Copilot Studio for BC</strong>: low-code agent builder that reads from and writes to Business Central through governed connectors. For a hands-on walkthrough, our team&#8217;s deep-dive on <a href=\"https://dynamics.folio3.com/blog/creating-a-custom-agent-in-microsoft-copilot-studio-for-business-central/\">creating a custom agent in Microsoft Copilot Studio for Business Central</a> covers the end-to-end build.</li><li><strong>Industry agents</strong>: ready-to-deploy agents for finance, HR, supply chain, and sustainability. Folio3&#8217;s <a href=\"https://azure.folio3.com/ai-scenario-library/\">Copilot Agent Library</a> catalogs pre-built scenarios so teams don&#8217;t start from a blank Copilot Studio canvas.</li></ul>\n<p>The bottom line: Copilot in Business Central is no longer only an in-app assistant. It is the user-facing surface of an agent fabric that extends across BC, Microsoft 365, and the broader Azure stack.</p>\n<h2><span class=\"ez-toc-section\" id=\"Where_Copilot_in_Business_Central_meets_Azure_AI\"></span>Where Copilot in Business Central meets Azure AI<span class=\"ez-toc-section-end\"></span></h2>\n<p>The feature that most SMB-focused posts leave out is the Azure layer underneath. Copilot in BC is powered by Azure OpenAI Service, which means two important things:</p>\n<ol><li><strong>Your data is not used to train the underlying model.</strong> Business data is not used to train the underlying language model, and all Copilot interactions respect existing role-based access and security settings within Dynamics 365.</li><li><strong>You can extend Copilot with the same Azure services you already govern.</strong> Azure AI Search, Azure Functions, Logic Apps, and Microsoft Fabric all plug into Copilot Studio agents built against BC. If Fabric is new to your data team, the <a href=\"https://azure.folio3.com/blog/what-is-microsoft-fabric-features-benefits-use-cases/\">features, benefits and use cases of Microsoft Fabric</a> explain how OneLake and Fabric&#8217;s AI capabilities fit alongside Business Central&#8217;s Copilot. For enterprises standing up Fabric as the analytics backbone for ERP-driven AI, our <a href=\"https://azure.folio3.com/microsoft-fabric-services/\">Microsoft Fabric services</a> covers assessment through deployment.</li></ol>\n<p>This Azure-layer story is the differentiator most Dynamics-partner blogs miss, and it&#8217;s where process automation inside BC meets the broader AI roadmap your IT leadership is already building.</p>\n<h2><span class=\"ez-toc-section\" id=\"Business_impact_what_Copilot_in_BC_actually_moves\"></span>Business impact: what Copilot in BC actually moves<span class=\"ez-toc-section-end\"></span></h2>\n<p>The value of Microsoft Copilot in Dynamics 365 Business Central is not confined to a single department; it ripples across every function, compounding into tangible gains for the entire organization. In addition to automation, Copilot adds precision and consistency, providing finance teams more confidence in their numbers and more time for strategic analysis. By simplifying processes such as order fulfillment and content creation, Copilot enables you to bring products to market faster and respond to shifting demands with greater agility.</p>\n<p>The practical outcomes we see across Folio3 implementations:</p>\n<ul><li><strong>Finance</strong>: faster monthly close, fewer unmatched bank lines, higher confidence in reported numbers.</li><li><strong>Sales</strong>: shorter quote-to-order cycles, fewer rekey errors, higher sales rep throughput.</li><li><strong>Procurement</strong>: automated invoice intake, cleaner three-way matching, fewer late payments.</li><li><strong>IT / Admin</strong>: smaller training burden for new BC users and fewer tickets for &#8220;how do I find X in BC?&#8221;</li></ul>\n<p>If you want to see pattern examples across industries before scoping your own build, Folio3&#8217;s library of ready-to-deploy <a href=\"https://azure.folio3.com/copilotsolutions/\">Microsoft Copilot services</a> is organized by business function so you can start from a known pattern.</p>\n<h2><span class=\"ez-toc-section\" id=\"Getting_started_with_Copilot_in_Business_Central\"></span>Getting started with Copilot in Business Central<span class=\"ez-toc-section-end\"></span></h2>\n<p>A short, honest sequence that avoids the &#8220;turn it on and see&#8221; trap most teams fall into.</p>\n<ol><li><strong>Confirm you are on BC online.</strong> On-premises and private cloud don&#8217;t qualify.</li><li><strong>Open the Copilot &amp; agent capabilities page.</strong> Press Alt + Q, search for &#8220;Copilot &amp; agent capabilities,&#8221; and review which features are Generally Available vs. Preview in your region.</li><li><strong>Check Azure region vs. OpenAI endpoint.</strong> If your BC environment is in a region whose Azure OpenAI endpoint sits elsewhere, you&#8217;ll be prompted to allow data movement across geographies.</li><li><strong>Grant permissions deliberately.</strong> Copilot access is governed by standard BC permission sets; grant per role, not per user.</li><li><strong>Decide where agents fit.</strong> Start with one process: Sales Order Agent for inbound email orders is a common first use case, before building custom agents in Copilot Studio.</li><li><strong>Plan the Azure extension layer.</strong> If you expect to extend Copilot (custom skills, grounding on your docs, cross-system actions), pre-scope the Azure OpenAI Service, Azure AI Search, and connector work.</li></ol>\n<p>For enterprises moving from &#8220;Copilot is on&#8221; to &#8220;Copilot runs these processes,&#8221; Folio3&#8217;s catalog of pre-built <a href=\"https://azure.folio3.com/ai-agents/\">AI agents on Azure</a> shortcuts the Copilot Studio build phase.</p>\n<h2><span class=\"ez-toc-section\" id=\"Where_Folio3_fits\"></span>Where Folio3 fits<span class=\"ez-toc-section-end\"></span></h2>\n<p>Folio3 is a Microsoft Solutions Partner working across the Azure AI, Power Platform, and Dynamics 365 Business Central stack. For teams planning Copilot-driven automation inside D365 BC, our work usually covers three layers:</p>\n<ul><li><strong>BC + Copilot activation</strong>: enabling the right Copilot features for your role mix, aligned with permissions, data residency, and preview-vs-GA risk.</li><li><strong>Agent builds on Copilot Studio</strong>: custom agents against Business Central using the MCP Server for BC, grounded in your docs and connected to Azure OpenAI.</li><li><strong>Azure AI + data layer</strong>: Fabric for the analytical surface, Azure OpenAI for custom models, and governed pipelines so agents act on fresh, trustworthy data.</li></ul>\n<p><a href=\"https://azure.folio3.com/contact-us/\"><strong>Book a 30-minute discovery call with an Azure engineer</strong></a> and we&#8217;ll walk through which processes in your BC environment are the shortest path to Copilot-driven ROI.</p>\n<h2><span class=\"ez-toc-section\" id=\"Common_questions_about_Copilot_in_Business_Central_FAQ\"></span>Common questions about Copilot in Business Central (FAQ)<span class=\"ez-toc-section-end\"></span></h2>\n<h3><span class=\"ez-toc-section\" id=\"Is_Copilot_in_Business_Central_free\"></span>Is Copilot in Business Central free?<span class=\"ez-toc-section-end\"></span></h3>\n<p>Currently, Copilot in Business Central is included with your Business Central licence at no extra cost. Extended scenarios that build on Azure OpenAI Service (custom agents, grounding on your own documents) consume separate Azure resources.</p>\n<h3><span class=\"ez-toc-section\" id=\"Does_Copilot_in_Business_Central_work_on-premises\"></span>Does Copilot in Business Central work on-premises?<span class=\"ez-toc-section-end\"></span></h3>\n<p>No. Copilot is exclusive to Business Central online.</p>\n<h3><span class=\"ez-toc-section\" id=\"Is_my_data_used_to_train_the_AI_models\"></span>Is my data used to train the AI models?<span class=\"ez-toc-section-end\"></span></h3>\n<p>No. Business data is not used to train the underlying language model, and all Copilot interactions respect existing role-based access and security settings within Dynamics 365.</p>\n<h3><span class=\"ez-toc-section\" id=\"Can_Copilot_in_BC_see_my_Microsoft_365_data\"></span>Can Copilot in BC see my Microsoft 365 data?<span class=\"ez-toc-section-end\"></span></h3>\n<p>Currently, there&#8217;s no direct connection between Copilot in Business Central and Microsoft 365 Copilot. Copilot features inside Business Central are unaware of your Microsoft 365 data. Microsoft 365 Copilot, in the other direction, can read Business Central data.</p>\n<h3><span class=\"ez-toc-section\" id=\"What_are_Business_Central_agents\"></span>What are Business Central agents?<span class=\"ez-toc-section-end\"></span></h3>\n<p>Business Central ships agents including the Sales Order Agent and Payables Agent, which run in the background to automate transactional work. Custom agents can be built in Copilot Studio against Business Central through the MCP Server for BC.</p>\n<h3><span class=\"ez-toc-section\" id=\"Can_partners_extend_Copilot\"></span>Can partners extend Copilot?<span class=\"ez-toc-section-end\"></span></h3>\n<p>Partners can extend Copilot using Business Central&#8217;s development platform by registering new capabilities through the AI module.</p>",
+ "faq": [
+  {
+   "q": "Is Copilot in Business Central free?",
+   "a": "Copilot in Business Central is included with your Business Central license at no extra cost. Extended scenarios that build on Azure OpenAI Service, such as custom agents or grounding on your own documents, consume separate Azure resources."
+  },
+  {
+   "q": "Does Copilot in Business Central work on-premises?",
+   "a": "No. Copilot is exclusive to Business Central online and is not available for on-premises or private cloud deployments."
+  },
+  {
+   "q": "Is my data used to train the AI models?",
+   "a": "No. Business data is not used to train the underlying language model, and all Copilot interactions respect existing role-based access and security settings within Dynamics 365."
+  },
+  {
+   "q": "Can Copilot in Business Central see my Microsoft 365 data?",
+   "a": "There is no direct connection between Copilot in Business Central and Microsoft 365 Copilot. Copilot features inside Business Central are unaware of your Microsoft 365 data. Microsoft 365 Copilot, in the other direction, can read Business Central data."
+  },
+  {
+   "q": "What are Business Central agents?",
+   "a": "Business Central ships agents including the Sales Order Agent and Payables Agent, which run in the background to automate transactional work. Custom agents can be built in Copilot Studio against Business Central through the MCP Server for Business Central."
+  },
+  {
+   "q": "Can partners extend Copilot in Business Central?",
+   "a": "Yes. Partners can extend Copilot using Business Central’s development platform by registering new capabilities through the AI module, and can build custom agents in Copilot Studio using the MCP Server for Business Central."
+  }
+ ],
+ "related": [
+  {
+   "title": "",
+   "href": "/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/"
+  },
+  {
+   "title": "",
+   "href": "/blog/microsoft-fabric-erp-reporting/"
+  },
+  {
+   "title": "",
+   "href": "/blog/fabric-implementation-for-business-central-erp/"
+  }
+ ]
+}
