@@ -10,10 +10,10 @@ const IMG = '/wp-content/uploads/2026/09';
 /** Real Folio3 Power BI dashboards (non-healthcare), captioned with what each one actually shows. */
 export const realDashboards: RealDashboard[] = [
   {
-    src: `${IMG}/executive-summary-dashboard-power-bi.webp`,
-    h: 850,
-    title: 'Executive summary dashboard',
-    caption: 'Sales, profit, customers and planning on one page for leadership.',
+    src: `${IMG}/sales-performance-dashboard-power-bi.webp`,
+    h: 913,
+    title: 'Sales performance dashboard',
+    caption: 'Sales vs budget over time, with sales by department, customer, country and salesperson.',
   },
   {
     src: `${IMG}/financial-reporting-dashboard-power-bi.webp`,
