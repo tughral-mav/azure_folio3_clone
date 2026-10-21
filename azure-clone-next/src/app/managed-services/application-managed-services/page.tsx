@@ -528,7 +528,7 @@ export default function ApplicationManagedServicesPage() {
       </section>
 
       {/* FINAL CTA + FORM (id="pgForm") */}
-      <OneToOneCTA tone="light" formTitle="Book a Free Application Health Check" formCopy="We review your apps, Azure set-up and current support model, then recommend a tier and an onboarding plan." />
+      <OneToOneCTA tone="light" />
     </>
   );
 }
