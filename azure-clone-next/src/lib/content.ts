@@ -82,6 +82,8 @@ export type CapturedPage = {
     canonical: string | null;
     ogImage: string | null;
     h1Count: number;
+    datePublished?: string;
+    dateModified?: string;
   };
   sections: CapturedSection[];
   images: { src: string; alt: string | null }[];
@@ -443,6 +445,7 @@ export function getBlogPost(slug: string) {
     bodyHtml?: string;
     faq?: { q: string; a: string }[];
     related?: { title: string; href: string; image?: string }[];
+    faq?: { q: string; a: string }[];
   };
   if ((data as { error?: string }).error) return null;
   const h1 = data.sections.flatMap((s) => s.headings).find((h) => h.tag === 'h1');
@@ -464,6 +467,9 @@ export function getBlogPost(slug: string) {
     seoTitle: data.meta.seoTitle,
     seoDescription: data.meta.seoDescription,
     heroImage,
+    datePublished: data.meta.datePublished,
+    dateModified: data.meta.dateModified,
+    faq: (data.faq ?? []).filter((x) => x && x.q && x.a),
     sections: data.sections,
     body,
     bodyHtml,
