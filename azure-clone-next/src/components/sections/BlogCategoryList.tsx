@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Reveal } from '@/components/ui/Reveal';
 
 export type BlogCard = { slug: string; title: string; description?: string; image?: string };
 export type BlogCat = { label: string; slug: string; posts: string[] };
@@ -23,10 +24,10 @@ export function BlogCategoryList({ posts, categories }: { posts: BlogCard[]; cat
   return (
     <section className="section">
       <div className="container-x">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
+        <Reveal animation="fadeInUp" className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="text-3xl lg:text-4xl">Discover The Essence Of Who We Are?</h2>
           <p className="mt-3 text-body">We believe in the power of the cloud to transform businesses and empower people.</p>
-        </div>
+        </Reveal>
 
         <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
           {/* CATEGORIES sidebar */}
@@ -52,9 +53,9 @@ export function BlogCategoryList({ posts, categories }: { posts: BlogCard[]; cat
           <div>
             {shown.length > 0 ? (
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                {shown.map((p) => (
+                {shown.map((p, i) => (
+                  <Reveal key={p.slug} animation="fadeInUp" delay={Math.min(i, 5) * 60} className="h-full">
                   <Link
-                    key={p.slug}
                     href={`/blog/${p.slug}/`}
                     className="group flex h-full flex-col overflow-hidden rounded-xl border border-surface-line bg-white shadow-card transition-shadow hover:shadow-cardHover"
                   >
@@ -69,6 +70,7 @@ export function BlogCategoryList({ posts, categories }: { posts: BlogCard[]; cat
                       <span className="mt-4 inline-block text-sm font-semibold text-brand">Read article →</span>
                     </div>
                   </Link>
+                  </Reveal>
                 ))}
               </div>
             ) : (

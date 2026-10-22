@@ -4,6 +4,7 @@ import { getBlogSlugs, getBlogPost, getBlogCategories } from '@/lib/content';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 import { BlogCategoryList } from '@/components/sections/BlogCategoryList';
+import { Reveal } from '@/components/ui/Reveal';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -31,7 +32,9 @@ export default function BlogIndex() {
             <h1 className="mt-2 text-3xl font-bold lg:text-4xl">From the Folio3 Azure blog</h1>
             <p className="mt-4 max-w-2xl text-white/85">Empower your organization with the power of the cloud — {posts.length}+ articles on Azure, Microsoft Fabric, Power BI and AI.</p>
           </div>
-          <Image src="/wp-content/uploads/2023/06/blog-mock.webp" alt="" width={560} height={380} priority className="mx-auto h-auto w-full max-w-md" />
+          <Reveal animation="zoomIn" className="relative">
+            <Image src="/wp-content/uploads/2023/06/blog-mock.webp" alt="" width={560} height={380} priority className="float-anim mx-auto h-auto w-full max-w-md" />
+          </Reveal>
         </div>
       </section>
       <Breadcrumb name="Blog" />
