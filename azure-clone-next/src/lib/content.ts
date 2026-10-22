@@ -443,6 +443,7 @@ export function getBlogPost(slug: string) {
     bodyHtml?: string;
     faq?: { q: string; a: string }[];
     related?: { title: string; href: string; image?: string }[];
+    faq?: { q: string; a: string }[];
   };
   if ((data as { error?: string }).error) return null;
   const h1 = data.sections.flatMap((s) => s.headings).find((h) => h.tag === 'h1');
@@ -480,5 +481,7 @@ export function getBlogPost(slug: string) {
         return { title, href, image };
       })
       .filter((r) => r.href && r.title && r.title !== (h1?.text ?? data.meta.title)),
+    // optional Q&A source for FAQPage structured data (only present on posts that ship one)
+    faq: (data.faq ?? []).filter((f) => f && f.q && f.a),
   };
 }

@@ -56,6 +56,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       { '@type': 'ListItem', position: 3, name: post.title, item: url },
     ],
   };
+  const faqLd = post.faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
 
   const faqLd = post.faq.length > 0 ? {
     '@context': 'https://schema.org',
