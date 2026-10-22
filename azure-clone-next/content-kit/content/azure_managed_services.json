@@ -1360,47 +1360,23 @@
         },
         {
           "t": "p",
-          "text": "Azure Managed Services work by providing businesses with a range of cloud-based services that are designed to help manage and maintain their IT infrastructure. These services are managed by a team of experts who oversee the deployment, management, and optimization of the services."
+          "text": "Azure Managed Services are outsourced cloud operations where a certified Microsoft partner monitors, maintains, secures, and optimizes your Microsoft Azure environment on your behalf. Folio3, a Direct (Tier 1) Microsoft Cloud Solution Provider (CSP), delivers Azure Managed Services covering 24/7 monitoring, VM management, backup, disaster recovery, SIEM-based security, and monthly advisory reporting."
         },
         {
           "t": "p",
-          "text": "There are several reasons why you may need Azure Managed Services for your business:"
+          "text": "Folio3's Azure Managed Services include four service pillars: Holistic Support (Azure service monitoring, virtual machine management, backup, disaster recovery), Advisory (monthly service reports, quarterly architecture reviews, cloud strategy consulting), Advanced Support (application performance monitoring, SIEM security monitoring, SentinelOne endpoint protection), and Security Management (identity and access management, network security, and data encryption via Azure Information Protection)."
         },
         {
           "t": "p",
-          "text": "Reduced IT Costs: Azure Managed Services can help reduce your IT costs by allowing you to access enterprise-level technology without the need for costly investments in IT infrastructure and personnel."
+          "text": "Folio3 offers customized Azure Managed Services pricing based on workload size, number of virtual machines, required SLAs, and security tier. As a Direct Tier 1 Microsoft CSP, Folio3 also provides flexible Microsoft licensing — including user-based, team-member, and add-on models for Azure, Microsoft 365, Dynamics 365, and Power Platform. Contact Folio3 for a tailored quote."
         },
         {
           "t": "p",
-          "text": "Increased Agility: Azure Managed Services can help increase your business agility by allowing you to quickly deploy and scale your IT infrastructure as your business needs change. This can help you stay ahead of the competition and adapt to changing market conditions."
+          "text": "Choosing a managed service provider like Folio3 for Azure reduces IT infrastructure and staffing costs, improves uptime through 24/7 proactive monitoring, and strengthens security through SIEM, SentinelOne endpoint protection, and compliance controls. In-house teams often lack the certified Azure expertise, tooling, and round-the-clock coverage needed to prevent downtime and cyber threats at enterprise scale."
         },
         {
           "t": "p",
-          "text": "Enhanced Security and Compliance: Azure Managed Services offer advanced security and compliance capabilities, which can help protect your business from cybersecurity threats and meet regulatory requirements. This can help you avoid costly data breaches."
-        },
-        {
-          "t": "p",
-          "text": "Improved Reliability and Performance: Azure Managed Services offer redundancy and failover capabilities across different regions, which can help ensure high availability and disaster recovery. This can help you avoid costly downtime and maintain business continuity."
-        },
-        {
-          "t": "p",
-          "text": "Access to Advanced Technology and Expertise: Azure Managed Services offer access to advanced technology and expertise, which can help you stay up-to-date with the latest IT trends and technologies."
-        },
-        {
-          "t": "p",
-          "text": "Azure provides a range of services, including virtual machines, databases, and web applications, which can be managed and scaled on demand. With Azure, organizations can focus on developing and delivering applications, while leaving the underlying infrastructure management to Microsoft."
-        },
-        {
-          "t": "p",
-          "text": "Folio3’s Azure Managed Services offering encompasses holistic support including Azure service monitoring, virtual machine management, backup and disaster recovery, security management (e.g. SIEM, endpoint protection), application performance monitoring, and expert advisory and cloud strategy services such as monthly service reports and quarterly architecture reviews."
-        },
-        {
-          "t": "p",
-          "text": "They implement advanced security measures such as Azure Security Center, identity and access management, network security (firewalls, VPN), and data protection/encryption (e.g. Azure Information Protection), plus endpoint protection via SentinelOne for robust threat detection and response."
-        },
-        {
-          "t": "p",
-          "text": "Folio3 provides strategic guidance including detailed monthly service reports, quarterly architecture reviews, and tailored cloud strategy advisory services to optimize cloud infrastructure, enhance ROI, and align IT operations with business objectives."
+          "text": "Azure Managed Services benefit industries that rely on scalable, secure cloud infrastructure — including E-commerce and Retail (inventory and customer analytics), Healthcare (secure patient data and advanced analytics), Financial Services (fraud detection, risk analysis, compliance), Manufacturing and Supply Chain (predictive maintenance and operations), and Media and Entertainment (audience analytics and campaign optimization). Folio3 has delivered 5,000+ projects across these sectors."
         },
         {
           "t": "img",
@@ -1418,17 +1394,11 @@
       ],
       "paragraphs": [
         "We believe in the power of the cloud to transform businesses and empower people.",
-        "Azure Managed Services work by providing businesses with a range of cloud-based services that are designed to help manage and maintain their IT infrastructure. These services are managed by a team of experts who oversee the deployment, management, and optimization of the services.",
-        "There are several reasons why you may need Azure Managed Services for your business:",
-        "Reduced IT Costs: Azure Managed Services can help reduce your IT costs by allowing you to access enterprise-level technology without the need for costly investments in IT infrastructure and personnel.",
-        "Increased Agility: Azure Managed Services can help increase your business agility by allowing you to quickly deploy and scale your IT infrastructure as your business needs change. This can help you stay ahead of the competition and adapt to changing market conditions.",
-        "Enhanced Security and Compliance: Azure Managed Services offer advanced security and compliance capabilities, which can help protect your business from cybersecurity threats and meet regulatory requirements. This can help you avoid costly data breaches.",
-        "Improved Reliability and Performance: Azure Managed Services offer redundancy and failover capabilities across different regions, which can help ensure high availability and disaster recovery. This can help you avoid costly downtime and maintain business continuity.",
-        "Access to Advanced Technology and Expertise: Azure Managed Services offer access to advanced technology and expertise, which can help you stay up-to-date with the latest IT trends and technologies.",
-        "Azure provides a range of services, including virtual machines, databases, and web applications, which can be managed and scaled on demand. With Azure, organizations can focus on developing and delivering applications, while leaving the underlying infrastructure management to Microsoft.",
-        "Folio3’s Azure Managed Services offering encompasses holistic support including Azure service monitoring, virtual machine management, backup and disaster recovery, security management (e.g. SIEM, endpoint protection), application performance monitoring, and expert advisory and cloud strategy services such as monthly service reports and quarterly architecture reviews.",
-        "They implement advanced security measures such as Azure Security Center, identity and access management, network security (firewalls, VPN), and data protection/encryption (e.g. Azure Information Protection), plus endpoint protection via SentinelOne for robust threat detection and response.",
-        "Folio3 provides strategic guidance including detailed monthly service reports, quarterly architecture reviews, and tailored cloud strategy advisory services to optimize cloud infrastructure, enhance ROI, and align IT operations with business objectives."
+        "Azure Managed Services are outsourced cloud operations where a certified Microsoft partner monitors, maintains, secures, and optimizes your Microsoft Azure environment on your behalf. Folio3, a Direct (Tier 1) Microsoft Cloud Solution Provider (CSP), delivers Azure Managed Services covering 24/7 monitoring, VM management, backup, disaster recovery, SIEM-based security, and monthly advisory reporting.",
+        "Folio3's Azure Managed Services include four service pillars: Holistic Support (Azure service monitoring, virtual machine management, backup, disaster recovery), Advisory (monthly service reports, quarterly architecture reviews, cloud strategy consulting), Advanced Support (application performance monitoring, SIEM security monitoring, SentinelOne endpoint protection), and Security Management (identity and access management, network security, and data encryption via Azure Information Protection).",
+        "Folio3 offers customized Azure Managed Services pricing based on workload size, number of virtual machines, required SLAs, and security tier. As a Direct Tier 1 Microsoft CSP, Folio3 also provides flexible Microsoft licensing — including user-based, team-member, and add-on models for Azure, Microsoft 365, Dynamics 365, and Power Platform. Contact Folio3 for a tailored quote.",
+        "Choosing a managed service provider like Folio3 for Azure reduces IT infrastructure and staffing costs, improves uptime through 24/7 proactive monitoring, and strengthens security through SIEM, SentinelOne endpoint protection, and compliance controls. In-house teams often lack the certified Azure expertise, tooling, and round-the-clock coverage needed to prevent downtime and cyber threats at enterprise scale.",
+        "Azure Managed Services benefit industries that rely on scalable, secure cloud infrastructure — including E-commerce and Retail (inventory and customer analytics), Healthcare (secure patient data and advanced analytics), Financial Services (fraud detection, risk analysis, compliance), Manufacturing and Supply Chain (predictive maintenance and operations), and Media and Entertainment (audience analytics and campaign optimization). Folio3 has delivered 5,000+ projects across these sectors."
       ],
       "listItems": [],
       "ctas": [],
