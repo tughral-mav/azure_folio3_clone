@@ -398,7 +398,9 @@ const results = [
   },
 ];
 
-const faqs = [
+/** `a` is the plain-text answer used in the FAQPage schema; `list` optionally renders a numbered list on the page instead. */
+type Faq = { q: string; a: string; intro?: string; list?: { k: string; v: string }[]; outro?: string };
+const faqs: Faq[] = [
   {
     q: 'What is retail data analytics?',
     a: 'Retail data analytics is the use of sales, inventory, store, customer and supply-chain data to measure retail performance and guide merchandising, pricing, staffing and stock decisions. It spans descriptive reporting (what sold), diagnostic analysis (why margin moved), and predictive models (what demand will be).',
@@ -406,6 +408,23 @@ const faqs = [
   {
     q: 'What KPIs should a retail dashboard track?',
     a: "At minimum: net sales, gross margin and margin %, units sold, average transaction value, basket size, conversion rate, sales per square foot, sell-through %, stock cover in days, inventory turnover, out-of-stock rate, returns rate and customer repeat-purchase rate. Folio3's pre-built dashboards include all of these plus category, store and channel breakdowns.",
+    intro: 'At minimum, a retail dashboard should track these 13 KPIs:',
+    list: [
+      { k: 'Net sales', v: 'total sales after discounts and returns.' },
+      { k: 'Gross margin and margin %', v: 'what is left after the cost of the goods sold.' },
+      { k: 'Units sold', v: 'how many items were sold.' },
+      { k: 'Average transaction value', v: 'the average amount spent per purchase.' },
+      { k: 'Basket size', v: 'the average number of items per purchase.' },
+      { k: 'Conversion rate', v: 'the share of visitors, in store or online, who buy.' },
+      { k: 'Sales per square foot', v: 'sales relative to store floor space.' },
+      { k: 'Sell-through %', v: 'the share of stock received that has sold.' },
+      { k: 'Stock cover in days', v: 'how long current stock will last at the current sales rate.' },
+      { k: 'Inventory turnover', v: 'how often stock sells and is replaced each year.' },
+      { k: 'Out-of-stock rate', v: 'how often products are unavailable when customers want them.' },
+      { k: 'Returns rate', v: 'the share of items customers send back.' },
+      { k: 'Customer repeat-purchase rate', v: 'the share of customers who buy again.' },
+    ],
+    outro: "Folio3's pre-built dashboards include all of these, plus category, store and channel breakdowns.",
   },
   {
     q: 'How long does it take to deploy pre-built retail dashboards?',
@@ -1125,7 +1144,21 @@ export default function RetailDataAnalyticsPage() {
                   <h3 className="text-base font-semibold text-ink">{f.q}</h3>
                   <span aria-hidden className="text-brand transition-transform group-open:rotate-45">+</span>
                 </summary>
-                <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
+                {f.list ? (
+                  <div className="px-6 pb-5 text-sm leading-relaxed text-body">
+                    <p>{f.intro}</p>
+                    <ol className="mt-3 list-decimal space-y-1.5 pl-5 marker:font-semibold marker:text-brand">
+                      {f.list.map((item) => (
+                        <li key={item.k}>
+                          <strong className="font-semibold text-ink">{item.k}:</strong> {item.v}
+                        </li>
+                      ))}
+                    </ol>
+                    <p className="mt-3">{f.outro}</p>
+                  </div>
+                ) : (
+                  <p className="px-6 pb-5 text-sm leading-relaxed text-body">{f.a}</p>
+                )}
               </details>
             ))}
           </div>
