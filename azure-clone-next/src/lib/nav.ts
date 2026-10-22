@@ -23,6 +23,7 @@ export const NAV: NavItem[] = [
           { label: 'Data Warehousing as a Service', href: '/data-warehousing-as-a-service/' },
         ],
       },
+      { label: 'Data Science AI', href: '/data-science-ai/' },
       { label: 'Microsoft Copilot Consulting', href: '/data-science-ai/microsoft-copilot-consulting/' },
       { label: 'Copilot Scenario Library', href: '/ai-scenario-library/' },
       {
