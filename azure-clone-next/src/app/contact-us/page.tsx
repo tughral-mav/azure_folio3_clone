@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const DETAILS = [
   { label: 'Email', value: 'azure@folio3.com', href: 'mailto:azure@folio3.com' },
-  { label: 'Phone', value: '+1 (408) 365 4638', href: 'tel:+14083654638' },
+  { label: 'Phone', value: '+1 (323) 555 6439', href: 'tel:+13235556439' },
   { label: 'Support', value: 'support-team@folio3.com', href: 'mailto:support-team@folio3.com' },
 ];
 
