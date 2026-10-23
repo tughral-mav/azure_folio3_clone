@@ -39,6 +39,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     headline: post.title,
     description: post.description ?? undefined,
     image: absImg,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     author: { '@type': 'Organization', name: 'Folio3 Azure', url: 'https://azure.folio3.com' },
     publisher: {
@@ -70,7 +72,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <article className="container-x max-w-3xl py-16">
         <h1 className="text-3xl font-bold leading-tight lg:text-4xl">{post.title}</h1>
-        {post.description && <p className="mt-4 text-lg text-body">{post.description}</p>}
+        {post.dateModified && (
+          <p className="mt-4 text-sm text-body">
+            <time dateTime={post.dateModified}>
+              Last updated: {new Date(`${post.dateModified}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}
+            </time>
+          </p>
+        )}
+        {post.description && !post.hideDescription && <p className="mt-4 text-lg text-body">{post.description}</p>}
         {post.heroImage && (
           <Image src={post.heroImage} alt={post.title} width={768} height={432} className="mt-8 h-auto w-full rounded-xl" priority />
         )}
