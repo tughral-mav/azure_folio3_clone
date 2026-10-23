@@ -439,7 +439,7 @@ export function getBlogPost(slug: string) {
   const file = path.join(KIT, `blog_${slug.replace(/-/g, '_')}.json`);
   if (!existsSync(file)) return null;
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
-    meta: { seoTitle?: string; seoDescription?: string };
+    meta: { seoTitle?: string; seoDescription?: string; datePublished?: string; dateModified?: string; hideDescription?: boolean };
     bodyHtml?: string;
     faq?: { q: string; a: string }[];
     related?: { title: string; href: string; image?: string }[];
@@ -463,6 +463,11 @@ export function getBlogPost(slug: string) {
     // optional SEO overrides (meta/OG tags only; H1 + on-page intro keep title/description)
     seoTitle: data.meta.seoTitle,
     seoDescription: data.meta.seoDescription,
+    // optional ISO dates → visible "Last updated" line + BlogPosting datePublished/dateModified
+    datePublished: data.meta.datePublished,
+    dateModified: data.meta.dateModified,
+    // optional: posts whose brief puts the date (not an intro) under the H1
+    hideDescription: data.meta.hideDescription ?? false,
     heroImage,
     sections: data.sections,
     body,
