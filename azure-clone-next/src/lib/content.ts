@@ -439,9 +439,10 @@ export function getBlogPost(slug: string) {
   const file = path.join(KIT, `blog_${slug.replace(/-/g, '_')}.json`);
   if (!existsSync(file)) return null;
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
-    meta: { seoTitle?: string; seoDescription?: string };
+    meta: { seoTitle?: string; seoDescription?: string; titleAbsolute?: boolean };
     bodyHtml?: string;
     faq?: { q: string; a: string }[];
+    schema?: Record<string, unknown>;
     related?: { title: string; href: string; image?: string }[];
   };
   if ((data as { error?: string }).error) return null;
@@ -463,12 +464,16 @@ export function getBlogPost(slug: string) {
     // optional SEO overrides (meta/OG tags only; H1 + on-page intro keep title/description)
     seoTitle: data.meta.seoTitle,
     seoDescription: data.meta.seoDescription,
+    // true → <title> is exactly the title, without the site-wide "| Folio3 Azure" suffix
+    titleAbsolute: data.meta.titleAbsolute ?? false,
     heroImage,
     sections: data.sections,
     body,
     bodyHtml,
     // optional FAQ entries → FAQPage JSON-LD (the visible FAQ lives in bodyHtml)
     faq: data.faq ?? [],
+    // optional extra BlogPosting JSON-LD fields (datePublished, keywords, about…)
+    schema: data.schema ?? {},
     related: (data.related ?? [])
       .map((r) => {
         const href = localAsset(r.href);

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = post.seoTitle ?? post.title;
   const description = post.seoDescription ?? post.description ?? undefined;
   return {
-    title,
+    title: post.titleAbsolute ? { absolute: title } : title,
     description,
     alternates: { canonical: `/blog/${slug}/` },
     openGraph: { title, description, type: 'article', images: post.heroImage ? [post.heroImage] : [] },
@@ -46,6 +46,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       name: 'Folio3 Azure',
       logo: { '@type': 'ImageObject', url: 'https://azure.folio3.com/wp-content/uploads/2022/06/folio3_by_azure.svg' },
     },
+    ...post.schema,
   };
   const breadcrumbLd = {
     '@context': 'https://schema.org',
