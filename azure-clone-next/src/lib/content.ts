@@ -439,7 +439,7 @@ export function getBlogPost(slug: string) {
   const file = path.join(KIT, `blog_${slug.replace(/-/g, '_')}.json`);
   if (!existsSync(file)) return null;
   const data = JSON.parse(readFileSync(file, 'utf8')) as CapturedPage & {
-    meta: { seoTitle?: string; seoDescription?: string; titleAbsolute?: boolean };
+    meta: { seoTitle?: string; seoDescription?: string; titleAbsolute?: boolean; datePublished?: string; dateModified?: string; hideDescription?: boolean };
     bodyHtml?: string;
     faq?: { q: string; a: string }[];
     schema?: Record<string, unknown>;
@@ -466,6 +466,11 @@ export function getBlogPost(slug: string) {
     seoDescription: data.meta.seoDescription,
     // true → <title> is exactly the title, without the site-wide "| Folio3 Azure" suffix
     titleAbsolute: data.meta.titleAbsolute ?? false,
+    // optional ISO dates → visible "Last updated" line + BlogPosting datePublished/dateModified
+    datePublished: data.meta.datePublished,
+    dateModified: data.meta.dateModified,
+    // optional: posts whose brief puts the date (not an intro) under the H1
+    hideDescription: data.meta.hideDescription ?? false,
     heroImage,
     sections: data.sections,
     body,
