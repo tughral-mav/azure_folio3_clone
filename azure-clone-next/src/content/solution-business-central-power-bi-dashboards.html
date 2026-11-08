@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Meta Title: Pre-Built Reporting Dashboards |
+Meta Description: Get pre-built Power BI dashboards for Dynamics 365 Business Central to track finance, sales, inventory, purchasing, AP, and AR.
+Slug: /solution/business-central-power-bi-dashboards/
+Primary keyword: Business Central Power BI dashboards
+Note: the head block below is authoring-only reference. The rendered page's
+title, meta description, and OG/Twitter tags come from the Next.js `metadata`
+export in ../src/app/solution/business-central-power-bi-dashboards/page.tsx —
+only the page body is injected into the site layout.
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Built Reporting Dashboards |</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand-blue: #1652F0;
+    --brand-blue-hover: #0D3FCB;
+    --brand-navy: #0F2A5F;
+    --brand-navy-dark: #0B1F47;
+    --brand-blue-soft: #EBF1FF;
+    --brand-blue-tint: #F5F8FF;
+    --dark-surface: #0D1226;
+    --dark-surface-2: #131A34;
+    --accent-gold: #F5B800;
+    --accent-teal: #14B8A6;
+    --accent-violet: #7C4DFF;
+    --ink-900: #0F172A;
+    --ink-700: #334155;
+    --ink-500: #64748B;
+    --ink-300: #CBD5E1;
+    --surface: #FFFFFF;
+    --surface-alt: #F8FAFC;
+    --surface-line: #E2E8F0;
+    --radius-sm: 6px;
+    --radius: 10px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+    --shadow: 0 6px 24px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-900);
+    background: var(--surface);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0;
+    color: var(--ink-900);
+  }
+  h1 { font-size: clamp(2.25rem, 4.6vw, 3.5rem); font-weight: 800; line-height: 1.08; }
+  h2 { font-size: clamp(1.85rem, 3.2vw, 2.5rem); font-weight: 700; }
+  h3 { font-size: 1.25rem; font-weight: 700; }
+  h4 { font-size: 1.0625rem; font-weight: 700; }
+  p { margin: 0; }
+  a { color: var(--brand-blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .accent { color: var(--brand-blue); }
+
+  .wrap {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  section { padding: 88px 0; }
+  .section-tight { padding: 64px 0; }
+
+  .eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--brand-blue);
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  .eyebrow.on-dark { color: var(--accent-gold); }
+
+  .lead {
+    font-size: 1.0625rem;
+    color: var(--ink-700);
+    max-width: 780px;
+    line-height: 1.7;
+  }
+  .section-head { max-width: 820px; margin-bottom: 48px; }
+  .section-head p { color: var(--ink-700); margin-top: 16px; font-size: 1.0625rem; line-height: 1.65; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 26px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  .btn-primary { background: var(--brand-navy); color: #fff; }
+  .btn-primary:hover { background: var(--brand-navy-dark); transform: translateY(-1px); text-decoration: none; }
+  .btn-secondary { background: transparent; color: var(--brand-blue); border-color: var(--brand-blue); }
+  .btn-secondary:hover { background: var(--brand-blue); color: #fff; text-decoration: none; }
+  .btn-secondary.on-dark { color: #fff; border-color: rgba(255,255,255,0.4); }
+  .btn-secondary.on-dark:hover { background: #fff; color: var(--brand-navy); border-color: #fff; }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(180deg, #F5F8FF 0%, #E8F0FF 100%);
+    padding: 100px 0 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 700' fill='none'%3E%3Cpath d='M-100 500 Q400 300 900 450 T1500 350' stroke='%23A9C3FF' stroke-width='1.5' fill='none' opacity='0.5'/%3E%3Cpath d='M-100 550 Q400 350 900 500 T1500 400' stroke='%23A9C3FF' stroke-width='1.5' fill='none' opacity='0.4'/%3E%3Cpath d='M-100 300 Q400 100 900 250 T1500 150' stroke='%23A9C3FF' stroke-width='1' fill='none' opacity='0.4'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 56px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 { margin-bottom: 24px; }
+  .hero-sub { font-size: 1.0625rem; color: var(--ink-700); max-width: 560px; margin-bottom: 32px; line-height: 1.65; }
+  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* Dashboard mock */
+  .dash-mock {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgba(22, 82, 240, 0.18), 0 6px 20px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+  }
+  .dash-chrome {
+    background: #F1F5F9;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--surface-line);
+  }
+  .dash-dots { display: flex; gap: 6px; }
+  .dash-dots span { width: 10px; height: 10px; border-radius: 50%; }
+  .dash-dots span:nth-child(1) { background: #FF5F57; }
+  .dash-dots span:nth-child(2) { background: #FEBC2E; }
+  .dash-dots span:nth-child(3) { background: #28C840; }
+  .dash-url { flex: 1; background: #fff; border-radius: 6px; padding: 5px 10px; font-size: 0.72rem; color: var(--ink-500); }
+  .dash-url::before { content: '🔒 '; }
+  .dash-body { padding: 22px; background: var(--surface-alt); }
+  .dash-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+  .dash-title h4 { font-size: 0.95rem; }
+  .dash-title span { font-size: 0.7rem; font-weight: 700; color: var(--brand-blue); letter-spacing: 0.08em; text-transform: uppercase; }
+  .dash-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+  .kpi { background: #fff; border-radius: 10px; padding: 12px; border: 1px solid var(--surface-line); }
+  .kpi-label { font-size: 0.7rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+  .kpi-value { font-family: 'Poppins', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--ink-900); margin-top: 4px; }
+  .kpi-delta { font-size: 0.72rem; font-weight: 600; margin-top: 2px; }
+  .kpi-delta.up { color: #16A34A; }
+  .kpi-delta.down { color: #DC2626; }
+  .dash-chart { background: #fff; border-radius: 10px; padding: 14px; border: 1px solid var(--surface-line); }
+  .dash-chart-title { font-size: 0.78rem; font-weight: 600; color: var(--ink-700); margin-bottom: 10px; display: flex; justify-content: space-between; }
+  .dash-chart-title span { color: var(--brand-blue); font-weight: 700; }
+  .bars { display: flex; align-items: flex-end; gap: 6px; height: 78px; }
+  .bars .bar { flex: 1; background: linear-gradient(180deg, #6D8FF5 0%, var(--brand-blue) 100%); border-radius: 3px 3px 0 0; }
+  .bars .bar.alt { background: linear-gradient(180deg, #FFD879 0%, var(--accent-gold) 100%); }
+
+  /* ===== TRUST STRIP ===== */
+  .trust {
+    padding: 40px 0 44px;
+    background: #fff;
+    border-bottom: 1px solid var(--surface-line);
+  }
+  .trust-label {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-500);
+    margin-bottom: 24px;
+  }
+  .trust-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px 56px;
+    flex-wrap: wrap;
+  }
+  .trust-row img {
+    height: 44px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    opacity: 0.85;
+    filter: grayscale(0.05);
+    transition: opacity 0.2s ease;
+  }
+  .trust-row img:hover { opacity: 1; }
+  @media (max-width: 640px) {
+    .trust { padding: 32px 0; }
+    .trust-row { gap: 24px 32px; }
+    .trust-row img { height: 34px; max-width: 120px; }
+  }
+
+  /* ===== VALUE BULLETS ===== */
+  .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 40px; margin-top: 8px; }
+  .value-item { display: flex; gap: 14px; align-items: flex-start; }
+  .value-item .tick {
+    flex: 0 0 26px; width: 26px; height: 26px; border-radius: 50%;
+    background: var(--brand-blue-soft); color: var(--brand-blue);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.8rem;
+  }
+  .value-item p { color: var(--ink-700); font-size: 0.98rem; }
+
+  .callout {
+    margin-top: 40px; background: var(--brand-blue-tint); border: 1px solid var(--brand-blue-soft);
+    border-left: 4px solid var(--brand-blue);
+    padding: 20px 24px; border-radius: var(--radius); color: var(--ink-700);
+  }
+
+  /* ===== PROBLEM SECTION ===== */
+  .problem { background: var(--surface-alt); }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .problem-list { display: grid; gap: 12px; }
+  .problem-list .pi {
+    background: #fff; border: 1px solid var(--surface-line); border-radius: var(--radius);
+    padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start;
+    box-shadow: var(--shadow-sm);
+  }
+  .problem-list .pi::before {
+    content: ''; flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--brand-blue); margin-top: 8px;
+  }
+  .problem-list .pi p { color: var(--ink-700); font-size: 0.97rem; }
+
+  /* ===== DASHBOARDS SUITE ===== */
+  .tabs {
+    display: inline-flex; gap: 6px; padding: 6px; margin-bottom: 32px;
+    background: var(--surface-alt); border-radius: 999px; border: 1px solid var(--surface-line);
+  }
+  .tab {
+    padding: 10px 20px; border-radius: 999px; cursor: pointer;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.9rem;
+    color: var(--ink-700); background: transparent; border: none; transition: all 0.2s;
+  }
+  .tab.active { background: var(--brand-navy); color: #fff; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .dash-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .dash-card {
+    background: #fff; border: 1px solid var(--surface-line); border-radius: var(--radius-lg);
+    padding: 26px; transition: all 0.2s; display: flex; flex-direction: column; gap: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .dash-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); border-color: var(--brand-blue-soft); }
+  .dash-card .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 10px; background: var(--brand-blue-soft);
+    color: var(--brand-blue); font-size: 1.15rem;
+  }
+  .dash-card h3 { font-size: 1.075rem; }
+  .dash-card p { color: var(--ink-700); font-size: 0.95rem; }
+  .dash-card .best-for { font-size: 0.85rem; color: var(--ink-500); border-top: 1px solid var(--surface-line); padding-top: 10px; margin-top: auto; }
+  .dash-card .best-for strong { color: var(--ink-900); }
+  .dash-card .kpi-list { font-size: 0.85rem; color: var(--ink-500); }
+  .dash-card .kpi-list strong { color: var(--ink-900); }
+
+  /* ===== FOUNDATION ===== */
+  .foundation { background: var(--dark-surface); color: rgba(255,255,255,0.85); position: relative; overflow: hidden; }
+  .foundation::before {
+    content: ''; position: absolute; inset: 0; opacity: 0.35;
+    background: radial-gradient(1000px 500px at 90% 0%, rgba(22,82,240,0.35), transparent 60%),
+                radial-gradient(700px 400px at 0% 100%, rgba(124,77,255,0.25), transparent 60%);
+  }
+  .foundation h2 { color: #fff; }
+  .foundation .lead { color: rgba(255,255,255,0.75); }
+  .foundation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; position: relative; z-index: 1; }
+  .foundation-item {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius); padding: 20px 22px;
+  }
+  .foundation-item h4 { color: #fff; margin-bottom: 6px; font-size: 1rem; }
+  .foundation-item p { color: rgba(255,255,255,0.7); font-size: 0.92rem; }
+
+  /* ===== PROCESS ===== */
+  .process { background: var(--surface-alt); }
+  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+  .process-step { background: #fff; border-radius: var(--radius-lg); padding: 26px; border: 1px solid var(--surface-line); position: relative; }
+  .process-step .num {
+    font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2.6rem; line-height: 1;
+    color: var(--brand-blue-soft); position: absolute; top: 16px; right: 22px;
+  }
+  .process-step h3 { font-size: 1.075rem; margin-bottom: 8px; }
+  .process-step p { color: var(--ink-700); font-size: 0.95rem; }
+
+  /* ===== WHY ===== */
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+  .why-item {
+    background: #fff; border-radius: var(--radius-lg); padding: 28px;
+    border: 1px solid var(--surface-line); box-shadow: var(--shadow-sm);
+  }
+  .why-item .ico {
+    width: 44px; height: 44px; border-radius: 10px; background: var(--brand-blue-soft);
+    color: var(--brand-blue); display: inline-flex; align-items: center; justify-content: center;
+    font-size: 1.15rem; margin-bottom: 14px;
+  }
+  .why-item h3 { font-size: 1.075rem; margin-bottom: 8px; }
+  .why-item p { color: var(--ink-700); font-size: 0.95rem; }
+
+  /* ===== CTA ===== */
+  .cta-final {
+    background: linear-gradient(135deg, var(--brand-blue) 0%, #3B6CF5 100%);
+    color: #fff; text-align: center;
+  }
+  .cta-final h2 { color: #fff; margin-bottom: 16px; }
+  .cta-final p { color: rgba(255,255,255,0.9); max-width: 660px; margin: 0 auto 32px; font-size: 1.0625rem; }
+  .cta-final .hero-cta { justify-content: center; }
+  .cta-final .btn-primary { background: #fff; color: var(--brand-navy); }
+  .cta-final .btn-primary:hover { background: var(--surface-alt); }
+  .cta-final .btn-secondary { color: #fff; border-color: rgba(255,255,255,0.5); }
+  .cta-final .btn-secondary:hover { background: #fff; color: var(--brand-blue); border-color: #fff; }
+
+  /* ===== FAQ ===== */
+  .faq-list { display: grid; gap: 12px; margin-top: 32px; max-width: 900px; }
+  .faq {
+    background: #fff; border: 1px solid var(--surface-line); border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .faq summary {
+    list-style: none; cursor: pointer; padding: 20px 24px;
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1rem;
+    color: var(--ink-900); display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: '+'; font-size: 1.4rem; color: var(--brand-blue); font-weight: 400; line-height: 1;
+    transition: transform 0.2s;
+  }
+  .faq[open] summary::after { content: '−'; }
+  .faq-body { padding: 0 24px 22px; color: var(--ink-700); font-size: 0.98rem; line-height: 1.65; }
+
+  @media (max-width: 960px) {
+    section { padding: 64px 0; }
+    .hero { padding: 72px 0 60px; }
+    .hero-grid, .problem-grid { grid-template-columns: 1fr; gap: 32px; }
+    .dash-cards, .foundation-grid, .process-grid, .why-grid { grid-template-columns: 1fr; }
+    .value-grid { grid-template-columns: 1fr; }
+    .dash-mock { margin: 0 auto; }
+    .tabs { flex-wrap: wrap; }
+  }
+  @media (max-width: 640px) {
+    .kpi-value { font-size: 1rem; }
+    .btn { padding: 13px 20px; font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Business Central Analytics · Powered by IntelliFabric</span>
+      <h1>Pre-Built Power BI Dashboards for <span class="accent">Dynamics 365 Business Central</span></h1>
+      <p class="hero-sub">Turn Microsoft Dynamics 365 Business Central data into trusted, decision-ready insights. Get visibility into finance, sales, inventory, purchasing, receivables, and payables — without waiting months for a custom BI project.</p>
+      <div class="hero-cta">
+        <a href="#pgForm" class="btn btn-primary">Request a Dashboard Demo</a>
+        <a href="#pgForm" class="btn btn-secondary">Talk to an Azure Engineer</a>
+      </div>
+    </div>
+    <div class="dash-mock" aria-hidden="true">
+      <div class="dash-chrome">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <div class="dash-url">app.powerbi.com / business-central-executive</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-title">
+          <h4>Executive Overview</h4>
+          <span>Live · BC Data</span>
+        </div>
+        <div class="dash-kpis">
+          <div class="kpi"><div class="kpi-label">Revenue</div><div class="kpi-value">$8.42M</div><div class="kpi-delta up">▲ 12.4%</div></div>
+          <div class="kpi"><div class="kpi-label">Gross Profit</div><div class="kpi-value">38.6%</div><div class="kpi-delta up">▲ 1.8 pts</div></div>
+          <div class="kpi"><div class="kpi-label">AR Overdue</div><div class="kpi-value">$412K</div><div class="kpi-delta down">▲ 6.1%</div></div>
+        </div>
+        <div class="dash-chart">
+          <div class="dash-chart-title">Actual vs Budget — YTD <span>+4.8%</span></div>
+          <div class="bars">
+            <div class="bar" style="height: 42%"></div>
+            <div class="bar alt" style="height: 55%"></div>
+            <div class="bar" style="height: 61%"></div>
+            <div class="bar alt" style="height: 68%"></div>
+            <div class="bar" style="height: 73%"></div>
+            <div class="bar alt" style="height: 82%"></div>
+            <div class="bar" style="height: 78%"></div>
+            <div class="bar alt" style="height: 88%"></div>
+            <div class="bar" style="height: 92%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-label="Trusted by organizations around the globe">
+  <div class="wrap">
+    <div class="trust-label">Trusted by Organizations Around the Globe</div>
+    <div class="trust-row">
+      <img src="/wp-content/uploads/2024/01/ias-savills-logo.webp" alt="Savills" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-cityu-logo.webp" alt="CityU of Seattle" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-daraz-logo.webp" alt="Daraz" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2024/01/ias-rff-logo.webp" alt="Rombola Family Farms" loading="lazy" width="160" height="44" />
+      <img src="/wp-content/uploads/2025/07/superior-farms-logo.webp" alt="Superior Farms" loading="lazy" width="160" height="44" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE / FROM BC TO DECISIONS ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">From Data to Decisions</span>
+      <h2>From Business Central Data to Faster Decisions</h2>
+      <p>Replace static spreadsheets, manual report preparation, and disconnected views of performance with interactive Power BI dashboards designed around the way your business runs.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-item"><span class="tick">✓</span><p>Connect securely to Microsoft Dynamics 365 Business Central</p></div>
+      <div class="value-item"><span class="tick">✓</span><p>Monitor KPIs across finance, sales, inventory, purchasing, and operations</p></div>
+      <div class="value-item"><span class="tick">✓</span><p>Track actual performance against budgets, targets, and historical trends</p></div>
+      <div class="value-item"><span class="tick">✓</span><p>Give leaders a single, reliable view of business performance</p></div>
+      <div class="value-item"><span class="tick">✓</span><p>Enable governed self-service reporting without overloading IT</p></div>
+      <div class="value-item"><span class="tick">✓</span><p>Build a scalable data foundation for future automation, forecasting, and AI</p></div>
+    </div>
+    <div class="callout">
+      Folio3's <a href="/solution/intellifabric/">IntelliFabric</a> approach is built for organizations that need more than one-off reports: a modern analytics operating model that brings pre-built dashboards, automated data pipelines, semantic models, and governance together on Microsoft Fabric.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div>
+        <span class="eyebrow">The Reporting Gap</span>
+        <h2>Your Business Central Reports Should Not Slow Down Decisions</h2>
+        <p class="lead" style="margin-top: 20px;">Business Central contains essential financial and operational data, but turning that data into useful insight often requires manual exports, spreadsheet consolidation, report development, and repeated requests to analysts.</p>
+        <p class="lead" style="margin-top: 16px;">When reporting is delayed or fragmented, finance teams close periods with limited visibility, sales teams react late to performance changes, and operations teams struggle to identify inventory and purchasing risks before they affect cash flow or customer service.</p>
+        <p class="lead" style="margin-top: 16px;">Folio3 helps you move from static, after-the-fact reports to interactive Power BI dashboards that keep leaders focused on the metrics that matter most.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom: 16px;">Common challenges we solve</h3>
+        <div class="problem-list">
+          <div class="pi"><p>Finance, sales, and inventory data living in separate reports</p></div>
+          <div class="pi"><p>Manual spreadsheet reporting that takes hours or days to prepare</p></div>
+          <div class="pi"><p>Limited visibility into cash flow, budget variances, and profitability</p></div>
+          <div class="pi"><p>Difficulty identifying slow-moving inventory, stock risk, or margin leakage</p></div>
+          <div class="pi"><p>Business users waiting on analysts or IT for every new question</p></div>
+          <div class="pi"><p>Dashboards that lack trusted definitions, reliable refreshes, or governance</p></div>
+        </div>
+        <p style="margin-top: 20px; color: var(--ink-500); font-size: 0.94rem;">For more complex reporting needs, Folio3 can also support data integration, warehousing, visualization, and predictive analytics as part of a broader <a href="/azure-data-analytics/">Azure Data Analytics</a> program.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD SUITE ============ -->
+<section id="dashboards">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Dashboard Suite</span>
+      <h2>One Business Central Dashboard Suite. Multiple Decision-Making Views.</h2>
+      <p>Start with the dashboard areas that solve your highest-priority reporting gaps. Each solution can be configured around your Business Central company structure, dimensions, business roles, KPI definitions, and reporting requirements.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="finance">Finance &amp; Leadership</button>
+      <button class="tab" data-tab="ops">Sales &amp; Operations</button>
+      <button class="tab" data-tab="advanced">Advanced Analytics</button>
+    </div>
+
+    <div class="tab-panel active" id="panel-finance">
+      <div class="dash-cards">
+        <div class="dash-card">
+          <div class="badge">◆</div>
+          <h3>Executive Overview</h3>
+          <p>A single view of financial health and operational performance. Track revenue, gross and net profit, cash position, AR/AP exposure, inventory value, budget variances, and performance trends.</p>
+          <div class="best-for"><strong>Best for:</strong> CEOs, CFOs, owners, and leadership teams.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">$</div>
+          <h3>Finance &amp; Financial Performance</h3>
+          <p>Move beyond static financial statements with interactive views of income statements, balance sheets, expense trends, revenue performance, and period-over-period movement.</p>
+          <div class="kpi-list"><strong>Insights:</strong> P&amp;L trends, gross/net profit, expense analysis, YoY comparisons, drill-down reporting.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">⌾</div>
+          <h3>Budget vs. Actual</h3>
+          <p>Compare planned performance with actual results by period, department, G/L account, business unit, dimension, or company. Identify variance drivers early.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Actual vs. budget, favorable/unfavorable variance, variance %, revenue plan attainment.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">≋</div>
+          <h3>Cash Flow, AR &amp; AP</h3>
+          <p>Monitor the metrics that influence liquidity and working capital — aging, overdue balances, open receivables, outstanding payables, and cash-impacting trends.</p>
+          <div class="kpi-list"><strong>Insights:</strong> AR/AP aging, overdue invoices, customer &amp; vendor balances, payment trends.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◈</div>
+          <h3>Profitability</h3>
+          <p>See margin performance across products, customers, channels, and business dimensions so leaders can act on the categories that drive — or drag — profitability.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Gross margin, contribution margin, customer profitability, product mix.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◱</div>
+          <h3>Multi-Company Consolidation</h3>
+          <p>A consolidated performance view across Business Central companies while preserving drill-down into individual legal entities, departments, locations, and dimensions.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Consolidated revenue, profitability, comparative company performance, intercompany analysis.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="panel-ops">
+      <div class="dash-cards">
+        <div class="dash-card">
+          <div class="badge">↗</div>
+          <h3>Sales Performance &amp; Pipeline</h3>
+          <p>Help sales leaders understand revenue performance, top customers, product trends, salesperson contribution, margin movement, and pipeline health.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Sales by customer, salesperson, item, region, channel, margin, target attainment, pipeline trends.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">⬚</div>
+          <h3>Inventory &amp; Inventory Valuation</h3>
+          <p>Turn inventory data into a clearer view of working capital, stock health, and cost exposure. Monitor inventory value, aging, slow-moving items, and turnover.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Inventory valuation, stock aging, on-hand quantity, slow-moving stock, turnover, cost trends.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">⇄</div>
+          <h3>Purchasing &amp; Vendor Performance</h3>
+          <p>Improve purchasing visibility with dashboards for purchase orders, vendor spend, procurement trends, delivery performance, and supplier-related risk.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Purchasing spend, PO status, vendor concentration, lead-time trends, price movement.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◧</div>
+          <h3>Supply Chain &amp; Warehouse</h3>
+          <p>Give operations teams visibility into inventory availability, fulfillment, inbound and outbound movement, replenishment needs, and warehouse performance.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Stock availability, replenishment risk, backorders, fulfillment, location-level performance.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">☰</div>
+          <h3>Order Fulfillment</h3>
+          <p>Monitor order flow from booking to shipment. Surface bottlenecks, at-risk orders, and shipping performance so operations can respond before customers feel it.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Open orders, on-time shipment, backlog aging, fulfillment cycle time.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◐</div>
+          <h3>Customer Insights</h3>
+          <p>Combine Business Central sales, receivables, and account data into a single customer view for account managers and finance to act on together.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Top customers, revenue concentration, payment behavior, order patterns.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="panel-advanced">
+      <div class="dash-cards">
+        <div class="dash-card">
+          <div class="badge">⚙</div>
+          <h3>Manufacturing</h3>
+          <p>Monitor production performance, capacity, material consumption, output, scrap, work in progress, cost variances, and production efficiency. Especially relevant for manufacturers using Business Central as their core operational system.</p>
+          <div class="kpi-list"><strong>Related:</strong> <a href="/azure-data-analytics/manufacturing-data-analytics/">Manufacturing Data Analytics</a>.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">▤</div>
+          <h3>Project Performance</h3>
+          <p>Track project financial health with visibility into project cost, revenue, billing progress, budget consumption, margin, WIP, and performance against planned milestones.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Project budget vs. actual, profitability, cost-to-complete, billing status, resource utilization.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◍</div>
+          <h3>CRM-Related Analysis</h3>
+          <p>Extend Business Central reporting with CRM signals for a more connected view of pipeline, customer engagement, and revenue performance across systems.</p>
+          <div class="kpi-list"><strong>Related:</strong> <a href="/microsoft-power-platform-services/">Microsoft Power Platform services</a>.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">⟳</div>
+          <h3>Subscription Billing</h3>
+          <p>Configurable view of recurring revenue, renewals, churn, MRR/ARR movement, and billing performance for organizations running subscription models on Business Central.</p>
+          <div class="kpi-list"><strong>Insights:</strong> MRR/ARR, renewal rate, expansion, churn, billing exceptions.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">◈</div>
+          <h3>Sustainability</h3>
+          <p>Track operational sustainability metrics alongside financial performance — an extendable module for organizations reporting environmental KPIs.</p>
+          <div class="kpi-list"><strong>Insights:</strong> Emission indicators, energy consumption, sustainability KPI trends.</div>
+        </div>
+        <div class="dash-card">
+          <div class="badge">✧</div>
+          <h3>Custom Dashboards</h3>
+          <p>Bespoke dashboards designed around your unique KPIs, dimensions, and reporting hierarchies — built on the same governed IntelliFabric foundation.</p>
+          <div class="kpi-list"><strong>Ideal for:</strong> industry-specific KPIs and executive-tailored views.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDATION / INTELLIFABRIC ============ -->
+<section class="foundation">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow on-dark">More Than Pre-Built Reports</span>
+      <h2>A Governed Business Central Analytics Foundation</h2>
+      <p class="lead">A pre-built dashboard can accelerate the first phase of reporting. But durable analytics requires more than charts — it needs reliable data movement, consistent KPI definitions, secure access, and a model that can evolve as your organization grows.</p>
+    </div>
+    <div class="foundation-grid">
+      <div class="foundation-item"><h4>Pre-Built Dashboards</h4><p>Industry-ready Power BI dashboards for finance, sales, inventory, and operations.</p></div>
+      <div class="foundation-item"><h4>Secure BC Integration</h4><p>Governed connection to your Business Central environment, with role-aware access.</p></div>
+      <div class="foundation-item"><h4>Automated Pipelines</h4><p>Automated extraction, transformation, and refresh across your reporting stack.</p></div>
+      <div class="foundation-item"><h4>Semantic Models</h4><p>Governed Power BI semantic models with trusted KPI and measure definitions.</p></div>
+      <div class="foundation-item"><h4>Microsoft Fabric Core</h4><p>Centralized, scalable Microsoft Fabric data architecture for long-term reporting.</p></div>
+      <div class="foundation-item"><h4>Role-Based Access</h4><p>Role-based dashboard access and governed self-service exploration for teams.</p></div>
+      <div class="foundation-item"><h4>Business Customization</h4><p>Configuration for your processes, entities, dimensions, and KPI logic.</p></div>
+      <div class="foundation-item"><h4>Forecasting Roadmap</h4><p>A roadmap for forecasting, AI, and Copilot-enabled analytics as you mature.</p></div>
+      <div class="foundation-item"><h4>IT Governance</h4><p>The controls and scalability IT needs for long-term adoption across teams.</p></div>
+    </div>
+    <p style="margin-top: 28px; position: relative; z-index: 1;"><a href="/solution/intellifabric/" style="color: var(--accent-gold); font-weight: 600;">Explore the IntelliFabric analytics solution →</a></p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Delivery Approach</span>
+      <h2>How We Deliver Your Business Central Dashboard Solution</h2>
+      <p>A structured, low-risk path from priority reporting questions to trusted, adopted dashboards.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step"><span class="num">01</span><h3>Discover Your Priorities</h3><p>We identify the business questions, roles, KPIs, BC entities, dimensions, and report areas that matter most to your organization.</p></div>
+      <div class="process-step"><span class="num">02</span><h3>Connect and Prepare Data</h3><p>Folio3 securely connects Business Central data and establishes the integration, transformation, and reporting foundation.</p></div>
+      <div class="process-step"><span class="num">03</span><h3>Configure Dashboards</h3><p>We deploy and configure the relevant dashboard modules for finance, sales, inventory, purchasing, AR, AP, or operational reporting.</p></div>
+      <div class="process-step"><span class="num">04</span><h3>Validate KPIs &amp; Logic</h3><p>Your finance and operational teams validate KPI definitions, calculations, filters, business dimensions, and dashboard outputs before launch.</p></div>
+      <div class="process-step"><span class="num">05</span><h3>Train Users &amp; Go Live</h3><p>We help stakeholders adopt the dashboards, understand available views, and use insights in daily decision-making.</p></div>
+      <div class="process-step"><span class="num">06</span><h3>Extend When Ready</h3><p>Add more sources, custom dashboards, warehouse/lakehouse capabilities, predictive models, and self-service analytics as maturity grows.</p></div>
+    </div>
+    <p style="margin-top: 24px; color: var(--ink-500); font-size: 0.95rem;">Folio3's <a href="/azure-data-analytics/">end-to-end data analytics services</a> can support this progression — from integration and centralized storage to visualization and predictive analytics.</p>
+  </div>
+</section>
+
+<!-- ============ WHY FOLIO3 ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Folio3</span>
+      <h2>Why Folio3 for Business Central Power BI Dashboards</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="ico">▲</div><h3>Start Faster Without Limiting What Comes Next</h3><p>Launch with pre-built dashboard modules instead of beginning every report from zero. Extend and customize analytics as your needs change.</p></div>
+      <div class="why-item"><div class="ico">◎</div><h3>Align Dashboards to Business Decisions</h3><p>We focus on the outcomes behind reporting: cash control, profitability, sales performance, inventory efficiency, purchasing visibility, and operational accountability.</p></div>
+      <div class="why-item"><div class="ico">☁</div><h3>Business Central + Azure Expertise</h3><p>Folio3 connects Business Central reporting requirements with Power BI, Microsoft Fabric, data integration, governance, and scalable cloud architecture.</p></div>
+      <div class="why-item"><div class="ico">◇</div><h3>Trusted Self-Service Access</h3><p>Enable teams to explore approved information through governed dashboards and semantic models — reducing dependence on manual report requests.</p></div>
+      <div class="why-item"><div class="ico">✦</div><h3>Build Toward AI-Ready Analytics</h3><p>A reliable foundation makes it easier to introduce forecasting, anomaly detection, Copilot experiences, and AI-driven decision support over time.</p></div>
+      <div class="why-item"><div class="ico">⟟</div><h3>Governance IT Trusts</h3><p>Role-based access, semantic models, refresh reliability, and Microsoft Fabric architecture that scales across the organization.</p></div>
+    </div>
+    <p style="margin-top: 24px; color: var(--ink-500); font-size: 0.95rem;">Related reading: <a href="/blog/how-azure-fabric-and-copilot-enable-ai-driven-financial-planning/">AI-driven financial planning</a> with Fabric, Azure ML, and Power BI.</p>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta-final" id="demo">
+  <div class="wrap">
+    <span class="eyebrow on-dark">Ready When You Are</span>
+    <h2>See Your Business Central Data in a New Light</h2>
+    <p>Get a tailored walkthrough of pre-built Power BI dashboards for Dynamics 365 Business Central. Discuss your finance, sales, inventory, purchasing, AR, AP, manufacturing, projects, or multi-company reporting needs with Folio3's Azure analytics team.</p>
+    <div class="hero-cta">
+      <a href="#pgForm" class="btn btn-primary">Request a Dashboard Demo</a>
+      <a href="#pgForm" class="btn btn-secondary">Talk to an Azure Engineer</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Frequently Asked Questions</span>
+      <h2>Common Questions About Business Central Dashboards</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>What are pre-built Power BI dashboards for Dynamics 365 Business Central?</summary>
+        <div class="faq-body">Pre-built Power BI dashboards are ready-to-configure dashboard modules designed to visualize common Business Central finance, sales, inventory, purchasing, accounts receivable, accounts payable, and operational data. They help organizations accelerate reporting compared with building every data model, measure, and report from scratch.</div>
+      </details>
+      <details class="faq">
+        <summary>Can Folio3 customize Business Central Power BI dashboards?</summary>
+        <div class="faq-body">Yes. Folio3 can configure and customize dashboards around your business structure, companies, dimensions, KPI definitions, reporting roles, and operational requirements. Pre-built dashboards provide a faster starting point, while <a href="/solution/intellifabric/">IntelliFabric</a> supports a scalable path for custom models, additional sources, and more advanced analytics.</div>
+      </details>
+      <details class="faq">
+        <summary>Which Business Central dashboard areas can Folio3 support?</summary>
+        <div class="faq-body">Folio3 can support dashboard needs across executive reporting, finance, budget vs. actuals, cash flow, accounts receivable, accounts payable, sales, inventory, inventory valuation, purchasing, vendor performance, supply chain, warehouse operations, manufacturing, projects, CRM-related analysis, and multi-company consolidation.</div>
+      </details>
+      <details class="faq">
+        <summary>Can Power BI dashboards be embedded in Business Central?</summary>
+        <div class="faq-body">Yes. Microsoft Dynamics 365 Business Central supports Power BI reports within Business Central pages, including Role Centers and other pages that include a Power BI report part. This enables users to access relevant analytics close to their daily operational workflows.</div>
+      </details>
+      <details class="faq">
+        <summary>Is Microsoft Fabric required for Business Central reporting?</summary>
+        <div class="faq-body">Not every Business Central dashboard deployment requires a full Microsoft Fabric implementation. However, Fabric becomes valuable when an organization needs stronger data integration, centralized architecture, governance, multi-source analytics, reusable semantic models, scalable reporting, or a foundation for AI and forecasting. Folio3 IntelliFabric is designed for organizations that need that more complete analytics operating model.</div>
+      </details>
+      <details class="faq">
+        <summary>How long does Business Central dashboard implementation take?</summary>
+        <div class="faq-body">The timeline depends on the number of dashboard modules, data complexity, required customizations, KPI validation, user roles, and whether additional sources are included. A pre-built dashboard approach can accelerate the initial rollout because the reporting foundation and common business logic do not need to be developed entirely from scratch.</div>
+      </details>
+      <details class="faq">
+        <summary>Can dashboards combine Business Central with CRM, spreadsheets, e-commerce, or other systems?</summary>
+        <div class="faq-body">Yes. Folio3's end-to-end analytics services are designed to integrate data from databases, data warehouses, cloud resources, files, SaaS platforms, and external services into a cohesive reporting environment. Learn more about <a href="/azure-data-analytics/">Azure Data Analytics</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
