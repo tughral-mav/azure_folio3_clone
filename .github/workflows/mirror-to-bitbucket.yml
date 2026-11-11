@@ -1,0 +1,37 @@
+name: Mirror to Bitbucket
+
+# Keeps Bitbucket folio3/dynamics-azure-website `main` identical to GitHub `master`.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-to-bitbucket
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Fast-forward only: if someone committed directly on Bitbucket, this fails loudly
+      # instead of overwriting their work.
+      - name: Push master to Bitbucket main
+        env:
+          BITBUCKET_TOKEN: ${{ secrets.BITBUCKET_TOKEN }}
+        run: |
+          set -euo pipefail
+          for user in x-bitbucket-api-token-auth tughralhussain; do
+            remote="https://${user}:${BITBUCKET_TOKEN}@bitbucket.org/folio3/dynamics-azure-website.git"
+            if git ls-remote "$remote" refs/heads/main >/dev/null 2>&1; then
+              git push "$remote" HEAD:refs/heads/main
+              echo "Mirrored $(git rev-parse --short HEAD) to Bitbucket main"
+              exit 0
+            fi
+          done
+          echo "::error::Bitbucket rejected the token. Check the BITBUCKET_TOKEN secret has read:repository and write:repository scopes and has not expired."
+          exit 1
