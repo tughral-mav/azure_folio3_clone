@@ -104,6 +104,8 @@
   .post-body ul { @apply my-4 list-disc space-y-2 pl-6; }
   .post-body ol { @apply my-4 list-decimal space-y-2 pl-6; }
   .post-body a { @apply text-brand underline; }
+  .post-body .post-cta { @apply mt-8; }
+  .post-body a.btn-primary { @apply text-white no-underline; }
   .post-body img { @apply my-6 h-auto w-full rounded-lg; }
   .post-body blockquote { @apply my-6 border-l-4 border-brand pl-4 italic text-ink; }
   .post-body table { @apply my-6 w-full border-collapse text-sm; }
