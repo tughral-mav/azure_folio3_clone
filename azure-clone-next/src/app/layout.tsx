@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, Poppins } from 'next/font/google';
+import localFont from 'next/font/local';
 import Script from 'next/script';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -7,15 +7,23 @@ import { Footer } from '@/components/layout/Footer';
 import { LeaveSiteConfirm } from '@/components/layout/ExternalLink';
 import { ExploreFolio3Drawer } from '@/components/layout/ExploreFolio3Drawer';
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
+// Fonts are stored in ./fonts (the same latin files Google Fonts serves) instead of
+// being downloaded from Google at build time: Google intermittently returns a font
+// URL that next/font/google cannot parse, which failed a production build.
+const jakarta = localFont({
+  src: './fonts/plus-jakarta-sans-latin-300-800.woff2',
+  weight: '300 800',
+  style: 'normal',
   variable: '--font-jakarta',
   display: 'swap',
 });
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+const poppins = localFont({
+  src: [
+    { path: './fonts/poppins-latin-400.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/poppins-latin-500.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/poppins-latin-600.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/poppins-latin-700.woff2', weight: '700', style: 'normal' },
+  ],
   variable: '--font-poppins',
   display: 'swap',
 });
