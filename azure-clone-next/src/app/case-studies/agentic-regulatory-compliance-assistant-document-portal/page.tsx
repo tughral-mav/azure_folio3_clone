@@ -114,7 +114,7 @@ export default function Page() {
           </div>
           <Reveal animation="zoomIn" className="relative">
             {heroImg
-              ? <Image src={heroImg} alt="Agentic regulatory compliance assistant on Azure" width={620} height={460} className="h-auto w-full" priority />
+              ? <Image src={heroImg} alt="Agentic regulatory compliance assistant on Azure" width={1200} height={800} sizes="(max-width: 1024px) 100vw, 50vw" className="h-auto w-full rounded-2xl shadow-card" priority />
               : <ImgPlaceholder path={c.hero.img} className="aspect-[665/631] w-full" />}
           </Reveal>
         </div>
