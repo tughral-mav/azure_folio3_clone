@@ -8,6 +8,12 @@ import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
 
 const caseStudies: CaseItem[] = [
   {
+    name: 'Agentic Regulatory Compliance Assistant',
+    img: '/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp',
+    blurb: 'See how a North American food certification company centralized its multi-standard regulatory library and gave its teams cited, AI-powered answers on Azure.',
+    href: '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',
+  },
+  {
     name: 'Weaver Popcorn Hybrids',
     img: '/wp-content/uploads/2026/01/weaver-popcorn-hybrids-1.webp',
     blurb: 'Weaver Popcorn Hybrids modernizes analytics with IntelliFabric on Microsoft Fabric.',

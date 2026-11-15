@@ -397,6 +397,18 @@ const managed = [
 
 const caseStudies: CaseStudy[] = [
   {
+    client: 'North American food certification company',
+    tag: 'Food certification · Azure AI Foundry agent',
+    stat: 'Faster',
+    statLabel: 'resolution of NOP regulatory questions',
+    title: 'Agentic Regulatory Compliance Assistant',
+    summary:
+      'See how a North American food certification company centralized its multi-standard regulatory library and gave its teams cited, AI-powered answers on Azure.',
+    href: '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',
+    img: { src: '/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp', w: 696, h: 476 },
+    alt: 'Illustration of farms and food production connected to a regulatory document library',
+  },
+  {
     client: 'Savills',
     tag: 'Real Estate · Microsoft Fabric',
     stat: '13%',
