@@ -105,7 +105,16 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <CaseStudies />
+      <CaseStudies
+        prepend={[
+          {
+            name: 'Agentic Regulatory Compliance Assistant',
+            img: '/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp',
+            blurb: 'See how a North American food certification company centralized its multi-standard regulatory library and gave its teams cited, AI-powered answers on Azure.',
+            href: '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',
+          },
+        ]}
+      />
 
       <Section>
         <SectionHeading title="Your Common Queries Are Resolved" subtitle="We believe in the power of the cloud to transform businesses and empower people." />
