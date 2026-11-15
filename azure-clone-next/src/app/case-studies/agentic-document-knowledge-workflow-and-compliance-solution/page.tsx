@@ -5,6 +5,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { Reveal } from '@/components/ui/Reveal';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
+import { SolutionTabs } from './SolutionTabs';
 import content from '../../../../content-kit/case-studies/agentic-document-knowledge-workflow-and-compliance-solution.json';
 
 /**
@@ -221,29 +222,7 @@ export default function Page() {
             <Reveal animation="fadeInUp"><h2 className="text-3xl font-bold leading-tight text-ink lg:text-4xl">{c.solution.heading}</h2></Reveal>
             <p className="mt-5 text-body">{c.solution.intro}</p>
           </div>
-          {c.solution.groups.map((g) => (
-            <div key={g.heading} className="mt-14">
-              <h3 className="text-center text-xl font-semibold text-ink lg:text-2xl">{g.heading}</h3>
-              <p className="mx-auto mt-4 max-w-4xl text-center leading-relaxed text-body">{g.intro}</p>
-              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {g.items.map((t, i) => {
-                  const icon = localImg(t.icon);
-                  return (
-                    <Reveal key={t.text} animation="fadeInUp" delay={(i % 3) * 60}>
-                      <div className="flex h-full flex-col items-center rounded-2xl border border-surface-line bg-white p-7 text-center shadow-card card-hover">
-                        <div className="flex h-20 w-full items-center justify-center">
-                          {icon
-                            ? <Image src={icon} alt={t.label} width={150} height={80} className="h-auto max-h-20 w-auto max-w-[170px] object-contain" />
-                            : <span className="flex h-16 min-w-16 items-center justify-center rounded-xl border-2 border-dashed border-brand/30 px-3 text-xs font-semibold text-brand" title={`Icon placeholder: ${t.icon.split('/').pop()}`}>{t.label}</span>}
-                        </div>
-                        <p className="mt-5 text-sm leading-relaxed text-body">{t.text}</p>
-                      </div>
-                    </Reveal>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+          <SolutionTabs groups={c.solution.groups.map((g) => ({ heading: g.heading, intro: g.intro, items: g.items.map((t) => ({ icon: localImg(t.icon), iconFile: t.icon.split('/').pop() ?? '', label: t.label, text: t.text })) }))} />
           <div className="mt-14 rounded-2xl bg-white p-8 shadow-card lg:p-10">
             <h3 className="text-center text-xl font-semibold text-ink">{c.solution.techHeading}</h3>
             <ul className="mt-6 flex flex-wrap justify-center gap-3">
