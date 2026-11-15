@@ -312,6 +312,27 @@
         },
         {
           "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/11/agentic-document-compliance-card.webp",
+          "w": 696,
+          "h": 476,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Agentic Document Compliance Automation"
+        },
+        {
+          "t": "p",
+          "text": "See how a petrochemical company transformed controlled document management with a Copilot Studio agent and Azure-powered document validation."
+        },
+        {
+          "t": "cta",
+          "text": "read more",
+          "href": "/case-studies/agentic-document-knowledge-workflow-and-compliance-solution/"
+        },
+        {
+          "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp",
           "w": 696,
           "h": 476,
@@ -567,6 +588,10 @@
         {
           "tag": "h2",
           "text": "All Customer Stories"
+        },
+        {
+          "tag": "h3",
+          "text": "Agentic Document Compliance Automation"
         },
         {
           "tag": "h3",

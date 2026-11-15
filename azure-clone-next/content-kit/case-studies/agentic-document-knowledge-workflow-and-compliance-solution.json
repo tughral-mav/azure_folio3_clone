@@ -1,0 +1,212 @@
+{
+  "slug": "case-studies/agentic-document-knowledge-workflow-and-compliance-solution",
+  "meta": {
+    "title": "Agentic Document Knowledge, Workflow & Compliance Solution | Folio3 Azure",
+    "description": "See how a petrochemical company made 4,000+ controlled documents searchable in natural language and cut avoidable document rejections with Copilot Studio and Azure.",
+    "ogImage": "/wp-content/uploads/2026/11/agentic-document-knowledge-workflow-compliance.webp"
+  },
+  "card": {
+    "title": "Agentic Document Compliance Automation",
+    "blurb": "See how a petrochemical company transformed controlled document management with a Copilot Studio agent and Azure-powered document validation.",
+    "img": "/wp-content/uploads/2026/11/agentic-document-compliance-card.webp"
+  },
+  "hero": {
+    "h1": "Agentic Document Knowledge, Workflow, and Compliance Automation Solution",
+    "cta": { "text": "CONTACT US TO AUTOMATE DOCUMENT CONTROL", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2026/11/agentic-document-knowledge-workflow-compliance.webp"
+  },
+  "client": {
+    "facts": [
+      { "icon": "location", "label": "Saudi Arabia" },
+      { "icon": "industry", "label": "Petrochemicals & Refining" },
+      { "icon": "library", "label": "4,000+ Controlled Documents" }
+    ],
+    "eyebrow": "About The Client",
+    "name": "Petrochemical Company",
+    "description": [
+      "The client is a leading Saudi Arabian petrochemical company that operates one of the largest integrated refining and petrochemical complexes in the Middle East. It produces a wide range of refined hydrocarbons and petrochemical products used globally across plastics, fuels, packaging, detergents, automotive components, and more."
+    ]
+  },
+  "outcomes": {
+    "heading": "Quantified Business Outcomes",
+    "stats": [
+      { "value": "60% – 80%", "label": "Reduction", "desc": "in document search time" },
+      { "value": "70% – 90%", "label": "Less", "desc": "report preparation effort" },
+      { "value": "40% – 60%", "label": "Fewer", "desc": "avoidable document rework and rejection cycles" }
+    ],
+    "areasHeading": "Key Business Areas Impacted Included:",
+    "areas": [
+      "Document search, retrieval, and navigation time",
+      "Workflow status queries and report preparation",
+      "Document preparation cycle time, first-time compliance, and rework rate",
+      "Overall user productivity"
+    ]
+  },
+  "customer": {
+    "heading": "The Customer",
+    "blocks": [
+      {
+        "paragraphs": [
+          "The company manages its approved policies, procedures, charters, manuals, and standard operating procedures through an electronic document management system built on Power Apps and SharePoint sites, lists, and document libraries. The system holds more than 4,000 controlled documents spread across complex libraries and nested organizational structures.",
+          "Finding the right document meant knowing its exact file name, document identifier, department, or function. Users often remembered what a document was about, but not what it was called or where it lived."
+        ],
+        "bullets": [
+          "Keyword-based search was slow and depended on exact information.",
+          "When search failed, users had to navigate nested document structures manually.",
+          "There was no simple way to ask for a document using natural language.",
+          "Checking workflow progress, approval status, and assigned items meant moving between different areas of the system.",
+          "Reports on due, overdue, pending, and expired documents required extra manual effort."
+        ]
+      },
+      {
+        "paragraphs": [
+          "Document creation added a second layer of friction. The company enforces strict templates and filling guidelines for each document category, but these were documented in a user manual that users did not always read or follow consistently."
+        ],
+        "bullets": [
+          "Documents were submitted with incorrect fonts, sizes, margins, tables, sections, or images.",
+          "Users frequently downloaded existing templates and copied content from older revisions.",
+          "Copying and pasting damaged template structure and removed or corrupted Word content controls.",
+          "Non-compliant documents were rejected and returned, and repeated corrections increased preparation and approval time."
+        ]
+      }
+    ]
+  },
+  "needs": {
+    "eyebrow": "The Problem",
+    "heading": "What The Company Needed",
+    "intro": "The company aimed to implement an intelligent, guided solution that could:",
+    "items": [
+      { "icon": "search", "text": "Enable natural language discovery across thousands of approved documents" },
+      { "icon": "workflow", "text": "Provide instant visibility into document workflow, approval status, and assigned items" },
+      { "icon": "report", "text": "Automate reporting for due, overdue, pending, and expired documents" },
+      { "icon": "edit", "text": "Guide users through document creation without manual template formatting" },
+      { "icon": "shield", "text": "Validate documents against compliance rules before submission" }
+    ],
+    "cta": { "text": "Request a call", "href": "#pgForm" }
+  },
+  "solution": {
+    "heading": "Folio3 Solution",
+    "intro": "Folio3 delivered an AI-powered, SharePoint-grounded document knowledge and workflow agent, combined with a custom document generation and compliance validation platform on Microsoft Azure.",
+    "groups": [
+      {
+        "heading": "1. Intelligent Document Agent (Microsoft Copilot Studio)",
+        "intro": "A multi-agent orchestrated solution where a parent agent acts as the primary conversational assistant, triage agent, and router for specialized tasks. SharePoint serves as the knowledge source and system of record for approved documents. Agentic RAG runs under the hood through Copilot Studio's built-in ingestion and vectorization pipelines. Users reach the agent through a direct 1:1 chat in Microsoft Teams, or through Copilot Chat embedded in the existing Power Apps application. Answers are strictly grounded in the company's document libraries, with citations to the approved sources.",
+        "items": [
+          { "icon": "/wp-content/uploads/2026/01/microsoft-copilot-studio-icon.svg", "label": "Copilot Studio", "text": "Parent agent handles conversation, triage, and routing." },
+          { "icon": "/wp-content/uploads/2026/11/agentic-rag-icon.svg", "label": "Agentic RAG", "text": "Agentic RAG with vector and semantic search finds documents by meaning and context." },
+          { "icon": "/wp-content/uploads/2026/11/workiq-icon.svg", "label": "WorkIQ", "text": "WorkIQ (formerly Tenant Graph Grounding) improves SharePoint retrieval quality and organizational context." },
+          { "icon": "/wp-content/uploads/2026/01/microsoft-copilot-studio-icon.svg", "label": "Copilot Studio", "text": "Workflow Tracker Agent (child agent) answers document status, approval progress, and assigned item queries." },
+          { "icon": "/wp-content/uploads/2026/01/excel-sharepoint-hosted-icon.svg", "label": "Excel", "text": "Report Generation Agent (child agent) exports due, overdue, pending, and expired document reports to Excel." }
+        ]
+      },
+      {
+        "heading": "2. Document Generation and Compliance Platform (Microsoft Azure)",
+        "intro": "A guided editor backed by two serverless Azure Functions endpoints. The Generation Service takes structured HTML content from the editor, converts it into Word XML, and inserts it into the correct sections of the selected template. The Validation Service checks the finished document against compliance rules and returns the exact issues users must fix before starting the approval process.",
+        "items": [
+          { "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg", "label": "React", "text": "React, TypeScript, and Vite power a guided, structured editing experience." },
+          { "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg", "label": "React", "text": "Drag-and-drop editing supports paragraphs, headings, bullets, images, and other content blocks." },
+          { "icon": "/wp-content/uploads/2025/06/Azure-Function-App.svg", "label": "Azure Functions", "text": "Azure Functions run the serverless generation and validation services." },
+          { "icon": "/wp-content/uploads/2023/06/C-Sharp.png", "label": ".NET / C#", "text": ".NET and C# power the document processing engine." },
+          { "icon": "/wp-content/uploads/2026/11/open-xml-sdk-icon.svg", "label": "Open XML SDK", "text": "Open XML SDK gives direct control over Word document structure and formatting." },
+          { "icon": "/wp-content/uploads/2026/11/htmltoopenxml-icon.svg", "label": "HtmlToOpenXml", "text": "HtmlToOpenXml converts structured editor content into Word-compatible XML." },
+          { "icon": "/wp-content/uploads/2026/11/wecantspell-hunspell-icon.svg", "label": "WeCantSpell Hunspell", "text": "WeCantSpell Hunspell spell-checks the sections users fill in." },
+          { "icon": "/wp-content/uploads/2026/11/application-insights-icon.svg", "label": "Application Insights", "text": "Application Insights provides service monitoring and diagnostics on Azure." }
+        ]
+      }
+    ],
+    "techHeading": "Technologies used:",
+    "tech": [
+      { "label": "Microsoft Copilot Studio", "icon": "/wp-content/uploads/2026/01/microsoft-copilot-studio-icon.svg" },
+      { "label": "SharePoint", "icon": "/wp-content/uploads/2026/01/sharepoint-icon.svg" },
+      { "label": "Agentic RAG", "icon": "/wp-content/uploads/2026/11/agentic-rag-icon.svg" },
+      { "label": "WorkIQ", "icon": "/wp-content/uploads/2026/11/workiq-icon.svg" },
+      { "label": "Power Apps", "icon": "/wp-content/uploads/2026/11/power-apps-icon.svg" },
+      { "label": "Microsoft Teams", "icon": "/wp-content/uploads/2026/11/microsoft-teams-icon.svg" },
+      { "label": "Azure Functions", "icon": "/wp-content/uploads/2025/06/Azure-Function-App.svg" },
+      { "label": ".NET / C#", "icon": "/wp-content/uploads/2023/06/C-Sharp.png" },
+      { "label": "Open XML SDK", "icon": "/wp-content/uploads/2026/11/open-xml-sdk-icon.svg" },
+      { "label": "HtmlToOpenXml", "icon": "/wp-content/uploads/2026/11/htmltoopenxml-icon.svg" },
+      { "label": "WeCantSpell Hunspell", "icon": "/wp-content/uploads/2026/11/wecantspell-hunspell-icon.svg" },
+      { "label": "React", "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg" },
+      { "label": "TypeScript", "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg" },
+      { "label": "Vite", "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg" },
+      { "label": "Application Insights", "icon": "/wp-content/uploads/2026/11/application-insights-icon.svg" }
+    ]
+  },
+  "workflow": {
+    "heading": "End-to-End Agentic Workflow",
+    "steps": [
+      {
+        "title": "Natural Language Document Search",
+        "img": "/wp-content/uploads/2026/11/natural-language-document-search.webp",
+        "groups": [
+          { "label": "Users ask the agent for:", "bullets": ["Policies, procedures, charters, manuals, or SOPs in plain language", "Documents by context or purpose, without exact names, IDs, departments, or locations"] },
+          { "label": "The agent:", "bullets": ["Searches SharePoint knowledge sources using Agentic RAG with vector and semantic search", "Uses WorkIQ to improve retrieval quality and organizational context", "Returns grounded answers with citations and links to the source documents"] }
+        ],
+        "value": "Faster discovery across 4,000+ documents with no dependency on exact file names or folder structures."
+      },
+      {
+        "title": "Workflow Status and Assigned Items",
+        "img": "/wp-content/uploads/2026/11/workflow-status-assigned-items.webp",
+        "groups": [
+          { "label": "The parent agent routes workflow queries to the Workflow Tracker Agent, which answers:", "bullets": ["Where a document sits in the approval process", "Which stages it has completed and whether it is approved", "Which documents are currently assigned to the user"] }
+        ],
+        "value": "Instant visibility into document ownership and approval progress, read directly from the SharePoint lists behind the existing workflow."
+      },
+      {
+        "title": "On-Demand Document Reports",
+        "img": "/wp-content/uploads/2026/11/on-demand-document-reports.webp",
+        "groups": [
+          { "label": "The Report Generation Agent:", "bullets": ["Generates reports for due, overdue, pending, and expired documents", "Exports results directly to Excel"] }
+        ],
+        "value": "Faster operational reporting with minimal manual data collection."
+      },
+      {
+        "title": "Guided Document Creation",
+        "img": "/wp-content/uploads/2026/11/guided-document-creation.webp",
+        "groups": [
+          { "label": "Users:", "bullets": ["Select a document category such as policy, procedure, charter, manual, or SOP", "Follow the correct structure, loaded section by section", "Add paragraphs, headings, bullets, and images through a drag-and-drop editor"] }
+        ],
+        "value": "Users focus on content, not formatting, and no longer need to memorize template guidelines."
+      },
+      {
+        "title": "Compliant Word Document Generation",
+        "img": "/wp-content/uploads/2026/11/compliant-word-document-generation.webp",
+        "groups": [
+          { "label": "The Azure Functions Generation Service:", "bullets": ["Converts structured editor content into Word XML", "Inserts it into the correct sections of the approved template", "Preserves template structure and protects Word content controls"] }
+        ],
+        "value": "Standardized documents with less manual formatting and lower risk of template corruption."
+      },
+      {
+        "title": "Pre-Submission Compliance Validation",
+        "img": "/wp-content/uploads/2026/11/pre-submission-compliance-validation.webp",
+        "groups": [
+          { "label": "Before upload, the Validation Service checks:", "bullets": ["Font styles and sizes", "Page margins", "Required sections and template structure", "Completed tables", "Required images (when applicable)", "Word content controls", "File size limits"] }
+        ],
+        "value": "Compliance issues are caught early, so documents enter the existing approval process submission-ready."
+      }
+    ]
+  },
+  "impact": {
+    "heading": "Impact & Outcomes",
+    "intro": "The combination of a Copilot Studio multi-agent assistant and Azure-powered document validation transformed the company's document management system from manual navigation and template preparation into an intelligent, conversational, guided, and compliant experience, accessible through Microsoft Teams and the existing Power Apps application.",
+    "img": "/wp-content/uploads/2026/01/impact-outcomes.webp",
+    "bullets": [
+      "60% – 80% reduction in document search time by replacing manual navigation of complex SharePoint hierarchies with natural language search",
+      "50% – 70% faster access to workflow information on document status, completed approval stages, pending actions, and assigned items",
+      "70% – 90% reduction in report preparation effort through on-demand Excel reports for due, overdue, pending, and expired documents",
+      "30% – 50% reduction in document preparation time through guided, section-based content entry and automated template population",
+      "40% – 60% fewer avoidable rework and rejection cycles by validating formatting, sections, tables, images, and content controls before initiation",
+      "2x – 3x faster creation of submission-ready documents by eliminating manual formatting, copy-pasting, and guideline checking",
+      "100% of documents processed through the platform checked against the same defined compliance rules before upload",
+      "4,000+ approved documents accessible through natural language, with existing initiation governance and approval processes fully preserved"
+    ],
+    "footnote": "Outcomes are estimated based on the manual process steps replaced or automated by the solution."
+  },
+  "closing": {
+    "heading": "Ready to transform controlled document management with agentic AI?",
+    "subtitle": "Talk to our experts to see how Microsoft Copilot Studio and Azure-powered solutions can simplify document discovery, workflow tracking, and compliance.",
+    "cta": { "text": "TALK TO OUR EXPERTS", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2024/01/Scale-Your-Business-with-.png"
+  }
+}
