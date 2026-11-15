@@ -126,6 +126,7 @@ const COST_POINTS = [
 ];
 
 const CASES = [
+  { title: "Agentic Regulatory Compliance Assistant", img: '/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp', href: '/case-studies/agentic-regulatory-compliance-assistant-document-portal/' },
   { title: "Savills \u2014 Microsoft Fabric Reporting Boosting Operational Efficiency by 13%", img: '/wp-content/uploads/2025/07/microsoft-fabric-reporting-boosting-operational-effiency.webp', href: '/microsoft-fabric-reporting-for-real-estate/' },
   { title: "Power Apps Solution for City University", img: '/wp-content/uploads/2025/07/power-apps-solution-for-city-university.webp', href: '/city-university-azure/' },
   { title: "Azure Automate Data Reporting for SLB with 99.9% Data Accuracy", img: '/wp-content/uploads/2025/07/azure-automate-data-reporting-for-slb-with-data-accuracy.webp', href: '/azure-automated-data-reporting-for-slb/' },
