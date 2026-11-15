@@ -77,7 +77,7 @@
         "heading": "Document Management and Access Control Portal",
         "items": [
           { "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg", "label": "React", "text": "React, TypeScript, and Vite for the Documents, Upload, and Admin experiences" },
-          { "icon": "/wp-content/uploads/2026/11/microsoft-entra-id-icon.svg", "label": "Entra ID", "text": "Microsoft Entra ID with MSAL.js for login, with app roles and security groups driving authorization" },
+          { "icon": "/wp-content/uploads/2025/06/Azure-Service-Principal.svg", "label": "Entra ID", "text": "Microsoft Entra ID with MSAL.js for login, with app roles and security groups driving authorization" },
           { "icon": "/wp-content/uploads/2025/07/azure-data-lake.webp", "label": "Data Lake", "text": "Azure Data Lake Storage Gen2 as the centralized document repository" },
           { "icon": "/wp-content/uploads/2025/07/azure-sql.webp", "label": "Azure SQL", "text": "Azure SQL Database as the registry of every standard, sub-group, member, tier, and permitted folder path" },
           { "icon": "/wp-content/uploads/2026/11/azure-ai-search-icon.svg", "label": "AI Search", "text": "Azure AI Search as the index for each document's extracted content, embeddings, and metadata" }
