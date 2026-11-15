@@ -1,0 +1,185 @@
+{
+  "slug": "case-studies/agentic-regulatory-compliance-assistant-document-portal",
+  "meta": {
+    "title": "Agentic Compliance Assistant for Food Certification | Folio3 Azure",
+    "description": "See how Folio3 built an Azure document portal and agentic compliance assistant that gives a food certification company governed access and cited answers.",
+    "ogImage": "/wp-content/uploads/2026/11/agentic-regulatory-compliance-assistant.webp"
+  },
+  "card": {
+    "title": "Agentic Regulatory Compliance Assistant",
+    "blurb": "See how a North American food certification company centralized its multi-standard regulatory library and gave its teams cited, AI-powered answers on Azure.",
+    "img": "/wp-content/uploads/2026/11/regulatory-compliance-assistant-card.webp"
+  },
+  "hero": {
+    "h1": "Agentic Regulatory Compliance Assistant and Document Management Portal on Azure",
+    "cta": { "text": "CONTACT US TO AUTOMATE COMPLIANCE RESEARCH", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2026/11/agentic-regulatory-compliance-assistant.webp"
+  },
+  "client": {
+    "location": "North America (United States & Canada)",
+    "industry": "Food Verification & Certification",
+    "employees": "",
+    "eyebrow": "About The Client",
+    "name": "Food Verification and Certification Company",
+    "description": [
+      "The company is a leading North American provider of independent, third-party food verification and certification services. It works with food producers, ranchers, processors, and retailers across the United States and Canada. Its organic certification team administers USDA National Organic Program (NOP) certifications, helping farms, handlers, and processors achieve and maintain organic certification under federal organic regulations."
+    ]
+  },
+  "outcomes": {
+    "heading": "Quantified Business Outcomes",
+    "stats": [
+      { "value": "Faster", "desc": "resolution of NOP regulatory questions across certifier, sales, and audit teams" },
+      { "value": "Citation-Backed", "desc": "answers tied to specific NOP sections and ranked by authority" },
+      { "value": "Automated", "desc": "detection of conflicts between binding NOP rules and advisory guidance" }
+    ],
+    "areasHeading": "Key Business Areas Impacted Included:",
+    "areas": [
+      "Time to onboard a new certification standard's document library",
+      "Document upload and metadata standardization effort",
+      "Permission administration time and error rate",
+      "Access control consistency across storage, metadata, and AI search",
+      "Research time per regulatory question for certifiers, sales, and auditors",
+      "Document search and retrieval time across standards"
+    ]
+  },
+  "customer": {
+    "heading": "The Customer",
+    "paragraphs": [
+      "The company certifies under several distinct standards at the same time. Before this project, it had no centralized system to store, organize, or control access to the regulatory and program documents behind those standards. Finding a specific document often depended on knowing who to ask.",
+      "Certifiers, sales representatives, auditors, and administrators each felt the impact differently:"
+    ],
+    "bullets": [
+      "Certifiers spent significant time reading through NOP regulations and guidance materials to answer questions from organic operations and internal teams.",
+      "Sales representatives needed simple, producer-friendly explanations of certification requirements but were handed the same dense regulatory documents used by certifiers and auditors.",
+      "Confirming whether a NOP guidance document or policy memo was the current binding version or had been superseded required manual cross-referencing across USDA publications.",
+      "Contradictions between binding NOP regulations and interpretive USDA guidance memos weren't flagged automatically, creating audit and certification risk.",
+      "Adding newly published USDA regulations, policy memos, and program updates to the knowledge base was manual, unstructured, and slow."
+    ]
+  },
+  "needs": {
+    "eyebrow": "The Problem",
+    "heading": "What The Company Needed",
+    "intro": "The company needed a unified platform that could:",
+    "items": [
+      { "icon": "library", "text": "Centralize regulatory documents across every certification standard" },
+      { "icon": "lock", "text": "Enforce fine-grained access control down to the folder level" },
+      { "icon": "sync", "text": "Keep storage, metadata, registry, and search automatically in sync" },
+      { "icon": "quote", "text": "Deliver cited, natural-language answers to regulatory questions" },
+      { "icon": "chat", "text": "Give administrators a faster, conversational way to manage the platform" }
+    ],
+    "cta": { "text": "Request a call", "href": "#pgForm" }
+  },
+  "solution": {
+    "heading": "Folio3 Solution",
+    "intro": "Folio3 built a Document Management and Access Control Portal with an Agentic Regulatory Compliance Assistant on Microsoft Azure, delivered as a self-service web application with a companion Microsoft Teams bot.",
+    "groups": [
+      {
+        "heading": "Document Management and Access Control Portal",
+        "items": [
+          { "icon": "/wp-content/uploads/2026/11/react-typescript-vite-icon.svg", "label": "React", "text": "React, TypeScript, and Vite for the Documents, Upload, and Admin experiences" },
+          { "icon": "/wp-content/uploads/2025/06/Azure-Service-Principal.svg", "label": "Entra ID", "text": "Microsoft Entra ID with MSAL.js for login, with app roles and security groups driving authorization" },
+          { "icon": "/wp-content/uploads/2025/07/azure-data-lake.webp", "label": "Data Lake", "text": "Azure Data Lake Storage Gen2 as the centralized document repository" },
+          { "icon": "/wp-content/uploads/2025/07/azure-sql.webp", "label": "Azure SQL", "text": "Azure SQL Database as the registry of every standard, sub-group, member, tier, and permitted folder path" },
+          { "icon": "/wp-content/uploads/2026/11/azure-ai-search-icon.svg", "label": "AI Search", "text": "Azure AI Search as the index for each document's extracted content, embeddings, and metadata" }
+        ]
+      },
+      {
+        "heading": "Agentic Regulatory Compliance Assistant",
+        "items": [
+          { "icon": "/wp-content/uploads/2026/11/azure-ai-foundry-icon.svg", "label": "AI Foundry", "text": "Azure AI Foundry Agent as the primary assistant for regulatory Q&A" },
+          { "icon": "/wp-content/uploads/2026/11/azure-ai-search-icon.svg", "label": "AI Search", "text": "Azure AI Search for hybrid retrieval (keyword, vector, and semantic)" },
+          { "icon": "/wp-content/uploads/2026/04/azure-openai-service.webp", "label": "Azure OpenAI", "text": "Azure OpenAI (GPT-4o and text-embedding-3-small) for answer generation and embeddings" },
+          { "icon": "/wp-content/uploads/2026/11/azure-ai-document-intelligence-icon.svg", "label": "Document Intelligence", "text": "Azure AI Document Intelligence for automated text extraction ahead of indexing" },
+          { "icon": "/wp-content/uploads/2025/07/azure-cosmos-db.webp", "label": "Cosmos DB", "text": "Azure Cosmos DB for per-user conversation history" },
+          { "icon": "/wp-content/uploads/2026/11/azure-ai-foundry-icon.svg", "label": "AI Foundry", "text": "A second Foundry Agent with MCP tools for conversational administration" },
+          { "icon": "/wp-content/uploads/2026/11/microsoft-teams-icon.svg", "label": "Teams", "text": "Microsoft Teams via Azure Bot Service as a direct channel alongside the web portal" }
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "End-to-End Agentic Workflow",
+    "steps": [
+      {
+        "title": "Onboard a Certification Standard",
+        "img": "/wp-content/uploads/2026/11/onboard-certification-standard.webp",
+        "groups": [
+          { "label": "Administrators create a new standard in a single guided action. The portal automatically provisions:", "bullets": ["The standard's security groups", "A dedicated storage folder with baseline permissions", "The standard's registry entry"] }
+        ],
+        "value": "A new standard's document library and access foundation are ready in one step, with no manual setup across storage, identity, and access systems."
+      },
+      {
+        "title": "Upload and Structure Regulatory Documents",
+        "img": "/wp-content/uploads/2026/11/upload-structure-regulatory-documents.webp",
+        "groups": [
+          { "label": "Administrators upload documents and tag each with:", "bullets": ["Category and authority level", "Document type and version year", "Current-version status"] },
+          { "label": "The portal also:", "bullets": ["Flags duplicate file names against existing copies", "Guides administrators through a replace flow"] }
+        ],
+        "value": "Every document carries consistent, structured metadata from the moment it's uploaded, and duplicate or stale versions are caught before they cause confusion."
+      },
+      {
+        "title": "Grant Fine-Grained, Folder-Level Access",
+        "img": "/wp-content/uploads/2026/11/folder-level-access-control.webp",
+        "groups": [
+          { "label": "Access is governed by:", "bullets": ["A tiered role model (User, Admin, Super Admin)", "Per-standard membership", "Sub-groups scoped to specific folder paths within a standard"] },
+          { "label": "Every grant or revoke propagates together across:", "bullets": ["Storage ACLs", "Blob access metadata", "The registry", "The search index"] }
+        ],
+        "value": "Access is restricted to exactly the right subset of a standard's documents, and direct storage access, document listings, and AI search results never disagree."
+      },
+      {
+        "title": "Browse, Preview, and Download Governed Documents",
+        "img": "/wp-content/uploads/2026/11/browse-preview-download-documents.webp",
+        "groups": [
+          { "label": "Users work directly with the document library to:", "bullets": ["Browse documents across their authorized standards", "Preview and download copies"] }
+        ],
+        "note": "All under the same access rules enforced everywhere else in the system.",
+        "value": "Teams self-serve against the library, not only through chat, with access boundaries enforced consistently either way."
+      },
+      {
+        "title": "Ask Natural-Language Questions with Grounded Citations",
+        "img": "/wp-content/uploads/2026/11/natural-language-questions-cited-answers.webp",
+        "groups": [
+          { "label": "Certifiers, sales representatives, and auditors ask questions in plain English. The assistant:", "bullets": ["Retrieves content through hybrid keyword, vector, and semantic search", "Scopes results to the standards and folders each user is authorized to see", "Generates answers grounded in, and cited back to, the governed library", "Ranks sources by authority level, separating binding NOP rules from advisory guidance"] }
+        ],
+        "value": "Faster, cited answers to regulatory questions, without users needing to know which standard's library a document lives in or what it's named."
+      },
+      {
+        "title": "Administer the Platform Conversationally",
+        "img": "/wp-content/uploads/2026/11/conversational-platform-administration.webp",
+        "groups": [
+          { "label": "As an alternative to the Admin screens, administrators chat with the Admin Agent to manage:", "bullets": ["Standards", "Members", "Sub-group permissions"] }
+        ],
+        "note": "The Admin Agent reports back exactly which actions it performed.",
+        "value": "Faster, lower-effort administration for routine changes, with full visibility into what changed."
+      },
+      {
+        "title": "Access from Web or Microsoft Teams",
+        "img": "/wp-content/uploads/2026/11/web-and-microsoft-teams-access.webp",
+        "groups": [
+          { "label": "Users reach the portal and assistant from the web application, or chat with the assistant inside Microsoft Teams using session commands to:", "bullets": ["Start new conversations", "List past conversations", "Switch between conversations"] }
+        ],
+        "value": "People work from wherever they already are, with the same governed content and access rules following them across channels."
+      }
+    ]
+  },
+  "impact": {
+    "heading": "Impact & Outcomes",
+    "intro": "By deploying a Document Management and Access Control Portal with an Agentic Regulatory Compliance Assistant on Azure, the company replaced scattered documents and unreliable access management with a single, trustworthy system of record for its multi-standard certification library.",
+    "img": "/wp-content/uploads/2026/01/impact-outcomes.webp",
+    "bullets": [
+      "Faster resolution of NOP regulatory questions across certifier, sales, and audit functions.",
+      "Improved certification accuracy through authority-ranked, citation-backed answers tied to specific NOP sections.",
+      "Reduced certification risk through automated detection of conflicts between binding NOP rules and advisory guidance.",
+      "A standardized knowledge base with full metadata governance across organic regulations and USDA guidance documents.",
+      "Higher certifier productivity by eliminating repetitive manual research across fragmented document repositories.",
+      "Consistent access control across storage, metadata, and AI search, with any inconsistency surfaced immediately rather than discovered later.",
+      "The ability to scale across certification standards without scaling the manual effort of organizing, securing, or searching documents."
+    ]
+  },
+  "closing": {
+    "heading": "Ready to put agentic AI to work on regulatory compliance?",
+    "subtitle": "Talk to our experts to see how Azure AI Foundry and Azure AI Search can turn your regulatory library into governed, cited answers your teams can trust.",
+    "cta": { "text": "TALK TO OUR EXPERTS", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2024/01/Scale-Your-Business-with-.png"
+  }
+}

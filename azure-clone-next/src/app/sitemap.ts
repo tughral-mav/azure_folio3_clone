@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/ai-agents/fabric-data-agents/',
     '/azure-cloud/azure-cost-management/',
     '/microsoft-power-platform-services/', '/ai-scenario-library/',
+    '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',
   ];
   // every catch-all design page (so the sitemap covers the full site, not a hardcoded subset)
   const marketing = getMarketingSlugs().map((p) => `/${p.slug.join('/')}/`);
