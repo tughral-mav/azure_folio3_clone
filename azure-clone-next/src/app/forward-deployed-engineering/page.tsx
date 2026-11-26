@@ -56,7 +56,13 @@ export const metadata: Metadata = {
   },
 };
 
-const designations = ['Data & AI', 'Infrastructure', 'Digital & App Innovation', 'Business Applications', 'Direct CSP'];
+const designations = [
+  { src: '/wp-content/uploads/2024/08/data-ai-azure-logo-img.webp', alt: 'Microsoft Solutions Partner: Data & AI, Azure', w: 351, h: 238 },
+  { src: '/wp-content/uploads/2024/08/infrastructure-azure-logo-img.webp', alt: 'Microsoft Solutions Partner: Infrastructure, Azure', w: 352, h: 238 },
+  { src: '/wp-content/uploads/2024/08/digital-app-innovation-logo-img.webp', alt: 'Microsoft Solutions Partner: Digital & App Innovation, Azure', w: 352, h: 238 },
+  { src: '/wp-content/uploads/2024/08/business-application-logo-img.webp', alt: 'Microsoft Solutions Partner: Business Applications', w: 352, h: 238 },
+  { src: '/wp-content/uploads/2023/10/csp-ms-logo.webp', alt: 'Microsoft Direct Cloud Solution Provider', w: 464, h: 162, pad: true },
+];
 
 type IconCard = { title: string; text: ReactNode; Icon: LucideIcon };
 
@@ -479,14 +485,20 @@ export default function ForwardDeployedEngineeringPage() {
             </div>
             <div className="mt-10">
               <p className="text-xs font-semibold uppercase tracking-wider text-body/80">Microsoft Solutions Partner</p>
-              <ul className="mt-3 flex flex-wrap gap-2">
+              <ul className="mt-3 grid max-w-xl grid-cols-3 gap-2 sm:grid-cols-5">
                 {designations.map((d) => (
                   <li
-                    key={d}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-surface-line bg-white px-3 py-1.5 text-xs font-medium text-ink"
+                    key={d.src}
+                    className="flex aspect-[352/238] items-center justify-center overflow-hidden rounded-lg border border-surface-line bg-white shadow-card"
                   >
-                    <BadgeCheck aria-hidden="true" size={13} className="text-brand" />
-                    {d}
+                    <Image
+                      src={d.src}
+                      alt={d.alt}
+                      width={d.w}
+                      height={d.h}
+                      sizes="7rem"
+                      className={d.pad ? 'h-auto w-full px-2' : 'h-full w-full object-contain'}
+                    />
                   </li>
                 ))}
               </ul>
