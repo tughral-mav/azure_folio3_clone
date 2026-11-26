@@ -31,7 +31,9 @@ const META_DESCRIPTION =
   'Azure AI forward deployed engineering: our engineers sit with your team and take one AI agent on Azure AI Foundry or Copilot Studio into production.';
 const H1 = 'Azure AI Forward Deployed Engineering Services';
 const OG_IMAGE = '/wp-content/uploads/2026/07/petro-chemical-company.webp';
-const ASSESSMENT_HREF = '/forward-deployed-engineering/ai-pilot-to-production-assessment/';
+// Temporarily points to the form on this page until the Azure-L02 assessment page
+// (/forward-deployed-engineering/ai-pilot-to-production-assessment/) is built.
+const ASSESSMENT_HREF = '#pgForm';
 const CTA_ASSESSMENT = 'Book an AI pilot-to-production assessment';
 
 export const metadata: Metadata = {
