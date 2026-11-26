@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/solution/pre-built-reporting-dashboards/retail-data-analytics/',
     '/ai-agents/fabric-data-agents/',
     '/forward-deployed-engineering/ai-pilot-to-production-assessment/',
+    '/forward-deployed-engineering/',
     '/azure-cloud/azure-cost-management/',
     '/microsoft-power-platform-services/', '/ai-scenario-library/',
     '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',

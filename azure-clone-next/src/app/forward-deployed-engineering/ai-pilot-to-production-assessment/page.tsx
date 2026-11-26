@@ -8,6 +8,7 @@ import {
   Coins,
   Database,
   FileText,
+  FlaskConical,
   Gauge,
   KeyRound,
   Map as MapIcon,
@@ -242,79 +243,72 @@ function CardGrid({ items }: { items: IconCard[] }) {
   );
 }
 
-const IMG = '/wp-content/uploads/2026';
-
-const reportRows: { label: string; status: string; ok: boolean; Icon: LucideIcon }[] = [
-  { label: 'Data access', status: 'Live data approved', ok: true, Icon: Database },
-  { label: 'Security', status: 'Agent scope agreed', ok: true, Icon: ShieldCheck },
-  { label: 'Live ERP connection', status: 'Connector fix needed', ok: false, Icon: Plug },
-  { label: 'Usage cost at full volume', status: 'Estimated', ok: true, Icon: Coins },
+const gates: { label: string; Icon: LucideIcon }[] = [
+  { label: 'Data access', Icon: Database },
+  { label: 'Security', Icon: ShieldCheck },
+  { label: 'ERP connection', Icon: Plug },
+  { label: 'Usage cost', Icon: Coins },
 ];
 
-/** Hero visual: an illustrative assessment readiness report ending in a go recommendation. */
+/** Hero visual: a stalled pilot passing the four readiness checks on its way to production. */
 function HeroVisual() {
   return (
-    <figure className="relative mx-auto w-full max-w-lg">
-      <div className="rounded-2xl border border-surface-line bg-white p-6 shadow-cardHover">
-        <div className="flex items-center justify-between gap-4 border-b border-surface-line pb-4">
-          <div className="flex items-center gap-3">
-            <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${gradientBg} text-white`}>
-              <ClipboardCheck aria-hidden="true" size={20} />
-            </span>
-            <div className="leading-tight">
-              <p className="text-sm font-semibold text-ink">Production Readiness Report</p>
-              <p className="text-xs text-body">Example workflow · Week 2 of 2</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2" aria-hidden>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${IMG}/01/microsoft-copilot-studio-icon.svg`} alt="" className="h-7 w-7" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${IMG}/11/azure-ai-foundry-icon.svg`} alt="" className="h-7 w-7" />
-          </div>
+    <figure className="relative mx-auto w-full max-w-lg pb-10 pt-6">
+      <div
+        className={`relative overflow-hidden rounded-3xl ${gradientBg} px-6 pb-24 pt-8 text-white shadow-cardHover sm:px-8`}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(255,255,255,0.35)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.35)_1px,transparent_1px)] [background-size:28px_28px]" />
+        <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/15 blur-3xl" />
+
+        <div className="relative flex items-center justify-between gap-3">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-3 py-1.5 text-xs font-semibold">
+            <FlaskConical aria-hidden="true" size={14} /> AI pilot / POC
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-brand">
+            <Rocket aria-hidden="true" size={14} /> Production
+          </span>
         </div>
-        <ul className="mt-4 space-y-2.5">
-          {reportRows.map((r) => (
-            <li key={r.label} className="flex items-center gap-3 rounded-xl bg-surface-tint px-3 py-2.5">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white text-brand">
-                <r.Icon aria-hidden="true" size={16} />
+
+        <p className="relative mt-8 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-white/75">
+          Two-week readiness review
+        </p>
+
+        <ol className="relative mt-5 grid grid-cols-4 gap-2">
+          <span aria-hidden className="absolute left-[12.5%] right-[12.5%] top-6 border-t-2 border-dashed border-white/50" />
+          {gates.map((g) => (
+            <li key={g.label} className="relative flex flex-col items-center text-center">
+              <span className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-brand shadow-card">
+                <g.Icon aria-hidden="true" size={20} strokeWidth={1.9} />
+                <span className="absolute -bottom-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#22C55E] text-[10px] font-bold text-white ring-2 ring-[#1742E7]">
+                  ✓
+                </span>
               </span>
-              <span className="flex-1 text-sm font-medium text-ink">{r.label}</span>
-              <span
-                className={`rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${
-                  r.ok ? 'bg-[#E7F7EE] text-[#137A3E]' : 'bg-[#FEF3C7] text-[#92400E]'
-                }`}
-              >
-                {r.status}
-              </span>
+              <span className="mt-3 text-[11px] font-medium leading-tight text-white/90 sm:text-xs">{g.label}</span>
             </li>
           ))}
-        </ul>
-        <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[11px] font-medium text-body">
+        </ol>
+      </div>
+
+      <div className="absolute inset-x-4 bottom-0 rounded-2xl border border-surface-line bg-white p-4 shadow-cardHover sm:inset-x-8">
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-body">You receive</p>
+          <span className="inline-flex items-center gap-1 rounded-full bg-[#E7F7EE] px-2.5 py-0.5 text-[11px] font-semibold text-[#137A3E]">
+            <BadgeCheck aria-hidden="true" size={12} /> Go / no-go
+          </span>
+        </div>
+        <div className="mt-3 grid grid-cols-3 gap-2 text-center">
           {['Baseline', 'Business case', 'Pilot plan'].map((d) => (
-            <span key={d} className="rounded-lg border border-surface-line px-2 py-2">
-              <span aria-hidden className="mr-1 text-brand">✓</span>
+            <span key={d} className="rounded-lg bg-surface-tint px-2 py-2 text-[11px] font-semibold text-ink sm:text-xs">
               {d}
             </span>
           ))}
         </div>
-        <div className={`mt-4 flex items-center justify-between rounded-xl ${gradientBg} px-4 py-3 text-white`}>
-          <span className="text-sm font-medium">Recommendation</span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-bold text-brand">
-            <BadgeCheck aria-hidden="true" size={14} /> GO<span className="hidden sm:inline"> · Start production pilot</span>
-          </span>
-        </div>
       </div>
-      <div className="absolute -bottom-6 -left-4 hidden items-center gap-3 rounded-xl border border-surface-line bg-white px-4 py-3 shadow-card sm:flex lg:-left-10">
-        <Rocket aria-hidden="true" size={18} className="text-brand" />
-        <div className="leading-tight">
-          <p className="text-xs font-semibold text-ink">Next: Production Pilot</p>
-          <p className="text-[11px] text-body">8 to 12 weeks</p>
-        </div>
-      </div>
+
       <figcaption className="sr-only">
-        Illustrative readiness report from the two-week assessment, showing data, security, ERP connection and cost
-        checks, the deliverables, and a go recommendation.
+        Illustration of an AI pilot passing the assessment&apos;s four checks (data access, security, ERP connection
+        and usage cost) on its way to production, ending with a baseline, business case, pilot plan and a go or no-go
+        recommendation.
       </figcaption>
     </figure>
   );
@@ -535,7 +529,7 @@ export default function AiPilotToProductionAssessmentPage() {
 
       {/* Request form (before the footer) */}
       <section id="request" className="scroll-mt-28 bg-surface-tint py-16 lg:py-24">
-        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
+        <div className="container-x grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <Reveal animation="fadeInLeft">
             <span className="eyebrow">Two Weeks · One Workflow</span>
             <h2 className="mt-3 text-3xl lg:text-4xl">{CTA}</h2>
