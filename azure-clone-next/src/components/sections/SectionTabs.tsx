@@ -5,9 +5,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { Reveal } from '@/components/ui/Reveal';
+import { InlineLinks } from '@/components/ui/InlineLinks';
 
 export type TabItem = { title: string; body: string; icon: string };
-export type SectionTab = { label: string; heading?: string; body?: string; items: TabItem[]; img?: string; cta?: { text: string; href: string } | null };
+export type SectionTab = { label: string; heading?: string; body?: string; outro?: string; items: TabItem[]; img?: string; cta?: { text: string; href: string } | null };
 
 /** Generic Elementor n-tabs renderer: a pill/underline tab bar + the active tab's panel. The panel
  *  shows either a grid of icon-box sub-items OR an image (dashboard tabs), plus optional body + CTA. */
@@ -46,14 +47,15 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'lef
                 : it.icon
                   ? <Image src={it.icon} alt="" width={44} height={44} className="mt-0.5 h-10 w-10 shrink-0 object-contain" />
                   : <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface-chip text-brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-5 w-5"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg></span>}
-              <div><h4 className="font-semibold text-ink">{it.title}</h4>{it.body && <p className="mt-1 text-sm leading-relaxed text-body">{it.body}</p>}</div>
+              <div><h4 className="font-semibold text-ink">{it.title}</h4>{it.body && <p className="mt-1 text-sm leading-relaxed text-body"><InlineLinks text={it.body} /></p>}</div>
             </div></Reveal>
           ));
           const textCol = (
             <div>
               {t.heading && <h3 className="mb-2 text-2xl">{t.heading}</h3>}
-              {t.body && <p className="mb-6 max-w-xl text-sm leading-relaxed text-body">{t.body}</p>}
+              {t.body && <p className="mb-6 max-w-xl text-sm leading-relaxed text-body"><InlineLinks text={t.body} /></p>}
               {t.items.length > 0 && <div className="space-y-5">{itemList}</div>}
+              {t.outro && <p className="mt-6 max-w-xl text-sm leading-relaxed text-body"><InlineLinks text={t.outro} /></p>}
               {t.cta && t.cta.href && <Link href={t.cta.href} className="btn-primary mt-7 uppercase tracking-wide">{t.cta.text || 'Learn More'}</Link>}
             </div>
           );
@@ -70,8 +72,9 @@ export function SectionTabs({ heading, eyebrow, subtitle, tabs, imageSide = 'lef
               ) : (
                 <>
                   {t.heading && <h3 className="mb-2 text-2xl">{t.heading}</h3>}
-                  {t.body && <p className="mb-6 max-w-3xl text-sm leading-relaxed text-body">{t.body}</p>}
+                  {t.body && <p className="mb-6 max-w-3xl text-sm leading-relaxed text-body"><InlineLinks text={t.body} /></p>}
                   {t.items.length > 0 && <div className="max-w-2xl space-y-6">{itemList}</div>}
+                  {t.outro && <p className="mt-6 max-w-3xl text-sm leading-relaxed text-body"><InlineLinks text={t.outro} /></p>}
                   {t.cta && t.cta.href && <Link href={t.cta.href} className="btn-primary mt-7 uppercase tracking-wide">{t.cta.text || 'Learn More'}</Link>}
                 </>
               )}

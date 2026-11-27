@@ -1107,9 +1107,12 @@ function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs
           // the live shows a "Learn More / Talk to an Expert / Request a Call" LINK; the capture often
           // glued that text onto the paragraph — split it back out into a proper CTA link.
           const ctaRe = /\s*(learn more|talk to an expert|request a call|read more|find out more)[\s>]*$/i;
-          const ctaHit = e.paras[0]?.match(ctaRe);
-          const para = ctaHit ? e.paras[0].replace(ctaRe, '').trim() : e.paras[0];
-          const cardCta = ctaHit ? ctaHit[1].replace(/\b\w/g, (c: string) => c.toUpperCase()) : '';
+          // a trailing [Learn More](/path/) in the card text sets the CTA's own destination
+          const mdCta = e.paras[0]?.match(/\s*\[([^\]]+)\]\(([^)\s]+)\)\s*$/);
+          const ctaHit = mdCta ? null : e.paras[0]?.match(ctaRe);
+          const para = mdCta ? e.paras[0].replace(mdCta[0], '').trim() : ctaHit ? e.paras[0].replace(ctaRe, '').trim() : e.paras[0];
+          const cardCta = mdCta ? mdCta[1].replace(/[\s>→]+$/, '') : ctaHit ? ctaHit[1].replace(/\b\w/g, (c: string) => c.toUpperCase()) : '';
+          const cardCtaHref = mdCta ? mdCta[2] : '#pgForm';
           const lnk = getContentLink(e.title);
           const inner = (
             <div className="flex h-full flex-col rounded-xl card-hover border border-surface-line bg-white p-6 shadow-card">
@@ -1122,7 +1125,7 @@ function renderGeneric({ key, tone, heading, headTag, subtitle, entries, bigImgs
               </span>
               <h3 className="text-lg">{e.title}</h3>
               {para && <p className="mt-2 text-sm leading-relaxed text-body">{para}</p>}
-              {cardCta && <Link href="#pgForm" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">{cardCta} <span aria-hidden>→</span></Link>}
+              {cardCta && <Link href={cardCtaHref} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">{cardCta} <span aria-hidden>→</span></Link>}
             </div>
           );
           return (<Reveal key={j} animation="fadeInUp" delay={j * 80}>{lnk && !cardCta ? <Link href={lnk} className="block h-full">{inner}</Link> : inner}</Reveal>);

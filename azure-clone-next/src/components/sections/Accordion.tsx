@@ -2,6 +2,7 @@
 
 import { useId, useState } from 'react';
 import clsx from 'clsx';
+import { InlineLinks, stripInlineLinks } from '@/components/ui/InlineLinks';
 
 export type FaqItem = { q: string; a: string };
 
@@ -35,7 +36,7 @@ export function Accordion({ items, headingLevel }: { items: FaqItem[]; headingLe
             {...(headingLevel ? { id: `${uid}-a${i}`, role: 'region', 'aria-labelledby': `${uid}-q${i}`, 'aria-hidden': open !== i } : {})}
           >
             <div className="overflow-hidden">
-              <p className="px-6 pb-5 text-sm leading-relaxed text-body">{it.a}</p>
+              <p className="px-6 pb-5 text-sm leading-relaxed text-body"><InlineLinks text={it.a} /></p>
             </div>
           </div>
         </div>
@@ -49,7 +50,7 @@ export function Accordion({ items, headingLevel }: { items: FaqItem[]; headingLe
             mainEntity: items.map((it) => ({
               '@type': 'Question',
               name: it.q,
-              acceptedAnswer: { '@type': 'Answer', text: it.a },
+              acceptedAnswer: { '@type': 'Answer', text: stripInlineLinks(it.a) },
             })),
           }),
         }}
