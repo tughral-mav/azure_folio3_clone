@@ -1291,6 +1291,15 @@
         {
           "t": "p",
           "text": "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
+        },
+        {
+          "t": "p",
+          "text": "Our engineers join your plant team and take one AI agent from pilot to production on Azure. [Learn More →](/forward-deployed-engineering/)"
         }
       ],
       "headings": [
@@ -1313,6 +1322,10 @@
         {
           "tag": "h3",
           "text": "Data Analytics Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
         }
       ],
       "paragraphs": [
@@ -1320,7 +1333,8 @@
         "Leverage our team of Azure experts to help you define the right strategy for your cloud journey Learn More > >",
         "We’ll design, build, and deploy solutions that help you get the most out of your applications Learn More > >",
         "Dedicated retail professionals who help you manage, operate, and optimize your data-to-day elements of cloud environment Learn More > >",
-        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >"
+        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >",
+        "Our engineers join your plant team and take one AI agent from pilot to production on Azure. [Learn More →](/forward-deployed-engineering/)"
       ],
       "listItems": [],
       "ctas": [],
@@ -1753,6 +1767,10 @@
           "text": "Folio3’s deep expertise, industry-specific knowledge, and dedication to client success make us the ideal partner to guide manufacturers through their Azure journey, from concept to implementation and beyond."
         },
         {
+          "t": "p",
+          "text": "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) work with your plant team to take one AI agent, such as predictive maintenance or quality inspection, into production on Azure. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
+        },
+        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp",
           "w": 108,
@@ -1781,7 +1799,8 @@
         "Absolutely, Folio3 assists in migrating legacy systems to Azure, ensuring a smooth transition and providing ongoing support to maximize the benefits of the cloud.",
         "Folio3 has successfully served industries ranging from manufacturing and healthcare to retail and finance, leveraging Azure to drive innovation and growth.",
         "Yes, Folio3 provides training and knowledge transfer to empower your team to manage and operate Azure solutions effectively within your manufacturing environment.",
-        "Folio3’s deep expertise, industry-specific knowledge, and dedication to client success make us the ideal partner to guide manufacturers through their Azure journey, from concept to implementation and beyond."
+        "Folio3’s deep expertise, industry-specific knowledge, and dedication to client success make us the ideal partner to guide manufacturers through their Azure journey, from concept to implementation and beyond.",
+        "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) work with your plant team to take one AI agent, such as predictive maintenance or quality inspection, into production on Azure. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
       ],
       "listItems": [],
       "ctas": [],
