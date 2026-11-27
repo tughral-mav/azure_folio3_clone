@@ -1301,6 +1301,15 @@
         {
           "t": "p",
           "text": "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth TALK TO AN EXPERT > >"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
+        },
+        {
+          "t": "p",
+          "text": "Our engineers join your operations team and take one AI agent from pilot to daily use on Azure. [Learn More →](/forward-deployed-engineering/)"
         }
       ],
       "headings": [
@@ -1323,6 +1332,10 @@
         {
           "tag": "h3",
           "text": "Data Analytics Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
         }
       ],
       "paragraphs": [
@@ -1330,7 +1343,8 @@
         "Leverage our team of Azure experts to help you define the right strategy for your cloud journey TALK TO AN EXPERT > >",
         "We’ll design, build, and deploy solutions that help you get the most out of your applications TALK TO AN EXPERT > >",
         "Dedicated retail professionals who help you manage, operate, and optimize your data-to-day elements of cloud environment TALK TO AN EXPERT > >",
-        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth TALK TO AN EXPERT > >"
+        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth TALK TO AN EXPERT > >",
+        "Our engineers join your operations team and take one AI agent from pilot to daily use on Azure. [Learn More →](/forward-deployed-engineering/)"
       ],
       "listItems": [],
       "ctas": [],
@@ -1743,6 +1757,10 @@
           "text": "Yes, Azure is designed to seamlessly integrate with existing healthcare systems and applications. This makes the transition to Azure Healthcare Services smooth and allows healthcare organizations to leverage their current technology investments while benefiting from the additional features and capabilities offered by Azure."
         },
         {
+          "t": "p",
+          "text": "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) build agents for work such as prior authorization, claims and scheduling, on Azure services covered by Microsoft’s HIPAA Business Associate Agreement. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
+        },
+        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img.webp",
           "w": 108,
@@ -1766,7 +1784,8 @@
         "Yes, Azure has been successfully implemented in various healthcare organizations, leading to significant improvements in patient care and operational efficiency. You can find inspiring customer success stories on our landing page to see how Azure has transformed healthcare organizations.",
         "Getting started with Azure Healthcare Solutions is easy! Simply contact our healthcare experts through the provided contact information on the landing page. They will guide you through the process, understand your organization’s specific requirements, and tailor the perfect Azure solutions for your healthcare needs.",
         "Yes, Azure is compliant with various healthcare industry standards and regulations, including HIPAA (Health Insurance Portability and Accountability Act) and HITRUST (Health Information Trust Alliance). These compliance measures ensure that Azure meets the highest standards for data security and privacy in healthcare.",
-        "Yes, Azure is designed to seamlessly integrate with existing healthcare systems and applications. This makes the transition to Azure Healthcare Services smooth and allows healthcare organizations to leverage their current technology investments while benefiting from the additional features and capabilities offered by Azure."
+        "Yes, Azure is designed to seamlessly integrate with existing healthcare systems and applications. This makes the transition to Azure Healthcare Services smooth and allows healthcare organizations to leverage their current technology investments while benefiting from the additional features and capabilities offered by Azure.",
+        "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) build agents for work such as prior authorization, claims and scheduling, on Azure services covered by Microsoft’s HIPAA Business Associate Agreement. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
       ],
       "listItems": [],
       "ctas": [],
