@@ -7,12 +7,62 @@ import { CardIcon } from '@/components/ui/CardIcon';
 import { RetailSolutionTabs, type SolTab } from '@/components/sections/RetailSolutionTabs';
 import { CaseFlip } from '@/components/sections/CaseFlip';
 import { OneToOneCTA } from '@/components/sections/OneToOneCTA';
-import { Accordion } from '@/components/sections/Accordion';
+import { Accordion, type FaqItem } from '@/components/sections/Accordion';
 import { Reveal } from '@/components/ui/Reveal';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 
 const SLUG = 'microsoft-fabric-services';
 const FORM = '#pgForm';
+
+// ── FDE additions (Fabric Data Agents) — hand-authored copy added on top of the live capture ──
+const FDE = '/forward-deployed-engineering/';
+const FDE_ASSESS = '/forward-deployed-engineering/ai-pilot-to-production-assessment/';
+const inlineLink = 'font-semibold text-brand underline-offset-2 hover:underline';
+const fabricAgentsTab: SolTab = {
+  label: 'Fabric Data Agents',
+  heading: 'Microsoft Fabric Data Agents, Built by Forward Deployed Engineers',
+  body: 'Let your managers chat with your data in Microsoft Teams. Our forward deployed engineers prepare your Fabric data, build a Microsoft Fabric data agent on it, and publish it where your team already works.',
+  bodyNode: (
+    <>
+      Let your managers chat with your data in Microsoft Teams. Our{' '}
+      <Link href={FDE} className={inlineLink}>forward deployed engineers</Link>{' '}
+      prepare your Fabric data, build a Microsoft Fabric data agent on it, and publish it where your team already works.
+    </>
+  ),
+  img: '/wp-content/uploads/2026/01/intellifabric-screens.webp',
+  features: [
+    { title: 'Semantic Model Preparation', body: 'We clean up the names, measures and descriptions in your model, so the agent answers from the right fields.' },
+    { title: 'Agent Build and Testing', body: 'We build the data agent and test it against the questions your managers ask.' },
+    { title: 'Teams and Copilot Studio', body: 'We publish the agent to Microsoft Teams and Microsoft 365 Copilot through Copilot Studio.' },
+  ],
+  outro: (
+    <>
+      It starts with an <Link href={FDE_ASSESS} className={inlineLink}>AI pilot-to-production assessment</Link> of your
+      Fabric data. For a wider Copilot rollout, see our{' '}
+      <Link href="/data-science-ai/microsoft-copilot-consulting/" className={inlineLink}>Microsoft Copilot consulting</Link>.
+      If your data is not in Fabric yet, see{' '}
+      <Link href="/microsoft-fabric-services/microsoft-fabric-migration/" className={inlineLink}>Fabric migration</Link>.
+    </>
+  ),
+  cta: { label: 'Book the assessment', href: FDE_ASSESS },
+};
+const fabricAgentsCard = {
+  title: 'Fabric Data Agents',
+  body: 'Our forward deployed engineers build a data agent on your Fabric data, so your managers ask questions in plain English.',
+  href: FDE,
+};
+const fabricAgentsFaq = {
+  q: 'What is a Microsoft Fabric data agent?',
+  a: 'A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it against your lakehouse, warehouse or semantic model, and returns the answer. Our forward deployed engineers set one up on your data, starting with an AI pilot-to-production assessment.',
+  aNode: (
+    <>
+      A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it
+      against your lakehouse, warehouse or semantic model, and returns the answer. Our{' '}
+      <Link href={FDE} className={inlineLink}>forward deployed engineers</Link> set one up on your data, starting with an{' '}
+      <Link href={FDE_ASSESS} className={inlineLink}>AI pilot-to-production assessment</Link>.
+    </>
+  ),
+};
 
 export const metadata: Metadata = {
   title: 'Microsoft Fabric Services — Unified Data & Analytics | Folio3',
@@ -92,7 +142,8 @@ export default function MicrosoftFabricServicesPage() {
       if (it.t === 'cta' && it.href) cur.cta = { label: it.text, href: localAsset(it.href) || it.href };
     }
     const seen = new Set<string>();
-    return tabs.filter((t) => t.img && t.label && t.features.length && !seen.has(t.img) && seen.add(t.img));
+    const live = tabs.filter((t) => t.img && t.label && t.features.length && !seen.has(t.img) && seen.add(t.img));
+    return [...live, fabricAgentsTab];
   })();
 
   // §5 "Get Microsoft Fabric Implementation Services Today" — blue CTA band
@@ -103,9 +154,12 @@ export default function MicrosoftFabricServicesPage() {
 
   // §6 "What You Can Expect" — h3 card grid (no images → ◆ placeholder)
   const expect = sec(/what you can expect from our microsoft fabric/i)!;
-  const expectCards = expect.units
-    .filter((u) => u.tag === 'h3')
-    .map((u) => ({ title: u.title, body: (u.paras[0] ?? '').replace(/\s*REQUEST A CALL\s*$/i, '').trim() }));
+  const expectCards: { title: string; body: string; href?: string }[] = [
+    ...expect.units
+      .filter((u) => u.tag === 'h3')
+      .map((u) => ({ title: u.title, body: (u.paras[0] ?? '').replace(/\s*REQUEST A CALL\s*$/i, '').trim() })),
+    fabricAgentsCard,
+  ];
 
   // §7 Awards & Recognization
   const aw = sec(/awards\s*(&|&amp;)?\s*recogni/i);
@@ -147,7 +201,7 @@ export default function MicrosoftFabricServicesPage() {
   // §11 FAQ
   const faqS = sec(/common queries|frequently asked/i);
   const faqAnswers = faqS ? faqS.units[0].paras.slice(1) : [];
-  const faqItems = getFaq(SLUG).map((q, i) => ({ q, a: faqAnswers[i] ?? '' })).filter((x) => x.a);
+  const faqItems: FaqItem[] = [...getFaq(SLUG).map((q, i) => ({ q, a: faqAnswers[i] ?? '' })).filter((x) => x.a), fabricAgentsFaq];
   const faqImg = faqS ? allImgsOf(faqS).find((i) => i.src)?.src : undefined;
 
   // Preload EVERY captured image (responsive -mobile variants + per-feature icons the
@@ -239,6 +293,7 @@ export default function MicrosoftFabricServicesPage() {
                   <div className="mb-4"><CardIcon src={getCardIcon(SLUG, c.title)} size="sm" /></div>
                   <h3 className="text-lg leading-snug">{c.title}</h3>
                   {c.body && <p className="mt-3 text-sm leading-relaxed text-body">{c.body}</p>}
+                  {c.href && <Link href={c.href} className="mt-auto pt-4 text-sm font-semibold text-brand hover:underline">Learn More →</Link>}
                 </div>
               </Reveal>
             ))}
