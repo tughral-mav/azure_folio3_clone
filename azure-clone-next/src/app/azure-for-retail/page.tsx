@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, getFaq, getCardIcon, localAsset, localImg, getRetailTabIcons } from '@/lib/content';
+import { getCaptured, getFaq, getCardIcon, localAsset, localImg, getRetailTabIcons, getPageTabs } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { CardIcon } from '@/components/ui/CardIcon';
 import { RetailSolutionTabs, type SolTab } from '@/components/sections/RetailSolutionTabs';
@@ -85,13 +85,26 @@ export default function AzureForRetailPage() {
       bucket = [];
     }
   }
+  // extra tabs that exist only in content-kit/tabs-content.json (e.g. "AI Agents With Forward Deployed Engineers")
+  const extraTabs = getPageTabs(`/${SLUG}/`).find((s) => /powerful solutions to meet/i.test(s.section))?.tabs ?? [];
+  for (const x of extraTabs) {
+    if (tabs.some((t) => t.label === x.label) || !x.img) continue;
+    tabs.push({ label: x.label, heading: x.heading, body: x.body, outro: x.outro, img: x.img, cta: { label: x.cta?.text || 'Find Out More', href: x.cta?.href || FORM }, features: x.items.map((f) => ({ title: f.title, body: f.body, icon: f.icon || retailIcon(f.title) })) });
+  }
 
   const cta1 = sec(/redefine customer journeys/i)!;
   const ctaBand = cta1.units[0];
 
   const appr = sec(/folio3 approach to azure/i)!;
   const apprU = appr.units.find((u) => u.tag === 'h2')!;
-  const apprCards = appr.units.filter((u) => u.tag === 'h3').map((u) => ({ title: u.title, body: (u.paras[0] ?? '').replace(/\s*Learn More[\s>]*$/i, '').trim() }));
+  // a trailing [Learn More →](/path/) in the card text sets that card's own link (default: the form)
+  const apprCards = appr.units.filter((u) => u.tag === 'h3').map((u) => {
+    const p = u.paras[0] ?? '';
+    const md = p.match(/\s*\[([^\]]+)\]\(([^)\s]+)\)\s*$/);
+    return md
+      ? { title: u.title, body: p.replace(md[0], '').trim(), href: md[2] }
+      : { title: u.title, body: p.replace(/\s*Learn More[\s>]*$/i, '').trim(), href: FORM };
+  });
 
   const wc = sec(/why choose folio3/i)!;
   const wcU = wc.units[0];
@@ -103,7 +116,9 @@ export default function AzureForRetailPage() {
   const faqAnswers = faqU.paras.slice(1);
   const faqImg = [...faqS.lead.imgs, ...faqS.units.flatMap((u) => u.imgs)].find((i) => i.src)?.src;
   const faqQ = getFaq(SLUG);
-  const faqItems = faqQ.map((q, i) => ({ q, a: faqAnswers[i] ?? '' })).filter((x) => x.a);
+  // the capture is missing the first answers, so pair questions and answers from the end
+  const faqOff = Math.max(0, faqQ.length - faqAnswers.length);
+  const faqItems = faqQ.map((q, i) => ({ q, a: faqAnswers[i - faqOff] ?? '' })).filter((x) => x.a);
 
   const awS = page.sections.map((s) => parse(s.items ?? [])).find(({ units, lead }) => [...lead.imgs, ...units.flatMap((u) => u.imgs)].some((i) => /\.svg$/i.test(i.src)) && units.some((u) => /awards|recogni/i.test(u.title)));
   const awBadges = awS ? [...awS.lead.imgs, ...awS.units.flatMap((u) => u.imgs)].map((i) => i.src).filter((s) => /\.svg$/i.test(s)) : [];
@@ -190,7 +205,7 @@ export default function AzureForRetailPage() {
                 <span className="svc-ic flex h-12 w-12 items-center justify-center rounded-[10px] border border-[#e9eefb] bg-white text-brand">
                   {ic ? <span className="svc-ic-glyph h-7 w-7" style={{ '--ic': `url("${ic}")` } as React.CSSProperties} /> : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="h-6 w-6"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                 </span>
-                <h3 className="mt-4 text-xl">{c.title}</h3><p className="mt-2 text-sm leading-relaxed text-body">{c.body}</p><Link href={FORM} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">Learn More →</Link>
+                <h3 className="mt-4 text-xl">{c.title}</h3><p className="mt-2 text-sm leading-relaxed text-body">{c.body}</p><Link href={c.href} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">Learn More →</Link>
               </div></Reveal>
             );})}
           </div>

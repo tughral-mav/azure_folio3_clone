@@ -1219,6 +1219,15 @@
         {
           "t": "p",
           "text": "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
+        },
+        {
+          "t": "p",
+          "text": "Our engineers join your store and ecommerce teams and take one AI agent live on Azure. [Learn More →](/forward-deployed-engineering/)"
         }
       ],
       "headings": [
@@ -1241,6 +1250,10 @@
         {
           "tag": "h3",
           "text": "Data Analytics Services"
+        },
+        {
+          "tag": "h3",
+          "text": "Forward Deployed Engineering"
         }
       ],
       "paragraphs": [
@@ -1248,7 +1261,8 @@
         "Leverage our team of Azure experts to help you define the right strategy for your cloud journey Learn More > >",
         "We’ll design, build, and deploy solutions that help you get the most out of your applications Learn More > >",
         "Dedicated retail professionals who help you manage, operate, and optimize your data-to-day elements of cloud environment Learn More > >",
-        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >"
+        "Let us empower you to leverage the full power of your data and turn it into insights to drive retail business growth Learn More > >",
+        "Our engineers join your store and ecommerce teams and take one AI agent live on Azure. [Learn More →](/forward-deployed-engineering/)"
       ],
       "listItems": [],
       "ctas": [],
@@ -1657,6 +1671,10 @@
           "text": "Azure’s cloud infrastructure provides seamless scalability using Azure Autoscale and Azure Kubernetes Service. These services allow you to adjust resources based on demand, ensuring optimal performance during peak times and efficient resource allocation."
         },
         {
+          "t": "p",
+          "text": "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) build agents on your POS, ecommerce and loyalty data and take them live with your team. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
+        },
+        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2023/11/ques-ans-img-1.webp",
           "w": 108,
@@ -1679,7 +1697,8 @@
         "Azure Virtual Agents, part of Azure AI, efficiently handle customer inquiries through AI chatbots. These AI agents provide instant responses and insights into customer sentiment, improving customer service quality and freeing up staff for more complex tasks.",
         "Yes, Azure offers Azure Modernization solutions that encompass application modernization, cloud adoption, and technology upgrades. Azure’s flexibility and tools assist in transforming legacy systems, enhancing customer experiences, and streamlining operations.",
         "Azure Data Analytics tools, such as Azure Synapse Analytics, process vast customer data sets to uncover actionable insights. These insights into behavior and preferences guide effective decision-making for targeted strategies.",
-        "Azure’s cloud infrastructure provides seamless scalability using Azure Autoscale and Azure Kubernetes Service. These services allow you to adjust resources based on demand, ensuring optimal performance during peak times and efficient resource allocation."
+        "Azure’s cloud infrastructure provides seamless scalability using Azure Autoscale and Azure Kubernetes Service. These services allow you to adjust resources based on demand, ensuring optimal performance during peak times and efficient resource allocation.",
+        "Yes. Our [forward deployed engineers](/forward-deployed-engineering/) build agents on your POS, ecommerce and loyalty data and take them live with your team. The work starts with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
       ],
       "listItems": [],
       "ctas": [],
