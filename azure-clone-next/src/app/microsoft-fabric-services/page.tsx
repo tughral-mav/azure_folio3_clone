@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getCaptured, getFaq, getCardIcon, localAsset, localImg } from '@/lib/content';
+import { getCaptured, getFaq, getCardIcon, localAsset, localImg, getPageTabs } from '@/lib/content';
 import type { CapturedItem } from '@/lib/content';
 import { CardIcon } from '@/components/ui/CardIcon';
 import { RetailSolutionTabs, type SolTab } from '@/components/sections/RetailSolutionTabs';
@@ -92,7 +92,14 @@ export default function MicrosoftFabricServicesPage() {
       if (it.t === 'cta' && it.href) cur.cta = { label: it.text, href: localAsset(it.href) || it.href };
     }
     const seen = new Set<string>();
-    return tabs.filter((t) => t.img && t.label && t.features.length && !seen.has(t.img) && seen.add(t.img));
+    const out = tabs.filter((t) => t.img && t.label && t.features.length && !seen.has(t.img) && seen.add(t.img));
+    // extra tabs that exist only in content-kit/tabs-content.json (e.g. "Fabric Data Agents")
+    const extra = getPageTabs(`/${SLUG}/`).find((s) => /powering every aspect/i.test(s.section))?.tabs ?? [];
+    for (const x of extra) {
+      if (!x.img || !x.items.length || out.some((t) => t.label === x.label)) continue;
+      out.push({ label: x.label, heading: x.heading, body: x.body, outro: x.outro, img: x.img, cta: { label: x.cta?.text || 'Request a Call', href: x.cta?.href || FORM }, features: x.items.map((f) => ({ title: f.title, body: f.body })) });
+    }
+    return out;
   })();
 
   // §5 "Get Microsoft Fabric Implementation Services Today" — blue CTA band
@@ -105,7 +112,12 @@ export default function MicrosoftFabricServicesPage() {
   const expect = sec(/what you can expect from our microsoft fabric/i)!;
   const expectCards = expect.units
     .filter((u) => u.tag === 'h3')
-    .map((u) => ({ title: u.title, body: (u.paras[0] ?? '').replace(/\s*REQUEST A CALL\s*$/i, '').trim() }));
+    .map((u) => {
+      // a trailing [Learn More →](/path/) in the card text becomes that card's own link
+      const p = (u.paras[0] ?? '').replace(/\s*REQUEST A CALL\s*$/i, '').trim();
+      const md = p.match(/\s*\[([^\]]+)\]\(([^)\s]+)\)\s*$/);
+      return md ? { title: u.title, body: p.replace(md[0], '').trim(), link: { text: md[1], href: md[2] } } : { title: u.title, body: p, link: null };
+    });
 
   // §7 Awards & Recognization
   const aw = sec(/awards\s*(&|&amp;)?\s*recogni/i);
@@ -239,6 +251,7 @@ export default function MicrosoftFabricServicesPage() {
                   <div className="mb-4"><CardIcon src={getCardIcon(SLUG, c.title)} size="sm" /></div>
                   <h3 className="text-lg leading-snug">{c.title}</h3>
                   {c.body && <p className="mt-3 text-sm leading-relaxed text-body">{c.body}</p>}
+                  {c.link && <Link href={c.link.href} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">{c.link.text}</Link>}
                 </div>
               </Reveal>
             ))}

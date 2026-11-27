@@ -760,6 +760,15 @@
         {
           "t": "p",
           "text": "Folio3 power a 1 4 year long partnership with Microsoft with over 200+ certified experts helping our customer to build scalable data solutions. REQUEST A CALL"
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Fabric Data Agents"
+        },
+        {
+          "t": "p",
+          "text": "Our forward deployed engineers build a data agent on your Fabric data, so your managers ask questions in plain English. [Learn More →](/forward-deployed-engineering/)"
         }
       ],
       "headings": [
@@ -786,6 +795,10 @@
         {
           "tag": "h3",
           "text": "Expertise & Experience"
+        },
+        {
+          "tag": "h3",
+          "text": "Fabric Data Agents"
         }
       ],
       "paragraphs": [
@@ -794,7 +807,8 @@
         "Our consultants work closely with you to develop tailored solutions with detailed plans for integration, optimal performance, and scalability. REQUEST A CALL",
         "Our team of experts will expedite your implementation and deploy your solution, from handling configuration to deployment. REQUEST A CALL",
         "Our experts ensure a smooth transition from your legacy systems to Microsoft Fabric so your business continues to grow. REQUEST A CALL",
-        "Folio3 power a 1 4 year long partnership with Microsoft with over 200+ certified experts helping our customer to build scalable data solutions. REQUEST A CALL"
+        "Folio3 power a 1 4 year long partnership with Microsoft with over 200+ certified experts helping our customer to build scalable data solutions. REQUEST A CALL",
+        "Our forward deployed engineers build a data agent on your Fabric data, so your managers ask questions in plain English. [Learn More →](/forward-deployed-engineering/)"
       ],
       "listItems": [],
       "ctas": [],
@@ -1328,6 +1342,10 @@
           "text": "Azure Cloud Services pricing varies based on the type and amount of services used. It offers both pay-as-you-go and subscription-based pricing models. Additionally, Microsoft provides free services for some of its Azure offerings, such as Azure DevOps and Azure Kubernetes Service."
         },
         {
+          "t": "p",
+          "text": "A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it against your lakehouse, warehouse or semantic model, and returns the answer. Our [forward deployed engineers](/forward-deployed-engineering/) set one up on your data, starting with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
+        },
+        {
           "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2024/01/faq_img.webp",
           "w": 166,
@@ -1346,7 +1364,8 @@
         "An Azure Consultant provides expert guidance and advice to organizations looking to adopt and use Microsoft Azure Cloud services. They help clients assess their business requirements and design a solution that best fits their needs, ensuring a smooth transition to the cloud.",
         "Microsoft provides a wide range of cloud services under the Azure Cloud Services umbrella, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). The services offered range from virtual machines, storage, networking, databases, and web services to advanced analytics, artificial intelligence, and Internet of Things (IoT) solutions.",
         "Azure DevOps is a suite of services for managing the entire application development life cycle. It includes services like Azure Boards for project management, Azure Pipelines for continuous integration and delivery, Azure Test Plans for automated testing, and Azure Artifacts for package management.",
-        "Azure Cloud Services pricing varies based on the type and amount of services used. It offers both pay-as-you-go and subscription-based pricing models. Additionally, Microsoft provides free services for some of its Azure offerings, such as Azure DevOps and Azure Kubernetes Service."
+        "Azure Cloud Services pricing varies based on the type and amount of services used. It offers both pay-as-you-go and subscription-based pricing models. Additionally, Microsoft provides free services for some of its Azure offerings, such as Azure DevOps and Azure Kubernetes Service.",
+        "A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it against your lakehouse, warehouse or semantic model, and returns the answer. Our [forward deployed engineers](/forward-deployed-engineering/) set one up on your data, starting with an [AI pilot-to-production assessment](/forward-deployed-engineering/ai-pilot-to-production-assessment/)."
       ],
       "listItems": [],
       "ctas": [],
