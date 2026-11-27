@@ -1,0 +1,226 @@
+{
+  "slug": "case-studies/power-automate-rpa-program-real-estate-regulator",
+  "meta": {
+    "title": "Power Automate RPA Program for a Real Estate Regulator | Folio3 Azure",
+    "description": "See how Folio3 runs an enterprise Power Automate RPA program for a Saudi real estate regulator, with 75 use cases live and 650+ hours saved.",
+    "ogImage": "/wp-content/uploads/2026/11/power-automate-rpa-program-real-estate-regulator.webp"
+  },
+  "card": {
+    "title": "Power Automate RPA Program",
+    "blurb": "See how a Saudi real estate regulator put 75 back-office use cases into production and saved 650+ hours with Power Automate Desktop and cloud flows.",
+    "img": "/wp-content/uploads/2026/11/power-automate-rpa-program-card.webp"
+  },
+  "hero": {
+    "label": "Power Automate RPA Program",
+    "h1": "Enterprise Power Automate and RPA Program for a Government Real Estate Regulator",
+    "cta": { "text": "CONTACT US TO AUTOMATE YOUR BACK OFFICE", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2026/11/power-automate-rpa-program-real-estate-regulator.webp",
+    "imgAlt": "Power Automate RPA program automating back-office work for a government real estate regulator"
+  },
+  "client": {
+    "facts": [
+      { "icon": "location", "label": "Kingdom of Saudi Arabia" },
+      { "icon": "industry", "label": "Government – Real Estate Regulation" }
+    ],
+    "eyebrow": "About The Client",
+    "name": "Government Real Estate Regulator",
+    "description": [
+      "The client is the central regulatory body for the real estate sector in the Kingdom of Saudi Arabia. Established in 2017, it regulates, oversees and develops non-governmental real estate activity. Its mandate covers market transparency, licensing, consumer protection, and supporting investment and governance across the industry, as part of the Kingdom's wider economic development and Vision 2030 goals. Folio3 partnered with the regulator to run an enterprise Power Automate RPA program that automates back-office work across seven business areas."
+    ]
+  },
+  "outcomes": {
+    "heading": "Quantified Business Outcomes",
+    "stats": [
+      { "value": "75", "desc": "use cases delivered to production across seven business areas" },
+      { "value": "650+", "desc": "hours of manual work saved, and growing every month" },
+      { "value": "60%", "desc": "of 124 prioritized processes now live in production, with 5 more in UAT" }
+    ],
+    "areasHeading": "Key Business Areas Impacted Included:",
+    "areas": [
+      "Human Capital transactions: payroll, promotions, contracts, attendance and notifications",
+      "Recurring daily, weekly and quarterly reporting",
+      "Market surveillance of property listings on real estate portals",
+      "Financial documentation, revenue archiving and bill management",
+      "Procurement submissions and correspondence report distribution",
+      "Leadership task tracking and plan consolidation"
+    ]
+  },
+  "numbers": {
+    "heading": "The Program in Numbers",
+    "items": [
+      { "value": "75", "label": "use cases delivered to production" },
+      { "value": "650+", "label": "hours of manual work saved" },
+      { "value": "124", "label": "processes assessed and prioritized" },
+      { "value": "7", "label": "business areas automated" },
+      { "value": "15+", "label": "platforms and systems integrated" },
+      { "value": "21", "label": "complex, multi-step automations" },
+      { "value": "11+", "label": "months of delivery since December 2025, program ongoing" }
+    ]
+  },
+  "useCases": {
+    "heading": "Use Cases Delivered by Business Area",
+    "columns": ["Business area", "Delivered", "Representative automations"],
+    "rows": [
+      { "area": "Human Capital", "delivered": 31, "examples": "Trainer payroll and Kawader uploads, promotion letters, contract documents, Qimah tickets and training courses, attendance reports, anniversary and overtime notifications" },
+      { "area": "Operations", "delivered": 17, "examples": "Aqar and Bayut listing validation, violation upload to the regulator's portal, BI report exports, quarterly DWH feeds (GASTAT, SAMA, Tadawul), city data validation" },
+      { "area": "Financial Affairs", "delivered": 9, "examples": "Revenue documentation and archiving, Erad revenue folders, Tahseel bill management, Bunyan-based PDF extraction, budget slide population from Excel" },
+      { "area": "CEO Office", "delivered": 7, "examples": "Consolidating departmental Microsoft Planner tasks into the CEO plan, tracking updates, notes and plan-to-plan copying" },
+      { "area": "Departmental Affairs", "delivered": 5, "examples": "Facility attendance calculation, shipment orders, Murasalat report downloads and email distribution" },
+      { "area": "Strategic Communication", "delivered": 2, "examples": "Murasalat report download and distribution to heads of department" },
+      { "area": "Procurement & Other", "delivered": 4, "examples": "Etimad bill-of-quantities submission, CRM contact creation, Musadat flows" }
+    ],
+    "totalLabel": "Total",
+    "total": 75
+  },
+  "customer": {
+    "heading": "The Customer",
+    "paragraphs": [
+      "Teams across the regulator's Shared Services, Operations, Strategic Communication and CEO Office were spending a large share of every week on manual, repetitive back-office work. These processes were slow, error-prone and dependent on individual employees, which left less capacity for higher-value regulatory and strategic work and made a strong case for RPA for government back-office operations.",
+      "The impact showed up in five places:"
+    ],
+    "bullets": [
+      "Staff re-keyed data by hand between Excel, Word, PDFs and government platforms such as Etimad, Murasalat, Kawader and Qimah.",
+      "Recurring daily, weekly and quarterly reports were downloaded, compiled and emailed manually.",
+      "HR teams handled a high volume of payroll, promotion, contract, attendance and employee notification transactions by hand.",
+      "Property listings on real estate portals were validated manually against the regulator's licence data.",
+      "Tasks were tracked across separate departmental plans, with no consolidated view for leadership."
+    ]
+  },
+  "needs": {
+    "eyebrow": "The Problem",
+    "heading": "What The Regulator Needed",
+    "intro": "The regulator needed an automation program that could:",
+    "items": [
+      { "icon": "list", "text": "Assess and prioritize back-office processes across departments in one shared list" },
+      { "icon": "bot", "text": "Automate work on government and internal platforms that require UI-based interaction" },
+      { "icon": "workflow", "text": "Connect Microsoft 365 apps so recurring reports and notifications run without manual effort" },
+      { "icon": "shield", "text": "Strengthen market oversight by checking property listings against licence data at scale" },
+      { "icon": "report", "text": "Give leadership a single, consolidated view of departmental plans" }
+    ],
+    "cta": { "text": "Request a call", "href": "#pgForm" }
+  },
+  "solution": {
+    "heading": "Folio3 Solution",
+    "intro": "Folio3 set up, and continues to run, an enterprise automation program on Microsoft Power Automate. Power Automate Desktop (RPA) handles UI-based platforms, while Power Automate cloud flows handle Microsoft 365 and system integrations. Every process is captured in a shared priority list and delivered through a structured lifecycle: discovery with the process owner, build, UAT, and handover on the user's own device or VM.",
+    "lifecycle": ["Discovery", "Build", "UAT", "Handover"],
+    "groups": [
+      {
+        "heading": "RPA for Government and Internal Platforms",
+        "icon": "bot",
+        "items": [
+          { "label": "Power Automate Desktop", "text": "RPA bots for Etimad, Murasalat, Kawader, Qimah, Holool, Erad and Tahseel" },
+          { "label": "Market-surveillance bots", "text": "listing validation on Aqar, Bayut, Wasalt, Deal and Property Finder against the regulator's licence data, with automated violation upload to its inspection portal" },
+          { "label": "Built-in resilience", "text": "handling for Hijri date fields, dynamic form IDs, platform downtime, Outlook security prompts and masked credentials" }
+        ]
+      },
+      {
+        "heading": "Cloud Flows and Data Integration",
+        "icon": "cloud",
+        "items": [
+          { "label": "Power Automate cloud flows", "text": "Outlook, Excel, Word, PowerPoint and Teams" },
+          { "label": "Microsoft Planner", "text": "departmental plans consolidated into a CEO-level plan" },
+          { "label": "Bunyan", "text": "AI-assisted extraction of invoice and PDF data into Excel" },
+          { "label": "Data-warehouse feeds", "text": "GASTAT, SAMA, Tadawul and regulator source data for quarterly BI reporting" }
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "heading": "End-to-End Power Automate RPA Workflow",
+    "steps": [
+      {
+        "title": "Discover and Prioritize Processes",
+        "img": "/wp-content/uploads/2026/11/discover-prioritize-processes.webp",
+        "groups": [
+          { "label": "Folio3 works with each process owner to capture candidate processes in a shared priority list. Each process is:", "bullets": ["Assessed and ranked in a living priority list", "Scoped with its process owner during discovery", "Moved through build, UAT and handover"] }
+        ],
+        "value": "124 processes assessed and prioritized, giving the regulator one clear automation roadmap across seven business areas."
+      },
+      {
+        "title": "Automate Human Capital Transactions",
+        "img": "/wp-content/uploads/2026/11/automate-human-capital-transactions.webp",
+        "groups": [
+          { "label": "Bots and flows run 31 HR processes end to end, including:", "bullets": ["Trainer payroll and Kawader uploads", "Promotion letters and contract documents", "Qimah tickets and training courses", "Attendance reports, plus anniversary and overtime notifications"] }
+        ],
+        "value": "Faster, more consistent HR service, with high-volume transactions no longer dependent on individual employees."
+      },
+      {
+        "title": "Validate Property Listings and Upload Violations",
+        "img": "/wp-content/uploads/2026/11/validate-property-listings-upload-violations.webp",
+        "groups": [
+          { "label": "As part of 17 Operations automations, market-surveillance bots:", "bullets": ["Check listings on Aqar and Bayut against the regulator's licence data", "Upload violations directly into the regulator's inspection portal", "Extend coverage to Wasalt, Deal and Property Finder, now in UAT"] }
+        ],
+        "value": "Stronger market oversight, with listing violations feeding straight into the inspection workflow."
+      },
+      {
+        "title": "Process Financial and Procurement Work",
+        "img": "/wp-content/uploads/2026/11/process-financial-procurement-work.webp",
+        "groups": [
+          { "label": "9 Financial Affairs and 4 Procurement & Other automations cover:", "bullets": ["Revenue documentation and archiving", "Erad revenue folders and Tahseel bill management", "Bunyan-based PDF extraction and budget slide population from Excel", "Etimad bill-of-quantities submission, CRM contact creation and Musadat flows"] }
+        ],
+        "value": "Less re-keying between PDFs, Excel, PowerPoint and government platforms, with revenue records documented and archived consistently."
+      },
+      {
+        "title": "Run Recurring Reports and Data Feeds Automatically",
+        "img": "/wp-content/uploads/2026/11/recurring-reports-data-feeds.webp",
+        "groups": [
+          { "label": "Operations flows and bots:", "bullets": ["Generate and email daily, weekly and quarterly reports", "Export BI reports", "Run quarterly DWH feeds from GASTAT, SAMA, Tadawul and regulator source data", "Validate city data"] }
+        ],
+        "value": "Zero-touch recurring reporting, with reports produced and delivered on schedule without manual compiling."
+      },
+      {
+        "title": "Automate Departmental and Communication Workflows",
+        "img": "/wp-content/uploads/2026/11/departmental-communication-workflows.webp",
+        "groups": [
+          { "label": "5 Departmental Affairs and 2 Strategic Communication automations handle:", "bullets": ["Facility attendance calculation", "Shipment orders", "Murasalat report downloads", "Email distribution of reports to heads of department"] }
+        ],
+        "value": "Routine departmental and correspondence work runs on its own, freeing staff for higher-value tasks."
+      },
+      {
+        "title": "Consolidate Plans for Leadership",
+        "img": "/wp-content/uploads/2026/11/consolidate-plans-leadership.webp",
+        "groups": [
+          { "label": "7 CEO Office automations:", "bullets": ["Consolidate departmental Microsoft Planner tasks into the CEO plan", "Track updates and notes", "Copy tasks from plan to plan"] }
+        ],
+        "value": "A single CEO-level view of departmental plans, replacing scattered tracking."
+      },
+      {
+        "title": "Hand Over, Reuse and Scale",
+        "img": "/wp-content/uploads/2026/11/hand-over-reuse-scale.webp",
+        "groups": [
+          { "label": "Each automation is:", "bullets": ["Validated with the business in UAT", "Handed over on the user's own device or VM", "Packaged for re-deployment to additional users and devices"] }
+        ],
+        "value": "Reusable assets that re-deploy with minimal effort, so each new use case builds on the work already done."
+      }
+    ]
+  },
+  "impact": {
+    "heading": "Impact & Outcomes",
+    "intro": "By running an enterprise Power Automate and RPA program with Folio3, the regulator is moving from manual, person-dependent back-office work to a scalable, automated operating model across HR, finance, operations and leadership reporting.",
+    "img": "/wp-content/uploads/2026/01/impact-outcomes.webp",
+    "bullets": [
+      "650+ hours of manual effort saved, growing every month as recurring flows keep running.",
+      "75 of 124 prioritized processes (60%) live in production, with 5 more in UAT.",
+      "21 complex, multi-step automations across 15+ platforms and systems.",
+      "Zero-touch daily, weekly and quarterly reporting.",
+      "31 HR processes automated end to end for faster, more consistent HR service.",
+      "Listing validation live on Aqar and Bayut, with violations feeding straight into the regulator's inspection workflow, and Wasalt, Deal and Property Finder in UAT.",
+      "One CEO-level view of departmental plans in Microsoft Planner.",
+      "Reusable flows packaged and re-deployed to additional users and devices with minimal effort."
+    ],
+    "recognition": {
+      "heading": "Client Recognition",
+      "items": [
+        "At the program's first major milestone, the team had delivered 40+ Power Automate use cases, creating approximately 350+ hours of saved effort. The regulator formally acknowledged and appreciated this value.",
+        "On the strength of those results, the engagement grew and Folio3 expanded the dedicated automation team.",
+        "The program has nearly doubled since that milestone, to 75 use cases in production and 650+ hours saved, with new use cases going live every month in support of Vision 2030 digital-government goals."
+      ]
+    }
+  },
+  "closing": {
+    "heading": "Ready to take repetitive work off your teams with Power Automate?",
+    "subtitle": "Talk to our experts to see how Power Automate Desktop and cloud flows can automate your back-office processes and turn manual effort into hours saved every month.",
+    "cta": { "text": "TALK TO OUR EXPERTS", "href": "#pgForm" },
+    "img": "/wp-content/uploads/2024/01/Scale-Your-Business-with-.png"
+  }
+}

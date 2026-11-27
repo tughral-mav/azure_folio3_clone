@@ -312,6 +312,27 @@
         },
         {
           "t": "img",
+          "src": "https://azure.folio3.com/wp-content/uploads/2026/11/power-automate-rpa-program-card.webp",
+          "w": 696,
+          "h": 476,
+          "alt": ""
+        },
+        {
+          "t": "h",
+          "tag": "h3",
+          "text": "Power Automate RPA Program"
+        },
+        {
+          "t": "p",
+          "text": "See how a Saudi real estate regulator put 75 back-office use cases into production and saved 650+ hours with Power Automate Desktop and cloud flows."
+        },
+        {
+          "t": "cta",
+          "text": "read more",
+          "href": "/case-studies/power-automate-rpa-program-real-estate-regulator/"
+        },
+        {
+          "t": "img",
           "src": "https://azure.folio3.com/wp-content/uploads/2026/11/agentic-document-compliance-card.webp",
           "w": 696,
           "h": 476,
@@ -588,6 +609,10 @@
         {
           "tag": "h2",
           "text": "All Customer Stories"
+        },
+        {
+          "tag": "h3",
+          "text": "Power Automate RPA Program"
         },
         {
           "tag": "h3",
