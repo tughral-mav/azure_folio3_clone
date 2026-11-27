@@ -107,11 +107,7 @@ const exampleSteps = [
   'Point users to the relevant governed report or data view when applicable.',
 ];
 
-type IconCard = { title: string; text: string; Icon: LucideIcon; href?: string };
-
-const FDE_HREF = '/forward-deployed-engineering/';
-const FDE_ASSESS_HREF = '/forward-deployed-engineering/ai-pilot-to-production-assessment/';
-const inlineLink = 'font-semibold text-brand underline-offset-2 hover:underline';
+type IconCard = { title: string; text: string; Icon: LucideIcon };
 
 const implementCards: IconCard[] = [
   {
@@ -143,12 +139,6 @@ const implementCards: IconCard[] = [
     title: 'Continuous Optimization',
     text: 'Monitor usage, refine business context, manage changes, test updates, and expand the agent into additional business domains.',
     Icon: TrendingUp,
-  },
-  {
-    title: 'Fabric Data Agents',
-    text: 'Our forward deployed engineers build a data agent on your Fabric data, so your managers ask questions in plain English.',
-    Icon: MessageSquareText,
-    href: FDE_HREF,
   },
 ];
 
@@ -508,18 +498,6 @@ const faqs = [
   {
     q: 'How does Folio3 validate Fabric Data Agent answer quality?',
     a: 'Folio3 creates business-question test libraries, validates responses against approved data and expected outputs, checks measures and filters, tests permissions by user role, identifies ambiguous terminology, and performs regression testing after relevant model or source changes.',
-  },
-  {
-    q: 'What is a Microsoft Fabric data agent?',
-    a: 'A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it against your lakehouse, warehouse or semantic model, and returns the answer. Our forward deployed engineers set one up on your data, starting with an AI pilot-to-production assessment.',
-    aNode: (
-      <>
-        A Microsoft Fabric data agent answers questions about your data in plain English. It writes the query, runs it
-        against your lakehouse, warehouse or semantic model, and returns the answer. Our{' '}
-        <Link href={FDE_HREF} className={inlineLink}>forward deployed engineers</Link> set one up on your data,
-        starting with an <Link href={FDE_ASSESS_HREF} className={inlineLink}>AI pilot-to-production assessment</Link>.
-      </>
-    ),
   },
 ];
 
@@ -928,11 +906,6 @@ export default function FabricDataAgentsPage() {
                   <IconBadge Icon={c.Icon} />
                   <h3 className="mt-5 text-xl font-semibold text-ink">{c.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-body">{c.text}</p>
-                  {c.href && (
-                    <Link href={c.href} className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">
-                      Learn More →
-                    </Link>
-                  )}
                 </div>
               </Reveal>
             ))}
