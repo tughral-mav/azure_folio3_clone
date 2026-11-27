@@ -182,9 +182,13 @@ export function getContentLink(title: string): string {
  *  "Explore More" nav section that the capture missed. Keyed by the page's own URL. */
 let _clRaw: Record<string, Record<string, string>> | null = null;
 const slugOfRoute = (route: string) => (route.replace(/^\/|\/$/g, '') || 'home').replace(/[^a-z0-9]+/gi, '_');
-export function getPageLinks(url: string): { title: string; href: string }[] {
+// optional one-line card text for an "Explore More Services" card, keyed by page slug → href
+let _clText: Record<string, Record<string, string>> | null = null;
+export function getPageLinks(url: string): { title: string; href: string; text?: string }[] {
   if (_clRaw === null) { try { _clRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'content-links.json'), 'utf8')); } catch { _clRaw = {}; } }
+  if (_clText === null) { try { _clText = JSON.parse(readFileSync(path.join(KIT, '..', 'explore-card-text.json'), 'utf8')); } catch { _clText = {}; } }
   const route = (url || '').replace(ORIGIN, '').replace(/[?#].*$/, '');
+  const texts = _clText?.[slugOfRoute(route)] ?? {};
   const self = '/' + slugOfRoute(route).replace(/_/g, '-') + '/';
   const pm = _clRaw?.[slugOfRoute(route)] ?? {};
   const titleCase = (k: string) => k.replace(/\bai\b/gi, 'AI').replace(/\bbi\b/gi, 'BI').replace(/\b\w/g, (c) => c.toUpperCase());
@@ -196,7 +200,7 @@ export function getPageLinks(url: string): { title: string; href: string }[] {
     .filter(([k, href]) => (k.length > 4 || generic(k)) && /^\/[a-z][a-z0-9/-]+\/?$/.test(href) && href !== self
       && !/^\/(blog|contact-us|thank-you)\//.test(href))
     .filter(([, href]) => { const h = href.replace(/\/$/, ''); if (seen.has(h)) return false; seen.add(h); return true; })
-    .map(([k, href]) => ({ title: generic(k) ? slugTitle(href) : titleCase(k), href }))
+    .map(([k, href]) => ({ title: generic(k) ? slugTitle(href) : titleCase(k), href, ...(texts[href] ? { text: texts[href] } : {}) }))
     .slice(0, 12);
 }
 
