@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
@@ -12,6 +12,10 @@ export type SolTab = {
   img: string;
   cta: { label: string; href: string };
   features: { title: string; body: string; icon?: string }[];
+  /** optional overrides for hand-authored tabs: panel heading, rich intro (with links), closing line */
+  heading?: string;
+  bodyNode?: ReactNode;
+  outro?: ReactNode;
 };
 
 /** "Powerful Solutions…" — the live's tabbed interface: pill tab-bar + a 2-col
@@ -50,9 +54,9 @@ export function RetailSolutionTabs({ heading, eyebrow, tabs }: { heading: string
         <div className="mt-10 rounded-2xl bg-white p-8 shadow-card lg:p-12">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <h3 className="text-2xl">{t.label}</h3>
+              <h3 className="text-2xl">{t.heading ?? t.label}</h3>
               <span className="mt-2 block h-1 w-12 rounded bg-brand" />
-              <p className="mt-4 text-sm leading-relaxed text-body">{t.body}</p>
+              <p className="mt-4 text-sm leading-relaxed text-body">{t.bodyNode ?? t.body}</p>
               <ul className="mt-6 space-y-5">
                 {t.features.map((f) => (
                   <li key={f.title} className="flex gap-3">
@@ -68,6 +72,7 @@ export function RetailSolutionTabs({ heading, eyebrow, tabs }: { heading: string
                   </li>
                 ))}
               </ul>
+              {t.outro && <p className="mt-6 text-sm leading-relaxed text-body">{t.outro}</p>}
               <Link href={t.cta.href} className="btn-primary mt-7 uppercase tracking-wide">{t.cta.label}</Link>
             </div>
             <Reveal animation="zoomIn" className="relative">

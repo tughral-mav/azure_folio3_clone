@@ -1,9 +1,10 @@
 'use client';
 
-import { useId, useState } from 'react';
+import { useId, useState, type ReactNode } from 'react';
 import clsx from 'clsx';
 
-export type FaqItem = { q: string; a: string };
+/** `a` is plain text (also used for FAQPage JSON-LD); optional `aNode` renders a rich answer (e.g. with links). */
+export type FaqItem = { q: string; a: string; aNode?: ReactNode };
 
 /** Replaces 27 Elementor accordions/page with one component. Renders FAQPage JSON-LD for SEO. */
 export function Accordion({ items, headingLevel }: { items: FaqItem[]; headingLevel?: 'h3' }) {
@@ -35,7 +36,7 @@ export function Accordion({ items, headingLevel }: { items: FaqItem[]; headingLe
             {...(headingLevel ? { id: `${uid}-a${i}`, role: 'region', 'aria-labelledby': `${uid}-q${i}`, 'aria-hidden': open !== i } : {})}
           >
             <div className="overflow-hidden">
-              <p className="px-6 pb-5 text-sm leading-relaxed text-body">{it.a}</p>
+              <p className="px-6 pb-5 text-sm leading-relaxed text-body">{it.aNode ?? it.a}</p>
             </div>
           </div>
         </div>
