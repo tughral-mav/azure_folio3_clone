@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/microsoft-power-platform-services/', '/ai-scenario-library/',
     '/case-studies/agentic-regulatory-compliance-assistant-document-portal/',
     '/case-studies/agentic-document-knowledge-workflow-and-compliance-solution/',
+    '/case-studies/power-automate-rpa-program-real-estate-regulator/',
   ];
   // every catch-all design page (so the sitemap covers the full site, not a hardcoded subset)
   const marketing = getMarketingSlugs().map((p) => `/${p.slug.join('/')}/`);
