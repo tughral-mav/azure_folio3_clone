@@ -760,7 +760,7 @@ export function OrderedRenderer({ page, title, slug, faq = [] }: { page: Capture
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {moreLinks.map((l, i) => (
           <Reveal key={i} animation="fadeInUp" delay={i * 60}>
-            <Link href={l.href} className="block h-full rounded-xl card-hover border border-surface-line bg-white p-6 shadow-card"><h3 className="text-lg leading-snug">{l.title}</h3><span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand">Explore <span aria-hidden>→</span></span></Link>
+            <Link href={l.href} className="block h-full rounded-xl card-hover border border-surface-line bg-white p-6 shadow-card"><h3 className="text-lg leading-snug">{l.title}</h3>{l.text && <p className="mt-2 text-sm leading-relaxed text-body">{l.text}</p>}<span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand">Explore <span aria-hidden>→</span></span></Link>
           </Reveal>
         ))}
       </div>
