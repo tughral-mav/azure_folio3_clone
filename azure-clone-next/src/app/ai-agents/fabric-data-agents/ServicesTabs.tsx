@@ -1,10 +1,12 @@
 'use client';
 
-import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
+import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+import Link from 'next/link';
 import {
   Bot,
   ChevronDown,
   ClipboardCheck,
+  MessagesSquare,
   Compass,
   DatabaseZap,
   Network,
@@ -21,7 +23,16 @@ type Service = {
   bullets: string[];
   chips?: string[];
   Icon: LucideIcon;
+  /** optional rich content (used by the Fabric Data Agents / FDE tab) */
+  introNode?: ReactNode;
+  features?: { title: string; text: string }[];
+  outro?: ReactNode;
+  cta?: { label: string; href: string };
 };
+
+const inlineLink = 'font-semibold text-brand underline-offset-2 hover:underline';
+const FDE = '/forward-deployed-engineering/';
+const FDE_ASSESS = '/forward-deployed-engineering/ai-pilot-to-production-assessment/';
 
 const services: Service[] = [
   {
@@ -137,6 +148,50 @@ const services: Service[] = [
       'Usage monitoring and continuous improvement',
     ],
     Icon: ClipboardCheck,
+  },
+  {
+    label: 'Fabric Data Agents',
+    title: 'Microsoft Fabric Data Agents, Built by Forward Deployed Engineers',
+    intro:
+      'Let your managers chat with your data in Microsoft Teams. Our forward deployed engineers prepare your Fabric data, build a Microsoft Fabric data agent on it, and publish it where your team already works.',
+    introNode: (
+      <>
+        Let your managers chat with your data in Microsoft Teams. Our{' '}
+        <Link href={FDE} className={inlineLink}>forward deployed engineers</Link> prepare your Fabric data, build a
+        Microsoft Fabric data agent on it, and publish it where your team already works.
+      </>
+    ),
+    bullets: [],
+    features: [
+      {
+        title: 'Semantic Model Preparation',
+        text: 'We clean up the names, measures and descriptions in your model, so the agent answers from the right fields.',
+      },
+      {
+        title: 'Agent Build and Testing',
+        text: 'We build the data agent and test it against the questions your managers ask.',
+      },
+      {
+        title: 'Teams and Copilot Studio',
+        text: 'We publish the agent to Microsoft Teams and Microsoft 365 Copilot through Copilot Studio.',
+      },
+    ],
+    outro: (
+      <>
+        It starts with an <Link href={FDE_ASSESS} className={inlineLink}>AI pilot-to-production assessment</Link> of
+        your Fabric data. For a wider Copilot rollout, see our{' '}
+        <Link href="/data-science-ai/microsoft-copilot-consulting/" className={inlineLink}>
+          Microsoft Copilot consulting
+        </Link>
+        . If your data is not in Fabric yet, see{' '}
+        <Link href="/microsoft-fabric-services/microsoft-fabric-migration/" className={inlineLink}>
+          Fabric migration
+        </Link>
+        .
+      </>
+    ),
+    cta: { label: 'Book the assessment', href: FDE_ASSESS },
+    Icon: MessagesSquare,
   },
 ];
 
@@ -288,18 +343,45 @@ export function ServicesTabs() {
                     <s.Icon aria-hidden="true" size={26} strokeWidth={1.8} />
                   </span>
                   <h3 className="text-lg font-semibold leading-snug text-ink md:mt-5 md:text-2xl">{s.title}</h3>
-                  <p className="mt-3 max-w-2xl text-sm leading-relaxed text-body md:text-base">{s.intro}</p>
-                  <p className="mt-6 text-xs font-semibold uppercase tracking-wider text-brand">
-                    What&apos;s included
-                  </p>
-                  <ul className="mt-3 grid grid-cols-1 gap-x-8 gap-y-3 text-sm sm:grid-cols-2">
-                    {s.bullets.map((b) => (
-                      <li key={b} className="flex gap-3 text-body">
-                        <span aria-hidden className="mt-0.5 shrink-0 text-brand">✓</span>
-                        <span className="leading-relaxed">{b}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="mt-3 max-w-2xl text-sm leading-relaxed text-body md:text-base">{s.introNode ?? s.intro}</p>
+                  {s.bullets.length > 0 && (
+                    <>
+                      <p className="mt-6 text-xs font-semibold uppercase tracking-wider text-brand">
+                        What&apos;s included
+                      </p>
+                      <ul className="mt-3 grid grid-cols-1 gap-x-8 gap-y-3 text-sm sm:grid-cols-2">
+                        {s.bullets.map((b) => (
+                          <li key={b} className="flex gap-3 text-body">
+                            <span aria-hidden className="mt-0.5 shrink-0 text-brand">✓</span>
+                            <span className="leading-relaxed">{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                  {s.features && (
+                    <ul className="mt-6 space-y-4 text-sm">
+                      {s.features.map((f) => (
+                        <li key={f.title} className="flex gap-3 text-body">
+                          <span aria-hidden className="mt-0.5 shrink-0 text-brand">✓</span>
+                          <span className="leading-relaxed">
+                            <strong className="font-semibold text-ink">{f.title}.</strong> {f.text}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {s.outro && (
+                    <p className="mt-6 max-w-2xl text-sm leading-relaxed text-body md:text-base">{s.outro}</p>
+                  )}
+                  {s.cta && (
+                    <Link
+                      href={s.cta.href}
+                      className="btn mt-6 bg-brand-navy uppercase tracking-wide text-white hover:bg-brand"
+                    >
+                      {s.cta.label}
+                    </Link>
+                  )}
                   {s.chips && (
                     <ul aria-label="Integration options" className="mt-6 flex flex-wrap gap-2">
                       {s.chips.map((c) => (

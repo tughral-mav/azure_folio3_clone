@@ -1,8 +1,8 @@
 'use client';
 
-import { useId, useState } from 'react';
+import { useId, useState, type ReactNode } from 'react';
 
-type Faq = { q: string; a: string };
+type Faq = { q: string; a: string; aNode?: ReactNode };
 
 /** Accessible FAQ accordion. Every answer is rendered in the HTML (collapsed panels use
  *  the `hidden` attribute), so search engines can read them without a click. */
@@ -42,7 +42,7 @@ export function FaqAccordion({ faqs }: { faqs: Faq[] }) {
               hidden={!expanded}
               className="px-6 pb-5 text-sm leading-relaxed text-body"
             >
-              {f.a}
+              {f.aNode ?? f.a}
             </div>
           </div>
         );
