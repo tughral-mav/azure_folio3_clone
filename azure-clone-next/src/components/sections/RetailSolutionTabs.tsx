@@ -5,10 +5,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { Reveal } from '@/components/ui/Reveal';
+import { InlineLinks } from '@/components/ui/InlineLinks';
 
 export type SolTab = {
   label: string;
+  heading?: string;
   body: string;
+  outro?: string;
   img: string;
   cta: { label: string; href: string };
   features: { title: string; body: string; icon?: string }[];
@@ -50,9 +53,9 @@ export function RetailSolutionTabs({ heading, eyebrow, tabs }: { heading: string
         <div className="mt-10 rounded-2xl bg-white p-8 shadow-card lg:p-12">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <h3 className="text-2xl">{t.label}</h3>
+              <h3 className="text-2xl">{t.heading || t.label}</h3>
               <span className="mt-2 block h-1 w-12 rounded bg-brand" />
-              <p className="mt-4 text-sm leading-relaxed text-body">{t.body}</p>
+              <p className="mt-4 text-sm leading-relaxed text-body"><InlineLinks text={t.body} /></p>
               <ul className="mt-6 space-y-5">
                 {t.features.map((f) => (
                   <li key={f.title} className="flex gap-3">
@@ -63,11 +66,12 @@ export function RetailSolutionTabs({ heading, eyebrow, tabs }: { heading: string
                         </span>}
                     <div>
                       <h4 className="font-semibold text-ink">{f.title}</h4>
-                      <p className="mt-1 text-sm leading-relaxed text-body">{f.body}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-body"><InlineLinks text={f.body} /></p>
                     </div>
                   </li>
                 ))}
               </ul>
+              {t.outro && <p className="mt-6 text-sm leading-relaxed text-body"><InlineLinks text={t.outro} /></p>}
               <Link href={t.cta.href} className="btn-primary mt-7 uppercase tracking-wide">{t.cta.label}</Link>
             </div>
             <Reveal animation="zoomIn" className="relative">

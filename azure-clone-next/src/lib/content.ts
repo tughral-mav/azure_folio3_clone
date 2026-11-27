@@ -317,7 +317,7 @@ export function getFaqFull(url: string): { heading: string; intro?: string; item
 // Full n-tabs widget structure re-captured from the live (verify/extract-tabs.mjs →
 // clone-kit/tabs-content.json): per page, [{ section, tabs:[{label, heading, body, items, img, cta}] }].
 // The renderer matches a section to its tabs by heading and renders a real tabbed panel.
-export type SectionTabRec = { section: string; tabs: { label: string; heading: string; body: string; items: { title: string; body: string; icon: string }[]; img: string; cta: { text: string; href: string } | null }[] };
+export type SectionTabRec = { section: string; tabs: { label: string; heading: string; body: string; items: { title: string; body: string; icon: string }[]; img: string; outro?: string; cta: { text: string; href: string } | null }[] };
 let _tabsRaw: Record<string, SectionTabRec[]> | null = null;
 export function getPageTabs(url: string): SectionTabRec[] {
   if (_tabsRaw === null) { try { _tabsRaw = JSON.parse(readFileSync(path.join(KIT, '..', 'tabs-content.json'), 'utf8')); } catch { _tabsRaw = {}; } }
